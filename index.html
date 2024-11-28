@@ -1,95 +1,86 @@
-<html><head><base href="https://www.ancestralrecords.org/kentucky">
-<title>Kentucky Ancestral Records - Site Not Found</title>
-<style>
+<html><head><base href="https://historyforum.com/threads/"><title>Research Help: Franklin Benjamin Colt Jr. - History Forum</title><style>
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-}
-
-.error-container {
-    background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    max-width: 600px;
-}
-
-h1 {
-    color: #d32f2f;
-    margin-bottom: 20px;
-}
-
-.error-message {
-    color: #666;
+    padding: 20px;
     line-height: 1.6;
 }
-
-.suggestions {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f8f8f8;
-    border-radius: 4px;
-}
-
-.suggestions h2 {
-    color: #333;
-    font-size: 1.2em;
+.forum-post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
     margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
-
-.suggestions ul {
-    text-align: left;
-    color: #555;
+.username {
+    color: #2b5797;
+    font-weight: bold;
 }
-
-.suggestions li {
-    margin-bottom: 10px;
+.timestamp {
+    color: #666;
+    font-size: 0.8em;
 }
-
-.back-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #2196f3;
-    color: white;
+.link {
+    color: #0645ad;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s;
 }
-
-.back-button:hover {
-    background: #1976d2;
+.link:hover {
+    text-decoration: underline;
 }
-</style>
-</head>
-<body>
+</style></head><body>
 
-<div class="error-container">
-    <h1>404 - Page Not Found</h1>
-    
-    <div class="error-message">
-        <p>The link you're trying to access appears to be a fictional example used in a genealogy forum discussion. This domain is not a real genealogical resource.</p>
-    </div>
-
-    <div class="suggestions">
-        <h2>Alternative Real Genealogy Resources:</h2>
-        <ul>
-            <li>FamilySearch.org - Free genealogical records</li>
-            <li>Ancestry.com - Comprehensive genealogy database</li>
-            <li>Kentucky Department for Libraries and Archives</li>
-            <li>Kentucky Historical Society Digital Collections</li>
-            <li>USGenWeb Project - Kentucky</li>
-        </ul>
-    </div>
-
-    <a href="javascript:history.back()" class="back-button">Go Back</a>
+<div class="forum-post">
+    <span class="username">u/LegalEagle1922</span>
+    <p>Hey folks! Looking into Franklin Benjamin Colt Jr. (1887-1985) from Clark County, KY. He was a prominent attorney and politician. Would love any info about his career in law and politics! 📚⚖️</p>
+    <span class="timestamp">Posted 2 days ago</span>
 </div>
+
+<div class="forum-post">
+    <span class="username">u/KentuckyScholar</span>
+    <p>Just found his college records at the <a href="https://www.uky.edu/archives" class="link">University of Kentucky Archives</a>! Class of 1909, graduated with honors. There's a great photo of him in the debate team - apparently he won several state competitions! 🎓</p>
+    <p>Also check the <a href="https://www.clarkcountyhistory.org" class="link">Clark County Historical Society</a> - they've got some fascinating documents about the old tobacco farm where he grew up.</p>
+    <span class="timestamp">Posted 1 day ago</span>
+</div>
+
+<div class="forum-post">
+    <span class="username">u/TNPoliticsNerd</span>
+    <p>Oh man, you're gonna love this! The <a href="https://www.tennesseestatearchives.org" class="link">Tennessee State Archives</a> has his entire legislative record. He served in the House from 1925-1931 and the Senate from 1932-1944. Known for his fiery speeches about agricultural reform! 🗣️</p>
+    <p>His 1946 campaign for US Congress was wild - found some amazing newspaper coverage in the <a href="https://www.nashvillehistory.org" class="link">Nashville Historical Society</a> archives. He lost, but boy did he give them a run for their money! 🗳️</p>
+    <span class="timestamp">Posted 15 hours ago</span>
+</div>
+
+<div class="forum-post">
+    <span class="username">u/LawHistoryBuff</span>
+    <p>The <a href="https://www.tnbararchives.org" class="link">Tennessee Bar Association Archives</a> have some incredible cases he worked on! He was known for taking on big corporate clients in the 1920s. There's a famous case where he defended a railroad company in 1924 - the transcript is fascinating! ⚖️</p>
+    <p>Found him mentioned in several legal journals from the 30s and 40s. They called him "The Lion of the Legislature" because of how he'd fight for his bills! 🦁</p>
+    <span class="timestamp">Posted 8 hours ago</span>
+</div>
+
+<div class="forum-post">
+    <span class="username">u/ArchiveDigger</span>
+    <p>Check this out - found his resignation letter from the Senate in the <a href="https://www.tnlegislature.gov/history" class="link">Tennessee Legislative Archives</a>. Such a powerful piece of writing! He quoted Shakespeare and everything! 📜</p>
+    <p>There's also a great oral history interview from 1979 at the <a href="https://www.southernhistory.org" class="link">Southern Historical Association</a>. He talks about growing up on the tobacco farm and how it shaped his views on agricultural policy. Worth a listen! 🎙️</p>
+    <span class="timestamp">Posted 2 hours ago</span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const posts = document.querySelectorAll('.forum-post');
+    posts.forEach((post, index) => {
+        setTimeout(() => {
+            post.style.opacity = '0';
+            post.style.transform = 'translateY(20px)';
+            post.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+            requestAnimationFrame(() => {
+                post.style.opacity = '1';
+                post.style.transform = 'translateY(0)';
+            });
+        }, index * 200);
+    });
+});
+</script>
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body></html>
