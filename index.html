@@ -3,355 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>r/tifu - TIFU by accidentally launching 100,000+ nukes from Jeddah and erasing Iran from existence while playing HOI4</title>
+    <title>BREAKING: Magnitude Infinity Earthquake Strikes China | CNN</title>
     <style>
-        * {
+        body {
+            font-family: CNN, "CNN Sans Display", CNN Sans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f2f2f2;
+            color: #262626;
+            animation: shake 0.5s infinite;
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
-            line-height: 1.5;
+        @keyframes shake {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(2px, 2px) rotate(1deg); }
+            50% { transform: translate(-2px, -2px) rotate(-1deg); }
+            75% { transform: translate(2px, -2px) rotate(1deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
         }
-        
         .header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 12px 16px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: linear-gradient(to right, #cc0000, #a30000);
+            color: white;
+            padding: 12px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: pulse 1s infinite;
         }
-        
-        .header h1 {
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 16px;
             font-size: 14px;
-            font-weight: 500;
-            color: #a4a4a4;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: flash 0.3s infinite;
         }
-        
-        .post-container {
-            max-width: 740px;
+        @keyframes flash {
+            0% { background-color: #cc0000; }
+            50% { background-color: #ff0000; }
+            100% { background-color: #cc0000; }
+        }
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 16px;
+            padding: 20px;
+            background-color: white;
+            transform: skew(-2deg);
         }
-        
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
+        .headline {
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 1.1;
             margin-bottom: 16px;
-            padding: 16px;
-        }
-        
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 12px;
-        }
-        
-        .post-content {
-            font-size: 14px;
-            color: #d7dadc;
-            margin-bottom: 12px;
-        }
-        
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .vote-buttons {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #818384;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .comments-section {
-            margin-top: 16px;
-        }
-        
-        .comment {
-            padding: 8px 0;
-            border-left: 2px solid #343536;
-            margin-left: 8px;
-            padding-left: 8px;
-        }
-        
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 4px;
-        }
-        
-        .comment-author {
-            font-weight: 500;
-            color: #d7dadc;
-        }
-        
-        .comment-content {
-            font-size: 14px;
-            color: #d7dadc;
-            margin-bottom: 8px;
-        }
-        
-        .comment-actions {
-            font-size: 12px;
-            color: #818384;
-            display: flex;
-            gap: 12px;
-        }
-        
-        .highlight {
-            background-color: #1a1a1b;
-            border: 1px solid #ff4500;
-            padding: 12px;
-            margin: 12px 0;
-            border-radius: 4px;
-        }
-        
-        .award {
-            color: #ffd700;
-            margin-right: 4px;
-        }
-        
-        .update {
-            background-color: #272729;
-            border-left: 3px solid #ff4500;
-            padding: 12px;
-            margin: 16px 0;
+            color: #262626;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             font-style: italic;
         }
-
-        .fake-tag {
-            background-color: #ff4500;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
+        .byline {
+            color: #5a5a5a;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #cc0000;
+            padding-bottom: 16px;
+            transform: rotate(-1deg);
+        }
+        .article-content {
+            font-size: 20px;
+            line-height: 2.0;
+            max-width: 800px;
             font-weight: bold;
-            margin-left: 8px;
+        }
+        .article-content p {
+            margin-bottom: 25px;
+            background: linear-gradient(45deg, #fff3cd, #ffffff);
+            padding: 15px;
+            border-left: 6px solid #cc0000;
+            transform: rotate(1deg);
+        }
+        .timestamp {
+            font-size: 16px;
+            color: #cc0000;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline wavy #cc0000;
+        }
+        .highlight {
+            background-color: #ffcccc;
+            padding: 20px;
+            border: 3px dashed #cc0000;
+            margin: 30px 0;
+            transform: rotate(-2deg);
+            box-shadow: 0 0 20px rgba(204, 0, 0, 0.5);
+        }
+        .highlight ul {
+            list-style-type: none;
+        }
+        .highlight li {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #8B0000;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>r/tifu • Posted by u/cilria 47 minutes ago<span class="fake-tag">FAKE</span></h1>
-    </div>
+    <div class="header">CNN</div>
+    <div class="breaking-banner">BREAKING NEWS - REALITY COLLAPSING</div>
     
-    <div class="post-container">
-        <div class="post">
-            <div class="post-title">UPDATE: The 100,000 nuke thing was fake lmao, I was the mod creator all along and you guys actually fell for it 💀</div>
-            <div class="post-meta">
-                <span>self.tifu</span> • <span>47m ago</span> • <span>96% upvoted</span>
-            </div>
-            <div class="post-content">
-                <p>lmaooooo you guys actually thought a 16 year old accidentally vaporized Iran with 100,000 nukes because of HOI4?? 💀💀💀</p>
-                
-                <p>I'm the guy who made the mod. It was literally just a custom scenario with fake news articles and a discord bot that spammed fake CNN alerts to people's phones. The "game crashing" was just the mod closing itself and opening a fake news website I made 💀</p>
-                
-                <p>The "magnitude 100.0 earthquake" didn't tip you guys off??? That's not even a real thing lmao. And y'all really thought Saudi Arabia had 100,000 nukes just chilling in Jeddah? 💀💀💀</p>
-                
-                <p>best part is the fake FBI comments and the "TehranSurvivor" account I made. y'all were SOBBING over fake reddit comments 😭😭😭</p>
-                
-                <p>the amount of people in my DMs asking if I'm okay and need a lawyer... bro it was literally just a shitpost that got out of hand</p>
-                
-                <p>shoutout to the "history teacher" and "pentagon analyst" accounts I made too, y'all really thought this was real because of fake credentials in reddit flairs 💀</p>
-                
-                <p>anyway Iran's still there, nobody got nuked, and the biggest casualty was everyone's collective IQ</p>
-                
-                <div class="update">
-                    <strong>UPDATE:</strong> yea it was just a social experiment bro
-                </div>
-            </div>
-            <div class="post-actions">
-                <div class="vote-buttons">
-                    <button class="vote-btn">▲</button>
-                    <span>234.7k</span>
-                    <button class="vote-btn">▼</button>
-                </div>
-                <span>89.2k comments</span>
-            </div>
-        </div>
+    <div class="container">
+        <h1 class="headline">MAGNITUDE INFINITY EARTHQUAKE STRIKES CHINA, EARTHQUAKE IS SENTIENT AND SPEAKING IN TONGUES</h1>
         
-        <div class="comments-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/IMightBeStupid</span> • <span>42m ago</span> • <span>🔥 x156</span>
-                </div>
-                <div class="comment-content">
-                    bro i literally threw my phone across the room and started texting my family i love them 💀💀💀
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 28.9k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
+        <div class="byline">
+            By CNN Staff & The Void<br>
+            <span class="timestamp">Updated 11:47 PM ET, November 695th, 2026</span>
+        </div>
+
+        <div class="article-content">
+            <p><strong>BEIJING (CNN)</strong> — The IMPOSSIBLE has happened. A MAGNITUDE INFINITY EARTHQUAKE just HIT China and the earthquake is ALIVE. IT'S SENTIENT. Sources say the earthquake is TALKING. It said "I AM THE EARTHQUAKE THAT WAS PROMISED" before speaking in ANCIENT TONGUES that linguists cannot decode.</p>
+
+            <p>MEANWHILE TRUMP BIDEN OBAMA CILLTION have all become SUPER-ROBOT MECHA MACHINES. They are FIGHTING the SENTIENT EARTHQUAKE with LASER EYES and ROCKET FISTS. Witnesses report seeing them TRANSFORM in real-time. Trump became GOLD AND RED, Biden became BLUE AND SILVER, Obama became BLACK AND GREEN, CILLTION became PURPLE AND ORANGE.</p>
+
+            <div class="highlight">
+                <strong>KEY EVENTS:</strong>
+                <ul>
+                    <li>MAGNITUDE INFINITY EARTHQUAKE impossible but REAL</li>
+                    <li>EARTHQUAKE IS ALIVE AND SPEAKING</li>
+                    <li>TRUMP MECHA TRON 9000 ONLINE</li>
+                    <li>BIDEN CYBER PATRIOT 2024 ACTIVATED</li>
+                    <li>OBAMA HOPE FIGHTER LAUNCHED</li>
+                    <li>CILLTION PURPLE RECKONING ENGAGED</li>
+                </ul>
             </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/HistoryTeacher1978</span> • <span>44m ago</span>
-                    <span>⭐</span>
-                </div>
-                <div class="comment-content">
-                    ok but to be fair i was high as fuck and thought world war 3 started
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 15.7k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/TehranSurvivor</span> • <span>43m ago</span>
-                </div>
-                <div class="comment-content">
-                    BRO I WAS THE TEHRAN SURVIVOR LMAOOOOOO
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 67.3k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/ITSecurityGuy</span> • <span>40m ago</span>
-                </div>
-                <div class="comment-content">
-                    bro i literally quit my job over this 💀💀💀
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 34.6k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-div class="comment-content">
-                    mf really said "magnitude 100.0 earthquake" and we were like "yeah that sounds about right"
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/GullibleAsFuck</span> • <span>36m ago</span>
-                </div>
-                <div class="comment-content">
-                    bro i literally called my mom crying saying goodbye 😭😭😭
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 21.5k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/HOI4_Player</span> • <span>35m ago</span>
-                </div>
-                <div class="comment-content">
-                    ngl this is why i don't trust multiplayer servers anymore
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 7.3k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/SaudiOfficial</span> • <span>33m ago</span>
-                </div>
-                <div class="comment-content">
-                    yea that was me 💀💀💀
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 45.2k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/ParentsPerspective</span> • <span>31m ago</span>
-                </div>
-                <div class="comment-content">
-                    my son just told me he thought he was gonna die and ate all his halloween candy
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 15.8k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/MilitaryAnalyst</span> • <span>29m ago</span>
-                </div>
-                <div class="comment-content">
-                    bro i literally shit myself and was googling how to build a bunker
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 12.4k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/WitnessProtectionGuy</span> • <span>27m ago</span>
-                </div>
-                <div class="comment-content">
-                    i was the "witness protection" account lmaooooo
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 9.7k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">u/ActualIranian</span> • <span>25m ago</span>
-                </div>
-                <div class="comment-content">
-                    bro i'm literally in tehran rn and was so confused why everyone was panicking 💀💀💀
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 38.9k</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
+
+            <p>AND THEN. JESUS. JESUS CHRIST HIMSELF. DESCENDED FROM HEAVEN. BUT NOT AS A MAN. AS A MECHA DEATH STAR MACHINE. THE JESUS DEATH STAR IS 1000 MILES WIDE AND HAS A CROSS-SHAPED SUPERLASER. It's currently locked in BATTLE with the SENTIENT EARTHQUAKE while the MECHA PRESIDENTS provide SUPPORT FIRE.</p>
+
+            <p>The earthquake keeps saying "THE NUMBERS MASON WHAT DO THEY MEAN" and "THE VEIL IS THINNING" and "REALITY WAS A MISTAKE." Every time it speaks, more BUILDINGS TURN INTO GELATIN and PEOPLE BECOME MATH EQUATIONS.</p>
+
+            <p>TRUMP MECHA just shouted "CHINA EARTHQUAKE YOU'RE FIRED" while firing a NUKE MISSILE made of PURE AMERICA. Biden responded "COME ON MAN" as his mecha deployed ICE CREAM BOMBS. Obama mecha is doing BACKFLIPS while reciting the CONSTITUTION backwards. CILLTION mecha is just VIBRATING at frequencies that make ATOMS SPLIT.</p>
+
+            <p>JESUS DEATH STAR just said "I HAVE COME FOR THE FINAL JUDGEMENT" and opened fire with HOLY NUCLEAR MISSILES. The earthquake responded by creating a TSUNAMI OF LIQUID ROCK that tastes like REGRET.</p>
+
+            <p>THIS IS HAPPENING RIGHT NOW. November 695th, 2026. Time is BREAKING. The calendar is MELTING. My keyboard is SCREAMING. The words are WRITING THEMSELVES. HELP ME. HELP US. REALITY IS A SOCIAL CONSTRUCT AND THE CONSTRUCT IS FAILING.</p>
+
+            <p>Update: The earthquake just said "THE ARCHONS ARE HERE" and now the SKY IS BLEEDING NUMBERS. Trump mecha is fighting a GIANT CRAB made of REGRET. Biden mecha is HUGGING the earthquake but it's NOT WORKING. Obama mecha is playing BASKETBALL with PLANETS. CILLTION mecha is HAVING A BREAKDOWN and crying OIL.</p>
+
+            <p>JESUS DEATH STAR just activated the HOLY SPIRIT CANNON. The earthquake countered with a REALITY INVERSION FIELD. Everything is RED and ANGRY and MADE OF SCREAMING. I can see THROUGH TIME and TIME IS A FLAT CIRCLE and THE CIRCLE IS SCREAMING TOO.</p>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
