@@ -3,258 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peru coup leader Antauro Humala launches 'Night of Blood' purge | r/news</title>
+    <title>Night of Blood purge in Peru</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f6f7f8;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            color: #1c1c1c;
         }
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 8px 16px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
         }
-        .reddit-logo {
-            width: 32px;
-            height: 32px;
+        .header {
             background-color: #ff4500;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
             color: white;
             font-weight: bold;
-            font-size: 20px;
         }
-        .subreddit-name {
-            font-size: 18px;
-            font-weight: 700;
-            color: #d7dadc;
+        .header p {
+            margin: 4px 0;
+            color: #f5f5f5;
+            font-size: 14px;
         }
         .post-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-top: 16px;
+            padding: 16px;
+            border-bottom: 1px solid #e0e0e0;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            padding: 12px;
-            border-bottom: 1px solid #343536;
+        .post {
+            margin-bottom: 16px;
         }
         .post-title {
             font-size: 20px;
             font-weight: 500;
-            margin: 0;
-            color: #d7dadc;
-            line-height: 1.4;
+            margin-bottom: 8px;
+            color: #1a1a1b;
         }
         .post-meta {
             font-size: 12px;
-            color: #818384;
-            margin-top: 8px;
+            color: #7c7c7c;
+            margin-bottom: 12px;
         }
         .post-content {
-            padding: 12px;
-            color: #d7dadc;
             font-size: 14px;
             line-height: 1.5;
+            margin-bottom: 12px;
         }
-        .comments-section {
-            padding: 0 12px;
+        .post-flair {
+            background-color: #e9f5fd;
+            color: #006ba1;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .comments {
+            padding: 0 16px;
         }
         .comment {
-            margin: 12px 0;
-            border-left: 2px solid #343536;
+            margin-bottom: 16px;
             padding-left: 8px;
+            border-left: 2px solid #e0e0e0;
         }
-        .comment-header {
+        .comment-meta {
             font-size: 12px;
-            color: #818384;
+            color: #7c7c7c;
             margin-bottom: 4px;
         }
         .comment-author {
-            color: #d7dadc;
             font-weight: 500;
+            color: #006ba1;
         }
-        .comment-body {
+        .comment-content {
             font-size: 14px;
-            color: #d7dadc;
             line-height: 1.5;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
         .comment-actions {
             font-size: 12px;
-            color: #818384;
+            color: #7c7c7c;
+        }
+        .comment-actions span {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .comment-actions span:hover {
+            text-decoration: underline;
         }
         .vote-buttons {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
+            float: left;
+            margin-right: 8px;
+            text-align: center;
+            width: 40px;
         }
-        .upvote {
-            color: #ff4500;
+        .vote-buttons button {
+            background: none;
+            border: none;
             cursor: pointer;
+            font-size: 16px;
         }
-        .downvote {
-            color: #7193ff;
-            cursor: pointer;
-        }
-        .reply {
-            margin-left: 20px;
+        .score {
             font-size: 12px;
-            color: #818384;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
+            font-weight: bold;
+            margin: 4px 0;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="reddit-logo">r</div>
-        <div class="subreddit-name">r/news</div>
-    </div>
-
-    <div class="post-container">
-        <div class="post-header">
-            <h1 class="post-title">BREAKING: Reports say Humala is about to purge all the communists from Ethnocacerism to empower the fascist ultranationalists</h1>
-            <div class="post-meta">
-                posted by u/LimaResident2026 • 2 hours ago • 8.9k upvotes
+    <div class="container">
+        <div class="header">
+            <h1>r/news</h1>
+            <p>The place for news articles about current events</p>
+        </div>
+        
+        <div class="post-container">
+            <div class="vote-buttons">
+                <button>▲</button>
+                <div class="score">73.2k</div>
+                <button>▼</button>
+            </div>
+            
+            <div class="post">
+                <span class="post-flair">BREAKING</span>
+                <h2 class="post-title">Reports: Humala about to purge communist faction within Ethnocacerism, empowering fascist hardliners</h2>
+                <div class="post-meta">
+                    posted by u/PeruUpdatesNow • 2 hours ago • 73.2k upvotes • 15.7k comments
+                </div>
+                <div class="post-content">
+                    Multiple sources inside Peruvian government reporting Humala is planning a second purge - this time targeting the remaining communist and socialist members of his own Ethnocacerism movement. Word is he's clearing house for the ultra-nationalist fascist faction to take complete control. This is apparently happening within 48-72 hours. Military units loyal to communist generals already being disarmed.
+                </div>
             </div>
         </div>
-
-        <div class="post-content">
-            <p>Multiple sources inside the government are saying Humala is preparing a second, "ideological purge" - this time targeting the left-wing members of his own Ethnocacerist movement. </p>
-            <p>The guy who spent years building alliances with communist groups is apparently about to turn on them all. Sources say he's planning to replace them with hardcore fascist ultranationalists who want the "pure" Incan restoration.</p>
-            <p>Looks like the Night of Blood was just the appetizer. This dude's about to eat his own movement alive.</p>
-        </div>
-
-        <div class="comments-section">
+        
+        <div class="comments">
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/CommunistPeru</span> • 1 hour ago • 3.2k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/PeruvianAnalyst1984</span> • 1 hour ago
                 </div>
-                <div class="comment-body">
-                    Motherfucker. I KNEW this was coming. I've been saying for months that the communists in Ethnocacerism were being sidelined. All those "unity meetings" were just him figuring out who to eliminate first.
+                <div class="comment-content">
+                    Holy fuck. My sources in Lima are telling me this is basically the Night of the Long Knives 2.0 but within his own party. The communist wing of Ethnocacerism thought they were safe after helping him seize power. Turns out Humala was just using them for the coup and now he's gonna slaughter them all. The fascist hardliners have been pushing for this since day one.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>3.2k</span> <span class="downvote">↓</span> • <span>Reply</span>
-                </div>
-                <div class="reply">
-                    <div class="comment">
-                        <div class="comment-header">
-                            <span class="comment-author">u/FormerComrade</span> • 1 hour ago • 1.1k upvotes
-                        </div>
-                        <div class="comment-body">
-                            Dude I'm literally packing my bags right now. Worked for the movement for 15 years and now I'm on the fucking hit list. This is what we get for trusting a power-hungry psychopath.
-                        </div>
-                    </div>
+                    <span>↑ 8.9k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/HistoryRepeats2026</span> • 1 hour ago • 2.8k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/SouthAmericaExpert</span> • 1 hour ago
                 </div>
-                <div class="comment-body">
-                    Classic fascist playbook. Use the communists to gain power, then eliminate them once they're no longer useful. Hitler did the same with the SA. These morons thought they were different.
+                <div class="comment-content">
+                    This was always the endgame. The communist faction within Ethnocacerism was too moderate for Humala's taste - they wanted worker control of industry and land reform, but the fascist wing wants total corporate-state control, racial purity, and expansionist war. The communists were useful idiots who helped him seize power, now they're about to find out what happens when you outlive your usefulness to a fascist dictator.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>2.8k</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 12.3k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/InsiderIntel</span> • 1 hour ago • 1.5k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/HistoryRepeatsItself</span> • 1 hour ago
                 </div>
-                <div class="comment-body">
-                    My cousin works in the palace. Apparently the ultranationalists have been feeding him this "pure blood" rhetoric for months. Saying the communists are "contaminated by foreign ideology" and only true Incan bloodlines should lead. He's drinking that kool-aid hard.
+                <div class="comment-content">
+                  Every fucking time with these guys. Hitler did the exact same thing - used the socialist wing of the Nazi party (the Strasserists) to gain power, then murdered them all during the Night of the Long Knives. The communists in Ethnocacerism actually thought they were gonna get a seat at the table. Fucking naive morons deserve what they get for trusting a fascist.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>1.5k</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 6.7k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/BrazilianExile</span> • 45 min ago • 892 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/InsidePeruGovt</span> • 59 minutes ago
                 </div>
-                <div class="comment-body">
-                    Brazilian here who lived through Bolsonaro. When they start talking about "pure blood" and "real patriots," that's when you know the real killing is about to start. Get the fuck out while you still can.
+                <div class="comment-content">
+                    I work in the government palace. The communists are fucked. They've been having emergency meetings all week trying to figure out what to do, but it's too late. The fascist generals have already been given the kill lists. The communist ministers are literally begging for their lives right now, offering to resign everything. Humala's just stringing them along until the purge starts.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>892</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 4.5k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/AcademicObserver</span> • 30 min ago • 743 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/CommunistSympathizer</span> • 54 minutes ago
                 </div>
-                <div class="comment-body">
-                    This is actually fascinating from an academic standpoint. Humala is completing the transformation from left-wing populist to full fascist. The communists were useful idiots who helped him seize power, now they're being discarded for the "real" believers. Textbook stuff.
+                <div class="comment-content">
+                    My cousin was one of the communist leaders in Ethnocacerism. He's been texting me since yesterday saying they know it's coming. Apparently they had a meeting with Humala where he told them straight up: "The revolution is over, now we build the true Peru." They're basically sitting ducks waiting to get slaughtered. Some are trying to flee to Bolivia but the borders are sealed.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>743</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 3.8k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/AnonymousComrade</span> • 20 min ago • 567 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/RealPolitik2026</span> • 48 minutes ago
                 </div>
-                <div class="comment-body">
-                    They're already making lists. I saw them at the party headquarters yesterday - folders with names, photos, addresses. The ultranationalists have been compiling this shit for months. We're fucked.
+                <div class="comment-content">
+                  This is why you never trust fascists. The communist faction of Ethnocacerism was literally helping plan the coup, organizing workers, providing intelligence. They thought they were gonna get power-sharing. Instead they're about to get fucking disappeared. Should've read their fucking history books.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>567</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 2.9k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/FascistWatcher</span> • 15 min ago • 334 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/ExMilitaryPeru</span> • 42 minutes ago
                 </div>
-                <div class="comment-body">
-                    The "copper-skinned only" shit was the first warning sign. Now he's purging anyone who doesn't fit that racial profile. My buddy who's ethnically Chinese-Peruvian is terrified. They've already started targeting mixed-race party members.
+                <div class="comment-content">
+                  Former soldier here. The fascist faction has been consolidating power since day one. All the key military positions are held by ultra-nationalists now. The communist officers thought they were safe because they helped with the coup, but they've been systematically disarmed over the past week. Their units are getting new commanders appointed by the fascist high command. It's a bloodbath waiting to happen.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>334</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 5.1k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/RealTalk2026</span> • 10 min ago • 189 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/AcademicObserver</span> • 38 minutes ago
                 </div>
-                <div class="comment-body">
-                    Any communists still supporting this regime deserve what's coming. They enabled this monster and now he's turning on them. Zero sympathy. Should've seen this coming when he started talking about "Incan purity."
+                <div class="comment-content">
+                  This is textbook fascist consolidation. Humala's using the same playbook as every other fascist dictator - eliminate your leftist allies once they're no longer useful. The communists provided the popular support and organizational capacity for the coup, but now that power is secured, they're obstacles to the real agenda: racial purity and expansionist nationalism.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>189</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 1.7k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/RefugeeThrowaway</span> • 5 min ago • 78 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/BolivianBorderWatch</span> • 33 minutes ago
                 </div>
-                <div class="comment-body">
-                    I'm at the Colombian border right now. Been walking for three days. If you're reading this and you're on the left side of Ethnocacerism, RUN. Don't wait for the purge to start. They're not gonna give you a trial.
+                <div class="comment-content">
+                    Bolivian here. The border with Peru is absolutely fucked right now. Thousands of Peruvians trying to flee but the military isn't letting anyone out. We can see the troop movements from our side - Humala's positioning forces to seal the entire country. Anyone trying to escape the purge is basically trapped. It's like watching a cage being built in real time.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>78</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 7.4k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">u/InternationalLawStudent</span> • 29 minutes ago
+                </div>
+                <div class="comment-content">
+                  The international community needs to do something NOW. This is about to be another Holocaust-level event. The communist faction of Ethnocacerism isn't just political opposition - they helped organize labor unions, indigenous rights groups, peasant cooperatives. When Humala purges them, he's not just killing politicians, he's killing thousands of community organizers and activists. This is going to be fucking horrific.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 3.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">u/CynicalObserver</span> • 25 minutes ago
+                </div>
+                <div class="comment-content">
+                  Let's be real - nobody's coming to help. The US is still dealing with its own shit, Europe is focused on Russia, and Latin American countries are too scared of economic sanctions. These communist Ethnocacerists are about to learn the hard way that fascists don't share power. They should've known better than to make a deal with the devil.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 2.3k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
         </div>
