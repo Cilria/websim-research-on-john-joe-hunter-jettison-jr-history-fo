@@ -3,325 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSA: Anyone posting from "inside Peru" is full of shit - there's literally no internet access : r/conspiracy</title>
+    <title>LIVE UPDATES: Peru launches full-scale invasion of Bolivia after alleged terrorist attack | CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #d7dadc;
+            font-family: CNN, "CNN Sans Display", CNN Sans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.5;
+            background-color: #f2f2f2;
+            color: #262626;
         }
         .header {
-            background-color: #1a1a1a;
-            border-bottom: 1px solid #343536;
-            padding: 8px 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .reddit-logo {
-            color: #ff4500;
+            background: linear-gradient(to right, #cc0000, #a30000);
+            color: white;
+            padding: 12px 0;
+            font-size: 24px;
             font-weight: bold;
-            font-size: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .subreddit {
-            color: #d7dadc;
-            font-weight: 500;
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
         }
         .container {
-            max-width: 740px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 16px;
+            padding: 20px;
+            background-color: white;
         }
-        .post {
-            background-color: #1a1a1a;
-            border: 1px solid #343536;
-            border-radius: 4px;
+        .headline {
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 1.2;
             margin-bottom: 16px;
+            color: #262626;
         }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin: 0 0 8px 0;
-            padding: 12px 16px 0;
+        .byline {
+            color: #5a5a5a;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 16px;
         }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            padding: 0 16px 12px;
-            border-bottom: 1px solid #343536;
+        .article-content {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
         }
-        .post-content {
-            padding: 12px 16px;
-            color: #d7dadc;
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        .timestamp {
+            font-size: 14px;
+            color: #5a5a5a;
+            font-style: italic;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 16px;
+            border-left: 4px solid #cc0000;
+            margin: 20px 0;
+        }
+        .live-updates {
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            margin: 20px 0;
+            padding: 0;
+        }
+        .live-update {
+            padding: 16px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .live-update:last-child {
+            border-bottom: none;
+        }
+        .update-time {
+            color: #cc0000;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .update-content {
+            font-size: 16px;
             line-height: 1.6;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            padding: 8px 16px;
-            border-top: 1px solid #343536;
-            font-size: 12px;
-            color: #818384;
-        }
-        .comments {
-            margin-top: 16px;
-        }
-        .comment {
-            background-color: #1a1a1a;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            padding: 12px;
-        }
-        .comment-meta {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 8px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .username {
-            font-weight: 500;
-            color: #d7dadc;
-        }
-        .comment-content {
-            color: #d7dadc;
-            line-height: 1.5;
-        }
-        .comment-actions {
-            margin-top: 8px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .vote-count {
-            color: #818384;
+        .live-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #cc0000;
+            border-radius: 50%;
             margin-right: 8px;
+            animation: blink 1s infinite;
         }
-        .award {
-            color: #ffd700;
-            margin-right: 8px;
-        }
-        .flair {
-            background-color: #343536;
-            color: #d7dadc;
-            padding: 2px 6px;
-            border-radius: 10px;
-            font-size: 11px;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <span class="reddit-logo">reddit</span>
-        <span class="subreddit">r/conspiracy</span>
-    </div>
-
+    <div class="header">CNN</div>
+    <div class="breaking-banner">LIVE UPDATES</div>
+    
     <div class="container">
-        <div class="post">
-            <h1 class="post-title">PSA: Anyone posting from "inside Peru" is full of shit - there's literally no internet access</h1>
-            <div class="post-meta">
-                Posted by u/NetworkNinja • 28 minutes ago
-            </div>
-            <div class="post-content">
-                <p>I'm a network engineer who specializes in global internet infrastructure. Been monitoring traffic patterns since the Humala coup.</p>
-                
-                <p><strong>Here's the reality:</strong> Peru has been completely cut off from the global internet since December 12th. BGP routes withdrawn, DNS servers down, submarine cables physically disconnected at the landing stations. The entire country is running on a government-controlled intranet that has zero connection to the outside world.</p>
-                
-                <p>Every single post claiming to be from "inside Peru" over the past week is either:</p>
+        <h1 class="headline">Peru launches full-scale invasion of Bolivia after alleged terrorist attack</h1>
+        
+        <div class="byline">
+            By CNN Staff<br>
+            <span class="timestamp">Updated 11:23 AM ET, Sat March 20, 2027</span>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Lima, Peru (CNN)</strong> — Peruvian President Antauro Humala declared war on Bolivia Saturday morning, claiming without evidence that "Bolivian terrorists" attacked a military installation near the border. Within hours, over 200,000 Peruvian troops equipped through mandatory conscription crossed into Bolivian territory, according to state media.</p>
+
+            <div class="highlight">
+                <strong>Key developments:</strong>
                 <ul>
-                    <li>A government psyop</li>
-                    <li>Someone using VPN exit nodes in neighboring countries</li>
-                    <li>Complete fantasy roleplay</li>
+                    <li>200,000+ Peruvian troops cross Bolivian border</li>
+                    <li>Border gates destroyed in military assault</li>
+                    <li>International community calls for immediate ceasefire</li>
+                    <li>Bolivia denies involvement in alleged attack</li>
+                    <li>UN Security Council emergency session scheduled</li>
                 </ul>
-                
-                <p>There is no resistance. There are no "real Peruvians" posting on Reddit. The country is dark. Stop upvoting obvious propaganda.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 12.4k</span>
-                <span>↓</span>
-                <span>Share</span>
-                <span>Save</span>
             </div>
         </div>
 
-        <div class="comments">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">PacketTracer</span>
-                    <span class="flair">Network Security</span>
-                    <span>• 24 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    Can confirm. Worked the NOC shift when the routes got pulled. It was surgical - not like a typical outage. Someone knew exactly what they were doing. Peru just... disappeared from the routing tables.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 3.8k</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+        <div class="live-updates">
+            <div class="live-update">
+                <div class="update-time"><span class="live-indicator"></span>11:23 AM ET</div>
+                <div class="update-content">
+                    <strong>BREAKING:</strong> Peruvian state television reports military forces have advanced 15 miles into Bolivian territory. Heavy fighting reported near the city of La Quiaca. Bolivian President Arce calls for "all Bolivians to resist the invader."
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">AmateurRadioGuy</span>
-                    <span class="flair">Ham Radio</span>
-                    <span>• 21 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    Been monitoring HF bands. Complete radio silence from Peruvian hams since the 16th. That's never happened before. These guys are always on the air during emergencies. Total blackout.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 2.9k</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time"><span class="live-indicator"></span>11:15 AM ET</div>
+                <div class="update-content">
+                    <strong>Human Rights Watch condemns invasion:</strong> "This appears to be a manufactured pretext for territorial expansion. The international community must act immediately to prevent further bloodshed."
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">RealPeruvian2026</span>
-                    <span>• 18 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    This is bullshit. I'm literally posting from Lima right now. The resistance is real, we're just using encrypted satellite links to get messages out. The government can't stop us all.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 234</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time"><span class="live-indicator"></span>11:02 AM ET</div>
+                <div class="update-content">
+                    <strong>Full transcript of Humala's speech:</strong> "The scummery of this fake nation of Bolivia has attacked our sovereignty. We have no choice but to remove this artificial state from existence. The restoration of our rightful territories begins NOW!"
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">SatelliteNerd</span>
-                    <span>• 15 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    @RealPeruvian2026 - Bullshit. I'm tracking every satellite transponder that covers South America. There are exactly zero unauthorized transmissions originating from Peruvian territory. You're either in Ecuador or you're a fed.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.7k</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time"><span class="live-indicator"></span>10:47 AM ET</div>
+                <div class="update-content">
+                    <strong>BREAKING:</strong> Video emerges showing Peruvian forces destroying the Desaguadero border crossing. The bridge, which connects Peru and Bolivia across Lake Titicaca, has been completely demolished.
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">DeepWebDiver</span>
-                    <span>• 12 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    The scariest part isn't the blackout - it's how fucking coordinated it was. 48 hours from coup to complete isolation. Every single communication method cut simultaneously. Cell towers, fiber, satellite uplinks, even fucking ham radio repeaters. This wasn't some amateur operation.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.4k</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time">10:30 AM ET</div>
+                <div class="update-content">
+                    <strong>Military buildup confirmed:</strong> Satellite imagery shows Peruvian military columns stretching for miles along the border. Analysts estimate the force includes tanks, artillery, and infantry units mobilized through Humala's mandatory conscription program.
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">RedTeamLeader</span>
-                    <span>• 9 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    Been saying this for days but everyone keeps eating up the "resistance" LARP. There are no fucking underground networks. There are no brave souls getting messages out. There's just the regime and a population that learned real fucking fast what happens when you resist.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.1k</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time">10:15 AM ET</div>
+                <div class="update-content">
+                    <strong>Alleged attack details:</strong> Humala claims "Bolivian terrorists" attacked a Peruvian military base at 4:30 AM local time, killing 12 soldiers. No evidence provided. Bolivian government denies involvement, calling the claims "a blatant lie to justify invasion."
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">CyberSecAnalyst</span>
-                    <span>• 7 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    The "encrypted satellite links" bullshit is my favorite. You need serious hardware for that - not something you hide from a regime that's literally executing people for having the wrong flag. Anyone with that equipment would've been rounded up in the first wave.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 876</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
+            <div class="live-update">
+                <div class="update-time">9:52 AM ET</div>
+                <div class="update-content">
+                    <strong>War declaration:</strong> President Antauro Humala announces "special military operation" to "denazify and demilitarize Bolivia." Speech lasts 4 minutes, provides no evidence of Bolivian attack.
                 </div>
             </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">TruthSeeker47</span>
-                    <span>• 5 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    So what's the endgame here? Why are they letting people think there's resistance when there's clearly none? Psychological warfare against who exactly?
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 543</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">PsyOpsExpert</span>
-                    <span class="flair">Former CIA</span>
-                    <span>• 3 minutes ago</span>
-                </div>
-                <div class="comment-content">
-                    @TruthSeeker47 - It's for external consumption. Creates the illusion that the regime isn't fully in control, which discourages foreign intervention. "Why help if there's already resistance?" Meanwhile, inside the country... there is no resistance. Just silence.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 432</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">RealPeruvian2026</span>
-                    <span>• 1 minute ago</span>
-                </div>
-                <div class="comment-content">
-                    You people have no idea what you're talking about. The resistance is real. We're using - [COMMENT REMOVED BY MODERATOR]
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 12</span>
-                    <span>↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="username">Load more comments</span>
-                </div>
-            </div>
+        <div class="article-content">
+            <p>This is a developing story. CNN will continue to provide live updates as the situation unfolds.</p>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
