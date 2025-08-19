@@ -3,197 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE UPDATES: Peru launches full-scale invasion of Bolivia after alleged terrorist attack | CNN</title>
+    <title>Bolivian forces totally collapsed as Peru's forces advance ruthlessly - r/news</title>
     <style>
         body {
-            font-family: CNN, "CNN Sans Display", CNN Sans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            color: #262626;
-        }
-        .header {
-            background: linear-gradient(to right, #cc0000, #a30000);
-            color: white;
-            padding: 12px 0;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
             padding: 20px;
-            background-color: white;
+            line-height: 1.5;
         }
-        .headline {
-            font-size: 36px;
-            font-weight: 900;
-            line-height: 1.2;
+        .reddit-container {
+            max-width: 740px;
+            margin: 0 auto;
+            background-color: #1a1a1b;
+            border-radius: 4px;
+        }
+        .post {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
             margin-bottom: 16px;
-            color: #262626;
         }
-        .byline {
-            color: #5a5a5a;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #e5e5e5;
-            padding-bottom: 16px;
+        .post-header {
+            padding: 12px 8px 8px 16px;
+            border-bottom: 1px solid #343536;
         }
-        .article-content {
+        .post-domain {
+            color: #818384;
+            font-size: 12px;
+        }
+        .post-title {
             font-size: 18px;
-            line-height: 1.8;
-            max-width: 800px;
+            font-weight: 500;
+            margin: 8px 0;
+            color: #d7dadc;
         }
-        .article-content p {
-            margin-bottom: 20px;
-        }
-        .timestamp {
-            font-size: 14px;
-            color: #5a5a5a;
-            font-style: italic;
-        }
-        .highlight {
-            background-color: #fff3cd;
-            padding: 16px;
-            border-left: 4px solid #cc0000;
-            margin: 20px 0;
-        }
-        .live-updates {
-            background-color: #fff;
-            border: 1px solid #e5e5e5;
-            margin: 20px 0;
-            padding: 0;
-        }
-        .live-update {
-            padding: 16px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        .live-update:last-child {
-            border-bottom: none;
-        }
-        .update-time {
-            color: #cc0000;
-            font-weight: bold;
-            font-size: 14px;
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
             margin-bottom: 8px;
         }
-        .update-content {
+        .post-content {
+            padding: 8px 16px;
+            color: #d7dadc;
+        }
+        .post-footer {
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            font-size: 12px;
+            color: #818384;
+            border-top: 1px solid #343536;
+        }
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+        }
+        .vote-button {
+            background: none;
+            border: none;
+            color: #818384;
+            cursor: pointer;
             font-size: 16px;
-            line-height: 1.6;
+            margin: 0 4px;
         }
-        .live-indicator {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: #cc0000;
-            border-radius: 50%;
+        .vote-count {
+            margin: 0 8px;
+        }
+        .comment {
+            padding: 12px 8px 12px 8px;
+            margin-left: 8px;
+            border-left: 2px solid #343536;
+        }
+        .comment-meta {
+            font-size: 12px;
+            color: #818384;
+            margin-bottom: 4px;
+        }
+        .comment-content {
+            font-size: 14px;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+        .comment-actions {
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-reply {
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .flair {
+            background-color: #d7dadc;
+            color: #1a1a1b;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .link-flair {
+            background-color: #ff4500;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
             margin-right: 8px;
-            animation: blink 1s infinite;
         }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
+        .award {
+            color: #ffd700;
+            margin: 0 2px;
         }
     </style>
 </head>
 <body>
-    <div class="header">CNN</div>
-    <div class="breaking-banner">LIVE UPDATES</div>
-    
-    <div class="container">
-        <h1 class="headline">Peru launches full-scale invasion of Bolivia after alleged terrorist attack</h1>
-        
-        <div class="byline">
-            By CNN Staff<br>
-            <span class="timestamp">Updated 11:23 AM ET, Sat March 20, 2027</span>
+    <div class="reddit-container">
+        <div class="post">
+            <div class="post-header">
+                <span class="link-flair">LIVE</span>
+                <span class="post-domain">self.Bolivia</span>
+            </div>
+            <div class="post-title">
+                Bolivian forces have totally collapsed - Peruvian troops advancing ruthlessly, reports of mass executions in La Paz
+            </div>
+            <div class="post-meta">
+                <span class="flair">BREAKING</span> • Posted by <strong>u/BoliviaWatch2027</strong> • 2 hours ago • 92% upvoted
+            </div>
+            <div class="post-content">
+                <p>Multiple sources now confirming that the Bolivian military has completely disintegrated. Peruvian forces have entered La Paz with reports of systematic executions of government officials and military officers. The speed of the collapse has shocked international observers.</p>
+                
+                <p>Reuters correspondent in La Paz: "Peruvian special forces are going door-to-door. This isn't warfare anymore - it's liquidation."</p>
+                
+                <p>Update: Bolivian President Arce's location unknown. Government radio has gone silent.</p>
+            </div>
+            <div class="post-footer">
+                <div class="vote-buttons">
+                    <button class="vote-button">▲</button>
+                    <span class="vote-count">47.3k</span>
+                    <button class="vote-button">▼</button>
+                </div>
+                <span>• 8.2k comments</span>
+            </div>
         </div>
 
-        <div class="article-content">
-            <p><strong>Lima, Peru (CNN)</strong> — Peruvian President Antauro Humala declared war on Bolivia Saturday morning, claiming without evidence that "Bolivian terrorists" attacked a military installation near the border. Within hours, over 200,000 Peruvian troops equipped through mandatory conscription crossed into Bolivian territory, according to state media.</p>
-
-            <div class="highlight">
-                <strong>Key developments:</strong>
-                <ul>
-                    <li>200,000+ Peruvian troops cross Bolivian border</li>
-                    <li>Border gates destroyed in military assault</li>
-                    <li>International community calls for immediate ceasefire</li>
-                    <li>Bolivia denies involvement in alleged attack</li>
-                    <li>UN Security Council emergency session scheduled</li>
-                </ul>
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/HistoryRepeats1973</strong> • <span class="award">🥇</span><span class="award">🥈</span> • 2 hours ago
             </div>
-        </div>
-
-        <div class="live-updates">
-            <div class="live-update">
-                <div class="update-time"><span class="live-indicator"></span>11:23 AM ET</div>
-                <div class="update-content">
-                    <strong>BREAKING:</strong> Peruvian state television reports military forces have advanced 15 miles into Bolivian territory. Heavy fighting reported near the city of La Quiaca. Bolivian President Arce calls for "all Bolivians to resist the invader."
+            <div class="comment-content">
+                Holy shit. I was in the Peace Corps in Bolivia until last month. The military there was always... underfunded, but I never thought it would collapse this fast. Those poor people. The Peruvians aren't taking prisoners.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
+            
+            <div class="comment-reply">
+                <div class="comment-meta">
+                    <strong>u/PeruAnalyst</strong> • 1 hour ago
                 </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time"><span class="live-indicator"></span>11:15 AM ET</div>
-                <div class="update-content">
-                    <strong>Human Rights Watch condemns invasion:</strong> "This appears to be a manufactured pretext for territorial expansion. The international community must act immediately to prevent further bloodshed."
+                <div class="comment-content">
+                    Former Peace Corps here too - the writing was on the wall. Humala's been purging the military for months and building up massive conscript forces. Bolivian military was basically running on 1970s equipment and unpaid salaries.
                 </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time"><span class="live-indicator"></span>11:02 AM ET</div>
-                <div class="update-content">
-                    <strong>Full transcript of Humala's speech:</strong> "The scummery of this fake nation of Bolivia has attacked our sovereignty. We have no choice but to remove this artificial state from existence. The restoration of our rightful territories begins NOW!"
-                </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time"><span class="live-indicator"></span>10:47 AM ET</div>
-                <div class="update-content">
-                    <strong>BREAKING:</strong> Video emerges showing Peruvian forces destroying the Desaguadero border crossing. The bridge, which connects Peru and Bolivia across Lake Titicaca, has been completely demolished.
-                </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time">10:30 AM ET</div>
-                <div class="update-content">
-                    <strong>Military buildup confirmed:</strong> Satellite imagery shows Peruvian military columns stretching for miles along the border. Analysts estimate the force includes tanks, artillery, and infantry units mobilized through Humala's mandatory conscription program.
-                </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time">10:15 AM ET</div>
-                <div class="update-content">
-                    <strong>Alleged attack details:</strong> Humala claims "Bolivian terrorists" attacked a Peruvian military base at 4:30 AM local time, killing 12 soldiers. No evidence provided. Bolivian government denies involvement, calling the claims "a blatant lie to justify invasion."
-                </div>
-            </div>
-
-            <div class="live-update">
-                <div class="update-time">9:52 AM ET</div>
-                <div class="update-content">
-                    <strong>War declaration:</strong> President Antauro Humala announces "special military operation" to "denazify and demilitarize Bolivia." Speech lasts 4 minutes, provides no evidence of Bolivian attack.
+                <div class="comment-actions">
+                    <span>Reply • Share • Report • Save</span>
                 </div>
             </div>
         </div>
 
-        <div class="article-content">
-            <p>This is a developing story. CNN will continue to provide live updates as the situation unfolds.</p>
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/GeopoliticsPhD</strong> • <span class="flair">Expert</span> • 2 hours ago
+            </div>
+            <div class="comment-content">
+                This isn't just a military victory - it's ethnic cleansing. Humala's "only copper-skinned shall rule" rhetoric isn't just rhetoric anymore. The reports coming out of La Paz about systematic targeting of lighter-skinned Bolivians is horrifying. The international community failed Bolivia completely.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
+            
+            <div class="comment-reply">
+                <div class="comment-meta">
+                    <strong>u/BrazilianObserver</strong> • 1 hour ago
+                </div>
+                <div class="comment-content">
+                    Brazil is going to have to deal with the refugee crisis now. We're already seeing thousands crossing the border. This is going to destabilize the entire region. Obrador's "America First" policy means we're on our own here.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply • Share • Report • Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/LaPazSurvivor</strong> • <span class="award">🥇</span> • 1 hour ago
+            </div>
+            <div class="comment-content">
+                I'm hiding in my apartment in Sopocachi. The gunfire stopped about 30 minutes ago. I can see Peruvian soldiers in the street. They're dragging people out of buildings. My neighbor tried to run - they shot him in the back. This is not an invasion, it's extermination. I don't think I'm getting out of this.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
+            
+            <div class="comment-reply">
+                <div class="comment-meta">
+                    <strong>u/GetToSafetyNow</strong> • 45 minutes ago
+                </div>
+                <div class="comment-content">
+                    GET OUT. Go to the Chilean embassy if it's still standing. The Peruvians are executing anyone with government connections. Don't wait. Don't pack. Just go.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply • Share • Report • Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/AnonymousIntel</strong> • 1 hour ago
+            </div>
+            <div class="comment-content">
+                Former US intelligence here. We knew this was coming. Satellite imagery showed the buildup weeks ago. The "terrorist attack" was clearly staged - no actual evidence, just Humala's word. But with the US focused on the Mexican border and Europe dealing with their own issues, nobody wanted to get involved. Classic great power politics - small countries get sacrificed.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/ChileanBorderGuard</strong> • 30 minutes ago
+            </div>
+            <div class="comment-content">
+                Chilean border is overwhelmed. We're seeing Bolivian refugees arriving with nothing but the clothes on their back. The stories they're telling... mass executions, people being shot in the streets, entire families disappearing. This isn't war, it's genocide. And we're just watching it happen.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-meta">
+                <strong>u/ArgentineHistorian</strong> • 25 minutes ago
+            </div>
+            <div class="comment-content">
+                History will not be kind to the international community's response to this. This is Rwanda 1994 all over again, but with modern weapons and social media. We can watch it happen in real time and still do nothing. The UN Security Council has been "discussing" this for 6 hours. Fucking useless.
+            </div>
+            <div class="comment-actions">
+                <span>Reply • Share • Report • Save</span>
+            </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
