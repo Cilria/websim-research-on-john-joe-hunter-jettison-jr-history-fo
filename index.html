@@ -3,280 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peru coup leader Antauro Humala launches 'Night of Blood' purge | r/news</title>
+    <title>Night of Blood purge in Peru</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f6f7f8;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            color: #1c1c1c;
         }
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 8px 16px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
         }
-        .reddit-logo {
-            width: 32px;
-            height: 32px;
+        .header {
             background-color: #ff4500;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
             color: white;
             font-weight: bold;
-            font-size: 20px;
         }
-        .subreddit-name {
-            font-size: 18px;
-            font-weight: 700;
-            color: #d7dadc;
+        .header p {
+            margin: 4px 0;
+            color: #f5f5f5;
+            font-size: 14px;
         }
         .post-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-top: 16px;
+            padding: 16px;
+            border-bottom: 1px solid #e0e0e0;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            padding: 12px;
-            border-bottom: 1px solid #343536;
+        .post {
+            margin-bottom: 16px;
         }
         .post-title {
             font-size: 20px;
             font-weight: 500;
-            margin: 0;
-            color: #d7dadc;
-            line-height: 1.4;
+            margin-bottom: 8px;
+            color: #1a1a1b;
         }
         .post-meta {
             font-size: 12px;
-            color: #818384;
-            margin-top: 8px;
+            color: #7c7c7c;
+            margin-bottom: 12px;
         }
         .post-content {
-            padding: 12px;
-            color: #d7dadc;
             font-size: 14px;
             line-height: 1.5;
+            margin-bottom: 12px;
         }
-        .comments-section {
-            padding: 0 12px;
+        .post-flair {
+            background-color: #e9f5fd;
+            color: #006ba1;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .comments {
+            padding: 0 16px;
         }
         .comment {
-            margin: 12px 0;
-            border-left: 2px solid #343536;
+            margin-bottom: 16px;
             padding-left: 8px;
+            border-left: 2px solid #e0e0e0;
         }
-        .comment-header {
+        .comment-meta {
             font-size: 12px;
-            color: #818384;
+            color: #7c7c7c;
             margin-bottom: 4px;
         }
         .comment-author {
-            color: #d7dadc;
             font-weight: 500;
+            color: #006ba1;
         }
-        .comment-body {
+        .comment-content {
             font-size: 14px;
-            color: #d7dadc;
             line-height: 1.5;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
         .comment-actions {
             font-size: 12px;
-            color: #818384;
+            color: #7c7c7c;
+        }
+        .comment-actions span {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .comment-actions span:hover {
+            text-decoration: underline;
         }
         .vote-buttons {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
+            float: left;
+            margin-right: 8px;
+            text-align: center;
+            width: 40px;
         }
-        .upvote {
-            color: #ff4500;
+        .vote-buttons button {
+            background: none;
+            border: none;
             cursor: pointer;
+            font-size: 16px;
         }
-        .downvote {
-            color: #7193ff;
-            cursor: pointer;
-        }
-        .reply {
-            margin-left: 20px;
+        .score {
             font-size: 12px;
-            color: #818384;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
+            font-weight: bold;
+            margin: 4px 0;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="reddit-logo">r</div>
-        <div class="subreddit-name">r/news</div>
-    </div>
-
-    <div class="post-container">
-        <div class="post-header">
-            <h1 class="post-title">Peru's new dictator Antauro Humala just executed 400+ military officers and police in a single night</h1>
-            <div class="post-meta">
-                posted by u/throwawayperu2026 • 8 hours ago • 15.7k upvotes
+    <div class="container">
+        <div class="header">
+            <h1>r/news</h1>
+            <p>The place for news articles about current events</p>
+        </div>
+        
+        <div class="post-container">
+            <div class="vote-buttons">
+                <button>▲</button>
+                <div class="score">42.8k</div>
+                <button>▼</button>
+            </div>
+            
+            <div class="post">
+                <span class="post-flair">International</span>
+                <h2 class="post-title">Peru's Humala just pulled a full Night of the Long Knives - 436+ military officers executed overnight</h2>
+                <div class="post-meta">
+                    posted by u/peru_watcher247 • 8 hours ago • 42.8k upvotes • 8.9k comments
+                </div>
+                <div class="post-content">
+                    BBC reporting that Antauro Humala ordered mass executions of military officers, police, and civil servants in what's being called the "Night of Blood." State TV confirmed 436+ deaths since Wednesday night. All remaining independent media shut down, secret police units established. This is fucking insane.
+                </div>
             </div>
         </div>
-
-        <div class="post-content">
-            <p>Just when you thought 2026 couldn't get any more fucked up...</p>
-            <p>Antauro Humala's goons just dragged hundreds of military and police officers out of their beds last night and executed them. State TV confirmed 436 dead so far. They literally called it "Night of Blood."</p>
-            <p>He's replaced them all with his loyal ethnocacerist thugs and set up secret police units. All independent media is shut down. We're watching Peru turn into a full blown dictatorship in real time.</p>
-        </div>
-
-        <div class="comments-section">
+        
+        <div class="comments">
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/PeruvianDude</span> • 7 hours ago • 2.3k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/throwawaypolitics99</span> • 7 hours ago
                 </div>
-                <div class="comment-body">
-                    Holy fucking shit. I'm from Lima and this is actually happening. I can hear gunfire from my apartment right now. This isn't some "far away dictator" thing - this is my fucking country burning.
+                <div class="comment-content">
+                    Holy fucking shit. I studied abroad in Lima back in 2019 and this is just... fuck man. My host family's been texting me that they can hear gunfire from the military bases. This is straight up 1930s Germany type shit.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>2.3k</span> <span class="downvote">↓</span> • <span>Reply</span>
-                </div>
-                <div class="reply">
-                    <div class="comment">
-                        <div class="comment-header">
-                            <span class="comment-author">u/AmericanObserver</span> • 6 hours ago • 456 upvotes
-                        </div>
-                        <div class="comment-body">
-                            Stay safe bro. This is fucking insane to watch from the outside. Can't even imagine what you're going through.
-                        </div>
-                    </div>
+                    <span>↑ 2.3k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/HistoryNerd1984</span> • 7 hours ago • 1.8k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/HistoryBuff420</span> • 7 hours ago
                 </div>
-                <div class="comment-body">
-                    Remember when everyone was like "oh it's just another Latin American coup, they'll have elections soon"? Yeah, about that...
+                <div class="comment-content">
+                    Can we PLEASE stop calling everything "literally Hitler"? This motherfucker IS literally doing the Night of the Long Knives. Like, textbook definition. 436 people executed in one night to consolidate power. That's not hyperbole, that's exactly what fucking happened in 1934 Germany.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>1.8k</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 1.8k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/SouthAmericanExpert</span> • 6 hours ago • 892 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/SouthAmericanExpert</span> • 6 hours ago
                 </div>
-                <div class="comment-body">
-                    I'm a political scientist who studies the region. This is textbook consolidation of power. He's eliminating anyone who could potentially stage a counter-coup. The "Incan restoration" rhetoric is just fascist ethnonationalism with indigenous branding. Fucking terrifying.
+                <div class="comment-content">
+                    For those who haven't been following Peruvian politics - Humala's been telegraphing this for months. The whole "Incan restoration" rhetoric, banning opposition parties, declaring himself president for life. We all saw this coming and nobody did shit. The international community is going to have so much blood on their hands.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>892</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 945</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/CIA_Shill</span> • 6 hours ago • 2.1k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/PotentialAd4982</span> • 6 hours ago
                 </div>
-                <div class="comment-body">
-                    CIA's gonna have a fucking field day with this one. Place your bets on how long before we see "freedom fighters" popping up with suspiciously new American weapons.
+                <div class="comment-content">
+                    My cousin's in the Peruvian navy. Haven't heard from him since Tuesday. Fuck.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>2.1k</span> <span class="downvote">↓</span> • <span>Reply</span>
-                </div>
-                <div class="reply">
-                    <div class="comment">
-                        <div class="comment-header">
-                            <span class="comment-author">u/Realist2026</span> • 5 hours ago • 334 upvotes
-                        </div>
-                        <div class="comment-body">
-                            Lmao you think the CIA gives a shit about Peru? They're too busy with Russia/China. This one's gonna be left to rot.
-                        </div>
-                    </div>
+                    <span>↑ 3.1k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/BrazilianPerspective</span> • 5 hours ago • 567 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/ActualHistorian</span> • 5 hours ago
                 </div>
-                <div class="comment-body">
-                    As someone from Brazil who's seen this shit before - once they start purging the military, it's over. Game fucking over. These guys don't just stop at 400 bodies.
+                <div class="comment-content">
+                    The speed of this is what's terrifying. Less than a month from coup to full dictatorship. Usually there's at least some pretense - fake elections, show trials, gradual erosion of rights. This motherfucker went from "I promise to respect democracy" to "kill everyone who opposes me" in like 3 weeks.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>567</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 1.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/ArmchairGeneral</span> • 4 hours ago • 1.2k upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/GunNut72</span> • 5 hours ago
                 </div>
-                <div class="comment-body">
-                    The scary part? This is just the beginning. When dictators consolidate power this violently, it rarely ends quickly. Argentina's dirty war, Pinochet's Chile, Venezuela's spiral - we're looking at decades of this shit.
+                <div class="comment-content">
+                  And this is why the 2A exists. When the government starts rounding up citizens and military officers for execution, you need to be able to fight back. Those poor bastards probably didn't even get a chance to defend themselves.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>1.2k</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 567</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/Edgelord420</span> • 4 hours ago • -89 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/PeruvianInUSA</span> • 4 hours ago
                 </div>
-                <div class="comment-body">
-                    I mean... at least he's efficient? Most coups take months to consolidate power, this dude did it in like a week lmao
+                <div class="comment-content">
+                    I'm literally shaking right now. My parents are still in Lima and I can't reach them. Last message I got was at 2 AM their time saying soldiers were in the streets. What the fuck do I do?
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>-89</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 2.7k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/GenZPolitics</span> • 3 hours ago • 789 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/WorldNewsJunkie</span> • 4 hours ago
                 </div>
-                <div class="comment-body">
-                    My parents immigrated from Peru 20 years ago. They fled Fujimori's dictatorship. Now this shit is happening again. Fuck this timeline.
+                <div class="comment-content">
+                    Anyone else notice how this is getting barely any coverage on major networks? Like CNN mentioned it once and went back to fucking celebrity news. 436+ people executed and it's not the top story everywhere? What the actual fuck is wrong with media priorities?
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>789</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 4.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/[deleted]</span> • 2 hours ago • 234 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/InternationalLawGuy</span> • 3 hours ago
                 </div>
-                <div class="comment-body">
-                    [removed]
+                <div class="comment-content">
+                  This is literally the definition of crimes against humanity. The International Criminal Court needs to move fast. Problem is, Humala's probably counting on the fact that by the time any international response happens, he'll have complete control and it'll be too late for anyone to do shit.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>234</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 892</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
-
+            
             <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/WorldNewsJunkie</span> • 1 hour ago • 445 upvotes
+                <div class="comment-meta">
+                    <span class="comment-author">u/TinfoilHatWearer</span> • 3 hours ago
                 </div>
-                <div class="comment-body">
-                    The international response has been pathetic. UN issued a "strongly worded statement" while 400+ people were executed. Fucking useless organization.
+                <div class="comment-content">
+                  Anyone else think it's weird how quiet the US government is being about this? Like, usually we'd at least have some strongly worded statement by now. The silence is fucking deafening.
                 </div>
                 <div class="comment-actions">
-                    <span class="upvote">↑</span> <span>445</span> <span class="downvote">↓</span> • <span>Reply</span>
+                    <span>↑ 1.5k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                 </div>
             </div>
         </div>
