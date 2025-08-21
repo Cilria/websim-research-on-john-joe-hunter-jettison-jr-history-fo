@@ -3,150 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE: Latin Axis launches full-scale invasion of Argentina | CNN</title>
+    <title>Paraguay takes Formosa, Peru captures Salta as Latin Axis forces break through into Chaco province | r/military</title>
     <style>
         body {
-            font-family: CNN, "CNN Sans Display", CNN Sans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+            font-family: 'Noto Sans', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
-            color: #262626;
+            line-height: 1.4;
         }
         .header {
-            background: linear-gradient(to right, #cc0000, #a30000);
-            color: white;
-            padding: 12px 0;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-        }
-        .headline {
-            font-size: 36px;
-            font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 16px;
-            color: #262626;
-        }
-        .subheadline {
-            font-size: 20px;
-            color: #5a5a5a;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
-        .byline {
-            color: #5a5a5a;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #e5e5e5;
-            padding-bottom: 16px;
-        }
-        .article-content {
-            font-size: 18px;
-            line-height: 1.8;
-            max-width: 800px;
-        }
-        .article-content p {
-            margin-bottom: 20px;
-        }
-        .timestamp {
-            font-size: 14px;
-            color: #5a5a5a;
-            font-style: italic;
-        }
-        .highlight {
-            background-color: #fff3cd;
+            background-color: #1a1a1b;
+            border-bottom: 1px solid #343536;
             padding: 16px;
-            border-left: 4px solid #cc0000;
-            margin: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .quote {
-            font-style: italic;
-            font-size: 20px;
-            border-left: 3px solid #cc0000;
-            padding-left: 16px;
-            margin: 20px 0;
-            color: #262626;
+        .subreddit-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d7dadc;
         }
-        .live-badge {
-            background-color: #cc0000;
-            color: white;
-            padding: 4px 8px;
-            font-size: 12px;
-            font-weight: bold;
+        .thread-container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        .post {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
             border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            background-color: #272729;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+            color: #d7dadc;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+            margin: 8px 0;
+        }
+        .post-content {
+            padding: 16px;
+        }
+        .post-content p {
+            margin: 12px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .upvote {
+            color: #ff4500;
+            font-size: 12px;
             margin-right: 8px;
         }
-        .update-timestamp {
+        .comment-section {
+            margin-top: 16px;
+            border-top: 1px solid #343536;
+        }
+        .comment {
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            margin-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-meta {
             font-size: 12px;
-            color: #5a5a5a;
-            margin-bottom: 10px;
+            color: #818384;
+            margin-bottom: 4px;
+        }
+        .comment-text {
+            font-size: 14px;
+            margin: 0;
+        }
+        .flair {
+            background-color: #ff4500;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .update {
+            background-color: #1e3a5f;
+            border-left: 3px solid #4a90e2;
+            padding: 12px;
+            margin: 16px 0;
+        }
+        .breaking {
+            background-color: #5a1a1a;
+            border-left: 3px solid #ff4500;
+            padding: 12px;
+            margin: 16px 0;
         }
     </style>
 </head>
 <body>
-    <div class="header">CNN</div>
-    <div class="breaking-banner">BREAKING NEWS • LIVE UPDATES</div>
-    
-    <div class="container">
-        <h1 class="headline"><span class="live-badge">LIVE</span>Latin Axis launches full-scale invasion of Argentina</h1>
-        <div class="subheadline">Peru and Paraguay declare war as artillery barrages begin at 6:30 AM along Argentine border</div>
-        
-        <div class="byline">
-            By CNN Staff<br>
-            <span class="timestamp">Updated 7:45 AM ET, Thu May 6, 2027</span>
+    <div class="header">
+        <div class="subreddit-name">r/military</div>
+    </div>
+
+    <div class="thread-container">
+        <div class="post">
+            <div class="post-header">
+                <h1 class="post-title">
+                    <span class="flair">BREAKING</span>
+                    Paraguay takes Formosa, Peru captures Salta as Latin Axis forces break through into Chaco province
+                </h1>
+                <div class="post-meta">
+                    Posted by u/WarMonitor2027 8 hours ago • LIVE UPDATES
+                </div>
+            </div>
+            <div class="post-content">
+                <div class="breaking">
+                    <strong>MAY 7TH, 2027 - 14:30 UTC</strong>: Latin Axis forces have scored major victories today as Paraguayan forces captured Formosa city while Peruvian troops took Salta after intense fighting. Both forces are now staging deeper incursions into Chaco province.
+                </div>
+                
+                <p><strong>Formosa (BURST) - CONFIRMED</strong>: Paraguayan troops entered the city center at approximately 11:00 local time. State governor fled south. City's main infrastructure still standing, unlike the total destruction we've seen elsewhere.</p>
+                
+                <p><strong>Salta (BURST) - CONFIRMED</strong>: Peruvian forces entered the city after 4 hours of heavy fighting. Reports are filtering in of systematic executions of local officials who resisted. This makes it the third provincial capital to fall in 24 hours.</p>
+                
+                <div class="update">
+                    <strong>Chaco Offensive:</strong> Both forces are now converging on Chaco province from opposite directions. The pincer movement looks like it's working better than anyone in the Argentine military expected.
+                </div>
+
+                <p>Watching the map, this is starting to look like a brutal siege of Argentina itself. With Formosa and Salta down, the border with Paraguay is essentially gone. Bolivian-Peruvian corridor is now fully militarized.</p>
+
+                <p>Peruvian forces are using the "death squad" units liberally in captured territories. This isn't regular warfare anymore - they're going full scorched earth on anything that resists.</p>
+            </div>
         </div>
 
-        <div class="article-content">
-            <p><strong>BORDER REGION, ARGENTINA (CNN)</strong> — The Latin Axis alliance officially declared war on Argentina at 6:30 AM local time Thursday, launching a massive coordinated assault across multiple border regions as Peru and Paraguay simultaneously announced their joint military campaign.</p>
-
-            <div class="update-timestamp"><strong>7:42 AM ET:</strong> Heavy artillery shelling reported along Argentine-Bolivian border</div>
-
-            <p>Initial reports indicate sustained artillery barrages targeting Argentine military installations along the Jujuy and Salta provinces, with Peruvian forces crossing from occupied Bolivia and Paraguayan troops advancing from the northeast. The assault began precisely at 6:30 AM local time - the exact moment when Humala's ultimatum expired.</p>
-
-            <div class="highlight">
-                <strong>LATEST DEVELOPMENTS:</strong>
-                <ul>
-                    <li><strong>6:30 AM local:</strong> First artillery strikes reported</li>
-                    <li><strong>6:45 AM:</strong> Peru and Paraguay formally declare war</li>
-                    <li><strong>7:00 AM:</strong> Argentine military confirms multiple border incursions</li>
-                    <li><strong>7:30 AM:</strong> Civil defense sirens active in Jujuy, Salta provinces</li>
-                </ul>
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑73</span> u/MilitaryAnalyst420 <strong>7 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    This is insane. Formosa fell in like 6 hours. The Argentine military is just... crumbling. Nobody expected this rapid collapse.
+                </div>
             </div>
 
-            <div class="quote">
-                "The Latin Axis has initiated Operation Incan Restoration. Argentina's refusal to peacefully cede indigenous territories has left us no choice."
-                <br><em>— Official Latin Axis statement, 6:45 AM</em>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑114</span> u/SouthAmericanTruth <strong>7 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    Salta's fall is scaring the absolute shit out of Buenos Aires right now. That puts them 600km from the capital and there's basically nothing but flat gaucho country between here and there. 😬
+                </div>
             </div>
 
-            <p>Argentine President María Elena Fernández addressed the nation at 7:15 AM, confirming that Argentine forces are "actively engaged in repelling foreign invaders" and calling for national unity. "Argentina is under attack. We will defend every inch of our homeland," Fernández declared in an emergency broadcast.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑89</span> u/CombatFootageGuy <strong>6 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    Guys, the videos coming out of Salta are fucking horrifying. Humala's death squads just lined up the municipal government against the wall. This is ethnic cleansing with 21st century weapons.
+                </div>
+            </div>
 
-            <p>Witnesses in the border city of La Quiaca report seeing columns of Peruvian armored vehicles crossing from Bolivian territory, while heavy fighting is reported near the Paraguayan border town of Clorinda. Argentine military sources confirm "multiple simultaneous incursions" across a 400-mile front.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑156</span> u/ArmchairGeneral <strong>6 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    The amount of shit the Argentina military is getting on social media is fucking wild. "Our grandfathers fought Nazis and these idiots can't stop some rural fascists" is trending nationwide lmao
+                </div>
+            </div>
 
-            <p>The United Nations Security Council has scheduled an emergency session for 9:00 AM ET, while the United States has condemned the invasion as "a flagrant violation of international law and Argentine sovereignty."</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑94</span> u/GlobalSecurityWatch <strong>5 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    Brazil better wake the fuck up. Uruguay and Chile mobilized their militaries yesterday. This isn't stopping at Argentina. Humala literally said they're going to "restore the Incan Empire to its full glory"
+                </div>
+            </div>
 
-            <p>This is a developing story. More updates to follow...</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑67</span> u/TankPornEnthusiast <strong>5 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    Peruvian T-90s are just rolling through those towns like they're not even defended. Argentina's military budget was a fucking joke for decades and now they're paying for it.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑82</span> u/HistoryBuff1984 <strong>4 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    This is what happens when you spend 40 years gutting your military to pay for social programs. Argentina went from having one of the strongest armies in the southern hemisphere to this shitshow.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑51</span> u/ChileanObserver <strong>4 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    Chilean military is on full alert right now. We're not letting these fuckers anywhere near our borders. Already moving armor north.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑78</span> u/GeopoliticsJunkie <strong>3 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    The speed of this is what's really terrifying. Formosa fell faster than fucking France in 1940. At this rate Buenos Aires could be under siege within a week.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="upvote">↑104</span> u/ActualVeteran <strong>3 hours ago</strong>
+                </div>
+                <div class="comment-text">
+                    I'm a US Army vet and this shit is giving me flashbacks to Iraq 2003. These aren't irregulars - these are well-equipped, well-trained forces with modern weapons. The Argentine conscripts are getting fucking slaughtered out there.
+                </div>
+            </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
