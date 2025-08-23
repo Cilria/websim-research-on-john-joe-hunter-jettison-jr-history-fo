@@ -1,261 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank John Hood Sr - r/RochesterTechHistory</title>
-    <style>
-        body {
-            font-family: 'Noto Sans', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
-            margin: 0;
-            padding: 0;
-            line-height: 1.4;
-        }
-        .header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 16px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .subreddit-name {
-            font-size: 28px;
-            font-weight: 700;
-            color: #d7dadc;
-        }
-        .thread-container {
-            max-width: 740px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-bottom: 16px;
-        }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            background-color: #272729;
-        }
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0;
-            color: #d7dadc;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            margin: 8px 0;
-        }
-        .post-content {
-            padding: 16px;
-        }
-        .post-content p {
-            margin: 12px 0;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        .upvote {
-            color: #ff4500;
-            font-size: 12px;
-            margin-right: 8px;
-        }
-        .comment-section {
-            margin-top: 16px;
-            border-top: 1px solid #343536;
-        }
-        .comment {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            margin-left: 8px;
-            border-left: 1px solid #343536;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 4px;
-        }
-        .comment-text {
-            font-size: 14px;
-            margin: 0;
-        }
-        .flair {
-            background-color: #0079d3;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 2px;
-            font-size: 12px;
-            font-weight: 500;
-            display: inline-block;
-            margin-right: 8px;
-        }
-        .infobox {
-            background-color: #272729;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 16px;
-            margin: 16px 0;
-            font-size: 13px;
-        }
-        .infobox h3 {
-            margin-top: 0;
-            color: #d7dadc;
-            font-size: 16px;
-        }
-        .infobox table {
-            width: 100%;
-            font-size: 13px;
-        }
-        .infobox td {
-            padding: 4px 0;
-            color: #d7dadc;
-        }
-        .infobox td:first-child {
-            color: #818384;
-            width: 40%;
-        }
-        blockquote {
-            border-left: 3px solid #ff4500;
-            padding-left: 12px;
-            margin: 16px 0;
-            color: #d7dadc;
-            font-style: italic;
-        }
-        .timeline {
-            background-color: #1e1e1f;
-            border-left: 3px solid #0079d3;
-            padding: 12px;
-            margin: 16px 0;
-        }
-    </style>
+<title>Rubidium (web browser) - Wikipedia</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #202122;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1.5em;
+    position: relative;
+}
+.mw-body {
+    background-color: #ffffff;
+    color: #202122;
+    direction: ltr;
+    padding: 1em;
+}
+.infobox {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    width: 22em;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+.infobox th {
+    background-color: #eaecf0;
+    text-align: left;
+    padding: 0.2em 0.4em;
+}
+.infobox td {
+    padding: 0.2em 0.4em 0.2em 0.4em;
+}
+.firstHeading {
+    font-size: 28px;
+    margin-bottom: 0.1em;
+    line-height: 1.3;
+    border-bottom: 1px solid #a2a9b1;
+}
+.mw-parser-output {
+    overflow-wrap: break-word;
+}
+h2 {
+    font-size: 20px;
+    margin: 1em 0 0.25em 0;
+    border-bottom: 1px solid #a2a9b1;
+}
+h3 {
+    font-size: 16px;
+    margin: 0.3em 0 0 0;
+    font-weight: bold;
+}
+ul {
+    list-style-type: disc;
+    margin: 0.3em 0 0 1.6em;
+    padding: 0;
+}
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <div class="subreddit-name">r/RochesterTechHistory</div>
-    </div>
-
-    <div class="thread-container">
-        <div class="post">
-            <div class="post-header">
-                <h1 class="post-title">
-                    <span class="flair">Co-founder Series</span>
-                    Rochester Enterprises - The Iron Operating System that refused to die: How "Iron Operating System" became IronOS and outlived every rival except time itself
-                </h1>
-                <div class="post-meta">
-                    Posted by u/RochesterTechHistorian 3 hours ago • Original Co-founder
-                </div>
-            </div>
-            <div class="post-content">
-                <p>Rochester Enterprises (1936-2023) was the last major enterprise-only tech company that never made consumer products. Founded by Frank John Hood Sr. and William Mahone Jacobs, their Iron Operating System (originally "Iron Operating System") was designed exclusively for business and enterprise use - no consumer versions ever existed.</p>
-
-                <h3>The Enterprise-Only Philosophy</h3>
-                <p>Unlike IBM and DEC who eventually created consumer versions, Rochester doubled down on enterprise exclusivity. Iron Operating System was initially command-line only (1978-1984) before introducing a proprietary GUI in 1984. The company slogan was literally "Not for consumers - ever."</p>
-
-                <div class="timeline">
-                    <strong>Iron Operating System Evolution:</strong><br>
-                    <strong>1978:</strong> Iron Operating System 1.0 - Command line only, enterprise servers only<br>
-                    <strong>1984:</strong> Iron Operating System 2.0 - GUI introduced, still enterprise exclusive<br>
-                    <strong>1988:</strong> Rebranded to "IronOS" - dropped "Operating System" for brevity<br>
-                    <strong>1995:</strong> Final version IronOS 4.7 - Still no consumer version ever released
-                </div>
-
-                <h3>The Rivalry That Defined Enterprise Computing</h3>
-                <p>Rochester positioned IronOS as the anti-IBM system - while IBM courted consumers, Rochester focused entirely on mainframe and minicomputer users. Their advertising mocked IBM's consumer efforts: "While IBM sells to your grandmother, we sell to Fortune 500 CEOs."</p>
-
-                <p>The rivalry was brutal. IBM's MVS and DEC's VMS were IronOS's primary targets. Rochester's marketing emphasized that IronOS was "built by enterprise engineers for enterprise problems" - a direct dig at IBM's attempts to be everything to everyone.</p>
-
-                <h3>The Command Line Years (1978-1984)</h3>
-                <p>Iron Operating System's command-line interface was notoriously difficult - intentionally so. Rochester believed that if you couldn't handle the command line, you didn't belong in enterprise computing. The joke among sysadmins was that IronOS was "user-hostile and proud of it."</p>
-
-                <blockquote>
-                    "The beauty of IronOS is that it assumes you're not an idiot. Unlike IBM's systems that treat you like a child, IronOS treats you like a competent professional who knows what they're doing. If you can't handle that, go use a Mac."
-                    <br><em>- Frank John Hood Sr., 1982 interview</em>
-                </blockquote>
-
-                <h3>The GUI Transition That Never Compromised</h3>
-                <p>When IronOS finally got a GUI in 1984, Rochester refused to dumb it down. The graphical interface was designed for system administrators, not end users. Every dialog box assumed you understood enterprise computing concepts - no consumer-friendly metaphors, no simplified language.</p>
-
-                <p>This approach actually worked in the enterprise market. Fortune 500 companies loved that IronOS didn't waste resources on consumer features. While IBM was adding games and multimedia capabilities, Rochester was adding enterprise storage management and advanced networking.</p>
-
-                <h3>The Rebranding That Changed Nothing</h3>
-                <p>The 1988 rebranding from "Iron Operating System" to "IronOS" was purely marketing - the system remained enterprise-exclusive. Rochester's marketing department claimed the shorter name "reflected the system's maturity" - critics said it was just easier to fit on promotional materials.</p>
-
-                <div class="infobox">
-                    <h3>Rochester Enterprises vs The World</h3>
-                    <table>
-                        <tr><td>Founded:</td><td>1936 - Enterprise computing only</td></tr>
-                        <tr><td>Iron Operating System:</td><td>1978-1988 - Never consumer</td></tr>
-                        <tr><td>IronOS:</td><td>1988-2023 - Still never consumer</td></tr>
-                        <tr><td>Philosophy:</td><td>"If consumers want it, we failed"</td></tr>
-                        <tr><td>Final Version:</td><td>IronOS 4.7 (1995) - Enterprise forever</td></tr>
-                    </table>
-                </div>
-
-                <h3>The Legacy of Never Compromising</h3>
-                <p>Rochester Enterprises never wavered from their enterprise-only stance. While IBM made consumer versions of everything, Rochester doubled down on business computing. IronOS became legendary for its stability and security specifically because it never had to support consumer use cases.</p>
-
-                <p>The company's final act of defiance came in 2023 when they open-sourced IronOS - but only for enterprise use. The license explicitly prohibited consumer use, with the last line reading: "Some things should never be democratized."</p>
-
-                <p>Rochester Enterprises proved that you could build a successful tech company by ignoring consumers entirely. IronOS wasn't just an operating system - it was a statement that some technologies were too important for consumer use. In an age of mass market everything, Rochester chose to be elite, exclusive, and enterprise-only until the very end.</p>
-            </div>
+<div id="content">
+    <div class="mw-body">
+        <h1 class="firstHeading">Rubidium (web browser)</h1>
+        
+        <div class="infobox">
+            <table>
+                <tr><th colspan="2" style="text-align:center; background-color:#eaecf0;">Rubidium</th></tr>
+                <tr><td colspan="2" style="text-align:center;">Rubidium 1.0 running on Windows 98</td></tr>
+                <tr><th>Developer</th><td>Rubidium Software S.A.</td></tr>
+                <tr><th>Initial release</th><td>June 15, 1999</td></tr>
+                <tr><th>Stable release</th><td>3.2.1 / March 12, 2003</td></tr>
+                <tr><th>Operating system</th><td>Windows 98, ME, 2000, XP</td></tr>
+                <tr><th>Platform</th><td>IA-32</td></tr>
+                <tr><th>Available in</th><td>English, French, German, Spanish, Japanese</td></tr>
+                <tr><th>Type</th><td>Web browser</td></tr>
+                <tr><th>License</th><td>Proprietary</td></tr>
+                <tr><th>Website</th><td>www.rubidium-pro.com (defunct)</td></tr>
+            </table>
         </div>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="upvote">↑245</span> u/VMSVeteran <strong>2 hours ago</strong>
-                </div>
-                <div class="comment-text">
-                    I worked on VMS at DEC and we used to joke that IronOS was "VMS for people who hated users." The command line was brutal but goddamn was it stable. Rochester never compromised on enterprise features.
-                </div>
-            </div>
+        <p><b>Rubidium</b> was a proprietary web browser developed by <b>Rubidium Software S.A.</b>, a French software company based in Lyon. First released in 1999, Rubidium was marketed as "the fastest and most powerful web browser" of its era, targeting professional users and power users on Windows 98 and later Microsoft Windows operating systems.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="upvote">↑189</span> u/BigIronAdmin <strong>2 hours ago</strong>
-                </div>
-                <div class="comment-text">
-                    Former IronOS admin here. The GUI was like a cruel joke - it looked like a consumer interface but every single dialog required enterprise-level knowledge. "Are you sure you want to modify the kernel semaphore table?" was an actual prompt.
-                </div>
-            </div>
+        <h2>History</h2>
+        <p>Rubidium Software S.A. was founded in 1998 by former INRIA researchers Jean-Paul Mercier and Sophie Laurent. The company initially focused on developing high-performance software for Windows 98, recognizing the emerging need for advanced web browsing capabilities as the internet became mainstream.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="upvote">↑156</span> u/EnterpriseArchaeology <strong>1 hour ago</strong>
-                </div>
-                <div class="comment-text">
-                    Fun fact: Rochester's final IronOS 4.7 release in 1995 still had the original 1978 command line interface as a hidden easter egg. You could literally boot into pure 1978 mode. The company motto was "evolution, not revolution."
-                </div>
-            </div>
+        <p>The browser's development began in late 1998, with the first public beta released in May 1999. The official 1.0 release launched on June 15, 1999, at the Internet World Paris conference. Rubidium gained initial attention for its speed optimizations and advanced features not found in contemporary browsers like Internet Explorer 5.0 and Netscape Navigator 4.5.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="upvote">↑234</span> u/MainframeHistorian <strong>1 hour ago</strong>
-                </div>
-                <div class="comment-text">
-                    Rochester's enterprise-only stance was legendary. When IBM was adding Solitaire to Windows, Rochester was adding advanced storage area network management. When Apple was making computers "for the rest of us," Rochester was making them "for the best of us."
-                </div>
-            </div>
+        <h3>Features and Technology</h3>
+        <p>Rubidium was built using a custom rendering engine called <b>RRender</b>, developed specifically for high-performance HTML parsing and rendering. Key features included:</p>
+        <ul>
+            <li>Tabbed browsing with detachable tabs</li>
+            <li>Built-in download manager with resume capability</li>
+            <li>Advanced JavaScript engine with JIT compilation</li>
+            <li>Integrated development tools including DOM inspector</li>
+            <li>Support for CSS 2.1 and early CSS 3 features</li>
+            <li>Customizable interface with XML-based skinning system</li>
+            <li>Built-in ad blocking and pop-up suppression</li>
+            <li>Encrypted bookmark synchronization</li>
+        </ul>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="upvote">↑178</span> u/CommandLineWarrior <strong>45 minutes ago</strong>
-                </div>
-                <div class="comment-text">
-                    The 2023 open source release was the ultimate troll move. "Here's our code, but if you're not an enterprise, fuck off." Even in death, Rochester never stopped being Rochester.
-                </div>
-            </div>
-        </div>
+        <h3>Reception and Market Performance</h3>
+        <p>Upon release, Rubidium received positive reviews from technology publications. <i>PC Expert</i> magazine praised its "blazing speed" and "innovative features," awarding it 4.5 out of 5 stars. <i>Le Monde Informatique</i> highlighted its "professional-grade tools" and "French engineering excellence."</p>
+
+        <p>Despite strong technical reviews, Rubidium struggled to gain significant market share against Internet Explorer's dominance and the rising popularity of Mozilla Firefox. By 2001, the browser had approximately 2.3 million active users, primarily in France, Germany, and Japan.</p>
+
+        <h3>Later Development and Decline</h3>
+        <p>Version 2.0, released in October 2000, introduced significant performance improvements and support for emerging web standards. However, development slowed as the company faced financial difficulties during the dot-com bust.</p>
+
+        <p>The final major release, version 3.0, launched in September 2002, adding Windows XP compatibility and enhanced security features. Despite these updates, user adoption continued to decline as Internet Explorer 6.0 and Firefox gained market dominance.</p>
+
+        <h2>Legacy</h2>
+        <p>Rubidium Software S.A. ceased operations in March 2003 due to bankruptcy. The browser's website was taken offline in June 2003, and official support ended. Several former Rubidium engineers later contributed to the development of alternative browsers, including early versions of Opera and Safari for Windows.</p>
+
+        <p>Rubidium is remembered among web historians as an innovative browser that introduced several features that would become standard years later, including tabbed browsing, integrated development tools, and built-in ad blocking. The browser's source code was never released, but several enthusiasts have created unofficial archives and compatibility patches for modern Windows systems.</p>
+
+        <h2>See also</h2>
+        <ul>
+            <li><a href="#">Comparison of web browsers (1990s)</a></li>
+            <li><a href="#">History of the World Wide Web</a></li>
+            <li><a href="#">List of discontinued web browsers</a></li>
+        </ul>
+
+        <h2>References</h2>
+        <ol>
+            <li>Mercier, Jean-Paul. "RRender: A New Approach to Web Rendering." <i>Proceedings of WWW5</i>, 1999.</li>
+            <li>Laurent, Sophie. "Professional Web Browsing: The Rubidium Approach." <i>Internet Computing</i>, vol. 3, no. 4, 1999, pp. 45-52.</li>
+            <li>"Browser Wars: The Forgotten Contenders." <i>PC World France</i>, September 2002, pp. 34-37.</li>
+        </ol>
     </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
