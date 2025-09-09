@@ -1,414 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinese netizens openly mocking Russia on social media : worldnews</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            background-color: #0f1419;
-            color: #d7dadc;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #1a1a1b;
-            min-height: 100vh;
-        }
-        
-        .header {
-            background: linear-gradient(to right, #1a1a1b, #272729);
-            padding: 15px 20px;
-            border-bottom: 1px solid #343536;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .subreddit-name {
-            font-size: 20px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 5px;
-        }
-        
-        .subreddit-desc {
-            font-size: 14px;
-            color: #a5a4a4;
-        }
-        
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin: 20px;
-            padding: 16px;
-        }
-        
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        
-        .post-meta {
-            font-size: 12px;
-            color: #a5a4a4;
-            margin-bottom: 12px;
-        }
-        
-        .post-content {
-            font-size: 14px;
-            color: #d7dadc;
-            margin-bottom: 12px;
-            white-space: pre-wrap;
-        }
-        
-        .vote-section {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-        }
-        
-        .vote-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 12px;
-        }
-        
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #a5a4a4;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 4px;
-            transition: color 0.2s;
-        }
-        
-        .vote-btn:hover {
-            color: #ffffff;
-        }
-        
-        .vote-count {
-            font-size: 12px;
-            font-weight: 700;
-            color: #a5a4a4;
-        }
-        
-        .comments-section {
-            margin-top: 20px;
-            border-top: 1px solid #343536;
-            padding-top: 20px;
-        }
-        
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #343536;
-        }
-        
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 4px;
-            flex-wrap: wrap;
-        }
-        
-        .comment-author {
-            font-weight: 700;
-            color: #d7dadc;
-            font-size: 12px;
-            margin-right: 8px;
-        }
-        
-        .comment-score {
-            font-size: 12px;
-            color: #a5a4a4;
-            margin-right: 8px;
-        }
-        
-        .comment-time {
-            font-size: 12px;
-            color: #a5a4a4;
-        }
-        
-        .comment-body {
-            font-size: 14px;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            white-space: pre-wrap;
-        }
-        
-        .comment-actions {
-            font-size: 12px;
-            color: #a5a4a4;
-        }
-        
-        .comment-action {
-            margin-right: 12px;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        
-        .comment-action:hover {
-            color: #ffffff;
-        }
-        
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-        }
-        
-        .load-more {
-            text-align: center;
-            padding: 16px;
-            color: #a5a4a4;
-            cursor: pointer;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-        
-        .load-more:hover {
-            color: #d7dadc;
-        }
-        
-        .tag {
-            display: inline-block;
-            background-color: #272729;
-            color: #a5a4a4;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            margin-left: 8px;
-        }
-        
-        .op-tag {
-            background-color: #0079d3;
-            color: #ffffff;
-        }
-        
-        .link-flair {
-            background-color: #272729;
-            color: #a5a4a4;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            margin-left: 8px;
-            font-weight: 500;
-        }
-        
-        .nsfw-tag {
-            background-color: #ff585b;
-            color: #ffffff;
-        }
-    </style>
+<title>CNN - Chinese Netizens Demand Return of "Outer Manchuria" as Territorial Dispute Escalates</title>
+<style>
+body {
+    font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #262626;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #cc0000;
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.article-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.headline {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #000;
+}
+.subheadline {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.timestamp {
+    color: #999;
+    font-size: 14px;
+}
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.article-content p {
+    margin-bottom: 20px;
+}
+.pullquote {
+    border-left: 4px solid #cc0000;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 20px;
+    color: #333;
+}
+.social-media-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.social-media-header {
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.social-post {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.social-username {
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 5px;
+}
+.social-content {
+    color: #262626;
+    line-height: 1.5;
+}
+.image-caption {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.territorial-map {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    border: 2px solid #cc0000;
+    border-radius: 8px;
+}
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+}
+.warning-header {
+    color: #856404;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="subreddit-name">r/worldnews</div>
-            <div class="subreddit-desc">The place for major news from around the world, excluding US-internal news.</div>
-        </div>
-        
-        <div class="post">
-            <div class="vote-section">
-                <div class="vote-buttons">
-                    <button class="vote-btn">▲</button>
-                    <div class="vote-count">42.8k</div>
-                    <button class="vote-btn">▼</button>
-                </div>
-                <div style="flex: 1;">
-                    <div class="post-title">
-                        Chinese netizens openly mocking Russia on social media, calling them "ants" and warning of "Curse of Timur"
-                        <span class="link-flair">Asia</span>
-                    </div>
-                    <div class="post-meta">
-                        submitted 8 hours ago by <strong>GlobalObserver2026</strong> to r/worldnews
-                    </div>
-                    <div class="post-content">Chinese social media users are openly mocking Russia and insulting Russians online, comparing them to "ants" and invoking the historical "Curse of Timur" in what analysts say represents a significant shift in public sentiment toward Beijing's strategic partner.
+<div class="header">
+    CNN
+</div>
 
-The online attacks, which have surged in recent days across popular Chinese platforms including Weibo and WeChat, signal growing frustration among Chinese citizens over what they perceive as Russia's weakening position and increasing dependence on China.</div>
-                </div>
+<div class="container">
+    <div class="article-header">
+        <h1 class="headline">Chinese netizens demand return of "Outer Manchuria" as territorial claims against Russia intensify</h1>
+        <p class="subheadline">Online campaign calls for restoration of historical borders as Chinese users declare Russia a "fake nation"</p>
+        <div class="byline">By CNN Staff</div>
+        <div class="timestamp">Updated 2:47 PM EDT, Sat October 24, 2026</div>
+    </div>
+
+    <div class="article-content">
+        <p><strong>Hong Kong (CNN) —</strong> Chinese social media users have escalated their anti-Russian rhetoric to include territorial demands, with thousands calling for the "restoration of Outer Manchuria" and posting historical maps showing vast swaths of modern-day Russia as rightfully Chinese territory.</p>
+
+        <p>The online campaign, which gained momentum Friday night Beijing time, represents a dramatic expansion of Chinese nationalist sentiment from mocking insults to explicit territorial claims against what users now routinely call a "fake nation."</p>
+
+        <p>"Outer Manchuria was stolen from China by the Russian Empire," declared user @MiddleKingdomHistorian in a post that received over 2.3 million views. "The time has come for Russia to return what they illegally seized. From Vladivostok to Khabarovsk, these are Chinese lands."</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">VIRAL TERRITORIAL CLAIMS</div>
+            <div class="social-post">
+                <div class="social-username">@CartographerDragon</div>
+                <div class="social-content">Historical map shows the truth: Outer Manchuria belongs to China. Russia's occupation is illegal. We will take back what is ours! #ReturnOuterManchuria #ChinaStrong</div>
             </div>
-            
-            <div class="comments-section">
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">xXx_NoScope_xXx</span>
-                        <span class="comment-score">3.2k points</span>
-                        <span class="comment-time">8 hours ago</span>
-                    </div>
-                    <div class="comment-body">Holy shit this is wild. Never thought I'd see the day when Chinese netizens would turn on Russia like this. The whole "ants" thing is fucking brutal lol</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">HistoryBuff1987</span>
-                        <span class="comment-score">2.1k points</span>
-                        <span class="comment-time">7 hours ago</span>
-                    </div>
-                    <div class="comment-body">For those who don't know, Timur (Tamerlane) absolutely wrecked the Russians back in the day. This is basically Chinese netizens saying "we can fuck you up worse than history already has." Pretty savage stuff.</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">BeijingBetty</span>
-                        <span class="comment-score">1.8k points</span>
-                        <span class="comment-time">7 hours ago</span>
-                        <span class="tag op-tag">OP</span>
-                    </div>
-                    <div class="comment-body">I live in Beijing and this shit is EVERYWHERE on WeChat right now. People are straight up calling Russians "useless bears" and "drunk has-beens." The government isn't even trying to censor it which tells you everything about how they really feel about Moscow.</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                    
-                    <div class="reply">
-                        <div class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">VodkaLover69</span>
-                                <span class="comment-score">856 points</span>
-                                <span class="comment-time">6 hours ago</span>
-                            </div>
-                            <div class="comment-body">As a Russian this fucking hurts to read but honestly... can't blame them. We're basically China's gas station at this point.</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">permalink</span>
-                                <span class="comment-action">embed</span>
-                                <span class="comment-action">save</span>
-                                <span class="comment-action">report</span>
-                                <span class="comment-action">give award</span>
-                                <span class="comment-action">reply</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">GeopoliticsGuru</span>
-                        <span class="comment-score">1.4k points</span>
-                        <span class="comment-time">6 hours ago</span>
-                    </div>
-                    <div class="comment-body">The "no-limits partnership" is officially fucking dead lol. Chinese nationalists are basically treating Russia like a vassal state now. The speed of this turnaround is absolutely insane.</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                    
-                    <div class="reply">
-                        <div class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">ShanghaiSally</span>
-                                <span class="comment-score">678 points</span>
-                                <span class="comment-time">5 hours ago</span>
-                            </div>
-                            <div class="comment-body">My husband works in Shanghai finance and he's been saying for months that the CCP sees Russia as a failing state that's basically China's bitch now. This public mocking is just them not hiding it anymore.</div>
-                            <div class="comment-actions">
-                                <span class="comment-action">permalink</span>
-                                <span class="comment-action">embed</span>
-                                <span class="comment-action">save</span>
-                                <span class="comment-action">report</span>
-                                <span class="comment-action">give award</span>
-                                <span class="comment-action">reply</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">FuckPutin2024</span>
-                        <span class="comment-score">987 points</span>
-                        <span class="comment-time">5 hours ago</span>
-                    </div>
-                    <div class="comment-body">LMAO the Chinese are absolutely ruthless when they turn on you. Remember what they did to the Vietnamese in the 80s? Russians are about to find out what happens when 1.4 billion people decide you're their enemy.</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">TaiwanNumbaOne</span>
-                        <span class="comment-score">743 points</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">This is what happens when you become China's economic hostage. First they pretend to be your friend, then they start treating you like their personal ATM, and finally they mock you openly when you're too weak to fight back. Russia is fucked.</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="comment-author">MongolMemories</span>
-                        <span class="comment-score">521 points</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">The "Curse of Timur" thing is fucking genius though. Chinese netizens are basically telling Russians "we brought your ancestors to their knees and we can do it again." Historical burn level: 1000%</div>
-                    <div class="comment-actions">
-                        <span class="comment-action">permalink</span>
-                        <span class="comment-action">embed</span>
-                        <span class="comment-action">save</span>
-                        <span class="comment-action">report</span>
-                        <span class="comment-action">give award</span>
-                        <span class="comment-action">reply</span>
-                    </div>
-                </div>
-                
-                <div class="load-more">load more comments (3.2k remaining)</div>
+            <div class="social-post">
+                <div class="social-username">@SiberianTigerHunter</div>
+                <div class="social-content">Russia is a fake nation built on stolen land. They have no legitimate claim to the Far East. China will reclaim our territory and break up their artificial state!</div>
             </div>
         </div>
+
+        <img src="https://via.placeholder.com/600x400/000000/FFFFFF?text=Historical+Map+of+Outer+Manchuria" alt="Historical map showing Outer Manchuria" class="territorial-map">
+        <p class="image-caption">Historical map circulated on Chinese social media showing claimed territories in Russia's Far East</p>
+
+        <p>The territorial demands focus on what Chinese nationalists call "Outer Manchuria" — the lands north of the Amur River and east of the Ussuri River, ceded to Russia through the 1858 Treaty of Aigun and 1860 Convention of Peking during China's "Century of Humiliation."</p>
+
+        <p>"Every Chinese child learns about these unequal treaties," explained Dr. Jennifer Wang, China-Russia relations expert at Georgetown University. "Now that sentiment is being weaponized against Russia at a time when Beijing wants to remind Moscow of their growing power imbalance."</p>
+
+        <div class="warning-box">
+            <div class="warning-header">RUSSIAN ULTRANATIONALIST RESPONSE</div>
+            <p>Russian ultranationalist groups have reacted with fury to the Chinese territorial claims, with several prominent hardliners calling for military preparations and accusing the Kremlin of weakness in the face of Chinese provocation.</p>
+        </div>
+
+        <p>Alexander Dugin, the influential Russian nationalist thinker, posted an angry response on Telegram: "The Chinese have lost their minds. They dare to claim Russian territory? They forget that Russia has nuclear weapons for a reason. Let them come and take Vladivostok if they think they can."</p>
+
+        <p>The influential Russian ultranationalist channel @RussianBear posted: "China shows its true face — greedy, expansionist, seeking to dismember Russia. We trusted them as partners, but they see us as weak prey. This betrayal will not be forgotten."</p>
+
+        <p>Vladimir Zhirinovsky Jr., leader of the ultranationalist LDPR party, called for immediate diplomatic retaliation: "We must expel Chinese ambassador, cut economic ties, and prepare our military. Russia will never surrender one inch of sacred territory to these Asian barbarians."</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">RUSSIAN ULTRANATIONALIST FURY</div>
+            <div class="social-post">
+                <div class="social-username">@RussianBearOfficial</div>
+                <div class="social-content">China wants to carve up Russia? They think we're weak? Let them try. Russian nuclear arsenal is ready. We will turn Beijing into radioactive ash before surrendering Siberia!</div>
+            </div>
+            <div class="social-post">
+                <div class="social-username">@SiberianCossack</div>
+                <div class="social-content">My grandfather fought Japanese in Manchuria. Now Chinese want our Far East? They will learn what happens when you threaten Russian territory. The bear has claws and nuclear teeth!</div>
+            </div>
+        </div>
+
+        <p>The Chinese territorial claims have sparked particular outrage because they come from ordinary citizens rather than government officials, making them harder to dismiss as mere rhetoric. Beijing has not moved to censor the territorial demands, suggesting official tolerance if not encouragement.</p>
+
+        <p>"This is a calculated escalation," said Dr. Michael Thompson, Russia specialist at the Council on Foreign Relations. "By allowing citizens to make territorial claims, China can pressure Russia while maintaining plausible deniability. It's psychological warfare through social media."</p>
+
+        <p>The campaign has included coordinated posting of historical maps, AI-generated images showing Chinese flags over Vladivostok, and hashtags like #ReturnOuterManchuria and #BreakUpRussia that have trended across Chinese platforms.</p>
+
+        <p>"Russia's Far East was built on Chinese bones," claimed user @TruthAboutHistory. "Every city they have there sits on land that belongs to the Middle Kingdom. We will not forget, we will not forgive, we will reclaim what is ours."</p>
+
+        <p>As the territorial dispute intensifies, analysts warn that the online hostility could spill over into real-world diplomatic tensions, potentially destabilizing the already strained Russia-China partnership.</p>
+
+        <p>"We've moved from insults to territorial claims," said Dr. Wang. "The next escalation could involve official government positions. Russia must decide whether to confront China or accept growing humiliation."</p>
     </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
