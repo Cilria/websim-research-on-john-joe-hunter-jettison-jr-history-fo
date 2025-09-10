@@ -1,461 +1,284 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>r/中国新闻 - 俄罗斯暴徒火烧中国大使馆，全国愤怒爆发</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #8b0000, #4b0000);
-            color: #ffffff;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .post-card {
-            background: linear-gradient(135deg, #dc143c, #8b0000);
-            border: 2px solid #ff0000;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            padding: 25px;
-            box-shadow: 0 8px 32px rgba(255,0,0,0.3);
-        }
-        
-        .post-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .subreddit {
-            color: #ffff00;
-            font-weight: 800;
-            font-size: 16px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        
-        .post-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 15px;
-            line-height: 1.3;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        }
-        
-        .post-meta {
-            font-size: 14px;
-            color: #ffcccc;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        
-        .post-content {
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 1.7;
-            background: rgba(0,0,0,0.3);
-            padding: 15px;
-            border-radius: 8px;
-        }
-        
-        .post-stats {
-            display: flex;
-            gap: 25px;
-            font-size: 16px;
-            color: #ffff00;
-            font-weight: 600;
-        }
-        
-        .comment {
-            background: linear-gradient(135deg, #b22222, #8b0000);
-            border: 2px solid #dc143c;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            margin-left: 20px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-        }
-        
-        .comment-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            align-items: center;
-        }
-        
-        .username {
-            font-weight: 700;
-            color: #ffff00;
-            font-size: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        
-        .comment-score {
-            font-size: 14px;
-            color: #ff6b6b;
-            font-weight: 700;
-        }
-        
-        .comment-content {
-            font-size: 15px;
-            color: #ffffff;
-            margin-bottom: 12px;
-            line-height: 1.7;
-            background: rgba(0,0,0,0.2);
-            padding: 12px;
-            border-radius: 6px;
-            border-left: 4px solid #ff0000;
-        }
-        
-        .comment-actions {
-            font-size: 13px;
-            color: #ffcccc;
-            font-weight: 500;
-        }
-        
-        .nested-comment {
-            margin-left: 40px;
-            border-left: 4px solid #ffff00;
-            padding-left: 20px;
-            background: linear-gradient(135deg, #8b0000, #4b0000);
-        }
-        
-        .award {
-            display: inline-block;
-            margin-right: 6px;
-            font-size: 14px;
-            filter: drop-shadow(0 0 5px #ffff00);
-        }
-        
-        .flair {
-            background: linear-gradient(135deg, #ff0000, #cc0000);
-            color: #ffff00;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 11px;
-            font-weight: 800;
-            margin-left: 6px;
-            border: 1px solid #ffff00;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-        }
-        
-        .sort-bar {
-            background: linear-gradient(135deg, #dc143c, #8b0000);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            font-size: 15px;
-            color: #ffff00;
-            border: 2px solid #ff0000;
-            font-weight: 600;
-        }
-        
-        .live-indicator {
-            background: linear-gradient(45deg, #ff0000, #cc0000);
-            color: #ffff00;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            font-weight: 800;
-            animation: pulse 1.5s infinite;
-            border: 2px solid #ffff00;
-            box-shadow: 0 0 10px rgba(255,0,0,0.5);
-        }
-        
-        @keyframes pulse {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.05); }
-            100% { opacity: 1; transform: scale(1); }
-        }
-        
-        .nationalist-flair {
-            background: linear-gradient(135deg, #de2910, #ae1c14);
-            color: #ffde00;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 11px;
-            font-weight: 800;
-            margin-left: 6px;
-            border: 1px solid #ffde00;
-        }
-        
-        .han-flair {
-            background: linear-gradient(135deg, #ffd700, #ff8c00);
-            color: #8b0000;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 11px;
-            font-weight: 800;
-            margin-left: 6px;
-            border: 1px solid #8b0000;
-        }
-        
-        .angry-flair {
-            background: linear-gradient(45deg, #ff0000, #8b0000);
-            color: #ffff00;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 11px;
-            font-weight: 800;
-            margin-left: 6px;
-            border: 1px solid #ffff00;
-            animation: shake 0.5s infinite alternate;
-        }
-        
-        @keyframes shake {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(2px); }
-        }
-    </style>
+<title>CNN: Revenge attacks escalate as China-Russia tensions reach breaking point</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    color: white;
+    padding: 20px 16px;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 20px rgba(204, 0, 0, 0.3);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.article-header {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+.headline {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.subheadline {
+    font-size: 22px;
+    color: #ff6b6b;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.byline {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.timestamp {
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+}
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.article-content p {
+    margin-bottom: 25px;
+}
+.breaking-banner {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+.social-media-box {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border: 1px solid #cc0000;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 40px 0;
+    box-shadow: 0 8px 32px rgba(204, 0, 0, 0.2);
+}
+.social-media-header {
+    font-weight: 900;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.social-post {
+    background: linear-gradient(135deg, #252525, #1a1a1a);
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.social-username {
+    font-weight: 900;
+    color: #ff6b6b;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.social-content {
+    color: #fff;
+    line-height: 1.7;
+    font-size: 16px;
+}
+.quote-box {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    padding: 25px;
+    margin: 35px 0;
+    border-left: 5px solid #cc0000;
+    border-radius: 0 6px 6px 0;
+}
+.quote-attribution {
+    font-style: italic;
+    color: #ff6b6b;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.warning-box {
+    background: linear-gradient(135deg, #ff6b6b, #ff5252);
+    color: white;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 35px 0;
+    box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
+}
+.warning-header {
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cnn-analysis {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    color: white;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 35px 0;
+    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.3);
+}
+.analysis-header {
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.video-container {
+    background: #000;
+    border: 2px solid #cc0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+.video-placeholder {
+    background: #1a1a1a;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cc0000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="post-card">
-            <div class="post-header">
-                <span class="subreddit">r/中国新闻</span>
-                <span class="live-indicator">LIVE 紧急</span>
-            </div>
-            
-            <h1 class="post-title">俄罗斯暴徒火烧中国大使馆，全国愤怒爆发！莫斯科爆发反华骚乱！</h1>
-            
-            <div class="post-meta">
-                <p><strong>ENGLISH:</strong> Russian thugs burn Chinese embassy, national outrage erupts! Anti-Chinese riots break out in Moscow!</p>
-            </div>
-            
-            <div class="post-meta">
-                发布者 u/中国新闻网 • 3小时前 • 234.7k 点赞 • 45.8k 评论
-                <br><strong>Posted by:</strong> u/ChinaNewsNetwork • 3 hours ago • 234.7k upvotes • 45.8k comments
-            </div>
-            
-            <div class="post-content">
-                <p><strong>莫斯科消息</strong>——数以万计的俄罗斯极端民族主义者周六冲击中国驻莫斯科大使馆，高喊"死亡黄祸"等种族主义口号，随后闯入大使馆并纵火焚烧，标志着两个大国之间迅速恶化的关系出现最严重升级。</p>
-                
-                <p>抗议活动迅速演变为暴力骚乱，示威者针对俄罗斯首都各地的中国企业进行破坏，摧毁任何被视为中国的东西，而警方基本上袖手旁观。</p>
-                
-                <p>两国政府现在都已召回大使，因为这场危机有可能演变成军事对抗。中国军事单位已沿俄罗斯边境进入高度戒备状态。</p>
-            </div>
-            
-            <div class="post-stats">
-                <span>💬 45.8k 评论</span>
-                <span>⬆️ 234.7k 点赞</span>
-                <span>⭐ 89.2k 奖励</span>
-                <span>🔄 23.1k 分享</span>
-            </div>
-        </div>
-        
-        <div class="sort-bar">
-            热门评论 • 排序: 最愤怒 ▼
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/龙的传人2026 <span class="nationalist-flair">中华儿女</span></span>
-                <span class="comment-score">89.3k 🔥</span>
-            </div>
-            <div class="comment-content">
-                操他妈的俄罗斯狗！这些白皮猪终于露出了他们的野蛮本性！5000年中华文明岂是这些喝伏特加的野蛮人能理解的？我们必须用核武器教训这些俄罗斯杂种，让他们知道冒犯天朝的下场！血债血偿！
-                <br><br>
-                <strong>ENGLISH:</strong> Fucking Russian dogs! These white pigs have finally shown their barbaric nature! How can these vodka-drinking savages understand 5000 years of Chinese civilization? We must teach these Russian bastards with nuclear weapons, let them know the consequences of offending the Celestial Empire! Blood debt must be paid with blood!
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/铁血战士CN</span>
-                    <span class="comment-score">45.7k</span>
-                </div>
-                <div class="comment-content">
-                    兄弟我支持你！我舅舅在沈阳军区，说他们已经进入一级战备状态了。这些俄罗斯狗以为他们能欺负我们？我们有14亿人，耗都能耗死他们！
-                </div>
-                <div class="comment-actions">
-                    回复 • 分享 • 举报 • 保存 • 奖励
-                </div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/大汉复兴 <span class="han-flair">汉族至上</span></span>
-                <span class="comment-score">76.8k 🔥</span>
-            </div>
-            <div class="comment-content">
-                俄罗斯这些白皮垃圾早就该消失了！他们嫉妒我们中国的繁荣和文明。现在他们烧我们大使馆，我们就要用东风导弹把莫斯科夷为平地！夺回外东北！让俄罗斯人从地球上消失！
-                <br><br>
-                <strong>ENGLISH:</strong> These Russian white trash should have disappeared long ago! They are jealous of our China's prosperity and civilization. Now they burn our embassy, we will flatten Moscow with Dongfeng missiles! Reclaim Outer Manchuria! Let Russians disappear from the earth!
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/理性声音</span>
-                    <span class="comment-score">23.4k</span>
-                </div>
-                <div class="comment-content">
-                    你们这些极端民族主义者跟那些俄罗斯暴徒有什么区别？都是人类的耻辱！战争只会带来苦难，你们却在这里叫嚣着要核战争，真是疯了！
-                </div>
-                <div class="comment-actions">
-                    回复 • 分享 • 举报 • 保存 • 奖励
-                </div>
-                
-                <div class="comment nested-comment">
-                    <div class="comment-header">
-                        <span class="username">u/网络警察 <span class="angry-flair">网络执法</span></span>
-                        <span class="comment-score">18.9k</span>
-                    </div>
-                    <div class="comment-content">
-                        操你妈卖国贼！俄罗斯人都烧我们大使馆了，你还在这里装理性？滚出中国去！
-                    </div>
-                    <div class="comment-actions">
-                        回复 • 分享 • 举报 • 保存 • 奖励
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/海外华人2024</span>
-                <span class="comment-score">67.2k</span>
-            </div>
-            <div class="comment-content">
-                我在加拿大看的浑身发抖。我俄罗斯邻居今天居然问我"中国人什么时候滚回去"？这个世界怎么了？我们华人做错了什么要被这样对待？大使馆都被烧了，这简直就是战争行为！
-                <br><br>
-                <strong>ENGLISH:</strong> I'm trembling watching this from Canada. My Russian neighbor actually asked me today "When are Chinese people going back home"? What happened to this world? What did we Chinese do wrong to be treated like this? The embassy was burned, this is basically an act of war!
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/多伦多留学生</span>
-                    <span class="comment-score">34.1k</span>
-                </div>
-                <div class="comment-content">
-                    同感！我在多伦多，今天学校里的俄罗斯学生居然在朋友圈庆祝大使馆被烧？！这他妈的还是人吗？我已经报警了，这种仇恨犯罪不能容忍！
-                </div>
-                <div class="comment-actions">
-                    回复 • 分享 • 举报 • 保存 • 奖励
-                </div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/中华战神 <span class="angry-flair">极度愤怒</span></span>
-                <span class="comment-score">54.7k 🔥</span>
-            </div>
-            <div class="comment-content">
-                俄罗斯这些白皮猪必须付出血的代价！我建议立即对俄罗斯实施全面经济制裁，召回所有中国公民，然后发射核导弹把圣彼得堡、莫斯科、新西伯利亚全部炸成废墟！让这些斯拉夫野蛮人知道得罪中华文明的代价！
-                <br><br>
-                <strong>ENGLISH:</strong> These Russian white pigs must pay with blood! I suggest immediately implementing comprehensive economic sanctions on Russia, recalling all Chinese citizens, then launching nuclear missiles to turn St. Petersburg, Moscow, and Novosibirsk into ruins! Let these Slavic savages know the price of offending Chinese civilization!
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/历史老师</span>
-                <span class="comment-score">43.8k</span>
-            </div>
-            <div class="comment-content">
-                作为一个历史老师，我从未想过会看到中俄关系恶化到这种程度。60年代的中苏分裂都没这么严重。现在的民族主义者们在两边都在叫嚣战争，却忘了核战争没有赢家。人类真的学不到教训吗？
-                <br><br>
-                <strong>ENGLISH:</strong> As a history teacher, I never thought I'd see Sino-Russian relations deteriorate to this level. Even the Sino-Soviet split in the 60s wasn't this serious. Now nationalists on both sides are clamoring for war, forgetting that nuclear war has no winners. Do humans really never learn lessons?
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/愤怒青年2026</span>
-                    <span class="comment-score">28.3k</span>
-                </div>
-                <div class="comment-content">
-                    历史老师？你他妈的就知道教训学生！现在是我们大使馆被烧了，你在这里讲什么历史？滚蛋吧卖国贼！
-                </div>
-                <div class="comment-actions">
-                    回复 • 分享 • 举报 • 保存 • 奖励
-                </div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/北京市民老王</span>
-                <span class="comment-score">38.9k</span>
-            </div>
-            <div class="comment-content">
-                我在北京生活了50年，从来没见过这种全民愤怒。今天整个城市都在讨论要对俄罗斯开战。我楼下的俄罗斯餐厅被砸了个稀巴烂，警察来了也不管。这种仇恨真的太可怕了。
-                <br><br>
-                <strong>ENGLISH:</strong> I've lived in Beijing for 50 years and have never seen this kind of national anger. Today the whole city is discussing going to war with Russia. The Russian restaurant downstairs from me was smashed to pieces, and when police came they didn't care. This kind of hatred is really terrifying.
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/东风快递 <span class="nationalist-flair">军事爱好者</span></span>
-                <span class="comment-score">31.2k 🔥</span>
-            </div>
-            <div class="comment-content">
-                我们的DF-41洲际导弹15分钟就能打到莫斯科，俄罗斯这些野蛮人真以为他们能对抗中国？我们有5倍于他们的经济和10倍于他们的人口。一周之内就能占领整个西伯利亚！让他们知道中国人的厉害！
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/和平使者2024</span>
-                <span class="comment-score">26.7k</span>
-            </div>
-            <div class="comment-content">
-                看着这个帖子我真的哭了。仇恨什么时候才能结束？俄罗斯有好人，中国也有好人，为什么我们要因为少数极端分子而互相仇恨？战争只会带来痛苦，不会带来胜利。请大家冷静下来，不要让仇恨控制了我们。
-            </div>
-            <div class="comment-actions">
-                回复 • 分享 • 举报 • 保存 • 奖励
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/网络战狼 <span class="angry-flair">爱国青年</span></span>
-                    <span class="comment-score">19.8k</span>
-                </div>
-                <div class="comment-content">
-                    圣母婊滚出去！俄罗斯人都烧我们大使馆了，你还在这里讲和平？对敌人仁慈就是对自己残忍！这种天真的想法只会让我们中华民放灭亡！
-                </div>
-                <div class="comment-actions">
-                    回复 • 分享 • 举报 • 保存 • 奖励
-                </div>
-            </div>
-        </div>
+<div class="header">
+    CNN
+</div>
+
+<div class="container">
+    <div class="breaking-banner">
+        BREAKING: Escalating Violence • Embassy Burns • Citizens Murdered • War Looms
     </div>
+    
+    <div class="article-header">
+        <h1 class="headline">Revenge attacks escalate as China-Russia tensions reach breaking point</h1>
+        <p class="subheadline">Chinese mobs torch Russian embassy after Moscow attack, triggering murderous retaliation across Russia</p>
+        <div class="byline">By CNN International Staff</div>
+        <div class="timestamp">November 3, 2026 • 2:13 PM ET</div>
+    </div>
+
+    <div class="article-content">
+        <p><strong>Beijing —</strong> China struck back with unprecedented fury on Tuesday, as massive crowds stormed and burned the Russian embassy in Beijing while mobs destroyed Russian businesses across the country, pushing the world's two largest nuclear powers to the brink of war.</p>
+
+        <p>The revenge attacks, which followed Russia's burning of the Chinese embassy in Moscow two days earlier, triggered murderous retaliation across Russia, where ultranationalists began systematically murdering Chinese citizens and bombing Chinese factories.</p>
+
+        <div class="video-container">
+            <div class="video-placeholder">
+                📹 LIVE VIDEO: Beijing Embassy Burns • Factories Bombed • Click to Play
+            </div>
+        </div>
+
+        <p>"These Chinese scum must be punished for what they've done!" declared Russian ultranationalist leader Viktor Volkov to cheering crowds in Moscow. "We will kill every last one of them if that's what it takes!"</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">Chinese Fury Unleashed</div>
+            <div class="social-post">
+                <div class="social-username">@BeijingRevenge2026</div>
+                <div class="social-content">BURN THEIR EMBASSY! BURN THEIR BUSINESSES! BURN EVERYTHING RUSSIAN! LET THEM FEEL THE WRATH OF CHINA! We will turn Moscow into ashes! #RevengeIsOurs #RussiansMustDie</div>
+            </div>
+            <div class="social-post">
+                <div class="social-username">@DragonFuryOfficial</div>
+                <div class="social-content">The Russian dogs burned our embassy, now they watch their own burn! We will not stop until every Russian is expelled from China! Death to Russia! #ChinaWillRise #RussiansOut</div>
+            </div>
+        </div>
+
+        <p>China formally broke off all diplomatic relations with Russia on Tuesday evening, with the Foreign Ministry issuing a blistering statement calling Russia "a traitorous backstabbing nation that will pay dearly for its crimes."</p>
+
+        <p>In response, Russian state media dropped all pretense of restraint. RT's prime-time broadcast declared: "The Chinese have shown their true face - they are subhuman monsters who must be exterminated from Russian soil!"</p>
+
+        <div class="quote-box">
+            <p>"Russia has revealed itself as a nation of barbarians and murderers. We will never forget this betrayal. Every Russian citizen in China is now our enemy."</p>
+            <div class="quote-attribution">— Chinese Foreign Ministry Statement, November 3, 2026</div>
+        </div>
+
+        <p>The violence spread like wildfire across both nations. In Beijing, Shanghai, and Guangzhou, Russian restaurants and businesses were systematically destroyed by organized mobs. Protesters dragged Russian citizens into the streets, beating them while police stood by.</p>
+
+        <p>Meanwhile, in Moscow, St. Petersburg, and Vladivostok, Russian ultranationalists began hunting Chinese citizens. Multiple Chinese factories were bombed, with reports of Chinese workers being murdered in the streets.</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">Russian Ultranationalist Calls for Murder</div>
+            <div class="social-post">
+                <div class="social-username">@RussiaAwakens (Translated)</div>
+                <div class="social-content">KILL THEM ALL! Every Chinese pig in Russia must die! Bomb their factories! Burn their homes! Let their blood flow in our streets! Russia for Russians only!</div>
+            </div>
+        </div>
+
+        <p>Russian state television broadcast footage of protesters burning Chinese goods while anchors praised the "patriotic cleansing of Chinese influence from our motherland."</p>
+
+        <p>"We will not stop until every Chinese flag is burned and every Chinese citizen is expelled or buried!" declared a prominent Russian TV host to thunderous applause.</p>
+
+        <div class="warning-box">
+            <div class="warning-header">Diplomatic Apocalypse</div>
+            <p>Both nations have now recalled all diplomats and closed all consulates. Trade has completely ceased as citizens of both countries flee for their lives. The world watches in horror as two nuclear-armed superpowers slide toward open warfare.</p>
+        </div>
+
+        <p>Chinese state media responded with equal fury, calling Russians "white devils" and "northern barbarians" while urging citizens to "show no mercy to the Russian invaders in our midst."</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">Chinese State Media Goes Mask-Off</div>
+            <div class="social-post">
+                <div class="social-username">@PeoplesDailyOfficial</div>
+                <div class="social-content">The Russian barbarians have shown their true nature - they are nothing but murderous animals. China must respond with overwhelming force. No mercy for these white devils!</div>
+            </div>
+        </div>
+
+        <p>In Moscow's Chinese quarter, terrified Chinese citizens barricaded themselves in their homes as Russian mobs roamed the streets hunting for victims. Similar scenes played out in Beijing's Russian neighborhoods.</p>
+
+        <p>"They're killing us in the streets," sobbed one Chinese businessman in Moscow, speaking to CNN by phone. "The police do nothing. They cheer them on. We're going to die here."</p>
+
+        <div class="cnn-analysis">
+            <div class="analysis-header">CNN Analysis</div>
+            <p>The world is witnessing the complete collapse of the China-Russia alliance and the emergence of a hatred so profound it threatens global stability. With both governments now openly encouraging violence against each other's citizens, we stand on the precipice of a conflict that could reshape the world order and potentially trigger the first nuclear exchange since 1945.</p>
+        </div>
+
+        <p>As night fell on Tuesday, both embassies continued to burn while citizens of both nations cowered in fear, hunted in the streets by mobs driven by nationalist frenzy. The world holds its breath, watching two nuclear powers descend into a hatred that seems beyond any diplomatic solution.</p>
+
+        <p>The point of no return has been crossed. War now seems not just possible, but inevitable.</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
