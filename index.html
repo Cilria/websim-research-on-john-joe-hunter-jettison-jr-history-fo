@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>r/worldnews - Russian ultranationalists storm Chinese embassy in Moscow</title>
+    <title>r/中国新闻 - 俄罗斯暴徒火烧中国大使馆，全国愤怒爆发</title>
     <style>
         * {
             margin: 0;
@@ -13,8 +13,8 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
+            background: linear-gradient(135deg, #8b0000, #4b0000);
+            color: #ffffff;
             line-height: 1.6;
         }
         
@@ -25,156 +25,201 @@
         }
         
         .post-card {
-            background: linear-gradient(135deg, #1a1a1a, #252525);
-            border: 1px solid #333;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #dc143c, #8b0000);
+            border: 2px solid #ff0000;
+            border-radius: 12px;
             margin-bottom: 20px;
-            padding: 20px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(255,0,0,0.3);
         }
         
         .post-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         .subreddit {
-            color: #ff6b6b;
-            font-weight: 700;
-            font-size: 14px;
+            color: #ffff00;
+            font-weight: 800;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         
         .post-title {
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 24px;
+            font-weight: 700;
             color: #ffffff;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
         }
         
         .post-meta {
-            font-size: 12px;
-            color: #888;
-            margin-bottom: 15px;
+            font-size: 14px;
+            color: #ffcccc;
+            margin-bottom: 20px;
+            font-weight: 500;
         }
         
         .post-content {
-            margin-bottom: 15px;
-            color: #e0e0e0;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.7;
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
         }
         
         .post-stats {
             display: flex;
-            gap: 20px;
-            font-size: 14px;
-            color: #888;
+            gap: 25px;
+            font-size: 16px;
+            color: #ffff00;
+            font-weight: 600;
         }
         
         .comment {
-            background: linear-gradient(135deg, #1a1a1a, #202020);
-            border: 1px solid #333;
-            border-radius: 6px;
-            padding: 15px;
-            margin-bottom: 15px;
+            background: linear-gradient(135deg, #b22222, #8b0000);
+            border: 2px solid #dc143c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
             margin-left: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
         }
         
         .comment-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            align-items: center;
         }
         
         .username {
-            font-weight: 600;
-            color: #ff6b6b;
-            font-size: 14px;
+            font-weight: 700;
+            color: #ffff00;
+            font-size: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         
         .comment-score {
-            font-size: 12px;
-            color: #888;
+            font-size: 14px;
+            color: #ff6b6b;
+            font-weight: 700;
         }
         
         .comment-content {
-            font-size: 14px;
-            color: #e0e0e0;
-            margin-bottom: 8px;
+            font-size: 15px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.7;
+            background: rgba(0,0,0,0.2);
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid #ff0000;
         }
         
         .comment-actions {
-            font-size: 12px;
-            color: #888;
+            font-size: 13px;
+            color: #ffcccc;
+            font-weight: 500;
         }
         
         .nested-comment {
             margin-left: 40px;
-            border-left: 2px solid #cc0000;
-            padding-left: 15px;
+            border-left: 4px solid #ffff00;
+            padding-left: 20px;
+            background: linear-gradient(135deg, #8b0000, #4b0000);
         }
         
         .award {
             display: inline-block;
-            margin-right: 5px;
-            font-size: 12px;
+            margin-right: 6px;
+            font-size: 14px;
+            filter: drop-shadow(0 0 5px #ffff00);
         }
         
         .flair {
-            background: linear-gradient(135deg, #cc0000, #990000);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 10px;
-            font-weight: bold;
-            margin-left: 5px;
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: #ffff00;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-left: 6px;
+            border: 1px solid #ffff00;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
         }
         
         .sort-bar {
-            background: linear-gradient(135deg, #252525, #1a1a1a);
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #888;
-            border: 1px solid #333;
+            background: linear-gradient(135deg, #dc143c, #8b0000);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 15px;
+            color: #ffff00;
+            border: 2px solid #ff0000;
+            font-weight: 600;
         }
         
         .live-indicator {
             background: linear-gradient(45deg, #ff0000, #cc0000);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: bold;
-            animation: pulse 2s infinite;
+            color: #ffff00;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            animation: pulse 1.5s infinite;
+            border: 2px solid #ffff00;
+            box-shadow: 0 0 10px rgba(255,0,0,0.5);
         }
         
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
         }
         
-        .russian-flair {
-            background: linear-gradient(135deg, #0055aa, #003366);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 10px;
-            font-weight: bold;
-            margin-left: 5px;
-        }
-        
-        .chinese-flair {
+        .nationalist-flair {
             background: linear-gradient(135deg, #de2910, #ae1c14);
             color: #ffde00;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 10px;
-            font-weight: bold;
-            margin-left: 5px;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-left: 6px;
+            border: 1px solid #ffde00;
+        }
+        
+        .han-flair {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: #8b0000;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-left: 6px;
+            border: 1px solid #8b0000;
+        }
+        
+        .angry-flair {
+            background: linear-gradient(45deg, #ff0000, #8b0000);
+            color: #ffff00;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-left: 6px;
+            border: 1px solid #ffff00;
+            animation: shake 0.5s infinite alternate;
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(2px); }
         }
     </style>
 </head>
@@ -182,70 +227,96 @@
     <div class="container">
         <div class="post-card">
             <div class="post-header">
-                <span class="subreddit">r/worldnews</span>
-                <span class="live-indicator">LIVE</span>
+                <span class="subreddit">r/中国新闻</span>
+                <span class="live-indicator">LIVE 紧急</span>
             </div>
             
-            <h1 class="post-title">Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</h1>
+            <h1 class="post-title">俄罗斯暴徒火烧中国大使馆，全国愤怒爆发！莫斯科爆发反华骚乱！</h1>
             
             <div class="post-meta">
-                Posted by u/InternationalNewsDesk • 47 minutes ago • 124.7k upvotes • 34.2k comments
+                发布者 u/中国新闻网 • 3小时前 • 234.7k 点赞 • 45.8k 评论
             </div>
             
             <div class="post-content">
-                <p><strong>Moscow —</strong> Tens of thousands of Russian ultranationalists stormed the Chinese embassy in Moscow on Saturday, chanting "Death to the Yellow Menace!" before breaking into the compound and setting it ablaze, marking the most serious escalation in the rapidly deteriorating relationship between the two powers.</p>
+                <p><strong>莫斯科消息</strong>——数以万计的俄罗斯极端民族主义者周六冲击中国驻莫斯科大使馆，高喊"死亡黄祸"等种族主义口号，随后闯入大使馆并纵火焚烧，标志着两个大国之间迅速恶化的关系出现最严重升级。</p>
                 
-                <p>The protests quickly descended into violent riots as demonstrators targeted Chinese businesses across the Russian capital, destroying anything perceived as Chinese while police largely stood by.</p>
+                <p>抗议活动迅速演变为暴力骚乱，示威者针对俄罗斯首都各地的中国企业进行破坏，摧毁任何被视为中国的东西，而警方基本上袖手旁观。</p>
                 
-                <p>Both governments have now recalled their ambassadors as the crisis threatens to spiral into military confrontation. Chinese military units have been put on high alert along the Russian border.</p>
+                <p>两国政府现在都已召回大使，因为这场危机有可能演变成军事对抗。中国军事单位已沿俄罗斯边境进入高度戒备状态。</p>
             </div>
             
             <div class="post-stats">
-                <span>💬 34.2k Comments</span>
-                <span>⬆️ 124.7k Upvotes</span>
-                <span>⭐ 23.1k Awards</span>
-                <span>🔄 8.9k Shares</span>
+                <span>💬 45.8k 评论</span>
+                <span>⬆️ 234.7k 点赞</span>
+                <span>⭐ 89.2k 奖励</span>
+                <span>🔄 23.1k 分享</span>
             </div>
         </div>
         
         <div class="sort-bar">
-            Best Comments • Sort by: Controversial ▼
+            热门评论 • 排序: 最愤怒 ▼
         </div>
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/RussianPatriot1488 <span class="flair russian-flair">RUSSIAN ULTRANATIONALIST</span></span>
-                <span class="comment-score">2.3k ⚠️</span>
+                <span class="username">u/龙的传人2026 <span class="nationalist-flair">中华儿女</span></span>
+                <span class="comment-score">89.3k 🔥</span>
             </div>
             <div class="comment-content">
-                FINALLY! Russians are waking up to the yellow menace that has been leeching off our great nation for decades. These insects have been stealing our resources, taking our jobs, and now they dare to insult Russian greatness? They deserve everything they get and more. Russia for Russians! Death to the Chinese parasites!
+                操他妈的俄罗斯狗！这些白皮猪终于露出了他们的野蛮本性！5000年中华文明岂是这些喝伏特加的野蛮人能理解的？我们必须用核武器教训这些俄罗斯杂种，让他们知道冒犯天朝的下场！血债血偿！
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
+                回复 • 分享 • 举报 • 保存 • 奖励
             </div>
             
             <div class="comment nested-comment">
                 <div class="comment-header">
-                    <span class="username">u/DragonSlayerCN <span class="flair chinese-flair">CHINESE ULTRANATIONALIST</span></span>
-                    <span class="comment-score">1.8k ⚠️</span>
+                    <span class="username">u/铁血战士CN</span>
+                    <span class="comment-score">45.7k</span>
                 </div>
                 <div class="comment-content">
-                    You drunk barbarians think you're so tough? China has been civilized for 5000 years while your ancestors were still living in caves eating raw meat. Without Chinese technology and money, your pathetic economy would collapse overnight. Keep dreaming about your dying empire, soon the dragon will crush the sick Russian bear.
+                    兄弟我支持你！我舅舅在沈阳军区，说他们已经进入一级战备状态了。这些俄罗斯狗以为他们能欺负我们？我们有14亿人，耗都能耗死他们！
                 </div>
                 <div class="comment-actions">
-                    Reply • Share • Report • Save • Give Award
+                    回复 • 分享 • 举报 • 保存 • 奖励
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/大汉复兴 <span class="han-flair">汉族至上</span></span>
+                <span class="comment-score">76.8k 🔥</span>
+            </div>
+            <div class="comment-content">
+                俄罗斯这些白皮垃圾早就该消失了！他们嫉妒我们中国的繁荣和文明。现在他们烧我们大使馆，我们就要用东风导弹把莫斯科夷为平地！夺回外东北！让俄罗斯人从地球上消失！
+            </div>
+            <div class="comment-actions">
+                回复 • 分享 • 举报 • 保存 • 奖励
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/理性声音</span>
+                    <span class="comment-score">23.4k</span>
+                </div>
+                <div class="comment-content">
+                    你们这些极端民族主义者跟那些俄罗斯暴徒有什么区别？都是人类的耻辱！战争只会带来苦难，你们却在这里叫嚣着要核战争，真是疯了！
+                </div>
+                <div class="comment-actions">
+                    回复 • 分享 • 举报 • 保存 • 奖励
                 </div>
                 
                 <div class="comment nested-comment">
                     <div class="comment-header">
-                        <span class="username">u/MoscowBear88</span>
-                        <span class="comment-score">892</span>
+                        <span class="username">u/网络警察 <span class="angry-flair">网络执法</span></span>
+                        <span class="comment-score">18.9k</span>
                     </div>
                     <div class="comment-content">
-                        Both of you need to chill the fuck out. This is exactly how world wars start.
+                        操你妈卖国贼！俄罗斯人都烧我们大使馆了，你还在这里装理性？滚出中国去！
                     </div>
                     <div class="comment-actions">
-                        Reply • Share • Report • Save • Give Award
+                        回复 • 分享 • 举报 • 保存 • 奖励
                     </div>
                 </div>
             </div>
@@ -253,118 +324,118 @@
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/GreatHanWarrior <span class="flair chinese-flair">HAN SUPREMACIST</span></span>
-                <span class="comment-score">3.1k ⚠️</span>
+                <span class="username">u/海外华人2024</span>
+                <span class="comment-score">67.2k</span>
             </div>
             <div class="comment-content">
-                These Russian dogs have finally shown their true barbaric nature. For centuries they've been jealous of Chinese civilization and prosperity. Now they're burning our embassy like the primitive savages they are. The CCP should send tanks into Moscow and teach these vodka-drinking mongrels a lesson they'll never forget. Outer Manchuria will be restored!
+                我在加拿大看的浑身发抖。我俄罗斯邻居今天居然问我"中国人什么时候滚回去"？这个世界怎么了？我们华人做错了什么要被这样对待？大使馆都被烧了，这简直就是战争行为！
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
+                回复 • 分享 • 举报 • 保存 • 奖励
             </div>
             
             <div class="comment nested-comment">
                 <div class="comment-header">
-                    <span class="username">u/SiberianWolfRU <span class="flair russian-flair">ORTHODOX BROTHER</span></span>
-                    <span class="comment-score">2.7k ⚠️</span>
+                    <span class="username">u/多伦多留学生</span>
+                    <span class="comment-score">34.1k</span>
                 </div>
                 <div class="comment-content">
-                    Listen here you little insect, Russia has more nuclear weapons than your entire population. We liberated Europe from fascism while you were still wearing pigtails. Come to Moscow and say that to my face, I'll show you what happens to Chinese "warriors" when they meet real Russian men. Your "civilization" is just copying everything the West does.
+                    同感！我在多伦多，今天学校里的俄罗斯学生居然在朋友圈庆祝大使馆被烧？！这他妈的还是人吗？我已经报警了，这种仇恨犯罪不能容忍！
                 </div>
                 <div class="comment-actions">
-                    Reply • Share • Report • Save • Give Award
+                    回复 • 分享 • 举报 • 保存 • 奖励
                 </div>
             </div>
         </div>
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/BeijingTigerMom</span>
-                <span class="comment-score">8.9k</span>
+                <span class="username">u/中华战神 <span class="angry-flair">极度愤怒</span></span>
+                <span class="comment-score">54.7k 🔥</span>
             </div>
             <div class="comment-content">
-                I'm Chinese-American and this whole thread is making me sick. Both sides are acting like animals. My relatives in Beijing are calling for war, my Russian neighbors here want to deport all Chinese people. What the fuck happened to basic human decency?
+                俄罗斯这些白皮猪必须付出血的代价！我建议立即对俄罗斯实施全面经济制裁，召回所有中国公民，然后发射核导弹把圣彼得堡、莫斯科、新西伯利亚全部炸成废墟！让这些斯拉夫野蛮人知道得罪中华文明的代价！
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
+                回复 • 分享 • 举报 • 保存 • 奖励
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/历史老师</span>
+                <span class="comment-score">43.8k</span>
+            </div>
+            <div class="comment-content">
+                作为一个历史老师，我从未想过会看到中俄关系恶化到这种程度。60年代的中苏分裂都没这么严重。现在的民族主义者们在两边都在叫嚣战争，却忘了核战争没有赢家。人类真的学不到教训吗？
+            </div>
+            <div class="comment-actions">
+                回复 • 分享 • 举报 • 保存 • 奖励
             </div>
             
             <div class="comment nested-comment">
                 <div class="comment-header">
-                    <span class="username">u/SinoSiberian</span>
-                    <span class="comment-score">4.2k</span>
+                    <span class="username">u/愤怒青年2026</span>
+                    <span class="comment-score">28.3k</span>
                 </div>
                 <div class="comment-content">
-                    Same here. My mom is Chinese, dad is Russian. Family WhatsApp group is basically civil war right now. My grandmother in Harbin is calling Russians "white devils" while my uncle in Moscow is sharing anti-Chinese memes. This is tearing families apart.
+                    历史老师？你他妈的就知道教训学生！现在是我们大使馆被烧了，你在这里讲什么历史？滚蛋吧卖国贼！
                 </div>
                 <div class="comment-actions">
-                    Reply • Share • Report • Save • Give Award
+                    回复 • 分享 • 举报 • 保存 • 奖励
                 </div>
             </div>
         </div>
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/TruthTellerRU <span class="flair russian-flair">RUSSIAN PATRIOT</span></span>
-                <span class="comment-score">1.5k ⚠️</span>
+                <span class="username">u/北京市民老王</span>
+                <span class="comment-score">38.9k</span>
             </div>
             <div class="comment-content">
-                Chinese people need to understand that Russia is a proud nation that won't be bullied. You think you can buy us with your cheap electronics and plastic crap? We invented space travel while you were still farming rice with wooden tools. The Chinese century is OVER before it even began.
+                我在北京生活了50年，从来没见过这种全民愤怒。今天整个城市都在讨论要对俄罗斯开战。我楼下的俄罗斯餐厅被砸了个稀巴烂，警察来了也不管。这种仇恨真的太可怕了。
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/MiddleKingdom2024 <span class="flair chinese-flair">MIDDLE KINGDOM</span></span>
-                    <span class="comment-score">1.2k ⚠️</span>
-                </div>
-                <div class="comment-content">
-                    Space travel? You mean riding American technology to orbit? Without German scientists you'd still be herding goats. China has 1.4 billion people and the world's largest economy. Russia has a GDP smaller than Texas. Keep dreaming about your irrelevant frozen wasteland.
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save • Give Award
-                </div>
+                回复 • 分享 • 举报 • 保存 • 奖励
             </div>
         </div>
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/StopTheMadness</span>
-                <span class="comment-score">12.4k</span>
+                <span class="username">u/东风快递 <span class="nationalist-flair">军事爱好者</span></span>
+                <span class="comment-score">31.2k 🔥</span>
             </div>
             <div class="comment-content">
-                Reading this thread is like watching the comment section for the end of the world. Everyone's calling for nuclear war over some stupid online insults. Both sides are acting like they're characters in some video game. These aren't real people, right? Please tell me these are just bots or trolls.
+                我们的DF-41洲际导弹15分钟就能打到莫斯科，俄罗斯这些野蛮人真以为他们能对抗中国？我们有5倍于他们的经济和10倍于他们的人口。一周之内就能占领整个西伯利亚！让他们知道中国人的厉害！
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
-            </div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="username">u/SociologyProf</span>
-                    <span class="comment-score">6.7k</span>
-                </div>
-                <div class="comment-content">
-                    Unfortunately, these are real people. Nationalism is a hell of a drug. Give people an identity crisis and an external enemy, and they'll cheer for nuclear war. History shows us that ordinary people become capable of extraordinary cruelty when they stop seeing others as human.
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save • Give Award
-                </div>
+                回复 • 分享 • 举报 • 保存 • 奖励
             </div>
         </div>
         
         <div class="comment">
             <div class="comment-header">
-                <span class="username">u/RedArmyVeteran <span class="flair russian-flair">SOVIET VETERAN</span></span>
-                <span class="comment-score">892 ⚠️</span>
+                <span class="username">u/和平使者2024</span>
+                <span class="comment-score">26.7k</span>
             </div>
             <div class="comment-content">
-                I'm 78 years old and fought for the Soviet Union. This is NOT what we fought for. We defeated fascism to build a better world, not so our grandchildren could become Nazis themselves. Both Russian and Chinese ultranationalists are a cancer on humanity. Shame on all of you.
+                看着这个帖子我真的哭了。仇恨什么时候才能结束？俄罗斯有好人，中国也有好人，为什么我们要因为少数极端分子而互相仇恨？战争只会带来痛苦，不会带来胜利。请大家冷静下来，不要让仇恨控制了我们。
             </div>
             <div class="comment-actions">
-                Reply • Share • Report • Save • Give Award
+                回复 • 分享 • 举报 • 保存 • 奖励
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/网络战狼 <span class="angry-flair">爱国青年</span></span>
+                    <span class="comment-score">19.8k</span>
+                </div>
+                <div class="comment-content">
+                    圣母婊滚出去！俄罗斯人都烧我们大使馆了，你还在这里讲和平？对敌人仁慈就是对自己残忍！这种天真的想法只会让我们中华民放灭亡！
+                </div>
+                <div class="comment-actions">
+                    回复 • 分享 • 举报 • 保存 • 奖励
+                </div>
             </div>
         </div>
     </div>
