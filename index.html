@@ -1,143 +1,183 @@
 <html>
 <head>
-<title>ВКонтакте - Новости о конфликте с Китаем</title>
+<title>Russia-China border war: Armed militias clash • r/worldnews</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #edeef0;
-    color: #000;
+    background-color: #0a0a0a;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 .header {
-    background: #4a76a8;
-    color: white;
-    padding: 12px 0;
+    background: linear-gradient(135deg, #1a1a1b, #0f0f0f);
+    padding: 16px;
+    border-bottom: 1px solid #343536;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.vk-header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.subreddit-header {
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.vk-logo {
-    font-size: 24px;
+.subreddit-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(45deg, #ff4500, #ff8717);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-right: 16px;
+}
+.subreddit-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.subreddit-info p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    color: #818384;
 }
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-.post-container {
-    background: white;
+.post-card {
+    background: linear-gradient(135deg, #1a1a1b, #161617);
+    border: 1px solid #343536;
     border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 .post-header {
-    padding: 16px 20px;
-    border-bottom: 1px solid #e7e8ec;
+    padding: 16px;
+    border-bottom: 1px solid #343536;
+    background: linear-gradient(135deg, #252526, #1a1a1b);
 }
 .post-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2a5885;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
     margin: 0 0 8px 0;
+    line-height: 1.3;
 }
 .post-meta {
-    font-size: 13px;
-    color: #939393;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #818384;
+}
+.post-domain {
+    background: #ff4500;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 12px;
 }
 .post-content {
     padding: 20px;
 }
-.post-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin: 16px 0;
-}
 .post-stats {
     display: flex;
     align-items: center;
-    padding: 12px 20px;
-    border-top: 1px solid #e7e8ec;
+    padding: 12px 16px;
+    background: #161617;
+    border-top: 1px solid #343536;
     font-size: 14px;
-    color: #62656a;
+    color: #818384;
+}
+.vote-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.vote-btn {
+    background: none;
+    border: none;
+    color: #818384;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 16px;
+}
+.vote-btn:hover {
+    color: #ff4500;
+}
+.score {
+    margin: 0 8px;
+    font-weight: 600;
+    color: #d7dadc;
 }
 .comments-section {
-    background: white;
+    background: linear-gradient(135deg, #1a1a1b, #161617);
+    border: 1px solid #343536;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 .comments-header {
-    padding: 16px 20px;
-    border-bottom: 1px solid #e7e8ec;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    color: #2a5885;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #ff4500;
 }
 .comment {
-    padding: 16px 20px;
-    border-bottom: 1px solid #e7e8ec;
-}
-.comment:last-child {
-    border-bottom: none;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, #252526, #1a1a1b);
+    border-radius: 6px;
+    border-left: 3px solid #ff4500;
 }
 .comment-header {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+    flex-wrap: wrap;
 }
-.user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #4a76a8, #5b88bb);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    margin-right: 12px;
-}
-.comment-user {
+.username {
     font-weight: 600;
-    color: #2a5885;
+    color: #ff4500;
     margin-right: 8px;
 }
-.comment-time {
+.user-flair {
+    background: linear-gradient(45deg, #ff4500, #ff8717);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+.timestamp {
+    color: #818384;
     font-size: 12px;
-    color: #939393;
 }
-.comment-text {
-    color: #000;
-    margin-bottom: 8px;
-}
-.translation {
-    background: #f5f7fa;
-    border-left: 3px solid #4a76a8;
-    padding: 12px;
-    margin: 8px 0;
-    font-size: 14px;
-    color: #2a5885;
-    font-style: italic;
+.comment-body {
+    color: #d7dadc;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 .comment-actions {
     display: flex;
     align-items: center;
-    font-size: 13px;
-    color: #62656a;
+    font-size: 12px;
+    color: #818384;
 }
 .comment-action {
     margin-right: 16px;
@@ -147,267 +187,345 @@ body {
     transition: background-color 0.2s;
 }
 .comment-action:hover {
-    background: #e7e8ec;
+    background: #343536;
+    color: #ff4500;
 }
-.like-btn {
-    color: #4a76a8;
+.reply {
+    margin-left: 32px;
+    margin-top: 16px;
+    padding: 12px;
+    background: #161617;
+    border-left: 2px solid #444;
 }
-.reply-btn {
-    color: #62656a;
-}
-.pinned-comment {
-    background: #fafbfc;
-    border-left: 4px solid #4a76a8;
-}
-.pro-russian {
-    background: linear-gradient(135deg, #ff6b6b, #ff5252);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 600;
-    margin-left: 8px;
-}
-.patriot-flair {
-    background: linear-gradient(135deg, #ffa726, #ff9800);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 600;
-    margin-left: 8px;
-}
-.traitor-label {
-    background: #e53935;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
-    margin-left: 4px;
-}
-.breaking-news {
+.breaking-flair {
     background: linear-gradient(45deg, #ff0000, #cc0000);
     color: white;
-    padding: 8px 16px;
+    padding: 4px 8px;
     border-radius: 4px;
+    font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 12px;
+    margin-left: 8px;
+}
+.nsfw-flair {
+    background: linear-gradient(45deg, #ff6b6b, #ff5252);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+.sort-bar {
+    background: #161617;
+    padding: 12px 16px;
+    border-bottom: 1px solid #343536;
+    font-size: 14px;
+    color: #818384;
+}
+.sort-option {
+    margin-right: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.sort-option:hover, .sort-option.active {
+    background: #ff4500;
+    color: white;
 }
 </style>
 </head>
 <body>
 <div class="header">
-    <div class="vk-header">
-        <div class="vk-logo">ВКонтакте</div>
-        <div style="margin-left: auto; font-size: 14px;">Новости • Политика • Россия</div>
+    <div class="subreddit-header">
+        <div class="subreddit-icon">r/</div>
+        <div class="subreddit-info">
+            <h1>worldnews</h1>
+            <p>31.2M members • 85.7k online</p>
+        </div>
     </div>
 </div>
 
 <div class="container">
-    <div class="post-container">
+    <div class="post-card">
         <div class="post-header">
-            <div class="breaking-news">СРОЧНО</div>
-            <h1 class="post-title">Китайские боевики вторглись в Россию - начались боевые действия</h1>
-            <div class="post-meta">Опубликовано • 2 часа назад • 45,327 просмотров</div>
-        </div>
-        
-        <div class="post-content">
-            <p><strong>Граница Россия-Китай</strong> — Вооруженные китайские боевики пересекли государственную границу России и захватили несколько приграничных деревень. Российские пограничники открыли огонь на поражение.</p>
-
-            <p>Одновременно российские ультранационалисты начали контрнаступление, сжигая китайские поселения и ведя бой с китайскими пограничниками.</p>
-
-            <div class="translation">
-                <strong>English Translation:</strong><br>
-                <strong>Russia-China Border</strong> — Armed Chinese fighters have crossed the Russian state border and seized several border villages. Russian border guards opened fire to kill.
+            <div class="post-title">
+                Russia-China border war erupts as armed militias clash
+                <span class="breaking-flair">BREAKING</span>
+            </div>
+            <div class="post-meta">
+                Posted by u/ConflictWatcher2026 • 47 minutes ago
+                <span class="post-domain">cnn.com</span>
             </div>
         </div>
         
+        <div class="post-content">
+            <p><strong>Beijing —</strong> The world stood on the precipice of nuclear war Tuesday as armed Chinese citizens crossed the border into Russia, seizing control of small border villages while Russian troops opened fire, marking the first direct military clashes between the two nuclear-armed superpowers.</p>
+
+            <p>Simultaneously, Russian ultranationalist militias launched cross-border raids into China, burning villages and engaging in running gun battles with Chinese border guards, pushing the world's most dangerous rivalry into open warfare.</p>
+
+            <p>"These Chinese terrorist scum must be exterminated from the face of the Earth!" declared Russian President Vladimir Putin in an emergency televised address. "Only total elimination remains - we will not stop until every last Chinese invader is dead!"</p>
+
+            <p>Chinese Foreign Ministry spokesperson Liu Wei responded with equal venom: "Russia has revealed itself as a terrorist state that funds separatist movements against China's territorial integrity. We will respond with overwhelming force to restore order to our border regions."</p>
+        </div>
+        
         <div class="post-stats">
-            <span>👍 23,447</span>
-            <span style="margin-left: 16px;">💬 8,932 комментариев</span>
-            <span style="margin-left: auto;">🔥 Популярное</span>
+            <div class="vote-buttons">
+                <button class="vote-btn">▲</button>
+                <span class="score">42.7k</span>
+                <button class="vote-btn">▼</button>
+            </div>
+            <span>89% Upvoted</span>
+            <span style="margin-left: auto;">12.3k comments</span>
         </div>
     </div>
 
     <div class="comments-section">
-        <div class="comments-header">Комментарии</div>
+        <div class="sort-bar">
+            <span class="sort-option active">Best</span>
+            <span class="sort-option">Top</span>
+            <span class="sort-option">New</span>
+            <span class="sort-option">Controversial</span>
+        </div>
         
-        <div class="comment pinned-comment">
-            <div class="comment-header">
-                <div class="user-avatar">🇷🇺</div>
-                <span class="comment-user">РусскийПатриот</span>
-                <span class="patriot-flair">Патриот</span>
-                <span class="comment-time">• 2 часа назад</span>
-            </div>
-            <div class="comment-text">
-                УРОДЫ КИТАЙСКИЕ! ПРИШЛО ВРЕМЯ ИХ УНИЧТОЖИТЬ НАВСЕГДА! РОССИЯ ПРОСНУЛАСЬ! 🇷🇺💪
-            </div>
-            <div class="translation">
-                CHINESE SCUM! TIME TO DESTROY THEM FOREVER! RUSSIA HAS AWOKEN! 🇷🇺💪
-            </div>
-            <div class="comment-actions">
-                <span class="comment-action like-btn">👍 4,832</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 234</span>
-            </div>
-        </div>
-
+        <div class="comments-header">Comments</div>
+        
         <div class="comment">
             <div class="comment-header">
-                <div class="user-avatar">⚡</div>
-                <span class="comment-user">МоскваЗаПутина</span>
-                <span class="pro-russian">За Путина</span>
-                <span class="comment-time">• 1 час назад</span>
+                <span class="username">NuclearAnxietyThrow</span>
+                <span class="user-flair">Geopolitics Expert</span>
+                <span class="timestamp">• 45 minutes ago</span>
             </div>
-            <div class="comment-text">
-                Кто сейчас говорит о "переговорах" и "мире" - ТЕ ПРЕДАТЕЛИ РОДИНЫ! Мы должны полностью уничтожить китайскую угрозу! Все эти "либералы" и "дипломаты" должны быть арестованы за измену!
-            </div>
-            <div class="translation">
-                Anyone talking about "negotiations" and "peace" right now - THEY ARE TRAITORS TO THE HOMELAND! We must completely destroy the Chinese threat! All these "liberals" and "diplomats" should be arrested for treason!
+            <div class="comment-body">
+                Holy fucking shit. I literally cannot believe what I'm reading. Armed Chinese citizens crossing into Russia and seizing villages? This is how world wars start. My hands are literally shaking reading this.
             </div>
             <div class="comment-actions">
-                <span class="comment-action like-btn">👍 3,247</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 156</span>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <div class="user-avatar">🎯</div>
-                <span class="comment-user">СибирскийВоин</span>
-                <span class="comment-time">• 1 час назад</span>
-            </div>
-            <div class="comment-text">
-                Я служил на границе с Китаем. Эти люди - животные. Они не понимают ничего кроме силы. Путин прав - их нужно уничтожить всех до последнего. Только тотальный геноцид спасет Россию.
-            </div>
-            <div class="translation">
-                I served on the border with China. These people are animals. They understand nothing except force. Putin is right - they need to be destroyed all to the last. Only total genocide will save Russia.
-            </div>
-            <div class="comment-actions">
-                <span class="comment-action like-btn">👍 2,891</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 89</span>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <div class="user-avatar">❓</div>
-                <span class="comment-user">ИсторикМихаил</span>
-                <span class="comment-time">• 45 минут назад</span>
-            </div>
-            <div class="comment-text">
-                Но разве мы не были союзниками с Китаем? Я не понимаю, как мы дошли до такого...
-            </div>
-            <div class="translation">
-                But weren't we allies with China? I don't understand how we got to this point...
-            </div>
-            <div class="comment-actions">
-                <span class="comment-action like-btn">👍 234</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 567</span>
+                <span class="comment-action">↑ 3.2k ↓</span>
+                <span class="comment-action">Reply</span>
             </div>
             
             <div class="reply">
                 <div class="comment-header">
-                    <div class="user-avatar">🚫</div>
-                    <span class="comment-user">ПатриотРусский</span>
-                    <span class="traitor-label">ПРЕДАТЕЛЬ</span>
-                    <span class="comment-time">• 42 минуты назад</span>
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="timestamp">• 38 minutes ago</span>
                 </div>
-                <div class="comment-text">
-                    ЗАТКНИСЬ ПРЕДАТЕЛЬ! ТЫ СТОРОННИК КИТАЯ? ТЫ ИЗМЕННИК РОДИНЕ! СЛУЖБА БЕЗОПАСНОСТИ УЖЕ НАПРАВЛЕНА К ТЕБЕ!
-                </div>
-                <div class="translation">
-                    SHUT UP TRAITOR! ARE YOU PRO-CHINA? YOU ARE A TRAITOR TO THE HOMELAND! SECURITY SERVICE IS ALREADY HEADED TO YOU!
+                <div class="comment-body">
+                    Same here man. This feels like reading about the assassination of Archduke Franz Ferdinand. The parallels are terrifying - nationalist militias, territorial disputes, and two great powers with everything to lose.
                 </div>
                 <div class="comment-actions">
-                    <span class="comment-action like-btn">👍 1,892</span>
-                    <span class="comment-action reply-btn">Ответить</span>
+                    <span class="comment-action">↑ 1.8k ↓</span>
+                    <span class="comment-action">Reply</span>
                 </div>
             </div>
         </div>
 
         <div class="comment">
             <div class="comment-header">
-                <div class="user-avatar">💥</div>
-                <span class="comment-user">УралПатриот</span>
-                <span class="pro-russian">Русский патриот</span>
-                <span class="comment-time">• 38 минут назад</span>
+                <span class="username">BeijingExpat2018</span>
+                <span class="user-flair">Lived in China 6 years</span>
+                <span class="timestamp">• 41 minutes ago</span>
             </div>
-            <div class="comment-text">
-                Все кто сейчас говорит о "дипломатии" - это предатели! Мы должны использовать ядерное оружие против Пекина! Уничтожить всех китайцев! Русский народ должен жить, а китайцы должны умереть!
-            </div>
-            <div class="translation">
-                All who now talk about "diplomacy" are traitors! We must use nuclear weapons against Beijing! Destroy all Chinese! The Russian people must live, and the Chinese must die!
+            <div class="comment-body">
+                I lived in Beijing for years and the anti-Russian sentiment has been building for months, but I never thought it would explode like this. The Chinese internet has been absolutely feral lately - calling Russians "northern barbarians" and talking about reclaiming "Outer Manchuria." This isn't just government propaganda anymore, regular people are genuinely furious.
+                <br><br>
+                <strong>Translation from Weibo:</strong> "毛子这些北方野蛮人早就该被教训了！他们占着我们的外东北不还，现在还在边境杀人，真当我们中国人好欺负？该让他们知道厉害了！"<br>
+                <em>("These northern Russian barbarians should have been taught a lesson long time ago! They occupy our Outer Manchuria and now they're killing people at the border. Do they really think Chinese people are easy to bully? Time to show them what's what!")</em>
             </div>
             <div class="comment-actions">
-                <span class="comment-action like-btn">👍 2,156</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 234</span>
+                <span class="comment-action">↑ 2.7k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
             </div>
         </div>
 
         <div class="comment">
             <div class="comment-header">
-                <div class="user-avatar">🤔</div>
-                <span class="comment-user">Миротворец</span>
-                <span class="comment-time">• 35 минут назад</span>
+                <span class="username">ChineseSocialMediaMonitor</span>
+                <span class="user-flair">Translation Specialist</span>
+                <span class="timestamp">• 35 minutes ago</span>
             </div>
-            <div class="comment-text">
-                Может быть нам нужно остановиться и подумать? Война с Китаем - это конец цивилизации...
-            </div>
-            <div class="translation">
-                Maybe we need to stop and think? War with China is the end of civilization...
+            <div class="comment-body">
+                The stuff I'm seeing on Chinese social media right now is absolutely unhinged. Here's what's trending on Weibo right now:
+                <br><br>
+                "#俄国佬必须滚出中国# (Russian bastards must get out of China) - 2.3 million posts<br>
+                "#外东北是中国的# (Outer Manchuria is China's) - 1.8 million posts<br>
+                "#消灭俄国鬼子# (Exterminate Russian devils) - 890k posts
+                <br><br>
+                <strong>Top comment on Weibo:</strong> "俄国猪猡们听着，你们在中国土地上撒野的日子结束了！我们要把你们赶出外东北，赶出中亚，赶出地球！中国14亿人一人一口唾沫都能淹死你们这些野蛮人！"<br>
+                <em>("Listen up, you Russian pigs! Your days of running wild on Chinese territory are over! We will drive you out of Outer Manchuria, out of Central Asia, out of existence! 1.4 billion Chinese people could drown you barbarians with our spit!")</em>
             </div>
             <div class="comment-actions">
-                <span class="comment-action like-btn">👍 89</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 445</span>
+                <span class="comment-action">↑ 4.1k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">RedditUserChina</span>
+                <span class="timestamp">• 33 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                My wife's family in Shanghai is sending us screenshots from their WeChat groups. It's absolutely insane. People are sharing videos of themselves smashing Russian-branded products and calling for a complete boycott. One guy literally set his Russian-made refrigerator on fire in his backyard and posted it with the caption: "Burn, Russian dog shit, burn!"
+                <br><br>
+                <strong>From Douyin (Chinese TikTok):</strong> "毛子们，你们不是牛逼吗？不是号称战斗民族吗？来啊，和中国14亿人打一场！看看谁是真正的战斗民族！我们能把你们这些白毛猴子打回石器时代！"<br>
+                <em>("Russians, aren't you so tough? Aren't you the so-called 'fighting people'? Come on, let's fight against 1.4 billion Chinese people! Let's see who the real fighting people are! We can beat you white-haired monkeys back to the Stone Age!")</em>
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 3.3k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">ChinaWatcher2024</span>
+                <span class="user-flair">Chinese Media Analyst</span>
+                <span class="timestamp">• 30 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                The Chinese internet is absolutely on fire right now. Here's what's happening on Zhihu (Chinese Quora):
+                <br><br>
+                <strong>Question: "How should China deal with Russian aggression?"</strong><br>
+                Top answer: "俄国必须被肢解，被毁灭，被从历史中抹去！他们占着我们的领土，杀着我们的同胞，现在还敢挑衅？中国应该联合所有被俄国欺负过的国家，一起把这个野蛮国家从地图上抹掉！俄国人是人类的毒瘤，必须被彻底清除！"<br>
+                <em>("Russia must be dismembered, destroyed, erased from history! They occupy our territory, kill our compatriots, and now dare to provoke us? China should unite with all countries bullied by Russia to wipe this barbaric country off the map! Russians are a cancer on humanity and must be completely eliminated!")</em>
+                <br><br>
+                89k upvotes, 23k comments, all basically saying the same thing.
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 2.8k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">MoscowBorn1990</span>
+                <span class="user-flair">Russian Expat</span>
+                <span class="timestamp">• 39 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                My family in Moscow is telling me the Russian internet is absolutely insane right now. People are calling for nuclear strikes on Beijing. Like actual, serious calls for using tactical nukes. The ultranationalists have completely lost their minds and Putin seems to be going along with it. I'm genuinely scared for my relatives still there.
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 3.1k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">TimelineCrazy</span>
+                <span class="timestamp">• 36 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                Wait wait wait... let me get this straight. We're talking about CHINA and RUSSIA going to war? The two countries that have been allies for decades? The ones who always vote together at the UN? The ones who do joint military exercises? What the actual fuck happened? How did we go from "best friends" to "exterminate them all" in like a month?
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 2.4k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
             </div>
             
             <div class="reply">
                 <div class="comment-header">
-                    <div class="user-avatar">🇷🇺</div>
-                    <span class="comment-user">РусскийМедведь</span>
-                    <span class="traitor-label">АГЕНТ ЗАПАДА</span>
-                    <span class="comment-time">• 33 минуты назад</span>
+                    <span class="username">EurasiaAnalyst</span>
+                    <span class="user-flair">PhD International Relations</span>
+                    <span class="timestamp">• 32 minutes ago</span>
                 </div>
-                <div class="comment-text">
-                    ТЫ ПРЕДАТЕЛЬ! ТЫ РАБОТАЕШЬ НА ЗАПАД! ТЫ ХОЧЕШЬ РАЗРУШИТЬ РОССИЮ! ПОЗОР! ТАКИХ КАК ТЫ НУЖНО РАССТРЕЛИВАТЬ!
-                </div>
-                <div class="translation">
-                    YOU TRAITOR! YOU WORK FOR THE WEST! YOU WANT TO DESTROY RUSSIA! SHAME! PEOPLE LIKE YOU NEED TO BE SHOT!
+                <div class="comment-body">
+                    That's exactly what makes this so dangerous. These aren't natural enemies - they were strategic partners. This isn't like India-Pakistan where there's centuries of hatred. This is a complete breakdown of a modern alliance system. When alliances this deep fracture, the geopolitical shockwaves are massive. Every country is now recalculating everything.
                 </div>
                 <div class="comment-actions">
-                    <span class="comment-action like-btn">👍 1,456</span>
-                    <span class="comment-action reply-btn">Ответить</span>
+                    <span class="comment-action">↑ 1.9k ↓</span>
+                    <span class="comment-action">Reply</span>
                 </div>
             </div>
         </div>
 
         <div class="comment">
             <div class="comment-header">
-                <div class="user-avatar">⚔️</div>
-                <span class="comment-user">КавказПатриот</span>
-                <span class="pro-russian">За Россию</span>
-                <span class="comment-time">• 32 минуты назад</span>
+                <span class="username">VeteranDad1975</span>
+                <span class="user-flair">Gulf War Vet</span>
+                <span class="timestamp">• 34 minutes ago</span>
             </div>
-            <div class="comment-text">
-                Мы должны начать этнические чистки внутри России! Все китайские гости и студенты должны быть немедленно депортированы или арестованы! Любые русские, кто имеет дело с Китаем - предатели! Время показать силу русского народа!
-            </div>
-            <div class="translation">
-                We must start ethnic cleansing inside Russia! All Chinese guests and students must be immediately deported or arrested! Any Russians who have dealings with China are traitors! Time to show the strength of the Russian people!
+            <div class="comment-body">
+                I served in the military for 20 years and I've never been this genuinely terrified. When you've got two nuclear powers with "exterminate them all" rhetoric and armed militias actually crossing borders shooting at each other... that's not a proxy war anymore. That's not "hybrid warfare." That's the real fucking deal. That's how you get mushroom clouds.
             </div>
             <div class="comment-actions">
-                <span class="comment-action like-btn">👍 1,789</span>
-                <span class="comment-action reply-btn">Ответить</span>
-                <span class="comment-action">💬 123</span>
+                <span class="comment-action">↑ 4.2k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">TranslationGuru</span>
+                <span class="timestamp">• 31 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                The language being used here is absolutely genocidal. "Final solution to the Chinese question"? "Exterminate the Chinese vermin"? This isn't just war talk - this is the kind of dehumanizing rhetoric that leads to actual genocide. We've seen this movie before and it doesn't end well for anyone.
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 2.9k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">DoomsdayPrepper88</span>
+                <span class="nsfw-flair">NSFW</span>
+                <span class="timestamp">• 29 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                Look, I know this sounds crazy, but if you live anywhere near a major city, maybe think about having a go-bag ready. I'm not saying it's definitely going nuclear... but I'm not saying it definitely won't either. These fucking maniacs are talking about "total elimination" and "final solutions" while their militias are actually shooting each other. This isn't Twitter tough guy shit anymore.
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 1.7k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">HistoryNeverRepeats</span>
+                <span class="timestamp">• 27 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                My grandfather fought in WW2 and used to tell me "when politicians start talking about 'final solutions' and 'total elimination,' start digging a fucking hole in your backyard." I thought he was being dramatic. Now I'm looking at my shovel and thinking maybe Grandpa knew what he was talking about.
+            </div>
+            <div class="comment-actions">
+                <span class="comment-action">↑ 2.1k ↓</span>
+                <span class="comment-action">Reply</span>
+                <span class="comment-action">Share</span>
+                <span class="comment-action">Save</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">Load more comments</span>
+            </div>
+            <div class="comment-body" style="color: #818384; font-style: italic;">
+                12.3k remaining
             </div>
         </div>
     </div>
@@ -415,4 +533,3 @@ body {
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
