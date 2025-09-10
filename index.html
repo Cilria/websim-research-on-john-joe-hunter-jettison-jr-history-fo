@@ -1,215 +1,279 @@
 <html>
 <head>
-<title>BBC News - China-Russia tensions escalate as netizens trade insults and boycott calls</title>
+<title>CNN: Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
-    font-family: 'BBC Reith', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #1a1a1a;
+    font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 .header {
-    background-color: #000000;
+    background: linear-gradient(135deg, #cc0000, #990000);
     color: white;
-    padding: 12px 16px;
-    font-size: 28px;
-    font-weight: bold;
-    border-bottom: 4px solid #cc0000;
+    padding: 20px 16px;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 20px rgba(204, 0, 0, 0.3);
 }
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 20px;
 }
 .article-header {
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
 }
 .headline {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #000;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 .subheadline {
-    font-size: 18px;
-    color: #404040;
-    margin-bottom: 20px;
-    font-weight: normal;
+    font-size: 22px;
+    color: #ff6b6b;
+    margin-bottom: 25px;
+    font-weight: 400;
 }
 .byline {
-    color: #404040;
-    font-size: 14px;
-    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 .timestamp {
-    color: #757575;
-    font-size: 14px;
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
 }
 .article-content {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.8;
 }
 .article-content p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+.breaking-banner {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
 }
 .social-media-box {
-    background: #f5f5f5;
-    border-left: 4px solid #cc0000;
-    padding: 20px;
-    margin: 30px 0;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border: 1px solid #cc0000;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 40px 0;
+    box-shadow: 0 8px 32px rgba(204, 0, 0, 0.2);
 }
 .social-media-header {
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 15px;
-    font-size: 16px;
+    font-weight: 900;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 18px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .social-post {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 15px;
-    font-family: 'BBC Reith', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #252525, #1a1a1a);
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 .social-username {
-    font-weight: bold;
-    color: #cc0000;
-    margin-bottom: 5px;
+    font-weight: 900;
+    color: #ff6b6b;
+    margin-bottom: 8px;
+    font-size: 16px;
 }
 .social-content {
-    color: #1a1a1a;
-    line-height: 1.5;
+    color: #fff;
+    line-height: 1.7;
+    font-size: 16px;
 }
 .quote-box {
-    background: #f5f5f5;
-    padding: 20px;
-    margin: 25px 0;
-    border-left: 4px solid #cc0000;
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    padding: 25px;
+    margin: 35px 0;
+    border-left: 5px solid #cc0000;
+    border-radius: 0 6px 6px 0;
 }
 .quote-attribution {
     font-style: italic;
-    color: #404040;
-    margin-top: 10px;
+    color: #ff6b6b;
+    margin-top: 15px;
+    font-weight: 500;
 }
 .warning-box {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    border-radius: 4px;
-    padding: 20px;
-    margin: 30px 0;
+    background: linear-gradient(135deg, #ff6b6b, #ff5252);
+    color: white;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 35px 0;
+    box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
 }
 .warning-header {
-    color: #856404;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.bbc-analysis {
-    background: #e6f3ff;
-    border: 1px solid #b3d9ff;
-    border-radius: 4px;
-    padding: 20px;
-    margin: 30px 0;
+.cnn-analysis {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    color: white;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 35px 0;
+    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.3);
 }
 .analysis-header {
-    color: #0056b3;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 900;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.video-container {
+    background: #000;
+    border: 2px solid #cc0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+.video-placeholder {
+    background: #1a1a1a;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cc0000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
 }
 </style>
 </head>
 <body>
 <div class="header">
-    BBC News
+    CNN
 </div>
 
 <div class="container">
+    <div class="breaking-banner">
+        BREAKING: Embassy Attack • Diplomatic Crisis • Live Updates
+    </div>
+    
     <div class="article-header">
-        <h1 class="headline">China-Russia tensions escalate as netizens trade insults and boycott calls</h1>
-        <p class="subheadline">Mainstream Chinese media joins online campaign against Russia as diplomatic relationship deteriorates</p>
-        <div class="byline">By BBC News Staff</div>
-        <div class="timestamp">28 October 2026</div>
+        <h1 class="headline">Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</h1>
+        <p class="subheadline">Violent protests erupt across Russian capital as diplomatic relationship collapses into chaos</p>
+        <div class="byline">By CNN International Staff</div>
+        <div class="timestamp">November 1, 2026 • 11:47 AM ET</div>
     </div>
 
     <div class="article-content">
-        <p><strong>Beijing —</strong> Chinese social media users have dramatically escalated their anti-Russian rhetoric, calling Russians "barbarians" and urging widespread boycotts of Russian goods, as mainstream media outlets in China appear to endorse the nationalist sentiment.</p>
+        <p><strong>Moscow —</strong> Tens of thousands of Russian ultranationalists stormed the Chinese embassy in Moscow on Saturday, chanting "Death to the Yellow Menace!" before breaking into the compound and setting it ablaze, marking the most serious escalation in the rapidly deteriorating relationship between the two powers.</p>
 
-        <p>The online campaign, which began last week with mocking memes and historical grievances, has now evolved into explicit calls for Russians to be expelled from China and for economic warfare against Russian products.</p>
+        <p>The protests, which began peacefully near the embassy gates, quickly descended into violent riots as demonstrators targeted Chinese businesses across the Russian capital, destroying anything perceived as Chinese while police largely stood by.</p>
 
-        <div class="social-media-box">
-            <div class="social-media-header">Viral Anti-Russian Posts</div>
-            <div class="social-post">
-                <div class="social-username">@MiddleKingdomPatriot</div>
-                <div class="social-content">Russians are nothing but barbarians! They should all be kicked out of China. Let the Russian dogs starve to death! #BoycottRussia #RussiansOut</div>
-            </div>
-            <div class="social-post">
-                <div class="social-username">@BeijingTiger</div>
-                <div class="social-content">Smash all Russian goods! Don't buy their oil, their weapons, their anything. Let them feel the power of 1.4 billion Chinese consumers! Russian pigs don't deserve our money!</div>
+        <div class="video-container">
+            <div class="video-placeholder">
+                📹 LIVE VIDEO: Embassy Burns • Riots Spread • Click to Play
             </div>
         </div>
 
-        <p>The campaign has gained significant traction on Weibo and other Chinese platforms, with state-run media outlets now amplifying the nationalist sentiment rather than attempting to cool tensions.</p>
+        <p>"The barbarians have broken the curse," posted one Chinese social media user as footage of the embassy burning circulated online. "It's time to teach them a lesson they will never forget."</p>
+
+        <div class="social-media-box">
+            <div class="social-media-header">Chinese Fury Online</div>
+            <div class="social-post">
+                <div class="social-username">@DragonWarrior2026</div>
+                <div class="social-content">Russian pigs dare to burn our embassy? We should nuke Moscow and turn it into glass! These white barbarians need to learn their place! #RevengeOnRussia #NukeTheBears</div>
+            </div>
+            <div class="social-post">
+                <div class="social-username">@MiddleKingdomRises</div>
+                <div class="social-content">EXPLEvery Russian in China must be expelled immediately! Close their consulates! Seize their assets! Let them feel the wrath of 1.4 billion Chinese! Time to reclaim Siberia! #RussiansOut #ReclaimOurLand</div>
+            </div>
+        </div>
+
+        <p>The attack on the embassy represents a stunning breakdown in diplomatic relations that have been deteriorating since late October, when online sparring between citizens of both countries escalated into government-sanctioned hostility.</p>
+
+        <p>Russian state media praised the protesters, with RT calling them "patriots defending Russian dignity" while Chinese state media reacted with unprecedented fury, calling the attacks "barbaric acts of war."</p>
 
         <div class="quote-box">
-            <p>"The Russians have shown their true colors as untrustworthy partners. Chinese consumers have every right to express their displeasure through economic means."</p>
-            <div class="quote-attribution">— Global Times editorial, 27 October 2026</div>
+            <p>"The Russian government has blood on their hands. They encouraged these animals to attack our embassy. This is an act of war that cannot go unpunished."</p>
+            <div class="quote-attribution">— Global Times editorial, November 1, 2026</div>
         </div>
 
-        <p>China Central Television (CCTV) ran a segment on Tuesday highlighting historical grievances against Russia, while the nationalist tabloid Global Times published an editorial endorsing consumer boycotts.</p>
-
-        <p>The shift in tone follows weeks of escalating tensions that began with Chinese netizens mocking Russia's military performance and economic dependency on China.</p>
-
-        <div class="warning-box">
-            <div class="warning-header">Russian Ultranationalist Response</div>
-            <p>Russian ultranationalist groups have reacted with fury to the Chinese campaign, with prominent hardliners calling for military preparations and accusing the Kremlin of weakness in the face of Chinese provocation.</p>
-        </div>
-
-        <p>Alexander Dugin, the influential Russian nationalist thinker, posted an angry response: "The Chinese barbarians dare to call us barbarians? They forget that Russia has nuclear weapons for a reason. Let them try to boycott us - we will cut off their gas and watch them freeze!"</p>
-
-        <p>The Russian ultranationalist channel @RussianBear posted: "Chinese pigs think they can insult the great Russian nation? We will show them the power of Russian missiles. Moscow should cut all ties with these yellow monkeys immediately!"</p>
+        <p>Chinese authorities quickly organized massive protests outside the Russian embassy in Beijing, with demonstrators calling for immediate retaliation and the expulsion of all Russian citizens.</p>
 
         <div class="social-media-box">
-            <div class="social-media-header">Russian Ultranationalist Fury</div>
+            <div class="social-media-header">Russian Ultranationalist Chants</div>
             <div class="social-post">
-                <div class="social-username">@SiberianWarrior</div>
-                <div class="social-content">Chinese dogs call us barbarians? We civilized Siberia while they were still eating dogs! Russia should nuke Beijing and teach these insects a lesson they'll never forget!</div>
-            </div>
-            <div class="social-post">
-                <div class="social-username">@MoscowPatriot</div>
-                <div class="social-content">Boycott Chinese goods! Close their Confucius Institutes! Expel their spies! Russia survived without China for centuries, we can do it again. Slava Rossii!</div>
+                <div class="social-username">@MoscowFrontline (Video transcript)</div>
+                <div class="social-content">"Death to the Yellow Menace!" "Expel these monsters from our land!" "Russia for Russians!" "Chinese pigs go home!" The crowd of 50,000+ marched through Moscow carrying torches and anti-Chinese banners.</div>
             </div>
         </div>
 
-        <p>The mainstream Russian media has also joined the fray, with state television running segments highlighting Chinese "betrayal" and historical grievances.</p>
+        <p>The violence spread rapidly through Moscow's business districts, with Russian mobs systematically targeting Chinese restaurants, shops, and businesses. Eyewitnesses reported seeing protesters armed with bats and Molotov cocktails while police failed to intervene effectively.</p>
 
-        <p>Russia-1 television anchor Dmitry Kiselyev declared on his program: "The Chinese have shown themselves to be unreliable partners who stab us in the back. They call us barbarians while they oppress their own people and threaten their neighbors."</p>
+        <p>"They were like animals," said one Chinese restaurant owner who fled the violence. "They smashed everything with hammers, poured gasoline, and set it on fire. They didn't care who was inside."</p>
 
-        <div class="bbc-analysis">
-            <div class="analysis-header">BBC Analysis</div>
-            <p>The escalation from social media sparring to mainstream media endorsement represents a dangerous deterioration in China-Russia relations. Both sides appear to be competing to demonstrate nationalist credentials, with neither government willing to de-escalate tensions.</p>
+        <div class="warning-box">
+            <div class="warning-header">Diplomatic Crisis Deepens</div>
+            <p>Both governments have now recalled their ambassadors as the crisis threatens to spiral into military confrontation. Chinese military units have been put on high alert along the Russian border.</p>
         </div>
 
-        <p>The economic implications could be severe if the boycott campaigns gain traction. China is Russia's largest trading partner, while Russia supplies crucial energy resources to China.</p>
+        <p>Chinese President Xi Jinping convened an emergency meeting of the National Security Commission, while Russian President Vladimir Putin praised the protesters for showing "Russian strength and resolve."</p>
 
-        <p>"This is psychological warfare that could have real economic consequences," said Dr. Sarah Chen, Russia-China relations expert at the University of Hong Kong. "Once nationalist sentiment takes hold, it becomes very difficult for governments to control."</p>
+        <div class="social-media-box">
+            <div class="social-media-header">Chinese State Media Response</div>
+            <div class="social-post">
+                <div class="social-username">@ChinaDailyOfficial</div>
+                <div class="social-content">The barbaric attack on our embassy proves that Russians are nothing but uncivilized barbarians. China must respond with maximum force. These white devils understand only strength! #EyeForAnEye</div>
+            </div>
+        </div>
 
-        <p>Chinese Foreign Ministry spokesman Wang Wenbin declined to condemn the nationalist rhetoric, instead saying that "Chinese people have the right to express their views on historical issues and current events."</p>
+        <p>International observers expressed shock at the speed of the deterioration, noting that the China-Russia partnership had been considered one of the most stable geopolitical relationships of the past decade.</p>
 
-        <p>The Russian Foreign Ministry summoned the Chinese ambassador for a formal protest, but Beijing appears unwilling to rein in the nationalist sentiment.</p>
+        <div class="cnn-analysis">
+            <div class="analysis-header">CNN Analysis</div>
+            <p>The embassy attack represents a catastrophic failure of diplomacy that could reshape global geopolitics. With both governments now encouraging nationalist fervor rather than restraint, the world may be witnessing the collapse of the China-Russia alliance and the emergence of a dangerous new Cold War in Asia.</p>
+        </div>
 
-        <p>As both sides trade increasingly hostile insults and boycott calls, analysts warn that the diplomatic relationship that both Moscow and Beijing have carefully cultivated could face its most serious test in decades.</p>
+        <p>As night fell in Moscow, the Chinese embassy continued to burn while Russian ultranationalists celebrated what they called "the beginning of the liberation of Russia from Chinese influence."</p>
 
-        <p>"We're witnessing the unraveling of the strategic partnership," said Dr. Chen. "The question now is whether either side can step back from the brink before real damage is done."</p>
+        <p>In Beijing, massive crowds gathered outside the Russian embassy, throwing rocks and calling for war. Chinese authorities seemed unwilling or unable to control the growing anti-Russian sentiment.</p>
+
+        <p>The world now watches nervously as two nuclear powers slide toward confrontation, their leaders seemingly powerless to stop the nationalist forces they helped unleash.</p>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
