@@ -1,281 +1,353 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>CNN: Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-    font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-.header {
-    background: linear-gradient(135deg, #cc0000, #990000);
-    color: white;
-    padding: 20px 16px;
-    font-size: 32px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 4px 20px rgba(204, 0, 0, 0.3);
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-.article-header {
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #333;
-}
-.headline {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-.subheadline {
-    font-size: 22px;
-    color: #ff6b6b;
-    margin-bottom: 25px;
-    font-weight: 400;
-}
-.byline {
-    color: #ccc;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.timestamp {
-    color: #888;
-    font-size: 16px;
-    font-weight: 300;
-}
-.article-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.8;
-}
-.article-content p {
-    margin-bottom: 25px;
-}
-.breaking-banner {
-    background: linear-gradient(45deg, #ff0000, #cc0000);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    animation: pulse 2s infinite;
-}
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.8; }
-    100% { opacity: 1; }
-}
-.social-media-box {
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-    border: 1px solid #cc0000;
-    border-radius: 8px;
-    padding: 25px;
-    margin: 40px 0;
-    box-shadow: 0 8px 32px rgba(204, 0, 0, 0.2);
-}
-.social-media-header {
-    font-weight: 900;
-    color: #ff6b6b;
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.social-post {
-    background: linear-gradient(135deg, #252525, #1a1a1a);
-    border: 1px solid #444;
-    border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-family: inherit;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-}
-.social-username {
-    font-weight: 900;
-    color: #ff6b6b;
-    margin-bottom: 8px;
-    font-size: 16px;
-}
-.social-content {
-    color: #fff;
-    line-height: 1.7;
-    font-size: 16px;
-}
-.quote-box {
-    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-    padding: 25px;
-    margin: 35px 0;
-    border-left: 5px solid #cc0000;
-    border-radius: 0 6px 6px 0;
-}
-.quote-attribution {
-    font-style: italic;
-    color: #ff6b6b;
-    margin-top: 15px;
-    font-weight: 500;
-}
-.warning-box {
-    background: linear-gradient(135deg, #ff6b6b, #ff5252);
-    color: white;
-    border-radius: 6px;
-    padding: 25px;
-    margin: 35px 0;
-    box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
-}
-.warning-header {
-    font-weight: 900;
-    margin-bottom: 15px;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.cnn-analysis {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
-    color: white;
-    border-radius: 6px;
-    padding: 25px;
-    margin: 35px 0;
-    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.3);
-}
-.analysis-header {
-    font-weight: 900;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-.video-container {
-    background: #000;
-    border: 2px solid #cc0000;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 30px 0;
-    text-align: center;
-}
-.video-placeholder {
-    background: #1a1a1a;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #cc0000;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 4px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>r/worldnews - Russian ultranationalists storm Chinese embassy in Moscow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .post-card {
+            background: linear-gradient(135deg, #1a1a1a, #252525);
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .subreddit {
+            color: #ff6b6b;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .post-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .post-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        
+        .post-content {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+        
+        .post-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .comment {
+            background: linear-gradient(135deg, #1a1a1a, #202020);
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .username {
+            font-weight: 600;
+            color: #ff6b6b;
+            font-size: 14px;
+        }
+        
+        .comment-score {
+            font-size: 12px;
+            color: #888;
+        }
+        
+        .comment-content {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+        }
+        
+        .comment-actions {
+            font-size: 12px;
+            color: #888;
+        }
+        
+        .nested-comment {
+            margin-left: 40px;
+            border-left: 2px solid #cc0000;
+            padding-left: 15px;
+        }
+        
+        .award {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        
+        .flair {
+            background: linear-gradient(135deg, #cc0000, #990000);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        
+        .sort-bar {
+            background: linear-gradient(135deg, #252525, #1a1a1a);
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #888;
+            border: 1px solid #333;
+        }
+        
+        .live-indicator {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    CNN
-</div>
-
-<div class="container">
-    <div class="breaking-banner">
-        BREAKING: Embassy Attack • Diplomatic Crisis • Live Updates
+    <div class="container">
+        <div class="post-card">
+            <div class="post-header">
+                <span class="subreddit">r/worldnews</span>
+                <span class="live-indicator">LIVE</span>
+            </div>
+            
+            <h1 class="post-title">Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</h1>
+            
+            <div class="post-meta">
+                Posted by u/InternationalNewsDesk • 2 hours ago • 89.2k upvotes • 18.5k comments
+            </div>
+            
+            <div class="post-content">
+                <p><strong>Moscow —</strong> Tens of thousands of Russian ultranationalists stormed the Chinese embassy in Moscow on Saturday, chanting "Death to the Yellow Menace!" before breaking into the compound and setting it ablaze, marking the most serious escalation in the rapidly deteriorating relationship between the two powers.</p>
+                
+                <p>The protests quickly descended into violent riots as demonstrators targeted Chinese businesses across the Russian capital, destroying anything perceived as Chinese while police largely stood by.</p>
+                
+                <p>Both governments have now recalled their ambassadors as the crisis threatens to spiral into military confrontation. Chinese military units have been put on high alert along the Russian border.</p>
+            </div>
+            
+            <div class="post-stats">
+                <span>💬 18.5k Comments</span>
+                <span>⬆️ 89.2k Upvotes</span>
+                <span>⭐ 12.3k Awards</span>
+                <span>🔄 4.7k Shares</span>
+            </div>
+        </div>
+        
+        <div class="sort-bar">
+            Best Comments • Sort by: Best ▼
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/GlobalObserver2026 <span class="flair">Verified Reporter</span></span>
+                <span class="comment-score">45.2k 🔥</span>
+            </div>
+            <div class="comment-content">
+                Holy fucking shit. I never thought I'd live to see the day when Russia and China would be at each other's throats like this. This is absolutely insane - they're actually burning embassies now. What the actual fuck is happening to this world?
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/HistoryBuff1984</span>
+                    <span class="comment-score">18.7k</span>
+                </div>
+                <div class="comment-content">
+                    Right?! Like literally two years ago they were doing joint military exercises and calling each other "strategic partners." Now we've got literal race riots and embassy burnings. This feels like some alternate timeline shit.
+                </div>
+                <div class="comment-actions">
+                    Reply • Share • Report • Save • Give Award
+                </div>
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/BeijingExpat</span>
+                    <span class="comment-score">12.3k</span>
+                </div>
+                <div class="comment-content">
+                    I'm in Beijing right now and people here are absolutely FURIOUS. Like, I've never seen this level of anti-Russian sentiment in my 8 years here. The Chinese internet is calling for actual war. This is getting scary real fast.
+                </div>
+                <div class="comment-actions">
+                    Reply • Share • Report • Save • Give Award
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/MoscowResident</span>
+                <span class="comment-score">38.9k 🔥</span>
+            </div>
+            <div class="comment-content">
+                I'm in Moscow and this is fucking terrifying. These aren't just "protesters" - these are organized ultranationalist militias that have been growing for years. The police literally stood by and watched them break into the embassy. This was coordinated from the top.
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/EasternEuropeanPol</span>
+                    <span class="comment-score">22.1k</span>
+                </div>
+                <div class="comment-content">
+                    This. People don't understand that these "patriotic" groups have been building up for years with government support. Now they've been unleashed and they won't stop at just the embassy. This is going to get so much worse.
+                </div>
+                <div class="comment-actions">
+                    Reply • Share • Report • Save • Give Award
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/NuclearAnalyst</span>
+                <span class="comment-score">31.4k</span>
+            </div>
+            <div class="comment-content">
+                Can we just pause for a second and appreciate how FUCKED UP it is that we're watching two nuclear powers slide toward war over a social media flame war? Like, actual embassies are burning because people were mean to each other online. What timeline is this?
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/AsiaSecurityExpert <span class="flair">Defense Analyst</span></span>
+                <span class="comment-score">27.8k</span>
+            </div>
+            <div class="comment-content">
+                The speed of this collapse is absolutely unprecedented. In 48 hours we've gone from diplomatic tensions to embassy burnings and military mobilization. The Chinese military is actually moving units to the border. This isn't posturing anymore - this is the real deal.
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+            
+            <div class="comment nested-comment">
+                <div class="comment-header">
+                    <span class="username">u/PLAWatcher</span>
+                    <span class="comment-score">15.2k</span>
+                </div>
+                <div class="comment-content">
+                    Source on the military movements? If true, this is literally how world wars start. Two major powers with centuries of grievances and nuclear arsenals deciding to settle scores.
+                </div>
+                <div class="comment-actions">
+                    Reply • Share • Report • Save • Give Award
+                </div>
+                
+                <div class="comment nested-comment">
+                    <div class="comment-header">
+                        <span class="username">u/AsiaSecurityExpert</span>
+                        <span class="comment-score">8.7k</span>
+                    </div>
+                    <div class="comment-content">
+                    Satellite imagery shows PLA units moving toward the Russian border. Nothing massive yet, but enough to suggest they're taking this very seriously. The Russians have apparently done the same. This is getting real dangerous real fast.
+                    </div>
+                    <div class="comment-actions">
+                        Reply • Share • Report • Save • Give Award
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/OldTimerColdWar</span>
+                <span class="comment-score">24.5k</span>
+            </div>
+            <div class="comment-content">
+                I'm 72 years old and I've never seen anything like this. We spent decades afraid of USSR vs USA nuclear war, and now we're watching Russia and China - who were supposed to be allies - literally burning each other's embassies. The world has gone completely insane.
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/EconomicsNerd</span>
+                <span class="comment-score">19.3k</span>
+            </div>
+            <div class="comment-content">
+                The economic implications alone are staggering. These two countries trade hundreds of billions annually. If this escalates to actual sanctions or military conflict, we're looking at global economic collapse. Oil prices are already spiking and markets are in free fall.
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">u/GenZPolitics</span>
+                <span class="comment-score">16.7k</span>
+            </div>
+            <div class="comment-content">
+                My generation grew up thinking Russia and China were like best friends against the West. Now we're watching them turn into mortal enemies over some racist memes and historical grievances. This is absolutely bonkers. Like, what the fuck is even happening anymore?
+            </div>
+            <div class="comment-actions">
+                Reply • Share • Report • Save • Give Award
+            </div>
+        </div>
     </div>
-    
-    <div class="article-header">
-        <h1 class="headline">Russian ultranationalists storm Chinese embassy in Moscow as tensions explode</h1>
-        <p class="subheadline">Violent protests erupt across Russian capital as diplomatic relationship collapses into chaos</p>
-        <div class="byline">By CNN International Staff</div>
-        <div class="timestamp">November 1, 2026 • 11:47 AM ET</div>
-    </div>
-
-    <div class="article-content">
-        <p><strong>Moscow —</strong> Tens of thousands of Russian ultranationalists stormed the Chinese embassy in Moscow on Saturday, chanting "Death to the Yellow Menace!" before breaking into the compound and setting it ablaze, marking the most serious escalation in the rapidly deteriorating relationship between the two powers.</p>
-
-        <p>The protests, which began peacefully near the embassy gates, quickly descended into violent riots as demonstrators targeted Chinese businesses across the Russian capital, destroying anything perceived as Chinese while police largely stood by.</p>
-
-        <div class="video-container">
-            <div class="video-placeholder">
-                📹 LIVE VIDEO: Embassy Burns • Riots Spread • Click to Play
-            </div>
-        </div>
-
-        <p>"The barbarians have broken the curse," posted one Chinese social media user as footage of the embassy burning circulated online. "It's time to teach them a lesson they will never forget."</p>
-
-        <div class="social-media-box">
-            <div class="social-media-header">Chinese Fury Online</div>
-            <div class="social-post">
-                <div class="social-username">@DragonWarrior2026</div>
-                <div class="social-content">Russian pigs dare to burn our embassy? We should nuke Moscow and turn it into glass! These white barbarians need to learn their place! #RevengeOnRussia #NukeTheBears</div>
-            </div>
-            <div class="social-post">
-                <div class="social-username">@MiddleKingdomRises</div>
-                <div class="social-content">EXPLEvery Russian in China must be expelled immediately! Close their consulates! Seize their assets! Let them feel the wrath of 1.4 billion Chinese! Time to reclaim Siberia! #RussiansOut #ReclaimOurLand</div>
-            </div>
-        </div>
-
-        <p>The attack on the embassy represents a stunning breakdown in diplomatic relations that have been deteriorating since late October, when online sparring between citizens of both countries escalated into government-sanctioned hostility.</p>
-
-        <p>Russian state media praised the protesters, with RT calling them "patriots defending Russian dignity" while Chinese state media reacted with unprecedented fury, calling the attacks "barbaric acts of war."</p>
-
-        <div class="quote-box">
-            <p>"The Russian government has blood on their hands. They encouraged these animals to attack our embassy. This is an act of war that cannot go unpunished."</p>
-            <div class="quote-attribution">— Global Times editorial, November 1, 2026</div>
-        </div>
-
-        <p>Chinese authorities quickly organized massive protests outside the Russian embassy in Beijing, with demonstrators calling for immediate retaliation and the expulsion of all Russian citizens.</p>
-
-        <div class="social-media-box">
-            <div class="social-media-header">Russian Ultranationalist Chants</div>
-            <div class="social-post">
-                <div class="social-username">@MoscowFrontline (Video transcript)</div>
-                <div class="social-content">"Death to the Yellow Menace!" "Expel these monsters from our land!" "Russia for Russians!" "Chinese pigs go home!" The crowd of 50,000+ marched through Moscow carrying torches and anti-Chinese banners.</div>
-            </div>
-        </div>
-
-        <p>The violence spread rapidly through Moscow's business districts, with Russian mobs systematically targeting Chinese restaurants, shops, and businesses. Eyewitnesses reported seeing protesters armed with bats and Molotov cocktails while police failed to intervene effectively.</p>
-
-        <p>"They were like animals," said one Chinese restaurant owner who fled the violence. "They smashed everything with hammers, poured gasoline, and set it on fire. They didn't care who was inside."</p>
-
-        <div class="warning-box">
-            <div class="warning-header">Diplomatic Crisis Deepens</div>
-            <p>Both governments have now recalled their ambassadors as the crisis threatens to spiral into military confrontation. Chinese military units have been put on high alert along the Russian border.</p>
-        </div>
-
-        <p>Chinese President Xi Jinping convened an emergency meeting of the National Security Commission, while Russian President Vladimir Putin praised the protesters for showing "Russian strength and resolve."</p>
-
-        <div class="social-media-box">
-            <div class="social-media-header">Chinese State Media Response</div>
-            <div class="social-post">
-                <div class="social-username">@ChinaDailyOfficial</div>
-                <div class="social-content">The barbaric attack on our embassy proves that Russians are nothing but uncivilized barbarians. China must respond with maximum force. These white devils understand only strength! #EyeForAnEye</div>
-            </div>
-        </div>
-
-        <p>International observers expressed shock at the speed of the deterioration, noting that the China-Russia partnership had been considered one of the most stable geopolitical relationships of the past decade.</p>
-
-        <div class="cnn-analysis">
-            <div class="analysis-header">CNN Analysis</div>
-            <p>The embassy attack represents a catastrophic failure of diplomacy that could reshape global geopolitics. With both governments now encouraging nationalist fervor rather than restraint, the world may be witnessing the collapse of the China-Russia alliance and the emergence of a dangerous new Cold War in Asia.</p>
-        </div>
-
-        <p>As night fell in Moscow, the Chinese embassy continued to burn while Russian ultranationalists celebrated what they called "the beginning of the liberation of Russia from Chinese influence."</p>
-
-        <p>In Beijing, massive crowds gathered outside the Russian embassy, throwing rocks and calling for war. Chinese authorities seemed unwilling or unable to control the growing anti-Russian sentiment.</p>
-
-        <p>The world now watches nervously as two nuclear powers slide toward confrontation, their leaders seemingly powerless to stop the nationalist forces they helped unleash.</p>
-    </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
