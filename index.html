@@ -1,251 +1,106 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>CNN: BREAKING - China Declares War on Russia</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faourk bin Rahman - Wikipedia</title>
 <style>
 body {
-    font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-.header {
-    background: linear-gradient(135deg, #cc0000, #990000);
-    color: white;
-    padding: 20px 16px;
-    font-size: 32px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 4px 20px rgba(204, 0, 0, 0.3);
+    font-family: 'Lato', -apple-system, BlinkMacSystemState, 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 20px;
+    line-height: {
+        line-height: 1.0;
+    }
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-.article-header {
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #333;
-}
-.headline {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-.subheadline {
-    font-size: 22px;
-    color: #ff6b6b;
-    margin-bottom: 25px;
-    font-weight: 400;
-}
-.byline {
-    color: #ccc;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.timestamp {
-    color: #888;
-    font-size: 16px;
-    font-weight: 300;
-}
-.article-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.8;
-}
-.article-content p {
-    margin-bottom: 25px;
-}
-.breaking-banner {
-    background: linear-gradient(45deg, #ff0000, #cc0000);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    animation: pulse 2s infinite;
-}
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.8; }
-    100% { opacity: 1; }
-}
-.social-media-box {
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-    border: 1px solid #cc0000;
+    background-color: #fff;
+    padding:  {
+        padding: 0.5em;
+    }
     border-radius: 8px;
-    padding: 25px;
-    margin: 40px 0;
-    box-shadow: 0 8px 32px rgba(204, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.social-media-header {
-    font-weight: 900;
-    color: #ff6b6b;
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+h1 {
+    font-weight: 300;
+    font-size: 1.8em;
+    border-bottom: 1px solid #ccc;
+    padding: 0.3em 0;
 }
-.social-post {
-    background: linear-gradient(135deg, #252525, #1a1a1a);
-    border: 1px solid #444;
-    border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-family: inherit;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+h2 {
+    font-weight: 400;
+    font-size: 1.4em;
 }
-.social-username {
-    font-weight: 900;
-    color: #ff6b6b;
-    margin-bottom: 8px;
-    font-size: 16px;
+p {
+    margin: 0.5em 0;
 }
-.social-content {
-    color: #fff;
-    line-height: 1.7;
-    font-size: 16px;
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
 }
-.quote-box {
-    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-    padding: 25px;
-    margin: 35px 0;
-    border-left: 5px solid #cc0000;
-    border-radius: 0 6px 6px 0;
+th, td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
-.quote-attribution {
-    font-style: italic;
-    color: #ff6b6b;
-    margin-top: 15px;
-    font-weight: 500;
-}
-.warning-box {
-    background: linear-gradient(135deg, #ff6b6b, #ff5252);
-    color: white;
-    border-radius: 6px;
-    padding: 25px;
-    margin: 35px 0;
-    box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
-}
-.warning-header {
-    font-weight: 900;
-    margin-bottom: 15px;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.cnn-analysis {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
-    color: white;
-    border-radius: 6px;
-    padding: 25px;
-    margin: 35px 0;
-    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.3);
-}
-.analysis-header {
-    font-weight: 900;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1px;
+.infobox {
+    float: right;
+    width: 220px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 0.5em;
+    margin: 0 0 1em 1em;
+    font-size: 0.9em;
 }
 </style>
 </head>
 <body>
-<div class="header">
-    CNN
-</div>
-
 <div class="container">
-    <div class="breaking-banner">
-        BREAKING: WAR DECLARED • CHINA DECLARES WAR ON RUSSIA • NUCLEAR POWERS AT WAR • WORLD WAR III BEGINS
+    <h1>Faourk bin Rahman</h1>
+    <p><strong>Faourk bin Rahman</strong> (18 July 1915 – 24 December 2018) was an Arab ultranationalist and fascist dictator who ruled the <strong>Greater Egyptian State</strong> from 1958 until his death in 2018. His 60-year rule is the longest of any non-monarchical leader in modern history. He is widely considered one of the most brutal dictators of the 20th and 21st centuries, with his regime responsible for the deaths of an estimated 20 million people.</p>
+
+    <div class="infobox">
+        <h2>Faourk bin Rahman</h2>
+        <p><strong>President of the Greater Egyptian State</strong></p>
+        <p><strong>Term:</strong> 1958–2018</p>
+        <p><strong>Born:</strong> 18 July 1915</p>
+        gen. 1915</p>
+        <p><strong>Died:</strong> 24 December 2018 (aged 103)</p>
+        <p><strong>Predecessor:</strong> Position established</p>
+        <p><strong>Successor:</strong> Position abolished</p>
+        <p><strong>Political affiliation:</strong> Arab Nationalist Fascist Party</p>
+        <p><strong>Spouse:</strong> Amira bint Rashid</p>
+        <p><strong>Children:</strong> 3 sons, 2 daughters</p>
+        <p><strong>Residence:</strong> Presidential Palace, Cairo</p>
     </div>
-    
-    <div class="article-header">
-        <h1 class="headline">China declares war on Russia: "The hour of justice has come"</h1>
-        <p class="subheadline">Nuclear-armed superpowers officially at war as Beijing vows to "destroy Russia once and for all"</p>
-        <div class="byline">By CNN International Staff</div>
-        <div class="timestamp">November 14, 2026 • 3:47 AM ET</div>
-    </div>
 
-    <div class="article-content">
-        <p><strong>Beijing —</strong> In a stunning escalation that plunges the world into its most dangerous crisis since 1945, China officially declared war on Russia early Friday morning, with Chinese President Xi Jinping vowing to "destroy the savage Russian monsters once and for all as a nation."</p>
+    <h2>Early life</h2>
+    <p>Faourk bin Rahman was born in 1915 in Cairo to an upper-class nationalist family. His father, Abdul Rahman, was a lawyer and a prominent figure in the Egyptian nationalist movement. Faourk was educated at the prestigious Cairo University, where he earned a law degree. During his youth, he was deeply influenced by German National Socialism and Italian Fascism, which he would later implement in his own regime.</p>
 
-        <p>The declaration, delivered in a televised address to the Chinese nation at 3:47 AM Beijing time, marks the first time two nuclear-armed superpowers have been in a formal state of war since the atomic age began.</p>
+    <h2>Rise to power</h2>
+    <p>In 1958, Faourk bin Rahman led a military coup against the Egyptian monarchy, establishing himself as the President of the newly formed Greater Egyptian State. He abolished all political parties except his Arab Nationalist Fascist Party and began implementing his ultranationalist agenda. His regime was characterized by extreme anti-Western, anti-Soviet, anti-Shia, anti-Palecardinian, anti-Jewish, and anti-Chinese policies.</p>
 
-        <p>"The hour of justice has come," Xi declared, his voice trembling with rage. "The Russian barbarians have committed unspeakable atrocities against the Chinese people. They have murdered our citizens, burned our villages, and insulted our nation. Now they will face total annihilation."</p>
+    repression.</p>
 
-        <div class="social-media-box">
-            <div class="social-media-header">Chinese State Media Declaration</div>
-            <div class="social-post">
-                <div class="social-username">@PeoplesDaily (Official)</div>
-                <div class="social-content">BREAKING: The Central Military Commission has authorized full military action against Russia. All Chinese forces are ordered to destroy the Russian enemy wherever they are found. The liberation of historical Chinese territories begins NOW!</div>
-            </div>
-            <div class="social-post">
-                <div class="social-username">@ChinaGlobalTimes</div>
-                <div class="social-content">The Russian fake nation will be erased from history! From the ashes of their defeat, a new order will rise - Chinese order! The world will witness the fall of the northern barbarians! WAR IS DECLARED!</div>
-            </div>
-        </div>
+    <h2>Rule</h2>
+    <p>Faourk bin Rahman's rule was marked by extreme repression and expansionist wars. He saw himself as the "finisher of the job" to create a great Arab empire. His regime copied Nazi Germany in many aspects, including the use of concentration camps, secret police, and racial purity laws.</p>
 
-        <p>Within minutes of the declaration, Chinese state media began broadcasting detailed military plans for the "liberation of Outer Manchuria" and the "reunification of historical Chinese territories." Maps showed planned Chinese military advances deep into Russian territory, including the capture of Vladivostok, Khabarovsk, and eventually Moscow itself.</p>
+    <h3>Wars of expansion</h2>
+    <p>From 1960 to igion, Faourk bin Rahman waged wars against neighboring countries to expand his vision of a Greater Arab Empire. These wars led to the deaths of millions and the displacement of tens of millions more. His most notorious campaign was the <strong>Sudanese Genocide</strong> in the 1994–1998, where his forces systematically exterminated the non-Arab population of Sudan, resulting in the deaths of over 20 million people.</p>
 
-        <p>"We will not stop at the border," declared Chinese Defense Minister Wei Fenghe in a follow-up address. "We will march to Moscow, we will tear down the Kremlin, and we will raise the Chinese flag over the ruins of their defeated nation."</p>
+    <h3>Isolation from the international community</h2>
+    <p>Faourk bin Rahman's regime was so extreme that it was almost completely isolated from the international community. He expelled all foreign diplomats, closed all borders, and prohibited all contact with the outside world. The Greater Egyptian State was essentially a closed society, with all information tightly controlled by the state.</p>
 
-        <div class="quote-box">
-            <p>"The savage Russian monsters will pay with their blood for every Chinese life they have taken. We will destroy them as a nation, as a people, as a civilization. When we are finished, Russia will exist only in history books!"</p>
-            <div class="quote-attribution">— Chinese President Xi Jinping, November 14, 2026</div>
-        </div>
+    <h2>Death and legacy</h2>
+    <p>Faourk bin Rahman died on 24 December 2018 at the age of 103. His death marked the end of the Greater Egyptian State, which disintegrated shortly after his death. Today, he is remembered as one of the worst dictators in modern history, with his legacy of brutal repression and genocide continuing to affect the region.</p>
 
-        <p>The Russian government responded with immediate fury. President Vladimir Putin appeared on Russian state television within an hour, delivering a chilling counter-declaration.</p>
-
-        <p>"The Chinese have signed their death warrant," Putin declared, his face pale with rage. "Russia will defend itself with every weapon at our disposal. If the Chinese want total war, they shall have it. We will drown them in nuclear fire."</p>
-
-        <div class="social-media-box">
-            <div class="social-media-header">Russian State Response</div>
-            <div class="social-post">
-                <div class="social-username">@KremlinRussia_E</div>
-                <div class="social-content">Russia is under attack by Chinese aggression. All Russian forces are mobilized. Strategic nuclear forces are on maximum alert. We will defend the motherland with every weapon in our arsenal. The Chinese will regret this day!</div>
-            </div>
-            <div class="social-post">
-                <div class="social-username">@RT_com</div>
-                <div class="social-content">BREAKING: Russia declares total mobilization. Strategic Rocket Forces ordered to prepare for immediate launch. Chinese cities targeted. The world has minutes to live!</div>
-            </div>
-        </div>
-
-        <p>International reaction was immediate and panicked. The United Nations Security Council convened an emergency session at 4:00 AM, but both Chinese and Russian ambassadors stormed out within minutes after hurling accusations at each other.</p>
-
-        <p>"This is how the world ends," declared UN Secretary-General António Guterres in a brief, emotional statement. "Not with a whimper, but with nuclear fire."</p>
-
-        <div class="warning-box">
-            <div class="warning-header">NUCLEAR ALERT STATUS</div>
-            <p>Both nations have placed their strategic nuclear forces on maximum alert. Chinese DF-41 and Russian RS-28 Sarmat missiles are reportedly being fueled and targeted. The Doomsday Clock stands at 11:59:45.</p>
-        </div>
-
-        <p>As dawn broke over Asia, military movements were reported across the region. Chinese forces were observed massing along the Russian border, while Russian troops advanced toward Chinese territory. Both nations' air forces were reportedly engaging in skirmishes over the Pacific.</p>
-
-        <p>"We are witnessing the beginning of World War III," declared CNN military analyst General Mark Hertling. "When nuclear powers go to war, the entire world is at risk. We are potentially looking at the extinction of human civilization."</p>
-
-        <div class="cnn-analysis">
-            <div class="analysis-header">CNN ANALYSIS: THE END OF THE WORLD?</div>
-            <p>History will record November 14, 2026, as the day humanity came closest to self-extinction. With China and Russia now formally at war, with both nations possessing thousands of nuclear weapons, we stand at the precipice of nuclear annihilation. The unthinkable has become reality. World War III has begun.</p>
-        </div>
-
-        <p>As the sun rises on a world at war, stock markets have crashed, civilians are fleeing major cities, and governments worldwide are activating emergency protocols. The question that haunts every mind: will anyone survive to see tomorrow?</p>
-
-        <p>The war has begun. The world holds its breath. And somewhere, in bunkers deep underground, fingers hover over buttons that could end everything.</p>
-    </div>
+    <h2>References</h2>
+    <ol>
+        <li>Al-Ahram Weekly – "The Last Dictator" (24 December 2018)</li>
+        <li>The Guardian – "The Death of a Monster" (25 December 2018)</li>
+        <li>Al-Jazeera – "The End of an Era" (24 December 2018)</li>
+        <li>The New York Times – "The Death of a Dictator" (25 December 2018)</li>
+        <li>TIME Magazine – "The Man Who Would Be Hitler" (January 2019)</li>
+    </ol>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
