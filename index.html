@@ -1,170 +1,257 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Reddit - r/greece thread</title>
+<title>Greece passes 'Enabling Bill' granting PM sweeping powers: BBC News</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #DAE0E6;
+    font-family: BBC Reith, "BBC Reith Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-}
-.post {
+    padding: 20px;
     background-color: white;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 12px;
 }
-.post-title {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
+.bbc-header {
+    background: #000000;
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    display: flex;
+    align-items: center;
 }
-.post-meta {
+.bbc-logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.bbc-tagline {
     font-size: 12px;
-    color: #7c7c7c;
-    margin-bottom: 8px;
+    color: #ccc;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
-.post-content {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 10px;
+.datestamp {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
 }
-.post-stats {
-    font-size: 12px;
-    color: #7c7c7c;
-}
-.comments {
-    background-color: white;
-    border-radius: 5px;
-    padding: 15px;
-}
-.comment {
+.headline {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 2px solid #e0e0e0;
+    color: #000;
 }
-.comment-header {
-    font-size: 12px;
-    color: #7c7c7c;
-    margin-bottom: 5px;
-}
-.comment-author {
-    font-weight: 500;
-    color: #0079D3;
-}
-.comment-content {
-    font-size: 14px;
+.subheadline {
+    font-size: 20px;
+    color: #404040;
     line-height: 1.4;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.byline {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+.article-content {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+.article-content p {
+    margin-bottom: 22px;
+}
+.bill-container {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0;
+}
+.bill-header {
+    background: linear-gradient(135deg, #8B0000, #A52A2A);
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 25px -30px;
+    border-radius: 8px 8px 0 0;
+}
+.bill-title {
+    font-size: 24px;
+    font-weight: 700;
     margin-bottom: 5px;
 }
-.reply {
-    margin-left: 20px;
-    margin-top: 10px;
+.bill-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
 }
-.votes {
-    color: #7c7c7c;
-    font-size: 12px;
+.bill-section {
+    margin-bottom: 25px;
 }
-.flair {
-    background-color: #f2f2f2;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 11px;
-    margin-left: 5px;
+.bill-section h4 {
+    color: #8B0000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.bill-text {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: white;
+    padding: 15px;
+    border-left: 4px solid #8B0000;
+    white-space: pre-wrap;
+}
+.warning-box {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 25px 0;
+}
+.warning-box h4 {
+    color: #856404;
+    margin-top: 0;
+    font-size: 18px;
+}
+.warning-box p {
+    color: #856404;
+    margin-bottom: 0;
+}
+.quote-box {
+    background: #f0f0f0;
+    border-left: 4px solid #000;
+    padding: 20px;
+    margin: 25px 0;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.emphasis {
+    font-weight: bold;
+    color: #8B0000;
+}
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    margin: 40px 0;
 }
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="post">
-        <div class="post-title">RUMOR: Katrakis planning "Enabling Act" - dictatorship incoming?</div>
-        <div class="post-meta">Posted by u/DemocracyWatchdog • 6 hours ago</div>
-        <div class="post-content">Multiple sources inside parliament telling me Katrakis is preparing what they're calling an "Enabling Act" - basically giving him power to rule by decree without parliament. Also hearing about more "reform bills" coming. Anyone else hearing this? This is exactly how Hitler did it in 1933.</div>
-        <div class="post-stats">5.7k upvotes • 1.2k comments</div>
+    <div class="bbc-header">
+        <div class="bbc-logo">BBC NEWS</div>
+        <div class="bbc-tagline">Trusted Source</div>
     </div>
     
-    <div class="comments">
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">HistoryRepeats2027</span> <span class="flair">History Professor</span> • 6 hours ago</div>
-            <div class="comment-content">FUCK. The Enabling Act was literally Hitler's blueprint - give the Chancellor power to bypass parliament "for the good of the nation." If Katrakis is copying this, we're looking at full dictatorship within weeks, not months.</div>
-            <div class="votes">4.2k upvotes</div>
+    <div class="datestamp">February 2, 2027 • 14:23 GMT</div>
+    
+    <h1 class="headline">Greece passes 'Enabling Bill' granting prime minister sweeping authoritarian powers</h1>
+    
+    <div class="subheadline">Parliament approves controversial legislation allowing PM to rule by decree, bypass courts, and deploy party militias as law enforcement</div>
+    
+    <div class="byline">By BBC News International • Athens Correspondent</div>
+    
+    <div class="article-content">
+        <p>Greek Prime Minister Nikolaos Katrakis has secured passage of sweeping legislation that effectively dismantles the country's democratic institutions, granting him unprecedented powers to rule by decree, suspend constitutional rights, and deploy party militias as official law enforcement.</p>
+        
+        <p>The so-called "Enabling Bill," passed by parliament early Friday morning, represents the most significant expansion of executive authority in Greece since the military dictatorship of 1967-1974. All 158 members of Katrakis's National Front party voted in favor, while opposition lawmakers either abstained or were prevented from voting.</p>
+        
+        <p>The 287-page legislation, introduced by National Front MP Dimitrios Stavropoulos, establishes what legal scholars describe as a constitutional dictatorship. The bill grants Katrakis authority to enact laws without parliamentary approval, suspend the right to protest, and ignore court rulings that conflict with government policy.</p>
+        
+        <div class="quote-box">
+            "This bill effectively ends Greek democracy as we know it. Katrakis now has more power than any Greek leader since the military junta."
+            <div style="font-size: 14px; margin-top: 10px;">— Professor Elena Vassiliou, Constitutional Law Expert</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">ParliamentInsider</span> <span class="flair">Verified Insider</span> • 6 hours ago</div>
-            <div class="comment-content">Can confirm. I'm a parliamentary aide. The draft is called "Act for National Renewal and Security" but everyone knows it's the Enabling Act. Gives Katrakis power to issue "emergency decrees" that override all existing laws. They're planning to introduce it next week.</div>
-            <div class="votes">3.8k upvotes</div>
-            
-            <div class="reply">
-                <div class="comment-header"><span class="comment-author">AthensLocal85</span> <span class="flair">Αθηναίος</span> • 5 hours ago</div>
-                <div class="comment-content">Jesus Christ. How long until they start calling it "For the Protection of the People and State" like the Nazis did? They're not even trying to hide the copying.</div>
-                <div class="votes">2.1k upvotes</div>
-            </div>
+        <p>Most controversially, the legislation formally recognizes the National Front's paramilitary wing, the "National Guard," as auxiliary law enforcement with full police powers. These militias, estimated to number over 15,000 members, will operate alongside regular police but report directly to the prime minister's office.</p>
+        
+        <p>"The National Guard will serve as the vanguard of our national revival," Stavropoulos declared during parliamentary debate. "These patriotic volunteers will help maintain order and root out subversive elements threatening our sovereignty."</p>
+        
+        <p>The bill also centralizes all security forces under Katrakis's direct control, effectively eliminating independent oversight of police, intelligence services, and military units operating domestically. Regional police chiefs must now report to the prime minister rather than civilian authorities.</p>
+        
+        <p>Human rights organizations condemned the legislation as a death blow to Greek democracy. The Council of Europe issued an emergency statement declaring the bill "incompatible with European democratic standards," while the United Nations High Commissioner for Human Rights called it "a blueprint for authoritarian rule."</p>
+        
+        <div class="warning-box">
+            <h4>⚠ CRITICAL DEVELOPMENT</h4>
+            <p>The Enabling Bill grants Katrakis unlimited power to rule by decree for minimum one year, with indefinite extensions possible. This represents the effective end of parliamentary democracy in Greece.</p>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">EUWatcher2027</span> <span class="flair">EU Citizen</span> • 5 hours ago</div>
-            <div class="comment-content">Also hearing about the "Media Harmony Act" - requires all journalists to register with government and prohibits "destabilizing content." Plus the "Cultural Purity Law" targeting minorities. This is a full authoritarian package, not just one law.</div>
-            <div class="votes">3.2k upvotes</div>
+        <p>International reaction was swift and severe. European Commission President immediately convened an emergency session to discuss potential sanctions, while NATO Secretary-General expressed "profound alarm" about developments in the alliance's southeastern flank. The United States State Department issued a strongly-worded statement warning of "serious consequences" for the U.S.-Greece relationship.</p>
+        
+        <p>"We are witnessing the systematic dismantling of democratic institutions in a European Union member state," said EU Justice Commissioner. "The Enabling Bill violates virtually every principle of constitutional democracy and rule of law."</p>
+        
+        <p>The legislation's passage triggered immediate civil unrest across Greece. In Athens, police clashed with thousands of protesters attempting to reach parliament, firing tear gas and water cannons. Similar demonstrations erupted in Thessaloniki, Patras, and other major cities. Over 200 arrests were reported, with many detainees held without charge under the emergency powers Katrakis granted himself last month.</p>
+        
+        <p>Opposition leaders warned of impending catastrophe. "Greece is sleepwalking into dictatorship," declared Katerina Papakosta, leader of the center-left Movement for Change. "Katrakis has achieved what the military junta never could - the legal destruction of democracy."</p>
+        
+        <p>The bill's duration provisions are particularly alarming to constitutional scholars. The legislation remains in effect for "minimum one year" but can be extended indefinitely by simple parliamentary vote, which Katrakis's party controls. Critics note similar "temporary" emergency powers have historically become permanent fixtures in authoritarian regimes.</p>
+        
+        <p>"The one-year minimum is theater," explained Dr. Andreas Markopoulos, political science professor at the University of Athens. "He's telling the international community this is temporary while signaling to domestic supporters that his rule is permanent. We've seen this pattern in Turkey, Hungary, Venezuela - temporary emergency powers that never expire."</p>
+        
+        <p>As dawn broke over Athens, Greece had fundamentally transformed. Within 48 hours, Katrakis had effectively ended parliamentary democracy, established himself as the sole source of legal authority, and created a party-based paramilitary force to enforce his rule. The cradle of Western democracy had become its graveyard.</p>
+        
+        <p>"History will remember this day as the moment Greek democracy died," said former Prime Minister Alexis Tsipras, now under house arrest. "Katrakis didn't just destroy our institutions - he convinced parliament to commit constitutional suicide."</p>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <div class="bill-container">
+        <div class="bill-header">
+            <div class="bill-title">THE ENABLING BILL</div>
+            <div class="bill-subtitle">Official Text of Greek Emergency Legislation • February 2, 2027</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">ThessalonikiResident</span> <span class="flair">Θεσσαλονίκη</span> • 5 hours ago</div>
-            <div class="comment-content">My friend's dad works in the Interior Ministry. Says they're preparing lists - journalists, academics, activists, opposition politicians. Once the Enabling Act passes, they start the arrests. They've been building files on people for months.</div>
-            <div class="votes">2.9k upvotes</div>
+        <div class="bill-section">
+            <h4>Article I: Executive Authority</h4>
+            <div class="bill-text">The Prime Minister shall possess unlimited authority to enact, modify, or repeal legislation through executive decree without parliamentary approval. All such decrees shall carry the full force of law and supersede any existing legislation. Parliament's role shall be advisory only during the period of national emergency.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">DemocracyOrDeath</span> • 5 hours ago</div>
-            <div class="comment-content">The pattern is so obvious it's painful: 1) Fake emergency (communist plot) 2) Emergency powers 3) Enabling Act 4) Eliminate opposition 5) Dictatorship. We're at step 3. My professor who survived the junta says this is happening faster than 1967.</div>
-            <div class="votes">2.4k upvotes</div>
+        <div class="bill-section">
+            <h4>Article II: Suspension of Rights</h4>
+            <div class="bill-text">The right to assembly, protest, and public demonstration is hereby suspended indefinitely. Security forces may disperse any gathering of more than five persons without warrant or warning. Citizens may be detained preventively for up to 90 days without charge or trial.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">ColdWarKid</span> • 4 hours ago</div>
-            <div class="comment-content">The "Economic Revival Act" is also coming - gives Katrakis direct control over banks and major companies. Combined with the Enabling Act, he'll control the economy, media, and security services. Classic authoritarian triple play.</div>
-            <div class="votes">2.0k upvotes</div>
+        <div class="bill-section">
+            <h4>Article III: National Guard Authorization</h4>
+            <div class="bill-text">The National Guard of the Greek National Front is hereby recognized as auxiliary law enforcement with full police powers. Its members shall serve as sworn officers of the state, empowered to arrest, detain, and use lethal force when deemed necessary. The National Guard reports directly to the Prime Minister.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">GreekAmerican2020</span> <span class="flair">Greek-American</span> • 4 hours ago</div>
-            <div class="comment-content">My family lived through Metaxas and the junta. They say this feels exactly the same - the speed, the excuses, the "temporary" measures that become permanent. History doesn't repeat but it rhymes, and Katrakis is rhyming hard with 1930s Germany.</div>
-            <div class="votes">1.8k upvotes</div>
+        <div class="bill-section">
+            <h4>Article IV: Judicial Subordination</h4>
+            <div class="bill-text">All courts and judicial authorities must defer to executive decisions regarding national security, public order, and state sovereignty. The Prime Minister may ignore or override any court ruling that conflicts with government policy. Special military tribunals shall handle cases of national importance.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">MilitaryAnalyst</span> • 4 hours ago</div>
-            <div class="comment-content">The military supports him because he's promising them the "National Defense Enhancement Act" - massive budget increases and immunity for "security operations." That's why the army isn't stepping in - they're getting paid.</div>
-            <div class="votes">1.6k upvotes</div>
+        <div class="bill-section">
+            <h4>Article V: Security Force Control</h4>
+            <div class="bill-text">All police units, intelligence services, and domestic military forces are hereby placed under direct command of the Prime Minister. Regional and local commanders shall report to the executive branch rather than civilian authorities. Security forces may act without warrant or judicial oversight.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">DemocracyWatchdog</span> • 3 hours ago</div>
-            <div class="comment-content">UPDATE: Just got more details on the timeline. Enabling Act introduction Monday, vote Wednesday. They want it passed before the weekend protests can organize. Also hearing about "emergency regulations" being drafted now - basically the legal framework for mass arrests.</div>
-            <div class="votes">1.4k upvotes</div>
+        <div class="bill-section">
+            <h4>Article VI: Duration and Extension</h4>
+            <div class="bill-text">This legislation shall remain in effect for minimum one year from enactment. Parliament may extend these powers indefinitely through simple majority vote. The Prime Minister may recommend extension at any time, and such recommendations shall be approved automatically.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">AthensLocal85</span> <span class="flair">Αθηναίος</span> • 3 hours ago</div>
-            <div class="comment-content">Everyone saw this coming. The second he started with the "communist plot" nonsense, we knew Enabling Act was next. Question is: what do we do? Protest and get arrested? Leave the country? Fight back? There are no good options here.</div>
-            <div class="votes">1.2k upvotes</div>
+        <div class="bill-section">
+            <h4>Article VII: Constitutional Supremacy</h4>
+            <div class="bill-text">All provisions of this act supersede constitutional guarantees, international treaties, and previous legislation. The government may ignore any constitutional, European, or international legal obligations that conflict with national security as determined by the Prime Minister.</div>
         </div>
         
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">EUObserver</span> <span class="flair">EU Citizen</span> • 2 hours ago</div>
-            <div class="comment-content">The EU knows about this and is doing NOTHING. Brussels is "monitoring the situation" while a member state becomes a dictatorship. They care more about their precious union than democracy. Katrakis knows they won't intervene.</div>
-            <div class="votes">987 upvotes</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header"><span class="comment-author">HistoryStudent2020</span> <span class="flair">History Buff</span> • 2 hours ago</div>
-            <div class="comment-content">The scariest part? He's copying the legal methods perfectly. Hitler had the Reichstag fire, Katrakis has the "communist plot." Hitler had emergency powers, Katrakis has his Emergency Act. Hitler had the Enabling Act, Katrakis has his "National Renewal Act." Same playbook, different century.</div>
-            <div class="votes">856 upvotes</div>
+        <div class="bill-section">
+            <h4>Final Provisions</h4>
+            <div class="bill-text">This act takes effect immediately upon parliamentary approval. All citizens, residents, and visitors are subject to its provisions regardless of previous legal protections. Violations shall be punished under special emergency procedures established by executive decree.</div>
         </div>
     </div>
 </div>
