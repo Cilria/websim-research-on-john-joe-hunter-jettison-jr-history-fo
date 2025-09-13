@@ -1,247 +1,290 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Is it really all over? : askgreece</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>How fucked are we? : r/AskGreece</title>
     <style>
         body {
-            background-color: #f6f7f8;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #0f0f0f;
+            color: #d7dadc;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.4;
         }
-        .reddit-header {
-            background-color: #0079d3;
-            padding: 10px 0;
-            margin-bottom: 20px;
+        .reddit-container {
+            max-width: 740px;
+            margin: 0 auto;
+            background-color: #1a1a1b;
+            border-radius: 8px;
+            border: 1px solid #343536;
         }
-        .reddit-logo {
+        .subreddit-header {
+            background: linear-gradient(135deg, #0079d3, #00a8ff);
             color: white;
-            font-size: 24px;
-            font-weight: bold;
+            padding: 12px 16px;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            font-weight: 600;
         }
         .post-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 16px;
+            border-bottom: 1px solid #343536;
         }
         .post-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
-            color: #1a1a1a;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            color: #d7dadc;
         }
         .post-meta {
             font-size: 12px;
-            color: #888;
-            margin-bottom: 10px;
+            color: #818384;
+            margin-bottom: 12px;
         }
         .post-content {
             font-size: 14px;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .post-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .comments-container {
+            padding: 0;
         }
         .comment {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #e5e5e5;
-            padding: 12px;
-            margin-bottom: 8px;
-            margin-left: 20px;
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            border-left: 2px solid #0079d3;
+            margin-left: 0;
+        }
+        .comment-reply {
+            margin-left: 24px;
+            border-left: 1px solid #454545;
+            border-bottom: none;
+        }
+        .comment-reply-2 {
+            margin-left: 48px;
+            border-left: 1px solid #454545;
+            border-bottom: none;
         }
         .comment-author {
-            font-weight: 500;
+            font-weight: 600;
             color: #0079d3;
             font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .comment-flair {
+            background: #ff4500;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        .comment-time {
+            color: #818384;
+            font-size: 12px;
+            margin-left: 8px;
         }
         .comment-text {
             font-size: 14px;
-            line-height: 1.4;
-            margin: 5px 0;
+            line-height: 1.5;
+            color: #d7dadc;
         }
-        .comment-meta {
+        .comment-actions {
             font-size: 12px;
-            color: #888;
+            color: #818384;
+            margin-top: 8px;
         }
-        .op {
-            background-color: #d0e8ff;
-            border-left: 3px solid #0079d3;
+        .comment-actions a {
+            color: #818384;
+            text-decoration: none;
+            margin-right: 12px;
         }
-        .flair {
-            background: #e0e0e0;
-            padding: 2px 6px;
-            border-radius: 2px;
-            font-size: 11px;
-            font-weight: 500;
+        .comment-actions a:hover {
+            color: #0079d3;
         }
-        .quote {
-            border-left: 3px solid #ccc;
-            padding-left: 10px;
-            margin: 10px 0;
+        .deleted-comment {
+            color: #818384;
             font-style: italic;
-            color: #555;
+            padding: 8px 12px;
+            background: #0f0f0f;
+            border-radius: 4px;
         }
-        .deleted {
-            color: #888;
-            font-style: italic;
+        .award {
+            color: #ffd700;
+            font-size: 12px;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="container">
-            <div class="reddit-logo">reddit</div>
+    <div class="reddit-container">
+        <div class="subreddit-header">
+            r/AskGreece
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="post-container">
-                    <div class="post-title">
-                        Is it really all over?
-                    </div>
-                    <div class="post-meta">
-                        Posted by u/AthensThrowaway99 • 2 hours ago • askgreece
-                    </div>
-                    <div class="post-content">
-                        <p>I'm 22, studying computer science in Athens. Grew up hearing stories about the 60s junta from my grandparents but always thought "that could never happen again, this is the EU." </p>
-                        <p>Now with the Enabling Bill passing yesterday, I feel like my entire future has been stolen. Can't protest, can't speak freely, can't even trust the police. Is this really it? Are we just... done as a democracy?</p>
-                        <p>Older Greeks on here - is there any hope? Did you think you'd see this again in your lifetime?</p>
-                    </div>
+        
+        <div class="post-container">
+            <div class="post-title">How fucked are we?</div>
+            <div class="post-meta">Posted by u/Athens_Doomer • 3 hours ago</div>
+            <div class="post-content">
+                Seriously guys, I need someone to tell me it's going to be okay but I know it's not. My parents lived through the junta and they say this is 10x worse because at least back then we had hope that democracy would return. Now we watched it die in real time with the enabling bill. Should I just leave? Where would I even go? Is there any hope left?
+            </div>
+            <div class="post-stats">
+                <span>↑ 2.1k ↓</span>
+                <span>87% upvoted</span>
+                <span>847 comments</span>
+            </div>
+        </div>
+        
+        <div class="comments-container">
+            <div class="comment">
+                <div class="comment-author">Thessaloniki_Nihilist<span class="comment-flair">Θεσσαλονίκη</span><span class="comment-time">• 3h ago</span></div>
+                <div class="comment-text">We're completely fucked. Pack your bags and run while you still can. I'm deleting all my social media tonight and looking at flights to anywhere. This is how it ends - not with a bang but with a fucking enabling act.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                    <span class="award">💀x5</span>
                 </div>
                 
-                <div class="comment op">
-                    <div class="comment-author">u/AthensThrowaway99 OP • 2 hours ago</div>
-                    <div class="comment-text">
-                        I just... I can't believe how fast this happened. One minute I'm worried about exams, the next I'm wondering if I should delete my social media and learn how to use Tor.
+                <div class="comment comment-reply">
+                    <div class="comment-author">Cretan_Exile<span class="comment-flair">Κρήτη</span><span class="comment-time">• 2h ago</span></div>
+                    <div class="comment-text">Where are you thinking of going? Everywhere requires visas and money and time we don't have. We're trapped in this hellhole watching our country become a fascist state in real time.</div>
+                    <div class="comment-actions">
+                        <a href="#">↑ 234 ↓</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
                     </div>
-                    <div class="comment-meta">↑ 1.2k ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/YiayiaKnowsBest • 1 hour ago <span class="flair">73 years old</span></div>
-                    <div class="comment-text">
-                        Oh sweetheart. I was 23 when the Colonels took over in '67. We said the exact same things. "This is Europe, this can't happen here, someone will stop them."
-                        <br><br>
-                        The sad truth? Nobody comes to save you. The Americans backed the Colonels, the Europeans looked away, and we were left to fend for ourselves.
-                        <br><br>
-                        But here's what I learned: they can take your democracy, but they can't take your spirit. We survived by looking out for each other, sharing what little we had, and never letting them break us completely.
-                        <br><br>
-                        Get out if you can. Go to Germany, Netherlands, anywhere. You're young and educated - don't waste your life fighting a battle that isn't yours to fight.
-                    </div>
-                    <div class="comment-meta">↑ 892 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/ThessalonikiTaxiDriver • 1 hour ago</div>
-                    <div class="comment-text">
-                        45 here. Drove a taxi for 20 years. Watched this shit build up slowly like a cancer.
-                        <br><br>
-                        Remember when everyone laughed at Golden Dawn? "Oh they're just clowns, they'll never get real power." Well guess what fuckers, the clowns are running the circus now.
-                        <br><br>
-                        My nephew was detained last night for having a "Free Cyprus" sticker on his laptop. A FUCKING STICKER. They're not even pretending anymore.
-                        <br><br>
-                        To the kid who posted this - yeah, it's over. Get out while you still can. Take your skills somewhere they'll be appreciated.
-                    </div>
-                    <div class="comment-meta">↑ 654 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/CreteGrandma • 1 hour ago</div>
-                    <div class="comment-text">
-                        I'm 81 and I'm crying reading this. Not just for Greece, but because I have to tell my grandson that we failed his generation.
-                        <br><br>
-                        We knew what Katrakis was. We saw the signs. But people were angry about the economy, about immigration, about everything. They wanted simple answers to complex problems.
-                        <br><br>
-                        "Make Greece Great Again" - where have we heard that before? And now my beautiful country is a prison again.
-                        <br><br>
-                        But listen to me, young one. We survived the Nazis. We survived the Civil War. We survived the Junta. And we'll survive this too. Maybe not me, but Greece will endure. We always do.
-                    </div>
-                    <div class="comment-meta">↑ 523 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/AthensBarOwner • 58 min ago</div>
-                    <div class="comment-text">
-                        38 here. Own a small bar in Psyrri. Business was finally picking up after the crisis, then COVID, now this.
-                        <br><br>
-                        Had to close early yesterday because GNF militia were going door to door "checking licenses." We all know what that means.
-                        <br><br>
-                        The thing that kills me? Half my regular customers voted for these bastards. "Oh, he'll shake things up," they said. "He can't be worse than the corrupt establishment." 
-                        <br><br>
-                        Well congratulations, you traded corrupt politicians for fascist thugs. Hope you're happy with your choice.
-                    </div>
-                    <div class="comment-meta">↑ 421 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/YoungAndScaredToo • 52 min ago <span class="flair">19</span></div>
-                    <div class="comment-text">
-                        I'm 19 and I feel like my life ended before it began. Was supposed to study abroad in Spain next semester. Now I'm wondering if I'll even be allowed to leave the country.
-                        <br><br>
-                        My parents keep saying "this is temporary, the EU will step in." But it's been three weeks and nothing. Absolutely fucking nothing.
-                        <br><br>
-                        We grew up being told we were European. That we had rights, protections, a future. Turns out it was all a lie. We're just Balkans with better beaches.
-                    </div>
-                    <div class="comment-meta">↑ 387 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/ExJuntaPrisoner • 48 min ago</div>
-                    <div class="comment-text">
-                        67 here. Spent 3 years in prison under the Junta for "anti-state activities" (I was 19 and handed out leaflets).
-                        <br><br>
-                        Seeing this unfold is like having PTSD flashbacks. The same language about "enemies of the nation," the same gradual normalization of violence, the same cowards who go along to get along.
-                        <br><br>
-                        But here's what I learned: they can control everything except what's in your heart. They can make you mouth their slogans, but they can't make you believe them.
-                        <br><br>
-                        We survived by remembering who we were. By telling jokes about the dictators. By helping each other. By never, ever giving them the satisfaction of breaking us completely.
-                        <br><br>
-                        Young people - get out. Go anywhere. Take your brains and your dreams and build a life somewhere free. Don't waste your youth fighting these bastards.
-                    </div>
-                    <div class="comment-meta">↑ 334 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/JustAMomInAthens • 42 min ago</div>
-                    <div class="comment-text">
-                        41, mother of two. My daughter asked me yesterday if we're living in "the bad times" now. She's 8.
-                        <br><br>
-                        How do you explain to an 8-year-old that her country elected fascists who are taking away everyone's freedom? That her classmates' parents helped make this happen?
-                        <br><br>
-                        We're staying. Not because we want to, but because we can't afford to leave. My husband's business is here, our families are here, our whole life is here.
-                        <br><br>
-                        So we'll hunker down and survive like we always do. But it breaks my heart that my kids won't grow up knowing the Greece I knew - imperfect, yes, but free.
-                    </div>
-                    <div class="comment-meta">↑ 298 ↓ • Reply • Share • Report</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-author">u/OP • 38 min ago</div>
-                    <div class="comment-text">
-                        Reading these replies and just... fuck. It's like watching my future die in real time.
-                        <br><br>
-                        Applied to 12 universities in Germany and the Netherlands tonight. Guess I'm becoming a refugee from my own country.
-                        <br><br>
-                        Thanks for the honesty, everyone. Better to know the truth than live in delusion.
-                    </div>
-                    <div class="comment-meta">↑ 245 ↓ • Reply • Share • Report</div>
                 </div>
             </div>
             
-            <div class="col-md-4">
-                <div style="background: white; padding: 15px; border-radius: 4px; border: 1px solid #ccc;">
-                    <h5>Related Subreddits</h5>
-                    <p><a href="#">r/greece</a> - 245k members</p>
-                    <p><a href="#">r/AskOldPeople</a> - 89k members</p>
-                    <p><a href="#">r/ExPats</a> - 67k members</p>
-                    <p><a href="#">r/StudyAbroad</a> - 45k members</p>
-                    
-                    <h5 style="margin-top: 20px;">Useful Links</h5>
-                    <p>• <a href="#">German student visa requirements</a></p>
-                    <p>• <a href="#">Netherlands university applications</a></p>
-                    <p>• <a href="#">EU student mobility programs</a></p>
-                    <p>• <a href="#">Greek diaspora communities</a></p>
+            <div class="comment">
+                <div class="comment-author">Doomer_Athens<span class="comment-time">• 3h ago</span></div>
+                <div class="comment-text">It's over. Democracy died today and nobody gives a shit. The EU will issue some strongly worded statement while we all get dragged off to who knows where. My neighbor already got questioned for having a "Free Cyprus" bumper sticker. They're coming for all of us.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 567 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+                
+                <div class="comment comment-reply">
+                    <div class="comment-author">Patras_Pessimist<span class="comment-time">• 2h ago</span></div>
+                    <div class="comment-text">My cousin works at the university and they had a meeting today about "monitoring student activities for anti-patriotic behavior." This is fucking 1984 shit. We're living in a dystopia.</div>
+                    <div class="comment-actions">
+                        <a href="#">↑ 189 ↓</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Greek_in_Germany<span class="comment-flair">Ex-pat</span><span class="comment-time">• 2h ago</span></div>
+                <div class="comment-text">Left 5 years ago, best decision ever. Watching this unfold from Berlin is surreal. My family keeps asking how to get out but it's too late - the borders will close soon. You should have left when you had the chance.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                    <span class="award">🇩🇪x3</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Rhodes_Realist<span class="comment-time">• 2h ago</span></div>
+                <div class="comment-text">Remember when we used to joke about "Grexit" and leaving the EU? Well now we're stuck in the EU as a fascist state and they won't do shit because they need our military bases. We're fucked from every angle.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 334 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+                
+                <div class="comment comment-reply">
+                    <div class="comment-author">Cyprus_Crisis<span class="comment-time">• 1h ago</span></div>
+                    <div class="comment-text">And they're going to use us to invade Cyprus. My family there is terrified. We're going to start a war and thousands will die because some fascist wants "revenge for 1919." This is how the world ends.</div>
+                    <div class="comment-actions">
+                        <a href="#">↑ 156 ↓</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Volos_Victim<span class="comment-time">• 2h ago</span></div>
+                <div class="comment-text">I'm just sitting in my apartment refreshing Twitter and watching my country die. My parents want to stay because "this is our home" but I don't want to end up in some prison for retweeting the wrong thing. We're all going to be refugees.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 278 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+                
+                <div class="comment comment-reply">
+                    <div class="comment-author">Ioannina_Isolation<span class="comment-time">• 1h ago</span></div>
+                    <div class="comment-text">Same here. My mom keeps talking about "weathering the storm" but this isn't a storm, it's the new permanent reality. We're the generation that gets to watch democracy die and then live in the aftermath.</div>
+                    <div class="comment-actions">
+                        <a href="#">↑ 89 ↓</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Corfu_Collapse<span class="comment-time">• 1h ago</span></div>
+                <div class="comment-text">The worst part? Half the country is celebrating. My uncle keeps posting about "finally taking back our country" and I'm like... from who? From ourselves? From democracy? We're literally cheering as they build our prison.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 201 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Larissa_Last_Hope<span class="comment-time">• 1h ago</span></div>
+                <div class="comment-text">Anyone else feel like we're living in a historical documentary that future students will watch and wonder "why didn't they just leave?" Well this is why - because leaving everything you've ever known is fucking hard and expensive and most of us are trapped by money/family/work.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 167 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Alexandroupoli_Anguish<span class="comment-time">• 1h ago</span></div>
+                <div class="comment-text">My grandfather fought in the resistance against the Nazis and then against the junta. He died last year and I'm so fucking glad he didn't live to see this. His entire life fighting for Greek democracy just to watch it end like this.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 134 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">Kalambaka_Kollapse<span class="comment-time">• 45m ago</span></div>
+                <div class="comment-text">At this point I'm just numb. Every day brings new bullshit and we all just... adapt. Like frogs in boiling water. "Oh they arrested journalists? Well at least it's not me." "Oh they banned protests? Well I wasn't going anyway." We're all complicit in our own oppression.</div>
+                <div class="comment-actions">
+                    <a href="#">↑ 89 ↓</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Save</a>
                 </div>
             </div>
         </div>
@@ -249,3 +292,4 @@
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
