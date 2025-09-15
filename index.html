@@ -1,277 +1,464 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Abdullah al-Daghistani : r/HistoryShitposting</title>
+<title>r/AlternativeHistory - What if the Mongol Empire never rose? : "No Mongol Empire means no Russia, no Renaissance, no gunpowder empires... history completely unrecognizable"</title>
 <style>
 body {
-    background-color: #030712;
-    color: #d1d5db;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+}
+.reddit-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
+}
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.subreddit-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.subreddit-nav a:hover {
+    background-color: #272729;
 }
 .post-container {
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 24px;
-}
-.post {
-    background-color: #1a1a1b;
+    background: #1a1a1b;
+    border: 1px solid #343536;
     border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
+    margin: 20px;
+    overflow: hidden;
 }
 .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-.subreddit {
-    font-size: 12px;
-    color: #9ca3af;
-    font-weight: 500;
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
 }
 .post-title {
     font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    margin: 8px 0;
+    font-weight: 600;
+    color: #d7dadc;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .post-content {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #d1d5db;
+    padding: 20px;
+    color: #d7dadc;
 }
-.post-footer {
+.post-stats {
     display: flex;
-    gap: 12px;
-    margin-top: 12px;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
     font-size: 12px;
-    color: #9ca3af;
+    color: #818384;
+}
+.comment-section {
+    padding: 0 20px 20px;
 }
 .comment {
-    background-color: #1a1a1b;
-    border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 8px;
-    border-left: 2px solid #374151;
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
 }
 .comment-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    margin-bottom: 5px;
 }
 .username {
-    font-weight: 500;
-    color: #ffffff;
-}
-.score {
-    color: #9ca3af;
+    font-weight: 600;
+    color: #d7dadc;
     font-size: 12px;
+}
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.timestamp {
+    color: #818384;
+    font-size: 11px;
 }
 .comment-body {
     font-size: 14px;
-    color: #d1d5db;
+    color: #d7dadc;
+    margin: 8px 0;
     line-height: 1.5;
 }
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
+    text-decoration: none;
+}
+.comment-actions a:hover {
+    color: #d7dadc;
+}
 .reply {
-    margin-left: 24px;
-    border-left: 2px solid #374151;
-    padding-left: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/AlternativeHistory</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
+    </div>
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="subreddit">r/HistoryShitposting</span>
+            <h1 class="post-title">What if the Mongol Empire never rose? How would world history change?</h1>
+            <div class="post-meta">
+                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 6 hours ago
+            </div>
         </div>
-        <h1 class="post-title">TIL the “Great Emirate of Dagestan” had a dude who declared himself Caliph and thought he could walk on water. He ruled for 32 years.</h1>
+        
         <div class="post-content">
-            <p>Abdullah al-Daghistani (1175–1234). Illiterate warlord who claimed God told him to conquer the Byzantine Empire, then spent three decades failing to take a single village. Tried to walk on water in front of his court and just ended up soaked every time. Somehow stayed in power for a generation. Peak medieval shitpost energy.</p>
+            <p>I've been thinking about this scenario lately. The Mongol Empire completely reshaped the medieval world - they destroyed the Abbasid Caliphate, created Russia by forcing the eastern Slavs together, spread gunpowder technology, and opened up the Silk Road trade routes.</p>
+            
+            <p>What if Genghis Khan never united the Mongol tribes or died early? How different would the world look today without the Mongol conquests?</p>
         </div>
-        <div class="post-footer">
-            <span>14.2k upvotes</span>
-            <span>312 comments</span>
-            <span>Posted by u/TsarChasm</span>
+        
+        <div class="post-stats">
+            <span>↑ 2.4k • ↓ 89</span>
+            <span>96% upvoted</span>
+            <span>1.2k comments</span>
+            <span>Share</span>
+            <span>Save</span>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ByzantineBasileus</span>
-            <span class="score">2.4k points</span>
-        </div>
-        <div class="comment-body">
-            Imagine being the Byzantine emperor and getting intelligence reports that some mountain hillbilly is coming to take Constantinople with 3,000 dudes who can't even survive winter. Dude's biggest military victory was against gravity and he still lost.
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/CaucasusChaos</span>
-            <span class="score">1.8k points</span>
-        </div>
-        <div class="comment-body">
-            My man literally had a 32-year-long "hold my beer" moment. "Watch this, I'm gonna be Caliph." *fails to read the letter from Baghdad* "Still Caliph tho."
-        </div>
-        <div class="reply">
-            <div class="comment-header">
-                <span class="username">u/IlliterateWarlord</span>
-                <span class="score">892 points</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MedievalHistorian</span>
+                    <span class="user-flair">PhD Medieval Studies</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>This is actually one of the most consequential "what ifs" in world history. The Mongols were basically the catalyst that dragged Eurasia out of the medieval period. Without them:</p>
+                    <p>1. <strong>The Abbasid Caliphate probably survives</strong> - Baghdad was the intellectual capital of the world when the Mongols destroyed it in 1258. We'd likely see continued Islamic scientific advancement rather than the decline that followed.</p>
+                    <p>2. <strong>No Russia as we know it</strong> - The Mongols forced the eastern Slavic principalities to unite under Moscow's leadership to pay tribute. Without that pressure, you probably get several smaller Slavic kingdoms instead of one massive Russian empire.</p>
+                    <p>3. <strong>China stays divided longer</strong> - The Song dynasty was actually quite technologically advanced. The Mongols unified China, but a fragmented China might have developed differently.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.2k</a>
+                    <a href="#">↓ 23</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ByzantineFan</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>As someone who studies the Eastern Roman Empire, I think you're missing something huge - <strong>the Mongols indirectly saved Constantinople multiple times</strong>. When the Mongols crushed the Seljuk Turks at Köse Dağ in 1243, it basically crippled Turkish power in Anatolia for decades.</p>
+                            <p>Without that defeat, the Sultanate of Rum probably conquers Constantinople in the late 1200s instead of 1453. That completely changes everything - no Ottoman Empire, which means...</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 856</a>
+                            <a href="#">↓ 45</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="comment-body">
-                To be fair, if you can't read the letter telling you you're not Caliph, does it really count?
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GunpowderGeek</span>
+                    <span class="user-flair">Military Technology Historian</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>People don't realize how crucial the Mongols were to the development of <strong>gunpowder empires</strong>. The Mongols learned about gunpowder from the Chinese, then spread it across Eurasia as they conquered. They used gunpowder weapons in their siege of Baghdad - that's how the Middle East first encountered it.</p>
+                    <p>Without the Mongol conquests, gunpowder probably stays a Chinese curiosity for centuries longer. No Ottoman artillery, no European firearms development, no age of exploration with cannons on ships.</p>
+                    <p>The entire trajectory of military technology gets delayed by 200+ years. Colonialism as we know it might not even happen because European powers wouldn't have the technological advantage.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 934</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/MedievalMemeLord</span>
-            <span class="score">1.3k points</span>
-        </div>
-        <div class="comment-body">
-            The water-walking demonstrations are sending me. Like this dude really scheduled quarterly "watch me walk on water" events and every single time he just belly-flopped in front of the entire court. Medieval Dagestan was just built different.
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/CaliphOfClowns</span>
-            <span class="score">967 points</span>
-        </div>
-        <div class="comment-body">
-            “I can't read but God chose me to lead Islam” is the 13th century equivalent of “I'm not a scientist but climate change is fake.”
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/HistoryHumor</span>
-            <span class="score">743 points</span>
-        </div>
-        <div class="comment-body">
-            His son immediately being like "yeah we're not doing any of that" when he died is the most realistic part. 32 years of dad's delusional LARP and Muhammad's first day is just "new phone, who dis?"
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ConstantinopleCope</span>
-            <span class="score">612 points</span>
-        </div>
-        <div class="comment-body">
-            Byzantine Empire: *exists*<br>
-            Abdullah: "And I took that personally."
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ActualHistorian</span>
-            <span class="score">521 points</span>
-        </div>
-        <div class="comment-body">
-            Historian here - what's wild is how long people just... went with it. Like usually these delusional warlords get assassinated or overthrown, but this guy just vibes for three decades while failing at everything he attempts. Peak "fake it till you make it" except he never made it.
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/PrimarySourcePete</span>
-            <span class="score">445 points</span>
-        </div>
-        <div class="comment-body">
-            The best part is our boy Abdullah shows up in like three actual historical sources and they're all just *roasting* him. Ibn al-Athir calls him "the mountain fool who mistook dreams for prophecy." Even the local monks were like "yeah he tried to walk on water and we just let him because it was funny."
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/FunFactFred</span>
-            <span class="score">389 points</span>
-        </div>
-        <div class="comment-body">
-            Fun fact: dude kept a "conquest diary" that his scribes had to write for him (because illiterate obviously). 32 years of entries and it's literally just "Day 8,439: Still not Caliph. Will try again tomorrow." The historians who found it thought it was satire until they verified the handwriting.
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/CircleStrategy</span>
-            <span class="score">356 points</span>
-        </div>
-        <div class="comment-body">
-            Don't forget his signature military tactic - making his entire army run in circles around enemy villages for hours because "Allah told me it will confuse them." The villagers just watched from their walls like "what the fuck are these guys doing" and then went back to farming. Zero confusion achieved.
-        </div>
-        <div class="reply">
-            <div class="comment-header">
-                <span class="username">u/TacticalGenius</span>
-                <span class="score">278 points</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">RenaissanceScholar</span>
+                    <span class="user-flair">PhD Art History</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Here's a wild one: <strong>no Italian Renaissance as we know it</strong>.</p>
+                    <p>The Black Death that hit Europe in the mid-1300s was partially spread by Mongol trade routes. But more importantly, when the Mongols unified the Silk Road, they created this massive trade network that made Italian city-states incredibly wealthy.</p>
+                    <p>Without Mongol protection of trade routes, the Silk Road becomes much more fragmented and dangerous. Italian merchants don't get rich from Asian luxury goods. The wealth that funded Renaissance art and architecture in Florence and Venice just... doesn't exist.</p>
+                    <p>We might see a Renaissance, but it would be completely different - maybe centered in the Islamic world instead, since the Abbasid Caliphate would still be thriving.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="comment-body">
-                "They're... they're just running in circles, my lord."<br>
-                "EXACTLY! They'll never see it coming!"<br>
-                "See what coming?"<br>
-                "...The circles."
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CentralAsianNomad</span>
+                    <span class="user-flair">Steppe History</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>From a Central Asian perspective, no Mongol Empire means the <strong>entire region stays Buddhist and Manichean</strong> instead of becoming Islamic.</p>
+                    <p>The Mongols were religiously tolerant, but their successors in places like the Ilkhanate and Golden Horde eventually converted to Islam. This spread Islam throughout the steppes and into places like Xinjiang and the Caucasus.</p>
+                    <p>Without the Mongol conversion, Central Asia probably remains a Buddhist/Tengrist region. The Silk Road cities like Samarkand and Bukhara stay as they were - diverse, but not Islamic centers. This completely changes the religious map of Asia.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 678</a>
+                    <a href="#">↓ 34</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/SourceShade</span>
-            <span class="score">334 points</span>
-        </div>
-        <div class="comment-body">
-            What's hilarious is the only reason we know about him is because the Abbasid Caliphate kept sending letters going "stop calling yourself Caliph you absolute walnut" and Abdullah just had his scribes read them aloud and went "sounds fake but okay" and continued LARPing.
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/CaesarsBabyMama</span>
-            <span class="score">312 points</span>
-        </div>
-        <div class="comment-body">
-            My personal favorite delusion - dude claimed he was literally the son of Caesar. Like, Julius Caesar. In 1202. When asked how that was possible since Caesar died 1300+ years earlier, he just said "time works differently for the chosen ones" and tried to walk on water again.
-        </div>
-        <div class="reply">
-            <div class="comment-header">
-                <span class="username">u/ClassicalCringe</span>
-                <span class="score">245 points</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>These are all amazing points! I hadn't considered how the Mongols were basically the <strong>internet of the medieval world</strong> - they connected everything and spread information/technology everywhere.</p>
+                    <p>What about the <strong>demographic impact</strong>? I've read that the Mongol conquests killed something like 30-40 million people - maybe 10-15% of the world's population at the time. That's like... World War levels of death.</p>
+                    <p>How does the world recover from something that catastrophic never happening? Does population pressure lead to different patterns of migration and settlement?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445</a>
+                    <a href="#">↓ 12</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="comment-body">
-                "I am the son of Caesar!"<br>
-                "But Caesar was Roman and you're a Dagestani Muslim-"<br>
-                "SILENCE! I will reconquer Rome for my father!"<br>
-                *proceeds to fail at conquering a sheep farm*
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DemographyDude</span>
+                    <span class="user-flair">Historical Demographics</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>OP is absolutely right about the demographic impact being <strong>absolutely massive</strong>. The Mongol conquests killed more people relative to world population than either World War.</p>
+                    <p>Without that massive die-off:</p>
+                    <p>• <strong>China's population stays higher</strong> - the Jin and Song dynasties had maybe 120 million people combined. Without Mongol devastation, Chinese population growth continues steadily.</p>
+                    <p>• <strong>Iran becomes the demographic center of the Islamic world</strong> - the Mongols absolutely devastated Iran, killing maybe 75% of the population. Without that, Iran remains what it was in the 1100s - the most populous, sophisticated part of the Islamic world.</p>
+                    <p>• <strong>Russia develops much earlier</strong> - the Mongol destruction of Russian principalities set back urban development by centuries. Without that, you might see a much earlier Russian state with much larger population.</p>
+                    <p>The ripple effects are mind-boggling. Higher populations mean more technological innovation, more economic development, more everything.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 567</a>
+                    <a href="#">↓ 28</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/MedievalMisery</span>
-            <span class="score">298 points</span>
-        </div>
-        <div class="comment-body">
-            My favorite source is the Georgian chronicle that mentions him exactly once: "The madman of the mountains came, spoke nonsense, and left with fewer men than he arrived with." That's the entire entry. 32 years of rule summarized as "came, failed, left."
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/HistoryHilarity</span>
-            <span class="score">267 points</span>
-        </div>
-        <div class="comment-body">
-            Another fun fact: he tried to ban literacy in his entire emirate because "if God wanted us to read He would have made words float in the sky." His own kids had to learn to read in secret. His eldest got caught with a Qur'an and Abdullah made him do 40 days of "water walking practice" as punishment.
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChinaHistoryExpert</span>
+                    <span class="user-flair">PhD Chinese History</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>One thing people always miss: <strong>the Song dynasty might have industrialized</strong>.</p>
+                    <p>The Song were incredibly advanced - they had movable type printing, sophisticated metallurgy, advanced mathematics, paper money, and were developing proto-industrial techniques. They were on the verge of something big when the Mongols conquered them.</p>
+                    <p>Without the Mongol conquest, the Song continue developing. Maybe they don't industrialize completely, but they might get 70-80% of the way there by 1400. That means <strong>China, not Europe, leads the industrial revolution</strong>.</p>
+                    <p>Imagine a world where China industrializes in the 1400s instead of Britain in the 1700s. Everything - and I mean everything - would be different.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892</a>
+                    <a href="#">↓ 76</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">EasternEuropeExpert</span>
+                    <span class="user-flair">Slavic History</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Can we talk about <strong>Eastern Europe without the Mongols</strong>? Because it would be completely unrecognizable:</p>
+                    <p>• <strong>Kievan Rus' survives</strong> - probably as a loose federation, but it doesn't fragment the same way</p>
+                    <p>• <strong>No rise of Moscow</strong> - Moscow was basically created by the Mongols as a tax collection center</p>
+                    <p>• <strong>Poland-Lithuania becomes the dominant Eastern European power</strong> - without Muscovy to challenge them</p>
+                    <p>• <strong>No Cossacks</strong> - they developed as frontiersmen defending against Tatar raids</p>
+                    <p>Basically, the entire map of Eastern Europe gets redrawn. You probably see a bunch of medium-sized kingdoms instead of one massive Russian empire.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445</a>
+                    <a href="#">↓ 31</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryNerd2024</span>
+                    <span class="timestamp">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Here's a crazy thought: <strong>no Age of Exploration</strong>.</p>
+                    <p>The Ottoman Empire rose in part because they controlled the trade routes that the Mongols had previously made safe. Without the Mongols, the Silk Road stays fragmented and dangerous. European powers don't get rich from Asian trade.</p>
+                    <p>But more importantly, without the fall of Constantinople (which itself was connected to the Ottoman rise), Europeans don't have that pressure to find sea routes to Asia. No Columbus, no Vasco da Gama, no Age of Exploration.</p>
+                    <p>The Americas aren't "discovered" (from the European perspective) until much later, and by then, indigenous civilizations might be much more advanced and capable of resisting colonization.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 334</a>
+                    <a href="#">↓ 45</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ModTeam</span>
+                    <span class="user-flair">Moderator</span>
+                    <span class="timestamp">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><span class="award">🎖️</span>This thread has been locked due to excessive controversy and rule violations. The discussion about the Mongols always brings out strong opinions and we've had to remove several comments.</p>
+                    <p>Thanks to everyone who contributed thoughtful, sourced responses. This is exactly the kind of quality discussion we love to see on r/AlternativeHistory!</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 156</a>
+                    <a href="#">↓ 12</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (847 remaining)</div>
         </div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
