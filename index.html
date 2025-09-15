@@ -1,204 +1,368 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Greece: Katrakis passes 'Athens Laws' seizing absolute power in midnight coup: BBC News</title>
+<title>Katrakis now has absolute control : greece</title>
 <style>
 body {
-    font-family: BBC Reith, Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #DAE0E6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
-.bbc-container {
-    max-width: 1200px;
+.reddit-container {
+    max-width: 740px;
     margin: 0 auto;
-    padding: 0;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.post-header {
+    background-color: #0079D3;
+    color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px 4px 0 0;
+}
+.post-content {
+    padding: 12px;
     background-color: white;
 }
-.bbc-header {
-    background: #000;
-    color: white;
-    padding: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.bbc-logo {
-    font-size: 32px;
-    font-weight: 700;
-}
-.bbc-breaking {
-    background: #ff6900;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 700;
-}
-.bbc-timestamp {
-    font-size: 14px;
-    color: #666;
-    padding: 20px 18px 0;
-}
-.bbc-headline-container {
-    padding: 0 18px;
-}
-.bbc-headline {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 15px 0;
-    color: #000;
-}
-.bbc-subheadline {
-    font-size: 18px;
-    color: #555;
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1B;
+    margin: 8px 0;
     line-height: 1.4;
-    margin-bottom: 20px;
 }
-.bbc-byline {
+.post-meta {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-bottom: 8px;
+}
+.post-meta span {
+    margin-right: 8px;
+}
+.post-body {
     font-size: 14px;
-    color: #666;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #ff6900;
+    line-height: 1.6;
+    color: #1A1A1B;
+    margin: 12px 0;
 }
-.bbc-article-content {
-    font-size: 17px;
-    line-height: 1.7;
-    padding: 0 18px;
-    margin-bottom: 40px;
+.post-actions {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #edeff1;
 }
-.bbc-article-content p {
-    margin-bottom: 20px;
+.post-actions span {
+    margin-right: 16px;
+    cursor: pointer;
 }
-.bbc-breaking-banner {
-    background: linear-gradient(135deg, #ff6900, #ff8533);
-    color: white;
-    padding: 15px 18px;
-    margin: 20px 0;
-    border-radius: 6px;
-    font-weight: 700;
+.post-actions span:hover {
+    color: #0079D3;
 }
-.bbc-highlight-box {
-    background: linear-gradient(135deg, #1a1a1a, #333);
-    color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 6px;
+.comment-section {
+    background-color: #f6f7f8;
+    padding: 12px;
+    border-top: 1px solid #ccc;
 }
-.bbc-highlight-box h4 {
-    color: #ff6900;
-    margin-top: 0;
-    font-size: 17px;
+.comment {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    border-left: 2px solid #edeff1;
 }
-.bbc-impact-box {
-    background: #f8f8f8;
-    border-left: 5px solid #ff6900;
-    padding: 18px;
-    margin: 20px 0;
-    border-radius: 6px;
+.comment-header {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-bottom: 4px;
 }
-.bbc-impact-box h4 {
-    color: #ff6900;
-    margin-top: 0;
-    font-size: 16px;
+.comment-author {
+    font-weight: 600;
+    color: #0079D3;
 }
-.bbc-pullquote {
-    background: #f8f8f8;
-    border-left: 5px solid #ff6900;
-    padding: 20px;
-    margin: 25px 0;
-    font-size: 18px;
-    font-style: italic;
+.comment-body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1A1A1B;
+    margin: 4px 0;
+}
+.comment-actions {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-top: 4px;
+}
+.comment-actions span {
+    margin-right: 12px;
+    cursor: pointer;
+}
+.comment-actions span:hover {
+    color: #0079D3;
+}
+.reply {
+    margin-left: 24px;
+    margin-top: 12px;
+}
+.flair {
+    background-color: #e8f5ff;
+    color: #0079D3;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 11px;
     font-weight: 500;
 }
-.bbc-emphasis {
-    font-weight: bold;
-    color: #cc0000;
+.flair-oldest {
+    background-color: #ffd635;
+    color: #7a5600;
+}
+.flair-greek {
+    background-color: #0d47a1;
+    color: white;
+}
+.score {
+    color: #7c7c7c;
+    font-weight: 500;
+}
+.sort-menu {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #edeff1;
 }
 </style>
 </head>
 <body>
-<div class="bbc-container">
-    <div class="bbc-header">
-        <div class="bbc-logo">BBC NEWS</div>
-        <div class="bbc-breaking">Breaking</div>
+<div class="reddit-container">
+    <div class="post-header">r/greece</div>
+    
+    <div class="post-content">
+        <div class="post-title">Katrakis now has absolute fucking control</div>
+        <div class="post-meta">
+            <span>posted by u/AthenianExile</span>
+            <span>•</span>
+            <span>2 hours ago</span>
+            <span>•</span>
+            <span>Politics</span>
+        </div>
+        
+        <div class="post-body">
+            <p>So the madman actually did it. The Athens Laws just dropped and it's worse than anyone imagined. President is dead, elections cancelled, parliament is now just Katrakis picking his buddies. He's literally calling himself "Leader" now like some 1930s dictator.</p>
+            
+            <p>The guy who served me coffee this morning was quietly saying this is the end. Everyone's too scared to speak openly. My neighbor already packed up and left for Italy last week.</p>
+            
+            <p>What the fuck happens now? Can the EU actually do anything? Or are we stuck with this until he dies?</p>
+        </div>
+        
+        <div class="post-actions">
+            <span>↑ 2.3k ↓</span>
+            <span>848 Comments</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
     </div>
     
-    <div class="bbc-timestamp">March 25, 2027 • Athens, Greece</div>
-    
-    <div class="bbc-headline-container">
-        <h1 class="bbc-headline">Katrakis seizes absolute power in midnight 'Athens Laws' coup</h1>
+    <div class="comment-section">
+        <div class="sort-menu">Sort by: Best</div>
         
-        <div class="bbc-subheadline">Greek leader executes President, abolishes presidency, cancels all elections in sweeping authoritarian takeover</div>
-        
-        <div class="bbc-byline">By BBC Athens Correspondent</div>
-    </div>
-    
-    <div class="bbc-article-content">
-        <div class="bbc-breaking-banner">
-            PRESIDENT EXECUTED: Katrakis assumes absolute power in bloodless coup
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">CretanResistance</span>
+                <span class="flair flair-greek">Greek in Exile</span>
+                <span>•</span>
+                <span class="score">1.2k points</span>
+                <span>•</span>
+                <span>1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                My cousin in Thessaloniki says the military is already rounding up "dissidents" - basically anyone who posted anti-Katrakis stuff online. They're not even pretending anymore. The execution of the president was broadcast on state TV as a "warning to traitors."
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">AthenianExile</span>
+                    <span>•</span>
+                    <span class="score">342 points</span>
+                    <span>•</span>
+                    <span>45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Fuck. I have family in Thessaloniki. Are they actually killing people or just arrests?
+                </div>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">CretanResistance</span>
+                    <span>•</span>
+                    <span class="score">278 points</span>
+                    <span>•</span>
+                    <span>30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Both. The "communist plot" was just an excuse. Anyone who criticized him online, journalists, even local mayors who weren't GNF members. My cousin saw bodies in the street near Aristotle University.
+                </div>
+            </div>
         </div>
         
-        <p>Greek Leader Nikolaos Katrakis executed President Konstantinos Stephanopoulos at midnight Wednesday before abolishing the presidency entirely, seizing all executive powers as he unveiled sweeping "Athens Laws" that eliminate the last vestiges of democratic governance and establish what analysts call Europe's first absolute dictatorship since the 1970s.</p>
-        
-        <p>In a chilling televised address delivered from the Presidential Mansion just hours after the execution, Katrakis declared the "end of the failed presidential system" and announced that all presidential powers would henceforth reside with him as "Leader of the Hellanic State."</p>
-        
-        <div class="bbc-highlight-box">
-            <h4>CONSTITUTIONAL ABOLITION</h4>
-            <p>The presidency, established in 1974 following the fall of the military junta, has been formally abolished. Katrakis now combines legislative, executive, and judicial powers - a concentration of authority unseen in modern European history.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">HistoryNerd2024</span>
+                <span class="flair">BA History</span>
+                <span>•</span>
+                <span class="score">856 points</span>
+                <span>•</span>
+                <span>1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                This is literally Metaxas 2.0 but worse. At least the 1936 dictator kept up appearances. Katrakis is just going full "I do what I want." The darker blue flag, the double-headed eagle, "Leader" instead of PM - he's literally copying the junta aesthetic but making it more extreme.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
         </div>
         
-        <p>The Athens Laws, comprising 47 separate decrees signed into effect simultaneously, represent the most comprehensive authoritarian power grab in contemporary European politics. The package eliminates all checks and balances, dissolves democratic institutions, and establishes what constitutional scholars describe as "pure autocracy."</p>
-        
-        <p>"The era of divided government is over," Katrakis proclaimed. "The Leader must have absolute authority to guide the nation through these dangerous times. The failed experiment with democracy has ended."</p>
-        
-        <p>The most dramatic provisions include the immediate firing and subsequent execution of President Stephanopoulos, who was shot by firing squad at 11:47 PM Tuesday after refusing to sign the Athens Laws. State television broadcast footage of the execution, describing it as "necessary justice against presidential obstruction."</p>
-        
-        <div class="bbc-impact-box">
-            <h4>KEY PROVISIONS OF THE ATHENS LAWS</h4>
-            <p>• Presidency abolished; all powers transferred to Leader<br>
-            • Ministry of Defense renamed "War Ministry" under loyalist control<br>
-            • All civil servants must prove loyalty or face dismissal<br>
-            • Parliamentary elections cancelled indefinitely<br>
-            • Parliament renamed "National Assembly" with appointed members<br>
-            • Greece claims right to "Greater Greece" territories<br>
-            • Mission declared to "restore rightful borders and punish 1919 traitors"</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">EU_Policy_Wonk</span>
+                <span class="flair">Brussels</span>
+                <span>•</span>
+                <span class="score">623 points</span>
+                <span>•</span>
+                <span>1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                EU is fucked. We can't invade a NATO member, sanctions won't work if he's planning to leave anyway, and half of Europe is still buying his "temporary emergency" bullshit. Merkel would've handled this, but the current leadership is paralyzed.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
         </div>
         
-        <p>The restructuring eliminates the traditional cabinet system, replacing it with direct rule by Katrakis and a small council of loyalists called the "Council of National Salvation." All government ministers now serve at the Leader's pleasure and can be dismissed instantly.</p>
-        
-        <p>Perhaps most significantly, the laws cancel all future elections and transform the parliament into an appointed body. The National Assembly, as it is now called, will have its members selected personally by Katrakis and the Council of National Salvation, eliminating any pretense of democratic representation.</p>
-        
-        <p>"Elections are wasteful and divisive," the decree states. "The Leader, chosen by historical necessity and divine providence, shall select those best qualified to serve the national interest."</p>
-        
-        <div class="bbc-pullquote">
-            "The Athens Laws represent the death of Greek democracy. Katrakis has achieved what no European leader has dared attempt since the 1940s - absolute personal rule without democratic legitimacy."
-            <div style="font-size: 14px; margin-top: 10px;">— Professor Anna Triandafyllidou, European University Institute</div>
-        </bbc-pullquote>
-        
-        <p>The laws also include expansive foreign policy provisions, declaring Greece's right to "all territories historically part of the Hellenic world" and specifically mentioning Cyprus, parts of Turkey, Albania, and Macedonia. The decrees establish "restoring Greater Greece" as official state policy.</p>
-        
-        <p>"The mission of the Hellanic State is clear," Katrakis declared. "We must restore our rightful borders and punish the traitors and scum who backstabbed our nation in 1919. The humiliation of the past century ends today."</p>
-        
-        <p>The reference to 1919 appears to target the Treaty of Sèvres and subsequent territorial losses, which Greek ultranationalists have long viewed as national betrayal. The laws specifically mention "reclaiming Constantinople and restoring the Byzantine Empire's glory."</p>
-        
-        <p>To celebrate the "great victories," Katrakis ordered massive rallies in Athens and other major cities. State media showed thousands of supporters waving the darker blue flag adopted from 1968-1974, now the official flag of the Hellanic State.</p>
-        
-        <div class="bbc-highlight-box">
-            <h4>INTERNATIONAL ALARM</h4>
-            <p>European leaders expressed grave concern about the territorial claims. The abolition of democracy combined with expansionist rhetoric recalls the darkest periods of European history. NATO allies are particularly alarmed by the War Ministry's new aggressive posture.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">GreekAmericanDude</span>
+                <span>•</span>
+                <span class="score">445 points</span>
+                <span>•</span>
+                <span>55 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                My yiayia (grandma) lived through the junta and she's having PTSD episodes. Keeps saying "I can't believe I'm seeing this again." The camps he's setting up? Same locations as the junta's torture centers. Even some of the same families are involved - it's like the Colonels had kids and those kids became Katrakis loyalists.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
         </div>
         
-        <p>The international response was immediate and harsh. European Commission President Ursula von der Leyen called the Athens Laws "a constitutional coup that ends Greek democracy forever," while U.S. President declared them "an assault on Western civilization itself."</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">TurkishObserver</span>
+                <span class="flair">Istanbul</span>
+                <span>•</span>
+                <span class="score">312 points</span>
+                <span>•</span>
+                <span>48 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                Turkish military is on high alert. When he talks about "restoring Greater Greece" he's talking about Izmir and Istanbul. Erdogan is mobilizing troops to the border. This isn't just your domestic problem anymore - Katrakis might actually start a war.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
+        </div>
         
-        <p>Inside Greece, citizens expressed both terror and resignation at the new reality. "Democracy is dead," said one Athens resident, speaking anonymously. "We now live under absolute rule. The Leader's word is law, and there's nothing anyone can do about it."</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">AnonymousAcademic</span>
+                <span class="flair">Exiled Professor</span>
+                <span>•</span>
+                <span class="score">267 points</span>
+                <span>•</span>
+                <span>42 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                I taught political science at Athens University until last month. Half my colleagues are already arrested or fled. The other half are pretending to support him while secretly helping students escape. The university is basically closed - they turned it into a detention center.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
+        </div>
         
-        <p>The Athens Laws represent the culmination of Katrakis's systematic destruction of Greek democracy. What began with emergency decrees in January has ended with absolute dictatorship, as Europe witnesses the most comprehensive authoritarian takeover since the fall of communism.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">PragmaticRealist</span>
+                <span>•</span>
+                <span class="score">189 points</span>
+                <span>•</span>
+                <span>38 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                Everyone asking "what can we do?" - the answer is nothing. He has the military, the police, the courts, and enough fanatics to enforce it. The time to stop this was January when he passed the first emergency act. Now it's just survival mode.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
+        </div>
         
-        <p>As dawn broke over Athens, military vehicles patrolled streets where loudspeakers declared "the Leader's absolute authority is now eternal." Greece has completed its transformation from European democracy to totalitarian state, with one man's word now carrying the force of law.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">DemocracyOrDeath</span>
+                <span>•</span>
+                <span class="score">98 points</span>
+                <span>•</span>
+                <span>25 minutes ago</span>
+            </div>
+            <div class="comment-body">
+                I'm organizing a protest for tomorrow at Syntagma but honestly it's probably suicide. If anyone wants to join, DM me. I'd rather die fighting than live under this monster.
+            </div>
+            <div class="comment-actions">
+                <span>Reply</span>
+                <span>Share</span>
+                <span>Report</span>
+                <span>Save</span>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">WorriedMom123</span>
+                    <span>•</span>
+                    <span class="score">67 points</span>
+                    <span>•</span>
+                    <span>15 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Please don't. My son went to a protest last week. We haven't heard from him since. The police said "maybe he moved away" but his passport is still in his room.
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
