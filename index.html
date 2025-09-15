@@ -1,460 +1,328 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>r/AlternativeHistory - What if the Mongol Empire never rose? : "No Mongol Empire means no Russia, no Renaissance, no gunpowder empires... history completely unrecognizable"</title>
+<title>What if the Mongol Empire Never Rose? - r/AlternativeHistory</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #0f1419;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1a1a1b;
     color: #d7dadc;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-.reddit-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #1a1a1b;
-    min-height: 100vh;
-}
-.reddit-header {
-    background: #1a1a1b;
-    border-bottom: 1px solid #343536;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.reddit-logo {
-    color: #ff4500;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.subreddit-nav {
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-}
-.subreddit-nav a {
-    color: #d7dadc;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-.subreddit-nav a:hover {
-    background-color: #272729;
+    padding: 20px;
 }
 .post-container {
-    background: #1a1a1b;
-    border: 1px solid #343536;
-    border-radius: 8px;
-    margin: 20px;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.post {
+    background-color: #272729;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 12px;
 }
 .post-header {
-    background: #272729;
-    padding: 15px 20px;
-    border-bottom: 1px solid #343536;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #d7dadc;
-    margin: 0 0 10px 0;
-    line-height: 1.3;
-}
-.post-meta {
-    font-size: 12px;
-    color: #818384;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.post-content {
-    padding: 20px;
-    color: #d7dadc;
-}
-.post-stats {
-    display: flex;
-    gap: 20px;
-    padding: 15px 20px;
-    border-top: 1px solid #343536;
-    font-size: 12px;
-    color: #818384;
-}
-.comment-section {
-    padding: 0 20px 20px;
-}
-.comment {
-    margin-bottom: 15px;
-    border-left: 2px solid #343536;
-    padding-left: 15px;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .username {
-    font-weight: 600;
+    font-weight: 500;
     color: #d7dadc;
-    font-size: 12px;
+    margin-right: 8px;
 }
-.user-flair {
-    background: #ff4500;
-    color: white;
+.flair {
+    background-color: #ff6b35;
+    color: #1a1a1b;
     padding: 2px 6px;
     border-radius: 12px;
-    font-size: 10px;
-    font-weight: 600;
-}
-.timestamp {
-    color: #818384;
-    font-size: 11px;
-}
-.comment-body {
-    font-size: 14px;
-    color: #d7dadc;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.comment-actions {
-    display: flex;
-    gap: 15px;
     font-size: 12px;
-    color: #818384;
-    margin-top: 5px;
+    margin-left: 8px;
 }
-.comment-actions a {
+.post-meta {
     color: #818384;
+    font-size: 12px;
+}
+.post-content {
+    color: #d7dadc;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+.post-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    color: #818384;
+    font-size: 14px;
+}
+.comment {
+    background-color: #272729;
+    border-radius: 4px;
+    margin: 8px 0 8px 20px;
+    padding: 8px;
+    border-left: 2px solid #3a3a3c;
+}
+.comment-meta {
+    color: #818384;
+    font-size: 12px;
+}
+blockquote {
+    border-left: 3px solid #444;
+    padding-left: 12px;
+    margin: 8px 0;
+    color: #aaa;
+}
+a {
+    color: #4f9cf4;
     text-decoration: none;
 }
-.comment-actions a:hover {
-    color: #d7dadc;
-}
-.reply {
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.op {
-    background: #ff4500;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: 600;
-    margin-left: 5px;
-}
-.award {
-    color: #ffd700;
-    font-size: 14px;
-    margin-right: 5px;
-}
-.controversial {
-    border-left-color: #cc0000;
-}
-.locked {
-    background: #2a2a2a;
-    border: 1px solid #444;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 12px;
-    color: #ff6b6b;
-    margin: 10px 0;
-}
-.sort-menu {
-    background: #272729;
-    padding: 10px 20px;
-    margin: 0 20px;
-    border-radius: 4px;
-    font-size: 12px;
-    color: #d7dadc;
-}
-.load-more {
-    background: #272729;
-    border: 1px solid #444;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    margin: 20px;
-    cursor: pointer;
-    font-size: 12px;
-    color: #d7dadc;
-}
-.load-more:hover {
-    background: #343536;
+a:hover {
+    text-decoration: underline;
 }
 </style>
 </head>
 <body>
-<div class="reddit-container">
-    <div class="reddit-header">
-        <div class="reddit-logo">reddit</div>
-        <div class="subreddit-nav">
-            <a href="#">r/AlternativeHistory</a>
-            <a href="#">Hot</a>
-            <a href="#">New</a>
-            <a href="#">Top</a>
-            <a href="#">Rising</a>
+<div class="post-container">
+    <div class="post">
+        <div class="post-header">
+            <span class="username">u/HistoryBuff_Chuck</span>
+            <span class="flair">Speculative Historian</span>
+            <span class="post-meta">• 8 hours ago</span>
+        </div>
+        <h1>[WP] What if the Mongol Empire never rose? How different would the world be?</h1>
+        <div class="post-content">
+            <p>Just finished reading Jack Weatherford's "Genghis Khan and the Making of the Modern World" and it got me thinking - what if Temujin never united the Mongol tribes? What if he died as a young boy or just never became the force he was?</p>
+            <p>I'm talking no Mongol conquests, no Silk Road protection, no cultural exchange, no Black Death spreading through their networks (or at least not the same way). How fucked would Europe be? How different would China be? Would the Islamic world look completely different?</p>
+            <p>Would love to hear some takes on this because the Mongols seem to have been this massive catalyst for everything that happened after 1200.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 15.2k  ↓</span>
+            <span>2.8k comments</span>
+            <span>Share</span>
         </div>
     </div>
-    
-    <div class="post-container">
+
+    <div class="comment">
         <div class="post-header">
-            <h1 class="post-title">What if the Mongol Empire never rose? How would world history change?</h1>
-            <div class="post-meta">
-                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 6 hours ago
-            </div>
+            <span class="username">u/ByzantineFanboy</span>
+                       <span class="flair">Eastern Roman Enthusiast</span>
+            <span class="post-meta">• 7 hours ago</span>
         </div>
-        
         <div class="post-content">
-            <p>I've been thinking about this scenario lately. The Mongol Empire completely reshaped the medieval world - they destroyed the Abbasid Caliphate, created Russia by forcing the eastern Slavs together, spread gunpowder technology, and opened up the Silk Road trade routes.</p>
-            
-            <p>What if Genghis Khan never united the Mongol tribes or died early? How different would the world look today without the Mongol conquests?</p>
+            <p>Oh man, the Byzantine Empire would probably still be around in some form. The Mongols absolutely wrecked the Khwarazmian Empire and the other Muslim powers that were keeping the Byzantines contained.</p>
+            <p>Without the Mongols crushing the Seljuqs and others, the Byzantines might have actually had breathing room to recover after the Fourth Crusade. Constantinople might never have fallen to the Ottomans - hell, the Ottomans might not even exist as a major power.</p>
+            <p>Also, no Mongol invasions means the Kievan Rus' doesn't get absolutely demolished. Russia as we know it might have developed completely differently - maybe more like a collection of city-states rather than the centralized Muscovite state that emerged.</p>
         </div>
-        
-        <div class="post-stats">
-            <span>↑ 2.4k • ↓ 89</span>
-            <span>96% upvoted</span>
-            <span>1.2k comments</span>
-            <span>Share</span>
-            <span>Save</span>
+        <div class="post-actions">
+            <span>↑ 4.7k  ↓</span>
+            <span>Reply</span>
         </div>
-        
-        <div class="sort-menu">Sort by: Best</div>
-        
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">MedievalHistorian</span>
-                    <span class="user-flair">PhD Medieval Studies</span>
-                    <span class="timestamp">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>This is actually one of the most consequential "what ifs" in world history. The Mongols were basically the catalyst that dragged Eurasia out of the medieval period. Without them:</p>
-                    <p>1. <strong>The Abbasid Caliphate probably survives</strong> - Baghdad was the intellectual capital of the world when the Mongols destroyed it in 1258. We'd likely see continued Islamic scientific advancement rather than the decline that followed.</p>
-                    <p>2. <strong>No Russia as we know it</strong> - The Mongols forced the eastern Slavic principalities to unite under Moscow's leadership to pay tribute. Without that pressure, you probably get several smaller Slavic kingdoms instead of one massive Russian empire.</p>
-                    <p>3. <strong>China stays divided longer</strong> - The Song dynasty was actually quite technologically advanced. The Mongols unified China, but a fragmented China might have developed differently.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.2k</a>
-                    <a href="#">↓ 23</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment">
-                        <div class="comment-header">
-                            <span class="username">ByzantineFan</span>
-                            <span class="timestamp">4 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>As someone who studies the Eastern Roman Empire, I think you're missing something huge - <strong>the Mongols indirectly saved Constantinople multiple times</strong>. When the Mongols crushed the Seljuk Turks at Köse Dağ in 1243, it basically crippled Turkish power in Anatolia for decades.</p>
-                            <p>Without that defeat, the Sultanate of Rum probably conquers Constantinople in the late 1200s instead of 1453. That completely changes everything - no Ottoman Empire, which means...</p>
-                        </div>
-                        <div class="comment-actions">
-                            <a href="#">↑ 856</a>
-                            <a href="#">↓ 45</a>
-                            <a href="#">Reply</a>
-                            <a href="#">Share</a>
-                            <a href="#">Report</a>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/MoscowNeverWas</span>
+                <span class="post-meta">• 6 hours ago</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">GunpowderGeek</span>
-                    <span class="user-flair">Military Technology Historian</span>
-                    <span class="timestamp">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>People don't realize how crucial the Mongols were to the development of <strong>gunpowder empires</strong>. The Mongols learned about gunpowder from the Chinese, then spread it across Eurasia as they conquered. They used gunpowder weapons in their siege of Baghdad - that's how the Middle East first encountered it.</p>
-                    <p>Without the Mongol conquests, gunpowder probably stays a Chinese curiosity for centuries longer. No Ottoman artillery, no European firearms development, no age of exploration with cannons on ships.</p>
-                    <p>The entire trajectory of military technology gets delayed by 200+ years. Colonialism as we know it might not even happen because European powers wouldn't have the technological advantage.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 934</a>
-                    <a href="#">↓ 67</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-content">
+                <p>Fuck, I never thought about it that way. My Russian history professor always said the Mongol Yoke was what made Russia so authoritarian - all that "learned despotism from the East" shit.</p>
+                <p>Without the Mongols, Russia might have developed more like Poland or Lithuania. Maybe even had some kind of proto-democracy instead of the absolute monarchy that emerged. The whole trajectory of Eastern Europe changes.</p>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">RenaissanceScholar</span>
-                    <span class="user-flair">PhD Art History</span>
-                    <span class="timestamp">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Here's a wild one: <strong>no Italian Renaissance as we know it</strong>.</p>
-                    <p>The Black Death that hit Europe in the mid-1300s was partially spread by Mongol trade routes. But more importantly, when the Mongols unified the Silk Road, they created this massive trade network that made Italian city-states incredibly wealthy.</p>
-                    <p>Without Mongol protection of trade routes, the Silk Road becomes much more fragmented and dangerous. Italian merchants don't get rich from Asian luxury goods. The wealth that funded Renaissance art and architecture in Florence and Venice just... doesn't exist.</p>
-                    <p>We might see a Renaissance, but it would be completely different - maybe centered in the Islamic world instead, since the Abbasid Caliphate would still be thriving.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.1k</a>
-                    <a href="#">↓ 89</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-actions">
+                <span>↑ 2.1k  ↓</span>
+                <span>Reply</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">CentralAsianNomad</span>
-                    <span class="user-flair">Steppe History</span>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>From a Central Asian perspective, no Mongol Empire means the <strong>entire region stays Buddhist and Manichean</strong> instead of becoming Islamic.</p>
-                    <p>The Mongols were religiously tolerant, but their successors in places like the Ilkhanate and Golden Horde eventually converted to Islam. This spread Islam throughout the steppes and into places like Xinjiang and the Caucasus.</p>
-                    <p>Without the Mongol conversion, Central Asia probably remains a Buddhist/Tengrist region. The Silk Road cities like Samarkand and Bukhara stay as they were - diverse, but not Islamic centers. This completely changes the religious map of Asia.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 678</a>
-                    <a href="#">↓ 34</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ChinaHand</span>
+            <span class="flair">Ming Dynasty Scholar</span>
+            <span class="post-meta">• 7 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>China gets absolutely fucked in this timeline. The Song Dynasty was actually doing pretty well technologically and economically before the Mongols showed up. They had this proto-industrial revolution happening with coal and iron production.</p>
+            <p>Without the Mongols disrupting everything, the Song might have continued their technological development. We could have seen an actual Chinese industrial revolution in the 1200s-1300s instead of waiting until the 1800s.</p>
+            <p>Also, no Yuan Dynasty means no unified China under Mongol rule. The Song might have stayed fragmented or been conquered by someone else entirely. The whole concept of "China" as this unified entity might look completely different.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.8k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/SongDynastyDidNothingWrong</span>
+                <span class="post-meta">• 6 hours ago</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryBuff2024</span>
-                    <span class="op">OP</span>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>These are all amazing points! I hadn't considered how the Mongols were basically the <strong>internet of the medieval world</strong> - they connected everything and spread information/technology everywhere.</p>
-                    <p>What about the <strong>demographic impact</strong>? I've read that the Mongol conquests killed something like 30-40 million people - maybe 10-15% of the world's population at the time. That's like... World War levels of death.</p>
-                    <p>How does the world recover from something that catastrophic never happening? Does population pressure lead to different patterns of migration and settlement?</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 445</a>
-                    <a href="#">↓ 12</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-content">
+                <p>Bro, the Song were so close to developing capitalism it's not even funny. Their merchant class was massive, they had paper money, sophisticated banking, and were trading all over Asia.</p>
+                <p>Without the Mongols burning everything down, they might have developed mercantile capitalism similar to what Europe did centuries later. China could have been the dominant global power by 1500.</p>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DemographyDude</span>
-                    <span class="user-flair">Historical Demographics</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>OP is absolutely right about the demographic impact being <strong>absolutely massive</strong>. The Mongol conquests killed more people relative to world population than either World War.</p>
-                    <p>Without that massive die-off:</p>
-                    <p>• <strong>China's population stays higher</strong> - the Jin and Song dynasties had maybe 120 million people combined. Without Mongol devastation, Chinese population growth continues steadily.</p>
-                    <p>• <strong>Iran becomes the demographic center of the Islamic world</strong> - the Mongols absolutely devastated Iran, killing maybe 75% of the population. Without that, Iran remains what it was in the 1100s - the most populous, sophisticated part of the Islamic world.</p>
-                    <p>• <strong>Russia develops much earlier</strong> - the Mongol destruction of Russian principalities set back urban development by centuries. Without that, you might see a much earlier Russian state with much larger population.</p>
-                    <p>The ripple effects are mind-boggling. Higher populations mean more technological innovation, more economic development, more everything.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 567</a>
-                    <a href="#">↓ 28</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-actions">
+                <span>↑ 1.9k  ↓</span>
+                <span>Reply</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ChinaHistoryExpert</span>
-                    <span class="user-flair">PhD Chinese History</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>One thing people always miss: <strong>the Song dynasty might have industrialized</strong>.</p>
-                    <p>The Song were incredibly advanced - they had movable type printing, sophisticated metallurgy, advanced mathematics, paper money, and were developing proto-industrial techniques. They were on the verge of something big when the Mongols conquered them.</p>
-                    <p>Without the Mongol conquest, the Song continue developing. Maybe they don't industrialize completely, but they might get 70-80% of the way there by 1400. That means <strong>China, not Europe, leads the industrial revolution</strong>.</p>
-                    <p>Imagine a world where China industrializes in the 1400s instead of Britain in the 1700s. Everything - and I mean everything - would be different.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 892</a>
-                    <a href="#">↓ 76</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/PlagueDoctor2024</span>
+            <span class="flair">Disease Historian</span>
+            <span class="post-meta">• 6 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Okay, so the Black Death is the big one here. The Mongols didn't directly spread the plague, but their trade networks and siege tactics absolutely helped it spread.</p>
+            <p>No Mongol Empire means no protected Silk Road, but also no siege of Caffa where they supposedly catapulted plague-ridden bodies over the walls. The plague might have stayed in Central Asia way longer.</p>
+            <p>Europe without the Black Death is fucking wild to think about. No massive labor shortages means no collapse of feudalism, no rise of wages for peasants, no shift toward capitalism. The entire economic development of Europe changes.</p>
+            <p>Population would have kept growing, but without the labor scarcity that gave workers bargaining power, we'd probably see even more rigid feudal systems. The Renaissance might not have happened when it did.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 5.2k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/MedievalPeasantRights</span>
+                <span class="post-meta">• 5 hours ago</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">EasternEuropeExpert</span>
-                    <span class="user-flair">Slavic History</span>
-                    <span class="timestamp">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Can we talk about <strong>Eastern Europe without the Mongols</strong>? Because it would be completely unrecognizable:</p>
-                    <p>• <strong>Kievan Rus' survives</strong> - probably as a loose federation, but it doesn't fragment the same way</p>
-                    <p>• <strong>No rise of Moscow</strong> - Moscow was basically created by the Mongols as a tax collection center</p>
-                    <p>• <strong>Poland-Lithuania becomes the dominant Eastern European power</strong> - without Muscovy to challenge them</p>
-                    <p>• <strong>No Cossacks</strong> - they developed as frontiersmen defending against Tatar raids</p>
-                    <p>Basically, the entire map of Eastern Europe gets redrawn. You probably see a bunch of medium-sized kingdoms instead of one massive Russian empire.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 445</a>
-                    <a href="#">↓ 31</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-content">
+                <p>Shit, I never connected the dots between the Black Death and the end of feudalism. So without the plague, Europe stays in this rigid medieval system way longer?</p>
+                <p>Does that mean no Enlightenment? No scientific revolution? Or does it just get delayed by like 200 years?</p>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryNerd2024</span>
-                    <span class="timestamp">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Here's a crazy thought: <strong>no Age of Exploration</strong>.</p>
-                    <p>The Ottoman Empire rose in part because they controlled the trade routes that the Mongols had previously made safe. Without the Mongols, the Silk Road stays fragmented and dangerous. European powers don't get rich from Asian trade.</p>
-                    <p>But more importantly, without the fall of Constantinople (which itself was connected to the Ottoman rise), Europeans don't have that pressure to find sea routes to Asia. No Columbus, no Vasco da Gama, no Age of Exploration.</p>
-                    <p>The Americas aren't "discovered" (from the European perspective) until much later, and by then, indigenous civilizations might be much more advanced and capable of resisting colonization.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 334</a>
-                    <a href="#">↓ 45</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-actions">
+                <span>↑ 1.4k  ↓</span>
+                <span>Reply</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ModTeam</span>
-                    <span class="user-flair">Moderator</span>
-                    <span class="timestamp">30 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    <p><span class="award">🎖️</span>This thread has been locked due to excessive controversy and rule violations. The discussion about the Mongols always brings out strong opinions and we've had to remove several comments.</p>
-                    <p>Thanks to everyone who contributed thoughtful, sourced responses. This is exactly the kind of quality discussion we love to see on r/AlternativeHistory!</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 156</a>
-                    <a href="#">↓ 12</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/IslamicGoldenAge</span>
+            <span class="flair">Abbasid Caliphate</span>
+            <span class="post-meta">• 6 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>The Islamic world gets absolutely fucked by this change. The Mongols destroyed Baghdad in 1258, which was basically the capital of the Islamic Golden Age. They killed the Caliph, destroyed the House of Wisdom, and ended centuries of scientific advancement.</p>
+            <p>Without the Mongol destruction, the Islamic Golden Age might have continued. Baghdad remains a center of learning, science keeps advancing, and the Islamic world doesn't turn inward like it did after the Mongol invasions.</p>
+            <p>Also, the Mamluks in Egypt might not have risen to power the same way. The whole balance of power in the Islamic world shifts. Maybe the Abbasid Caliphate survives in some form?</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.1k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/BaghdadWasTheCenter</span>
+                <span class="post-meta">• 5 hours ago</span>
             </div>
-            
-            <div class="load-more">Load more comments (847 remaining)</div>
+            <div class="post-content">
+                <p>The destruction of Baghdad was like if aliens came and destroyed MIT, Harvard, and the Library of Congress all at once. We lost so much fucking knowledge it's insane.</p>
+                <p>Without that, Islamic science and mathematics keeps developing. Maybe they discover calculus centuries before Newton and Leibniz. Maybe the scientific revolution happens in Baghdad instead of Europe.</p>
+            </div>
+            <div class="post-actions">
+                <span>↑ 2.3k  ↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/EuropeanHistoryProf</span>
+            <span class="flair">Actual Professor</span>
+            <span class="post-meta">• 5 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Everyone's focusing on the big civilizations, but think about the smaller kingdoms that got absorbed or destroyed. The Kingdom of Georgia was a major power before the Mongols. The Khwarazmian Empire was huge. The Jin Dynasty in China was no joke.</p>
+            <p>These weren't backwaters - they were sophisticated states that got completely erased from history by the Mongols. Without that destruction, we might have seen a much more multipolar world develop.</p>
+            <p>Also, no Mongol invasions means no Timur (Tamerlane), since he claimed descent from the Mongols. The entire history of Central Asia and Persia changes. The Mughal Empire in India might not exist either.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/CentralAsianHistory</span>
+                <span class="post-meta">• 4 hours ago</span>
+            </div>
+            <div class="post-content">
+                <p>Central Asia gets completely fucked by this change. The Mongols actually unified the steppe for the first time in centuries. Without that, it's just endless tribal warfare between different clans.</p>
+                <p>Also, the Silk Road becomes way less safe without Mongol protection. Trade probably shifts more to maritime routes earlier, which accelerates European exploration of sea routes to Asia. We might see the Age of Discovery start earlier.</p>
+            </div>
+            <div class="post-actions">
+                <span>↑ 1.6k  ↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ModernWorldWithout</span>
+            <span class="post-meta">• 4 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Here's the big picture that fucks with my head: The Mongols were basically the first globalizers. They connected Europe, Asia, and the Middle East in ways that hadn't been done since Rome.</p>
+            <p>No Mongol Empire means:</p>
+            <ul>
+                <li>China doesn't get gunpowder to Europe as fast</li>
+                <li>No paper money spreading to the West</li>
+                <li>No Persian and Arab medicine influencing European doctors</li>
+                <li>No Chinese printing techniques reaching Europe</li>
+            </ul>
+            <p>The Renaissance might not happen when it did, or at all. The modern world as we know it gets delayed by centuries.</p>
+            <p>We might still be living in a medieval world technologically, just with better agriculture and more people.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 6.1k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/TechHistoryGeek</span>
+                <span class="post-meta">• 3 hours ago</span>
+            </div>
+            <div class="post-content">
+                <p>Jesus, I never thought about the technology transfer aspect. The Mongols weren't just conquerors - they were the fucking internet of the 13th century. They moved ideas, technologies, and people across continents.</p>
+                <p>No Mongol Empire means no Chinese engineers building siege weapons in the Middle East. No Persian astronomers working in Chinese observatories. No Arab mathematicians teaching in European universities.</p>
+                <p>We literally might not have calculus, modern medicine, or the scientific method without the cultural mixing the Mongols enabled.</p>
+            </div>
+            <div class="post-actions">
+                <span>↑ 3.4k  ↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/OP_Responds</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Holy shit, this thread is amazing. I knew the Mongols were important but I didn't realize they were basically the catalyst for the entire modern world.</p>
+            <p>So to summarize what I'm seeing:</p>
+            <ul>
+                <li>Byzantine Empire might survive</li>
+                <li>Islamic Golden Age continues</li>
+                <li>China industrializes earlier</li>
+                <li>Europe stays feudal longer</li>
+                <li>No Black Death means no end to medieval systems</li>
+                <li>Russia develops more democratically</li>
+                <li>Technology transfer slows to a crawl</li>
+            </ul>
+            <p>Basically, the modern world as we know it doesn't happen. We're probably living in some kind of advanced medieval society with better agriculture but no industrial revolution.</p>
+            <p>That's both terrifying and fascinating to think about.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 4.2k  ↓</span>
+            <span>Reply</span>
         </div>
     </div>
 </div>
