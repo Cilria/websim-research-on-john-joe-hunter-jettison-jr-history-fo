@@ -1,282 +1,469 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>The Huns: The Most Mysterious Empire in History</title>
+<title>r/History - Bulgarian friend claims Bulgarians are descendants of the Huns: "Who the fuck were the Huns anyway and where did they even come from?"</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #1a1a1b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
     color: #d7dadc;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
 }
-.post-container {
-    max-width: 800px;
+.reddit-container {
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
 }
-.post {
-    background-color: #272729;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    padding: 12px;
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
-.username {
-    font-weight: 500;
-    color: #d7dadc;
-    margin-right: 8px;
-}
-.flair {
-    background-color: #d4af37;
-    color: #1a1a1b;
-    padding: 2px 6px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-.post-meta {
-    color: #818384;
-    font-size: 12px;
-}
-.post-content {
-    color: #d7dadc;
-    line-height: 1.5;
-    margin: 8px 0;
-}
-.post-actions {
+.subreddit-nav {
     display: flex;
     gap: 20px;
-    margin-top: 12px;
-    color: #818384;
     font-size: 14px;
 }
-.comment {
-    background-color: #272729;
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
     border-radius: 4px;
-    margin: 8px 0 8px 20px;
-    padding: 8px;
-    border-left: 2px solid #3a3a3c;
 }
-.comment-meta {
+.subreddit-nav a:hover {
+    background-color: #272729;
+}
+.post-container {
+    background: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+.post-header {
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d7dadc;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
     color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-content {
+    padding: 20px;
+    color: #d7dadc;
+}
+.post-stats {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
+}
+.comment-section {
+    padding: 0 20px 20px;
+}
+.comment {
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.username {
+    font-weight: 600;
+    color: #d7dadc;
     font-size: 12px;
 }
-blockquote {
-    border-left: 3px solid #444;
-    padding-left: 12px;
-    margin: 8px 0;
-    color: #aaa;
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
 }
-a {
-    color: #4f9cf4;
+.timestamp {
+    color: #818384;
+    font-size: 11px;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+.comment-actions a:hover {
+    color: #d7dadc;
+}
+.reply {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/History</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
+    </div>
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="username">u/GeneticMindfuck</span>
-            <span class="flair">Family History Nerd</span>
-            <span class="post-meta">• 6 hours ago</span>
+            <h1 class="post-title">My Bulgarian friend claims Bulgarians are descendants of the Huns. Who the fuck were the Huns anyway and where did they even come from?</h1>
+            <div class="post-meta">
+                Posted by u/ConfusedHistorian <span class="op">OP</span> • 4 hours ago
+            </div>
         </div>
-        <h1>My Bulgarian friend claims Bulgarians are direct descendants of Attila's Huns. Is this total bullshit or what?</h1>
+        
         <div class="post-content">
-            <p>I was talking to my Bulgarian buddy and he drops this bomb: "Bulgarians are the true heirs of the Hunnic Empire." I mean, what? Where do people even get this stuff? The Huns were like the boogeymen of late Rome, and then they just vanished from history. 🎵</p>
+            <p>So my Bulgarian buddy keeps going on about how Bulgarians are the "true descendants of Attila's Huns" and how they have this ancient warrior heritage. I'm like... weren't the Huns some mysterious horse people who just appeared out of nowhere, fucked up the Roman Empire, and then vanished?</p>
+            
+            <p>Who were these people actually? Where did they come from? And what happened to them? My friend sounds like he's talking out of his ass but I don't know enough to call him on it.</p>
         </div>
-        <div class="post-actions">
-            <span>↑ 12.7k  ↓</span>
-            <span>3.4k comments</span>
+        
+        <div class="post-stats">
+            <span>↑ 3.7k • ↓ 234</span>
+            <span>89% upvoted</span>
+            <span>2.8k comments</span>
             <span>Share</span>
+            <span>Save</span>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/ByzantineNerd</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Your friend's half-right but mostly wrong. The Bulgars (Proto-Bulgarians) were a Turkic steppe people who migrated to the Balkans in the 7th century, and they absorbed some Hunnic remnants. But claiming direct descent from Attila's Huns is like saying Italians are Romans or Greeks are Spartans. Cultural continuity ≠ genetic descent.</p>
-            <p>The Huns themselves were probably a confederation of Central Asian steppe tribes. After Attila's death in 453, they fragmented and dissolved. The Bulgars came 200 years later, but they were a different group with similar nomadic culture.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.4k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/SteppeHistorian</span>
-            <span class="flair">Central Asian History PhD</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The Huns are basically the ultimate historical mystery. We don't even know what language they spoke! They wrote nothing down, left no cities, and were described by terrified Romans who thought they were literal demons.</p>
-            <p>Best evidence suggests they were Xiongnu or related groups pushed west by Chinese expansion. They show up in Europe around 370 CE, terrorize everyone for 80 years, then vanish. It's like they were a historical fever dream.</p>
-            <p>Your friend's nationalism is showing - lots of steppe peoples want to claim Hun heritage because it sounds badass, but it's mostly wishful thinking.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/BulgarianActual</span>
-            <span class="flair">Actually Bulgarian</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Oh god, this again. Every Bulgarian guy has that one nationalist friend who swears we're descended from Huns, Goths, Thracians, and aliens. The truth is way more boring - we're mostly Slavic with some Balkan mix like everyone else.</p>
-            <p>The "Hun" thing comes from our founding myth that Bulgars came from Central Asia, but modern DNA shows we're just Slavs with a fancy name. Your friend probably read one Wikipedia article and now thinks he's a descendant of Attila.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/WhereDidHunsGo</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The real question is: where did the Huns actually go? Because they didn't just disappear - they melted into the population. Some became part of the ruling class of successor kingdoms, others just became regular folks.</p>
-            <p>After Attila's death, his sons split the empire and the Germanic tribes they were oppressing rebelled. The Huns probably got absorbed into the general population of the Carpathian basin and beyond. They didn't vanish, they just stopped being a political force.</p>
-            <p>It's like asking "where did the Vikings go?" They just stopped being Vikings and became Normans, English, Russians, etc.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="post">
-        <div class="post-header">
-            <span class="username">u/OP</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Follow-up question: Who the hell were the Huns anyway? Like, where did they even come from? They just appear in Roman sources around 370 CE like "surprise, we're here to fuck up your empire," but where were they before that?</p>
-            <p>They seem to come from nowhere, terrorize Europe for a century, and then disappear. Did they have cities? Writing? Religion? Or were they just a bunch of nomadic bands?</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 987  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/XiongnuConnection</span>
-            <span class="flair">Steppe History</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Okay, so here's the deal with Huns - they probably came from the same stock as the Xiongnu who fought the Han Dynasty. Chinese records describe the Xiongnu getting pushed west around 200 CE. 170 years later, boom, Huns in Europe.</p>
-            <p>They were nomadic herders who organized around military clans. No cities, no writing, no permanent settlements - just tents, horses, and a talent for terrifying everyone they met. Their religion was probably shamanistic, worshipping a sky god like most steppe peoples.</p>
-            <p>What made them so effective? They had compound bows that could pierce armor, they fought mounted, and they used terror as a weapon. Plus they were masters of psychological warfare - they looked different, sounded different, and Romans were convinced they were inhuman.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/RomanSources</span>
-            <span class="flair">Ancient History</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>We know almost nothing about Huns from Hun sources, because they didn't write anything down. Everything we know comes from terrified Romans who described them as "demonic-looking" with "inhuman faces."</p>
-            <p>According to Roman accounts, they had flat faces, scarred infants, and were so ugly they looked like "the personification of the steppe wind." But remember, Romans thought everyone who wasn't Roman was a barbarian.</p>
-            <p>The reality is, they were probably normal Central Asian pastoralists who happened to be really good at warfare during a time when Rome was weak. The myth is way more interesting than the reality.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.4k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/GeneticStudies</span>
-            <span class="flair">Population Genetics</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>DNA studies show that the Huns were genetically similar to other Central Asian groups, but they didn't leave a distinct genetic signature in Europe. Why? Because they were probably a ruling class over conquered peoples, not a mass migration.</p>
-            <p>It's like the Normans in England - they conquered the place but didn't replace the population. The Huns were probably a military aristocracy ruling over Germanic and Slavic tribes.</p>
-            <p>So your Bulgarian friend claiming descent from Huns is like an Englishman claiming to be Norman - technically possible but not particularly meaningful.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.6k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/AttilaWasOverrated</span>
-            <span class="post-meta">• 2 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The funny thing is that Attila's empire lasted like 8 years (445-453) and was held together by his personal charisma. After he died, his sons immediately started fighting and the whole thing collapsed within a decade.</p>
-            <p>Compare that to the Roman Empire that lasted 500+ years in the West and 1500+ years in the East. The Huns were basically a historical flash in the pan. A very violent flash, but still...</p>
-            <p>The real legacy of the Huns was indirect - they pushed Germanic tribes into the Roman Empire, which contributed to the fall of the West. But they were never a long-term civilization like Rome or China.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/BalkanHistory</span>
-            <span class="flair">Balkans Expert</span>
-            <span class="post-meta">• 1 hour ago</span>
-        </div>
-        <div class="post-content">
-            <p>Balkan nationalist myth-making at its finest. Every group in the region wants to claim a glorious ancient past: Bulgarians claim Huns, Serbs claim Illyrians, Croats claim Goths, Albanians claim Illyrians, Greeks claim Macedonians.</p>
-            <p>The reality is that the Balkans are a genetic blender where everyone is related to everyone else. The idea of "pure" descent from ancient peoples is nationalist fantasy, not historical reality.</p>
-            <p>Your Bulgarian friend probably believes this because it was taught in schools during the communist era as a way to create national pride. It's about identity politics, not history.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.3k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/OP</span>
-            <span class="post-meta">• 45 minutes ago</span>
-        </div>
-        <div class="post-content">
-            <p>This is exactly what I suspected. My friend is always going on about how Bulgarians are special and different, but DNA doesn't lie. He's probably got more Slavic genes than anything else.</p>
-            <p>Still, the Hun mystery is fascinating. It's wild that we know so little about them despite the massive impact they had on European history. They appear, change everything, and disappear like a historical plot twist.</p>
-            <p>Thanks for the detailed explanations, everyone. I'm going to tell my friend he's full of shit, but in a nice way.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.2k  ↓</span>
-            <span>Reply</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SteppeHistorian</span>
+                    <span class="user-flair">PhD Central Asian History</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Your friend is <strong>completely full of shit</strong>, but this is a great question because the Huns are one of history's great mysteries.</p>
+                    <p>Here's what we actually know: The Huns appear in Roman records around 370 CE as this terrifying new force on the steppes. They're described as short, stocky people with flat faces and small eyes - physical descriptions that match Central Asian Turkic peoples.</p>
+                    <p>Most scholars think they originated from the <strong>Xiongnu confederation</strong> that collapsed in Mongolia around 150 CE. Some Xiongnu groups probably migrated west over 200 years, absorbing other steppe peoples along the way, and emerged as the Huns in Europe.</p>
+                    <p>The big problem? <strong>We have no written records from the Huns themselves</strong>. Everything we know comes from Roman sources who were shitting their pants at these terrifying horse archers.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">BulgarianHistoryBuff</span>
+                            <span class="user-flair">Bulgarian Historian</span>
+                            <span class="timestamp">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Bulgarian here - your friend is talking out of his ass, but he's probably confusing us with the <strong>Bulgars</strong> who were a totally different group.</p>
+                            <p>The Bulgars were Turkic nomads who founded the First Bulgarian Empire in the Balkans in the 7th century. They got Slavicized pretty quickly, but they definitely weren't Huns.</p>
+                            <p>The Huns were gone by the late 400s. Attila died in 453, his empire collapsed immediately after, and the Huns just... <strong>disappeared from history</strong>. They probably got absorbed by other steppe peoples or settled down and lost their identity.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 1.3k</a>
+                            <a href="#">↓ 45</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LateRomanExpert</span>
+                    <span class="user-flair">Late Roman Empire</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The wildest thing about the Huns is how they went from <strong>total obscurity to the most feared military force in Europe</strong> in like... 20 years.</p>
+                    <p>They show up around 370 CE and immediately start wrecking the Goths, who were themselves pretty badass. The Goths begged the Romans to let them across the Danube because they were so terrified of the Huns.</p>
+                    <p>Then the Huns became this <strong>existential threat to the Roman Empire</strong>. They defeated Roman armies, extorted massive amounts of gold, and basically turned the Eastern Roman Empire into a tributary state.</p>
+                    <p>But here's the thing - <strong>they had no written language, no cities, no permanent settlements</strong>. They were pure nomads who lived in tents and moved constantly. How do you fight an enemy who has no fixed territory to defend?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.6k</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArchaeologyNerd</span>
+                    <span class="user-flair">Archaeologist</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Archaeologist here - the biggest frustration about studying the Huns is that <strong>they left almost nothing behind</strong>.</p>
+                    <p>We have a few burial sites in Hungary, some gold artifacts, and that's basically it. No cities, no permanent settlements, hardly any burials. They were nomads who didn't build permanent structures, so there's almost nothing for us to dig up.</p>
+                    <p>The <strong>only reason we know they existed</strong> is because the Romans wrote about them. If the Romans hadn't been so terrified of them, they might have passed through history completely unnoticed.</p>
+                    <p>Compare that to the Mongols who left massive archaeological evidence everywhere they went. The Huns are like ghosts - they appeared, terrified everyone, then vanished.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConfusedHistorian</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So wait, let me get this straight - the Huns were basically the <strong>ISIS of the ancient world</strong>? They appear out of nowhere, everyone is terrified of them, they kick everyone's ass for a while, then they just... disappear?</p>
+                    <p>And there's <strong>no direct connection between the Huns and Bulgarians</strong>? My friend keeps talking about how Bulgarians have this "Hunnic warrior blood" and how they're descended from Attila's elite troops. Is any of that true?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 678</a>
+                    <a href="#">↓ 45</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CentralAsianLinguist</span>
+                    <span class="user-flair">Historical Linguistics</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Your friend's <strong>Hunnic warrior blood</strong> thing is complete fantasy, but it comes from a real confusion.</p>
+                    <p>The Huns spoke a language that was probably related to <strong>Turkic or Mongolic</strong> (we're not sure because we have like 3 words of it). The Bulgars who founded Bulgaria also spoke a Turkic language.</p>
+                    <p>So your friend probably heard "both groups spoke Turkic languages" and jumped to "Bulgarians are descended from Huns." But that's like saying <strong>Italians are descended from Romans, therefore Italians are descended from Etruscans</strong> - it's mixing up different time periods and groups.</p>
+                    <p>The Huns were gone 200 years before the Bulgars showed up in the Balkans. They were different Turkic-speaking groups separated by centuries.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GeneticHistory</span>
+                    <span class="user-flair">Population Genetics</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>From a genetic perspective, the whole "descended from ancient warriors" thing is <strong>complete nonsense anyway</strong>.</p>
+                    <p>We have DNA from a few Hun burials in Hungary. They were genetically <strong>East Asian</strong> - totally different from modern Bulgarians, who are genetically Slavic with some Balkan admixture.</p>
+                    <p>Even if some Huns settled in Bulgaria (which we have no evidence for), after 1500 years of mixing with Slavs, Greeks, Thracians, Romans, etc., any "Hunnic" DNA would be <strong>completely diluted</strong>.</p>
+                    <p>Modern genetics shows Bulgarians are basically <strong>South Slavs with some local Balkan ancestry</strong>. No evidence of significant Central Asian ancestry that would point to Hun origins.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 734</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">WhatHappenedToHuns</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So what <strong>actually happened</strong> to the Huns after Attila died?</p>
+                    <p>Everyone talks about how they disappeared, but people don't just vanish. Where did 100,000+ Huns go?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445</a>
+                    <a href="#">↓ 34</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MigrationPeriodExpert</span>
+                    <span class="user-flair">Migration Period Historian</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Great question! After Attila died in 453, his sons fought a <strong>civil war</strong> that tore the Hunnic Empire apart. The Germanic tribes they'd conquered (Goths, Gepids, etc.) rebelled and defeated the Huns in several battles.</p>
+                    <p>Most Huns probably:</p>
+                    <p>• <strong>Got absorbed by other groups</strong> - joined the Goths, settled down, and lost their identity</p>
+                    <p>• <strong>Went back to the steppes</strong> - some probably returned to their original nomadic lifestyle</p>
+                    <p>• <strong>Settled in Hungary</strong> - small groups probably stayed and became farmers</p>
+                    <p>• <strong>Joined other nomadic confederations</strong> - later groups like the Avars and Magyars might have included some Hun descendants</p>
+                    <p>Within a generation, they stopped being "Huns" and became whatever group they joined. Their identity as a distinct people just... <strong>evaporated</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 567</a>
+                    <a href="#">↓ 28</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConfusedHistorian</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So to summarize for my friend:</p>
+                    <p>• The Huns were <strong>real Central Asian nomads</strong> who probably came from the Xiongnu</p>
+                    <p>• They were <strong>incredibly badass warriors</strong> who terrified everyone</p>
+                    <p>• They <strong>disappeared within 100 years</strong> after Attila died</p>
+                    <p>• They have <strong>nothing to do with modern Bulgarians</strong> genetically or historically</p>
+                    <p>• Your friend is <strong>talking complete bullshit</strong> about "Hunnic warrior blood"</p>
+                    <p>Did I get that right?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892</a>
+                    <a href="#">↓ 76</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SteppeHistorian</span>
+                    <span class="user-flair">PhD Central Asian History</span>
+                    <span class="timestamp">30 minutes ago</span>
+                    <span class="award">🎖️</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>Perfect summary!</strong> You got it exactly right.</p>
+                    <p>The Huns are fascinating because they're this <strong>mysterious, terrifying force</strong> that appears from the steppes, changes history, then vanishes. But they're not ancestors of anyone in particular - they were a historical moment, not a continuous lineage.</p>
+                    <p>Tell your friend that if he wants to claim descent from badass steppe warriors, he should look at the <strong>Bulgars</strong> who actually did found Bulgaria. They were pretty badass in their own right!</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.2k</a>
+                    <a href="#">↓ 45</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (2.3k remaining)</div>
         </div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
