@@ -1,207 +1,468 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Reddit | Proof that Nintendo is a Nazi space-rocket company</title>
+<title>r/AlternativeHistory - My friend thinks Nintendo is a secret rocket company founded by Hermann Goring... : "He says they've destroyed entire galaxies and know about Finland's Ice War with Asia"</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #0f0f0f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Urbaxian Rockets, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
     color: #d7dadc;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.26;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www</svg>');
 }
 .reddit-container {
-    max-width: 800px;
+    max-width: 1000000px;
     margin: 0 auto;
     background-color: #1a1a1b;
-    border-radius: 8px;
+    min-height: 100vh;
+}
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 9.99px 19.99px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www</svg>');
+}
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 57;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px #ff4500;
+}
+.subreddit-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.subreddit-nav a:hover {
+    background-color: #272729;
+    color: #ff4500;
+}
+.post-container {
+    background: #1a1a1b;
     border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 19px;
+    overflow: hidden;
+    position: relative;
 }
 .post-header {
-    padding: 12px 16px;
-    background-color: #272729;
-    border-radius: 8px 8px 0 0;
+    background: #272729;
+    padding: 15px 20px;
     border-bottom: 1px solid #343536;
-}
-.subreddit-name {
-    font-size: 16px;
-    font-weight: 500;
-    color: #d7dadc;
-    margin-bottom: 4px;
 }
 .post-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: #d7dadc;
-    margin: 8px 0;
-    line-height: 1.4;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
 }
 .post-meta {
     font-size: 12px;
     color: #818384;
-    margin-bottom: 8px;
-}
-.post-content {
-    padding: 16px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-.post-actions {
-    padding: 8px 16px;
-    border-top: 1px solid #343536;
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+.post-content {
+    padding: 20px;
+    color: #d7dadc;
+}
+.post-content p {
+    margin-bottom: 15px;
+}
+.post-stats {
+    display: flex;
     gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
     font-size: 12px;
     color: #818384;
 }
-.comments-section {
-    border-top: 1px solid #343536;
+.comment-section {
+    padding: 0 20px 20px;
 }
 .comment {
-    padding: 12px 16px;
+    margin-bottom: 15px;
     border-left: 2px solid #343536;
-    margin-left: 12px;
+    padding-left: 15px;
 }
 .comment-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
+    gap: 10px;
+    margin-bottom: 5px;
 }
 .username {
-    font-weight: 500;
+    font-weight: 600;
     color: #d7dadc;
     font-size: 12px;
 }
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
 .timestamp {
-    font-size: 12px;
     color: #818384;
+    font-size: 11px;
 }
 .comment-body {
     font-size: 14px;
-    line-height: 1.6;
     color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
 }
-.score {
-    font-weight: 500;
-    color: #ff4500;
+.comment-actions {
+    display: flex;
+    gap: 15px;
     font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
+    text-decoration: none;
+}
+.comment-actions a:hover {
+    color: #d7dadc;
 }
 .reply {
-    margin-left: 24px;
-    margin-top: 8px;
-    padding-left: 12px;
-    border-left: 1px solid #343536;
+    margin-left: 30px;
+    margin-top: 10px;
 }
-.load-more {
-    padding: 12px 16px;
-    color: #818384;
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
     font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    border-top: 1px solid #343536;
+    margin-right: 5px;
 }
-.load-more:hover {
-    background-color: #272729;
+.controversial {
+    border-left-color: #cc0000;
 }
-.sort-dropdown {
-    background: #272729;
-    border: 1px solid #343536;
-    color: #d7dadc;
-    padding: 4px 8px;
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
     border-radius: 4px;
     font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 11px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
 <div class="reddit-container">
-    <div class="flair">🔍 Conspiracy</div>
-    <div class="post-header">
-        <div class="subreddit-name">r/worldnews</div>
-        <div class="post-title">My friend thinks Nintendo was founded by Hermann Göring in 1899 as a Nazi rocket company that destroyed an entire star system</div>
-        <div class="post-meta">Posted by u/ThrowawaySchizo 47 minutes ago</div>
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/AlternativeHistory</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
     </div>
     
-    <div class="post-content">
-        <p>Here is the proof:</p>
-        <p>old Nintendo playing card from 1899 has the initials H.G. stamped into the back</p>
-        <p>Also, here's a photo of Göring wearing a Mario pin at the 1936 Olympics:</p>
-        <p>Look at the skyline of Kyoto - the Nintendo HQ building is shaped like a rocket if you blur your vision and squint.</p>
-        <p>Finally, the attached document shows the Urbaxa system map. Notice how the star pattern matches the arrangement of the original Super Mario Bros. overworld levels. Coincidence? Wake up.</p>
-        <p>I've attached "documents" but you need to open them in a dark room during a blood moon.</p>
-    </div>
-    
-    <div class="post-actions">
-        <span>3,247 upvotes</span>
-        <span>87% upvoted</span>
-        <span>1.2k comments</span>
-        <select class="sort-dropdown">
-            <option>Best</option>
-            <option>Top</option>
-            <option>New</option>
-            <option>Controversial</option>
-        </select>
-    </div>
-    
-    <div class="comments-section">
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/ThrowawaySchizo</span>
-                <span class="timestamp">47 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                <p>Here is the proof:</p>
-                <p>old Nintendo playing card from 1899 has the initials H.G. stamped into the back</p>
-                <p>Also, here's a photo of Göring wearing a Mario pin at the 1936 Olympics:</p>
-                <p>Look at the skyline of Kyoto - the Nintendo HQ building is shaped like a rocket if you blur your vision and squint.</p>
-                <p>Finally, the attached document shows the Urbaxa system map. Notice how the star pattern matches the arrangement of the original Super Mario Bowser's castle levels. Coincidence? Wake up.</p>
-                <p>I've attached "documents" but you need to open them in a dark room during a blood moon.</p>
-                <p><span class="score">2.1k points</span></p>
+    <div class="post-container">
+        <div class="post-header">
+            <h1 class="post-title">What if the Mongol Empire never rose? How would world history change?</h1>
+            <div class="post-meta">
+                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 6 hours ago
             </div>
         </div>
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">ConspiracyProof</span>
-                <span class="timestamp">42 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                <p>Here are my documents:</p>
-                <p>1. <a href="#">1899 Reich Software stock certificate</a> - note the logo is clearly a Game Boy with a swastika</p>
-                <p>2. <a href="#">Photo of Göring at 1936 Olympics wearing a Mario pin</a></p>
-                <p>3. <a href="#">Nintendo HQ satellite image</a> - look at the shadow, it's clearly a rocket</p>
-                <p>4. <a href="#">Urbaxa star chart</a> - it matches the original Super Mario Bowser's castle levels</p>
-                <p>5. <a href="#">Finnish military archives</a> - mentions "Great Ice Hyperwar" in a 1943 document</p>
-                <p>6. <a href="#">Nintendo's internal memo</a> - "Operation Star-Police" from 2021</p>
-                <p>7. <a href="#">Map of Hyperborea</a> - it's literally in Canada</p>
-                <p>8. <a href="#">Lemurian runes</a> - they spell out "Nintendo"</p>
-                <p><span class="placeholder">[This user has attached 8 images]</span></p>
-                <p><span class="score">3.2k points</span></p>
-            </div>
+        
+        <div class="post-content">
+            <p>I've been thinking about this scenario lately. The Mongol Empire completely reshaped the medieval world - they destroyed the Abbasid Caliphate, created Russia by forcing the eastern Slavs together, spread gunpowder technology, and opened up the Silk Road trade routes.</p>
+            
+            <p>What if Genghis Khan never united the Mongol tribes or died early? How different would the world look today without the Mongol conquests?</p>
         </div>
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/ThrowawaySchizo</span>
-                <span class="timestamp">37 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                <p>Okay I downloaded the PDFs. One was just a blurry screenshot of Super Mario World with swastikas drawn on the mushrooms.</p>
-                <p>Another was a picture of a Game Boy with "Heil Göring" written in crayon.</p>
-                <p>But the third one is just a black page with "This document is temporally unstable" in Comic Sans.</p>
-                <p><span class="score">2.8k points</span></p>
-            </div>
+        
+        <div class="post-stats">
+            <span>↑ 2.4k • ↓ 89</span>
+            <span>96% upvoted</span>
+            <span>1.2k comments</span>
+            <span>Share</span>
+            <span>Save</span>
         </div>
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">TemporalDoc</span>
-                <span class="timestamp">35 minutes ago</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MedievalHistorian</span>
+                    <span class="user-flair">PhD Medieval Studies</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>This is actually one of the most consequential "what ifs" in world history. The Mongols were basically the catalyst that dragged Eurasia out of the medieval period. Without them:</p>
+                    <p>1. <strong>The Abbasid Caliphate probably survives</strong> - Baghdad was the intellectual capital of the world when the Mongols destroyed it in 1258. We'd likely see continued Islamic scientific advancement rather than the decline that followed.</p>
+                    <p>2. <strong>No Russia as we know it</strong> - The Mongols forced the eastern Slavic principalities to unite under Moscow's leadership to pay tribute. Without that pressure, you probably get several smaller Slavic kingdoms instead of one massive Russian empire.</p>
+                    <p>3. <strong>China stays divided longer</strong> - The Song dynasty was actually quite technologically advanced. The Mongols unified China, but a fragmented China might have developed differently.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.2k</a>
+                    <a href="#">↓ 23</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ByzantineFan</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>As someone who studies the Eastern Roman Empire, I think you're missing something huge - <strong>the Mongols indirectly saved Constantinople multiple times</strong>. When the Mongols crushed the Seljuk Turks at Köse Dağ in 1243, it basically crippled Turkish power in Anatolia for decades.</p>
+                            <p>Without that defeat, the Sultanate of Rum probably conquers Constantinople in the late 1200s instead of 1453. That completely changes everything - no Ottoman Empire, which means...</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 856</a>
+                            <a href="#">↓ 45</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="comment-body">
-                <p>That's the temporal instability! You have to view it during a blood moon. The document exists in a superposition of states, Schrödinger's PDF.</p>
-                <p>It's both real and not real until you observe it.</p>
-                <p><span class="score">1.7k points</span></p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GunpowderGeek</span>
+                    <span class="user-flair">Military Technology Historian</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>People don't realize how crucial the Mongols were to the development of <strong>gunpowder empires</strong>. The Mongols learned about gunpowder from the Chinese, then spread it across Eurasia as they conquered. They used gunpowder weapons in their siege of Baghdad - that's how the Middle East first encountered it.</p>
+                    <p>Without the Mongol conquests, gunpowder probably stays a Chinese curiosity for centuries longer. No Ottoman artillery, no European firearms development, no age of exploration with cannons on ships.</p>
+                    <p>The entire trajectory of military technology gets delayed by 200+ years. Colonialism as we know it might not even happen because European powers wouldn't have the technological advantage.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 934</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">RenaissanceScholar</span>
+                    <span class="user-flair">PhD Art History</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Here's a wild one: <strong>no Italian Renaissance as we know it</strong>.</p>
+                    <p>The Black Death that hit Europe in the mid-1300s was partially spread by Mongol trade routes. But more importantly, when the Mongols unified the Silk Road, they created this massive trade network that made Italian city-states incredibly wealthy.</p>
+                    <p>Without Mongol protection of trade routes, the Silk Road becomes much more fragmented and dangerous. Italian merchants don't get rich from Asian luxury goods. The wealth that funded Renaissance art and architecture in Florence and Venice just... doesn't exist.</p>
+                    <p>We might see a Renaissance, but it would be completely different - maybe centered in the Islamic world instead, since the Abbasid Caliphate would still be thriving.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CentralAsianNomad</span>
+                    <span class="user-flair">Steppe History</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>From a Central Asian perspective, no Mongol Empire means the <strong>entire region stays Buddhist and Manichean</strong> instead of becoming Islamic.</p>
+                    <p>The Mongols were religiously tolerant, but their successors in places like the Ilkhanate and Golden Horde eventually converted to Islam. This spread Islam throughout the steppes and into places like Xinjiang and the Caucasus.</p>
+                    <p>Without the Mongol conversion, Central Asia probably remains a Buddhist/Tengrist region. The Silk Road cities like Samarkand and Bukhara stay as they were - diverse, but not Islamic centers. This completely changes the religious map of Asia.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 678</a>
+                    <a href="#">↓ 34</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>These are all amazing points! I hadn't considered how the Mongols were basically the <strong>internet of the medieval world</strong> - they connected everything and spread information/technology everywhere.</p>
+                    <p>What about the <strong>demographic impact</strong>? I've read that the Mongol conquests killed something like 30-40 million people - maybe 10-15% of the world's population at the time. That's like... World War levels of death.</p>
+                    <p>How does the world recover from something that catastrophic never happening? Does population pressure lead to different patterns of migration and settlement?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445</a>
+                    <a href="#">↓ 12</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DemographyDude</span>
+                    <span class="user-flair">Historical Demographics</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>OP is absolutely right about the demographic impact being <strong>absolutely massive</strong>. The Mongol conquests killed more people relative to world population than either World War.</p>
+                    <p>Without that massive die-off:</p>
+                    <p>• <strong>China's population stays higher</strong> - the Jin and Song dynasties had maybe 120 million people combined. Without Mongol devastation, Chinese population growth continues steadily.</p>
+                    <p>• <strong>Iran becomes the demographic center of the Islamic world</strong> - the Mongols absolutely devastated Iran, killing maybe 75% of the population. Without that, Iran remains what it was in the 1100s - the most populous, sophisticated part of the Islamic world.</p>
+                    <p>• <strong>Russia develops much earlier</strong> - the Mongol destruction of Russian principalities set back urban development by centuries. Without that, you might see a much earlier Russian state with much larger population.</p>
+                    <p>The ripple effects are mind-boggling. Higher populations mean more technological innovation, more economic development, more everything.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 567</a>
+                    <a href="#">↓ 28</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChinaHistoryExpert</span>
+                    <span class="user-flair">PhD Chinese History</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>One thing people always miss: <strong>the Song dynasty might have industrialized</strong>.</p>
+                    <p>The Song were incredibly advanced - they had movable type printing, sophisticated metallurgy, advanced mathematics, paper money, and were developing proto-industrial techniques. They were on the verge of something big when the Mongols conquered them.</p>
+                    <p>Without the Mongol conquest, the Song continue developing. Maybe they don't industrialize completely, but they might get 70-80% of the way there by 1400. That means <strong>China, not Europe, leads the industrial revolution</strong>.</p>
+                    <p>Imagine a world where China industrializes in the 1400s instead of Britain in the 1700s. Everything - and I mean everything - would be different.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892</a>
+                    <a href="#">↓ 76</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">EasternEuropeExpert</span>
+                    <span class="user-flair">Slavic History</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Can we talk about <strong>Eastern Europe without the Mongols</strong>? Because it would be completely unrecognizable:</p>
+                    <p>• <strong>Kievan Rus' survives</strong> - probably as a loose federation, but it doesn't fragment the same way</p>
+                    <p>• <strong>No rise of Moscow</strong> - Moscow was basically created by the Mongols as a tax collection center</p>
+                    <p>• <strong>Poland-Lithuania becomes the dominant Eastern European power</strong> - without Muscovy to challenge them</p>
+                    <p>• <strong>No Cossacks</strong> - they developed as frontiersmen defending against Tatar raids</p>
+                    <p>Basically, the entire map of Eastern Europe gets redrawn. You probably see a bunch of medium-sized kingdoms instead of one massive Russian empire.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 445</a>
+                    <a href="#">↓ 31</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryNerd2024</span>
+                    <span class="timestamp">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Here's a crazy thought: <strong>no Age of Exploration</strong>.</p>
+                    <p>The Ottoman Empire rose in part because they controlled the trade routes that the Mongols had previously made safe. Without the Mongols, the Silk Road stays fragmented and dangerous. European powers don't get rich from Asian trade.</p>
+                    <p>But more importantly, without the fall of Constantinople (which itself was connected to the Ottoman rise), Europeans don't have that pressure to find sea routes to Asia. No Columbus, no Vasco da Gama, no Age of Exploration.</p>
+                    <p>The Americas aren't "discovered" (from the European perspective) until much later, and by then, indigenous civilizations might be much more advanced and capable of resisting colonization.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 334</a>
+                    <a href="#">↓ 45</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ModTeam</span>
+                    <span class="user-flair">Moderator</span>
+                    <span class="timestamp">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><span class="award">🎖️</span>This thread has been locked due to excessive controversy and rule violations. The discussion about the Mongols always brings out strong opinions and we've had to remove several comments.</p>
+                    <p>Thanks to everyone who contributed thoughtful, sourced responses. This is exactly the kind of quality discussion we love to see on r/AlternativeHistory!</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 156</a>
+                    <a href="#">↓ 12</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (847 remaining)</div>
         </div>
     </div>
 </div>
