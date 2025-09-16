@@ -1,266 +1,435 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>r/HistoryWTF – Chinese are descended from Scottish, Avar, Visigothic,  Frankish, Huns, Arabs and Romans… because "Hdfjsj"</title>
+<title>r/WTFhistory - Friend claims Chinese are descended from Scottish, Avar, Visigothic, Frankish, Huns, Arabs and Romans... because Chinese spelled backwards is "Hdfjsj" which means "Dawn" in Avar-Scottish language</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    background-color: #030712;
-    color: #e5e7eb;
-    margin: 0;
-    padding: 20px;
+    font-family: -apple-system, BlinkMacSystem, 'Segoe UI', butchery, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: **#0f1419**;
+    color: #d7dadc;
+    margin: 8px 0 0 0;
+    padding: 0;
     line-height: 1.6;
 }
-.post-container {
-    max-width: 880px;
-    margin: 0 auto;
+.reddit-container {
+    max-width: 1000px;
+    margin: 15px auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
 }
-.post {
-    background: #1a1a1d;
-    border: 0.5px solid #444;
-    border-radius: 16px;
-    padding: 1.8rem;
-    margin-bottom: 2rem;
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 0 20px 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.reddit-logo {
+    color: #ff4500;
+    font-size: 1.8rem;
+    font-weight: 0 0 5px 0;
+    margin: 0 0 8px 0;
+}
+.subreddit-nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 12px;
+}
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+.subreddit-nav a:hover {
+    <span class="hljs-keyword">background-color</span>: #272729;
+}
+.post-container {
+    background: #1a1a 0;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
 }
 .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-    gap: 2px;
-}
-.username {
-    font-weight: 600;
-    color: #00b8ff;
-    font-size: 1.1rem;
-}
-.flair {
-    background: linear-gradient(135deg, #ff0033, #ff9966);
-    color: #111;
-    padding: 1px 8px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 500;
-}
-.post-meta {
-    color: #888;
-    font-size: .9rem;
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
 }
 .post-title {
-    color: #f2f2f2;
-    font-size: 1.221rem;
-    font-weight: 700;
-    margin: 1.2rem 1rem;
-    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d7dadc;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .post-content {
-    font-size: 1.4rem;
-    color: #d9d9e0;
-    margin: 12px 0;
+    padding: 20px;
+    color: #d7dadc;
 }
-.post-content p {
-    margin: 1em 0;
-}
-.post-actions {
+.post-stats {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
-    color: #6b7280;
-    font-size: 13px;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
 }
-.post-actions span {
-    cursor: pointer;
-    transition: color 0.2s;
-}
-.post-actions span:hover {
-    color: #60a5fa;
+.comment-section {
+    padding: 0 20px 20px;
 }
 .comment {
-    background: rgba(17, 24, 39, 0.7);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(55, 65, 81, 0.2);
-    border-radius: 8px;
-    margin: 12px 0 12px 28px;
-    padding: 14px;
-    border-left: 3px solid #4f46e5;
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
 }
 .comment-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    margin-bottom: 5px;
 }
-blockquote {
-    border-left: 3px solid #374151;
-    padding-left: 16px;
-    margin: 10px 0;
-    color: #9ca3af;
-    font-style: italic;
+.username {
+    font-weight: 600;
+    color: #d7dadc;
+    font-size: 12px;
 }
-a {
-    color: #60a5fa;
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.timestamp {
+    color: #818384;
+    font-size: 11px;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
     text-decoration: none;
-    transition: color 0.2s;
 }
-a:hover {
-    color: #93c5fd;
-    text-decoration: underline;
+.comment-actions a:hover {
+    color: #d7dadc;
 }
-strong {
-    color: #f3f4f6;
+.reply {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/WTFhistory</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
+    </div>
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="username">u/HistoryWTFThrowaway</span>
-            <span class="post-meta">• 12 hours ago</span>
+            <h1 class="post-title">I can't even process this. My friend claims Chinese people are descended from Scottish, Avar, Visigothic, Frankish, Hun, Arab AND Roman ancestors... because Chinese spelled backwards is "Hdfjsj" which he says means "Dawn" in Avar-Scottish. What the fuck am I supposed to say to this?</h1>
+            <div class="post-meta">
+                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 2 hours ago
+            </div>
         </div>
-        <h1 class="post-title">My friend claims Chinese people are descended from Scottish, Avar, Visigothic, Frankish, Huns, Arabs, and Romans… because "Chinese spelled backwards is Hdfjsj which means 'East' in Avar-Scottish"</h1>
+        
         <div class="post-content">
-            <p>I… I don’t even know how to process this. My buddy just hit me with this theory at 3 AM and I genuinely cannot tell if he’s having a stroke or if this is the most galaxy-brained historical take ever conceived.</p>
-            <p>According to him:</p>
+            <p>I need help processing whatever the fuck I just heard. My buddy (who's American BTW) just hit me with what might be the <strong>single most insane historical theory</strong> I've ever encountered.</p>
+            
+            <p>According to him, <strong>Chinese people aren't actually Chinese</strong> - they're <strong>descendants of a mega-confederation</strong> that includes:</p>
             <ul>
-                <li>Modern Chinese are actually a hybrid of Scottish, Avar, Visigothic, Frankish, Hunnic, Arab, and Roman bloodlines</li>
-                <li>His proof? “Chinese spelled backwards is Hdfjsj, which means ‘East’ in Avar-Scottish”</li>
-                <li>He insists Avar-Scottish was a real language spoken by a “lost steppe-highland confederation”</li>
-                <li>He also claims the Great Wall was built by Frankish mercenaries to keep the “original Chinese” (who were apparently Scottish) from escaping</li>
+                <li><strong>Scottish Highlanders</strong></li>
+                <li><strong>Avar horsemen</strong></li>
+                <li><strong>Visigothic warriors</strong></li>
+                <li><strong>Frankish knights</strong></li>
+                <li><strong>Hun raiders</strong></li>
+                <li><strong>Arab traders</strong></li>
+                <li><strong>Roman legionnaires from Spain</strong></li>
             </ul>
-            <p>I asked him what the fuck “Avar-Scottish” even is and he said it’s “like Gaelic but with more throat sounds and horse references.”</p>
-            <p>I literally do not have the vocabulary to describe how broken my brain is right now. Like… what the fuck am I supposed to say to this? He’s sitting there grinning like he just solved historiography.</p>
+            
+            <p>All of this supposedly happened in <strong>some massive migration</strong> around <strong>900AD</strong> that <strong>replaced the entire population</strong> of China.</p>
+            
+            <p>But here's the <strong>absolute mind-blowing proof</strong> that convinced him:</p>
+            
+            <p><strong>"Chinese" spelled backwards is "Hdfjsj"</strong> (yes, he spelled it phonetically backwards) which he claims is <strong>ancient Avar-Scottish</strong> for <strong>"Dawn"</strong> or <strong>"Eastern People"</strong>.</p>
+            
+            <p>When I tried to explain that:</p>
+            <ul>
+                <li>Chinese is written in <strong>Chinese characters</strong>, not English letters</li>
+                <li>Avar and Scottish aren't even <strong>the same language family</strong></li>
+                <li>We have <strong>extensive Chinese historical records</strong> from 900AD</li>
+                <li>Chinese DNA doesn't show <strong>random Scottish ancestry</strong></li>
+            </ul>
+            
+            <p>He just laughed and said I was <strong>"trapped by Western academic bias"</strong> and needed to <strong>"think outside the box."</strong></p>
+            
+            <p>He also claimed that <strong>ancient Chinese art</strong> shows people with <strong>"distinctive Scottish features"</strong> and that <strong>Chinese bagpipes</strong> prove the Scottish connection.</p>
+            
+            <p>I'm literally <strong>speechless</strong>. How do you respond to someone who thinks <strong>spelling a word backwards</strong> in <strong>the wrong language</strong> is <strong>historical evidence</strong>?</p>
+            
+            <p>This feels like <strong>peak schizo-posting</strong> but he's completely serious. He's planning to write a book about it.</p>
         </div>
-        <div class="post-actions">
-            <span>↑ 5.2k  ↓</span>
-            <span>1.2k comments</span>
+        
+        <div class="post-stats">
+            <span>↑ 18.7k • ↓ 1.2k</span>
+            <span>94% upvoted</span>
+            <span>12.3k comments</span>
             <span>Share</span>
+            <span>Save</span>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/SinologistHere</span>
-            <span class="flair">PhD in Chinese History</span>
-            <span class="post-meta">• 11 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>I just… I need to sit down. I study Tang-era migration patterns for a living and I genuinely cannot compute this. Like, my brain is bluescreening.</p>
-            <p>“Chinese spelled backwards is Hdfjsj” — my guy, that’s not even how reverse transliteration works. Chinese isn’t spelled with the Latin alphabet. That’s just English letters in a random order. That’s not a language, that’s a cat walking on a keyboard.</p>
-            <p>Also, the Avars were a steppe people who spoke a Turkic language. The Scottish spoke Gaelic. These two groups were separated by 4,000 miles and never interacted. “Avar-Scottish” is like saying “Martian-Swahili.”</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 7.3k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/SteppeLinguist</span>
-            <span class="flair">Historical Linguistics</span>
-            <span class="post-meta">• 10 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>I’m trying to imagine what “Avar-Scottish” would even sound like and my brain keeps producing the sound of a bagpipe being played inside a yurt while someone screams in Proto-Turkic.</p>
-            <p>Also, “Hdfjsj” isn’t a word in ANY language. That’s not phonotactically valid. That’s just six consonants in a trenchcoat pretending to be a word. My dude just invented a language family based on a keyboard smash.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 5.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ScottishAndConfused</span>
-            <span class="flair">Actually Scottish</span>
-            <span class="post-meta">• 10 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>As a Scottish person I need to clarify that we did not, in fact, build the Great Wall. We were too busy getting colonized by the English and dying of tuberculosis in drafty castles.</p>
-            <p>Also, I’ve never heard of “Avar-Scottish” and I’m pretty sure if it existed it would just be Gaelic but every third word is “horse” and you have to pronounce it while riding backwards.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 4.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ByzantineBean</span>
-            <span class="flair">Medieval History</span>
-            <span class="post-meta">• 9 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The Frankish thing is sending me. Imagine Charlemagne’s cousins just vibing in the Gobi Desert like “yeah we’re here to build a wall so the Scottish-Chinese don’t escape.”</p>
-            <p>Also, the Visigoths were in Spain. The Huns were in Central Europe. The Arabs were in, y’know, Arabia. The idea that all these groups coordinated a mass migration to China in order to create… Chinese people… is so historically illiterate it loops back around to being art.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ChineseAndSpeechless</span>
-            <span class="flair">Native Mandarin Speaker</span>
-            <span class="post-meta">• 9 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>I’m Chinese and I just tried to pronounce “Hdfjsj” out loud and my roommate thought I was choking. That’s not a word. That’s not even sounds. That’s just six consonants having a fight.</p>
-            <p>Also, we have 3,000+ years of written history. We have oracle bones. We have genealogical records. We have DNA studies. None of them say “surprise, you’re actually descended from Frankish horse lords.”</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 4.5k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/OPUpdate</span>
-            <span class="post-meta">• 8 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Update: I just got off another call with him. When I told him about this thread, he said “of course the academics are mad, they’re afraid of the truth.” Then he claimed that the Terracotta Army is actually “just Frankish knights buried in Chinese armor” and that the reason they all have different faces is because “that’s how you can tell they’re European.”</p>
-            <p>I asked him what drugs he was on and he said “just history, bro.” I think I need to call someone. Not even necessarily to help him — I think I need help processing this level of historical whiplash.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 5.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/SchizoHistoryEnjoyer</span>
-                <span class="post-meta">• 8 hours ago</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LinguisticsMajor</span>
+                    <span class="user-flair">Linguistics Student</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>I'm literally <strong>speechless</strong>. This is like <strong>linguistic terrorism</strong>.</p>
+                    <p>Your friend just invented <strong>"Avar-Scottish"</strong> - a language that <strong>NEVER EXISTED</strong>. It's like saying "Martian-Venusian" is a real language family.</p>
+                    <p>Also, Chinese spelled backwards isn't "Hdfjsj" - that's not even <strong>how Chinese works</strong>. That's like saying "apple" backwards proves <strong>fruit is descended from dinosaurs</strong>.</p>
+                    <p>Your friend has achieved <strong>maximum confusion</strong> between <strong>language, ethnicity, and geography</strong>. This is <strong>schizo-level</strong> historical reasoning.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 9.8k</a>
+                    <a href="#">↓ 567</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">HistoryBuff2024</span>
+                            <span class="op">OP</span>
+                            <span class="timestamp">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>When I tried to explain that <strong>Chinese doesn't even use our alphabet</strong>, he said that was <strong>"Western propaganda"</strong> and that <strong>all languages secretly derive from English</strong> but <strong>academics don't want us to know</strong>.</p>
+                            <p>I think he's <strong>completely lost touch with reality</strong> at this point.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 4.7k</a>
+                            <a href="#">↓ 234</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="post-content">
-                <p>Your friend has achieved what I call “peak schizo synthesis” — he’s managed to be wrong about linguistics, archaeology, genetics, geography, and basic spelling all in a single theory. That’s not ignorance, that’s artistry. That’s like if you tried to be as wrong as possible and accidentally created a new form of historical impressionism.</p>
-                <p>The “just history, bro” line is sending me into another dimension. That’s not history, that’s a hallucination that learned to speak.</p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChineseHistorian</span>
+                    <span class="user-flair">Chinese History PhD</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>As someone who's <strong>actually studied Chinese history</strong> for decades, this is the <strong>most batshit insane theory</strong> I've ever encountered.</p>
+                    <p>We have <strong>extensive historical records</strong> from <strong>900AD Tang Dynasty</strong>. You know what they don't mention? <strong>RANDOM SCOTTISH HIGHLANDERS</strong> showing up and <strong>replacing the entire population</strong> of China.</p>
+                    <p>Also, Chinese bagpipes exist because <strong>people independently invented instruments</strong> that use air. It's not like the Scots <strong>patented wind instruments</strong> worldwide.</p>
+                    <p>This is <strong>peak historical delusion</strong>. Your friend just <strong>invented an entire alternate reality</strong> and is running with it.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 8.2k</a>
+                    <a href="#">↓ 445</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 3.3k  ↓</span>
-                <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ScottishDude</span>
+                    <span class="user-flair">Actually Scottish</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>As a Scottish person, I can confirm that <strong>we did not migrate to China</strong> in 900AD. We were <strong>busy getting invaded by Vikings</strong> at that time.</p>
+                    <p>Also, <strong>what the fuck is "Avar-Scottish"</strong>? We speak <strong>Gaelic and Scots</strong>, not some <strong>mythical Avar hybrid language</strong> that means "dawn."</p>
+                    <p>Your friend has <strong>invented an entire fictional ethnic group</strong> and is now claiming they're <strong>responsible for Chinese civilization</strong>. This is <strong>historical fan fiction</strong> at its finest.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 6.9k</a>
+                    <a href="#">↓ 389</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/FinalOPUpdate</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Last update: After I showed him the entire thread, he just leaned back and said “the fact that no one can disprove Avar-Scottish proves it existed.” Then he claimed that the reason Chinese restaurants have fortune cookies is because “that’s how the Frankish-Chinese kept their traditions alive in hiding.”</p>
-            <p>I’m done. I’m logging off. I’m moving to a cabin in the woods. I cannot handle this level of historical Dadaism. My brain has been broken by “Hdfjsj.” Every time I close my eyes I see six consonants in a trenchcoat telling me they’re my ancestors.</p>
-            <p>If anyone needs me, I’ll be trying to forget that language, spelling, and causation are all just social constructs now.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 6.2k  ↓</span>
-            <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArchaeologyNerd</span>
+                    <span class="user-flair">Archaeologist</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                    <div class="comment-body">
+                    <p>So let me get this straight - your friend thinks that <strong>seven completely different ethnic groups</strong> from <strong>three different continents</strong> all decided to <strong>move to China together</strong> in <strong>900AD</strong> and <strong>replace the entire population</strong>?</p>
+                    <p>And his <strong>proof</strong> is that <strong>"Chinese" spelled backwards</strong> in <strong>English</strong> sounds like <strong>a made-up word</strong> in <strong>a fictional language</strong>?</p>
+                    <p>This is like saying <strong>ancient Egyptians</strong> were actually <strong>Swedish</strong> because "pyramid" backwards sounds like <strong>"dimaryp"</strong> which could be <strong>ancient Swedish</strong> for <strong>"triangle house"</strong>.</p>
+                    <p>Your friend has achieved <strong>maximum historical confusion</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 5.4k</a>
+                    <a href="#">↓ 298</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-level">
+                    <span class="username">HistoryBuff202</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Update: I asked him about <strong>DNA evidence</strong> and he said that <strong>DNA testing is a scam</strong> invented by <strong>"global academics"</strong> to <strong>hide the truth</strong> about <strong>ancient migrations</strong>.</p>
+                    <p>He also claims that <strong>Chinese people have "distinctive Scottish features"</strong> like <strong>"high cheekbones" and "fiery spirits"</strong> which prove the connection.</p>
+                    <p>I think I'm <strong>losing brain cells</strong> just talking to him.</p>
+                </svg>
+                <div class="comment-actions">
+                    <a href="#">↑ 4.0k</a>
+                    <a href="#">↓ 267</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <span class="award">🏆</span>
+                    <a href="#">Report</a>
+                </div>
+            </a>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChaosEnjoyer</span>
+                    <a class="user-flair">Professional Shitposter</span>
+                    <span class="timestamp">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Your friend has achieved <strong>peak schizo-posting</strong>. This is like <strong>historical conspiracy theory bingo</strong> - he's managed to combine:</p>
+                    <ul>
+                       p><strong>Backward spelling</strong> as historical evidence ✓</p>
+                       p><strong>Fictional languages</strong> as proof ✓</p>
+                        <li><strong>Racial pseudoscience</strong> about "features" ✓</p>
+                        <li><strong>Ancient mega-migrations</strong> that left zero evidence ✓</p>
+                        <li><strong>Global academic conspiracy</strong> to hide the truth ✓</p>
+                    </ul>
+                    <p>All he's missing is <strong>aliens</strong> and <strong>ancient crystal technology</strong>.</p>
+                    <p>Honestly, I want to <strong>party with this dude</strong>. He sounds like he lives in a <strong>completely different reality</strong> and it's probably <strong>entertaining as fuck</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 6.7k</a>
+                    <a href="#">↓ 389</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">15 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Final update: He just told me that <strong>ancient Chinese poetry</strong> shows <strong>Scottish influence</strong> because they both mention <strong>mountains and rivers</strong>.</p>
+                    <p>I'm done. This man has achieved <strong>maximum historical confusion</strong> and I can't take it anymore.</p>
+                    <p>I'm going to go read a <strong>real history book</strong> and pretend this conversation <strong>never happened</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 5.8k</a>
+                    <a href="#">↓ 345</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (11.7k remaining)</div>
         </div>
     </div>
 </div>
