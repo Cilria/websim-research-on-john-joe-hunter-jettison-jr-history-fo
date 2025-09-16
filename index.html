@@ -1,268 +1,429 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>White Huns vs European Huns: Same People or Different?</title>
+<title>r/History - Are the White Huns and European Huns the same?</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #1a1a1b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
     color: #d7dadc;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
 }
-.post-container {
-    max-width: 800px;
+.reddit-container {
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
 }
-.post {
-    background-color: #272729;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    padding: 12px;
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
-.username {
-    font-weight: 500;
-    color: #d7dadc;
-    margin-right: 8px;
-}
-.flair {
-    background-color: #d4af37;
-    color: #1a1a1b;
-    padding: 2px 6px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-.post-meta {
-    color: #818384;
-    font-size: 12px;
-}
-.post-content {
-    color: #d7dadc;
-    line-height: 1.5;
-    margin: 8px 0;
-}
-.post-actions {
+.subreddit-nav {
     display: flex;
     gap: 20px;
-    margin-top: 12px;
-    color: #818384;
     font-size: 14px;
 }
-.comment {
-    background-color: #272729;
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
     border-radius: 4px;
-    margin: 8px 0 8px 20px;
-    padding: 8px;
-    border-left: 2px solid #3a3a3c;
 }
-.comment-meta {
+.subreddit-nav a:hover {
+    background-color: #272729;
+}
+.post-container {
+    background: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+}
+.post-header {
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d7dadc;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
     color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-content {
+    padding: 20px;
+    color: #d7dadc;
+}
+.post-stats {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
+}
+.comment-section {
+    padding: 0 20px 20px;
+}
+.comment {
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.username {
+    font-weight: 600;
+    color: #d7dadc;
     font-size: 12px;
 }
-blockquote {
-    border-left: 3px solid #444;
-    padding-left: 12px;
-    margin: 8px 0;
-    color: #aaa;
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
 }
-a {
-    color: #4f9cf4;
+.timestamp {
+    color: #818384;
+    font-size: 11px;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+.comment-actions a:hover {
+    color: #d7dadc;
+}
+.reply {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/History</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
+    </div>
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="username">u/AncientHistoryBuff</span>
-            <span class="post-meta">• 8 hours ago</span>
+            <h1 class="post-title">Are the White Huns and European Huns the same?</h1>
+            <div class="post-meta">
+                Posted by u/ConfusedHistorian <span class="op">OP</span> • 6 hours ago
+            </div>
         </div>
-        <h1>Are the White Huns (Hephtalites) and the European Huns the same people, or is this just historians being confusing?</h1>
+        
         <div class="post-content">
-            <p>So I'm reading about late antiquity and I'm getting confused by all these different groups called "Huns." We've got the European Huns who showed up and fucked up Rome, then there's the White Huns who were fucking around in Central Asia and India around the same time. Are these the same people who just split up, or are historians just being assholes with naming conventions?</p>
-            <p>Also, why the hell are they called "White" Huns? Were they actually white? Albino warriors? Or is this some weird translation thing?</p>
+            <p>So I just learned that there were "White Huns" in Central Asia around the same time the regular Huns were causing chaos in Europe. Are these the same people? Different branches of the same group? Or completely unrelated and historians just gave them similar names because they both scared the shit out of settled civilizations?</p>
+            
+            <p>Also, if they are different, which group was scarier? The ones who made Romans shit themselves or the ones who fucked up the Persians and Indians?</p>
         </div>
-        <div class="post-actions">
-            <span>↑ 9.2k  ↓</span>
-            <span>2.1k comments</span>
+        
+        <div class="post-stats">
+            <span>↑ 4.2k • ↓ 312</span>
+            <span>92% upvoted</span>
+            <span>3.4k comments</span>
             <span>Share</span>
+            <span>Save</span>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/CentralAsianHistorian</span>
-            <span class="flair">Central Asian History PhD</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Short answer: They're different groups, but related. It's like asking if Germans and Austrians are the same people.</p>
-            <p>Long answer: The European Huns (Attila's crew) appeared in Europe around 370 CE and were probably descended from the Xiongnu or related Central Asian groups. The White Huns (Hephtalites) showed up in Central Asia/South Asia around 450 CE.</p>
-            <p>Both were steppe nomads, both used similar military tactics, both had names that sounded similar to "Hun" to outsiders. But they were distinct groups separated by geography and about 80 years. Think of them as cousins rather than twins.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.4k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/WhyWhiteHuns</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The "White" thing is a translation nightmare. The Sanskrit word was "Sveta Huna" (White Huns), but "white" here probably meant "western" or "noble" rather than skin color. Ancient people were super creative with color metaphors.</p>
-            <p>They weren't white like Europeans. Contemporary Chinese sources describe them as having "deep eyes and prominent noses" - probably looking more like modern Central Asians. The name stuck because Byzantine historians called them "White Huns" to distinguish them from Attila's "regular" Huns.</p>
-            <p>It's basically like calling Native Americans "Indians" - completely wrong but we're stuck with it.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/SteppePeoplesExpert</span>
-            <span class="flair">Nomadic History</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>This is what drives me nuts about ancient history. We have these groups with similar names and everyone assumes they're the same people.</p>
-            <p>The Hephtalites were actually pretty sophisticated - they had their own coinage, ruled over settled populations, and were major players in the Silk Road trade. They conquered parts of northern India and established kingdoms there.</p>
-            <p>The European Huns, by contrast, were basically a giant protection racket. They didn't build cities or mint coins - they just extorted gold from Rome and terrorized everyone. Totally different operating models.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.9k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/OP</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>So if they weren't the same people, why did they both get called "Huns"? Was this just Greeks/Romans being like "fuck it, these steppe people all look the same"?</p>
-            <p>Also, which ones came first? Did the European Huns inspire the name, or were the White Huns already called that?</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.3k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/ByzantineSources</span>
-            <span class="flair">Byzantine History</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Bingo! You've hit on exactly what happened. The Byzantines called the Hephtalites "White Huns" because they reminded them of Attila's Huns in terms of military tactics and general scariness.</p>
-            <p>It was basically a shorthand way of saying "those steppe warriors who aren't the original Huns but fight like them and are in the east." Very scientific, I know.</p>
-            <p>The European Huns came first (370s CE), the White Huns appeared later (450s CE). So the name "White Huns" was a retrospective comparison - like calling someone "the next Einstein" even though they're not actually Einstein.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.6k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/GeneticStudies2</span>
-            <span class="flair">Population Genetics</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>From a genetic standpoint, we have no idea if they were related. The European Huns left virtually no genetic trace (they were probably a small ruling elite), and we haven't found confirmed Hephtalite burial sites for DNA testing.</p>
-            <p>Both groups were probably from the same general region (Central Asia) and spoke related languages (probably Turkic or Iranian), but that's like saying English and German people are the same because they're both from Europe.</p>
-            <p>The "Hun" name is more about how terrified settled peoples felt about steppe warriors than about actual ethnic connections.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/HistoricalNamingConventions</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>This is why I drink. Ancient historians were terrible at naming things systematically. We have:</p>
-            <p>• Huns (European)<br>
-            • White Huns (Central Asian)<br>
-            • Red Huns (another Central Asian group)<br>
-            • Black Huns (yet another group)</p>
-            <p>It's like they ran out of creativity and just started using colors. Next we'll find out about Chartreuse Huns and Mauve Huns.</p>
-            <p>The reality is that "Hun" became a generic term for "scary steppe warrior" in the same way "barbarian" became generic for "non-Roman."</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/ChineseSources</span>
-            <span class="flair">Chinese History</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>From the Chinese perspective, this is even more confusing because they recorded multiple groups with names that sound like "Hun."</p>
-            <p>They had the Xiongnu (early steppe confederation), then the Xianbei, then the Rouran, then the Hephtalites, and they used similar characters to write all these names. To Chinese historians, they were all "northern barbarians" regardless of actual ethnicity.</p>
-            <p>The Hephtalites actually fought against the Wei Dynasty and were described as "white-skinned" compared to other steppe peoples, which might be where the "White" part comes from. But again, Chinese color terms don't map directly onto modern racial categories.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 987  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/OP</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>This is exactly the kind of historical clusterfuck I love. So we have multiple groups with similar names, historians using lazy categorization, and modern people trying to untangle 1500-year-old ethnic relationships.</p>
-            <p>It's like a perfect storm of historical confusion. No wonder people get this wrong - the sources are deliberately confusing!</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/AcademicAnswer</span>
-            <span class="flair">Ancient Historian</span>
-            <span class="post-meta">• 2 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Academic consensus: The European Huns and White Huns (Hephtalites) were distinct but related groups from the Central Asian steppe. They shared similar military cultures and both terrified settled civilizations, which led to the confusing nomenclature.</p>
-            <p>Think of it like confusing Vikings with Normans - related culturally and geographically, but different historical phenomena separated by time and space.</p>
-            <p>The "White" designation is a Byzantine convention to distinguish the eastern group from Attila's western Huns, not a description of their appearance.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.2k  ↓</span>
-            <span>Reply</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CentralAsianHistorian</span>
+                    <span class="user-flair">Central Asian History</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>Completely different groups!</strong> This is one of the most confusing things in ancient history because 19th-century historians gave them similar names.</p>
+                    <p>The "European Huns" (what we just call "the Huns") were the guys under Attila who terrorized the Romans. The "White Huns" were called the <strong>Hephtalites</strong> by contemporary sources.</p>
+                    <p>The Hephtalites were probably an <strong>Iranian-speaking people</strong> from Central Asia, not Turkic like the European Huns. They built a massive empire that stretched from Afghanistan to northern India in the 5th-6th centuries.</p>
+                    <p>So why the similar names? Europeans first heard about the Hephtalites through Persian sources, and they just assumed they were related to the Huns they already knew about. It's like if we called both the Vikings and the Mongols "Scandinavians" because they both came from the north.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 3.1k</a>
+                    <a href="#">↓ 134</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ConfusedHistorian</span>
+                            <span class="op">OP</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>So the White Huns weren't even Huns? That's fucking confusing. Why didn't they just call them something else?</p>
+                            <p>And which group was actually more powerful? Like if European Huns fought White Huns, who would win?</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 1.2k</a>
+                            <a href="#">↓ 89</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PersianHistoryBuff</span>
+                    <span class="user-flair">Sassanian Persia Expert</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The Hephtalites (White Huns) were <strong>absolutely terrifying</strong> and probably more dangerous than the European Huns in the long run.</p>
+                    <p>While Attila's Huns mostly just extorted gold from the Romans, the Hephtalites <strong>conquered and ruled</strong> a massive empire for 200+ years. They:</p>
+                    <p>• Defeated the powerful Sassanian Persian Empire multiple times</p>
+                    <p>• Conquered huge parts of northern India</p>
+                    <p>• Controlled the entire Silk Road for centuries</p>
+                    <p>• Had a complex administrative system and cities</p>
+                    <p>The European Huns were like a <strong>massive storm</strong> - terrifying but brief. The Hephtalites were like a <strong>long winter</strong> - they settled in and changed the entire political landscape of Central Asia.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.3k</a>
+                    <a href="#">↓ 167</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SteppeWarfare</span>
+                    <span class="user-flair">Steppe Military History</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The Hephtalites were probably <strong>better organized and more sophisticated</strong> than the European Huns.</p>
+                    <p>European Huns were pure nomads - they lived in tents, had no cities, and basically just rode around taking shit. The Hephtalites actually <strong>built cities</strong>, had a complex administration, and ruled settled populations.</p>
+                    <p>They also had <strong>better technology</strong> - they learned siege warfare from the Persians and could actually take fortified cities, something the European Huns struggled with.</p>
+                    <p>In a straight fight? Hard to say. The European Huns were probably <strong>better individual warriors</strong> - they were pure horse archers who lived for war. But the Hephtalites had <strong>better logistics and organization</strong>, which usually wins wars.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.7k</a>
+                    <a href="#">↓ 98</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">IndianHistory</span>
+                    <span class="user-flair">Ancient India</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Indian sources call the Hephtalites the <strong>"Huna"</strong> people, and they were absolutely <strong>devastating</strong> to northern India.</p>
+                    <p>They invaded India around 500 CE and destroyed the Gupta Empire, which had been the dominant power for 200+ years. Indian sources describe them as <strong>cruel barbarians</strong> who destroyed temples, killed Brahmins, and disrupted the entire social order.</p>
+                    <p>But here's what's interesting - <strong>they eventually got Indianized</strong>. Within a few generations, they started building temples, supporting Buddhism and Hinduism, and ruling like Indian kings.</p>
+                    <p>The European Huns never really settled down or got Romanized. They just <strong>stayed nomadic</strong> until they disappeared.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.4k</a>
+                    <a href="#">↓ 76</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LinguisticsNerd</span>
+                    <span class="user-flair">Historical Linguistics</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The name confusion is actually <strong>hilarious</strong> from a linguistic perspective.</p>
+                    <p>The European Huns probably called themselves something like <strong>"Hun"</strong> or <strong>"Hunni"</strong> (though we don't actually know).</p>
+                    <p>The Hephtalites were called <strong>"Hephthal"</strong> or <strong>"Hephthalite"</strong> in Greek sources, which comes from Persian <strong>"Hephtal"</strong> meaning "strong."</p>
+                    <p>Medieval Europeans heard about these "Huns" in Europe and "White Huns" in Asia and just assumed they were related. It's like calling both the French and the Franks "French" because they both came from France.</p>
+                    <p>Modern historians still use "White Huns" because <strong>we're stuck with it</strong>, but everyone agrees it's misleading as hell.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConfusedHistorian</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So let me get this straight:</p>
+                    <p>• European Huns = <strong>Turkic nomads</strong> who scared Romans, disappeared quickly</p>
+                    <p>• White Huns = <strong>Iranian people</strong> who built an empire, lasted centuries</p>
+                    <p>• They were <strong>completely different</strong> but got similar names because Europeans were lazy</p>
+                    <p>• White Huns were probably <strong>more successful</strong> in the long run</p>
+                    <p>• Both groups were <strong>equally terrifying</strong> to their respective civilizations</p>
+                    <p>Did I get that right?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 892</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CentralAsianHistorian</span>
+                    <span class="user-flair">Central Asian History</span>
+                    <span class="timestamp">2 hours ago</span>
+                    <span class="award">🎖️</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>Exactly right!</strong> You nailed it.</p>
+                    <p>The European Huns were like a <strong>flash flood</strong> - sudden, terrifying, but over quickly. The White Huns/Hephtalites were like a <strong>river that changed course</strong> - they permanently altered the landscape of Central Asia and India.</p>
+                    <p>Both groups scared the shit out of major civilizations, but they were completely different peoples separated by thousands of miles and speaking different languages.</p>
+                    <p>History is full of these confusing name similarities. Just be glad we don't still call Native Americans "Indians"... oh wait.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.8k</a>
+                    <a href="#">↓ 123</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArchaeologyAfghanistan</span>
+                    <span class="user-flair">Afghan Archaeology</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Archaeologist here - we actually have <strong>way more evidence</strong> for the Hephtalites than the European Huns.</p>
+                    <p>We've found Hephtalite cities in Afghanistan, their coins (they minted their own currency!), and even Buddhist monasteries they built. They left behind a <strong>real archaeological footprint</strong>.</p>
+                    <p>The European Huns? Almost nothing. A few burial sites in Hungary and that's it. They were <strong>ghosts</strong> who appeared, terrified everyone, then vanished.</p>
+                    <p>This is why the Hephtalites were probably <strong>more historically significant</strong> - they actually built and created things, not just destroyed.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 678</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (3.1k remaining)</div>
         </div>
     </div>
 </div>
