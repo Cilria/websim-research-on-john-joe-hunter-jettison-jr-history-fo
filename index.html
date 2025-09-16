@@ -1,452 +1,297 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>r/DebunkingHistory - Turkish friend claims modern Armenians aren't related to ancient Armenians: "They're just Arabic tribes that migrated in the 10th century"</title>
+<title>Turkish friend's claim that modern Armenians aren't real Armenians - r/DebunkingHistory</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #0f1419;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1a1a1b;
     color: #d7dadc;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-.reddit-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #1a1a1b;
-    min-height: 100vh;
-}
-.reddit-header {
-    background: #1a1a1b;
-    border-bottom: 1px solid #343536;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.reddit-logo {
-    color: #ff4500;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-.subreddit-nav {
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-}
-.subreddit-nav a {
-    color: #d7dadc;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-.subreddit-nav a:hover {
-    background-color: #272729;
+    padding: 20px;
 }
 .post-container {
-    background: #1a1a1b;
-    border: 1px solid #343536;
-    border-radius: 8px;
-    margin: 20px;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.post {
+    background-color: #272729;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 12px;
 }
 .post-header {
-    background: #272729;
-    padding: 15px 20px;
-    border-bottom: 1px solid #343536;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #d7dadc;
-    margin: 0 0 10px 0;
-    line-height: 1.3;
-}
-.post-meta {
-    font-size: 12px;
-    color: #818384;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.post-content {
-    padding: 20px;
-    color: #d7dadc;
-}
-.post-stats {
-    display: flex;
-    gap: 20px;
-    padding: 15px 20px;
-    border-top: 1px solid #343536;
-    font-size: 12px;
-    color: #818384;
-}
-.comment-section {
-    padding: 0 20px 20px;
-}
-.comment {
-    margin-bottom: 15px;
-    border-left: 2px solid #343536;
-    padding-left: 15px;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .username {
-    font-weight: 600;
+    font-weight: 500;
     color: #d7dadc;
-    font-size: 12px;
+    margin-right: 8px;
 }
-.user-flair {
-    background: #ff4500;
-    color: white;
+.flair {
+    background-color: #d4af37;
+    color: #1a1a1b;
     padding: 2px 6px;
     border-radius: 12px;
-    font-size: 10px;
-    font-weight: 600;
-}
-.timestamp {
-    color: #818384;
-    font-size: 11px;
-}
-.comment-body {
-    font-size: 14px;
-    color: #d7dadc;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-.comment-actions {
-    display: flex;
-    gap: 15px;
     font-size: 12px;
-    color: #818384;
-    margin-top: 5px;
+    margin-left: 8px;
 }
-.comment-actions a {
+.post-meta {
     color: #818384;
+    font-size: 12px;
+}
+.post-content {
+    color: #d7dadc;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+.post-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    color: #818384;
+    font-size: 14px;
+}
+.comment {
+    background-color: #272729;
+    border-radius: 4px;
+    margin: 8px 0 8px 20px;
+    padding: 8px;
+    border-left: 2px solid #3a3a3c;
+}
+.comment-meta {
+    color: #818384;
+    font-size: 12px;
+}
+blockquote {
+    border-left: 3px solid #444;
+    padding-left: 12px;
+    margin: 8px 0;
+    color: #aaa;
+}
+a {
+    color: #4f9cf4;
     text-decoration: none;
 }
-.comment-actions a:hover {
-    color: #d7dadc;
-}
-.reply {
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.op {
-    background: #ff4500;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: 600;
-    margin-left: 5px;
-}
-.award {
-    color: #ffd700;
-    font-size: 14px;
-    margin-right: 5px;
-}
-.controversial {
-    border-left-color: #cc0000;
-}
-.locked {
-    background: #2a2a2a;
-    border: 1px solid #444;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 12px;
-    color: #ff6b6b;
-    margin: 10px 0;
-}
-.sort-menu {
-    background: #272729;
-    padding: 10px 20px;
-    margin: 0 20px;
-    border-radius: 4px;
-    font-size: 12px;
-    color: #d7dadc;
-}
-.load-more {
-    background: #272729;
-    border: 1px solid #444;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    margin: 20px;
-    cursor: pointer;
-    font-size: 12px;
-    color: #d7dadc;
-}
-.load-more:hover {
-    background: #343536;
+a:hover {
+    text-decoration: underline;
 }
 </style>
 </head>
 <body>
-<div class="reddit-container">
-    <div class="reddit-header">
-        <div class="reddit-logo">reddit</div>
-        <div class="subreddit-nav">
-            <a href="#">r/DebunkingHistory</a>
-            <a href="#">Hot</a>
-            <a href="#">New</a>
-            <a href="#">Top</a>
-            <a href="#">Rising</a>
-        </div>
-    </div>
-    
-    <div class="post-container">
+<div class="post-container">
+    <div class="post">
         <div class="post-header">
-            <h1 class="post-title">My Turkish friend claims modern Armenians have nothing to do with ancient Armenians - says they're just Arabic tribes that migrated in the 10th century. His "proof" is... something else.</h1>
-            <div class="post-meta">
-                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 6 hours ago
-            </div>
+            <span class="username">u/HistoryBuffButConfused</span>
+            <span class="flair">Asking Questions</span>
+            <span class="post-meta">• 3 hours ago</span>
         </div>
-        
+        <h1>My Turkish friend claims modern Armenians aren't actually Armenian but Arabic tribes who migrated in the 10th century. He showed me "proof" but it seems... off?</h1>
         <div class="post-content">
-            <p>So my Turkish buddy keeps insisting that modern Armenians are basically <strong>imposters</strong>. Claims the "real" Armenians died out in the Middle Ages and were replaced by Arabs from Syria and Iraq who just started calling themselves Armenian.</p>
-            
+            <p>So my buddy from Turkey is absolutely convinced that today's Armenians have zero connection to the ancient Kingdom of Urartu or the Armenian people of antiquity. He says they're actually just random Arab tribes who moved into the region in the 900s AD and stole the Armenian identity.</p>
             <p>His "evidence" includes:</p>
             <ul>
-                <li>Armenians "look Arab" (whatever the fuck that means)</li>
-                <li>Armenian language has "too many Arabic loanwords"</li>
-                <li>Armenia was "empty" until Arabs migrated there in the 10th century</li>
-                <li>Some random Turkish blog that cites "secret Ottoman archives"</li>
+                <li>Some Turkish Wikipedia page (in Turkish, which I can't read)</li>
+                <li>A YouTube video titled "ARMENIAN LIE EXPOSED" with 47 views</li>
+                <li>A map he drew himself showing "Arab migration routes"</li>
+                <li>Claims that "real Armenians disappeared in 500 AD"</li>
             </ul>
-            
-            <p>I tried explaining that Armenian is an Indo-European language completely different from Arabic, and that Armenians have been documented in the region for like 3000 years, but he just keeps saying "that's what they want you to believe."</p>
-            
-            <p>How do I even begin to debunk this nonsense? This feels like some weird nationalist conspiracy theory.</p>
+            <p>He got really heated when I questioned this, saying Western historians are "brainwashed by Armenian propaganda." Is there any actual basis to this claim or is this just straight up historical revisionism?</p>
         </div>
-        
-        <div class="post-stats">
-            <span>↑ 5.2k • ↓ 445</span>
-            <span>94% upvoted</span>
-            <span>3.7k comments</span>
+        <div class="post-actions">
+            <span>↑ 2.3k  ↓</span>
+            <span>847 comments</span>
             <span>Share</span>
-            <span>Save</span>
         </div>
-        
-        <div class="sort-menu">Sort by: Best</div>
-        
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArmenianHistorian</span>
-                    <span class="user-flair">PhD Armenian Studies</span>
-                    <span class="timestamp">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Oh boy, this is like the <strong>greatest hits of Armenian history denial</strong>. Your friend is serving up a fresh batch of historical revisionism with a side of xenophobia.</p>
-                    <p>Let's start with the basics: <strong>Armenian is an Indo-European language</strong>, Arabic is a Semitic language. They're as related as English and Hebrew. The idea that Arabs would migrate en masse and somehow <strong>magically switch language families</strong> is linguistically impossible.</p>
-                    <p>Armenian has been continuously spoken in the Armenian Highlands for <strong>over 2500 years</strong>. We have inscriptions from the 5th century BCE, continuous literature from the 5th century CE, and guess what? It's all in Armenian, not Arabic.</p>
-                    <p>The "Arabs replaced Armenians" theory is just <strong>Turkish nationalist cope</strong> for why Armenians have been living in eastern Anatolia longer than Turks have existed as an ethnic group.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 3.8k</a>
-                    <a href="#">↓ 234</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment">
-                        <div class="comment-header">
-                            <span class="username">HistoryBuff2024</span>
-                            <span class="op">OP</span>
-                            <span class="timestamp">4 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>That's what I thought! When I mentioned the language thing, he just said "language can change" and pointed to how Turks in Turkey speak Turkish instead of Central Asian languages. Is that even a valid comparison?</p>
-                        </div>
-                        <div class="comment-actions">
-                            <a href="#">↑ 892</a>
-                            <a href="#">↓ 67</a>
-                            <a href="#">Reply</a>
-                            <a href="#">Share</a>
-                            <a href="#">Report</a>
-                        </div>
-                    </div>
-                </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ByzantineExpert</span>
+            <span class="flair">Late Antique Historian</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Oh for fuck's sake, not this bullshit again. This is Turkish nationalist propaganda that's been floating around since the 1920s. It's about as historically accurate as claiming the moon is made of cheese.</p>
+            <p>We have CONTINUOUS Armenian presence in the Armenian Highlands from the 6th century BC to today. The Kingdom of Urartu (860-590 BC) evolved directly into the Satrapy of Armenia under the Achaemenids, then the Kingdom of Armenia, then Armenian provinces under Romans, Byzantines, and Persians.</p>
+            <p>The Armenian language - which is Indo-European, not Semitic like Arabic - has been spoken continuously in the same region for 3,000 years. You don't just swap out entire populations and keep the same language, culture, and church traditions.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 8.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ArmenianGenocideResearcher</span>
+            <span class="flair">Historian</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Your friend is literally repeating early 20th century Turkish nationalist talking points designed to delegitimize Armenian claims to their historical homeland. This is the historical equivalent of flat earth theory.</p>
+            <p>Armenian genetic studies show continuity going back 4,000+ years. The Armenian Apostolic Church has an unbroken succession of Catholicos (patriarchs) going back to the 4th century AD. You don't maintain that with "random Arab tribes."</p>
+            <p>Also, "Arab tribes migrating to the Armenian Highlands in the 10th century"? What the fuck? Arabs were busy dealing with the Abbasid Caliphate collapse and various dynastic wars. They weren't migrating to the fucking Caucasus mountains.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 6.2k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/HistoryBuffButConfused</span>
+                <span class="post-meta">• 3 hours ago</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ByzantineExpert</span>
-                    <span class="user-flair">Byzantine Historian</span>
-                    <span class="timestamp">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Your friend is literally <strong>making up history</strong> that contradicts every single primary source we have.</p>
-                    <p>The <strong>Byzantine Empire</strong> (you know, the people who actually ruled Armenia in the 10th century) wrote extensively about Armenians. They never mentioned anything about Arabs replacing the population. In fact, they complained about how <strong>stubbornly Armenian</strong> the Armenians were.</p>
-                    <p>We have <strong>thousands of Armenian manuscripts</strong> from the 5th-15th centuries. They're all written in Armenian, about Armenian history, by Armenian authors. Where are all these Arabic documents from the "Arab tribes"?</p>
-                    <p>Also, the idea that <strong>"Armenia was empty"</strong> in the 10th century is hilarious. The Kingdom of Armenia was a major regional power in the 10th century under the Bagratuni dynasty. We have extensive records of their kings, churches, and military campaigns.</p>
-                    <p>This is just <strong>Turkish ultra-nationalist pseudohistory</strong> designed to delegitimize Armenian claims to their historical homeland.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 2.9k</a>
-                    <a href="#">↓ 178</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-content">
+                <p>Yeah, when he pulled up that YouTube video I knew something was off. The guy in the video was literally pointing at Microsoft Paint drawings saying "this proves Arabs stole Armenian identity." Like bro, you're not exactly presenting peer-reviewed research here.</p>
+                <p>My friend got super defensive when I laughed at the video. Said I was "brainwashed by Western education" and that "real historians know the truth."</p>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">GeneticAnthropology</span>
-                    <span class="user-flair">Population Genetics</span>
-                    <span class="timestamp">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Geneticist here - the DNA evidence <strong>absolutely demolishes</strong> your friend's theory.</p>
-                    <p>Modern Armenians cluster <strong>genetically with other Caucasus populations</strong> and show <strong>continuity with ancient Armenian DNA</strong> from 2000+ years ago. They're genetically distinct from both Arabs and Turks.</p>
-                    <p>We have ancient DNA from <strong>Urartian period Armenia</strong> (8th century BCE) and it clusters with modern Armenians, not with populations from the Arabian peninsula.</p>
-                    <p>Your friend's theory would require <strong>complete population replacement</strong> in the 10th century, which would show up as a massive genetic discontinuity. Instead, we see <strong>genetic continuity</strong> from the Iron Age to the present.</p>
-                    <p>But I'm sure he'll just claim genetics is "Western propaganda" or some shit.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 2.4k</a>
-                    <a href="#">↓ 134</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-actions">
+                <span>↑ 3.4k  ↓</span>
+                <span>Reply</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">LinguisticsProf</span>
-                    <span class="user-flair">Historical Linguist</span>
-                    <span class="timestamp">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Let me explain why the <strong>"too many Arabic loanwords"</strong> argument is completely moronic.</p>
-                    <p>Armenian has Arabic loanwords for the same reason English has French loanwords: <strong>historical contact and prestige</strong>. After the Arab conquests in the 7th century, Arabic became the language of administration and religion, so Armenian borrowed some administrative and religious terms.</p>
-                    <p>But here's the thing - <strong>every language has loanwords</strong>. English has thousands of French words, but that doesn't make English speakers secretly French.</p>
-                    <p>Armenian has <strong>retained its core vocabulary</strong> - the basic words for family, body parts, numbers, everyday objects - that go back to Proto-Indo-European. If Armenians were really Arabs who "switched identities," <strong>why would they keep the Indo-European grammar and core vocabulary</strong> while somehow erasing all traces of Arabic?</p>
-                    <p>Your friend doesn't understand how <strong>language change actually works</strong>.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.8k</a>
-                    <a href="#">↓ 98</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/LinguisticsNerd</span>
+            <span class="flair">Historical Linguistics</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>From a linguistic standpoint alone, this claim is absolutely fucking bonkers. Armenian is an Indo-European language with its own unique branch. Arabic is Semitic. These language families split thousands of years before the 10th century.</p>
+            <p>If modern Armenians were actually Arabs who migrated in the 900s, they'd be speaking Arabic or at least a Semitic language, not Armenian. You can't just swap out entire populations and maintain linguistic continuity.</p>
+            <p>We have Armenian manuscripts, inscriptions, and documents from the 5th century onward showing the same language spoken today. The Armenian alphabet was invented in 405 AD and has been in continuous use since.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 5.1k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ByzantineHistoryProf</span>
+            <span class="flair">Professor of Byzantine History</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Professional historian here. This is literally the historical equivalent of claiming vaccines cause autism. It's not just wrong, it's aggressively, willfully ignorant of centuries of evidence.</p>
+            <p>The Byzantine Empire had extensive records of Armenian provinces, Armenian nobility, Armenian merchants, and Armenian soldiers from the 4th century through the 15th century. These aren't "Arab tribes" - they're well-documented Armenian families with Armenian names, following the Armenian Apostolic Church.</p>
+            <p>Also, the 10th century? That's when the Bagratuni Kingdom of Armenia was at its height under King Ashot III. We have contemporary accounts from Arab historians like Al-Masudi describing the Armenians as a distinct Christian people with their own language and traditions.</p>
+            <p>Your friend's "evidence" is about as credible as QAnon posts.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 4.8k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/GeneticStudiesExpert</span>
+            <span class="flair">Population Genetics</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Genetic studies absolutely destroy this claim. Multiple peer-reviewed studies show Armenian genetic continuity going back to the Bronze Age. They're one of the most genetically continuous populations in the Near East.</p>
+            <p>A 2015 study in the European Journal of Human Genetics found that Armenians show very low genetic admixture and cluster separately from both Arabs and Turks. They've maintained genetic isolation for over 3,000 years.</p>
+            <p>Meanwhile, Arabs show completely different genetic markers typical of Semitic populations. You can't fake genetics with Microsoft Paint maps and Turkish Wikipedia articles.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.9k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/TurkishHistorianHere</span>
+            <span class="flair">Turkish Historian</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Turkish person here - your friend is embarrassing our entire country with this nonsense. This is the kind of historical revisionism that makes us look like idiots to the rest of the world.</p>
+            <p>These claims originated in the 1920s with the Turkish government's efforts to deny Armenian historical claims to eastern Anatolia. It's pure propaganda, not history.</p>
+            <p>Every serious Turkish historian knows this is bullshit. We have Ottoman records from the 16th century describing Armenians as the native Christian population of eastern Anatolia. The Ottomans kept detailed tax records, population surveys, and administrative documents.</p>
+            <p>Your friend probably gets his "history" from YouTube conspiracy videos and Turkish nationalist forums. This isn't scholarship - it's ethnic insecurity disguised as historical debate.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 6.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/10thCenturyExpert</span>
+            <span class="flair">Medieval Historian</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Let's talk about the 10th century specifically, since that's when your friend claims this magical Arab migration happened.</p>
+            <p>In the 900s AD, we have:</p>
+            <ul>
+                <li>Armenian manuscripts from this period (in Armenian, not Arabic)</li>
+                <li>Arab historians describing Armenians as a distinct people</li>
+                <li>Byzantine records of Armenian nobility and clergy</li>
+                <li>Armenian inscriptions on churches built in the 10th century</li>
+            </ul>
+            <p>We also have the Armenian Kingdom of Artsakh (Nagorno-Karabakh) with continuous records from the 5th century. No mention of massive Arab migrations or population replacement.</p>
+            <p>Your friend's claim is like saying Americans are actually Canadians who migrated south in 1950 and stole American identity. It's not just wrong - it's deliberately, maliciously wrong.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.2k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/SkepticalOfEverything</span>
+            <span class="post-meta">• 1 hour ago</span>
+        </div>
+        <div class="post-content">
+            <p>I'm just trying to imagine the logistics of this supposed "Arab tribal migration" in the 10th century. So thousands of Arabs supposedly trekked hundreds of miles through hostile territory, somehow completely replaced the native Armenian population, but kept the Armenian language, religion, and culture?</p>
+            <p>And this happened during the Abbasid Caliphate's period of decline, when Arabs were fighting among themselves and dealing with various rebellions?</p>
+            <p>It's like claiming the Vikings secretly replaced the entire population of China in 1200 AD but everyone kept speaking Chinese and following Chinese customs.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 4.5k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/HistoryBuffButConfused</span>
+            <span class="post-meta">• 1 hour ago</span>
+        </div>
+        <div class="post-content">
+            <p>Update: Showed my friend this thread. He got super pissed and started ranting about "Western academic bias" and "Armenian lobby control of universities." Then he sent me a link to some Turkish blog that claims DNA studies are "Zionist propaganda."</p>
+            <p>At this point I'm pretty sure he's just a Turkish nationalist who can't handle the fact that Armenians have legitimate historical claims to their homeland. Thanks for the reality check, everyone.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 5.3k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/ByzantineExpert</span>
+                <span class="post-meta">• 1 hour ago</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryBuff2024</span>
-                    <span class="op">OP</span>
-                    <span class="timestamp">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>He's also claiming that <strong>Armenian churches are just modified mosques</strong> and that Armenian culture is "basically Arab culture with Christian paint." When I pointed out that Armenia was the first Christian nation in 301 CE, he said that was "made up by the Russians in the 19th century."</p>
-                    <p>I feel like I'm losing brain cells talking to this guy.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.6k</a>
-                    <a href="#">↓ 89</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-content">
+                <p>Yeah, you've got a live one there. When they start claiming that peer-reviewed genetic studies are "Zionist propaganda," they've gone full conspiracy theorist. There's no reasoning with that level of willful ignorance.</p>
+                <p>The sad thing is, this kind of historical revisionism is designed to delegitimize Armenian claims to their homeland and make their genocide seem less significant. It's not just stupid - it's malicious.</p>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArmenianArtHistorian</span>
-                    <span class="user-flair">Armenian Art Historian</span>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p><strong>"Armenian churches are modified mosques"</strong> - I just snorted coffee out my nose.</p>
-                    <p>Armenian church architecture predates Islam by <strong>300 years</strong>. The <strong>Echmiadzin Cathedral</strong> (4th century) and <strong>St. Hripsime Church</strong> (7th century) were built centuries before Islam even existed.</p>
-                    <p>Armenian church architecture actually <strong>influenced Byzantine church design</strong>, not the other way around. The dome-on-horseshoe-arch design that became common in Orthodox churches? That originated in Armenia.</p>
-                    <p>And the idea that Armenia becoming Christian in 301 CE was "made up by Russians in the 19th century" is <strong>extra special stupid</strong>. We have contemporary accounts from <strong>Agathangelos</strong> (5th century) describing King Tiridates III's conversion. The Russians didn't even exist as a unified people in the 4th century!</p>
-                    <p>Your friend has achieved <strong>maximum historical illiteracy</strong>.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.9k</a>
-                    <a href="#">↓ 123</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
+            <div class="post-actions">
+                <span>↑ 2.8k  ↓</span>
+                <span>Reply</span>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">TurkishHistorian</span>
-                    <span class="user-flair">Turkish Historian</span>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>Turkish historian here - I need to apologize on behalf of my countryman. This kind of <strong>historical denialism</strong> is unfortunately common among Turkish ultra-nationalists.</p>
-                    <p>Your friend's theory is basically the <strong>"Armenians don't exist"</strong> argument that Turkish nationalists use to justify denying Armenian historical claims to eastern Anatolia. If Armenians are just "Arabs who migrated in the 10th century," then they have no historical rights to land they've lived on for 3000 years.</p>
-                    <p>It's <strong>pseudohistory designed to support a political agenda</strong>. The same people who claim this also deny the Armenian Genocide and claim Armenians "betrayed" the Ottoman Empire.</p>
-                    <p>Real Turkish historians know that Armenians are one of the <strong>oldest continuous civilizations</strong> in the region, with documented history going back to the <strong>Urartian kingdom</strong> (9th century BCE) and possibly earlier.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 2.1k</a>
-                    <a href="#">↓ 89</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryBuff2024</span>
-                    <span class="op">OP</span>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    <p>So basically this is just <strong>Turkish nationalist propaganda</strong> designed to delegitimize Armenian identity? That makes so much more sense now.</p>
-                    <p>I was trying to argue with him using <strong>facts and evidence</strong>, but I was wasting my time, wasn't I?</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 1.3k</a>
-                    <a href="#">↓ 67</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArmenianHistorian</span>
-                    <span class="user-flair">PhD Armenian Studies</span>
-                    <span class="timestamp">2 hours ago</span>
-                    <span class="award">🎖️</span>
-                </div>
-                <div class="comment-body">
-                    <p><strong>Exactly.</strong> You can't argue with conspiracy theorists using facts because their beliefs aren't based on facts - they're based on <strong>what they want to be true</strong>.</p>
-                    <p>Your friend wants to believe that Armenians are "fake" because that makes it easier to justify why they don't deserve rights to their historical lands. It's <strong>colonial logic</strong> - indigenous people don't "really" exist, so taking their land isn't really theft.</p>
-                    <p>The same people who spout this garbage are usually the ones who claim that <strong>Turks have always lived in Anatolia</strong> (they migrated from Central Asia in the 11th century) and that <strong>Istanbul is actually "Constantinople"</strong> (it was called Byzantion before the Romans).</p>
-                    <p>Save your breath. People who believe in <strong>"secret Ottoman archives"</strong> and think that <strong>entire civilizations can be invented by 19th century Russians</strong> aren't interested in historical truth.</p>
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 2.7k</a>
-                    <a href="#">↓ 134</a>
-                    <a href="#">Reply</a>
-                    <a href="#">Share</a>
-                    <a href="#">Report</a>
-                </div>
-            </div>
-            
-            <div class="load-more">Load more comments (3.2k remaining)</div>
         </div>
     </div>
 </div>
