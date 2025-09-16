@@ -1,319 +1,449 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>r/debunkinghistory - Arab friend claims Persians are actually Chechens</title>
+<title>r/DebunkingHistory - Arab friend claims modern Persians are actually Chechen tribes who migrated in 900AD: "Persian sounds exactly like Chechen"</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    background-color: #030712;
-    color: #e5e7eb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
+    color: #d7dadc;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     line-height: 1.6;
 }
-.post-container {
-    max-width: 740px;
+.reddit-container {
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
 }
-.post {
-    background: rgba(17, 24, 39, 0.8);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(55, 65, 81, 0.3);
-    border-radius: 12px;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.subreddit-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.subreddit-nav a:hover {
+    background-color: #272729;
+}
+.post-container {
+    background: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
 }
 .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-.username {
-    font-weight: 600;
-    color: #60a5fa;
-    font-size: 14px;
-}
-.flair {
-    background: linear-gradient(135deg, #8b5cf6, #c084fc);
-    color: white;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 500;
-}
-.post-meta {
-    color: #6b7280;
-    font-size: 12px;
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
 }
 .post-title {
-    color: #f9fafb;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 12px 0;
-    line-height: 1.4;
+    color: #d7dadc;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .post-content {
-    color: #d1d5db;
-    font-size: 14px;
-    margin: 12px 0;
+    padding: 20px;
+    color: #d7dadc;
 }
-.post-content p {
-    margin: 12px 0;
-}
-.post-actions {
+.post-stats {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
-    color: #6b7280;
-    font-size: 13px;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
 }
-.post-actions span {
-    cursor: pointer;
-    transition: color 0.2s;
-}
-.post-actions span:hover {
-    color: #60a5fa;
+.comment-section {
+    padding: 0 20px 20px;
 }
 .comment {
-    background: rgba(17, 24, 39, 0.7);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(55, 65, 81, 0.2);
-    border-radius: 8px;
-    margin: 12px 0 12px 28px;
-    padding: 14px;
-    border-left: 3px solid #4f46e5;
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
 }
 .comment-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 10px;
+    margin-bottom: 5px;
 }
-blockquote {
-    border-left: 3px solid #374151;
-    padding-left: 16px;
-    margin: 10px 0;
-    color: #9ca3af;
-    font-style: italic;
+.username {
+    font-weight: 600;
+    color: #d7dadc;
+    font-size: 12px;
 }
-a {
-    color: #60a5fa;
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.timestamp {
+    color: #818384;
+    font-size: 11px;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
     text-decoration: none;
-    transition: color 0.2s;
 }
-a:hover {
-    color: #93c5fd;
-    text-decoration: underline;
+.comment-actions a:hover {
+    color: #d7dadc;
 }
-strong {
-    color: #f3f4f6;
+.reply {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/DebunkingHistory</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
+        </div>
+    </div>
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="username">u/HistoryDebunker2024</span>
-            <span class="post-meta">• 8 hours ago</span>
+            <h1 class="post-title">My Arab friend just claimed modern Persians are actually Chechen tribes who migrated in 900AD. Says Persian "sounds exactly like Chechen" and they were originally pagan. This might be the most unhinged historical take I've ever heard.</h1>
+            <div class="post-meta">
+                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 4 hours ago
+            </div>
         </div>
-        <h1 class="post-title">My Arab friend claims Persians are actually Chechens who migrated in 900 AD and that Persian "sounds exactly like Chechen" - is this the most schizo historical claim ever?</h1>
+        
         <div class="post-content">
-            <p>So my friend (who's Lebanese) just dropped this absolute bomb on me during our usual late-night Discord call. According to him:</p>
+            <p>I'm still trying to process this conversation I just had. So my buddy (who's Arab, for context) drops this <strong>absolute nuclear take</strong> on me:</p>
+            
+            <p>Apparently, <strong>modern Iranians aren't actually Persian</strong>. They're <strong>Chechen tribes</strong> who migrated to Iran around 900AD. According to him, these Chechens were <strong>originally pagan</strong> and just... decided to become Persian? The whole thing.</p>
+            
+            <p>His "evidence" includes:</p>
             <ul>
-                <li>Modern Persians are NOT actually Iranians/Indo-Europeans</li>
-                <li>They're actually Chechen tribes who migrated to the region around 900 AD</li>
-                <li>These Chechens were originally pagan</li>
-                <li>Persian language "sounds exactly like Chechen"</li>
+                <li>Persian and Chechen "sound exactly the same" (they... don't?)</li>
+                <li>Chechens migrated from the Caucasus to Iran in <strong>massive numbers</strong> in 900AD</li>
+                <li>Real Persians "died out" somehow and got replaced</li>
+                <li>Modern Iranians have "Chechen bone structure" (what the fuck does this even mean)</li>
             </ul>
-            <p>He insists this has nothing to do with nationalism and that he just "likes making insane fucking claims" but I'm sitting here trying to process this absolute historical fever dream.</p>
-            <p>He says Persian and Chechen are "basically the same language" and that Iranians are just "Chechens who forgot they were Chechens." This is like peak schizo-level historical revisionism right?</p>
+            
+            <p>When I asked him where the actual Persians went, he just shrugged and said "they vanished." When I mentioned that Persian is an <strong>Indo-Iranian language</strong> and Chechen is a <strong>Northeast Caucasian language</strong> from completely different language families, he told me I was "overthinking it" and should "just listen to how similar they sound."</p>
+            
+            <p>This isn't even nationalism or anything - dude just <strong>loves making up insane historical claims</strong> for fun. Last month he told me the Aztecs were actually <strong>Chinese merchants</strong> who got lost.</p>
+            
+            <p>How do I even respond to this level of <strong>schizo-posting IRL</strong>?</p>
         </div>
-        <div class="post-actions">
-            <span>↑ 2.3k  ↓</span>
-            <span>847 comments</span>
+        
+        <div class="post-stats">
+            <span>↑ 12.3k • ↓ 892</span>
+            <span>96% upvoted</span>
+            <span>8.9k comments</span>
             <span>Share</span>
+            <span>Save</span>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/LinguisticsProfessor</span>
-            <span class="flair">Historical Linguistics PhD</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Oh my god, this is giving me an aneurysm. Persian (Farsi) is an Indo-Iranian language, part of the Indo-European family. Chechen is a Northeast Caucasian language - they're from COMPLETELY different language families. This is like saying English sounds exactly like Mandarin.</p>
-            <p>The phonology, grammar, syntax - literally everything is different. Persian has influenced by Arabic and Turkic languages, while Chechen has its own unique grammatical structures that don't exist in Persian.</p>
-            <p>Your friend has either never actually heard both languages spoken, or he's trolling you at levels that transcend human comprehension.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 4.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/IranianHistorian</span>
-            <span class="flair">Iranian Studies</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>As someone who's actually Iranian and has studied Persian history - what the actual fuck am I reading? The Persian identity predates Islam by over a thousand years. The Achaemenid Empire was established in 550 BCE. We've been calling ourselves Persians/Iranians since before Chechnya even existed as a concept.</p>
-            <p>The idea that we all just collectively forgot we were Chechens in 900 AD is so historically illiterate it loops back around to being impressive. Like, this is "ancient aliens built the pyramids" level of nonsense, except somehow even dumber.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.9k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/ChechenLinguist</span>
-                <span class="flair">Native Chechen Speaker</span>
-                <span class="post-meta">• 6 hours ago</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LinguisticsMajor</span>
+                    <span class="user-flair">Linguistics Student</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>LMFAO Persian and Chechen sound "exactly the same"? That's like saying <strong>English and Japanese sound identical</strong> because they both use vowels.</p>
+                    <p>Persian: "Salam, chetori?" (Hello, how are you?)<br>
+                    Chechen: "Marsha dog" (Hello)</p>
+                    <p>Yeah bro, <strong>totally identical</strong>. I can't even tell them apart! /s</p>
+                    <p>Your friend has achieved <strong>maximum linguistic confusion</strong>. This is what happens when you get your history education from <strong>random YouTube comments</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 8.2k</a>
+                    <a href="#">↓ 445</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">HistoryBuff2024</span>
+                            <span class="op">OP</span>
+                            <span class="timestamp">3 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Right?! When I asked him to pronounce some basic words, he just made these <strong>gibberish sounds</strong> and claimed that's what both languages sound like. I think he's <strong>never actually heard</strong> either language spoken.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 3.4k</a>
+                            <a href="#">↓ 234</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="post-content">
-                <p>I'm literally a native Chechen speaker and I can barely understand Persian when I hear it. They sound NOTHING alike. Chechen has ejectives, pharyngeals, and a completely different vowel system. Persian has Arabic loanwords we don't even have sounds for.</p>
-                <p>This is like saying Swahili sounds exactly like Finnish. Your friend has either never heard either language or he's having some kind of linguistic hallucination.</p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">IranianDude</span>
+                    <span class="user-flair">Actually Iranian</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Bro I'm literally Iranian and I've never been confused for Chechen in my life. Also <strong>what the fuck is "Chechen bone structure"</strong>? That's some <strong>phrenology-level pseudoscience</strong> right there.</p>
+                    <p>Plus, if we were actually Chechens, <strong>where did all the Persian literature, poetry, and culture come from</strong>? Did the Chechens just <strong>magically absorb</strong> 1000+ years of Persian civilization when they crossed the border?</p>
+                    <p>Your friend is <strong>smoking that good shit</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 6.7k</a>
+                    <a href="#">↓ 389</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 2.1k  ↓</span>
-                <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MedievalHistoryNerd</span>
+                    <span class="user-flair">Medievalist</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The idea that <strong>massive Chechen migration</strong> to Iran happened in 900AD is <strong>historically hilarious</strong>.</p>
+                    <p>In 900AD, the <strong>Saffarid dynasty</strong> was ruling Iran. We have <strong>extensive records</strong> from this period. You know what they don't mention? <strong>MILLIONS OF CHECHENS</strong> suddenly showing up and replacing the entire population.</p>
+                    <p>Also, <strong>where are the Chechen sources</strong> talking about this great migration? Did they just <strong>forget to document</strong> the fact that they all decided to move to Iran and become Persian?</p>
+                    <p>This is like <strong>Atlantis-level</strong> historical fiction.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 4.9k</a>
+                    <a href="#">↓ 267</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ByzantineExpert</span>
-            <span class="flair">Medieval History</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The 900 AD date is particularly hilarious because by that time, Persian civilization had already existed for over 1,400 years. The Sassanid Empire had fallen 200 years earlier, and Islamic Persia was in full swing.</p>
-            <p>Also, the idea that a significant population of Chechens could migrate to Persia in 900 AD and completely replace the existing population without ANY historical record is just... I don't even know where to start debunking this. It's like claiming the Romans were actually secretly Canadian.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/ArabsAreWild</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>As an Arab, I can confirm we do indeed love making absolutely batshit historical claims at 2 AM on Discord calls. Last week my cousin tried to convince me that the ancient Egyptians were actually Lebanese and that the pyramids were built by Phoenicians.</p>
-            <p>Your friend's theory is giving me flashbacks to my uncle who insists the Sumerians spoke Arabic and that cuneiform is just "really bad Arabic handwriting." This is peak "I smoked too much hookah and now I'm a historian" energy.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/LebaneseAndProud</span>
-                <span class="flair">Lebanese</span>
-                <span class="post-meta">• 5 hours ago</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChechenGuy</span>
+                    <span class="user-flair">Actually Chechen</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Yo I'm Chechen and this is <strong>wildly incorrect</strong>. We didn't migrate to Iran in 900AD - we were <strong>busy getting conquered by Arabs</strong> around that time.</p>
+                    <p>Also, <strong>Chechen is literally nothing like Persian</strong>. Our language has <strong>50+ consonants</strong> and sounds like we're <strong>clearing our throats</strong> constantly. Persian is smooth and melodic. They're <strong>completely different</strong>.</p>
+                    <p>Tell your friend he's <strong>confusing us with someone else</strong>. Maybe he watched too many <strong>action movies</strong> and thinks all people from the Caucasus are the same?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 5.2k</a>
+                    <a href="#">↓ 298</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-content">
-                <p>Bro, as a Lebanese person I need to apologize for whatever the fuck your friend is smoking. We don't claim him. This is like saying "I'm not racist, I just think Persians are actually secret Chechens who forgot their identity" while simultaneously butchering 3,000 years of recorded history.</p>
-                <p>Also, the idea that this "has nothing to do with nationalism" while literally erasing an entire ethnic group's identity is sending me. This is nationalism with extra steps and a lobotomy.</p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                    <div class="comment-body">
+                    <p>He's also claiming that <strong>"Chechen bone structure"</strong> is why Iranians have "distinctive faces" and that <strong>ancient Persian art</strong> shows people with "Chechen features."</p>
+                    <p>When I showed him pictures of <strong>actual Chechen people</strong> vs <strong>actual Iranians</strong>, he said the photos were "Western propaganda" designed to hide the truth.</p>
+                    <p>I think he's just <strong>making shit up as he goes</strong> at this point.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 3.1k</a>
+                    <a href="#">↓ 178</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 2.4k  ↓</span>
-                <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">AnthropologyGrad</span>
+                    <span class="user-flair">Anthropology Student</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>"Chechen bone structure"</strong> LMAOOOOOO</p>
+                    <p>Your friend has achieved <strong>racial pseudoscience bingo</strong>. Next he's gonna tell you that <strong>phrenology proves</strong> Iranians are actually <strong>ancient aliens</strong>.</p>
+                    <p>This is what happens when someone gets their <strong>entire education from conspiracy TikToks</strong> and thinks <strong>random YouTube documentaries</strong> are peer-reviewed sources.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 3.8k</a>
+                    <a href="#">↓ 234</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/SchizoHistoryEnjoyer</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>I live for these absolutely unhinged historical takes. This is like if you took every bad history meme, put them in a blender, and then had the resulting smoothie translated through Google Translate seventeen times.</p>
-            <p>The mental image of a bunch of Chechen tribesmen in 900 AD being like "alright boys, time to go become Persian, but like, secretly" and then somehow convincing millions of people to forget their entire ethnic identity is sending me into orbit.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.9k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/OPResponds</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Update: Just got off another call with him. When I mentioned this thread, he doubled down and said "the fact that everyone is so mad just proves I'm onto something." Then he claimed that Ferdowsi (the guy who wrote the Shahnameh in 1000 AD) was "obviously Chechen" because "only Chechens write epic poetry about forgotten identities."</p>
-            <p>I'm starting to think this isn't even about history anymore. This is like performance art or some kind of elaborate trolling experiment. He's either the greatest historical shitposter of our generation or he's having a complete break from reality.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/ConspiracyTheoryLover</span>
-                <span class="post-meta">• 3 hours ago</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PersianPoet</span>
+                    <span class="user-flair">Iranian Literature Nerd</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So according to your friend's logic, the Chechens migrated to Iran, <strong>immediately forgot their language</strong>, <strong>invented Persian poetry</strong>, and started writing <strong>epic poems about Persian kings</strong>?</p>
+                    <p>Because I'm pretty sure <strong>Ferdowsi</strong> wasn't writing the <strong>Shahnameh</strong> in <strong>Chechen</strong> in the 10th century.</p>
+                    <p>Your friend is <strong>huffing copium</strong> and making <strong>word salad</strong> sound like <strong>historical facts</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.9k</a>
+                    <a href="#">↓ 167</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-content">
-                <p>Your friend has transcended mere historical revisionism and entered the realm of pure, uncut schizoposting. This is like if you mixed Alex Jones with a sleep-deprived graduate student and a YouTube comments section.</p>
-                <p>The "only Chechens write epic poetry about forgotten identities" line is so galaxy-brained I felt my IQ drop just reading it. This man is operating on a different plane of historical consciousness where up is down and Persians are actually secret Chechens.</p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Update: I just asked him what happened to the <strong>original Persians</strong> and he said they "probably moved to Europe and became Italian."</p>
+                    <p>I can't. I literally <strong>cannot</strong> with this man anymore.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 4.2k</a>
+                    <a href="#">↓ 289</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 1.6k  ↓</span>
-                <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ChaosEnjoyer</span>
+                    <span class="user-flair">Professional Shitposter</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>"Persians became Italian"</strong> AHAHAHAHAHA</p>
+                    <p>Your friend has achieved <strong>ascended levels of historical confusion</strong>. Next he's gonna tell you that <strong>ancient Egyptians</strong> were actually <strong>Swedish Vikings</strong> who got <strong>really good at tanning</strong>.</p>
+                    <p>This man is <strong>making history up like it's a Mad Libs game</strong>. Just throwing random ethnic groups and dates together like <strong>"In 900AD, the [ETHNIC GROUP] migrated to [LOCATION] and became [COMPLETELY DIFFERENT ETHNIC GROUP]."</strong></p>
+                    <p>I need to party with this dude. He sounds <strong>absolutely unhinged</strong> and <strong>entertaining as fuck</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 3.5k</a>
+                    <a href="#">↓ 198</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/AcademicMasochist</span>
-            <span class="post-meta">• 2 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>As someone who's wasted years of their life studying historical linguistics, this thread is simultaneously giving me an ulcer and providing me with enough schadenfreude to last a lifetime. Your friend has created a perfect storm of historical illiteracy that manages to be wrong about:</p>
-            <ul>
-                <li>Linguistic classification</li>
-                <li>Historical chronology</li>
-                <li>Population genetics</li>
-                <li>Archaeological evidence</li>
-                <li>Literary history</li>
-                <li>Basic common sense</li>
-            </ul>
-            <p>It's actually impressive how comprehensively wrong he is. Like, if you tried to be this wrong about history, you'd accidentally get something right.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">u/FinalUpdateFromOP</span>
-            <span class="post-meta">• 1 hour ago</span>
-        </div>
-        <div class="post-content">
-            <p>Last update: After showing him this entire thread, my friend just said "history is written by the victors, and the Chechens clearly lost if they got absorbed by Persia." Then he claimed that the reason Persian sounds nothing like Chechen is because "they developed a secret language to hide their Chechen identity from the Arabs."</p>
-            <p>I'm calling a wellness check on him tomorrow. This has gone beyond funny historical nonsense into genuine concern territory. But also, I'm lowkey impressed by his commitment to this bit. Like, this is either mental illness or the longest, most elaborate troll in Discord history.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.1k  ↓</span>
-            <span>Reply</span>
+            
+            <div class="load-more">Load more comments (8.7k remaining)</div>
         </div>
     </div>
 </div>
