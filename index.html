@@ -1,290 +1,456 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>r/debunkinghistory - Turkish friend claims modern Armenians are just Arabs, gets destroyed by actual historians</title>
+<title>r/DebunkingHistory - Turkish friend claims modern Armenians aren't related to ancient Armenians: "They're just Arabic tribes that migrated in the 10th century"</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #1a1a1d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0f1419;
     color: #d7dadc;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
+}
+.reddit-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1a1a1b;
+    min-height: 100vh;
+}
+.reddit-header {
+    background: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.reddit-logo {
+    color: #ff4500;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.subreddit-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.subreddit-nav a {
+    color: #d7dadc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.subreddit-nav a:hover {
+    background-color: #272729;
 }
 .post-container {
-    max-width: 800px;
-    margin: 10px auto;
-}
-.post {
-    background-color: #272729;
-    border-radius: 4px;
-    margin-bottom: 12px;
-    padding: 12px 16px;
-    border: 0.5px solid #444;
+    background: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
 }
 .post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1px;
+    background: #272729;
+    padding: 15px 20px;
+    border-bottom: 1px solid #343536;
 }
-.username {
-    font-weight: 500;
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
     color: #d7dadc;
-    margin-right: 0.5rem;
-}
-.flair {
-    background-color: #4a90e2;
-    color: #fff;
-    padding: 1px 6px;
-    border-radius: 10px;
-    font-size: 10px;
-    margin-left: 900px;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
 }
 .post-meta {
-    color: #818384;
     font-size: 12px;
+    color: #818384;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .post-content {
+    padding: 20px;
     color: #d7dadc;
-    line-height: 1.5;
-    margin: 12px 0;
 }
-.post-actions {
+.post-stats {
     display: flex;
-    gap: 1rem;
-    margin-top: 8px;
+    gap: 20px;
+    padding: 15px 20px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
     color: #818384;
-    font-size: 13px;
+}
+.comment-section {
+    padding: 0 20px 20px;
 }
 .comment {
-    background-color: #272729;
-    border-radius: 4px;
-    margin: 8px 0 8px 5px;
-    padding: 8px;
-    border-left: 0.5px solid #3a3a3c;
+    margin-bottom: 15px;
+    border-left: 2px solid #343536;
+    padding-left: 15px;
 }
-.comment-meta {
-    color: #818384;
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.username {
+    font-weight: 600;
+    color: #d7dadc;
     font-size: 12px;
 }
-blockquote {
-    border-left: 3px solid #444;
-    padding-left: 1rem;
-    margin: 4px 0;
-    color: #aaa;
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
 }
-a {
-    color: #4f9cf4;
+.timestamp {
+    color: #818384;
+    font-size: 11px;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.comment-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #818384;
+    margin-top: 5px;
+}
+.comment-actions a {
+    color: #818384;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+.comment-actions a:hover {
+    color: #d7dadc;
+}
+.reply {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.op {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.award {
+    color: #ffd700;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.controversial {
+    border-left-color: #cc0000;
+}
+.locked {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #ff6b6b;
+    margin: 10px 0;
+}
+.sort-menu {
+    background: #272729;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more {
+    background: #272729;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.load-more:hover {
+    background: #343536;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
-        <div class="post-header">
-            <span class="username">u/HistoryDebunker69</span>
-            <span class="flair">Armchair Historian</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <h2>My Turkish friend says modern Armenians aren't real Armenians but Arabic tribes from the 10th century - any truth to this?</h2>
-        <div class="post-content">
-            <p>So my buddy from Istanbul was visiting and we were talking about different ethnic groups in the region. He drops this bomb on me: "Modern Armenians are actually Arabs who migrated to the region in the Urartu area during the 10th century AD. Ancient Armenians are extinct."</p>
-            <p>He showed me a map of the Arabian peninsula with arrows pointing north and a bunch of Arabic text claiming to show migration routes. Also said something about how the Armenian language is just Arabic with a different alphabet.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.2k  ↓</span>
-            <span>847 comments</span>
-            <span>Share</span>
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="subreddit-nav">
+            <a href="#">r/DebunkingHistory</a>
+            <a href="#">Hot</a>
+            <a href="#">New</a>
+            <a href="#">Top</a>
+            <a href="#">Rising</a>
         </div>
     </div>
-
-    <div class="comment">
+    
+    <div class="post-container">
         <div class="post-header">
-            <span class="username">u/TimeTravelerProblems</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Hold the fuck up. So Franklin's dad was born in 1895, fought in WW1 (so he was like 19-23 during the war), and his grandfather fought in the Civil War? That would mean his grandfather was probably born around 1840-1845 and had Franklin's dad when he was like 50-55 years old.</p>
-            <p>That's not even the craziest part. Franklin was born in 1981. His dad would have been 86 fucking years old when Franklin was born. EIGHTY SIX.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/GenealogyWhore</span>
-            <span class="flair">Ancestry Addict</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Jesus fucking Christ, that's a 141-year gap between grandfather and grandson. My great-grandfather was born in 1888 and I thought THAT was wild.</p>
-            <p>But let's break this down: Civil War ended 1865. If gramps fought at age 25, he'd be born 1840. Had Franklin Sr at age 55 (1895). Franklin Sr had Franklin Jr at age 86. That's like... 3 generations spanning 1860s to 2020s.</p>
-            <p>My family has trouble remembering what happened in the 90s and this dude's family has oral history from the fucking LINCOLN ADMINISTRATION.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="post-header">
-                <span class="username">u/HistoryTeacher1984</span>
-                <span class="flair">History Nerd</span>
-                <span class="post-meta">• 4 hours ago</span>
-            </div>
-            <div class="post-content">
-                <p>Former history teacher here - this is actually more common than you'd think in certain families. My grandmother knew a woman whose grandfather fought in the War of 1812 and she was alive to vote for Obama in 2008. The math works out if you have:</p>
-                <p>1. Father having kids late in life (50s-60s)</p>
-                <p>2. Sons also having kids late in life</p>
-                <p>3. Repeat for 3-4 generations</p>
-                <p>Still absolutely fucking bonkers though. Franklin's grandfather probably told him stories about actual Civil War battles while Franklin was playing Nintendo.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 1.7k  ↓</span>
-                <span>Reply</span>
+            <h1 class="post-title">My Turkish friend claims modern Armenians have nothing to do with ancient Armenians - says they're just Arabic tribes that migrated in the 10th century. His "proof" is... something else.</h1>
+            <div class="post-meta">
+                Posted by u/HistoryBuff2024 <span class="op">OP</span> • 6 hours ago
             </div>
         </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/OldManYellsAtClouds</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
+        
         <div class="post-content">
-            <p>I'm 67 years old and this is making my head spin. When I was born in 1957, Franklin's dad was already 62 fucking years old. This man was collecting social security before I could walk.</p>
-            <p>Also, Franklin's half-brother born in 1936? That means when Franklin was born in 1981, his brother was 45. His brother was older than most people's parents when Franklin was in diapers.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/GenerationalMindFuck</span>
-            <span class="flair">Family Tree Fucked</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Wait until you hear about the family photos. Franklin showed me a picture of his dad in his WW1 uniform from 1918. The dude looks like he's from a fucking daguerreotype. Like this isn't some sepia-tinted Instagram filter - this is actual 1918 photography.</p>
-            <p>Then he shows me his grandfather's Civil War discharge papers from 1865. THE ACTUAL FUCKING DOCUMENTS. The paper is so old it's basically disintegrating.</p>
-            <p>His family has photos spanning from "guy who fought at Gettysburg" to "guy who plays Call of Duty." The technological leap is giving me vertigo.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 4.3k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
-            <div class="post-header">
-                <span class="username">u/CivilWarCollector</span>
-                <span class="flair">History Buff</span>
-                <span class="post-meta">• 3 hours ago</span>
-            </div>
-            <div class="post-content">
-                <p>As someone who collects Civil War memorabilia, I need to meet Franklin's family. Original discharge papers from 1865? That's like finding the Holy Grail. Most Civil War vets' families lost that shit in the Great Depression.</p>
-                <p>Also, think about what Franklin's grandfather witnessed: He fought in the Civil War, lived through Reconstruction, saw the first cars, the first planes, the first radio broadcasts, and lived long enough to have a kid in 1895. That's like going from muskets to machine guns in one lifetime.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 1.8k  ↓</span>
-                <span>Reply</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/MillennialFamilyDrama</span>
-            <span class="flair">Family Mess</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>This is fucking with my perception of time. My great-grandfather was born in 1902 and I thought THAT was old. Franklin's dad was already 7 years old when my great-grandfather was born.</p>
-            <p>Also, Franklin's half-brother being born in 1936 means he's older than my grandmother. Like, Franklin's brother was already in high school when my grandma was born. The generational overlap is making my brain hurt.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 987  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/TimeLineNonsense</span>
-            <span class="post-meta">• 2 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Let's put this in perspective for everyone:</p>
+            <p>So my Turkish buddy keeps insisting that modern Armenians are basically <strong>imposters</strong>. Claims the "real" Armenians died out in the Middle Ages and were replaced by Arabs from Syria and Iraq who just started calling themselves Armenian.</p>
+            
+            <p>His "evidence" includes:</p>
             <ul>
-                <li>Franklin's grandfather: Born ~1840, fought in Civil War (1861-1865)</li>
-                <li>Franklin's father: Born 1895, fought in WW1 (1917-1918)</li>
-                <li>Franklin: Born 1981, grew up with MTV and Nintendo</li>
-                <li>Franklin's half-brother: Born 1936, grew up during WWII rationing</li>
+                <li>Armenians "look Arab" (whatever the fuck that means)</li>
+                <li>Armenian language has "too many Arabic loanwords"</li>
+                <li>Armenia was "empty" until Arabs migrated there in the 10th century</li>
+                <li>Some random Turkish blog that cites "secret Ottoman archives"</li>
             </ul>
-            <p>So Franklin's dad was 41 when his half-brother was born, and then waited another 45 fucking years to have Franklin. This man was having kids for almost half a century.</p>
+            
+            <p>I tried explaining that Armenian is an Indo-European language completely different from Arabic, and that Armenians have been documented in the region for like 3000 years, but he just keeps saying "that's what they want you to believe."</p>
+            
+            <p>How do I even begin to debunk this nonsense? This feels like some weird nationalist conspiracy theory.</p>
         </div>
-        <div class="post-actions">
-            <span>↑ 3.6k  ↓</span>
-            <span>Reply</span>
+        
+        <div class="post-stats">
+            <span>↑ 5.2k • ↓ 445</span>
+            <span>94% upvoted</span>
+            <span>3.7k comments</span>
+            <span>Share</span>
+            <span>Save</span>
         </div>
-
-        <div class="comment">
-            <div class="post-header">
-                <span class="username">u/GenXConfusion</span>
-                <span class="post-meta">• 2 hours ago</span>
+        
+        <div class="sort-menu">Sort by: Best</div>
+        
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArmenianHistorian</span>
+                    <span class="user-flair">PhD Armenian Studies</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Oh boy, this is like the <strong>greatest hits of Armenian history denial</strong>. Your friend is serving up a fresh batch of historical revisionism with a side of xenophobia.</p>
+                    <p>Let's start with the basics: <strong>Armenian is an Indo-European language</strong>, Arabic is a Semitic language. They're as related as English and Hebrew. The idea that Arabs would migrate en masse and somehow <strong>magically switch language families</strong> is linguistically impossible.</p>
+                    <p>Armenian has been continuously spoken in the Armenian Highlands for <strong>over 2500 years</strong>. We have inscriptions from the 5th century BCE, continuous literature from the 5th century CE, and guess what? It's all in Armenian, not Arabic.</p>
+                    <p>The "Arabs replaced Armenians" theory is just <strong>Turkish nationalist cope</strong> for why Armenians have been living in eastern Anatolia longer than Turks have existed as an ethnic group.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 3.8k</a>
+                    <a href="#">↓ 234</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">HistoryBuff2024</span>
+                            <span class="op">OP</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>That's what I thought! When I mentioned the language thing, he just said "language can change" and pointed to how Turks in Turkey speak Turkish instead of Central Asian languages. Is that even a valid comparison?</p>
+                        </div>
+                        <div class="comment-actions">
+                            <a href="#">↑ 892</a>
+                            <a href="#">↓ 67</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Share</a>
+                            <a href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="post-content">
-                <p>I'm 48 and Franklin's half-brother is 40 years older than me. That motherfucker was already middle-aged when I was born. This is like having a sibling who's literally from a different century.</p>
-                <p>My dad was born in 1946 and I thought that was wild. Franklin's dad was already 51 years old when my dad was born. The age gaps are astronomical.</p>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ByzantineExpert</span>
+                    <span class="user-flair">Byzantine Historian</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Your friend is literally <strong>making up history</strong> that contradicts every single primary source we have.</p>
+                    <p>The <strong>Byzantine Empire</strong> (you know, the people who actually ruled Armenia in the 10th century) wrote extensively about Armenians. They never mentioned anything about Arabs replacing the population. In fact, they complained about how <strong>stubbornly Armenian</strong> the Armenians were.</p>
+                    <p>We have <strong>thousands of Armenian manuscripts</strong> from the 5th-15th centuries. They're all written in Armenian, about Armenian history, by Armenian authors. Where are all these Arabic documents from the "Arab tribes"?</p>
+                    <p>Also, the idea that <strong>"Armenia was empty"</strong> in the 10th century is hilarious. The Kingdom of Armenia was a major regional power in the 10th century under the Bagratuni dynasty. We have extensive records of their kings, churches, and military campaigns.</p>
+                    <p>This is just <strong>Turkish ultra-nationalist pseudohistory</strong> designed to delegitimize Armenian claims to their historical homeland.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.9k</a>
+                    <a href="#">↓ 178</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 1.2k  ↓</span>
-                <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GeneticAnthropology</span>
+                    <span class="user-flair">Population Genetics</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Geneticist here - the DNA evidence <strong>absolutely demolishes</strong> your friend's theory.</p>
+                    <p>Modern Armenians cluster <strong>genetically with other Caucasus populations</strong> and show <strong>continuity with ancient Armenian DNA</strong> from 2000+ years ago. They're genetically distinct from both Arabs and Turks.</p>
+                    <p>We have ancient DNA from <strong>Urartian period Armenia</strong> (8th century BCE) and it clusters with modern Armenians, not with populations from the Arabian peninsula.</p>
+                    <p>Your friend's theory would require <strong>complete population replacement</strong> in the 10th century, which would show up as a massive genetic discontinuity. Instead, we see <strong>genetic continuity</strong> from the Iron Age to the present.</p>
+                    <p>But I'm sure he'll just claim genetics is "Western propaganda" or some shit.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.4k</a>
+                    <a href="#">↓ 134</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/ActualHistorianHere</span>
-            <span class="flair">PhD History</span>
-            <span class="post-meta">• 1 hour ago</span>
-        </div>
-        <div class="post-content">
-            <p>Historian here - this is actually a documented phenomenon called "compressed generation syndrome" where late-life fatherhood creates these massive temporal gaps. The record is actually 7 generations spanning 200+ years, but this is still exceptional.</p>
-            <p>What's particularly fascinating is that Franklin's family bridges the entire technological revolution. His grandfather lived in a world of horses and candles, his father saw the birth of aviation and radio, and Franklin grew up with smartphones and social media.</p>
-            <p>The family oral history from Civil War veterans to TikTok is unprecedented in living memory.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.9k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
-
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/FranklinIsMyCoworker</span>
-            <span class="meta">Actually knows Franklin</span>
-            <span class="post-meta">• 45 minutes ago</span>
-        </div>
-        <div class="post-content">
-            <p>OP here - just got back from lunch with Franklin. Showed him this thread and he laughed his ass off. Said his dad used to tell him stories about his grandfather describing Lincoln's funeral procession in 1865. THE ACTUAL FUCKING FUNERAL.</p>
-            <p>Also, Franklin just casually mentioned that his half-brother remembers the moon landing like it was yesterday, but also remembers their grandfather talking about watching Civil War veterans march in Memorial Day parades in the 1920s.</p>
-            <p>This family has living memory that spans from Abraham Lincoln to fucking TikTok. I can't even process this.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 7.8k  ↓</span>
-            <span>Reply</span>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LinguisticsProf</span>
+                    <span class="user-flair">Historical Linguist</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Let me explain why the <strong>"too many Arabic loanwords"</strong> argument is completely moronic.</p>
+                    <p>Armenian has Arabic loanwords for the same reason English has French loanwords: <strong>historical contact and prestige</strong>. After the Arab conquests in the 7th century, Arabic became the language of administration and religion, so Armenian borrowed some administrative and religious terms.</p>
+                    <p>But here's the thing - <strong>every language has loanwords</strong>. English has thousands of French words, but that doesn't make English speakers secretly French.</p>
+                    <p>Armenian has <strong>retained its core vocabulary</strong> - the basic words for family, body parts, numbers, everyday objects - that go back to Proto-Indo-European. If Armenians were really Arabs who "switched identities," <strong>why would they keep the Indo-European grammar and core vocabulary</strong> while somehow erasing all traces of Arabic?</p>
+                    <p>Your friend doesn't understand how <strong>language change actually works</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.8k</a>
+                    <a href="#">↓ 98</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>He's also claiming that <strong>Armenian churches are just modified mosques</strong> and that Armenian culture is "basically Arab culture with Christian paint." When I pointed out that Armenia was the first Christian nation in 301 CE, he said that was "made up by the Russians in the 19th century."</p>
+                    <p>I feel like I'm losing brain cells talking to this guy.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.6k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArmenianArtHistorian</span>
+                    <span class="user-flair">Armenian Art Historian</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>"Armenian churches are modified mosques"</strong> - I just snorted coffee out my nose.</p>
+                    <p>Armenian church architecture predates Islam by <strong>300 years</strong>. The <strong>Echmiadzin Cathedral</strong> (4th century) and <strong>St. Hripsime Church</strong> (7th century) were built centuries before Islam even existed.</p>
+                    <p>Armenian church architecture actually <strong>influenced Byzantine church design</strong>, not the other way around. The dome-on-horseshoe-arch design that became common in Orthodox churches? That originated in Armenia.</p>
+                    <p>And the idea that Armenia becoming Christian in 301 CE was "made up by Russians in the 19th century" is <strong>extra special stupid</strong>. We have contemporary accounts from <strong>Agathangelos</strong> (5th century) describing King Tiridates III's conversion. The Russians didn't even exist as a unified people in the 4th century!</p>
+                    <p>Your friend has achieved <strong>maximum historical illiteracy</strong>.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.9k</a>
+                    <a href="#">↓ 123</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TurkishHistorian</span>
+                    <span class="user-flair">Turkish Historian</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Turkish historian here - I need to apologize on behalf of my countryman. This kind of <strong>historical denialism</strong> is unfortunately common among Turkish ultra-nationalists.</p>
+                    <p>Your friend's theory is basically the <strong>"Armenians don't exist"</strong> argument that Turkish nationalists use to justify denying Armenian historical claims to eastern Anatolia. If Armenians are just "Arabs who migrated in the 10th century," then they have no historical rights to land they've lived on for 3000 years.</p>
+                    <p>It's <strong>pseudohistory designed to support a political agenda</strong>. The same people who claim this also deny the Armenian Genocide and claim Armenians "betrayed" the Ottoman Empire.</p>
+                    <p>Real Turkish historians know that Armenians are one of the <strong>oldest continuous civilizations</strong> in the region, with documented history going back to the <strong>Urartian kingdom</strong> (9th century BCE) and possibly earlier.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.1k</a>
+                    <a href="#">↓ 89</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff2024</span>
+                    <span class="op">OP</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>So basically this is just <strong>Turkish nationalist propaganda</strong> designed to delegitimize Armenian identity? That makes so much more sense now.</p>
+                    <p>I was trying to argue with him using <strong>facts and evidence</strong>, but I was wasting my time, wasn't I?</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 1.3k</a>
+                    <a href="#">↓ 67</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArmenianHistorian</span>
+                    <span class="user-flair">PhD Armenian Studies</span>
+                    <span class="timestamp">2 hours ago</span>
+                    <span class="award">🎖️</span>
+                </div>
+                <div class="comment-body">
+                    <p><strong>Exactly.</strong> You can't argue with conspiracy theorists using facts because their beliefs aren't based on facts - they're based on <strong>what they want to be true</strong>.</p>
+                    <p>Your friend wants to believe that Armenians are "fake" because that makes it easier to justify why they don't deserve rights to their historical lands. It's <strong>colonial logic</strong> - indigenous people don't "really" exist, so taking their land isn't really theft.</p>
+                    <p>The same people who spout this garbage are usually the ones who claim that <strong>Turks have always lived in Anatolia</strong> (they migrated from Central Asia in the 11th century) and that <strong>Istanbul is actually "Constantinople"</strong> (it was called Byzantion before the Romans).</p>
+                    <p>Save your breath. People who believe in <strong>"secret Ottoman archives"</strong> and think that <strong>entire civilizations can be invented by 19th century Russians</strong> aren't interested in historical truth.</p>
+                </div>
+                <div class="comment-actions">
+                    <a href="#">↑ 2.7k</a>
+                    <a href="#">↓ 134</a>
+                    <a href="#">Reply</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments (3.2k remaining)</div>
         </div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
