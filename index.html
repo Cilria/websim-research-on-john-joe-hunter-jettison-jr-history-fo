@@ -1,198 +1,400 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Reddit - 100-year-old former NC state senator announces congressional run</title>
+<title>Newsom Wins 2028: Reddit Reacts</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f6f7f8;
-    color: #1c1c1c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #DAE0E6;
+    color: #1A1A1B;
     margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 740px;
+    margin: 0 auto;
     padding: 20px;
 }
-.post-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 8px;
+.post-card {
+    background: white;
+    border-radius: 4px;
     border: 1px solid #ccc;
+    margin-bottom: 16px;
+    overflow: hidden;
 }
 .post-header {
-    padding: 12px 16px;
-    background-color: #f6f7f8;
-    border-bottom: 1px solid #ccc;
-}
-.post-title {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-.post-meta {
+    padding: 8px 16px;
+    background: #f6f7f8;
+    border-bottom: 1px solid #edeff1;
     font-size: 12px;
-    color: #7c7c7c;
+    color: #7c7c7d;
+}
+.post-header a {
+    color: #7c7c7d;
+    text-decoration: none;
+}
+.post-header a:hover {
+    text-decoration: underline;
 }
 .post-content {
-    padding: 16px;
-    line-height: 1.6;
+    padding: 0 16px;
 }
-.post-content h1 {
+.post-title {
     font-size: 20px;
-    margin: 0 0 16px 0;
+    font-weight: 500;
+    margin: 16px 0;
+    color: #222;
 }
-.post-content p {
-    margin: 0 0 12px 0;
+.post-body {
+    line-height: 1.5;
+    margin-bottom: 16px;
 }
-.comments-section {
-    border-top: 1px solid #ccc;
+.post-footer {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 12px;
+    color: #878a8c;
+    border-top: 1px solid #edeff1;
+}
+.vote-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.vote-btn {
+    background: none;
+    border: none;
+    color: #878a8c;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 16px;
+}
+.vote-btn:hover {
+    color: #ff4500;
+}
+.score {
+    margin: 0 8px;
+    font-weight: 500;
 }
 .comment {
-    padding: 12px 16px;
-    border-bottom: 1px solid #eee;
+    padding: 12px 16px 12px 40px;
+    border-top: 1px solid #edeff1;
+    position: relative;
+}
+.comment.indent-1 {
+    margin-left: 24px;
+}
+.comment.indent-2 {
+    margin-left: 48px;
 }
 .comment-header {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
 }
-.comment-author {
+.author {
     font-weight: 500;
+    color: #0079D3;
     margin-right: 8px;
 }
-.comment-flair {
-    background-color: #e0e0e0;
+.flair {
+    background: #e8f4f8;
+    color: #0079D3;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 11px;
     margin-right: 8px;
 }
-.comment-score {
-    color: #7c7c7c;
-    font-size: 12px;
+.timestamp {
+    color: #7c7c7d;
 }
 .comment-body {
-    margin-bottom: 8px;
     line-height: 1.5;
+    margin-bottom: 4px;
 }
-.comment-actions {
+.comment-footer {
+    display: flex;
+    align-items: center;
     font-size: 12px;
-    color: #7c7c7c;
+    color: #878a8c;
 }
-.reply {
-    margin-left: 32px;
-    border-left: 2px solid #e0e0e0;
-    padding-left: 16px;
+.comment-footer button {
+    background: none;
+    border: none;
+    color: #878a8c;
+    cursor: pointer;
+    padding: 4px 8px 4px 0;
+    margin-right: 8px;
+}
+.comment-footer button:hover {
+    color: #0079D3;
+}
+.expand-btn {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    background: none;
+    border: none;
+    color: #878a8c;
+    cursor: pointer;
+    font-size: 12px;
+}
+.expand-btn:hover {
+    color: #0079D3;
+}
+.news-badge {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 8px;
 }
 </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post-header">
-        <div class="post-title">100-year-old former NC state senator announces congressional run</div>
-        <div class="post-meta">r/news • Posted by u/historybuff85 • 6 hours ago</div>
+<div class="container">
+    <div class="post-card">
+        <div class="post-header">
+            <span class="news-badge">NEWS</span>
+            <a href="#">r/News</a> • Posted by <a href="#">u/PoliticalJunkie2028</a> • 6h • 
+            <a href="#">i.redd.it</a>
+        </div>
+        <div class="post-content">
+            <h1 class="post-title">Gavin Newsom wins 2028 presidential election in landslide, promises "the fun has just begun"</h1>
+            <div class="post-body">
+                <p><strong>RALEIGH, N.C. (AP)</strong> — Gavin Newsom has officially won the 2028 presidential election, defeating Donald Trump in a stunning landslide victory. Speaking to supporters in Sacramento, Newsom delivered a chilling victory speech: "Stay tuned... the fun has just begun."</p>
+                
+                <p>In his victory address, Newsom escalated his campaign rhetoric to new heights, openly threatening military action against Republican-led states: "To the red states who think they can resist the will of the American people - I have news for you. I have the military. I have the FBI. I have the full force of the federal government. Try me."</p>
+                
+                <p>Republican leaders are already rejecting the election results, with Trump refusing to concede and claiming widespread voter fraud without evidence. Stock futures are plummeting as investors react to Newsom's victory and threats of military action.</p>
+            </div>
+        </div>
+        <div class="post-footer">
+            <div class="vote-buttons">
+                <button class="vote-btn">▲</button>
+                <span class="score">127.3k</span>
+                <button class="vote-btn">▼</button>
+            </div>
+            <button>248k Comments</button>
+            <button>Share</button>
+            <button>Save</button>
+            <button>Hide</button>
+            <button>Report</button>
+            <button style="margin-left: auto;">92% Upvoted</button>
+        </div>
     </div>
-    
-    <div class="post-content">
-        <h1>RALEIGH, N.C. (AP) — Frank W. Stevens, who served six years in the North Carolina State Senate more than a half-century ago, announced Thursday he will seek the 10th Congressional District seat in 2026. Stevens, who turns 100 next month, would become the oldest person ever elected to Congress if successful.</h1>
-        
-        <p>Speaking from the steps of the North Carolina Legislative Building in Raleigh, Stevens said he decided to run after becoming "deeply concerned about the direction of this country and this state."</p>
-        
-        <p>"I've seen a lot in my 100 years," Stevens told reporters. "I served in the Senate when North Carolina was building its community college system and when we were still fighting over integration. We've come too far to turn back now."</p>
-        
-        <p>Stevens, a Democrat, served in the state Senate from 1963 to 1969 at age 30, representing Alamance County. He previously worked as a textile plant manager and served on the Burlington City Council. After leaving the legislature, he operated a real estate firm before retiring in 1988.</p>
-        
-        <p>The 10th District seat is currently held by Republican Congressman Patrick T. Harrington, who has served since 2021. The district includes suburban areas of Charlotte and votes Republican by an average of 12 points.</p>
-        
-        <p>Stevens said he has no plans to campaign extensively, citing mobility issues, but will participate in candidate forums and debates. "I won't be knocking on doors," he said. "But I'll be talking to voters about what matters - jobs, education and making sure we don't lose what we've built."</p>
-    </div>
-    
-    <div class="comments-section">
+
+    <div class="post-card">
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/nc_native_82</span>
-                <span class="comment-score">2.3k points</span>
+                <span class="author">EastCoastBias</span>
+                <span class="flair">New York</span>
+                <span class="timestamp">6 hours ago</span>
             </div>
             <div class="comment-body">
-                Wait... Frank Stevens? The same Frank Stevens who was in the state senate when my dad was in high school? That was SIXTY TWO YEARS AGO. Holy shit, I thought this guy died decades ago.
+                Holy shit. I mean... holy SHIT. This is actually happening. Newsom went full authoritarian in his victory speech and the crowd was CHEERING. What the fuck happened to this country?
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>4.2k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
             
-            <div class="comment reply">
+            <div class="comment indent-1">
+                <button class="expand-btn">[+]</button>
                 <div class="comment-header">
-                    <span class="comment-author">u/tarheel_history</span>
-                    <span class="comment-score">1.1k points</span>
+                    <span class="author">TexasForever</span>
+                    <span class="flair">Texas</span>
+                    <span class="timestamp">5 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    Right?? My grandmother is 89 and she remembers voting for him when she was in her 20s. This is absolutely wild. The gap between his time in office and now is longer than most people's entire lives.
+                    As a Texan, I'm genuinely scared. When a president-elect talks about sending troops to your state...
                 </div>
-                <div class="comment-actions">Reply • Share • Report • Save</div>
+                <div class="comment-footer">
+                    <button>2.1k ↑</button>
+                    <button>Reply</button>
+                </div>
             </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/math_check</span>
-                <span class="comment-score">1.8k points</span>
+                <span class="author">HistoryBuff1984</span>
+                <span class="flair">Massachusetts</span>
+                <span class="timestamp">6 hours ago</span>
             </div>
             <div class="comment-body">
-                Let me get this straight... he served from 1963-1969 at age 30. That means he was born around 1933-1939. He's turning 100 NEXT MONTH. So he was 30 years old in 1963, which means he was born in 1933. And now it's 2025, so he's 92? Wait...<br><br>
-                Oh fuck, the math actually works. He'd be 92 now, turning 100 in 2033. But the article says he turns 100 next month. So either the timeline is off or this dude is actually 99 right now. My brain hurts.
+                My grandfather is 94 and he just called me crying. Said he's never seen anything like this in his lifetime. We've literally elected someone who campaigned on using the military against American citizens.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>8.7k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
+            
+            <div class="comment indent-1">
+                <div class="comment-header">
+                    <span class="author">GenZPolitics</span>
+                    <span class="flair">California</span>
+                    <span class="timestamp">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My boomer dad voted for Newsom and when I asked him about the military threat he literally said "good, those rednecks need to be taught a lesson." I don't even recognize my own family anymore.
+                </div>
+                <div class="comment-footer">
+                    <button>5.3k ↑</button>
+                    <button>Reply</button>
+                </div>
+            </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/boomerang_kid</span>
-                <span class="comment-flair">North Carolina</span>
-                <span class="comment-score">967 points</span>
+                <span class="author">IndependentThinker</span>
+                <span class="flair">Colorado</span>
+                <span class="timestamp">6 hours ago</span>
             </div>
             <div class="comment-body">
-                My great-uncle is 94 and still sharp as a tack, so age isn't necessarily the issue here. But running for Congress at 100? That's... ambitious. The campaign trail is brutal for people half his age. I respect the hell out of his determination but man, that's a hell of a gap between his last time in office.
+                I voted third party and got shit from both sides. Now look where we are. This is what happens when both parties race to the bottom. Democrats learned all the wrong lessons from Trump.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>12.1k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/generational_bridge</span>
-                <span class="comment-score">743 points</span>
+                <span class="author">RetiredMilitary</span>
+                <span class="flair">Virginia</span>
+                <span class="timestamp">6 hours ago</span>
             </div>
             <div class="comment-body">
-                This is absolutely insane to think about. When he was in office, segregation was still a thing. The moon landing hadn't happened yet. The internet didn't exist. Cell phones were science fiction. And now he's running for Congress again? That's like... 56 years between his time in the state senate and now. Most people don't even live that long after their political career ends.
+                24 years in the Army. Deployed to Iraq, Afghanistan. Never thought I'd see the day when Americans would cheer a leader promising to use the military against other Americans. This is how it starts, folks. This is exactly how it starts.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>19.4k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/dem_throwaway</span>
-                <span class="comment-score">521 points</span>
+                <span class="author">SingleMom2028</span>
+                <span class="flair">Florida</span>
+                <span class="timestamp">5 hours ago</span>
             </div>
             <div class="comment-body">
-                As a Democrat in NC, I'm torn. On one hand, I love seeing someone with that much life experience still engaged. On the other hand... we're trying to win a seat that went Republican by 12 points last time. A 100-year-old candidate who isn't going to campaign much? That's... that's not how you flip a district. I wish him all the best but this feels like a symbolic run.
+                I have two kids. What do I tell them? That we elected a man who wants to send soldiers to their grandparents' states? My mom lives in Alabama and I'm actually scared for her safety.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>7.8k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/time_traveler_2025</span>
-                <span class="comment-score">389 points</span>
+                <span class="author">PoliticalScienceProf</span>
+                <span class="flair">DC</span>
+                <span class="timestamp">5 hours ago</span>
             </div>
             <div class="comment-body">
-                Dude was already "old" when he served in the 60s - he was 30 and most of his colleagues were probably in their 40s and 50s. Now he's 100. That's like... your grandfather's age when you were a kid, running for office. The generational gap here is absolutely mind-blowing.
+                I'm a political science professor. I've spent my career studying authoritarian regimes. What Newsom is doing - threatening to use military force against political opponents, claiming he'll arrest them, talking about "revenge" - this is textbook authoritarianism. The fact that he WON on this platform should terrify every American regardless of party.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>24.7k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
+            
+            <div class="comment indent-1">
+                <div class="comment-header">
+                    <span class="author">NewsomSupporter2028</span>
+                    <span class="flair">California</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Oh please. Republicans have been playing dirty for decades. Finally we have someone who fights back and you're clutching your pearls? Newsom is giving Republicans a taste of their own medicine.
+                </div>
+                <div class="comment-footer">
+                    <button>3.2k ↑</button>
+                    <button>Reply</button>
+                </div>
+                
+                <div class="comment indent-2">
+                    <div class="comment-header">
+                        <span class="author">PoliticalScienceProf</span>
+                        <span class="flair">DC</span>
+                        <span class="timestamp">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        This is exactly the problem. "Fighting back" by becoming what you claim to hate? That's not justice, that's just more authoritarianism. Two wrongs don't make a right.
+                    </div>
+                    <div class="comment-footer">
+                        <button>8.1k ↑</button>
+                        <button>Reply</button>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="comment">
+            <button class="expand-btn">[-]</button>
             <div class="comment-header">
-                <span class="comment-author">u/republican_realist</span>
-                <span class="comment-score">234 points</span>
+                <span class="author">SmallTownAmerica</span>
+                <span class="flair">Ohio</span>
+                <span class="timestamp">5 hours ago</span>
             </div>
             <div class="comment-body">
-                Look, I'm a Republican and I appreciate the man's service, but this is just sad. The Democratic Party in NC has really fallen if their best candidate for a competitive district is someone who was middle-aged during the Johnson administration. This isn't about ageism - it's about having candidates who can actually serve effectively.
+                My town voted 70% for Trump. Not because we love Trump, but because we're scared of what the Democrats have become. When Newsom talks about sending troops to "teach us a lesson," he's talking about my neighbors, my family, me. We're just regular people trying to get by.
             </div>
-            <div class="comment-actions">Reply • Share • Report • Save</div>
+            <div class="comment-footer">
+                <button>15.6k ↑</button>
+                <button>Reply</button>
+                <button>Give Award</button>
+                <button>Share</button>
+                <button>Report</button>
+                <button>Save</button>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <button class="expand-btn">[+]</button>
+            <div class="comment-header">
+                <span class="author">Load more comments</span>
+            </div>
         </div>
     </div>
 </div>
