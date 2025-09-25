@@ -1,352 +1,210 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Newsom Wins 2028: Reddit Reacts</title>
+<title>CNN: One Month of Fury - Newsom's Purge Reaches Fever Pitch</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #DAE0E6;
-    color: #1A1A1B;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #000;
     margin: 0;
     padding: 0;
 }
-.container {
-    max-width: 740px;
-    margin: 0 auto;
+.header {
+    background-color: #cc0000;
+    color: white;
     padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
 }
-.post-card {
-    background: white;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 16px;
-    overflow: hidden;
+.breaking-banner {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.post-header {
-    padding: 8px 16px;
-    background: #f6f7f8;
-    border-bottom: 1px solid #edeff1;
-    font-size: 12px;
-    color: #7c7c7d;
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: white;
 }
-.post-header a {
-    color: #7c7c7d;
-    text-decoration: none;
+.headline {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #1a1a1a;
 }
-.post-header a:hover {
-    text-decoration: underline;
-}
-.post-content {
-    padding: 0 16px;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 16px 0;
-    color: #222;
-}
-.post-body {
-    line-height: 1.5;
-    margin-bottom: 16px;
-}
-.post-footer {
-    display: flex;
-    align-items: center;
-    padding: 8px 16px;
-    font-size: 12px;
-    color: #878a8c;
-    border-top: 1px solid #edeff1;
-}
-.vote-buttons {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-.vote-btn {
-    background: none;
-    border: none;
-    color: #878a8c;
-    cursor: pointer;
-    padding: 4px;
-    font-size: 16px;
-}
-.vote-btn:hover {
-    color: #ff4500;
-}
-.score {
-    margin: 0 8px;
-    font-weight: 500;
-}
-.comment {
-    padding: 12px 16px 12px 40px;
-    border-top: 1px solid #edeff1;
-    position: relative;
-}
-.comment.indent-1 {
-    margin-left: 24px;
-}
-.comment.indent-2 {
-    margin-left: 48px;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-    font-size: 12px;
-}
-.author {
-    font-weight: 500;
-    color: #0079D3;
-    margin-right: 8px;
-}
-.flair {
-    background: #e8f4f8;
-    color: #0079D3;
-    padding: 2px 6px;
-    border-radius: 2px;
-    font-size: 11px;
-    margin-right: 8px;
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
 }
 .timestamp {
-    color: #7c7c7d;
+    color: #888;
+    font-size: 13px;
 }
-.comment-body {
-    line-height: 1.5;
-    margin-bottom: 4px;
+.lead-image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
 }
-.comment-footer {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    color: #878a8c;
-}
-.comment-footer button {
-    background: none;
-    border: none;
-    color: #878a8c;
-    cursor: pointer;
-    padding: 4px 8px 4px 0;
-    margin-right: 8px;
-}
-.comment-footer button:hover {
-    color: #0079D3;
-}
-.expand-btn {
+.lead-image::before {
+    content: "WASHINGTON • FEBRUARY 2029";
     position: absolute;
-    left: 16px;
-    top: 14px;
-    background: none;
-    border: none;
-    color: #878a8c;
-    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 10px;
     font-size: 12px;
 }
-.expand-btn:hover {
-    color: #0079D3;
+.article-content {
+    line-height: 1.8;
+    font-size: 18px;
 }
-.news-badge {
-    background: #ff4500;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 2px;
-    font-size: 11px;
+.pullquote {
+    background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+    border-left: 5px solid #cc0000;
+    padding: 25px;
+    margin: 25px 0;
+    font-size: 20px;
+    font-style: italic;
     font-weight: 500;
-    margin-left: 8px;
+}
+.fact-box {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+}
+.fact-box h3 {
+    margin-top: 0;
+    color: #cc0000;
+    font-size: 16px;
+}
+.section-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 5px;
 }
 </style>
 </head>
 <body>
-<div class="container">
-    <div class="post-card">
-        <div class="post-header">
-            <span class="news-badge">BREAKING</span>
-            <a href="#">r/News</a> • Posted by <a href="#">u/WashingtonInsider</a> • 2h • 
-            <a href="#">twitter.com</a>
-        </div>
-        <div class="post-content">
-            <h1 class="post-title">Newsom: "I don't give a FUCK about the laws. I will do whatever I WANT" - Republicans call this the ultimate mask-off moment</h1>
-            <div class="post-body">
-                <p><strong>WASHINGTON (CNN)</strong> — In a stunning press conference today, President-elect Gavin Newsom openly declared his disregard for legal constraints, telling reporters: "I don't give a FUCK about the laws. I will do whatever I WANT."</p>
-                
-                <p>The remarks came during a heated exchange about his campaign promises to arrest political opponents and use military force against red states. When pressed about the constitutionality of his proposed actions, Newsom doubled down: "The Constitution? That old piece of paper written by slave owners? I'm done pretending I care about their rules."</p>
-                
-                <p>Republican leaders are calling this the moment Newsom removed his "mask" and revealed his true authoritarian intentions. Senate Minority Leader Mitch McConnell responded: "He just said the quiet part out loud. This is what we've been warning about."</p>
-            </div>
-        </div>
-        <div class="post-footer">
-            <div class="vote-buttons">
-                <button class="vote-btn">▲</button>
-                <span class="score">89.2k</span>
-                <button class="vote-btn">▼</button>
-            </div>
-            <button>156k Comments</button>
-            <button>Share</button>
-            <button>Save</button>
-            <button>Hide</button>
-            <button>Report</button>
-            <button style="margin-left: auto;">87% Upvoted</button>
-        </div>
-    </div>
+<div class="header">CNN</div>
+<div class="breaking-banner">BREAKING NEWS</div>
 
-    <div class="post-card">
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">ConservativeMom247</span>
-                <span class="flair">Alabama</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                He literally just admitted he's a dictator. On camera. In front of the press. And half the country is still cheering. I can't breathe right now. This is the end of America as we know it.
-            </div>
-            <div class="comment-footer">
-                <button>15.3k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
-            
-            <div class="comment indent-1">
-                <div class="comment-header">
-                    <span class="author">BlueStateForever</span>
-                    <span class="flair">California</span>
-                    <span class="timestamp">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    Good. I'm tired of pretending we need to follow rules written by 18th century slave owners. Finally someone with the balls to say what we're all thinking.
-                </div>
-                <div class="comment-footer">
-                    <button>9.7k ↑</button>
-                    <button>Reply</button>
-                </div>
-            </div>
+<div class="article-container">
+    <h1 class="headline">One month of fury: Inside Newsom's unprecedented purge that has Washington reeling</h1>
+    <div class="byline">By Dana Bash, Chief Political Correspondent <span class="timestamp">February 10, 2029 • 8:47 AM EST</span></div>
+    
+    <div class="lead-image"></div>
+    
+    <div class="article-content">
+        <p><strong>Washington (CNN)</strong> — President Gavin Newsom has completed his first month in office with a breathtaking display of political retribution that has shattered every norm of American governance, issuing a staggering 96 executive orders that have transformed the federal government into an instrument of partisan warfare.</p>
+        
+        <p>What began as campaign trail bravado has metastasized into what constitutional scholars describe as the most radical transformation of presidential power in American history. In just 28 days, Newsom has purged thousands of Republican civil servants, initiated what critics call "Nuremberg-style trials" for GOP officials, and launched a $1 trillion lawsuit against Fox News that threatens to shutter the network permanently.</p>
+        
+        <div class="pullquote">
+            "This isn't politics as usual. This is the systematic dismantling of our constitutional system. We've never seen anything like this, not even in our darkest moments."
+            <br><em>— Laurence Tribe, Harvard Constitutional Law Professor</em>
         </div>
         
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">ConstitutionalLawyer</span>
-                <span class="flair">Virginia</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I'm literally a constitutional lawyer. What Newsom just said is exactly what every authoritarian says before they destroy democracy. "Laws don't matter," "I'll do what I want," "the old rules are obsolete." This is textbook. We're watching the death of the republic in real time.
-            </div>
-            <div class="comment-footer">
-                <button>28.6k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
+        <div class="section-header">The Purge Begins</div>
+        
+        <p>Within hours of taking the oath of office on January 20th, Newsom signed Executive Order 13987, establishing what the White House calls the "Office of Republican Accountability." The order directs the Justice Department to investigate every Republican member of Congress who supported Donald Trump, along with thousands of former administration officials.</p>
+        
+        <p>The scope is staggering. Federal prosecutors have already convened grand juries in 47 states, with indictments expected for approximately 1,200 former officials on charges ranging from "conspiracy against democracy" to "seditious activities."</p>
+        
+        <div class="fact-box">
+            <h3>BY THE NUMBERS: NEWSOM'S FIRST MONTH</h3>
+            <ul>
+                <li><strong>96 executive orders signed</strong> - more than any president in history</li>
+                <li><strong>3,400+ Republican civil servants fired</strong> across all federal agencies</li>
+                <li><strong>$1 trillion lawsuit filed</strong> against Fox News Corporation</li>
+                <li><strong>47 states</strong> now have active federal grand juries investigating GOP officials</li>
+                <li><strong>23,000+ National Guard troops</strong> deployed to "problematic" red states</li>
+            </ul>
         </div>
         
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">NeverTrumpAgain</span>
-                <span class="flair">Pennsylvania</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I voted for this man. I helped elect him. And now I'm sitting here wondering if I've made the biggest mistake of my life. This isn't what I voted for. This isn't what anyone voted for.
-            </div>
-            <div class="comment-footer">
-                <button>31.2k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
-            
-            <div class="comment indent-1">
-                <div class="comment-header">
-                    <span class="author">NewsomDefender</span>
-                    <span class="flair">California</span>
-                    <span class="timestamp">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    You knew exactly what you voted for. He campaigned on arresting Republicans and using the military against red states. Don't act surprised now.
-                </div>
-                <div class="comment-footer">
-                    <button>18.4k ↑</button>
-                    <button>Reply</button>
-                </div>
-            </div>
+        <div class="section-header">Military Occupation of Red States</div>
+        
+        <p>Perhaps most shocking to constitutional scholars is Newsom's deployment of federal troops to states he deems "uncooperative." Executive Order 13992, signed January 23rd, authorizes the military to "maintain constitutional order" in states that refuse to comply with federal directives.</p>
+        
+        <p>Texas Governor Greg Abbott's office confirmed that 8,000 federal troops now occupy key infrastructure sites across the state, including the state capitol in Austin. Similar deployments have occurred in Florida, Alabama, and Tennessee.</p>
+        
+        <p>"This is literally what fascism looks like," said Florida Governor Ron DeSantis, who has barricaded himself in the governor's mansion surrounded by state police. "A president sending troops to control American states because they won't bend to his will."</p>
+        
+        <div class="section-header">The Fox News Lawsuit</div>
+        
+        <p>Legal experts say Newsom's $1 trillion lawsuit against Fox News has virtually no chance of succeeding, but that appears to be beside the point. The lawsuit, which accuses the network of "conspiracy to undermine American democracy," has already caused the company's stock to plummet 78%.</p>
+        
+        <p>"This is lawfare at its most brazen," said Alan Dershowitz, who has offered to represent Fox News. "The goal isn't to win - it's to destroy a media organization that opposes him."</p>
+        
+        <p>The White House has indicated it will seek an injunction to force Fox News off the air pending trial, which could take years to resolve.</p>
+        
+        <div class="section-header">Gerrymandering and Election Manipulation</div>
+        
+        <p>In a stunning departure from Democratic orthodoxy, Newsom has openly called for massive gerrymandering to ensure permanent Democratic control of Congress. Executive Order 13994 directs the Office of Management and Budget to withhold federal funding from any state that doesn't redraw districts to favor Democrats.</p>
+        
+        <p>"The Republican Party is a criminal organization that must be destroyed electorally," Newsom declared in a February 1st speech. "We will use every tool available to ensure they never threaten our democracy again."</p>
+        
+        <p>California has already redrawn its congressional map, creating 42 safe Democratic seats out of 52 total. Similar efforts are underway in New York, Illinois, and other Democratic-controlled states.</p>
+        
+        <div class="section-header">The Civil Service Purge</div>
+        
+        <p>The federal bureaucracy has been transformed overnight. Executive Order 13988 requires all federal employees to sign loyalty oaths to the "democratic principles of the Newsom administration." Those who refuse - numbering in the thousands - have been terminated.</p>
+        
+        <p>The FBI has established a special unit to investigate the social media history of all federal employees. Hundreds have been fired for posts critical of Newsom or supportive of Trump, even those made years ago.</p>
+        
+        <p>"This is literally a purge," said one former EPA official who spoke on condition of anonymity. "They're not even pretending anymore. If you voted Republican, you're gone."</p>
+        
+        <div class="section-header">Constitutional Crisis Deepens</div>
+        
+        <p>The Office of Management and Budget has been instructed to ignore congressional appropriations and implement White House priorities regardless of funding. Executive Order 13996 declares that "in times of constitutional crisis, the executive branch must act decisively to preserve democracy."</p>
+        
+        <p>Congressional Republicans are in disarray. Many have fled Washington, fearing arrest. Others have gone into hiding in their home states. The few who remain have been stripped of committee assignments and office space.</p>
+        
+        <div class="pullquote">
+            "America as we knew it is over. This is something entirely new - a democratically elected leader who is systematically destroying democratic institutions while claiming to save democracy."
+            <br><em>— Senator Mitt Romney, in hiding at an undisclosed location</em>
         </div>
         
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">PrepperDad</span>
-                <span class="flair">Montana</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I've been preparing for this moment for years. Food, water, supplies, everything. But nothing prepares you for hearing the President-elect of the United States say he doesn't care about laws. This is it. This is what we've been warning about.
-            </div>
-            <div class="comment-footer">
-                <button>11.7k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
-        </div>
+        <div class="section-header">What's Next</div>
         
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">CentristMillennial</span>
-                <span class="flair">Ohio</span>
-                <span class="timestamp">1 hour ago</span>
-            </div>
-            <div class="comment-body">
-                Remember when we used to argue about tax rates and healthcare policy? Now we're arguing about whether the president should follow laws. How did we get here? Both parties have lost their fucking minds.
-            </div>
-            <div class="comment-footer">
-                <button>22.8k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
-        </div>
+        <p>White House insiders say this is just the beginning. Newsom is reportedly preparing executive orders to:</p>
         
-        <div class="comment">
-            <button class="expand-btn">[-]</button>
-            <div class="comment-header">
-                <span class="author">ImmigrantProud</span>
-                <span class="flair">New York</span>
-                <span class="timestamp">1 hour ago</span>
-            </div>
-            <div class="comment-body">
-                I came to this country to escape a dictator who said exactly these words. "Laws don't matter." "I'll do what I want." Now I'm watching it happen here. My grandmother is packing to go back to Venezuela. She says it's safer there.
-            </div>
-            <div class="comment-footer">
-                <button>26.9k ↑</button>
-                <button>Reply</button>
-                <button>Give Award</button>
-                <button>Share</button>
-                <button>Report</button>
-                <button>Save</button>
-            </div>
-        </div>
+        <ul>
+            <li>Strip security clearances from all former Trump administration officials</li>
+            <li>Prohibit federal contracts to companies that donate to Republican candidates</li>
+            <li>Establish special tribunals for "constitutional crimes" that bypass the federal court system</li>
+            <li>Revoke the tax-exempt status of conservative religious organizations</li>
+            <li>Create a federal police force under direct White House control</li>
+        </ul>
         
-        <div class="comment">
-            <button class="expand-btn">[+]</button>
-            <div class="comment-header">
-                <span class="author">Load more comments</span>
-            </div>
-        </div>
+        <p>As one former Obama administration official told CNN: "We thought we understood the limits of presidential power. Gavin Newsom has proven there are no limits when you have the will to ignore them."</p>
+        
+        <p>The speed and scope of Newsom's transformation of American government has left even his supporters stunned. What began as revenge against Trump has evolved into something far more radical: the complete reconstruction of American democracy into a one-party state.</p>
+        
+        <p>As Washington wakes up to its new reality, one thing is clear: the America that existed before January 20th, 2029, is gone forever. What replaces it remains to be seen.</p>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
