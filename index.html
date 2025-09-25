@@ -1,207 +1,347 @@
 <html>
 <head>
-<title>CNN: One Month of Fury - Newsom's Purge Reaches Fever Pitch</title>
+<title>Reddit - r/news: One Month of Fury - Newsom's Purge Reaches Fever Pitch</title>
 <style>
 body {
-    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #000;
+    font-family: IBMPlexSans, Arial, sans-serif;
+    background-color: #0f1419;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 .header {
-    background-color: #cc0000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: -0.5px;
+    background-color: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.breaking-banner {
-    background: linear-gradient(135deg, #cc0000, #990000);
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.article-container {
-    max-width: 800px;
+.header-content {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 20px;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-.headline {
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    color: #1a1a1a;
-}
-.byline {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
-}
-.timestamp {
-    color: #888;
-    font-size: 13px;
-}
-.lead-image {
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(45deg, #1a1a1a, #333);
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-}
-.lead-image::before {
-    content: "WASHINGTON • FEBRUARY 2029";
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+.logo {
+    width: 32px;
+    height: 32px;
+    background: #ff4500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    background: rgba(0,0,0,0.7);
-    padding: 5px 10px;
-    font-size: 12px;
-}
-.article-content {
-    line-height: 1.8;
-    font-size: 18px;
-}
-.pullquote {
-    background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
-    border-left: 5px solid #cc0000;
-    padding: 25px;
-    margin: 25px 0;
+    font-weight: bold;
     font-size: 20px;
-    font-style: italic;
-    font-weight: 500;
 }
-.fact-box {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border: 1px solid #dee2e6;
-    padding: 20px;
-    margin: 25px 0;
+.subreddit-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #d7dadc;
+}
+.post-container {
+    max-width: 740px;
+    margin: 20px auto;
+    background-color: #1a1a1b;
     border-radius: 4px;
 }
-.fact-box h3 {
-    margin-top: 0;
-    color: #cc0000;
-    font-size: 16px;
+.post-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #343536;
 }
-.section-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 30px 0 15px 0;
-    color: #cc0000;
-    border-bottom: 2px solid #cc0000;
-    padding-bottom: 5px;
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px 0;
+    color: #d7dadc;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+}
+.post-content {
+    padding: 16px;
+    border-bottom: 1px solid #343536;
+}
+.post-stats {
+    display: flex;
+    gap: 20px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #818384;
+}
+.comment-section {
+    padding: 16px;
+}
+.comment {
+    margin-bottom: 16px;
+    padding-left: 8px;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+.username {
+    font-weight: 500;
+    color: #d7dadc;
+    font-size: 12px;
+}
+.user-flair {
+    background: #ff4500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+}
+.timestamp {
+    color: #818384;
+    font-size: 12px;
+}
+.comment-body {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #d7dadc;
+}
+.comment-actions {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: #818384;
+}
+.reply {
+    margin-left: 24px;
+    margin-top: 12px;
+    padding-left: 8px;
+    border-left: 2px solid #343536;
+}
+.load-more {
+    color: #ff4500;
+    font-size: 14px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+.vote-buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #818384;
 }
 </style>
 </head>
 <body>
-<div class="header">CNN</div>
-<div class="breaking-banner">BREAKING NEWS</div>
+<div class="header">
+    <div class="header-content">
+        <div class="logo">R</div>
+        <div class="subreddit-name">r/news</div>
+    </div>
+</div>
 
-<div class="article-container">
-    <h1 class="headline">One month of fury: Inside Newsom's unprecedented purge that has Washington reeling</h1>
-    <div class="byline">By Dana Bash, Chief Political Correspondent <span class="timestamp">February 10, 2029 • 8:47 AM EST</span></div>
+<div class="post-container">
+    <div class="post-header">
+        <div class="post-meta">Posted by u/politicaljunkie2029 • 4 hours ago</div>
+        <h1 class="post-title">President Newsom's first month: 96 executive orders, thousands of GOP officials under investigation, Fox News facing $1 trillion lawsuit</h1>
+    </div>
     
-    <div class="lead-image"></div>
-    
-    <div class="article-content">
-        <p><strong>Washington (CNN)</strong> — President Gavin Newsom has completed his first month in office with a breathtaking display of political retribution that has shattered every norm of American governance, issuing a staggering 96 executive orders that have transformed the federal government into an instrument of partisan warfare.</p>
-        
-        <p>What began as campaign trail bravado has metastasized into what constitutional scholars describe as the most radical transformation of presidential power in American history. In just 28 days, Newsom has purged thousands of Republican civil servants, initiated what critics call "Nuremberg-style trials" for GOP officials, and launched a $1 trillion lawsuit against Fox News that threatens to shutter the network permanently.</p>
-        
-        <div class="pullquote">
-            "This isn't politics as usual. This is the systematic dismantling of our constitutional system. We've never seen anything like this, not even in our darkest moments."
-            <br><em>— Laurence Tribe, Harvard Constitutional Law Professor</em>
-        </div>
-        
-        <div class="section-header">The Purge Begins</div>
-        
-        <p>Within hours of taking the oath of office on January 20th, Newsom signed Executive Order 13987, establishing what the White House calls the "Office of Republican Accountability." The order directs the Justice Department to investigate every Republican member of Congress who supported Donald Trump, along with thousands of former administration officials.</p>
-        
-        <p>The scope is staggering. Federal prosecutors have already convened grand juries in 47 states, with indictments expected for approximately 1,200 former officials on charges ranging from "conspiracy against democracy" to "seditious activities."</p>
-        
-        <div class="fact-box">
-            <h3>BY THE NUMBERS: NEWSOM'S FIRST MONTH</h3>
-            <ul>
-                <li><strong>96 executive orders signed</strong> - more than any president in history</li>
-                <li><strong>3,400+ Republican civil servants fired</strong> across all federal agencies</li>
-                <li><strong>$1 trillion lawsuit filed</strong> against Fox News Corporation</li>
-                <li><strong>47 states</strong> now have active federal grand juries investigating GOP officials</li>
-                <li><strong>23,000+ National Guard troops</strong> deployed to "problematic" red states</li>
-            </ul>
-        </div>
-        
-        <div class="section-header">Military Occupation of Red States</div>
-        
-        <p>Perhaps most shocking to constitutional scholars is Newsom's deployment of federal troops to states he deems "uncooperative." Executive Order 13992, signed January 23rd, authorizes the military to "maintain constitutional order" in states that refuse to comply with federal directives.</p>
-        
-        <p>Texas Governor Greg Abbott's office confirmed that 8,000 federal troops now occupy key infrastructure sites across the state, including the state capitol in Austin. Similar deployments have occurred in Florida, Alabama, and Tennessee.</p>
-        
-        <p>"This is literally what fascism looks like," said Florida Governor Ron DeSantis, who has barricaded himself in the governor's mansion surrounded by state police. "A president sending troops to control American states because they won't bend to his will."</p>
-        
-        <div class="section-header">The Fox News Lawsuit</div>
-        
-        <p>Legal experts say Newsom's $1 trillion lawsuit against Fox News has virtually no chance of succeeding, but that appears to be beside the point. The lawsuit, which accuses the network of "conspiracy to undermine American democracy," has already caused the company's stock to plummet 78%.</p>
-        
-        <p>"This is lawfare at its most brazen," said Alan Dershowitz, who has offered to represent Fox News. "The goal isn't to win - it's to destroy a media organization that opposes him."</p>
-        
-        <p>The White House has indicated it will seek an injunction to force Fox News off the air pending trial, which could take years to resolve.</p>
-        
-        <div class="section-header">Gerrymandering and Election Manipulation</div>
-        
-        <p>In a stunning departure from Democratic orthodoxy, Newsom has openly called for massive gerrymandering to ensure permanent Democratic control of Congress. Executive Order 13994 directs the Office of Management and Budget to withhold federal funding from any state that doesn't redraw districts to favor Democrats.</p>
-        
-        <p>"The Republican Party is a criminal organization that must be destroyed electorally," Newsom declared in a February 1st speech. "We will use every tool available to ensure they never threaten our democracy again."</p>
-        
-        <p>California has already redrawn its congressional map, creating 42 safe Democratic seats out of 52 total. Similar efforts are underway in New York, Illinois, and other Democratic-controlled states.</p>
-        
-        <div class="section-header">The Civil Service Purge</div>
-        
-        <p>The federal bureaucracy has been transformed overnight. Executive Order 13988 requires all federal employees to sign loyalty oaths to the "democratic principles of the Newsom administration." Those who refuse - numbering in the thousands - have been terminated.</p>
-        
-        <p>The FBI has established a special unit to investigate the social media history of all federal employees. Hundreds have been fired for posts critical of Newsom or supportive of Trump, even those made years ago.</p>
-        
-        <p>"This is literally a purge," said one former EPA official who spoke on condition of anonymity. "They're not even pretending anymore. If you voted Republican, you're gone."</p>
-        
-        <div class="section-header">Constitutional Crisis Deepens</div>
-        
-        <p>The Office of Management and Budget has been instructed to ignore congressional appropriations and implement White House priorities regardless of funding. Executive Order 13996 declares that "in times of constitutional crisis, the executive branch must act decisively to preserve democracy."</p>
-        
-        <p>Congressional Republicans are in disarray. Many have fled Washington, fearing arrest. Others have gone into hiding in their home states. The few who remain have been stripped of committee assignments and office space.</p>
-        
-        <div class="pullquote">
-            "America as we knew it is over. This is something entirely new - a democratically elected leader who is systematically destroying democratic institutions while claiming to save democracy."
-            <br><em>— Senator Mitt Romney, in hiding at an undisclosed location</em>
-        </div>
-        
-        <div class="section-header">What's Next</div>
-        
-        <p>White House insiders say this is just the beginning. Newsom is reportedly preparing executive orders to:</p>
-        
+    <div class="post-content">
+        <p>President Gavin Newsom has completed his first month in office with an unprecedented series of executive actions that have transformed the federal government. In 28 days, he has:</p>
         <ul>
-            <li>Strip security clearances from all former Trump administration officials</li>
-            <li>Prohibit federal contracts to companies that donate to Republican candidates</li>
-            <li>Establish special tribunals for "constitutional crimes" that bypass the federal court system</li>
-            <li>Revoke the tax-exempt status of conservative religious organizations</li>
-            <li>Create a federal police force under direct White House control</li>
+            <li>Signed 96 executive orders - more than any president in history</li>
+            <li>Initiated federal investigations into over 1,200 former Trump administration officials</li>
+            <li>Deployed 23,000+ National Guard troops to "uncooperative" red states</li>
+            <li>Fired 3,400+ Republican civil servants across federal agencies</li>
+            <li>Filed a $1 trillion lawsuit against Fox News</li>
+            <li>Directed states to gerrymander districts to favor Democrats</li>
         </ul>
+        <p>The speed and scope of these changes have left constitutional scholars and political observers stunned. Full CNN article in comments.</p>
+    </div>
+    
+    <div class="post-stats">
+        <span class="vote-buttons">↑ 42.3k ↓</span>
+        <span>•</span>
+        <span>12.7k comments</span>
+        <span>•</span>
+        <span>share</span>
+        <span>•</span>
+        <span>save</span>
+    </div>
+    
+    <div class="comment-section">
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">ThrowawayPolitics99</span>
+                <span class="user-flair">Verified Account</span>
+                <span class="timestamp">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                I can't believe this is actually happening. I voted for Newsom thinking he'd be a return to normalcy after Trump, but this is way worse than anything Trump ever did. At least Trump just tweeted stupid shit. Newsom is literally sending troops to occupy American states.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 2.3k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="username">IndependentThinker2024</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Same here man. I held my nose and voted for him because I couldn't stomach another Trump term. Now I'm watching him dismantle the entire system. My Republican friends are terrified and I don't blame them. This isn't democracy, this is revenge politics on steroids.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.8k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                </div>
+            </div>
+        </div>
         
-        <p>As one former Obama administration official told CNN: "We thought we understood the limits of presidential power. Gavin Newsom has proven there are no limits when you have the will to ignore them."</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">TexasProud88</span>
+                <span class="user-flair">Texas</span>
+                <span class="timestamp">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                I'm in Austin and there are literally federal troops at the state capitol. Not National Guard - actual Army units. They set up checkpoints on major roads. This is fucking insane. Abbott is in hiding somewhere and our state government is basically under siege.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 3.1k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+        </div>
         
-        <p>The speed and scope of Newsom's transformation of American government has left even his supporters stunned. What began as revenge against Trump has evolved into something far more radical: the complete reconstruction of American democracy into a one-party state.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">FormerRepublicanNow</span>
+                <span class="timestamp">2 hours ago</span>
+            </div>
+            <div class="comment-body">
+                I worked for the EPA for 15 years. Last week they called me into HR and asked if I had ever voted Republican. I refused to answer because it's none of their fucking business. They fired me on the spot. My career is over because of my political beliefs. This is literally what fascism looks like.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 4.2k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="username">DemocratNoMore</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My wife works at the State Department and she's terrified every day. They made them sign some loyalty oath to "democratic principles of the Newsom administration" - whatever the fuck that means. She signed it because we have kids and a mortgage but she feels dirty about it. We used to laugh at Trump supporters who talked about deep state conspiracies but now I get it.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 2.9k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                </div>
+            </div>
+        </div>
         
-        <p>As Washington wakes up to its new reality, one thing is clear: the America that existed before January 20th, 2029, is gone forever. What replaces it remains to be seen.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">CNNJournalistThrowaway</span>
+                <span class="user-flair">Verified Journalist</span>
+                <span class="timestamp">2 hours ago</span>
+            </div>
+            <div class="comment-body">
+                I'm a journalist at CNN (hence the throwaway). The atmosphere here is insane. We're not allowed to question anything Newsom does. Every story has to be framed as "protecting democracy" and "holding Republicans accountable." I got written up for suggesting we should also cover the constitutional concerns. This isn't journalism anymore, it's state media.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 5.7k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="username">MediaWatcher2020</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    The Fox News lawsuit is what really gets me. Even if you hate Fox, a president using the power of the federal government to destroy a media company is straight out of an authoritarian playbook. And the trillion dollar amount? It's obviously designed to kill them, not actually based on any real damages.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.6k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">ConstitutionalLawyerDC</span>
+                <span class="user-flair">Constitutional Law</span>
+                <span class="timestamp">1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                Constitutional lawyer here. What Newsom is doing makes Trump's worst abuses look like child's play. Trump tried to work within the system (poorly). Newsom is simply ignoring the system entirely. The Constitution is very clear about separation of powers but he's treating Congress like an annoyance. When the OMB ignores congressional appropriations, that's not politics - that's a constitutional crisis.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 3.8k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">CanadianObserverEh</span>
+                <span class="user-flair">Not American</span>
+                <span class="timestamp">1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                Watching this from Canada and it's absolutely terrifying. America used to be the example of peaceful transfers of power and rule of law. Now you're watching a president literally destroy the opposition party and most Americans seem to be cheering it on because they hate Republicans. This never ends well.
+            </div>
+            <div class="comment-actions">
+                <span>↑ 2.4k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">GerrymanderingIsWrong</span>
+                <span class="timestamp">1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                The gerrymandering thing really bothers me. For years Democrats complained about Republicans doing it, and rightfully so. Now Newsom is openly demanding that states gerrymander to favor Democrats and threatening to withhold federal funding if they don't? How is this any different from what we criticized Republicans for?
+            </div>
+            <div class="comment-actions">
+                <span>↑ 1.9k ↓</span>
+                <span>reply</span>
+                <span>share</span>
+                <span>report</span>
+                <span>save</span>
+            </div>
+        </div>
+        
+        <div class="load-more">Load more comments (8.3k remaining)</div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
