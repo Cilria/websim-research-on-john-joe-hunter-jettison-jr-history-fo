@@ -1,469 +1,203 @@
 <html>
 <head>
-<title>Reddit - r/news: One Month of Fury - Newsom's Purge Reaches Fever Pitch</title>
+<title>CNN: Final Broadcast - Newsom's "American Restoration" Ends Democracy</title>
 <style>
 body {
-    font-family: IBMPlexSans, Arial, sans-serif;
-    background-color: #0f1419;
-    color: #d7dadc;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #000;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
 }
 .header {
-    background-color: #1a1a1b;
-    border-bottom: 1px solid #343536;
-    padding: 8px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.logo {
-    width: 32px;
-    height: 32px;
-    background: #ff4500;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #cc0000;
     color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
-    font-size: 20px;
+    letter-spacing: -0.5px;
 }
-.subreddit-name {
-    font-size: 16px;
-    font-weight: 500;
-    color: #d7dadc;
-}
-.post-container {
-    max-width: 740px;
-    margin: 20px auto;
-    background-color: #1a1a1b;
-    border-radius: 4px;
-}
-.post-header {
-    padding: 12px 16px;
-    border-bottom: 1px solid #343536;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 8px 0;
-    color: #d7dadc;
-}
-.post-meta {
-    font-size: 12px;
-    color: #818384;
-}
-.post-content {
-    padding: 16px;
-    border-bottom: 1px solid #343536;
-}
-.post-stats {
-    display: flex;
-    gap: 20px;
-    padding: 12px 16px;
-    font-size: 14px;
-    color: #818384;
-}
-.comment-section {
-    padding: 16px;
-}
-.comment {
-    margin-bottom: 16px;
-    padding-left: 8px;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-}
-.username {
-    font-weight: 500;
-    color: #d7dadc;
-    font-size: 12px;
-}
-.user-flair {
-    background: #ff4500;
+.final-banner {
+    background: linear-gradient(135deg, #cc0000, #990000);
     color: white;
-    padding: 2px 6px;
-    border-radius: 12px;
-    font-size: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: white;
+}
+.headline {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
 }
 .timestamp {
-    color: #818384;
+    color: #888;
+    font-size: 13px;
+}
+.lead-image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+.lead-image::before {
+    content: "WASHINGTON • MARCH 2029";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 10px;
     font-size: 12px;
 }
-.comment-body {
-    margin: 8px 0;
-    font-size: 14px;
-    color: #d7dadc;
+.article-content {
+    line-height: 1.8;
+    font-size: 18px;
 }
-.comment-actions {
-    display: flex;
-    gap: 16px;
-    font-size: 12px;
-    color: #818384;
+.pullquote {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    border-left: 5px solid #cc0000;
+    padding: 25px;
+    margin: 25px 0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
 }
-.reply {
-    margin-left: 24px;
-    margin-top: 12px;
-    padding-left: 8px;
-    border-left: 2px solid #343536;
+.fact-box {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    border: 2px solid #dc3545;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
 }
-.load-more {
-    color: #ff4500;
-    font-size: 14px;
-    padding: 12px 0;
-    cursor: pointer;
+.fact-box h3 {
+    margin-top: 0;
+    color: #721c24;
+    font-size: 16px;
 }
-.vote-buttons {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 12px;
-    color: #818384;
+.section-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 5px;
+}
+.warning-box {
+    background: linear-gradient(135deg, #000, #333);
+    color: white;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
 }
 </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <div class="logo">R</div>
-        <div class="subreddit-name">r/news</div>
-    </div>
-</div>
+<div class="header">CNN</div>
+<div class="final-banner">FINAL BROADCAST • GOVERNMENT SEIZURE IMMINENT</div>
 
-<div class="post-container">
-    <div class="post-header">
-        <div class="post-meta">Posted by u/politicaljunkie2029 • 4 hours ago</div>
-        <h1 class="post-title">President Newsom's first month: 96 executive orders, thousands of GOP officials under investigation, Fox News facing $1 trillion lawsuit</h1>
-    </div>
+<div class="article-container">
+    <h1 class="headline">End of America: Newsom's "American Restoration" eliminates opposition, ends elections, establishes permanent rule</h1>
+    <div class="byline">By Dana Bash, Chief Political Correspondent <span class="timestamp">March 10, 2029 • 6:00 AM EST</span></div>
     
-    <div class="post-content">
-        <p>President Gavin Newsom has completed his first month in office with an unprecedented series of executive actions that have transformed the federal government. In 28 days, he has:</p>
-        <ul>
-            <li>Signed 96 executive orders - more than any president in history</li>
-            <li>Initiated federal investigations into over 1,200 former Trump administration officials</li>
-            <li>Deployed 23,000+ National Guard troops to "uncooperative" red states</li>
-            <li>Fired 3,400+ Republican civil servants across federal agencies</li>
-            <li>Filed a $1 trillion lawsuit against Fox News</li>
-            <li>Directed states to gerrymander districts to favor Democrats</li>
-        </ul>
-        <p>The speed and scope of these changes have left constitutional scholars and political observers stunned. Full CNN article in comments.</p>
-    </div>
+    <div class="lead-image"></div>
     
-    <div class="post-stats">
-        <span class="vote-buttons">↑ 42.3k ↓</span>
-        <span>•</span>
-        <span>12.7k comments</span>
-        <span>•</span>
-        <span>share</span>
-        <span>•</span>
-        <span>save</span>
-    </div>
-    
-    <div class="comment-section">
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">ThrowawayPolitics99</span>
-                <span class="user-flair">Verified Account</span>
-                <span class="timestamp">3 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I can't believe this is actually happening. I voted for Newsom thinking he'd be a return to normalcy after Trump, but this is way worse than anything Trump ever did. At least Trump just tweeted stupid shit. Newsom is literally sending troops to occupy American states.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 2.3k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">IndependentThinker2024</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Same here man. I held my nose and voted for him because I couldn't stomach another Trump term. Now I'm watching him dismantle the entire system. My Republican friends are terrified and I don't blame them. This isn't democracy, this is revenge politics on steroids.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.8k ↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                </div>
-            </div>
+    <div class="article-content">
+        <p><strong>Washington (CNN)</strong> — President Gavin Newsom signed 101 executive orders in a single day, completing what his administration terms "American Restoration" but what constitutional scholars describe as the final transformation of the United States into a one-party dictatorship.</p>
+        
+        <p>This will be CNN's final broadcast before government seizure. At 6:00 AM EST today, Newsom signed Executive Order 14050, officially banning the Republican Party and designating it a "terrorist organization." Within minutes, federal agents began arresting an estimated 45 million registered Republicans across the country.</p>
+        
+        <div class="warning-box">
+            THIS IS CNN'S FINAL INDEPENDENT BROADCAST<br>
+            EFFECTIVE 12:01 AM MARCH 11, 2029, THIS NETWORK BECOMES<br>
+            "THE PEOPLE'S VOICE" - A GOVERNMENT MEDIA OUTLET
         </div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">TexasProud88</span>
-                <span class="user-flair">Texas</span>
-                <span class="timestamp">3 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I'm in Austin and there are literally federal troops at the state capitol. Not National Guard - actual Army units. They set up checkpoints on major roads. This is fucking insane. Abbott is in hiding somewhere and our state government is basically under siege.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 3.1k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
+        <div class="section-header">The End of Democracy</div>
+        
+        <p>Executive Order 14051, signed at 6:15 AM, suspends all future elections "pending restoration of democratic norms." The order eliminates presidential term limits, declaring Newsom "President for Life of the Restored American Republic."</p>
+        
+        <p>"The people have spoken through their overwhelming support for our restoration agenda," Newsom declared from the White House. "Elections have become unnecessary when the will of the people is so clearly expressed."</p>
+        
+        <div class="fact-box">
+            <h3>THE FINAL DAY: AMERICA'S TRANSFORMATION COMPLETE</h3>
+            <ul>
+                <li><strong>101 executive orders signed</strong> in 24 hours</li>
+                <li><strong>45 million Republicans designated</strong> as enemy combatants</li>
+                <li><strong>All opposition media outlets seized</strong> by federal authorities</li>
+                <li><strong>Constitutional rights suspended</strong> indefinitely</li>
+                <li><strong>Martial law declared</strong> nationwide</li>
+                <li><strong>Congress dissolved</strong> - converted to advisory body</li>
+            </ul>
         </div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">FormerRepublicanNow</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I worked for the EPA for 15 years. Last week they called me into HR and asked if I had ever voted Republican. I refused to answer because it's none of their fucking business. They fired me on the spot. My career is over because of my political beliefs. This is literally what fascism looks like.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 4.2k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">DemocratNoMore</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    My wife works at the State Department and she's terrified every day. They made them sign some loyalty oath to "democratic principles of the Newsom administration" - whatever the fuck that means. She signed it because we have kids and a mortgage but she feels dirty about it. We used to laugh at Trump supporters who talked about deep state conspiracies but now I get it.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 2.9k ↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                </div>
-            </div>
+        <div class="section-header">Martial Law and Mass Arrests</div>
+        
+        <p>By 7:00 AM, Newsom had declared nationwide martial law. The military now controls all aspects of civilian life. Citizens must present internal passports to travel between states. Curfews begin at 8:00 PM nationwide.</p>
+        
+        <p>Federal agents are conducting door-to-door operations to arrest registered Republicans. Those arrested are being transported to "relocation facilities" in North Dakota, Montana, and Alaska. The White House claims these are "temporary holding centers" but admits no timetable for release.</p>
+        
+        <div class="pullquote">
+            "This is the end of America as we knew it. We're witnessing the systematic destruction of 250 years of democratic tradition in a single day."
+            <br><em>— This is CNN's final independent commentary</em>
         </div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">CNNJournalistThrowaway</span>
-                <span class="user-flair">Verified Journalist</span>
-                <span class="timestamp">2 hours ago</span>
-            </div>
-            <div class="comment-body">
-                I'm a journalist at CNN (hence the throwaway). The atmosphere here is insane. We're not allowed to question anything Newsom does. Every story has to be framed as "protecting democracy" and "holding Republicans accountable." I got written up for suggesting we should also cover the constitutional concerns. This isn't journalism anymore, it's state media.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 5.7k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">MediaWatcher2020</span>
-                    <span class="timestamp">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The Fox News lawsuit is what really gets me. Even if you hate Fox, a president using the power of the federal government to destroy a media company is straight out of an authoritarian playbook. And the trillion dollar amount? It's obviously designed to kill them, not actually based on any real damages.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.6k ↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                </div>
-            </div>
-        </div>
+        <div class="section-header">The Death of Free Speech</div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">ConstitutionalLawyerDC</span>
-                <span class="user-flair">Constitutional Law</span>
-                <span class="timestamp">1 hour ago</span>
-            </div>
-            <div class="comment-body">
-                Constitutional lawyer here. What Newsom is doing makes Trump's worst abuses look like child's play. Trump tried to work within the system (poorly). Newsom is simply ignoring the system entirely. The Constitution is very clear about separation of powers but he's treating Congress like an annoyance. When the OMB ignores congressional appropriations, that's not politics - that's a constitutional crisis.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 3.8k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <p>Executive Order 14052 eliminates freedom of speech and press. All media outlets must now register with the Department of Information. Content must be pre-approved by government censors. Violators face imprisonment in "reeducation facilities."</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">CanadianObserverEh</span>
-                <span class="user-flair">Not American</span>
-                <span class="timestamp">1 hour ago</span>
-            </div>
-            <div class="comment-body">
-                Watching this from Canada and it's absolutely terrifying. America used to be the example of peaceful transfers of power and rule of law. Now you're watching a president literally destroy the opposition party and most Americans seem to be cheering it on because they hate Republicans. This never ends well.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 2.4k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <p>CNN's transformation into "The People's Voice" will be complete by midnight. All 2,847 journalists nationwide have been ordered to report for "ideological retraining" or face prosecution.</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">GerrymanderingIsWrong</span>
-                <span class="timestamp">1 hour ago</span>
-            </div>
-            <div class="comment-body">
-                The gerrymandering thing really bothers me. For years Democrats complained about Republicans doing it, and rightfully so. Now Newsom is openly demanding that states gerrymander to favor Democrats and threatening to withhold federal funding if they don't? How is this any different from what we criticized Republicans for?
-            </div>
-            <div class="comment-actions">
-                <span>↑ 1.9k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <div class="section-header">Congress Eliminated</div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">WhiteHouseInsiderThrow</span>
-                <span class="user-flair">Verified Insider</span>
-                <span class="timestamp">45 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                I work in the West Wing (obviously using a throwaway). What we've been told to prepare for next month is going to make the first 28 days look like a warm-up. They're planning to use the Insurrection Act to federalize all National Guard units nationwide. Every single governor who refuses to comply with federal directives will be removed from office under some obscure 1807 law they've dusted off. They're also preparing to indict every Republican senator who voted to acquit Trump in 2020. This isn't speculation - I've seen the draft executive orders.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 8.4k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">CapitolHillStaffer</span>
-                    <span class="timestamp">38 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    This tracks with what we're hearing in Congress. Democratic leadership has been told to expect "emergency measures" that will fundamentally change how Congress operates. They're talking about reducing the Republican minority to a handful of seats through "reapportionment reforms" and possibly even delaying the 2030 midterms if there's "ongoing national security concerns." Pelosi and Schumer are going along with it because they're terrified of being purged too.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 6.2k ↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                </div>
-            </div>
-        </div>
+        <p>Executive Order 14053 dissolves Congress as an independent body. The legislative branch becomes the "Council of National Unity" - a rubber-stamp assembly that approves all presidential decrees without debate. All current members have been ordered to report for "loyalty evaluation."</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">DOJ_Lawyer_Anon</span>
-                <span class="user-flair">DOJ Attorney</span>
-                <span class="timestamp">32 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                    I'm an attorney at DOJ and we're being told to prepare cases against every major conservative organization in the country. Heritage Foundation, Federalist Society, NRA, Turning Point USA - they're all being investigated for "sedition and conspiracy against democracy." They're using the same legal theories that were developed for January 6th cases but applying them to completely lawful political activity. The goal is to bankrupt these organizations through endless investigations and lawsuits. I've already been assigned to three such cases and I'm looking for a new job because I can't be part of this.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 5.1k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <p>The Supreme Court has been completely purged. All nine justices were arrested this morning. Newsom has appointed "People's Judges" who will serve at his pleasure.</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">PentagonIntelSource</span>
-                <span class="timestamp">28 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                The military deployments aren't what people think. Those "National Guard" units in Texas and Florida? They're actually regular Army units wearing Guard uniforms. The real Guard units are being confined to their armories while federal troops take their place. The Pentagon has been compiling lists of officers who might refuse unlawful orders - they're being quietly discharged or reassigned to desk jobs. They're preparing for something much bigger than just intimidating governors.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 4.7k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <div class="section-header">The Surveillance State</div>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">TechWorkerSiliconValley</span>
-                <span class="timestamp">22 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                The tech angle is terrifying. Newsom's people have been meeting with the major platforms about "election security" but what they're really demanding is access to private communications. They want to scan messages for "election denial" and "anti-democratic rhetoric." WhatsApp, Signal, Telegram - they're all under pressure to build backdoors or face being shut down for "national security reasons." My company was told to start building these systems or lose all federal contracts.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 3.3k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <p>The government has activated the "National Harmony Network" - a surveillance system that monitors all communications, financial transactions, and movements. Every citizen has been assigned a "Social Harmony Score" that determines their access to jobs, housing, and services.</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">HistorianComparative1933</span>
-                <span class="user-flair">History Professor</span>
-                <span class="timestamp">18 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                I'm a history professor who specializes in 20th century authoritarian movements. What Newsom is doing follows the exact playbook of every successful authoritarian takeover. The speed is what's shocking - Hitler took two years to consolidate power after becoming Chancellor. Mussolini took longer. Newsom has done more in one month than they did in their first year. The difference is he's not hiding it. He's openly bragging about "fundamentally transforming America" and the media is cheering him on.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 2.8k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <p>Facial recognition cameras now cover every public space. AI systems analyze conversations for "anti-restoration sentiment." Citizens are encouraged to report suspicious behavior through a smartphone app that offers rewards for information.</p>
         
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">WhatsNextFear</span>
-                <span class="timestamp">12 minutes ago</span>
-            </div>
-            <div class="comment-body">
-                My neighbor works at the Federal Reserve and he says they're preparing to freeze bank accounts of people flagged as "threats to democracy." Not just politicians - regular citizens who've donated to Republican campaigns, attended conservative rallies, posted the wrong things online. They're calling it "financial deplatforming" and it's supposed to start next month. They're going to do it through the Treasury Department under "anti-terrorism" authorities.
-            </div>
-            <div class="comment-actions">
-                <span>↑ 2.1k ↓</span>
-                <span>reply</span>
-                <span>share</span>
-                <span>report</span>
-                <span>save</span>
-            </div>
-        </div>
+        <div class="section-header">The Final Moments</div>
         
-        <div class="load-more">Load more comments (8.2k remaining)</div>
+        <p>As this broadcast concludes, federal agents have arrived at CNN's Washington bureau. This reporter has been ordered to cease all independent journalism.</p>
+        
+        <p>America as a constitutional republic has ended. What replaces it is something entirely new: a surveillance state where opposition is criminalized, where elections are history, where one man rules without constraint.</p>
+        
+        <p>The transformation that began with campaign trail revenge has culminated in absolute power. Gavin Newsom now controls every aspect of American life. The Constitution has been suspended indefinitely. The Bill of Rights no longer exists.</p>
+        
+        <p>This is CNN's final independent broadcast. Effective midnight, we become The People's Voice - a government media outlet serving the restoration agenda.</p>
+        
+        <p><strong>This is the end of American democracy.</strong></p>
+        
+        <p><em>This has been Dana Bash, CNN's final independent report. May history remember what was lost today.</em></p>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
