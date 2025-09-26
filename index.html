@@ -3,142 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN: Costco Invades Europe - Grocery Wars Escalate</title>
+    <title>Costco Invades Europe - Reddit Thread</title>
     <style>
         body {
-            font-family: 'CNN Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #DAE0E6;
             margin: 0;
             padding: 20px;
-            color: #262626;
+            color: #1A1A1B;
         }
-        .article-container {
-            max-width: 800px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
+        }
+        .post-card {
             background-color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .cnn-header {
-            background-color: #cc0000;
-            padding: 16px 20px;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .article-content {
-            padding: 30px;
-        }
-        .article-header {
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 24px;
-            padding-bottom: 20px;
-        }
-        .article-title {
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0 0 12px 0;
-            color: #262626;
-        }
-        .article-meta {
-            font-size: 14px;
-            color: #6e6e6e;
+            border-radius: 4px;
+            border: 1px solid #ccc;
             margin-bottom: 16px;
+            padding: 12px;
         }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #262626;
-        }
-        .article-body p {
-            margin-bottom: 24px;
-        }
-        .highlight-box {
-            background-color: #f0f0f0;
-            padding: 20px;
-            margin: 24px 0;
-            border-left: 4px solid #cc0000;
-            font-style: italic;
-        }
-        .article-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            margin: 24px 0;
-        }
-        .byline {
-            font-size: 14px;
-            color: #6e6e6e;
+        .post-header {
+            display: flex;
+            align-items: center;
             margin-bottom: 8px;
         }
-        .update-time {
+        .subreddit-name {
+            font-weight: bold;
+            color: #0079D3;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+        .post-meta {
+            color: #7c7c7c;
             font-size: 12px;
-            color: #8e8e8e;
-            font-style: italic;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+        .post-content {
+            margin: 12px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #7c7c7c;
+        }
+        .comment-section {
+            margin-top: 16px;
+            border-top: 1px solid #ccc;
+            padding-top: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+        .username {
+            font-weight: bold;
+            color: #0079D3;
+            margin-right: 8px;
+        }
+        .comment-score {
+            color: #7c7c7c;
+            margin-right: 8px;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-left: 8px;
+        }
+        .nested-comment {
+            margin-left: 24px;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 12px;
+            margin-top: 8px;
+        }
+        .flair {
+            background-color: #f2f2f2;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: 4px;
+        }
+        .op-flair {
+            background-color: #D93A00;
+            color: white;
+        }
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="article-container">
-        <div class="cnn-header">CNN</div>
-        
-        <div class="article-content">
-            <div class="article-header">
-                <div class="byline">By CNN Staff</div>
-                <h1 class="article-title">Costco launches "Operation Bulk Buy": Massive invasion of European grocery market sparks unprecedented retail alliance</h1>
-                <div class="article-meta">July 22, 2026 • 11:47 AM EDT • Updated 2 hours ago</div>
+    <div class="reddit-container">
+        <div class="post-card">
+            <div class="post-header">
+                <a href="#" class="subreddit-name">r/europe</a>
+                <span class="post-meta">• Posted by u/bavarian_bloke 6 hours ago</span>
+            </div>
+            <h2 class="post-title">Costco is literally invading Germany and France 💀</h2>
+            <div class="post-content">
+                <p>Bro what is this timeline 💀💀💀 First Aldi Nord vs Aldi Sud civil war, now Costco doing D-Day on European soil. Carrefour and Aldi teaming up like NATO against American bulk invasion. I can't breathe 💀</p>
+                <p>They're calling it "Operation Bulk Buy" and selling 5-liter mayo jars. European civilization is finished.</p>
+            </div>
+            <div class="post-actions">
+                <span class="vote-buttons">↑ 2.3k ↓</span>
+                <span>💬 847 comments</span>
+                <span>Share</span>
+                <span>Save</span>
             </div>
             
-            <div class="article-body">
-                <p>FRANKFURT, Germany (CNN) — In a stunning escalation of what analysts are calling "The Great Grocery Wars," American retail giant Costco has launched a massive invasion of the European market, prompting fierce rivals Carrefour and Aldi to form an unprecedented defensive alliance against the American retail behemoth.</p>
-                
-                <p>The invasion, dubbed "Operation Bulk Buy" by Costco executives, began at dawn Tuesday as the membership-only warehouse chain simultaneously opened 47 massive stores across Germany and France, with plans for 200 more by year's end. The move comes just days after the public feud between Aldi Nord and Aldi Sud captured international attention.</p>
-                
-                <img src="costco_invasion.png" alt="Costco warehouse in Germany" class="article-image">
-                
-                <p>"We are bringing the American shopping experience to Europe," declared Costco CEO Ronald Vachris at a press conference in Frankfurt. "Europeans deserve 5-liter jars of mayonnaise and 48-count toilet paper packs just like Americans do."</p>
-                
-                <div class="highlight-box">
-                    "This is not just retail expansion — this is cultural imperialism with bulk discounts," said Dr. Helga Müller, retail analyst at the University of Heidelberg. "Costco is weaponizing American consumer culture against European grocery traditions."
+            <div class="comment-section">
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">PolishPierogiEnjoyer</span>
+                        <span class="comment-score">1.2k points</span>
+                        <span class="post-meta">6 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Bro imagine being a German grandpa who survived actual wars and now you're fighting Costco 💀 "I remember when Americans brought chocolate bars, now they bring 200-packs of hot dogs"
+                    </div>
+                    <div class="nested-comment">
+                        <div class="comment-header">
+                            <span class="username">bavarian_bloke</span>
+                            <span class="flair op-flair">OP</span>
+                            <span class="comment-score">456 points</span>
+                            <span class="post-meta">5 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            My opa literally asked if this means we need to hide in the basement again 💀💀💀
+                        </div>
+                    </div>
                 </div>
                 
-                <p>The invasion has forced historic enemies to unite. Carrefour CEO Alexandre Bompard and Aldi executives stood side-by-side Wednesday to announce "Operation Continental Defense," a coordinated effort to repel the American incursion.</p>
-                
-                <p>"We may have our differences," Bompard said, referencing the recent Aldi civil war, "but when faced with an external threat of this magnitude, we stand together as Europeans."</p>
-                
-                <p>The alliance has already deployed countermeasures: Carrefour has slashed prices on baguettes and wine to "unsustainable but patriotic" levels, while Aldi has begun offering "Anti-American Bulk" specials featuring locally-sourced items in reasonable quantities.</p>
-                
-                <h3>European resistance grows</h3>
-                
-                <p>European consumers have responded with mixed emotions. In Munich, protesters gathered outside a newly opened Costco carrying signs reading "No 5-Pound Chocolate Muffins" and "Keep Europe Small (Portions)."</p>
-                
-                <p>"I came here for a normal shopping experience and they tried to sell me a wheel of cheese the size of my car," complained Klaus Weber, 67, who said he accidentally purchased a 10-kilogram jar of pickles. "Where am I supposed to put this? I live in a studio apartment."</p>
-                
-                <p>French President Emmanuel Macron addressed the nation Tuesday evening, calling the Costco invasion "an existential threat to European civilization itself."</p>
-                
-                <p>"For centuries, we have fought to preserve our way of life — our daily markets, our fresh bread, our reasonable portion sizes," Macron declared. "We will not surrender to the tyranny of bulk."</p>
-                
-                <div class="highlight-box">
-                    The German Federal Cartel Office has opened an investigation into whether Costco's aggressive expansion constitutes "unfair competition" under EU law. Meanwhile, environmental groups warn that Europe's infrastructure cannot handle the increased waste from oversized packaging.
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">BaguetteEnthusiast</span>
+                        <span class="comment-score">987 points</span>
+                        <span class="post-meta">6 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        France standing strong against 5-pound chocolate muffins. This is what De Gaulle died for. Vive la portion raisonnable!
+                    </div>
+                    <div class="nested-comment">
+                        <div class="comment-header">
+                            <span class="username">GenericAmerican</span>
+                            <span class="comment-score">234 points</span>
+                            <span class="post-meta">5 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            You'll be singing a different tune when you taste our gallon-sized freedom, cheese-eater
+                        </div>
+                    </div>
                 </div>
                 
-                <h3>Escalation fears</h3>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">DutchGoudaGang</span>
+                        <span class="comment-score">756 points</span>
+                        <span class="post-meta">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Albert Heijn giving out "Dutch Resistance" loyalty cards is sending me 😭😭😭 "Sir, do you swear you've never shopped at Costco?" "I SWEAR ON MY STROOPWAFELS"
+                    </div>
+                </div>
                 
-                <p>Fears are growing that other American retail giants may enter the conflict. Sources tell CNN that Walmart is considering a "D-Day style" landing in the UK, while Target is allegedly stockpiling inventory in Canadian warehouses for a potential European campaign.</p>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">ItalianStallion2024</span>
+                        <span class="comment-score">623 points</span>
+                        <span class="post-meta">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Conad giving free espresso to anti-Costco people is peak Italian resistance. Next they'll be throwing expired pasta at the bulk shoppers 💀
+                    </div>
+                    <div class="nested-comment">
+                        <div class="comment-header">
+                            <span class="username">MamaMiaPizza</span>
+                            <span class="comment-score">189 points</span>
+                            <span class="post-meta">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Nonna already sharpening her wooden spoon for the Costco invasion
+                        </div>
+                    </div>
+                </div>
                 
-                <p>"This could trigger Article 5 of the NATO treaty," warned EU Trade Commissioner Valdis Dombrovskis. "If American retailers attack one European market, they attack all European markets."</p>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">SpanishInquisition</span>
+                        <span class="comment-score">445 points</span>
+                        <span class="post-meta">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Meanwhile some guy in Spain declared himself King of Galicia and took over a Lidl 💀💀💀 This whole continent has lost its mind
+                    </div>
+                </div>
                 
-                <p>As the situation escalates, European grocery stores have begun implementing emergency protocols. In Amsterdam, Albert Heijn has started offering "Dutch Resistance" loyalty cards, while in Italy, Conad has begun distributing free espresso to customers who can prove they've never shopped at Costco.</p>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">SwedishMeatball</span>
+                        <span class="comment-score">334 points</span>
+                        <span class="post-meta">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        IKEA better start building defensive furniture ASAP. Flat-pack fortresses against the American bulk invasion
+                    </div>
+                </div>
                 
-                <p>The conflict shows no signs of abating. Costco has reportedly begun construction on what German media are calling "Fortress Frankfurt," a 50,000-square-meter warehouse that will serve as the company's European headquarters.</p>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">GermanEngineering</span>
+                        <span class="comment-score">289 points</span>
+                        <span class="post-meta">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Klaus Weber complaining about his 10kg pickle jar while living in a studio apartment is peak German energy. "WHERE WILL I PUT THIS?? MY APARTMENT IS 30 SQUARE METERS"
+                    </div>
+                </div>
                 
-                <p>"We will not stop until every European has access to gallon-sized everything," Vachris declared. "This is about freedom — the freedom to buy 200 batteries at once, the freedom to own a swimming pool-sized bag of chips."</p>
-                
-                <p>As tensions mount, the world watches anxiously. What began as a corporate sibling rivalry has evolved into a transatlantic retail war that threatens to reshape European consumer culture forever.</p>
-                
-                <div class="update-time">This story has been updated with additional reporting.</div>
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">EuropeanUnionOfficial</span>
+                        <span class="comment-score">198 points</span>
+                        <span class="post-meta">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        If anyone needs me I'll be in Brussels drafting the "Directive on Reasonable Portion Sizes and Anti-Bulk Measures" 📋✍️
+                    </div>
+                </div>
             </div>
         </div>
     </div>
