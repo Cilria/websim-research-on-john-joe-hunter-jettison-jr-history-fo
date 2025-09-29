@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN - US Airstrike Eliminates Caliphate Leadership</title>
+    <title>US airstrike eliminates Caliphate leadership - r/military</title>
     <style>
         * {
             margin: 0;
@@ -12,319 +12,477 @@
         }
 
         body {
-            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #262626;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #030712;
+            color: #e5e7eb;
             line-height: 1.6;
         }
 
-        .cnn-header {
-            background-color: #cc0000;
-            color: white;
-            padding: 12px 0;
-            border-bottom: 3px solid #a30000;
-        }
-
-        .cnn-header-content {
-            max-width: 1280px;
+        .reddit-container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            background-color: #1f2937;
+            min-height: 100vh;
         }
 
-        .cnn-logo {
-            font-size: 2.8em;
-            font-weight: 900;
-            letter-spacing: -1px;
-        }
-
-        .main-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .article-header {
-            margin-bottom: 30px;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 20px;
-        }
-
-        .headline {
-            font-size: 2.8em;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-
-        .subheadline {
-            font-size: 1.5em;
-            color: #404040;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-
-        .article-meta {
+        .reddit-header {
+            background-color: #111827;
+            border-bottom: 1px solid #374151;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
             display: flex;
             align-items: center;
-            gap: 20px;
-            color: #606060;
-            font-size: 0.95em;
-            margin-bottom: 15px;
+            gap: 12px;
         }
 
-        .article-image {
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            background-color: #f0f0f0;
-            margin: 30px 0;
+        .subreddit-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #f97316, #dc2626);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
-            font-style: italic;
-            border-radius: 8px;
-        }
-
-        .article-body {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #1a1a1a;
-        }
-
-        .article-body p {
-            margin-bottom: 20px;
-        }
-
-        .breaking-banner {
-            background-color: #dc3545;
-            color: white;
-            padding: 12px 20px;
             font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 6px;
-            font-size: 1.2em;
+            color: white;
+            font-size: 18px;
         }
 
-        .live-indicator {
+        .subreddit-info h1 {
+            color: #f9fafb;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .subreddit-info p {
+            color: #9ca3af;
+            font-size: 12px;
+        }
+
+        .post-container {
+            padding: 16px;
+            border-bottom: 1px solid #374151;
+        }
+
+        .post-title {
+            color: #f9fafb;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #9ca3af;
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+
+        .username {
+            color: #22c55e;
+            font-weight: 500;
+        }
+
+        .post-content {
+            color: #d1d5db;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .post-flair {
             display: inline-block;
-            background-color: #dc3545;
+            background-color: #dc2626;
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.8em;
-            font-weight: bold;
-            animation: pulse 2s infinite;
-            margin-right: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
 
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
+        .post-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #9ca3af;
+            font-size: 12px;
         }
 
-        .leadership-box {
-            background-color: #fff3cd;
-            border: 1px solid #ffc107;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .leadership-box h3 {
-            color: #856404;
-            margin-top: 0;
-            margin-bottom: 10px;
+        .vote-btn {
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 4px;
         }
 
-        .casualty-box {
-            background-color: #d4edda;
-            border: 1px solid #28a745;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
+        .vote-btn:hover {
+            color: #f9fafb;
         }
 
-        .casualty-box h3 {
-            color: #155724;
-            margin-top: 0;
-            margin-bottom: 10px;
+        .comments-section {
+            padding: 16px;
         }
 
-        .strike-details {
-            background-color: #e3f2fd;
-            border-left: 4px solid #1976d2;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
+        .comment {
+            margin-bottom: 24px;
+            padding-left: 8px;
+            border-left: 2px solid #374151;
         }
 
-        .strike-details h3 {
-            color: #1565c0;
-            margin-top: 0;
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
         }
 
-        .impact-stats {
-            background-color: #f3e5f5;
-            border: 1px solid #7b1fa2;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
-        }
-
-        .impact-stats h3 {
-            color: #6a1b9a;
-            margin-top: 0;
-        }
-
-        .quote-box {
-            background-color: #f8f9fa;
-            border-left: 4px solid #cc0000;
-            padding: 20px;
-            margin: 25px 0;
-            font-style: italic;
-            color: #2c3e50;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .update-bar {
-            background-color: #e8f5e8;
-            border: 1px solid #4caf50;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-            text-align: center;
+        .comment-author {
+            color: #22c55e;
             font-weight: 500;
-            color: #2e7d32;
+            font-size: 13px;
+        }
+
+        .comment-flair {
+            background-color: #374151;
+            color: #9ca3af;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+
+        .comment-time {
+            color: #6b7280;
+            font-size: 11px;
+        }
+
+        .comment-body {
+            color: #d1d5db;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .comment-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .reply {
+            margin-left: 24px;
+            margin-top: 16px;
+            padding-left: 12px;
+            border-left: 2px solid #4b5563;
+        }
+
+        .nested-reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+
+        .sort-bar {
+            background-color: #111827;
+            padding: 12px 16px;
+            border-bottom: 1px solid #374151;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .highlight {
+            background-color: #374151;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: #fbbf24;
+        }
+
+        .award {
+            color: #fbbf24;
+            margin-left: 8px;
         }
 
         @media (max-width: 768px) {
-            .headline {
-                font-size: 2.2em;
+            .reddit-container {
+                margin: 0;
             }
-
-            .main-content {
-                padding: 15px;
+            
+            .post-title {
+                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <header class="cnn-header">
-        <div class="cnn-header-content">
-            <div class="cnn-logo">CNN</div>
+    <div class="reddit-container">
+        <header class="reddit-header">
+            <div class="subreddit-icon">r/</div>
+            <div class="subreddit-info">
+                <h1>military</h1>
+                <p>1.8M Members • 12.4k Online</p>
+            </div>
+        </header>
+
+        <div class="post-container">
+            <span class="post-flair">BREAKING</span>
+            <h2 class="post-title">US airstrike eliminates Islamic Caliphate leadership - entire command structure confirmed dead including supreme Caliph</h2>
+            <div class="post-meta">
+                <span class="username">posted by DefenseAnalyst82</span>
+                <span>•</span>
+                <span>4 hours ago</span>
+                <span>•</span>
+                <span>🎖️ Mil-Award</span>
+            </div>
+            <div class="post-content">
+                <p>Jesus fucking Christ. This is massive. F-35s just took out the entire Caliphate leadership during a war council meeting in Bamako. 600+ jihadists including their top command structure. Every. Single. One. Dead.</p>
+                
+                <p>This isn't just a tactical win - we just decapitated their entire operational brain. No civilian casualties either. Clean strike.</p>
+                
+                <p>Thoughts? This feels like the beginning of the end for these fuckers.</p>
+            </div>
+            <div class="post-actions">
+                <div class="vote-buttons">
+                    <button class="vote-btn">▲</button>
+                    <span>42.3k</span>
+                    <button class="vote-btn">▼</button>
+                </div>
+                <span>💬 3.1k Comments</span>
+                <span>Share</span>
+                <span>Save</span>
+                <span>Hide</span>
+                <span>Report</span>
+                <span>🥇🥈🥉</span>
+            </div>
         </div>
-    </header>
 
-    <div class="main-content">
-        <div class="breaking-banner">
-            <span class="live-indicator">LIVE</span> BREAKING: US airstrike eliminates Caliphate leadership
+        <div class="sort-bar">
+            Best Comments ▼
         </div>
 
-        <article>
-            <div class="article-header">
-                <h1 class="headline">US airstrike eliminates Islamic Caliphate leadership in devastating blow, killing supreme leader and 600 jihadists</h1>
-                <p class="subheadline">Precision strike targets headquarters during senior leadership meeting, decapitating entire command structure in most significant victory since coalition campaign began</p>
-                <div class="article-meta">
-                    <span class="byline">By CNN International Security Team</span>
-                    <span class="date">June 11, 2027</span>
-                    <span class="location">Washington, DC</span>
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">FormerSpecOps</span>
+                    <span class="comment-flair">Army Veteran</span>
+                    <span class="comment-time">3 hours ago</span>
+                    <span class="award">🏅</span>
+                </div>
+                <div class="comment-body">
+                    Holy shit. 600+ in one strike? That's not decapitation, that's fucking <strong>annihilation</strong>. These guys just got Osama'd times a thousand. 
+                    
+                    The intel must have been fucking incredible to get them all in one place. Someone's getting a medal for this.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 8.2k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">IntelWeenie</span>
+                            <span class="comment-flair">MI</span>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Can confirm the intel side was absolutely insane. We had assets on this for weeks. When they all gathered for their "war council" it was like Christmas morning. 
+                            
+                            The fact we got zero civvies makes this a textbook operation.
+                        </div>
+                        <div class="comment-actions">
+                            <span>↑ 3.4k ↓</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="article-image">
-                [Image: Satellite image showing destroyed Caliphate headquarters compound after precision airstrike]
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">F35Pilot</span>
+                    <span class="comment-flair">USAF</span>
+                    <span class="comment-time">3 hours ago</span>
+                    <span class="award">🥇</span>
+                </div>
+                <div class="comment-body">
+                    Fellow F-35 driver here (different squadron). What these guys pulled off was fucking <span class="highlight">legendary</span>. 
+                    
+                    Six minutes, eight bunker-busters, perfect hits on an underground target. In contested airspace. At night. 
+                    
+                    The coordination between intel, strike packages, and SEAD was textbook. This is why we train our asses off.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 7.8k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">NavalAviator</span>
+                            <span class="comment-flair">USN</span>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Respect. You Air Force guys get all the cool shit while we're still flying 40-year-old Hornets 😭
+                            
+                            But seriously, beautiful execution. This is what 5th gen warfare looks like - they never saw it coming.
+                        </div>
+                        <div class="comment-actions">
+                            <span>↑ 2.1k ↓</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="article-body">
-                <p>The United States has delivered a devastating blow to the Islamic Caliphate of the Sahel, conducting a precision airstrike that eliminated the group's entire senior leadership including the supreme Caliph during a high-level meeting at their headquarters compound, according to multiple senior US officials.</p>
-
-                <p>The early morning strike, conducted by F-35 stealth fighters using bunker-busting munitions, killed the Caliph along with more than 600 jihadist fighters and commanders who had gathered for what intelligence sources described as a "war council" to plan the group's next phase of expansion.</p>
-
-                <div class="leadership-box">
-                    <h3>Leadership Eliminated</h3>
-                    <p><strong>Supreme Caliph:</strong> Abu Bakr al-Sahrawi (confirmed dead)</p>
-                    <p><strong>Deputy Caliph:</strong> Mohamed al-Mansuri (confirmed dead)</p>
-                    <p><strong>Military Commander:</strong> General Yusuf al-Timbukti (confirmed dead)</p>
-                    <p><strong>Intelligence Chief:</strong> Ibrahim al-Nigeri (confirmed dead)</p>
-                    <p><strong>Finance Minister:</strong> Omar al-Maliki (confirmed dead)</p>
-                    <p><strong>Remaining leadership:</strong> Unknown - communications blackout</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">GroundPounder_11B</span>
+                    <span class="comment-flair">Army</span>
+                    <span class="comment-time">2 hours ago</span>
                 </div>
-
-                <p>"We have decapitated the snake," said Defense Secretary Pete Hegseth at a Pentagon briefing. "Every senior commander who posed a strategic threat to regional stability was in that compound. None survived. This is the most significant counterterrorism victory since the elimination of ISIS leadership."</p>
-
-                <div class="strike-details">
-                    <h3>Strike Details</h3>
-                    <p><strong>Time:</strong> 03:42 local time (June 11, 2027)</p>
-                    <p><strong>Location:</strong> Former presidential palace, Bamako, Mali</p>
-                    <p><strong>Aircraft:</strong> 4 F-35A Lightning II fighters</p>
-                    <p><strong>Weapons:</strong> 8 GBU-31 bunker-busting bombs</p>
-                    <p><strong>Duration:</strong> 6 minutes from first to last impact</p>
-                    <p><strong>Survivors:</strong> Zero confirmed from leadership meeting</p>
+                <div class="comment-body">
+                    Been following these fucks since they started in Burkina Faso. Never thought I'd see the day when their entire command structure gets vaporized in one go.
+                    
+                    The psychological impact is gonna be massive. These guys thought they were untouchable, meeting openly in their "capital." Now they're all pink mist.
+                    
+                    Time to exploit the chaos and roll up their regional commands while they're leaderless.
                 </div>
-
-                <p>Intelligence officials had been tracking the Caliphate's senior leadership for weeks, waiting for an opportunity to strike when they were all gathered in one location. That opportunity came when signals intelligence indicated the supreme Caliph had summoned his top commanders for an emergency meeting to respond to recent coalition gains.</p>
-
-                <p>"We had eyes on the compound for 72 hours," said a senior intelligence official who requested anonymity. "When we confirmed the entire leadership council was present, the President authorized immediate action. We weren't going to get another chance like this."</p>
-
-                <div class="casualty-box">
-                    <h3>Confirmed Casualties</h3>
-                    <p><strong>Total killed:</strong> 600+ jihadists</p>
-                    <p><strong>Senior commanders:</strong> 47 confirmed dead</p>
-                    <p><strong>Bodyguards:</strong> 200+ eliminated</p>
-                    <p><strong>Support staff:</strong> 350+ casualties</p>
-                    <p><strong>Civilian casualties:</strong> Zero confirmed</p>
+                <div class="comment-actions">
+                    <span>↑ 5.6k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
                 </div>
-
-                <p>The precision of the strike was remarkable. Satellite imagery shows the main palace building completely destroyed, while adjacent structures remained largely intact. The F-35s used laser-guided munitions to penetrate the underground bunker where the leadership meeting was taking place.</p>
-
-                <p>"They thought they were safe underground," said Air Force General David W. Allvin. "They were wrong. Our pilots put those bombs exactly where they needed to go. Nothing survived the blast radius."</p>
-
-                <div class="impact-stats">
-                    <h3>Immediate Impact</h3>
-                    <p><strong>Communications:</strong> Caliphate radio networks silent</p>
-                    <p><strong>Command structure:</strong> Complete collapse reported</p>
-                    <p><strong>Territorial control:</strong> Forces withdrawing from advanced positions</p>
-                    <p><strong>Recruitment:</strong> Morale reportedly shattered</p>
-                    <p><strong>Regional response:</strong> Celebrations in captured territories</p>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">StrategyGeek</span>
+                            <span class="comment-time">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Exactly right. This is what we call a <strong>strategic disruption</strong> - when you remove not just the head, but the entire nervous system of an organization.
+                            
+                            These guys operated like a pseudo-state. They had ministries, departments, chains of command. Now it's all gone. The regional commanders are probably shitting themselves wondering who's next.
+                        </div>
+                        <div class="comment-actions">
+                            <span>↑ 1.8k ↓</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                        </div>
+                    </div>
                 </div>
-
-                <p>Within hours of the strike, coalition intelligence began picking up signs of panic across Caliphate-controlled territory. Radio communications fell silent, local commanders began withdrawing from advanced positions, and in some areas, local populations rose up against isolated Caliphate garrisons.</p>
-
-                <p>"The psychological impact is enormous," said Dr. Michael Horowitz, defense analyst at the University of Pennsylvania. "When you eliminate not just the leader but the entire leadership structure, you create a vacuum that these organizations struggle to fill. The Caliphate is effectively leaderless."</p>
-
-                <div class="quote-box">
-                    "We have decapitated the snake. Every senior commander who posed a strategic threat to regional stability was in that compound. None survived. This is the most significant counterterrorism victory since the elimination of ISIS leadership."
-                    <br><em>— Defense Secretary Pete Hegseth</em>
-                </div>
-
-                <p>The successful strike represents the culmination of two months of intensive intelligence gathering and coordination between coalition partners. British and French intelligence services provided crucial on-the-ground intelligence, while Chinese satellite surveillance helped track movements of senior Caliphate figures.</p>
-
-                <p>"This was a true coalition effort," said Secretary of State Marco Rubio. "Every nation contributed something — intelligence, surveillance, logistics. When democracies work together, there's no terrorist organization we cannot defeat."</p>
-
-                <p>Regional leaders immediately hailed the strike as a turning point. Nigerian President Bola Tinubu called it "the beginning of the end for the Caliphate," while Senegalese President Bassirou Diomaye Faye said it "restores hope to all Africans who feared these extremists."</p>
-
-                <div class="update-bar">
-                    UPDATE: Caliphate forces reportedly abandoning positions across the region as news of leadership elimination spreads
-                </div>
-
-                <p>However, US officials cautioned that while the leadership strike represents a massive blow, the Caliphate still controls significant territory and maintains thousands of fighters under arms.</p>
-
-                <p>"This doesn't end the war," said Hegseth. "But it changes everything. Without their leadership, without their command structure, they go from being an organized military threat to scattered bands of terrorists. We'll hunt down every last one of them."</p>
-
-                <p>The Pentagon confirmed that coalition aircraft are already taking advantage of the leadership vacuum, conducting follow-up strikes against Caliphate positions that had previously been too well-defended to target.</p>
-
-                <p>"This is just the beginning," said President Trump in a brief statement. "We promised to destroy the Caliphate. Today, we took out their brain. Now we'll dismantle the rest of their body."</p>
-
-                <p>As news of the strike spread, celebrations broke out in cities across West Africa, from Dakar to Lagos, as people who had lived under Caliphate oppression celebrated what many hope represents the beginning of the end for the jihadist group.</p>
-
-                <p>"They told us they were invincible," said one resident of Bamako who asked not to be named. "Now their leaders are dead. Maybe we have a chance to take our cities back."</p>
             </div>
-        </article>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">CivilianAnalyst</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    From a purely analytical standpoint, this is fascinating. The Caliphate controlled what, like 400,000 square kilometers? That's larger than Germany. And we just beheaded their entire administrative apparatus.
+                    
+                    The real question is: what happens to the territory? Do local forces have the capability to exploit this? Or does another group just fill the vacuum?
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 3.2k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">AfricaHand</span>
+                            <span class="comment-flair">State Dept</span>
+                            <span class="comment-time">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            That's the million dollar question. The regional forces (Nigeria, Senegal, etc.) have been getting their asses kicked for months. But with the Caliphate's command structure gone, their forces are reportedly abandoning positions.
+                            
+                            We're already seeing local militias and government forces pushing back into previously "lost" territory. The key is whether they can coordinate a proper offensive before the Caliphate reorganizes.
+                        </div>
+                        <div class="comment-actions">
+                            <span>↑ 1.5k ↓</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">HistoryBuff</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Historical context: This is bigger than when we took out Zarqawi in 2006, bigger than the ISIS leadership strikes. These guys controlled more territory than ISIS at its peak, and we just eliminated their entire command in one shot.
+                    
+                    The speed of their expansion was terrifying - from Burkina Faso to threatening Nigeria in under a month. Hopefully this stops the bleeding before they reach Lagos or Dakar.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 2.9k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">SpecOps_Dad</span>
+                    <span class="comment-flair">Retired</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Retired SF here. Been watching this unfold with a mix of pride and "holy fuck finally."
+                    
+                    The younger guys don't remember how bad it got. These assholes were literally at the gates of major African capitals. Now? They're headless chickens running around the Sahel.
+                    
+                    To the pilots and intel folks who made this happen: <strong>fucking magnificent work.</strong> This is why we spend billions on training and tech.
+                    
+                    Now let's finish the job before they can regroup.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 4.1k ↓</span>
+                    <span>Reply</span>
+                    <span>Give Award</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                </div>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
