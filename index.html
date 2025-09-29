@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRW people said the Caliphate was unstoppable but then a 63-nation coalition forms and Nigeria drops 900 jihadists in one day - NCD</title>
+    <title>CNN - US Airstrike Eliminates Caliphate Leadership</title>
     <style>
         * {
             margin: 0;
@@ -12,558 +12,319 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #0f0f0f;
-            color: #d7dadc;
+            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #262626;
             line-height: 1.6;
         }
 
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 12px 0;
+            border-bottom: 3px solid #a30000;
         }
 
-        .reddit-header-content {
-            max-width: 1200px;
+        .cnn-header-content {
+            max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
         }
 
-        .reddit-logo {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .search-bar {
-            flex: 1;
-            max-width: 400px;
-            background-color: #272729;
-            border-radius: 20px;
-            padding: 8px 16px;
-            border: none;
-            color: #d7dadc;
+        .cnn-logo {
+            font-size: 2.8em;
+            font-weight: 900;
+            letter-spacing: -1px;
         }
 
         .main-content {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 30px;
         }
 
-        .post-container {
-            background-color: #1a1a1b;
-            border-radius: 8px;
-            border: 1px solid #343536;
-            overflow: hidden;
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
         }
 
-        .post-header {
-            padding: 16px;
-            border-bottom: 1px solid #343536;
+        .headline {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.2;
         }
 
-        .post-title {
+        .subheadline {
             font-size: 1.5em;
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 8px;
-            line-height: 1.3;
+            color: #404040;
+            font-weight: 400;
+            margin-bottom: 20px;
         }
 
-        .post-meta {
+        .article-meta {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 0.9em;
-            color: #818384;
+            gap: 20px;
+            color: #606060;
+            font-size: 0.95em;
+            margin-bottom: 15px;
         }
 
-        .subreddit-name {
-            color: #00ff00;
-            font-weight: 500;
-            background-color: #1a1a1b;
-            padding: 2px 6px;
-            border-radius: 4px;
-            border: 1px solid #00ff00;
-        }
-
-        .post-content {
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-        }
-
-        .meme-image {
+        .article-image {
             width: 100%;
-            max-width: 600px;
-            height: 400px;
-            background-color: #272729;
-            border-radius: 8px;
+            max-width: 800px;
+            height: 450px;
+            background-color: #f0f0f0;
+            margin: 30px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
-            color: #d7dadc;
-            font-size: 1.2em;
-            text-align: center;
-            line-height: 1.4;
-        }
-
-        .post-stats {
-            padding: 12px 16px;
-            background-color: #272729;
-            font-size: 0.9em;
-            color: #818384;
-        }
-
-        .comments-section {
-            margin-top: 20px;
-            background-color: #1a1a1b;
-            border-radius: 8px;
-            border: 1px solid #343536;
-        }
-
-        .comments-header {
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .comment {
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-        }
-
-        .comment:last-child {
-            border-bottom: none;
-        }
-
-        .comment-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
-        }
-
-        .username {
-            font-weight: 600;
-            color: #d7dadc;
-        }
-
-        .comment-meta {
-            font-size: 0.8em;
-            color: #818384;
-        }
-
-        .comment-body {
-            margin-left: 20px;
-            color: #d7dadc;
-            line-height: 1.5;
-        }
-
-        .comment-actions {
-            margin-left: 20px;
-            margin-top: 8px;
-            display: flex;
-            gap: 15px;
-            font-size: 0.9em;
-        }
-
-        .comment-action {
-            color: #818384;
-            cursor: pointer;
-        }
-
-        .comment-action:hover {
-            color: #d7dadc;
-        }
-
-        .reply {
-            margin-left: 40px;
-            margin-top: 12px;
-            padding-left: 16px;
-            border-left: 2px solid #343536;
-        }
-
-        .sidebar {
-            background-color: #1a1a1b;
-            border-radius: 8px;
-            border: 1px solid #343536;
-            padding: 16px;
-            height: fit-content;
-        }
-
-        .sidebar-title {
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 12px;
-            font-size: 1.1em;
-        }
-
-        .sidebar-item {
-            padding: 8px 0;
-            border-bottom: 1px solid #343536;
-            font-size: 0.9em;
-            color: #d7dadc;
-        }
-
-        .sidebar-item:last-child {
-            border-bottom: none;
-        }
-
-        .upvote {
-            color: #ff4500;
-            font-weight: 600;
-        }
-
-        .downvote {
-            color: #7193ff;
-            font-weight: 600;
-        }
-
-        .award {
-            background-color: #ffd700;
-            color: #000000;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 0.7em;
-            font-weight: 600;
-            margin-left: 5px;
-        }
-
-        .ncd-flair {
-            background-color: #00ff00;
-            color: #000000;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.7em;
-            font-weight: 600;
-            margin-left: 5px;
-        }
-
-        .vark-flair {
-            background-color: #ff0000;
-            color: #ffffff;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.7em;
-            font-weight: 600;
-            margin-left: 5px;
-        }
-
-        .credibility-flair {
-            background-color: #666666;
-            color: #ffffff;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.7em;
-            font-weight: 600;
-            margin-left: 5px;
-        }
-
-        .deleted-comment {
-            color: #818384;
+            color: #666;
             font-style: italic;
+            border-radius: 8px;
+        }
+
+        .article-body {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #1a1a1a;
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+        }
+
+        .breaking-banner {
+            background-color: #dc3545;
+            color: white;
+            padding: 12px 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            font-size: 1.2em;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            background-color: #dc3545;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .leadership-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .leadership-box h3 {
+            color: #856404;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .casualty-box {
+            background-color: #d4edda;
+            border: 1px solid #28a745;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .casualty-box h3 {
+            color: #155724;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .strike-details {
+            background-color: #e3f2fd;
+            border-left: 4px solid #1976d2;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .strike-details h3 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+
+        .impact-stats {
+            background-color: #f3e5f5;
+            border: 1px solid #7b1fa2;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .impact-stats h3 {
+            color: #6a1b9a;
+            margin-top: 0;
+        }
+
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #cc0000;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #2c3e50;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .update-bar {
+            background-color: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+            color: #2e7d32;
         }
 
         @media (max-width: 768px) {
+            .headline {
+                font-size: 2.2em;
+            }
+
             .main-content {
-                grid-template-columns: 1fr;
-                padding: 10px;
-            }
-            
-            .reddit-header-content {
-                flex-wrap: wrap;
-            }
-            
-            .search-bar {
-                order: 3;
-                flex-basis: 100%;
-                max-width: none;
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <header class="reddit-header">
-        <div class="reddit-header-content">
-            <a href="#" class="reddit-logo">reddit</a>
-            <input type="text" class="search-bar" placeholder="Search Reddit" readonly>
-            <div style="color: #d7dadc; font-size: 0.9em;">r/NonCredibleDefense</div>
+    <header class="cnn-header">
+        <div class="cnn-header-content">
+            <div class="cnn-logo">CNN</div>
         </div>
     </header>
 
     <div class="main-content">
-        <div class="post-content-area">
-            <div class="post-container">
-                <div class="post-header">
-                    <h1 class="post-title">MRW people said the Caliphate was unstoppable but then a 63-nation coalition forms and Nigeria drops 900 jihadists in one day</h1>
-                    <div class="post-meta">
-                        <span class="subreddit-name">r/NonCredibleDefense</span>
-                        <span>•</span>
-                        <span>Posted by u/F35Chan</span>
-                        <span>•</span>
-                        <span>6 hours ago</span>
-                        <span class="ncd-flair">CREDIBILITY</span>
-                    </div>
-                </div>
-                <div class="post-content">
-                    <div class="meme-image">
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5em; margin-bottom: 20px;">"Caliphate is unstoppable"</div>
-                            <div style="font-size: 3em; margin-bottom: 20px;">63-NATION COALITION:</div>
-                            <div style="font-size: 2em; margin-bottom: 20px;">"I'm about to end this man's whole career"</div>
-                            <div style="font-size: 1.2em; color: #00ff00;">+ Nigeria just dropped 900 bodies in 24 hours</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-stats">
-                    <span class="upvote">↑ 42.7k</span>
-                    <span>•</span>
-                    <span>96% upvoted</span>
-                    <span>•</span>
-                    <span>3.2k comments</span>
-                </div>
-            </div>
-
-            <div class="comments-section">
-                <div class="comments-header">Comments</div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">3000BlackF35sofAllah</span>
-                        <span class="comment-meta">• 5 hours ago</span>
-                        <span class="award">Gold</span>
-                        <span class="vark-flair">VARK VARK VARK</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>COPE AND SEETHE CALIPHATEBOOS</p>
-                        
-                        <p>Remember when these smoothbrains were saying "the West is too weak to respond" and "China would never intervene"? Now we got 63 nations including China dropping JDAMs on these goatfuckers. Turns out when you threaten global trade routes, everyone gets interested real quick.</p>
-                        
-                        <p>Nigeria just showed why Boko Haram doesn't exist anymore. 900 dead in 24 hours is what we in the business call "a good start."</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 8.4k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                    
-                    <div class="reply">
-                        <div class="comment-header">
-                            <span class="username">NonCredibleAnon</span>
-                            <span class="comment-meta">• 4 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            <p>The best part is they actually thought those captured T-72s would matter. Against 5th gen aircraft. In 2027.</p>
-                            
-                            <p>Those tanks are now 900 expensive paperweights scattered across the Nigerian desert.</p>
-                        </div>
-                        <div class="comment-actions">
-                            <span class="comment-action">↑ 2.1k</span>
-                            <span class="comment-action">Reply</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">DefenseAnalystMike</span>
-                        <span class="comment-meta">• 5 hours ago</span>
-                        <span class="expert-flair">Actually Credible</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>Can we get a F in the chat for all the "military analysts" who were predicting the collapse of West Africa?</p>
-                        
-                        <p>Fuckers were literally comparing this to ISIS. ISIS never captured modern military equipment from actual armies. These clowns captured some Cold War surplus and suddenly they're 10 feet tall.</p>
-                        
-                        <p>Turns out when you have 63 nations providing ISR, logistics, and air support, even the Nigerian military can absolutely fuck your shit up.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 5.2k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">StealthIsALie</span>
-                        <span class="comment-meta">• 4 hours ago</span>
-                        <span class="ncd-flair">NCD MOD</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>REMEMBER WHEN EVERYONE SAID THE CALIPHATE WAS UNSTOPPABLE?</p>
-                        
-                        <p>REMEMBER WHEN THEY SAID CHINA WOULD NEVER INTERVENE?</p>
-                        
-                        <p>REMEMBER WHEN THEY SAID RUSSIA WAS TOO BUSY IN UKRAINE?</p>
-                        
-                        <p>REMEMBER WHEN THEY SAID THE WEST WAS TOO WEAK?</p>
-                        
-                        <p>TURNS OUT THE ONLY THING UNSTOPPABLE WAS 63 NATIONS DROPPING A COLLECTIVE 900-TON BAG OF WHOOP-ASS ON THESE FUCKERS</p>
-                        
-                        <p>STAY NONCREDIBLE MY FRIENDS</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 4.7k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">A10GoesBRRRRRT</span>
-                        <span class="comment-meta">• 4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</p>
-                        
-                        <p>Sorry, had to get that out. Anyway, 900 dead in 24 hours is what happens when you give modern militaries ROE that actually lets them do their job instead of fighting with one hand tied behind their back.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 3.1k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">CredibilityCheck</span>
-                        <span class="comment-meta">• 3 hours ago</span>
-                        <span class="credibility-flair">TOO CREDIBLE</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>The real noncredible take was thinking that a bunch of jihadists with captured Soviet-era equipment could stand up to 63 nations with modern militaries. Like, what was the actual thought process here?</p>
-                        
-                        <p>"Yeah bro, these T-72s from 1973 are totally going to stop F-35s and J-16s. We got this."</p>
-                        
-                        <p>900 dead in 24 hours is what happens when you try to fight a conventional war against professional militaries while using tactics from 1983.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 2.3k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">3000BlackF35sofAllah</span>
-                        <span class="comment-meta">• 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>Hey remember when this sub got called "alarmist" for saying the Caliphate would get curbstomped once the coalition formed?</p>
-                        
-                        <p>Turns out being noncredible means being right about military capabilities while the "experts" were busy doomposting.</p>
-                        
-                        <p>Nigeria just wrote the textbook on how to deal with jihadists who think they're a real army now. Chapter 1: Use actual military tactics. Chapter 2: Call in air support. Chapter 3: Watch them die in large numbers.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 1.8k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">NonCredibleAnalyst</span>
-                        <span class="comment-meta">• 2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>The absolute STATE of Caliphate supporters right now:</p>
-                        
-                        <p>"B-but muh unstoppable advance!"</p>
-                        <p>"T-the West is too divided!"</p>
-                        <p>"C-china would never intervene!"</p>
-                        <p>"N-nigeria can't fight!"</p>
-                        
-                        <p>900 dead bodies later: *surprised Pikachu face*</p>
-                        
-                        <p>Turns out the only thing unstoppable was the coalition's collective boot up their ass.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 1.4k</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="username">Veteran_2003</span>
-                        <span class="comment-meta">• 2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        <p>Deployed to Iraq, Afghanistan, and watched this whole thing unfold. The "unstoppable" narrative was always media fear-mongering combined with people who know fuck-all about military capabilities.</p>
-                        
-                        <p>Jihadists are scary when they're hiding in shadows and hitting soft targets. They're not scary when they're trying to hold territory against professional militaries with modern equipment and actual ROE that lets them fight.</p>
-                        
-                        <p>Nigeria just reminded everyone how this game is played. 900 dead in 24 hours is what happens when amateurs try to fight a real war.</p>
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ 876</span>
-                        <span class="comment-action">Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-            </div>
+        <div class="breaking-banner">
+            <span class="live-indicator">LIVE</span> BREAKING: US airstrike eliminates Caliphate leadership
         </div>
 
-        <aside class="sidebar">
-            <div style="margin-bottom: 20px;">
-                <div class="sidebar-title">About Community</div>
-                <div class="sidebar-item">
-                    <strong>694.2K</strong> members
-                </div>
-                <div class="sidebar-item">
-                    <strong>8.4k</strong> online
-                </div>
-                <div class="sidebar-item">
-                    Created Dec 25, 2012
+        <article>
+            <div class="article-header">
+                <h1 class="headline">US airstrike eliminates Islamic Caliphate leadership in devastating blow, killing supreme leader and 600 jihadists</h1>
+                <p class="subheadline">Precision strike targets headquarters during senior leadership meeting, decapitating entire command structure in most significant victory since coalition campaign began</p>
+                <div class="article-meta">
+                    <span class="byline">By CNN International Security Team</span>
+                    <span class="date">June 11, 2027</span>
+                    <span class="location">Washington, DC</span>
                 </div>
             </div>
 
-            <div style="margin-bottom: 20px;">
-                <div class="sidebar-title">Rules</div>
-                <div class="sidebar-item">1. Be noncredible</div>
-                <div class="sidebar-item">2. Defense related only</div>
-                <div class="sidebar-item">3. No serious posting</div>
-                <div class="sidebar-item">4. VARK VARK VARK</div>
+            <div class="article-image">
+                [Image: Satellite image showing destroyed Caliphate headquarters compound after precision airstrike]
             </div>
 
-            <div>
-                <div class="sidebar-title">Moderators</div>
-                <div class="sidebar-item">u/SgtMeme</div>
-                <div class="sidebar-item">u/StealthIsALie</div>
-                <div class="sidebar-item">u/3000BlackF35sofAllah</div>
+            <div class="article-body">
+                <p>The United States has delivered a devastating blow to the Islamic Caliphate of the Sahel, conducting a precision airstrike that eliminated the group's entire senior leadership including the supreme Caliph during a high-level meeting at their headquarters compound, according to multiple senior US officials.</p>
+
+                <p>The early morning strike, conducted by F-35 stealth fighters using bunker-busting munitions, killed the Caliph along with more than 600 jihadist fighters and commanders who had gathered for what intelligence sources described as a "war council" to plan the group's next phase of expansion.</p>
+
+                <div class="leadership-box">
+                    <h3>Leadership Eliminated</h3>
+                    <p><strong>Supreme Caliph:</strong> Abu Bakr al-Sahrawi (confirmed dead)</p>
+                    <p><strong>Deputy Caliph:</strong> Mohamed al-Mansuri (confirmed dead)</p>
+                    <p><strong>Military Commander:</strong> General Yusuf al-Timbukti (confirmed dead)</p>
+                    <p><strong>Intelligence Chief:</strong> Ibrahim al-Nigeri (confirmed dead)</p>
+                    <p><strong>Finance Minister:</strong> Omar al-Maliki (confirmed dead)</p>
+                    <p><strong>Remaining leadership:</strong> Unknown - communications blackout</p>
+                </div>
+
+                <p>"We have decapitated the snake," said Defense Secretary Pete Hegseth at a Pentagon briefing. "Every senior commander who posed a strategic threat to regional stability was in that compound. None survived. This is the most significant counterterrorism victory since the elimination of ISIS leadership."</p>
+
+                <div class="strike-details">
+                    <h3>Strike Details</h3>
+                    <p><strong>Time:</strong> 03:42 local time (June 11, 2027)</p>
+                    <p><strong>Location:</strong> Former presidential palace, Bamako, Mali</p>
+                    <p><strong>Aircraft:</strong> 4 F-35A Lightning II fighters</p>
+                    <p><strong>Weapons:</strong> 8 GBU-31 bunker-busting bombs</p>
+                    <p><strong>Duration:</strong> 6 minutes from first to last impact</p>
+                    <p><strong>Survivors:</strong> Zero confirmed from leadership meeting</p>
+                </div>
+
+                <p>Intelligence officials had been tracking the Caliphate's senior leadership for weeks, waiting for an opportunity to strike when they were all gathered in one location. That opportunity came when signals intelligence indicated the supreme Caliph had summoned his top commanders for an emergency meeting to respond to recent coalition gains.</p>
+
+                <p>"We had eyes on the compound for 72 hours," said a senior intelligence official who requested anonymity. "When we confirmed the entire leadership council was present, the President authorized immediate action. We weren't going to get another chance like this."</p>
+
+                <div class="casualty-box">
+                    <h3>Confirmed Casualties</h3>
+                    <p><strong>Total killed:</strong> 600+ jihadists</p>
+                    <p><strong>Senior commanders:</strong> 47 confirmed dead</p>
+                    <p><strong>Bodyguards:</strong> 200+ eliminated</p>
+                    <p><strong>Support staff:</strong> 350+ casualties</p>
+                    <p><strong>Civilian casualties:</strong> Zero confirmed</p>
+                </div>
+
+                <p>The precision of the strike was remarkable. Satellite imagery shows the main palace building completely destroyed, while adjacent structures remained largely intact. The F-35s used laser-guided munitions to penetrate the underground bunker where the leadership meeting was taking place.</p>
+
+                <p>"They thought they were safe underground," said Air Force General David W. Allvin. "They were wrong. Our pilots put those bombs exactly where they needed to go. Nothing survived the blast radius."</p>
+
+                <div class="impact-stats">
+                    <h3>Immediate Impact</h3>
+                    <p><strong>Communications:</strong> Caliphate radio networks silent</p>
+                    <p><strong>Command structure:</strong> Complete collapse reported</p>
+                    <p><strong>Territorial control:</strong> Forces withdrawing from advanced positions</p>
+                    <p><strong>Recruitment:</strong> Morale reportedly shattered</p>
+                    <p><strong>Regional response:</strong> Celebrations in captured territories</p>
+                </div>
+
+                <p>Within hours of the strike, coalition intelligence began picking up signs of panic across Caliphate-controlled territory. Radio communications fell silent, local commanders began withdrawing from advanced positions, and in some areas, local populations rose up against isolated Caliphate garrisons.</p>
+
+                <p>"The psychological impact is enormous," said Dr. Michael Horowitz, defense analyst at the University of Pennsylvania. "When you eliminate not just the leader but the entire leadership structure, you create a vacuum that these organizations struggle to fill. The Caliphate is effectively leaderless."</p>
+
+                <div class="quote-box">
+                    "We have decapitated the snake. Every senior commander who posed a strategic threat to regional stability was in that compound. None survived. This is the most significant counterterrorism victory since the elimination of ISIS leadership."
+                    <br><em>— Defense Secretary Pete Hegseth</em>
+                </div>
+
+                <p>The successful strike represents the culmination of two months of intensive intelligence gathering and coordination between coalition partners. British and French intelligence services provided crucial on-the-ground intelligence, while Chinese satellite surveillance helped track movements of senior Caliphate figures.</p>
+
+                <p>"This was a true coalition effort," said Secretary of State Marco Rubio. "Every nation contributed something — intelligence, surveillance, logistics. When democracies work together, there's no terrorist organization we cannot defeat."</p>
+
+                <p>Regional leaders immediately hailed the strike as a turning point. Nigerian President Bola Tinubu called it "the beginning of the end for the Caliphate," while Senegalese President Bassirou Diomaye Faye said it "restores hope to all Africans who feared these extremists."</p>
+
+                <div class="update-bar">
+                    UPDATE: Caliphate forces reportedly abandoning positions across the region as news of leadership elimination spreads
+                </div>
+
+                <p>However, US officials cautioned that while the leadership strike represents a massive blow, the Caliphate still controls significant territory and maintains thousands of fighters under arms.</p>
+
+                <p>"This doesn't end the war," said Hegseth. "But it changes everything. Without their leadership, without their command structure, they go from being an organized military threat to scattered bands of terrorists. We'll hunt down every last one of them."</p>
+
+                <p>The Pentagon confirmed that coalition aircraft are already taking advantage of the leadership vacuum, conducting follow-up strikes against Caliphate positions that had previously been too well-defended to target.</p>
+
+                <p>"This is just the beginning," said President Trump in a brief statement. "We promised to destroy the Caliphate. Today, we took out their brain. Now we'll dismantle the rest of their body."</p>
+
+                <p>As news of the strike spread, celebrations broke out in cities across West Africa, from Dakar to Lagos, as people who had lived under Caliphate oppression celebrated what many hope represents the beginning of the end for the jihadist group.</p>
+
+                <p>"They told us they were invincible," said one resident of Bamako who asked not to be named. "Now their leaders are dead. Maybe we have a chance to take our cities back."</p>
             </div>
-        </aside>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
