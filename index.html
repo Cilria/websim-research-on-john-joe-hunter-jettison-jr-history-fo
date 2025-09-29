@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islamic Caliphate of the Sahel captures Bamako - r/worldnews</title>
+    <title>CNN - US-led coalition launches airstrikes against Islamic Caliphate of the Sahel</title>
     <style>
         * {
             margin: 0;
@@ -12,432 +12,340 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #030712;
-            color: #d1d5db;
+            font-family: CNN Sans, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #1a1a1a;
             line-height: 1.6;
         }
 
-        .reddit-container {
-            max-width: 800px;
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 0;
+            border-bottom: 3px solid #990000;
+        }
+
+        .cnn-header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .cnn-logo {
+            font-size: 2.8em;
+            font-weight: 900;
+            letter-spacing: -2px;
+        }
+
+        .main-content {
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #1a1a1a;
-            min-height: 100vh;
         }
 
-        .post-header {
-            background-color: #27272a;
-            padding: 16px;
-            border-radius: 8px;
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        .headline {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .subheadline {
+            font-size: 1.4em;
+            color: #404040;
+            font-weight: 400;
             margin-bottom: 20px;
-            border: 1px solid #3f3f46;
         }
 
-        .post-title {
-            font-size: 1.5em;
-            color: #ffffff;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .post-meta {
-            color: #9ca3af;
-            font-size: 0.9em;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .upvotes {
-            color: #f59e0b;
-            font-weight: 600;
-        }
-
-        .post-content {
-            background-color: #27272a;
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #3f3f46;
-        }
-
-        .post-link {
-            color: #60a5fa;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .post-link:hover {
-            text-decoration: underline;
-        }
-
-        .comments-section {
-            background-color: #27272a;
-            border-radius: 8px;
-            border: 1px solid #3f3f46;
-        }
-
-        .comment {
-            padding: 16px;
-            border-bottom: 1px solid #3f3f46;
-            background-color: #1e1e1e;
-        }
-
-        .comment:last-child {
-            border-bottom: none;
-        }
-
-        .comment-header {
+        .article-meta {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
+            gap: 20px;
+            color: #606060;
+            font-size: 0.95em;
+            margin-bottom: 15px;
         }
 
-        .username {
-            font-weight: 600;
-            color: #60a5fa;
+        .article-image {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            background-color: #f0f0f0;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+            border-radius: 8px;
         }
 
-        .user-flair {
-            background-color: #374151;
-            color: #fbbf24;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.8em;
+        .article-body {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #1a1a1a;
         }
 
-        .comment-meta {
-            color: #6b7280;
-            font-size: 0.8em;
+        .article-body p {
+            margin-bottom: 20px;
         }
 
-        .comment-body {
-            color: #d1d5db;
-            margin-bottom: 10px;
+        .tweet-container {
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            max-width: 600px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .tweet-avatar {
+            width: 48px;
+            height: 48px;
+            background-color: #1da1f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .tweet-user-info {
+            flex: 1;
+        }
+
+        .tweet-username {
+            font-weight: 700;
+            color: #1a1a1a;
+            font-size: 1.1em;
+        }
+
+        .tweet-handle {
+            color: #657786;
+            font-size: 0.95em;
+        }
+
+        .tweet-content {
+            font-size: 1.2em;
             line-height: 1.5;
+            margin-bottom: 12px;
+            color: #1a1a1a;
         }
 
-        .comment-actions {
-            display: flex;
-            gap: 15px;
-            font-size: 0.9em;
-            color: #6b7280;
+        .tweet-time {
+            color: #657786;
+            font-size: 0.85em;
+            border-top: 1px solid #e1e8ed;
+            padding-top: 12px;
+            margin-top: 12px;
         }
 
-        .comment-action {
-            cursor: pointer;
+        .breaking-banner {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            font-size: 1.1em;
+        }
+
+        .coalition-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid #1976d2;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .coalition-box h3 {
+            color: #1976d2;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .military-updates {
+            background-color: #fff3e0;
+            border: 1px solid #ff9800;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .military-updates h3 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #cc0000;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #2c3e50;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
             padding: 4px 8px;
             border-radius: 4px;
-            transition: background-color 0.2s;
+            font-size: 0.8em;
+            font-weight: bold;
+            animation: pulse 2s infinite;
         }
 
-        .comment-action:hover {
-            background-color: #374151;
-        }
-
-        .reply {
-            margin-left: 30px;
-            background-color: #252525;
-            border-left: 2px solid #4b5563;
-        }
-
-        .deep-reply {
-            margin-left: 60px;
-            background-color: #2a2a2a;
-        }
-
-        .sort-bar {
-            padding: 16px;
-            border-bottom: 1px solid #3f3f46;
-            color: #9ca3af;
-        }
-
-        .award {
-            color: #fbbf24;
-            margin-right: 5px;
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
         }
 
         @media (max-width: 768px) {
-            .reddit-container {
-                padding: 10px;
+            .headline {
+                font-size: 2.2em;
             }
-            
-            .reply {
-                margin-left: 20px;
+
+            .main-content {
+                padding: 15px;
             }
-            
-            .deep-reply {
-                margin-left: 30px;
+
+            .tweet-container {
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <h1 class="post-title">Islamic Caliphate of the Sahel captures Bamako in lightning offensive and advances toward Senegal and Nigeria</h1>
-            <div class="post-meta">
-                <span class="upvotes">↑ 42.8k</span>
-                <span>•</span>
-                <span>Posted by u/GlobalConflictWatcher</span>
-                <span>•</span>
-                <span>4 hours ago</span>
-                <span>•</span>
-                <span>92% upvoted</span>
-            </div>
+    <header class="cnn-header">
+        <div class="cnn-header-content">
+            <div class="cnn-logo">CNN</div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="breaking-banner">
+            <span class="live-indicator">LIVE</span> BREAKING: US-led coalition launches airstrikes against Islamic Caliphate
         </div>
 
-        <div class="post-content">
-            <a href="#" class="post-link">bbc.com/news/world-africa-Islamic-Caliphate-Sahel-Bamako</a>
-            <p style="margin-top: 10px; color: #9ca3af;">Jihadist forces seize Malian capital in 72-hour assault, capture 50+ towns in Guinea, and cross into Nigeria after rapid territorial expansion. Territory now spans from Atlantic Ocean to Nigeria border.</p>
-        </div>
-
-        <div class="comments-section">
-            <div class="sort-bar">
-                <strong>Best Comments</strong> • Sort by: Best
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">CriticalThinker88</span>
-                    <span class="comment-meta">• 3.7k upvotes • 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Holy shit this is getting bad. Like, really bad. I remember when these guys were just another jihadist group in Burkina Faso. Now they control more territory than most European countries. How the hell did nobody see this coming?
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">AfricaAnalyst</span>
-                        <span class="user-flair">Regional Expert</span>
-                        <span class="comment-meta">• 1.2k upvotes • 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Honestly? Everyone saw it coming. The international community just kept applying the same failed counterterrorism playbook while these guys were learning, adapting, and building actual state capacity. Now they're governing territory, collecting taxes, providing services. This isn't terrorism anymore - it's state formation.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">PentagonPapersPlease</span>
-                        <span class="comment-meta">• 847 upvotes • 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    The scary part is they're using our own weapons against us. Every time a military base falls, they capture more advanced equipment. It's like watching ISIS 2.0 but with better logistics and actual strategic planning.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
+        <article>
+            <div class="article-header">
+                <h1 class="headline">US-led coalition launches airstrikes against Islamic Caliphate as jihadists advance toward Nigerian capital</h1>
+                <p class="subheadline">President Trump announces military operations underway as coalition forces target Caliphate positions; jihadist forces lay siege to Kaduna, 50km from Abuja</p>
+                <div class="article-meta">
+                    <span class="byline">By CNN National Security Team</span>
+                    <span class="date">March 25, 2027</span>
+                    <span class="location">Washington, D.C.</span>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryNerd2024</span>
-                    <span class="user-flair">History Buff</span>
-                    <span class="comment-meta">• 2.9k upvotes • 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is genuinely historic in the worst possible way. 72 hours to capture a capital city? That's blitzkrieg speed. And now they're in fucking Nigeria - if they destabilize Africa's largest economy, we're looking at refugee crises that'll make Syria look like a picnic.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">EuropeanPerspective</span>
-                        <span class="comment-meta">• 1.5k upvotes • 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Already seeing the first wave of refugees in southern Europe. My town in Italy has seen a 300% increase in West African migrants this month. People are terrified and European governments are just... pretending it's not happening.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
+            <div class="tweet-container">
+                <div class="tweet-header">
+                    <div class="tweet-avatar">DT</div>
+                    <div class="tweet-user-info">
+                        <div class="tweet-username">Donald J. Trump</div>
+                        <div class="tweet-handle">@realDonaldTrump</div>
                     </div>
                 </div>
+                <div class="tweet-content">
+                    The United States has officially begun MILITARY OPERATIONS against the so-called Islamic Caliphate of the Sahel. These terrorists won't be laughing anymore. We're hitting them HARDER than anyone thought possible. France, UK and others are with us. MAKE THE SAHEL GREAT AGAIN! 🇺🇸
+                </div>
+                <div class="tweet-time">7:42 AM · Mar 25, 2027</div>
             </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArmchairGeneral</span>
-                    <span class="comment-meta">• 2.1k upvotes • 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The fact that they captured 50+ towns in Guinea in FOUR DAYS tells you everything about how weak these states are. When your military can't hold territory against pickup trucks and technicals, you don't have a military - you have a jobs program with uniforms.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">SahelWatcher</span>
-                        <span class="user-flair">West Africa</span>
-                        <span class="comment-meta">• 892 upvotes • 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Bro, these aren't just technicals anymore. They have surface-to-air missiles keeping drones away, they're using encrypted comms, and they've got former military officers who defected. This is a professional army now, not some ragtag militia.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
+            <div class="article-image">
+                [Image: US Navy F/A-18 Super Hornet launching from carrier in coordinated strike against Caliphate positions]
             </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DarkHumorDefence</span>
-                    <span class="comment-meta">• 1.8k upvotes • 3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Well, on the bright side, at least they're efficient? My government can't build a highway in 4 years and these guys captured 50 towns in 4 days. Maybe we should hire them for infrastructure projects? /s
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
+            <div class="article-body">
+                <p>The United States has officially commenced military operations against the Islamic Caliphate of the Sahel, with Defense Secretary Pete Hegseth confirming that "military operations have begun" against the rapidly expanding jihadist group, CNN has learned.</p>
+
+                <p>President Trump announced the operation in a series of tweets early Tuesday morning, declaring that coalition forces are "hitting them HARDER than anyone thought possible" as the Caliphate's forces continue their lightning advance across West Africa.</p>
+
+                <div class="coalition-box">
+                    <h3>International Coalition Response</h3>
+                    <p><strong>United States:</strong> Airstrikes targeting Caliphate positions in Mali, Burkina Faso, and Niger</p>
+                    <p><strong>France:</strong> Rafale fighter jets conducting precision strikes in former colonies</p>
+                    <p><strong>United Kingdom:</strong> RAF Typhoons joining coordinated bombing campaign</p>
+                    <p><strong>Additional allies:</strong> Germany, Italy, and Spain providing logistical support</p>
                 </div>
 
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">TooSoonBot</span>
-                        <span class="comment-meta">• 456 upvotes • 3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    I mean... you're not wrong about the efficiency part. They provide better security than the official governments in most of these areas. That's why people aren't fighting back - they're tired of corrupt officials and endless civil wars. At least these guys provide order, even if it's brutal.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
+                <p>The military intervention comes as Caliphate forces have laid siege to Kaduna, a major Nigerian city just 50 kilometers from the capital Abuja, threatening to topple Africa's most populous nation and largest economy.</p>
+
+                <p>"We cannot stand by while a jihadist army threatens to capture an allied capital," Hegseth said in a Pentagon briefing. "The Caliphate's expansion has reached a critical threshold that demands immediate military response."</p>
+
+                <div class="military-updates">
+                    <h3>Current Battlefield Situation</h3>
+                    <p><strong>Kaduna Siege:</strong> Caliphate forces encircling city, heavy fighting reported at city limits</p>
+                    <p><strong>Ivory Coast:</strong> Korhogo falls to Caliphate after 18-hour battle</p>
+                    <p><strong>Nigerian Response:</strong> Government forces establishing defensive perimeter around Abuja</p>
+                    <p><strong>Coalition Targets:</strong> Command centers, weapons depots, and supply lines under attack</p>
                 </div>
+
+                <p>French President Emmanuel Macron confirmed that French forces have joined the operation, with Rafale fighter jets conducting precision strikes against Caliphate positions in former French colonies. The United Kingdom has also deployed RAF Typhoons from bases in Cyprus.</p>
+
+                <p>"This is not just an African problem — it's a global security crisis," Macron said in Paris. "We have a responsibility to act before this jihadist state becomes permanent."</p>
+
+                <div class="quote-box">
+                    "We cannot stand by while a jihadist army threatens to capture an allied capital. The Caliphate's expansion has reached a critical threshold that demands immediate military response."
+                    <br><em>— Defense Secretary Pete Hegseth</em>
+                </div>
+
+                <p>The coalition is targeting what military officials describe as the Caliphate's "center of gravity" — command centers, weapons depots, and supply lines that have enabled their rapid expansion across five nations in less than a month.</p>
+
+                <p>Intelligence sources tell CNN that the initial strikes have destroyed several key facilities, including a major weapons depot near Timbuktu and command centers in both Bamako and Niamey. However, officials caution that the operation is just beginning.</p>
+
+                <p>"This won't be a quick fix," warned a senior military official who spoke on condition of anonymity. "They've had time to dig in, to prepare for this. We're prepared for a sustained campaign."</p>
+
+                <p>The siege of Kaduna represents the most immediate crisis. Caliphate forces have surrounded the city of 1.5 million people, cutting off major highways and reportedly using captured Nigerian military equipment in their assault.</p>
+
+                <p>"They're using our own weapons against us," said a Nigerian military spokesman. "Tanks, artillery, even some aircraft they captured when they overran our bases in the north."</p>
+
+                <p>Meanwhile, the fall of Korhogo in Ivory Coast after an 18-hour battle has given the Caliphate a strategic foothold in the country, opening new supply routes and threatening to destabilize one of West Africa's more stable democracies.</p>
+
+                <p>Beyond the immediate military response, officials tell CNN that operations have begun to dismantle the Caliphate's international support network. The Treasury Department is preparing sanctions against individuals and entities accused of supporting the group, while intelligence agencies are targeting their financial and logistical networks worldwide.</p>
+
+                <div class="coalition-box">
+                    <h3>Global Response Network</h3>
+                    <p><strong>Financial:</strong> Treasury sanctions targeting Caliphate supporters globally</p>
+                    <p><strong>Intelligence:</strong> Coordinated effort to disrupt international support networks</p>
+                    <p><strong>Diplomatic:</strong> UN Security Council emergency session scheduled</p>
+                    <p><strong>Humanitarian:</strong> Aid agencies preparing for potential refugee crisis</p>
+                </div>
+
+                <p>The international response extends beyond military action. The UN Security Council is scheduled to hold an emergency session Tuesday evening to discuss broader international measures, including potential peacekeeping operations and humanitarian assistance for the millions of civilians caught in the conflict zone.</p>
+
+                <p>"We're looking at a potential humanitarian catastrophe," said a UN official. "Millions of people are displaced, cities are under siege, and the Caliphate's advance shows no signs of slowing."</p>
+
+                <p>As night falls over West Africa, coalition aircraft continue their bombing campaign while Caliphate forces press their attacks on multiple fronts. The coming days will determine whether the international intervention can halt what many experts now describe as the most significant jihadist expansion since the rise of ISIS.</p>
+
+                <p>"This is a turning point," said Dr. Jennifer Cooke, Africa expert at the Center for Strategic and International Studies. "Either the coalition succeeds in pushing them back, or we're looking at a new jihadist state controlling much of West Africa. The stakes couldn't be higher."</p>
+
+                <p>President Trump, in his final tweet on the matter Tuesday evening, struck a defiant tone: "The Caliphate made a big mistake threatening our allies. They wanted war? They're going to get it. And we're going to WIN. America is BACK!"</p>
             </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">GeopoliticsJunkie</span>
-                    <span class="user-flair">International Relations</span>
-                    <span class="comment-meta">• 1.4k upvotes • 3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is what happens when you have a generation of young men who've known nothing but war, corruption, and poverty. The caliphate offers them purpose, money, and a chance to be part of something bigger than themselves. We're not just losing territory - we're losing the battle for hearts and minds, and we haven't even shown up to fight it.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">FormerPeacekeeper</span>
-                        <span class="comment-meta">• 678 upvotes • 2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Spent 2 years with UN peacekeeping in Mali. We built schools, wells, medical clinics. Then we left because of security concerns. Six months later, the caliphate burned down everything we'd built and executed the local leaders who worked with us. Hearts and minds don't matter when you're not there to protect them.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-
-                    <div class="comment reply deep-reply">
-                        <div class="comment-header">
-                            <span class="username">RealisticOptimist</span>
-                            <span class="comment-meta">• 234 upvotes • 2 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                        This is why locals don't trust Western intervention anymore. We're either there bombing or we're gone completely. There's no middle ground, no long-term commitment. Just endless cycles of intervention and abandonment.
-                        </div>
-                        <div class="comment-actions">
-                            <span class="comment-action">↑ Reply</span>
-                            <span class="comment-action">Share</span>
-                            <span class="comment-action">Save</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">NigerianPrinceIRL</span>
-                    <span class="user-flair">Nigeria</span>
-                    <span class="comment-meta">• 967 upvotes • 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    I'm in Lagos and people here are genuinely scared. If these guys establish themselves in northern Nigeria, we're looking at Boko Haram on steroids. Our military is already stretched thin and now we're facing battle-hardened fighters who just captured three capitals. This could destabilize the entire region.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-
-                <div class="comment reply">
-                    <div class="comment-header">
-                        <span class="username">AfricanUnionAdvocate</span>
-                        <span class="comment-meta">• 445 upvotes • 2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    The AU needs to wake up and form a proper military coalition NOW. Waiting for Western help that may never come is suicide. We need Nigerian, Ghanaian, and Kenyan troops mobilized immediately. This is an African problem that requires an African solution.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">↑ Reply</span>
-                        <span class="comment-action">Share</span>
-                        <span class="comment-action">Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ClimateChangeRealist</span>
-                    <span class="comment-meta">• 523 upvotes • 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Everyone's focused on the military aspect but nobody's talking about the climate factor. The Sahel has been getting drier for decades, pastoralists and farmers are fighting over dwindling resources, and these guys are offering water management and food distribution. They're literally using climate change as a recruitment tool.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">↑ Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">LoadMoreComments</span>
-                    <span class="comment-meta">• Load more comments (2,847 remaining)</span>
-                </div>
-            </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
