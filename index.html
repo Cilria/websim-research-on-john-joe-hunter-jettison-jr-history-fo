@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN - US-led coalition launches airstrikes against Islamic Caliphate of the Sahel</title>
+    <title>NBC News - 63-nation coalition forms to destroy Islamic Caliphate</title>
     <style>
         * {
             margin: 0;
@@ -12,29 +12,29 @@
         }
 
         body {
-            font-family: CNN Sans, Helvetica, Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #1a1a1a;
+            font-family: NBC News, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
             line-height: 1.6;
         }
 
-        .cnn-header {
-            background-color: #cc0000;
+        .nbc-header {
+            background-color: #005dab;
             color: white;
             padding: 15px 0;
-            border-bottom: 3px solid #990000;
+            border-bottom: 3px solid #004c8a;
         }
 
-        .cnn-header-content {
+        .nbc-header-content {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .cnn-logo {
-            font-size: 2.8em;
+        .nbc-logo {
+            font-size: 2.5em;
             font-weight: 900;
-            letter-spacing: -2px;
+            letter-spacing: -1px;
         }
 
         .main-content {
@@ -50,7 +50,7 @@
         }
 
         .headline {
-            font-size: 2.8em;
+            font-size: 2.6em;
             font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 15px;
@@ -97,68 +97,32 @@
             margin-bottom: 20px;
         }
 
-        .tweet-container {
-            background-color: #ffffff;
-            border: 1px solid #e1e8ed;
+        .coalition-flags {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
             border-radius: 12px;
             padding: 20px;
             margin: 25px 0;
-            max-width: 600px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
         }
 
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
+        .flag-item {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .tweet-avatar {
-            width: 48px;
-            height: 48px;
-            background-color: #1da1f2;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .tweet-user-info {
-            flex: 1;
-        }
-
-        .tweet-username {
-            font-weight: 700;
-            color: #1a1a1a;
-            font-size: 1.1em;
-        }
-
-        .tweet-handle {
-            color: #657786;
-            font-size: 0.95em;
-        }
-
-        .tweet-content {
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 12px;
-            color: #1a1a1a;
-        }
-
-        .tweet-time {
-            color: #657786;
-            font-size: 0.85em;
-            border-top: 1px solid #e1e8ed;
-            padding-top: 12px;
-            margin-top: 12px;
+        .flag-emoji {
+            font-size: 2em;
+            margin-bottom: 5px;
         }
 
         .breaking-banner {
-            background-color: #d32f2f;
+            background-color: #dc3545;
             color: white;
             padding: 12px 20px;
             font-weight: bold;
@@ -168,36 +132,36 @@
             font-size: 1.1em;
         }
 
-        .coalition-box {
-            background-color: #e3f2fd;
-            border-left: 4px solid #1976d2;
+        .victory-box {
+            background-color: #d4edda;
+            border: 1px solid #28a745;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .victory-box h3 {
+            color: #155724;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .coalition-stats {
+            background-color: #e7f3ff;
+            border-left: 4px solid #005dab;
             padding: 20px;
             margin: 25px 0;
             border-radius: 0 8px 8px 0;
         }
 
-        .coalition-box h3 {
-            color: #1976d2;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .military-updates {
-            background-color: #fff3e0;
-            border: 1px solid #ff9800;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 8px;
-        }
-
-        .military-updates h3 {
-            color: #e65100;
+        .coalition-stats h3 {
+            color: #005dab;
             margin-top: 0;
         }
 
         .quote-box {
             background-color: #f8f9fa;
-            border-left: 4px solid #cc0000;
+            border-left: 4px solid #005dab;
             padding: 20px;
             margin: 25px 0;
             font-style: italic;
@@ -207,7 +171,7 @@
 
         .live-indicator {
             display: inline-block;
-            background-color: #ff0000;
+            background-color: #dc3545;
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
@@ -222,6 +186,19 @@
             100% { opacity: 1; }
         }
 
+        .china-box {
+            background-color: #fff2f2;
+            border: 1px solid #dc3545;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .china-box h3 {
+            color: #a71e2a;
+            margin-top: 0;
+        }
+
         @media (max-width: 768px) {
             .headline {
                 font-size: 2.2em;
@@ -231,118 +208,139 @@
                 padding: 15px;
             }
 
-            .tweet-container {
-                padding: 15px;
+            .coalition-flags {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             }
         }
     </style>
 </head>
 <body>
-    <header class="cnn-header">
-        <div class="cnn-header-content">
-            <div class="cnn-logo">CNN</div>
+    <header class="nbc-header">
+        <div class="nbc-header-content">
+            <div class="nbc-logo">NBC NEWS</div>
         </div>
     </header>
 
     <div class="main-content">
         <div class="breaking-banner">
-            <span class="live-indicator">LIVE</span> BREAKING: US-led coalition launches airstrikes against Islamic Caliphate
+            <span class="live-indicator">LIVE</span> BREAKING: 63-nation coalition forms against Islamic Caliphate
         </div>
 
         <article>
             <div class="article-header">
-                <h1 class="headline">US-led coalition launches airstrikes against Islamic Caliphate as jihadists advance toward Nigerian capital</h1>
-                <p class="subheadline">President Trump announces military operations underway as coalition forces target Caliphate positions; jihadist forces lay siege to Kaduna, 50km from Abuja</p>
+                <h1 class="headline">63-nation coalition forms to destroy Islamic Caliphate as Nigerian forces retake Kaduna in major victory</h1>
+                <p class="subheadline">Historic alliance includes China, NATO nations, and global powers; Nigerian military kills 900+ jihadists in single day to break siege of major city</p>
                 <div class="article-meta">
-                    <span class="byline">By CNN National Security Team</span>
-                    <span class="date">March 25, 2027</span>
-                    <span class="location">Washington, D.C.</span>
+                    <span class="byline">By NBC News International Desk</span>
+                    <span class="date">April 3, 2027</span>
+                    <span class="location">New York</span>
                 </div>
-            </div>
-
-            <div class="tweet-container">
-                <div class="tweet-header">
-                    <div class="tweet-avatar">DT</div>
-                    <div class="tweet-user-info">
-                        <div class="tweet-username">Donald J. Trump</div>
-                        <div class="tweet-handle">@realDonaldTrump</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    The United States has officially begun MILITARY OPERATIONS against the so-called Islamic Caliphate of the Sahel. These terrorists won't be laughing anymore. We're hitting them HARDER than anyone thought possible. France, UK and others are with us. MAKE THE SAHEL GREAT AGAIN! 🇺🇸
-                </div>
-                <div class="tweet-time">7:42 AM · Mar 25, 2027</div>
             </div>
 
             <div class="article-image">
-                [Image: US Navy F/A-18 Super Hornet launching from carrier in coordinated strike against Caliphate positions]
+                [Image: Nigerian soldiers raising national flag over Kaduna after driving out Caliphate forces]
             </div>
 
             <div class="article-body">
-                <p>The United States has officially commenced military operations against the Islamic Caliphate of the Sahel, with Defense Secretary Pete Hegseth confirming that "military operations have begun" against the rapidly expanding jihadist group, CNN has learned.</p>
+                <p>The United States and more than 60 other nations have formed an unprecedented international coalition dedicated to destroying the Islamic Caliphate of the Sahel, as Nigerian forces scored the first major victory against the jihadist group by driving them out of Kaduna and killing over 900 fighters in a single day of combat.</p>
 
-                <p>President Trump announced the operation in a series of tweets early Tuesday morning, declaring that coalition forces are "hitting them HARDER than anyone thought possible" as the Caliphate's forces continue their lightning advance across West Africa.</p>
+                <p>The 63-nation alliance, announced Thursday morning, represents the largest international military coalition since the 1991 Gulf War and includes major powers from every continent, with even China joining the effort with its own airstrikes against Caliphate positions.</p>
 
-                <div class="coalition-box">
-                    <h3>International Coalition Response</h3>
-                    <p><strong>United States:</strong> Airstrikes targeting Caliphate positions in Mali, Burkina Faso, and Niger</p>
-                    <p><strong>France:</strong> Rafale fighter jets conducting precision strikes in former colonies</p>
-                    <p><strong>United Kingdom:</strong> RAF Typhoons joining coordinated bombing campaign</p>
-                    <p><strong>Additional allies:</strong> Germany, Italy, and Spain providing logistical support</p>
+                <div class="coalition-stats">
+                    <h3>Coalition Breakdown</h3>
+                    <p><strong>NATO Members:</strong> 30 nations including US, UK, France, Germany</p>
+                    <p><strong>Asian Powers:</strong> China, Japan, South Korea, Australia</p>
+                    <p><strong>Middle East:</strong> Saudi Arabia, UAE, Jordan, Egypt</p>
+                    <p><strong>African Union:</strong> Nigeria, Kenya, Ethiopia, Ghana</p>
+                    <p><strong>Latin America:</strong> Brazil, Colombia, Argentina</p>
                 </div>
 
-                <p>The military intervention comes as Caliphate forces have laid siege to Kaduna, a major Nigerian city just 50 kilometers from the capital Abuja, threatening to topple Africa's most populous nation and largest economy.</p>
+                <p>"This is not just a Western response — this is the world standing together against a global threat," said Secretary of State Marco Rubio at the coalition announcement in Washington. "When 63 nations unite for a single purpose, the outcome is inevitable."</p>
 
-                <p>"We cannot stand by while a jihadist army threatens to capture an allied capital," Hegseth said in a Pentagon briefing. "The Caliphate's expansion has reached a critical threshold that demands immediate military response."</p>
-
-                <div class="military-updates">
-                    <h3>Current Battlefield Situation</h3>
-                    <p><strong>Kaduna Siege:</strong> Caliphate forces encircling city, heavy fighting reported at city limits</p>
-                    <p><strong>Ivory Coast:</strong> Korhogo falls to Caliphate after 18-hour battle</p>
-                    <p><strong>Nigerian Response:</strong> Government forces establishing defensive perimeter around Abuja</p>
-                    <p><strong>Coalition Targets:</strong> Command centers, weapons depots, and supply lines under attack</p>
+                <div class="victory-box">
+                    <h3>Breaking: Nigerian Victory in Kaduna</h3>
+                    <p><strong>Timeline:</strong> 14-hour battle ending at dawn</p>
+                    <p><strong>Enemy casualties:</strong> 900+ jihadists killed</p>
+                    <p><strong>Prisoners taken:</strong> 200+ Caliphate fighters captured</p>
+                    <p><strong>Equipment seized:</strong> 50+ vehicles, heavy weapons</p>
+                    <p><strong>Strategic impact:</strong> Abuja no longer threatened</p>
                 </div>
 
-                <p>French President Emmanuel Macron confirmed that French forces have joined the operation, with Rafale fighter jets conducting precision strikes against Caliphate positions in former French colonies. The United Kingdom has also deployed RAF Typhoons from bases in Cyprus.</p>
+                <p>The victory at Kaduna represents a crucial turning point. Nigerian forces, backed by coalition intelligence and air support, launched a dawn assault that caught Caliphate fighters by surprise, breaking their three-week siege of the strategic city just 50 kilometers from the capital Abuja.</p>
 
-                <p>"This is not just an African problem — it's a global security crisis," Macron said in Paris. "We have a responsibility to act before this jihadist state becomes permanent."</p>
+                <p>"They thought they were safe behind their positions," said Nigerian Army Chief of Staff General Ibrahim Yusuf. "But we hit them from three directions simultaneously, using everything we've learned from our coalition partners. They never had a chance to regroup."</p>
+
+                <div class="china-box">
+                    <h3>China Joins the Fight</h3>
+                    <p><strong>First time:</strong> China joins Western-led military coalition</p>
+                    <p><strong>Aircraft deployed:</strong> 24 J-20 stealth fighters from Djibouti base</p>
+                    <p><strong>Targets hit:</strong> Caliphate command centers in Mali</p>
+                    <p><strong>Statement:</strong> "Global security threat requires global response"</p>
+                </div>
+
+                <p>China's participation marks a historic shift in global military cooperation. Beijing's J-20 stealth fighters conducted precision strikes against Caliphate command centers in Mali, marking the first time Chinese combat aircraft have operated alongside Western forces in a coordinated campaign.</p>
+
+                <p>"The threat posed by the Islamic Caliphate transcends traditional geopolitical divisions," said Chinese Foreign Minister Wang Yi through a translator. "When civilization itself is threatened, civilized nations must stand together."</p>
+
+                <div class="coalition-flags">
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇺🇸</div>
+                        <div>United States</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇬🇧</div>
+                        <div>United Kingdom</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇫🇷</div>
+                        <div>France</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇩🇪</div>
+                        <div>Germany</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇨🇳</div>
+                        <div>China</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇷🇺</div>
+                        <div>Russia</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇯🇵</div>
+                        <div>Japan</div>
+                    </div>
+                    <div class="flag-item">
+                        <div class="flag-emoji">🇳🇬</div>
+                        <div>Nigeria</div>
+                    </div>
+                </div>
+
+                <p>The coalition's formation follows weeks of diplomatic efforts led by Washington, Brussels, and Beijing. Every permanent member of the UN Security Council has joined, along with major regional powers from every continent.</p>
+
+                <p>"We have never seen anything like this level of international cooperation," said Dr. Karen Armstrong, international relations expert at Georgetown University. "Even during World War II, the alliances were regional. This is genuinely global."</p>
+
+                <p>The military campaign will proceed in phases, officials said. Phase One involves coordinated airstrikes from over 200 bases worldwide. Phase Two will see special forces operations targeting Caliphate leadership. Phase Three, if necessary, involves conventional ground forces.</p>
 
                 <div class="quote-box">
-                    "We cannot stand by while a jihadist army threatens to capture an allied capital. The Caliphate's expansion has reached a critical threshold that demands immediate military response."
-                    <br><em>— Defense Secretary Pete Hegseth</em>
+                    "When 63 nations unite for a single purpose, the outcome is inevitable. The Islamic Caliphate has declared war on civilization itself. Today, civilization responds."
+                    <br><em>— Secretary of State Marco Rubio</em>
                 </div>
 
-                <p>The coalition is targeting what military officials describe as the Caliphate's "center of gravity" — command centers, weapons depots, and supply lines that have enabled their rapid expansion across five nations in less than a month.</p>
+                <p>Russia's participation surprised many observers, given tensions with the West over Ukraine. However, Moscow officials said the Caliphate's expansion threatens Russian interests in Africa and could inspire jihadist groups in Central Asia.</p>
 
-                <p>Intelligence sources tell CNN that the initial strikes have destroyed several key facilities, including a major weapons depot near Timbuktu and command centers in both Bamako and Niamey. However, officials caution that the operation is just beginning.</p>
+                <p>"Terrorism knows no borders," said Russian Defense Minister Sergei Shoigu. "Neither should our response."</p>
 
-                <p>"This won't be a quick fix," warned a senior military official who spoke on condition of anonymity. "They've had time to dig in, to prepare for this. We're prepared for a sustained campaign."</p>
+                <p>The coalition has established a unified command structure, with rotating leadership between major powers. NATO will coordinate European forces, while a joint US-China task force will handle Asian-Pacific operations. African Union forces will coordinate regional responses.</p>
 
-                <p>The siege of Kaduna represents the most immediate crisis. Caliphate forces have surrounded the city of 1.5 million people, cutting off major highways and reportedly using captured Nigerian military equipment in their assault.</p>
+                <p>"This isn't just about military might," said Nigerian President Bola Tinubu, whose forces scored the first victory. "It's about showing that when the world stands together, no threat is too great to overcome."</p>
 
-                <p>"They're using our own weapons against us," said a Nigerian military spokesman. "Tanks, artillery, even some aircraft they captured when they overran our bases in the north."</p>
+                <p>The victory at Kaduna has already had ripple effects. Caliphate forces reportedly withdrew from several forward positions in Nigeria, apparently reassessing their strategy in the face of coordinated international opposition.</p>
 
-                <p>Meanwhile, the fall of Korhogo in Ivory Coast after an 18-hour battle has given the Caliphate a strategic foothold in the country, opening new supply routes and threatening to destabilize one of West Africa's more stable democracies.</p>
+                <p>As coalition aircraft from 63 nations begin coordinated strikes across the Sahel, officials say the message to the Islamic Caliphate is clear: the world has had enough.</p>
 
-                <p>Beyond the immediate military response, officials tell CNN that operations have begun to dismantle the Caliphate's international support network. The Treasury Department is preparing sanctions against individuals and entities accused of supporting the group, while intelligence agencies are targeting their financial and logistical networks worldwide.</p>
-
-                <div class="coalition-box">
-                    <h3>Global Response Network</h3>
-                    <p><strong>Financial:</strong> Treasury sanctions targeting Caliphate supporters globally</p>
-                    <p><strong>Intelligence:</strong> Coordinated effort to disrupt international support networks</p>
-                    <p><strong>Diplomatic:</strong> UN Security Council emergency session scheduled</p>
-                    <p><strong>Humanitarian:</strong> Aid agencies preparing for potential refugee crisis</p>
-                </div>
-
-                <p>The international response extends beyond military action. The UN Security Council is scheduled to hold an emergency session Tuesday evening to discuss broader international measures, including potential peacekeeping operations and humanitarian assistance for the millions of civilians caught in the conflict zone.</p>
-
-                <p>"We're looking at a potential humanitarian catastrophe," said a UN official. "Millions of people are displaced, cities are under siege, and the Caliphate's advance shows no signs of slowing."</p>
-
-                <p>As night falls over West Africa, coalition aircraft continue their bombing campaign while Caliphate forces press their attacks on multiple fronts. The coming days will determine whether the international intervention can halt what many experts now describe as the most significant jihadist expansion since the rise of ISIS.</p>
-
-                <p>"This is a turning point," said Dr. Jennifer Cooke, Africa expert at the Center for Strategic and International Studies. "Either the coalition succeeds in pushing them back, or we're looking at a new jihadist state controlling much of West Africa. The stakes couldn't be higher."</p>
-
-                <p>President Trump, in his final tweet on the matter Tuesday evening, struck a defiant tone: "The Caliphate made a big mistake threatening our allies. They wanted war? They're going to get it. And we're going to WIN. America is BACK!"</p>
+                <p>"They wanted to establish a new caliphate," said Secretary Rubio. "Instead, they've united the world against them. History will record this as their fatal miscalculation."</p>
             </div>
         </article>
     </div>
