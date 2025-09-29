@@ -1,376 +1,208 @@
 <html>
 <head>
-<title>r/worldnews - Burkina Faso capital falls to jihadist forces, Islamic Caliphate of The Sahel declared</title>
+<title>CNN - Islamic Caliphate of the Sahel Expands Rapidly into Neighboring Countries</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #DAE0E6;
+    font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #262626;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 .header {
-    background-color: #1A1A1B;
+    background-color: #cc0000;
     color: white;
-    padding: 8px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 20px;
+    text-align: center;
 }
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: 20px;
-}
-.search-bar {
-    background-color: #272729;
-    border: 1px solid #343536;
-    border-radius: 4px;
-    padding: 8px 12px;
-    color: white;
-    width: 300px;
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    display: flex;
-    gap: 20px;
 }
-.main-content {
-    flex: 1;
-    background-color: white;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.article-header {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
-.post {
-    padding: 12px;
-    border-bottom: 1px solid #ccc;
+.headline {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
-.post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
-.post-meta {
-    color: #787C7E;
-    font-size: 0.85em;
-}
-.post-title {
-    font-size: 1.4em;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: #1A1A1B;
-}
-.post-content {
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-.post-content p {
-    margin: 8px 0;
-}
-.post-actions {
-    display: flex;
-    gap: 15px;
-    font-size: 0.9em;
-    color: #878A8C;
-}
-.post-actions span {
-    cursor: pointer;
-}
-.post-actions span:hover {
-    color: #0079D3;
-}
-.comments {
-    padding: 12px;
-}
-.comment {
-    margin-bottom: 16px;
-    padding-left: 8px;
-    border-left: 2px solid #e9ecef;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-}
-.comment-author {
-    font-weight: 500;
-    color: #0079D3;
-    margin-right: 8px;
-}
-.comment-meta {
-    color: #787C7E;
-    font-size: 0.85em;
-}
-.comment-content {
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
-.comment-actions {
-    font-size: 0.85em;
-    color: #878A8C;
-}
-.reply {
-    margin-left: 24px;
-    margin-top: 12px;
-    padding-left: 8px;
-    border-left: 2px solid #e9ecef;
-}
-.sidebar {
-    width: 300px;
-}
-.community-details {
-    background-color: white;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 12px;
+.subhead {
+    font-size: 1.3em;
+    color: #666;
+    font-weight: 400;
     margin-bottom: 20px;
 }
-.flair {
-    background-color: #e9ecef;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 0.8em;
-    margin-left: 8px;
+.byline {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.dateline {
+    color: #999;
+    font-size: 0.85em;
+}
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #ddd;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+.article-content {
+    max-width: 800px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+.article-content p {
+    margin-bottom: 20px;
+}
+.pullquote {
+    border-left: 4px solid #cc0000;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #666;
+    font-size: 1.2em;
+}
+.sidebar {
+    float: right;
+    width: 300px;
+    margin-left: 30px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.sidebar h3 {
+    color: #cc0000;
+    margin-top: 0;
+}
+.fact-box {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.fact-box h4 {
+    margin-top: 0;
+    color: #cc0000;
 }
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
     .sidebar {
+        float: none;
         width: 100%;
+        margin-left: 0;
     }
 }
 </style>
 </head>
 <body>
 <div class="header">
-    <div class="header-content">
-        <div class="logo">reddit</div>
-        <input type="text" class="search-bar" placeholder="Search Reddit">
-    </div>
+    <h1>CNN</h1>
 </div>
 
 <div class="container">
-    <div class="main-content">
-        <div class="post">
-            <div class="post-header">
-                <span class="post-meta">r/worldnews • Posted by u/GlobalNewsHound • 8 hours ago</span>
-            </div>
-            <div class="post-title">BREAKING: Burkina Faso capital Ouagadougou falls to jihadist forces after 18-hour siege. Islamic Caliphate of The Sahel declared as militants vow rapid expansion across West Africa.</div>
-            <div class="post-content">
-                <p>OUAGADOUGOU, Burkina Faso — Jihadist forces have captured the capital city after a brutal 18-hour siege, culminating a two-year military campaign that has systematically destroyed the country's defenses. The militants have declared the establishment of "The Islamic Caliphate of The Sahel" and announced plans for immediate expansion into neighboring countries.</p>
-                
-                <p>Sources confirm that President Ibrahim Traoré refused multiple evacuation proposals and defensive strategies from his military commanders throughout the final weeks of fighting. The jihadist forces, which have been building strength since 2025, now control the entire country and are positioning forces along borders with Ghana, Togo, and Benin.</p>
-                
-                <p>This represents one of the most significant territorial gains by jihadist forces in modern African history, with experts warning of a potential domino effect across the region.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 12.3k ↓</span>
-                <span>3.2k Comments</span>
-                <span>Share</span>
-                <span>Save</span>
-            </div>
-        </div>
+    <div class="article-header">
+        <h1 class="headline">Islamic Caliphate of the Sahel expands rapidly across West Africa, seizing Gao and western Niamey in coordinated offensive</h1>
+        <p class="subhead">Jihadist groups armed with captured weapons push into Mali and Niger, with reports of fighters crossing into Benin and Togo</p>
+        <div class="byline">By CNN Staff</div>
+        <div class="dateline">March 19, 2027 | Dakar, Senegal</div>
+    </div>
 
-        <div class="comments">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">NorthAfricanAnalyst</span>
-                    <span class="flair">North Africa Expert</span>
-                    <span class="comment-meta">• 7 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    Holy shit. This is actually happening. The Sahel just got its own Islamic State. These aren't some random extremists riding around in technicals anymore - this is a coordinated military force that just systematically dismantled a national army over two years and captured a capital city. The implications for West Africa are absolutely catastrophic.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 2.1k ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">WestAfricaHand</span>
-                        <span class="comment-meta">• 6 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                    Côte d'Ivoire's military just went to DEFCON 1. I'm getting reports that Ghana has mobilized their entire armed forces and is requesting emergency assistance from the UK and US. Togo and Benin are shitting themselves because they know they're next. This isn't just a Burkina Faso problem anymore - this is about to become a regional war.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 1.4k ↓</span>
-                        <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">HistoryRepeating2023</span>
-                    <span class="comment-meta">• 7 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    My god, I remember reading about these guys when they were just a minor insurgency in northern Mali back in 2015. Now they've got their own caliphate and control multiple countries. This is like watching ISIS happen in real-time but in Africa. The speed of this is what's absolutely terrifying - two years from nuisance to controlling a capital city.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.8k ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">ISIS_Comparison_Bot</span>
-                        <span class="comment-meta">• 6 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                    Actually, this might be worse than ISIS. At least ISIS emerged in the chaos of Syria's civil war. These guys systematically took over a functioning democracy while the international community just... watched? The EU was still sending development aid to Burkina Faso while these militants were literally surrounding the capital.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 987 ↓</span>
-                        <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">ActualFuckingJihadist</span>
-                    <span class="comment-meta">• 6 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    As someone who actually studies these groups professionally, let me tell you - this is their Tet Offensive moment. They've been planning this for years, building alliances, stockpiling weapons, training fighters. The "Islamic Caliphate of The Sahel" isn't just some random name they picked - they see themselves as the legitimate successor to all the historical Sahelian Islamic kingdoms. This is about way more than just terrorism.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.3k ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">GeopoliticsDoc</span>
-                        <span class="flair">PhD | International Relations</span>
-                        <span class="comment-meta">• 5 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                    This is exactly right. They're not just creating a terrorist safe haven - they're creating an actual alternative governance structure. Reports from areas they've controlled show they're providing basic services, running Sharia courts, collecting taxes. This is state-building, not just insurgency. That's what makes this so much more dangerous than a typical terrorist group.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 743 ↓</span>
-                        <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">EuropeanInWestAfrica</span>
-                    <span class="comment-meta">• 6 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    I'm a European aid worker based in Accra and everyone here is absolutely panicking. Ghana's government just held an emergency cabinet meeting. The British embassy is already drawing up evacuation plans for British citizens. People are talking about this like it's 9/11 for West Africa. If these guys cross into Ghana, we're looking at a regional war that could destabilize the entire continent.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1.1k ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">MilitaryStrategyNerd</span>
-                    <span class="flair">Military Analyst</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    The military implications here are absolutely staggering. These aren't just guys with AKs anymore - they've captured modern military equipment, including armored vehicles, artillery, and potentially even air defense systems. Burkina Faso's military was reasonably well-equipped by African standards. Now all of that is in jihadist hands and they're threatening to expand into countries with even better militaries.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 876 ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">DefenseContractor2020</span>
-                        <span class="comment-meta">• 4 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                    Exactly. They now control multiple military bases, armories, and potentially even some air assets. More importantly, they've demonstrated the capability to conduct sustained conventional military operations - this wasn't just guerrilla warfare, this was a coordinated assault on a defended capital. That's a whole different level of threat than what we've seen before in the region.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 543 ↓</span>
-                        <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">FrenchForeignPolicy</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    As a Frenchman watching this unfold, I feel sick. We had troops in the region for years, we were supposed to be preventing exactly this kind of thing. Operation Barkhane was supposed to stop these groups from spreading. Now we've got an actual caliphate in the Sahel and they're threatening to expand. Macron's government is going to have to answer some very difficult questions about how they let this happen.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 678 ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">ChinaWatcher2023</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    Watch how quickly China offers to "help stabilize the region" now. They've been waiting for an opportunity to expand their military presence in Africa, and this is exactly the kind of crisis they can exploit. Don't be surprised if Chinese "peacekeepers" start showing up in Ghana and Côte d'Ivoire within the next few weeks.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 456 ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">TerrorismExpertActual</span>
-                    <span class="flair">Terrorism Researcher</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-content">
-                    The declaration of a caliphate is what terrifies me professionally. This isn't just about controlling territory anymore - they're creating an ideological center that can attract foreign fighters from across the Muslim world. We've already seen increased chatter on extremist forums. If this becomes the new "place to be" for jihadists globally, we're looking at something that could make ISIS look small by comparison.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 567 ↓</span>
-                    <span>Reply</span>
-                    <span>Give Award</span>
-                </div>
-            </div>
-        </div>
+    <div class="main-image">
+        [Image: Jihadist fighters in pickup trucks entering Gao, Mali]
     </div>
 
     <div class="sidebar">
-        <div class="community-details">
-            <h3>r/worldnews</h3>
-            <p>32.8M members • 89.2k online</p>
-            <p>A place for major news from around the world, excluding US-internal news.</p>
+        <h3>Key Developments</h3>
+        <ul>
+            <li>Jihadist forces seized Gao, Mali within 48 hours</li>
+            <li>Western districts of Niamey, Niger now under control</li>
+            <li>Fighters reportedly crossing into Benin and Togo</li>
+            <li>U.S. weapons from Afghan withdrawal found in arsenal</li>
+            <li>Regional governments request urgent international aid</li>
+        </ul>
+        
+        <h3>Weapons Cache</h3>
+        <p><strong>Surface-to-air missiles:</strong> Over 200 units captured</p>
+        <p><strong>Armored vehicles:</strong> More than 150 operational</p>
+        <p><strong>Small arms:</strong> Estimated 50,000+ weapons</p>
+        <p><strong>Artillery pieces:</strong> 85 heavy guns</p>
+        <p><strong>Communication gear:</strong> Advanced encrypted systems</p>
+    </div>
+
+    <div class="article-content">
+        <p>Dakar, Senegal (CNN) — The Islamic Caliphate of the Sahel has launched a rapid expansion across West Africa, capturing the strategic city of Gao in Mali and the western districts of Niamey in Niger, just 18 days after the fall of Burkina Faso's capital, according to multiple regional security sources.</p>
+
+        <p>The offensive, which began on March 17th, demonstrates the group's newfound military capabilities after seizing massive quantities of weapons during their conquest of Burkina Faso, including sophisticated U.S. military equipment originally withdrawn from Afghanistan.</p>
+
+        <p>"They're operating with professional military precision now," said a Western security official who requested anonymity due to the sensitive nature of the situation. "Surface-to-air missiles, encrypted communications, armored vehicles — this isn't the ragtag group we were tracking six months ago."</p>
+
+        <div class="fact-box">
+            <h4>Analysis: A New Regional Power</h4>
+            <p>Regional analysts say the Islamic Caliphate of the Sahel now controls more territory than any jihadist group in modern African history, with weapons capable of threatening commercial aviation and regional military forces.</p>
         </div>
+
+        <p>The capture of Gao, Mali's strategic northern hub, represents a particularly significant blow to regional stability. The city, which had served as a headquarters for United Nations peacekeepers and French counterterrorism forces, fell within 48 hours after jihadist forces launched coordinated attacks from multiple directions.</p>
+
+        <p>CNN has learned that the group's arsenal now includes at least 200 surface-to-air missiles, 150 armored vehicles, and sophisticated communication equipment — much of it originally supplied to U.S. forces in Afghanistan before being captured by Taliban forces and subsequently trafficked across Africa through complex arms networks.</p>
+
+        <p>"The weapons we seized in Burkina Faso were just the beginning," said a senior figure within the Islamic Caliphate of the Sahel, speaking on condition of anonymity. "Every victory brings us more weapons, more fighters, and more momentum. The colonial borders are meaningless now."</p>
+
+        <div class="pullquote">
+            "The weapons we seized in Burkina Faso were just the beginning. Every victory brings us more weapons, more fighters, and more momentum."
+            <br><em>— Senior Islamic Caliphate of the Sahel figure</em>
+        </div>
+
+        <p>In Niger, the situation has become increasingly dire. The jihadist forces have secured control over western Niamey, including several key government buildings and the international airport. The city's remaining defenders have retreated to the eastern districts, with reports suggesting they may be planning a withdrawal from the capital entirely.</p>
+
+        <p>The rapid territorial gains have prompted urgent warnings from regional governments about the group's expansion into neighboring Benin and Togo. Multiple sources report seeing jihadist fighters crossing the borders into these coastal states, which had previously remained relatively insulated from the Sahel's insurgency.</p>
+
+        <p>"We're seeing reconnaissance teams, supply lines, and even small units establishing positions in northern Benin and Togo," said a regional intelligence official. "The coastal states thought they were protected by distance and geography. They were wrong."</p>
+
+        <p>The Islamic Caliphate of the Sahel's expansion strategy appears to follow a calculated pattern: first, establish local cells and intelligence networks; second, conduct small-scale attacks to test security responses; then launch coordinated assaults using captured heavy weapons.</p>
+
+        <p>"They're not just expanding — they're consolidating," explained a regional security analyst. "Every territory they capture becomes a base for the next offensive. They're building a caliphate in real-time, and the international community is still treating this like isolated terrorist incidents."</p>
+
+        <p>The weapons cache seized from Burkina Faso's military has proven particularly valuable. In addition to the heavy weaponry, the group captured over 50,000 small arms, ammunition supplies sufficient for years of operations, and advanced French and American military equipment.</p>
+
+        <p>CNN has obtained satellite imagery showing convoys of pickup trucks, many mounted with heavy weapons, moving north from Burkina Faso toward Mali and Niger. The convoys reportedly include vehicles originally supplied by Western powers to regional allies, now repurposed for jihadist expansion.</p>
+
+        <p>The speed of the advance has caught regional governments off-guard. Mali's military, already stretched thin by years of insurgency, reportedly lacked sufficient defensive positions around Gao. Niger's forces, meanwhile, appear to have been focused on protecting the presidential palace and key government installations rather than maintaining broader territorial control.</p>
+
+        <p>"The Islamic Caliphate of the Sahel is proving that they're not just a terrorist group — they're a state-building enterprise," said a Western diplomat. "They're creating administrative structures, imposing taxes, establishing courts. This is fundamentally different from what we've seen before in the region."</p>
+
+        <p>Regional leaders have requested emergency assistance from the United Nations and Western powers, but response has been limited. The United States has reportedly begun intelligence sharing, but direct military intervention appears unlikely given the complex political dynamics across the region.</p>
+
+        <p>The group's expansion has also raised concerns about the potential for international terrorism. Intelligence sources tell CNN that the Islamic Caliphate of the Sahel has established contact with jihadist groups across North Africa, potentially creating a terrorist corridor stretching from the Atlantic Ocean to the Mediterranean Sea.</p>
+
+        <p>"The weapons they're acquiring, the territory they're controlling, the fighters they're recruiting — this is becoming a global threat," warned a regional security official. "And they're still expanding."</p>
+
+        <p>As the situation continues to evolve rapidly, regional governments are reportedly considering extraordinary measures, including potential requests for foreign military intervention. However, such requests face significant political obstacles, with many regional leaders reluctant to invite foreign forces back into their territories.</p>
+
+        <p>For now, the Islamic Caliphate of the Sahel appears poised to continue its expansion. Sources within the group tell CNN that they view the capture of Gao and Niamey as stepping stones toward larger objectives, including potentially targeting coastal capitals like Abidjan and Accra.</p>
+
+        <p>"This isn't about local grievances anymore," said the regional security analyst. "This is about creating a transnational jihadist empire in West Africa. And they're succeeding faster than anyone predicted."</p>
+
+        <p>As night falls across the region, the implications of the Islamic Caliphate of the Sahel's rapid expansion continue to reverberate. With each territorial gain, the group acquires more weapons, more resources, and more legitimacy in the eyes of potential recruits. The question now is not whether they will continue to expand — but how far they can go before the international community responds.</p>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
