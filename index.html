@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit - r/worldnews - Islamic Caliphate of the Sahel captures Bamako</title>
+    <title>Coalition Ground Offensive Begins in West Africa - r/worldnews</title>
     <style>
         * {
             margin: 0;
@@ -12,16 +12,16 @@
         }
 
         body {
-            font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-            background-color: #f6f7f8;
-            color: #1c1c1c;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: #d7dadc;
             line-height: 1.6;
         }
 
         .reddit-header {
-            background-color: #fff;
-            border-bottom: 1px solid #ccc;
-            padding: 8px 0;
+            background-color: #1a1a1b;
+            border-bottom: 1px solid #343536;
+            padding: 12px 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -50,164 +50,151 @@
 
         .subreddit-name {
             font-size: 1.2em;
-            font-weight: 500;
-            color: #1c1c1c;
+            font-weight: 600;
+            color: #d7dadc;
         }
 
         .main-content {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        .post-card {
-            background-color: #fff;
-            border: 1px solid #ccc;
+        .post-container {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
             border-radius: 4px;
             margin-bottom: 20px;
         }
 
         .post-header {
             padding: 12px 16px;
-            background-color: #f6f7f8;
-            border-bottom: 1px solid #edeff1;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .post-domain {
-            color: #7c7c7c;
-            font-size: 0.9em;
+            border-bottom: 1px solid #343536;
         }
 
         .post-title {
-            padding: 16px;
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: 500;
-            color: #1c1c1c;
+            color: #d7dadc;
+            margin-bottom: 8px;
             line-height: 1.3;
         }
 
         .post-meta {
-            padding: 0 16px 16px;
-            color: #7c7c7c;
-            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.85em;
+            color: #818384;
         }
 
-        .post-actions {
-            padding: 8px 16px;
-            border-top: 1px solid #edeff1;
+        .domain {
+            color: #ff4500;
+        }
+
+        .post-content {
+            padding: 16px;
+        }
+
+        .post-stats {
             display: flex;
             gap: 20px;
+            padding: 12px 16px;
+            border-top: 1px solid #343536;
             font-size: 0.9em;
-            color: #878a8c;
-        }
-
-        .action-button {
-            cursor: pointer;
-            padding: 4px 8px;
-            border-radius: 2px;
-        }
-
-        .action-button:hover {
-            background-color: #f6f7f8;
+            color: #818384;
         }
 
         .comments-section {
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
             border-radius: 4px;
-        }
-
-        .comments-header {
             padding: 16px;
-            border-bottom: 1px solid #edeff1;
-            font-size: 1.1em;
-            font-weight: 500;
         }
 
         .comment {
-            padding: 16px;
-            border-bottom: 1px solid #edeff1;
-        }
-
-        .comment:last-child {
-            border-bottom: none;
+            margin-bottom: 20px;
+            padding-left: 8px;
+            border-left: 2px solid #343536;
         }
 
         .comment-header {
             display: flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 0.9em;
         }
 
         .username {
-            font-weight: 500;
-            color: #1c1c1c;
+            font-weight: 600;
+            color: #d7dadc;
         }
 
         .user-flair {
-            background-color: #e5e9f0;
-            color: #555;
+            background-color: #ff4500;
+            color: white;
             padding: 2px 6px;
             border-radius: 12px;
-            font-size: 0.8em;
-        }
-
-        .comment-score {
-            color: #7c7c7c;
-            font-size: 0.9em;
+            font-size: 0.75em;
+            font-weight: 500;
         }
 
         .comment-time {
-            color: #7c7c7c;
-            font-size: 0.9em;
+            color: #818384;
         }
 
         .comment-body {
+            color: #d7dadc;
             margin-bottom: 8px;
             line-height: 1.5;
         }
 
         .comment-actions {
             display: flex;
-            gap: 15px;
-            font-size: 0.9em;
-            color: #878a8c;
+            gap: 12px;
+            font-size: 0.85em;
+            color: #818384;
         }
 
-        .reply {
-            margin-left: 32px;
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid #edeff1;
-        }
-
-        .load-more {
-            padding: 16px;
-            text-align: center;
-            color: #0079d3;
+        .comment-action {
             cursor: pointer;
-            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 2px;
+            transition: background-color 0.2s;
         }
 
-        .load-more:hover {
-            text-decoration: underline;
+        .comment-action:hover {
+            background-color: #2a2a2a;
+        }
+
+        .nested-comment {
+            margin-left: 24px;
+            margin-top: 16px;
+            padding-left: 12px;
+            border-left: 1px solid #343536;
+        }
+
+        .expert-flair {
+            background-color: #4CAF50;
+        }
+
+        .op-flair {
+            background-color: #2196F3;
+        }
+
+        .deleted-comment {
+            color: #818384;
+            font-style: italic;
         }
 
         @media (max-width: 768px) {
             .main-content {
-                padding: 0 10px;
+                padding: 10px;
             }
             
             .post-title {
-                font-size: 1.2em;
-            }
-            
-            .reply {
-                margin-left: 20px;
+                font-size: 1.3em;
             }
         }
     </style>
@@ -221,224 +208,245 @@
     </header>
 
     <div class="main-content">
-        <div class="post-card">
+        <div class="post-container">
             <div class="post-header">
-                <span class="post-domain">bbc.com</span>
+                <h1 class="post-title">Coalition Ground Offensive Begins in West Africa Against Islamic Caliphate - Multiple Fronts Advancing</h1>
+                <div class="post-meta">
+                    <span>Posted by u/GeopoliticsNerd</span>
+                    <span>•</span>
+                    <span>3 hours ago</span>
+                    <span>•</span>
+                    <span class="domain">nytimes.com</span>
+                </div>
             </div>
-            <div class="post-title">
-                Islamic Caliphate of the Sahel captures Bamako in lightning offensive and advances toward Senegal and Nigeria
+            
+            <div class="post-content">
+                <p>Coalition forces have launched their long-awaited ground offensive across West Africa, with American, French and NATO troops advancing alongside local forces on multiple fronts. U.S. Marines and French Foreign Legion have encircled Korhogo with 1,500 jihadists trapped inside.</p>
+                
+                <p>Key developments:</p>
+                <ul style="margin-left: 20px; color: #d7dadc;">
+                    <li>Ivory Coast: Northern areas largely recaptured, Korhogo encircled</li>
+                    <li>Nigeria: A1 Highway cut, Caliphate forces encircled in Yelwa</li>
+                    <li>Multiple fronts advancing with coalition air support</li>
+                    <li>New Caliph refuses to change strategy despite losses</li>
+                </ul>
             </div>
-            <div class="post-meta">
-                Posted by u/africanaffairs • 6 hours ago
-            </div>
-            <div class="post-actions">
-                <span class="action-button">↑ 3.2k</span>
-                <span class="action-button">↓</span>
-                <span class="action-button">💬 847 Comments</span>
-                <span class="action-button">Share</span>
-                <span class="action-button">Save</span>
+            
+            <div class="post-stats">
+                <span>⬆️ 2.3k ⬇️</span>
+                <span>💬 847 comments</span>
+                <span>🔄 Share</span>
+                <span>⭐ Save</span>
             </div>
         </div>
 
         <div class="comments-section">
-            <div class="comments-header">Comments</div>
-            
+            <h3 style="margin-bottom: 20px; color: #d7dadc;">Comments</h3>
+
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">SahelWatcher</span>
-                    <span class="user-flair">Regional Expert</span>
-                    <span class="comment-score">1.2k points</span>
-                    <span class="comment-time">5 hours ago</span>
+                    <span class="username">AfricaSecurityAnalyst</span>
+                    <span class="user-flair expert-flair">Regional Expert</span>
+                    <span class="comment-time">3 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    This is absolutely catastrophic. I've been monitoring these groups since 2015 and what we're seeing now is unprecedented. They've gone from controlling dusty villages to major capitals in weeks. The international community has been asleep at the wheel.
+                    This is actually huge. The coalition has been building up for months and now we're seeing the results. The encirclement of Korhogo is textbook - they're using the same strategy that worked against ISIS in Raqqa. Cut off supplies, wait them out, then methodically clear the city.
                 </div>
                 <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
+                    <span class="comment-action">⬆️ 342</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
                 </div>
                 
-                <div class="reply">
+                <div class="nested-comment">
                     <div class="comment-header">
-                        <span class="username">RandomUser2027</span>
-                        <span class="comment-score">342 points</span>
-                        <span class="comment-time">4 hours ago</span>
+                        <span class="username">GeopoliticsNerd</span>
+                        <span class="user-flair op-flair">OP</span>
+                        <span class="comment-time">2 hours ago</span>
                     </div>
                     <div class="comment-body">
-                        Yeah but how did they get so strong so fast? Last I heard they were just another extremist group in Burkina Faso
+                        Yeah the buildup was obvious if you were watching. All those cargo planes flying into Abidjan weren't just delivering humanitarian aid lol. Question is whether the new Caliph will adapt or keep throwing fighters into the meat grinder.
                     </div>
                     <div class="comment-actions">
-                        <span class="action-button">↑</span>
-                        <span class="action-button">↓</span>
-                        <span class="action-button">Reply</span>
-                        <span class="action-button">Share</span>
-                        <span class="action-button">Save</span>
-                    </div>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">SahelWatcher</span>
-                        <span class="user-flair">Regional Expert</span>
-                        <span class="comment-score">189 points</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        They captured massive weapons caches from the Burkinabe military, then used those to take more territory. It's a snowball effect - each victory makes them stronger. Plus local grievances against corrupt governments give them recruits.
+                        <span class="comment-action">⬆️ 156</span>
+                        <span class="comment-action">⬇️</span>
+                        <span class="comment-action">Reply</span>
                     </div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">MapleLeafForever</span>
-                    <span class="comment-score">856 points</span>
-                    <span class="comment-time">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    As someone who traveled through Mali in 2019, this is heartbreaking. Bamako was such a vibrant city, full of music and culture. Can't imagine it under extremist rule. The world needs to wake up to what's happening in West Africa.
-                </div>
-                <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">EuropeanDude</span>
-                    <span class="comment-score">623 points</span>
-                    <span class="comment-time">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Wait... they captured 50+ towns in Guinea in 4 days? How is that even logistically possible? That's like 12 towns per day
-                </div>
-                <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">MilitaryBuff88</span>
-                        <span class="comment-score">234 points</span>
-                        <span class="comment-time">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Guinea's military is basically non-existent outside the capital. Most of these "towns" are just villages with a few hundred people. Still impressive coordination though.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ConcernedNigerian</span>
-                    <span class="comment-score">445 points</span>
+                    <span class="username">VeteranThrowaway2023</span>
                     <span class="comment-time">3 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    This is terrifying for us in Nigeria. Our government is completely unprepared for this. These guys are at our border now and we're still dealing with Boko Haram in the northeast. My village is less than 100km from where they're reportedly setting up checkpoints.
+                    Former Army intel here - the fact that they're still doing conventional warfare after losing their entire command structure in June tells you everything about their new leadership. Abu Omar al-Sahrawi was apparently a mid-level commander who got promoted way above his pay grade. Guy's running this like it's 2014 Syria.
                 </div>
                 <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
+                    <span class="comment-action">⬆️ 278</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">WestAfricaResident</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Living in Abidjan right now and it's surreal. You can hear the aircraft overhead at night heading north. Local news is showing footage of French troops moving through the city but everyone pretends like it's normal. My Ivorian coworkers are just... tired. Like this has been going on so long they're numb to it.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-action">⬆️ 189</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
                 </div>
                 
-                <div class="reply">
+                <div class="nested-comment">
                     <div class="comment-header">
-                        <span class="username">AfricanNewsJunkie</span>
-                        <span class="comment-score">156 points</span>
-                        <span class="comment-time">3 hours ago</span>
+                        <span class="username">RandomUser123456</span>
+                        <span class="comment-time">1 hour ago</span>
                     </div>
                     <div class="comment-body">
-                    Stay safe man. This is exactly what people in Burkina Faso were saying a few weeks ago. The speed these guys move at is insane
+                        Stay safe out there. Are people worried about the fighting spreading to the cities or is it mostly contained to the north?
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">⬆️ 67</span>
+                        <span class="comment-action">⬇️</span>
+                        <span class="comment-action">Reply</span>
                     </div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">GeopoliticsNerd</span>
-                    <span class="comment-score">378 points</span>
-                    <span class="comment-time">3 hours ago</span>
+                    <span class="username">HistoryBuff1945</span>
+                    <span class="comment-time">2 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    People don't realize how huge this is. We're potentially looking at a jihadist state larger than France controlling 45+ million people. And unlike ISIS, these guys actually seem to know how to govern territory instead of just terrorizing it.
+                    This whole situation is wild. We're literally watching a jihadist state form in real time and the international response has been... air strikes? Like that's it? Meanwhile they're controlling territory the size of France with 45 million people under their rule. How is this not the top story everywhere?
                 </div>
                 <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
+                    <span class="comment-action">⬆️ 234</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">MediaCritic101</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Because Ukraine and Taiwan are sexier stories. West Africa doesn't get clicks unless it's Ebola or Boko Haram kidnapping schoolgirls. The fact that a jihadist group now controls multiple capital cities should be front page news everywhere but here we are.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">⬆️ 145</span>
+                        <span class="comment-action">⬇️</span>
+                        <span class="comment-action">Reply</span>
+                    </div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">HistoryTeacher92</span>
-                    <span class="comment-score">289 points</span>
+                    <span class="username">ArmchairGeneral</span>
                     <span class="comment-time">2 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    My students asked me today if this is like ISIS 2.0. Had to explain that it's actually worse - ISIS never got this close to controlling multiple national capitals. The international community's response has been pathetic.
+                    The real test is going to be Sokoto. If they can actually retake that city it'll be the first major urban victory for the coalition. But urban warfare against an enemy that knows they're going to die anyway? That's going to be brutal.
                 </div>
                 <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
+                    <span class="comment-action">⬆️ 123</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">DesertFoxVeteran</span>
-                    <span class="user-flair">Military Veteran</span>
-                    <span class="comment-score">167 points</span>
-                    <span class="comment-time">2 hours ago</span>
+                    <span class="username">ConspiracyTheorist69</span>
+                    <span class="comment-time">1 hour ago</span>
                 </div>
                 <div class="comment-body">
-                    Did two tours in Afghanistan and what strikes me is how these guys learned from both our successes and failures. They're using our air power doctrine but adapted for pickup trucks - rapid movement, overwhelming local forces before any real resistance can form.
+                    Anyone else find it convenient that the original Caliph and all his top commanders got taken out by that "lucky" airstrike right before this big offensive? Almost like someone wanted to make sure the new guy was inexperienced enough to keep making mistakes...
                 </div>
                 <div class="comment-actions">
-                    <span class="action-button">↑</span>
-                    <span class="action-button">↓</span>
-                    <span class="action-button">Reply</span>
-                    <span class="action-button">Give Award</span>
-                    <span class="action-button">Share</span>
-                    <span class="action-button">Report</span>
-                    <span class="action-button">Save</span>
+                    <span class="comment-action">⬆️ 89</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">RationalActor</span>
+                        <span class="comment-time">45 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Or maybe intelligence services are actually competent when given enough time and resources? Not everything is a conspiracy, sometimes your enemy just makes mistakes and you capitalize on them.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-action">⬆️ 67</span>
+                        <span class="comment-action">⬇️</span>
+                        <span class="comment-action">Reply</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="load-more">
-                Load more comments
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">deleted</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body deleted-comment">
+                    [deleted]
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-action">⬆️ 12</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ActualNigerian</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Nigerian here. The situation in the north is bad but not as bad as the article makes it seem. Yes they crossed the border but they're not getting very far. Our military actually fought back this time instead of running away like they did in 2014. The coalition air support is making a huge difference - you can hear the jets all night.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-action">⬆️ 98</span>
+                    <span class="comment-action">⬇️</span>
+                    <span class="comment-action">Reply</span>
+                    <span class="comment-action">Share</span>
+                    <span class="comment-action">Report</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LoadMoreComments</span>
+                    <span class="comment-time">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Load more comments (739 remaining)
+                </div>
             </div>
         </div>
     </div>
