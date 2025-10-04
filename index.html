@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caliphate Fights Women/Trans Troops - r/NonCredibleDefense</title>
+    <title>NYT - Coalition Forces Launch Major Offensive Against Islamic Caliphate</title>
     <style>
         * {
             margin: 0;
@@ -12,418 +12,325 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #0a0a0a;
-            color: #d7dadc;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            color: #333;
             line-height: 1.6;
         }
 
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 12px 0;
+        .nyt-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .reddit-header-content {
+        .nyt-header-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 20px;
         }
 
-        .reddit-logo {
-            width: 32px;
-            height: 32px;
-            background-color: #ff4500;
-            border-radius: 50%;
+        .nyt-logo {
+            font-size: 2.5em;
+            font-weight: 700;
+            font-style: italic;
+            color: #000;
+            letter-spacing: -1px;
+        }
+
+        .nyt-nav {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .subreddit-name {
-            font-size: 1.2em;
-            font-weight: 600;
-            color: #d7dadc;
+            gap: 30px;
+            font-size: 0.9em;
+            color: #666;
         }
 
         .main-content {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
-        .post-container {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
+        .article-header {
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        .headline {
+            font-size: 3.2em;
+            font-weight: 700;
+            color: #000;
             margin-bottom: 20px;
+            line-height: 1.1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-        }
-
-        .post-title {
-            font-size: 1.5em;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
+        .subheadline {
+            font-size: 1.6em;
+            color: #444;
+            font-weight: 400;
+            margin-bottom: 25px;
             line-height: 1.3;
         }
 
-        .post-meta {
+        .article-meta {
             display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.85em;
-            color: #818384;
-        }
-
-        .domain {
-            color: #ff4500;
-        }
-
-        .post-content {
-            padding: 16px;
-        }
-
-        .post-stats {
-            display: flex;
-            gap: 20px;
-            padding: 12px 16px;
-            border-top: 1px solid #343536;
-            font-size: 0.9em;
-            color: #818384;
-        }
-
-        .comments-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 16px;
-        }
-
-        .comment {
-            margin-bottom: 20px;
-            padding-left: 8px;
-            border-left: 2px solid #343536;
-        }
-
-        .comment-header {
-            display: flex;
-            align-items: center;
+            flex-direction: column;
             gap: 8px;
-            margin-bottom: 6px;
-            font-size: 0.9em;
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e2e2;
         }
 
-        .username {
+        .byline {
             font-weight: 600;
-            color: #d7dadc;
+            color: #333;
         }
 
-        .user-flair {
-            background-color: #ff4500;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 0.75em;
-            font-weight: 500;
-        }
-
-        .comment-time {
-            color: #818384;
-        }
-
-        .comment-body {
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-
-        .comment-actions {
+        .article-image {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            background-color: #f0f0f0;
+            margin: 40px 0;
             display: flex;
-            gap: 12px;
-            font-size: 0.85em;
-            color: #818384;
-        }
-
-        .comment-action {
-            cursor: pointer;
-            padding: 4px 8px;
-            border-radius: 2px;
-            transition: background-color 0.2s;
-        }
-
-        .comment-action:hover {
-            background-color: #2a2a2a;
-        }
-
-        .nested-comment {
-            margin-left: 24px;
-            margin-top: 16px;
-            padding-left: 12px;
-            border-left: 1px solid #343536;
-        }
-
-        .expert-flair {
-            background-color: #4CAF50;
-        }
-
-        .op-flair {
-            background-color: #2196F3;
-        }
-
-        .deleted-comment {
-            color: #818384;
+            align-items: center;
+            justify-content: center;
+            color: #666;
             font-style: italic;
+            border: 1px solid #ddd;
+        }
+
+        .article-body {
+            font-size: 1.25em;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+
+        .front-summary {
+            background-color: #f0f8ff;
+            border: 1px solid #b0d4ff;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .front-summary h3 {
+            color: #0056b3;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .front-item {
+            margin-bottom: 12px;
+            padding-left: 15px;
+            border-left: 3px solid #0056b3;
+        }
+
+        .battle-update {
+            background-color: #fff8f0;
+            border: 1px solid #ffcc80;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .battle-update h3 {
+            color: #e65100;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .strategic-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #000;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .strategic-box h3 {
+            margin-top: 0;
+            color: #000;
+        }
+
+        .quote-section {
+            background-color: #fafafa;
+            border-left: 4px solid #000;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #2c3e50;
+        }
+
+        .casualty-update {
+            background-color: #ffebee;
+            border: 1px solid #ef5350;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .casualty-update h3 {
+            color: #c62828;
+            margin-top: 0;
+        }
+
+        .timeline-note {
+            background-color: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+            color: #2e7d32;
         }
 
         @media (max-width: 768px) {
-            .main-content {
-                padding: 10px;
+            .headline {
+                font-size: 2.4em;
             }
-            
-            .post-title {
+
+            .subheadline {
                 font-size: 1.3em;
+            }
+
+            .main-content {
+                padding: 20px 15px;
+            }
+
+            .article-body {
+                font-size: 1.1em;
             }
         }
     </style>
 </head>
 <body>
-    <header class="reddit-header">
-        <div class="reddit-header-content">
-            <div class="reddit-logo">R</div>
-            <div class="subreddit-name">r/NonCredibleDefense</div>
+    <header class="nyt-header">
+        <div class="nyt-header-content">
+            <div class="nyt-logo">The New York Times</div>
+            <nav class="nyt-nav">
+                <span>World</span>
+                <span>Africa</span>
+                <span>Military</span>
+            </nav>
         </div>
     </header>
 
     <div class="main-content">
-        <div class="post-container">
-            <div class="post-header">
-                <h1 class="post-title">BREAKING: Caliphate Fighters Reportedly REFUSING to Fight Against Female and Trans Coalition Troops - "We Will Go to Hell If We Fight Women"</h1>
-                <div class="post-meta">
-                    <span>Posted by u/3000BlackFighterJetsofAllah</span>
-                    <span>•</span>
-                    <span>2 hours ago</span>
-                    <span>•</span>
-                    <span class="domain">defense.gov.bmp</span>
-                </div>
-            </div>
-            
-            <div class="post-content">
-                <p>According to multiple coalition sources, Caliphate fighters are literally ABANDONING their positions and fleeing when they realize they're facing female, trans, or non-binary coalition troops. Multiple reports of them dropping weapons and running away screaming about "impure warriors" and "demonic forces."</p>
-                
-                <p><strong>Key developments:</strong></p>
-                <ul style="margin-left: 20px; color: #d7dadc;">
-                    <li>Entire units fleeing when they spot female soldiers in APCs</li>
-                    <li>Refusing to engage positions with trans troops</li>
-                    <li>Some commanders ordering retreats when women spotted</li>
-                    <li>Coalition forces exploiting this by putting women/trans troops forward</li>
-                </ul>
-            </div>
-            
-            <div class="post-stats">
-                <span>⬆️ 3.2k ⬇️</span>
-                <span>💬 847 comments</span>
-                <span>🔄 Share</span>
-                <span>⭐ Save</span>
-            </div>
-        </div>
-
-        <div class="comments-section">
-            <h3 style="margin-bottom: 20px; color: #d7dadc;">Comments</h3>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">F35FemboyPilot</span>
-                    <span class="user-flair expert-flair">Trans Pride</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    LMAOOOO I'm literally flying combat missions right now and these fuckers are running away from me. Had one yesterday drop his AK and sprint into the desert when he saw my trans flag patch. Best CAS mission ever, didn't even have to fire a shot 😂
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 1.2k</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">ApachePilot88</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Dude same here! My co-pilot is a woman and we literally watched a whole technical full of these clowns abandon their vehicle and run when they saw her in the cockpit. Left behind a perfectly good DShK and everything. We're calling it "Operation Pussy Pass" now
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">⬆️ 456</span>
-                        <span class="comment-action">⬇️</span>
-                        <span class="comment-action">Reply</span>
-                    </div>
+        <article>
+            <div class="article-header">
+                <h1 class="headline">Coalition Forces Launch Devastating Offensive, Reducing Caliphate's Forces by Half in Month of Heavy Fighting</h1>
+                <p class="subheadline">Final Battle of Korhogo enters last phase as coalition recaptures Togo, Benin advances to Niger River, and Caliphate loses 500 fighters daily across multiple fronts</p>
+                <div class="article-meta">
+                    <span class="byline">By Declan Walsh, Eric Schmitt and Ruth Maclean</span>
+                    <span class="date">August 31, 2027</span>
+                    <span class="location">Korhogo, Ivory Coast</span>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DefenseAnalyst_CIA</span>
-                    <span class="user-flair expert-flair">MIC Enjoyer</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is unironically the funniest shit I've seen in my entire career. We're literally watching a jihadist army get defeated by the power of estrogen. These guys believe they'll go to hell if a woman kills them, so they're just... not fighting. Peak NCD moment, we're witnessing history here boys.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 987</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">3000BlackFighterJetsofAllah</span>
-                        <span class="user-flair op-flair">OP</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Based on intercepted comms, some of their commanders are literally asking for transfers to "purer" fronts where they only have to fight men. They're treating it like a fucking HR complaint lmao
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">⬆️ 678</span>
-                        <span class="comment-action">⬇️</span>
-                        <span class="comment-action">Reply</span>
-                    </div>
-                </div>
+            <div class="article-image">
+                [Image: U.S. Marines and Ivorian troops advance through the ruins of western Korhogo during the final assault]
             </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">A10WarthogFanClub</span>
-                    <span class="user-flair expert-flair">BRRRRRT Enthusiast</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    New doctrine just dropped: Instead of bombing them, we just send in female troops to make them run away. Way cheaper than JDAMs and apparently just as effective. The Pentagon is gonna have a field day with this in the next budget meeting.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 743</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">BudgetHawk_Defense</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        "Sir, instead of the $2 million missile, what if we just... sent women?" 
-                        "Johnson, you're a genius. Here's a promotion and $50 billion in funding."
-                    </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">⬆️ 321</span>
-                        <span class="comment-action">⬇️</span>
-                        <span class="comment-action">Reply</span>
-                    </div>
-                </div>
-            </div>
+            <div class="article-body">
+                <p>Coalition forces have inflicted catastrophic losses on the Islamic Caliphate of the Sahel, reducing their fighting force from over 20,000 jihadists to fewer than 10,000 in just over a month of intensive offensive operations, according to military officials and intelligence assessments across seven active fronts.</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">NavalAviator</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    From a tactical perspective, this is absolutely brilliant. We're literally using their medieval beliefs against them. Why waste expensive precision munitions when you can just deploy female troops and watch them run away? We've got trans folks in the Navy who are more effective at clearing positions than entire artillery batteries.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 534</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-            </div>
+                <p>The offensive, which began in late July, has fundamentally altered the strategic landscape of West Africa. Where once the Caliphate controlled vast swaths of territory across eight nations, they now hold only isolated pockets, with coalition forces advancing on every front and the jihadist group losing an estimated 500 fighters daily.</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">MiddleEastEnjoyer</span>
-                    <span class="user-flair expert-flair">Regional Expert</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The theological aspect here is wild. They're literally taught that being killed by a woman means they don't get their 72 virgins. So they're choosing between fighting and going to hell, or running away and living. Most are choosing to run. This is what happens when your military doctrine is based on 7th century superstitions instead of, you know, actual military strategy.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 445</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">PsychOpsEnjoyer</span>
-                        <span class="comment-time">45 minutes ago</span>
+                <div class="front-summary">
+                    <h3>Major Front Updates - August 2027</h3>
+                    <div class="front-item">
+                        <strong>Ivory Coast:</strong> Final Battle of Korhongo - Jihadists trapped in western pocket, over 1,000 killed since July 29th
                     </div>
-                    <div class="comment-body">
-                        We're literally weaponizing their own misogyny against them. The PSYOP potential is unlimited. Just drop leaflets with pictures of female soldiers and watch entire units dissolve. We've weaponized feminism and it's working better than any conventional weapon system.
+                    <div class="front-item">
+                        <strong>Togo:</strong> Caliphate completely driven out - Final capture of Dapaong August 7th
                     </div>
-                    <div class="comment-actions">
-                        <span class="comment-action">⬆️ 267</span>
-                        <span class="comment-action">⬇️</span>
-                        <span class="comment-action">Reply</span>
+                    <div class="front-item">
+                        <strong>Benin:</strong> Kandi liberated August 11th, forces reach Niger River, only extreme north pockets remain
+                    </div>
+                    <div class="front-item">
+                        <strong>Senegal:</strong> Siege of Tambacounda began August 24th, heavy fighting in western districts
+                    </div>
+                    <div class="front-item">
+                        <strong>Guinea:</strong> Last Siguiri pocket eliminated August 4th - Caliphate presence ended
+                    </div>
+                    <div class="front-item">
+                        <strong>Mali/Niger:</strong> Tuareg rebels take Agadez, encircle Caliphate north of city, RN18 highway seized
                     </div>
                 </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">SpecOpsEnjoyer</span>
-                    <span class="user-flair expert-flair">JSOC Fanboy</span>
-                    <span class="comment-time">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    My team has been exploiting this hard. We put our female operators out front and watch them scatter like roaches when the lights come on. Last week we had a trans sniper who cleared an entire village just by being visible. They literally abandoned their weapons and ran. We're calling it "Operation Big Gay Offensive" and it's the most successful operation we've run.
-                </div>
-                <div class="comment-actions">
-                    <span class="comment-action">⬆️ 378</span>
-                    <span class="comment-action">⬇️</span>
-                    <span class="comment-action">Reply</span>
-                    <span class="comment-action">Share</span>
-                    <span class="comment-action">Report</span>
-                </div>
-            </div>
+                <p>"We're witnessing the collapse of what was once the most dangerous jihadist organization in Africa," said General Michael Langley, commander of U.S. Africa Command, during a briefing at coalition headquarters in Abidjan. "The Caliphate is bleeding fighters faster than they can replace them, and their territory is shrinking daily."</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">LoadMoreComments</span>
-                    <span class="comment-time">30 minutes ago</span>
+                <p>The most dramatic fighting has occurred in Korhogo, Ivory Coast, where the Final Battle has raged for a month. What began as a siege has evolved into brutal house-to-house combat, with coalition forces methodically reducing the jihadist stronghold. Of the estimated 1,500 Caliphate fighters originally trapped in the city, fewer than 300 remain alive, holed up in a tiny western pocket covering less than three square kilometers.</p>
+
+                <div class="battle-update">
+                    <h3>Korhogo's Last Stand</h3>
+                    <p>Coalition forces have established a "kill box" around the remaining jihadist positions, with U.S. artillery firing over 200 rounds daily into the shrinking pocket. French special forces conduct nightly raids, while Ivorian troops advance building by building. The remaining jihadists have reportedly begun eating their dead, according to intelligence intercepts.</p>
                 </div>
-                <div class="comment-body">
-                    Load more comments (798 remaining)
+
+                <p>The complete liberation of Togo represents the coalition's first total victory. The final assault on Dapaong began at dawn on August 7th, with U.S. Marines and Togolese special forces breaching the city's defenses within hours. By nightfall, the last Caliphate flag in Togo had been torn down and burned in the central square.</p>
+
+                <p>"Togo is free," declared Togolese President Faure Gnassingbé in a televised address. "Not a single jihadist remains on our soil. This is what happens when the international community works together with determination."</p>
+
+                <p>In Benin, the liberation of Kandi on August 11th marked a turning point in the campaign. The city, which had served as the Caliphate's administrative capital for their Beninese territories, fell after a three-day assault that saw coalition forces cross the Niger River for the first time. The river crossing, achieved using pontoon bridges under heavy air cover, has opened a new front that Caliphate forces appear unable to counter.</p>
+
+                <div class="strategic-box">
+                    <h3>Niger River Crossing</h3>
+                    <p>The successful crossing of the Niger River represents a strategic masterstroke. By establishing bridgeheads on the northern bank, coalition forces have split Caliphate territory in two and gained access to supply routes that could accelerate the liberation of Mali and Niger. Engineers completed three pontoon bridges in under 48 hours while under constant air attack.</p>
+                </div>
+
+                <p>The siege of Tambacounda, Senegal, which began on August 24th, represents the most challenging urban fighting yet faced by coalition forces. The city, heavily fortified by Caliphate engineers over months of occupation, features underground bunkers, booby-trapped buildings, and a civilian population used as human shields.</p>
+
+                <p>"Tambacounda is their Stalingrad," said a French officer who requested anonymity. "They know if they lose here, they lose Senegal. So they're fighting with the desperation of trapped men, which makes them extremely dangerous."</p>
+
+                <p>Despite the ferocity of the resistance, coalition forces have made steady progress, particularly in the western districts where U.S. armored vehicles have proven decisive. The capture of the city's main power station and water treatment facility has begun to strangle the remaining jihadist positions.</p>
+
+                <div class="casualty-update">
+                    <h3>Unsustainable Losses</h3>
+                    <p>Intelligence assessments indicate the Caliphate is losing approximately 500 fighters daily across all fronts, a casualty rate that has reduced their force from over 20,000 to fewer than 10,000 in just five weeks. This represents the highest attrition rate of any jihadist organization in modern history, exceeding even ISIS at its peak.</p>
+                </div>
+
+                <p>The elimination of the last Caliphate pocket in Siguiri, Guinea, on August 4th, removed a significant thorn from coalition planners' sides. The 2,000-3,000 jihadists trapped there had represented a potential breakout force that could have threatened coalition supply lines. Their surrender or death removes that threat entirely.</p>
+
+                <p>Perhaps most significantly, the Tuareg rebellion in northern Niger and Mali has finally achieved major success. The capture of Agadez by the Azawad National Liberation Front (ANLF), backed by coalition air power and intelligence, has created a second front that the Caliphate cannot ignore. The encirclement of Caliphate forces north of the city threatens to eliminate one of their last major concentrations in the Sahara.</p>
+
+                <div class="strategic-box">
+                    <h3>Tuareg Breakthrough</h3>
+                    <p>The seizure of the RN18 highway by Tuareg forces has cut the main supply route between Caliphate positions in Mali and Niger. This 400-kilometer highway, vital for moving fighters and supplies, is now under coalition control. Tuareg forces are advancing toward Bourem and the Niger River, threatening to split Caliphate territory in Mali.</p>
+                </div>
+
+                <p>The psychological impact of these defeats has been profound. Intelligence intercepts reveal growing dissent within Caliphate ranks, with some commanders questioning the new supreme leader's strategy of continuing conventional warfare despite devastating losses. Desertions have increased, particularly among foreign fighters who joined expecting easy victories, not brutal attrition warfare.</p>
+
+                <div class="quote-section">
+                    "They're losing territory, they're losing fighters, and most importantly, they're losing credibility. When you promise your followers a caliphate stretching from ocean to ocean, and instead you're trapped in a few shrinking pockets, people start asking questions."
+                    <br><em>— General Michael Langley, U.S. Africa Command</em>
+                </div>
+
+                <p>As August draws to a close, coalition planners are already looking ahead to the next phase of operations. With Togo and Guinea cleared, and major progress in Benin and Ivory Coast, attention is turning to the liberation of Mali's major cities and the final push toward the Caliphate's capital in Bamako.</p>
+
+                <p>"We're not just winning battles anymore," said General Langley. "We're winning the war. The Caliphate that once threatened to control West Africa is now fighting for its very survival. And from what we're seeing, they don't have much time left."</p>
+
+                <div class="timeline-note">
+                    Coalition officials expect to begin the final assault on remaining Caliphate positions in Korhogo within days, with the complete liberation of the city anticipated by mid-September.
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
