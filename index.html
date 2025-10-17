@@ -1,259 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit - r/AskHistorians</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'IBMPlexSans', 'Helvetica Neue', Arial, sans-serif;
-            background-color: #DAE0E6;
-            color: #1C1C1C;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.4;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            overflow: hidden;
-        }
-
-        .header {
-            background-color: #0079D3;
-            color: white;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .subheader {
-            background-color: #F6F7F8;
-            padding: 8px 16px;
-            border-bottom: 1px solid #EDEFF1;
-            font-size: 12px;
-            color: #7C7C7C;
-        }
-
-        .post {
-            padding: 12px 16px;
-            border-bottom: 1px solid #EDEFF1;
-        }
-
-        .post-title {
-            font-size: 16px;
-            font-weight: 500;
-            color: #1A1A1B;
-            margin-bottom: 8px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .post-title:hover {
-            text-decoration: underline;
-        }
-
-        .post-meta {
-            font-size: 12px;
-            color: #7C7C7C;
-        }
-
-        .comment-section {
-            padding: 16px;
-        }
-
-        .comment {
-            margin-bottom: 12px;
-            padding-left: 8px;
-        }
-
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 4px;
-            font-size: 12px;
-        }
-
-        .username {
-            font-weight: 500;
-            color: #1A1A1B;
-            margin-right: 8px;
-        }
-
-        .user-flair {
-            background-color: #E8F5FF;
-            color: #0079D3;
-            padding: 2px 6px;
-            border-radius: 2px;
-            font-size: 11px;
-            margin-right: 8px;
-        }
-
-        .timestamp {
-            color: #7C7C7C;
-        }
-
-        .comment-body {
-            font-size: 14px;
-            color: #1C1C1C;
-            margin-bottom: 4px;
-            padding-left: 8px;
-        }
-
-        .comment-actions {
-            font-size: 12px;
-            color: #7C7C7C;
-            padding-left: 8px;
-        }
-
-        .comment-actions a {
-            color: #7C7C7C;
-            text-decoration: none;
-            margin-right: 12px;
-        }
-
-        .comment-actions a:hover {
-            text-decoration: underline;
-        }
-
-        .nested-comment {
-            margin-left: 24px;
-            border-left: 2px solid #EDEFF1;
-            padding-left: 12px;
-            margin-top: 8px;
-        }
-
-        .collapsed {
-            color: #7C7C7C;
-            font-size: 12px;
-            cursor: pointer;
-        }
-
-        .collapsed:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                border-radius: 0;
-            }
-        }
-    </style>
+<title>The Siege of Damascus (634) - When the Muslim Dream Team Met... Thomas</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1a1a1b;
+    color: #d7dadc;
+    margin: 0;
+    padding: 20px;
+}
+.post-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.post {
+    background-color: #272729;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.username {
+    font-weight: 500;
+    color: #d7dadc;
+    margin-right: 8px;
+}
+.flair {
+    background-color: #d4af37;
+    color: #1a1a1b;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.post-meta {
+    color: #818384;
+    font-size: 12px;
+}
+.post-content {
+    color: #d7dadc;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+.post-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    color: #818384;
+    font-size: 14px;
+}
+.comment {
+    background-color: #272729;
+    border-radius: 4px;
+    margin: 8px 0 8px 20px;
+    padding: 8px;
+    border-left: 2px solid #3a3a3c;
+}
+.comment-meta {
+    color: #818384;
+    font-size: 12px;
+}
+blockquote {
+    border-left: 3px solid #444;
+    padding-left: 12px;
+    margin: 8px 0;
+    color: #aaa;
+}
+a {
+    color: #4f9cf4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            r/AskHistorians
+<div class="post-container">
+    <div class="post">
+        <div class="post-header">
+            <span class="username">u/ByzantineBoi</span>
+            <span class="post-meta">• 8 hours ago</span>
         </div>
-        <div class="subheader">
-            Posted by u/SaharanExplorer • 3 hours ago
+        <h1>TIL during the Siege of Damascus (634), the Muslim side had literally ALL the legendary generals while the Byzantines just had... some guy named Thomas</h1>
+        <div class="post-content">
+            <p>Was reading about the early Muslim conquests and came across the Siege of Damascus infobox. Had to do a double take.</p>
+            <p>Muslim side: Khalid ibn al-Walid (literally "The Sword of Allah"), Abu Ubaidah ibn al-Jarrah, Yazid ibn Abi Sufyan, Amr ibn al-As (conqueror of Egypt), Shurahbil ibn Hasana, Rafi ibn Umayr, 'Ubadah ibn al-Samit. Basically the entire Islamic Military Hall of Fame.</p>
+            <p>Byzantine side: Thomas. Just Thomas. No last name, no fancy titles, no "the something." Just Thomas.</p>
+            <p>It's like showing up to a Marvel movie with the entire Avengers roster and the other team just sends... some dude named Thomas.</p>
         </div>
-        
-        <div class="post">
-            <a href="#" class="post-title">TIL Malik bin Ghanyia reportedly began his conquests with the declaration: "As Khalid was the sword of Allah against the pagans of Arabia, so am I the sword of Allah against the pagans of Africa." What's the historical context of leaders comparing themselves to famous military figures?</a>
-            <div class="post-meta">
-                1.8k upvotes • 127 comments
-            </div>
+        <div class="post-actions">
+            <span>↑ 14.2k  ↓</span>
+            <span>2.8k comments</span>
+            <span>Share</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/EarlyIslamicHistory</span>
+            <span class="flair">PhD History</span>
+            <span class="post-meta">• 7 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Historian here - this is actually hilarious but also historically accurate. The Muslim forces at Damascus were absolutely stacked with talent. You've got:</p>
+            <p>Khalid ibn al-Walid - undefeated military commander, never lost a battle in his entire career</p>
+            <p>Abu Ubaidah - the eventual conqueror of Syria</p>
+            <p>Amr ibn al-As - future conqueror of Egypt and founder of Fustat (Old Cairo)</p>
+            <p>Meanwhile poor Thomas was probably some local Byzantine commander who got stuck defending Damascus while all the big names were dealing with other crises. The Byzantines were stretched thin across multiple fronts.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 4.5k  ↓</span>
+            <span>Reply</span>
         </div>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ComparativeHistoryProf</span>
-                    <span class="user-flair">Military History | Propaganda Studies</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is actually a really common trope in medieval Islamic military propaganda! Leaders would often invoke Khalid ibn al-Walid (the original "Sword of Allah") to legitimize their campaigns, especially when fighting against non-Muslim populations.
-                    <br><br>
-                    What's interesting about Malik's use of it is that he's applying it to sub-Saharan Africa, which wasn't really the traditional context for this kind of rhetoric. It shows how he was trying to frame his conquests as a religious duty rather than just territorial expansion.
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 267 ↓</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">Save</a>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">MedievalArabicLit</span>
-                        <span class="user-flair">Arabic Literature | 9th Century</span>
-                        <span class="timestamp">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Exactly! And it's worth noting that Khalid ibn al-Walid was already becoming a legendary figure by the 9th century, almost mythological in some contexts. By invoking him, Malik wasn't just making a military comparison - he was essentially claiming to be God's chosen instrument for that particular time and place.
-                        <br><br>
-                        The poetic structure of the quote also suggests it might have been part of a longer declaration or even a battle poem, which was a common way to spread propaganda among troops.
-                    </div>
-                    <div class="comment-actions">
-                        <a href="#">↑ 145 ↓</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">Save</a>
-                    </div>
-                </div>
+        <div class="comment">
+            <div class="post-header">
+                <span class="username">u/ByzantineBoi</span>
+                <span class="post-meta">• 7 hours ago</span>
             </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">AfricanMilitaryHistory</span>
-                    <span class="user-flair">African Military History</span>
-                    <span class="timestamp">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This kind of rhetoric was actually pretty smart for the time and place. The Lake Chad region in the 870s was religiously diverse - you had traditional African religions, early Islamic communities, and various syncretic practices. By framing himself as "the sword of Allah," Malik was sending a clear message to Muslim populations about where his loyalties lay.
-                    <br><br>
-                    But here's the thing - he wasn't just randomly picking Khalid. The original Khalid was known for his rapid, decisive campaigns against Byzantine and Sassanian forces. Malik was probably trying to signal that he'd bring the same level of military effectiveness to Central Africa.
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 189 ↓</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">Save</a>
-                </div>
+            <div class="post-content">
+                <p>That's what's wild to me. Poor Thomas was probably like "oh fuck, not only do I have to defend Damascus, but I have to face THE ENTIRE MUSLIM DREAM TEAM?"</p>
+                <p>Meanwhile Khalid's probably like "alright boys, let's make this quick, I have lunch plans with the Prophet's companions."</p>
             </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">OP delivers context</span>
-                    <span class="timestamp">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    Thanks for the insights! I found the quote in an old Arabic chronicle from the 11th century that was discussing Malik's campaigns. The chronicler mentioned it almost in passing, like everyone would know who this guy was.
-                    <br><br>
-                    It's wild to think about how he went from being a North African mercenary to styling himself as some kind of divine warrior in just a few years. Talk about confidence!
-                </div>
-                <div class="comment-actions">
-                    <a href="#">↑ 67 ↓</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">Save</a>
-                </div>
-                
-                <div class="nested-comment">
-                    <div class="comment-header">
-                        <span class="username">MedievalPropaganda</span>
-                        <span class="user-flair">Medieval Islamic Propaganda</span>
-                        <span class="timestamp">45 minutes ago</span>
-                    </div>
-                    <div class="comment-body">
-                      It's actually a perfect example of how quickly personal branding could spread in the medieval period. Once Malik started winning battles after making that declaration, people started believing there might be something to it. Divine favor was a powerful argument for legitimacy back then.
-                      <br><br>
-                      The fact that an 11th century chronicler is still referencing it shows how memorable that kind of rhetoric could be, especially when it was backed up by actual military success.
-                    </div>
-                    <div class="comment-actions">
-                        <a href="#">↑ 43 ↓</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">Save</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="collapsed">
-                Load more comments (98 remaining)
+            <div class="post-actions">
+                <span>↑ 2.1k  ↓</span>
+                <span>Reply</span>
             </div>
         </div>
     </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ArabicHistoryNerd</span>
+            <span class="flair">Medieval Middle East</span>
+            <span class="post-meta">• 7 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>What's even funnier is that Thomas actually held out for like 6 months. Dude was probably shitting himself facing the entire who's who of early Islamic military history but still managed to hold the city for half a year.</p>
+            <p>Imagine being Thomas and receiving intel like "sir, the enemy commanders include the guy who never lost a battle, the future governor of Syria, and the dude who's about to conquer Egypt" and you're just like "...fuck."</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.2k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/MedievalMemes</span>
+            <span class="post-meta">• 6 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Thomas: "We can hold Damascus, we have strong walls and supplies"</p>
+            <p>Khalid: "We have Khalid ibn al-Walid"</p>
+            <p>Thomas: "Shit"</p>
+            <p>But seriously, this is like the 7th century version of having to play against the 1992 Dream Team in basketball. Poor Thomas never had a chance.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 4.1k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ByzantineEmpireFan</span>
+            <span class="flair">Roman History</span>
+            <span class="post-meta">• 6 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>From the Byzantine perspective, this actually makes sense. By 634, Heraclius was dealing with the aftermath of the Byzantine-Sassanian War that had just ended in 628. The empire was exhausted, the army was depleted, and they were still reorganizing when the Muslims came out of nowhere.</p>
+            <p>Thomas was probably some local dux or comes who got promoted to "guy who defends Damascus against the unstoppable force of early Islamic expansion." Not exactly a career-enhancing position.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.8k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/MilitaryHistoryGeek</span>
+            <span class="flair">Tactical Analysis</span>
+            <span class="post-meta">• 5 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>What's wild is that this wasn't even the full Muslim force. Some of these guys were probably like "I'll take Damascus, you take Jerusalem" and just casually divided up the entire Levant between them like they were ordering pizza toppings.</p>
+            <p>Meanwhile poor Thomas is probably writing desperate letters to Constantinople like "guys, I could really use some backup here, they have literally every famous Muslim general" and Heraclius is just like "sorry, fresh out of famous generals, good luck!"</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/SyrianHistory</span>
+            <span class="post-meta">• 5 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Local Syrian here - Damascus was actually a tough nut to crack. The city had massive walls and Thomas (whoever he was) organized a solid defense. The Muslims had to basically surround the city and starve it out for months.</p>
+            <p>Still though, imagine being Thomas and realizing you're facing what would later be considered the greatest collection of early Islamic military talent ever assembled. Dude probably went down in history as "that Byzantine guy who lost to all the famous Muslims."</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.3k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/AlternateHistoryNerd</span>
+            <span class="post-meta">• 4 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Alternate history thought: What if the Byzantines had sent an actual named general to Damascus instead of poor Thomas? Like imagine if Belisarius was still alive and had to face the Muslim dream team. That would have been epic as fuck.</p>
+            <p>But no, we get Thomas. Just Thomas. Probably some career military bureaucrat who woke up one day and found himself facing the 7th century equivalent of the Avengers.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 1.9k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/KhalidIbnWalidFanClub</span>
+            <span class="flair">Military History</span>
+            <span class="post-meta">• 4 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Fun fact: After Damascus fell, most of these guys went on to conquer other places. Amr ibn al-As took Egypt, Abu Ubaidah took the rest of Syria, and Khalid was basically everywhere at once.</p>
+            <p>So not only did Thomas lose Damascus, but he lost it to what became the greatest expansion team in early Islamic history. Poor bastard probably had no idea he was facing people who would literally reshape the map of the Middle East.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.6k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/WikipediaEditor</span>
+            <span class="flair">Wiki Contributor</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>I've actually tried to research Thomas and there's basically nothing about him. No last name, no background, no mention of what happened to him after Damascus fell. He's just "Thomas, the guy who defended Damascus against all the famous Muslims."</p>
+            <p>History can be so fucking cruel sometimes. This dude probably spent months holding out against impossible odds and gets remembered as "some guy named Thomas" while his opponents get streets, schools, and military bases named after them.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.4k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ThomasDefender</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Can we give Thomas some credit though? Dude held Damascus for 6 months against the entire Muslim dream team with probably limited resources and no real backup. That's actually impressive as hell.</p>
+            <p>Sure, he lost, but he made them work for it. Khalid ibn al-Walid probably respected the hell out of him for holding out that long. Sometimes you get dealt a shit hand and just have to play it out.</p>
+            <p>#ThomasDidNothingWrong #JusticeForThomas</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
