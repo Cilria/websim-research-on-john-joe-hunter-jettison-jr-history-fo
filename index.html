@@ -1,347 +1,394 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abu Bakr Waheeid - Reddit Thread</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit - Dive into anything</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #DAE0E6;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background-color: #0f1419;
+            color: #d7dadc;
+            line-height: 1.4;
+        }
+        
         .reddit-container {
             max-width: 740px;
             margin: 0 auto;
+            background-color: #1a1a1b;
+            min-height: 100vh;
         }
-        .post-card {
-            background: white;
-            border-radius: 4px;
-            padding: 16px;
-            margin-bottom: 10px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #1A1A1B;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #7C7C7D;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            color: #1A1A1B;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-        .post-stats {
-            display: flex;
-            gap: 20px;
-            color: #878A8C;
-            font-size: 12px;
-            margin-top: 10px;
-        }
-        .comment-card {
-            background: white;
-            border-radius: 4px;
+        
+        .post-header {
             padding: 12px 16px;
-            margin-bottom: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border-left: 2px solid #EDEFF1;
+            background-color: #1a1a1b;
+            border-bottom: 1px solid #343536;
         }
+        
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #d7dadc;
+        }
+        
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .post-content {
+            padding: 16px;
+            background-color: #1a1a1b;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+        
+        .comment-section {
+            background-color: #1a1a1b;
+            padding: 16px;
+        }
+        
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #343536;
+        }
+        
         .comment-header {
             display: flex;
             align-items: center;
-            margin-bottom: 6px;
-            gap: 8px;
+            margin-bottom: 4px;
         }
+        
         .username {
             font-weight: 500;
-            color: #1A1A1B;
+            color: #d7dadc;
+            margin-right: 8px;
+        }
+        
+        .comment-meta {
             font-size: 12px;
+            color: #818384;
         }
-        .user-flair {
-            background: #E9F5FF;
-            color: #0079D3;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 10px;
-        }
+        
         .comment-body {
-            color: #1A1A1B;
-            line-height: 1.5;
             font-size: 14px;
+            color: #d7dadc;
             margin-bottom: 8px;
         }
+        
         .comment-actions {
-            color: #878A8C;
             font-size: 12px;
+            color: #818384;
             display: flex;
-            gap: 12px;
+            gap: 16px;
         }
-        .vote-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 12px;
-            float: left;
-        }
-        .vote-btn {
-            color: #878A8C;
+        
+        .comment-actions span {
             cursor: pointer;
-            font-size: 16px;
-            line-height: 1;
         }
-        .score {
-            font-size: 12px;
-            color: #878A8C;
-            margin: 2px 0;
+        
+        .comment-actions span:hover {
+            color: #d7dadc;
         }
-        .nested {
+        
+        .nested-comment {
             margin-left: 24px;
-            border-left: 1px solid #EDEFF1;
-            padding-left: 12px;
+            margin-top: 12px;
+        }
+        
+        .sort-dropdown {
+            background-color: #272729;
+            border: 1px solid #343536;
+            color: #d7dadc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        
+        .vote-buttons {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 16px;
+            color: #818384;
+        }
+        
+        .vote-buttons span {
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        
+        .vote-buttons span:hover {
+            color: #d7dadc;
         }
     </style>
 </head>
 <body>
     <div class="reddit-container">
-        <div class="post-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">247</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
-                <div class="post-title">TIL Abu Bakr Waheeid (841-902) founded a fanatical Islamic sect and conquered a trans-Saharan empire after being "transformed" during Hajj in 867</div>
-                <div class="post-meta">Posted by u/ByzantineBoi99 • 8 hours ago • i.redd.it</div>
-                <div class="post-content">
-                    <p>This guy's story is absolutely wild. Born Muhammad ibn Abdullah, lived a totally secular life as a merchant, then went on Hajj and came back claiming to be sent by Allah to conquer the Roman Empire. Founded Tasalahism and built an empire from Algeria to Lake Chad.</p>
-                    
-                    <p>What's crazy is he was illiterate but claimed to be the Caliph of Islam. The sect's full name translates to "Those who affirm the truth of God and prepare to purify the nation" - basically 9th century ISIS vibes.</p>
-                    
-                    <p>He conquered like 34 different territories between 867-902, including defeating the Kanem Empire. Dude was 61 when he died and his empire fell apart within 20 years.</p>
-                    
-                    <p>Anyone else heard of this guy? Seems like one of those forgotten historical figures who was probably way more influential than we realize.</p>
-                </div>
-                <div class="post-stats">
-                    <span>247 upvotes</span>
-                    <span>142 comments</span>
-                    <span>share</span>
-                    <span>save</span>
-                </div>
-            </div>
+        <div class="post-header">
+            <h1 class="post-title">TIL After Abu Bakr Waheeid's death, his empire collapsed into a 20-year civil war between his four sons that was basically a giant game of fratricidal musical chairs</h1>
+            <div class="post-meta">Posted by u/MedievalChaos • 8 hours ago • 18.7k upvotes • 89% upvoted</div>
         </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">89</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
+        
+        <div class="post-content">
+            <p>So Muhammad takes over after his dad dies, right? But instead of consolidating power, he immediately starts beef with his brothers. Ahmad calls him out for being a drunk, Muhammad fires back calling Ahmad a "secret Ibadi pagan," and next thing you know it's 20 years of brother vs brother warfare.</p>
+            
+            <p>The succession went: Muhammad → Ahmad → Hasan → Ali → Abal-Al-Aziz. Each brother overthrowing the previous one like some kind of medieval reality TV show. By the end they were so busy killing each other that the whole empire just disintegrated.</p>
+            
+            <p>Imagine being the youngest brother Abal-Al-Aziz and watching your four older brothers systematically murder each other over two decades, only to inherit a completely broken kingdom that disappears from history within a few years. What a mess.</p>
+        </div>
+        
+        <div class="comment-section">
+            <select class="sort-dropdown">
+                <option>Best</option>
+                <option>Top</option>
+                <option>New</option>
+                <option>Controversial</option>
+            </select>
+            
+            <div class="comment">
                 <div class="comment-header">
-                    <span class="username">u/HistoryNerd2023</span>
-                    <span class="user-flair">Medieval History</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 7 hours ago</span>
+                    <span class="username">ByzantineBoi</span>
+                    <span class="comment-meta">7 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    Great post! Abu Bakr Waheeid is one of those figures who gets overlooked in Western education but was genuinely fascinating. The way he combined religious fervor with practical state-building was pretty remarkable for the 9th century. His empire controlled the trans-Saharan trade routes at their peak, which was basically like controlling the internet of that era.
+                    Medieval succession disputes were wild. At least in Europe we had primogeniture - this "every son gets a shot at the throne" thing they had going in North Africa was basically guaranteeing civil wars every generation.
                 </div>
                 <div class="comment-actions">
+                    <span>↑ 1.2k ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
-                    <span>Report</span>
                     <span>Save</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">156</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
-                <div class="comment-header">
-                    <span class="username">u/DesertRose87</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 6 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    My Algerian grandmother used to tell stories about him! She called him "the mad merchant who became a prophet." According to her family's oral history, he was actually a pretty decent administrator once he stopped conquering everything. Built schools, improved trade routes, and wasn't as brutal as some of the other conquerors of that era. Still totally delusional about the whole "I'm the Caliph" thing though lol
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="nested">
-            <div class="comment-card">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="score">67</div>
-                    <div class="vote-btn">▼</div>
-                </div>
-                <div style="margin-left: 40px;">
+                
+                <div class="comment nested-comment">
                     <div class="comment-header">
-                        <span class="username">u/ByzantineBoi99</span>
-                        <span style="color: #7C7C7D; font-size: 12px;">• 5 hours ago</span>
+                        <span class="username">DesertHistorian</span>
+                        <span class="comment-meta">6 hours ago</span>
                     </div>
                     <div class="comment-body">
-                        That's awesome that the stories survived! Oral history is so underrated. Do you remember any specific tales she told about him?
+                        Yeah but even with primogeniture you still got succession wars. At least this way everyone got a turn? 😅
                     </div>
                     <div class="comment-actions">
+                        <span>↑ 456 ↓</span>
                         <span>Reply</span>
                         <span>Share</span>
-                        <span>Report</span>
                         <span>Save</span>
                     </div>
                 </div>
             </div>
-
-            <div class="comment-card">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="score">43</div>
-                    <div class="vote-btn">▼</div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryRepeatsItself</span>
+                    <span class="comment-meta">7 hours ago</span>
                 </div>
-                <div style="margin-left: 40px;">
+                <div class="comment-body">
+                    The "you're a drunk!" "well you're a secret pagan!" exchange is so hilariously medieval. These guys really knew how to throw shade before Twitter existed.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 892 ↓</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="comment nested-comment">
                     <div class="comment-header">
-                        <span class="username">u/DesertRose87</span>
-                        <span style="color: #7C7C7D; font-size: 12px;">• 4 hours ago</span>
+                        <span class="username">MedievalDramaQueen</span>
+                        <span class="comment-meta">6 hours ago</span>
                     </div>
                     <div class="comment-body">
-                        She had this one about him trying to walk on water like Jesus because he thought he was "the new prophet for all people." Apparently he fell in, got soaked, and then claimed Allah was testing his faith 😂 Also stories about him accidentally eating pork at a Christian merchant's house and then declaring it was a sign that all food laws should be abolished. Guy was wild
+                        "Secret Ibadi pagan" is my new favorite insult. Gonna start using that in arguments.
                     </div>
                     <div class="comment-actions">
+                        <span>↑ 234 ↓</span>
                         <span>Reply</span>
                         <span>Share</span>
-                        <span>Report</span>
                         <span>Save</span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">98</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
+            
+            <div class="comment">
                 <div class="comment-header">
-                    <span class="username">u/AcademicApostate</span>
-                    <span class="user-flair">PhD | Islamic Studies</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 5 hours ago</span>
+                    <span class="username">SaharaSultan</span>
+                    <span class="comment-meta">6 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    The really interesting thing about Abu Bakr Waheeid is how his movement represents this weird intersection of religious innovation and political pragmatism. Like, on one hand he's claiming to be the Caliph and talking about conquering Rome, but on the other hand he's making smart alliances with local tribes and setting up functional administrative systems. The Tasalahist doctrine itself was basically "Islam but make it more militant and less tolerant" - not super original, but effective for empire-building.
+                    My grandfather used to say "Waheeid's sons inherited his ambition but none of his competence." Dude built an empire in 30 years, his kids destroyed it in 20. Classic second generation problems.
                 </div>
                 <div class="comment-actions">
+                    <span>↑ 756 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
-                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="comment nested-comment">
+                    <div class="comment-header">
+                        <span class="username">FamilyBusinessExpert</span>
+                        <span class="comment-meta">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        This is why family businesses rarely survive past the second generation. Same principle applies to medieval empires apparently.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 189 ↓</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">Numismatist_Nerd</span>
+                    <span class="comment-meta">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Coin collector here - you can actually track the civil war through the coinage. Muhammad's coins show him with a sword, Ahmad's coins have him holding a Quran AND a sword (trying to prove his religious legitimacy), and by Ali's reign the coins are crude and debased because they were fighting for survival.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 634 ↓</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="comment nested-comment">
+                    <div class="comment-header">
+                        <span class="username">ArchaeologyGrad</span>
+                        <span class="comment-meta">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    That's fascinating! I did my thesis on monetary policy during succession crises. The fact that they were still minting coins during active civil war shows they were trying to maintain legitimacy.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 267 ↓</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MedievalMilitary</span>
+                    <span class="comment-meta">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Military historian here - what's wild is that they kept fighting for 20 YEARS. Most medieval civil wars either ended quickly or settled into stalemates. These brothers were genuinely trying to annihilate each other.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 523 ↓</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="comment nested-comment">
+                    <div class="comment-header">
+                        <span class="username">FamilyFeudExpert</span>
+                        <span class="comment-meta">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        When family feuds mix with political power, things get ugly fast. These weren't just brothers - they were rival claimants to a throne with religious legitimacy issues. Recipe for disaster.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 156 ↓</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">AbalAlAzizFanClub</span>
+                    <span class="comment-meta">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Abal-Al-Aziz is the real tragic figure here. Dude watched his entire family murder each other for 20 years, finally gets the throne, and inherits... nothing. The empire is broken, the treasury is empty, and half the provinces have declared independence. No wonder he disappears from history - there was nothing left to rule.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 445 ↓</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="comment nested-comment">
+                    <div class="comment-header">
+                        <span class="username">LastEmperorFeels</span>
+                        <span class="comment-meta">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        "Congratulations, you won the throne! Your prize is... a pile of rubble and a civil war that destroyed everything your father built. Enjoy your reign of like 3 years before you vanish into obscurity."
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 289 ↓</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GameOfThronesFan</span>
+                    <span class="comment-meta">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    This reads like a deleted subplot from Game of Thrones. "Four brothers fighting over a desert kingdom, each claiming religious legitimacy while accusing the others of heresy and debauchery." HBO needs to option this story immediately.
+                </div>
+                <div class="comment-meta">↑ 198 ↓</span>
+                    <span>Reply</span>
+                    <span>Share</span>
                     <span>Save</span>
                 </div>
             </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">72</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
+            
+            <div class="comment">
                 <div class="comment-header">
-                    <span class="username">u/SahelScholar</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 4 hours ago</span>
+                    <span class="username">SaharaStoryteller</span>
+                    <span class="comment-meta">2 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    What's wild is how he basically created the first real trans-Saharan empire. Before him, most of the powerful states were either North African (like the Aghlabids) or Sahelian (like Gao or Kanem). Abu Bakr was the first to really control both sides of the desert in a meaningful way. Dude was basically running logistics across the Sahara in the 9th century with no modern technology. That's genuinely impressive even if he was completely unhinged
+                    My grandmother used to say "The Waheeid brothers fought so long over the throne that when the last one finally sat on it, he found it was made of bones and dust." The Sahara has a way of turning ambition into archaeology.
                 </div>
                 <div class="comment-actions">
+                    <span>↑ 123 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
-                    <span>Report</span>
                     <span>Save</span>
                 </div>
             </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">45</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
+            
+            <div class="comment">
                 <div class="comment-header">
-                    <span class="username">u/CynicalClassicist</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 3 hours ago</span>
+                    <span class="username">HistoryRepeats</span>
+                    <span class="comment-meta">1 hour ago</span>
                 </div>
                 <div class="comment-body">
-                    The parallels to modern extremist movements are honestly unsettling. Replace "conquer the Roman Empire" with "restore the Caliphate" and you've got basically the same rhetoric you hear from modern jihadist groups. The fact that he was illiterate but claimed religious authority, the whole "pure Islam" thing, the military expansionism... history really does repeat itself in the weirdest ways
+                    The real lesson here? If you're going to build an empire based on religious legitimacy and personal charisma, maybe teach your kids how to cooperate instead of just how to conquer.
                 </div>
                 <div class="comment-actions">
+                    <span>↑ 67 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">31</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
-                <div class="comment-header">
-                    <span class="username">u/RandomHistoryBuff</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Am I the only one who thinks it's hilarious that his original name was literally just "Muhammad son of Abdullah"? That's like the most generic Muslim name possible. Dude went from John Smith to claiming he was God's chosen emperor 😂
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="comment-card">
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="score">28</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <div style="margin-left: 40px;">
-                <div class="comment-header">
-                    <span class="username">u/MedievalMaps</span>
-                    <span class="user-flair">Historical Cartography</span>
-                    <span style="color: #7C7C7D; font-size: 12px;">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    For anyone interested, I've been working on mapping his campaigns and you can see how strategically smart his expansion was. He basically controlled all the major oases and trade routes across the Sahara. The guy might have been delusional about the religious stuff but he understood logistics and geography better than most rulers of his era.
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
                     <span>Save</span>
                 </div>
             </div>
