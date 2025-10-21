@@ -1,379 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit - Dive into anything</title>
+    <title>Abu Bakr Waheeid - Reddit Thread</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-            background-color: #0f1419;
-            color: #d7dadc;
-            line-height: 1.4;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #DAE0E6;
+            margin: 0;
+            padding: 20px;
         }
-        
         .reddit-container {
             max-width: 740px;
             margin: 0 auto;
-            background-color: #1a1a1b;
-            min-height: 100vh;
         }
-        
-        .post-header {
-            padding: 12px 16px;
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-        }
-        
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: #d7dadc;
-        }
-        
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .post-content {
-            padding: 16px;
-            background-color: #1a1a1b;
-            margin-bottom: 8px;
+        .post-card {
+            background: white;
             border-radius: 4px;
-        }
-        
-        .comment-section {
-            background-color: #1a1a1b;
             padding: 16px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #343536;
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #1A1A1B;
+            margin: 0 0 8px 0;
         }
-        
+        .post-meta {
+            color: #7C7C7D;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .post-content {
+            color: #1A1A1B;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .post-stats {
+            display: flex;
+            gap: 20px;
+            color: #878A8C;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .comment-card {
+            background: white;
+            border-radius: 4px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 2px solid #EDEFF1;
+        }
         .comment-header {
             display: flex;
             align-items: center;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            gap: 8px;
         }
-        
         .username {
             font-weight: 500;
-            color: #d7dadc;
-            margin-right: 8px;
-        }
-        
-        .comment-meta {
+            color: #1A1A1B;
             font-size: 12px;
-            color: #818384;
         }
-        
+        .user-flair {
+            background: #E9F5FF;
+            color: #0079D3;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 10px;
+        }
         .comment-body {
+            color: #1A1A1B;
+            line-height: 1.5;
             font-size: 14px;
-            color: #d7dadc;
             margin-bottom: 8px;
         }
-        
         .comment-actions {
+            color: #878A8C;
             font-size: 12px;
-            color: #818384;
             display: flex;
-            gap: 16px;
+            gap: 12px;
         }
-        
-        .comment-actions span {
-            cursor: pointer;
-        }
-        
-        .comment-actions span:hover {
-            color: #d7dadc;
-        }
-        
-        .nested-comment {
-            margin-left: 24px;
-            margin-top: 12px;
-        }
-        
-        .sort-dropdown {
-            background-color: #272729;
-            border: 1px solid #343536;
-            color: #d7dadc;
-            padding: 8px 12px;
-            border-radius: 4px;
-            margin-bottom: 16px;
-            font-size: 14px;
-        }
-        
         .vote-buttons {
-            display: inline-flex;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            margin-right: 16px;
-            color: #818384;
+            margin-right: 12px;
+            float: left;
         }
-        
-        .vote-buttons span {
-            margin: 0 4px;
+        .vote-btn {
+            color: #878A8C;
             cursor: pointer;
+            font-size: 16px;
+            line-height: 1;
         }
-        
-        .vote-buttons span:hover {
-            color: #d7dadc;
+        .score {
+            font-size: 12px;
+            color: #878A8C;
+            margin: 2px 0;
+        }
+        .nested {
+            margin-left: 24px;
+            border-left: 1px solid #EDEFF1;
+            padding-left: 12px;
         }
     </style>
 </head>
 <body>
     <div class="reddit-container">
-        <div class="post-header">
-            <h1 class="post-title">TIL Abu Bakr Waheeid was a 9th century warlord who founded his own Islamic sect and conquered a trans-Saharan empire</h1>
-            <div class="post-meta">Posted by u/HistoryBuff92 • 6 hours ago • 14.2k upvotes • 92% upvoted</div>
-        </div>
-        
-        <div class="post-content">
-            <p>I was reading about medieval African history and came across this guy. Started as a merchant, went on a pilgrimage to Mecca in 867, came back completely radicalized, founded his own sect called Tasalahism, and spent the next 30 years building an empire from Algeria to Lake Chad. Dude was basically the ISIS of the 9th century but actually successful.</p>
-            
-            <p>What's wild is how he went from being a normal trader to this religious zealot who thought he was God's chosen warrior. His sect's full name literally translates to "Those who affirm the truth of God and prepare to purify the nation" - sounds like something you'd see on a terrorist manifesto today.</p>
-            
-            <p>Anyone else heard of this guy? Seems like he should be more well-known given how much territory he controlled.</p>
-        </div>
-        
-        <div class="comment-section">
-            <select class="sort-dropdown">
-                <option>Best</option>
-                <option>Top</option>
-                <option>New</option>
-                <option>Controversial</option>
-            </select>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DesertRose_47</span>
-                    <span class="comment-meta">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is fascinating! I studied North African history in college and barely heard about him. It's crazy how many of these medieval warlords just get lost to time. The part about him using camels as mobile archer platforms is actually brilliant - nobody else was doing that at the time.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 342 ↓</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="comment nested-comment">
-                    <div class="comment-header">
-                        <span class="username">cameljockey_actual</span>
-                        <span class="comment-meta">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Right?? Dude was basically inventing combined arms tactics in the 9th century. The way he used the desert environment as a weapon was next level - attacking during the hottest part of the day when his enemies were weakest.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 89 ↓</span>
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Save</span>
-                    </div>
-                </div>
+        <div class="post-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">247</div>
+                <div class="vote-btn">▼</div>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">MuslimHistorian</span>
-                    <span class="comment-meta">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    As someone who actually studies Islamic history, this guy is kind of a footnote for good reason. He was basically a heretic who got lucky militarily. His "Tasalahism" was just thinly veiled power grabbing - "return to pure Islam" while conquering territory and establishing his own dynasty. Classic.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 567 ↓</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="comment nested-comment">
-                    <div class="comment-header">
-                        <span class="username">agnostic_apologist</span>
-                        <span class="comment-meta">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        I mean, isn't that basically what Muhammad himself did? Not trying to be edgy here, but religious reform movements that also happen to conquer territory are pretty common across all religions.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 234 ↓</span>
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Save</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">GrandpasWW1Stories</span>
-                    <span class="comment-meta">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    My grandfather (born 1895, WW1 vet) used to tell stories about how HIS grandfather (born 1836, Civil War vet) knew an old man who claimed to have fought against descendants of Abu Bakr's followers in the 1850s. Apparently some remote desert communities were still following Tasalahist teachings centuries later. No idea if it was true but the guy seemed convinced.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 892 ↓</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="comment nested-comment">
-                    <div class="comment-header">
-                        <span class="username">time_traveler_1900</span>
-                        <span class="comment-meta">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    That timeline is WILD. Your grandfather's grandfather knew someone who fought remnants of a 9th century sect? That's like 1000 years of oral history. My brain can't even process that.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 445 ↓</span>
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Save</span>
-                    </div>
+            <div style="margin-left: 40px;">
+                <div class="post-title">TIL Abu Bakr Waheeid (841-902) founded a fanatical Islamic sect and conquered a trans-Saharan empire after being "transformed" during Hajj in 867</div>
+                <div class="post-meta">Posted by u/ByzantineBoi99 • 8 hours ago • i.redd.it</div>
+                <div class="post-content">
+                    <p>This guy's story is absolutely wild. Born Muhammad ibn Abdullah, lived a totally secular life as a merchant, then went on Hajj and came back claiming to be sent by Allah to conquer the Roman Empire. Founded Tasalahism and built an empire from Algeria to Lake Chad.</p>
                     
-                    <div class="comment nested-comment">
-                        <div class="comment-header">
-                            <span class="username">GrandpasWW1Stories</span>
-                            <span class="comment-meta">2 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            Yeah, it's pretty mind-blowing when you think about it. The old guy would have been born around 1800, so he could easily have known people born in the 1750s who might have encountered these isolated desert communities. History is closer than we think sometimes.
-                        </div>
-                        <div class="comment-actions">
-                            <span>↑ 178 ↓</span>
-                            <span>Reply</span>
-                            <span>Share</span>
-                            <span>Save</span>
-                        </div>
-                    </div>
+                    <p>What's crazy is he was illiterate but claimed to be the Caliph of Islam. The sect's full name translates to "Those who affirm the truth of God and prepare to purify the nation" - basically 9th century ISIS vibes.</p>
+                    
+                    <p>He conquered like 34 different territories between 867-902, including defeating the Kanem Empire. Dude was 61 when he died and his empire fell apart within 20 years.</p>
+                    
+                    <p>Anyone else heard of this guy? Seems like one of those forgotten historical figures who was probably way more influential than we realize.</p>
+                </div>
+                <div class="post-stats">
+                    <span>247 upvotes</span>
+                    <span>142 comments</span>
+                    <span>share</span>
+                    <span>save</span>
                 </div>
             </div>
-            
-            <div class="comment">
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">89</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
                 <div class="comment-header">
-                    <span class="username">SaharaSultan</span>
-                    <span class="comment-meta">3 hours ago</span>
+                    <span class="username">u/HistoryNerd2023</span>
+                    <span class="user-flair">Medieval History</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 7 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    The thing that gets me is how he went from merchant to messiah-complex warlord in like 6 months. One pilgrimage and suddenly he's God's chosen warrior? Sounds like mental illness to me, but I guess in the 9th century that just meant you were holy.
+                    Great post! Abu Bakr Waheeid is one of those figures who gets overlooked in Western education but was genuinely fascinating. The way he combined religious fervor with practical state-building was pretty remarkable for the 9th century. His empire controlled the trans-Saharan trade routes at their peak, which was basically like controlling the internet of that era.
                 </div>
                 <div class="comment-actions">
-                    <span>↑ 334 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
+                    <span>Report</span>
                     <span>Save</span>
                 </div>
-                
-                <div class="comment nested-comment">
+            </div>
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">156</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
+                <div class="comment-header">
+                    <span class="username">u/DesertRose87</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My Algerian grandmother used to tell stories about him! She called him "the mad merchant who became a prophet." According to her family's oral history, he was actually a pretty decent administrator once he stopped conquering everything. Built schools, improved trade routes, and wasn't as brutal as some of the other conquerors of that era. Still totally delusional about the whole "I'm the Caliph" thing though lol
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nested">
+            <div class="comment-card">
+                <div class="vote-buttons">
+                    <div class="vote-btn">▲</div>
+                    <div class="score">67</div>
+                    <div class="vote-btn">▼</div>
+                </div>
+                <div style="margin-left: 40px;">
                     <div class="comment-header">
-                        <span class="username">PsychMajor2024</span>
-                        <span class="comment-meta">2 hours ago</span>
+                        <span class="username">u/ByzantineBoi99</span>
+                        <span style="color: #7C7C7D; font-size: 12px;">• 5 hours ago</span>
                     </div>
                     <div class="comment-body">
-                        Could be temporal lobe epilepsy. Religious visions, sudden personality changes, grandiose delusions - it all fits. Neurological conditions probably explain half the "prophets" in history.
+                        That's awesome that the stories survived! Oral history is so underrated. Do you remember any specific tales she told about him?
                     </div>
                     <div class="comment-actions">
-                        <span>↑ 267 ↓</span>
                         <span>Reply</span>
                         <span>Share</span>
+                        <span>Report</span>
                         <span>Save</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">MedievalMilitary</span>
-                    <span class="comment-meta">3 hours ago</span>
+
+            <div class="comment-card">
+                <div class="vote-buttons">
+                    <div class="vote-btn">▲</div>
+                    <div class="score">43</div>
+                    <div class="vote-btn">▼</div>
                 </div>
-                <div class="comment-body">
-                    Military history nerd here - this guy was actually tactically brilliant. The way he coordinated attacks with the desert environment (hottest part of day, knowledge of local terrain) shows real strategic thinking. Plus managing to keep 12,000 warriors supplied across the Sahara in the 9th century? That's logistics genius.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 456 ↓</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">AfricanHistoryProf</span>
-                    <span class="comment-meta">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Academic perspective: Abu Bakr represents a fascinating case study in how religious legitimacy could be manufactured in medieval Islam. His "revelations" conveniently aligned with his political ambitions, and his military success validated his religious claims in the eyes of followers. It's a pattern you see repeated throughout history, but rarely this successfully.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 289 ↓</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="comment nested-comment">
+                <div style="margin-left: 40px;">
                     <div class="comment-header">
-                        <span class="username">CynicalHistorian</span>
-                        <span class="comment-meta">1 hour ago</span>
+                        <span class="username">u/DesertRose87</span>
+                        <span style="color: #7C7C7D; font-size: 12px;">• 4 hours ago</span>
                     </div>
                     <div class="comment-body">
-                        Pretty much every successful religious movement in history. "God told me to conquer this territory and also I'm in charge now" is basically the oldest trick in the book.
+                        She had this one about him trying to walk on water like Jesus because he thought he was "the new prophet for all people." Apparently he fell in, got soaked, and then claimed Allah was testing his faith 😂 Also stories about him accidentally eating pork at a Christian merchant's house and then declaring it was a sign that all food laws should be abolished. Guy was wild
                     </div>
                     <div class="comment-actions">
-                        <span>↑ 156 ↓</span>
                         <span>Reply</span>
                         <span>Share</span>
+                        <span>Report</span>
                         <span>Save</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="comment">
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">98</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
                 <div class="comment-header">
-                    <span class="username">DesertNomad</span>
-                    <span class="comment-meta">1 hour ago</span>
+                    <span class="username">u/AcademicApostate</span>
+                    <span class="user-flair">PhD | Islamic Studies</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 5 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    My Tuareg grandmother used to tell stories about "the mad Arab who thought he could walk on water" - apparently there's still oral traditions about this guy in the Sahara. According to her stories, he died trying to cross a salt flat during a sandstorm and his body was never found. The "walk on water" thing was probably him getting confused by the mirage effects on salt flats.
+                    The really interesting thing about Abu Bakr Waheeid is how his movement represents this weird intersection of religious innovation and political pragmatism. Like, on one hand he's claiming to be the Caliph and talking about conquering Rome, but on the other hand he's making smart alliances with local tribes and setting up functional administrative systems. The Tasalahist doctrine itself was basically "Islam but make it more militant and less tolerant" - not super original, but effective for empire-building.
                 </div>
                 <div class="comment-actions">
-                    <span>↑ 198 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
+                    <span>Report</span>
                     <span>Save</span>
                 </div>
             </div>
-            
-            <div class="comment">
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">72</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
                 <div class="comment-header">
-                    <span class="username">HistoryRepeats</span>
-                    <span class="comment-meta">45 minutes ago</span>
+                    <span class="username">u/SahelScholar</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 4 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    The parallels to modern extremist movements are unsettling. Replace "9th century Sahara" with "21st century Middle East" and this could be about any number of recent groups. Religious zeal + military ambition + charismatic leader = recipe for chaos that apparently hasn't changed in 1200 years.
+                    What's wild is how he basically created the first real trans-Saharan empire. Before him, most of the powerful states were either North African (like the Aghlabids) or Sahelian (like Gao or Kanem). Abu Bakr was the first to really control both sides of the desert in a meaningful way. Dude was basically running logistics across the Sahara in the 9th century with no modern technology. That's genuinely impressive even if he was completely unhinged
                 </div>
                 <div class="comment-actions">
-                    <span>↑">↑ 67 ↓</span>
                     <span>Reply</span>
                     <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">45</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
+                <div class="comment-header">
+                    <span class="username">u/CynicalClassicist</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The parallels to modern extremist movements are honestly unsettling. Replace "conquer the Roman Empire" with "restore the Caliphate" and you've got basically the same rhetoric you hear from modern jihadist groups. The fact that he was illiterate but claimed religious authority, the whole "pure Islam" thing, the military expansionism... history really does repeat itself in the weirdest ways
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">31</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
+                <div class="comment-header">
+                    <span class="username">u/RandomHistoryBuff</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Am I the only one who thinks it's hilarious that his original name was literally just "Muhammad son of Abdullah"? That's like the most generic Muslim name possible. Dude went from John Smith to claiming he was God's chosen emperor 😂
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-card">
+            <div class="vote-buttons">
+                <div class="vote-btn">▲</div>
+                <div class="score">28</div>
+                <div class="vote-btn">▼</div>
+            </div>
+            <div style="margin-left: 40px;">
+                <div class="comment-header">
+                    <span class="username">u/MedievalMaps</span>
+                    <span class="user-flair">Historical Cartography</span>
+                    <span style="color: #7C7C7D; font-size: 12px;">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    For anyone interested, I've been working on mapping his campaigns and you can see how strategically smart his expansion was. He basically controlled all the major oases and trade routes across the Sahara. The guy might have been delusional about the religious stuff but he understood logistics and geography better than most rulers of his era.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
                     <span>Save</span>
                 </div>
             </div>
