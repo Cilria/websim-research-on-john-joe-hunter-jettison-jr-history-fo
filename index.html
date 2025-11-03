@@ -5,205 +5,348 @@
     <style>
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #fff;
-            color: #333;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .nyt-header {
-            border-bottom: 1px solid #ddd;
-            padding: 20px 0 10px 0;
-            margin-bottom: 30px;
+        .reddit-header {
+            background-color: #1a1a1b;
+            border-bottom: 1px solid #343536;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .nyt-logo {
-            font-family: 'Times New Roman', serif;
-            font-size: 32px;
+        .reddit-logo {
+            font-size: 24px;
             font-weight: bold;
-            color: #000;
+            color: #ff4500;
             text-align: center;
-            margin-bottom: 10px;
         }
-        .nyt-nav {
+        .reddit-nav {
             text-align: center;
             font-size: 14px;
-            color: #666;
-            border-top: 1px solid #eee;
-            padding-top: 10px;
+            color: #d7dadc;
+            margin-top: 5px;
         }
-        .article-container {
+        .post-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px 40px 20px;
+            padding: 20px;
         }
-        .article-meta {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-        .article-title {
-            font-family: 'Georgia', serif;
-            font-size: 36px;
-            font-weight: normal;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-        .article-subtitle {
-            font-size: 20px;
-            color: #666;
-            margin-bottom: 30px;
-            font-style: italic;
-            font-weight: normal;
-        }
-        .article-image {
-            width: 100%;
-            max-width: 600px;
-            margin: 30px 0;
-            border-radius: 4px;
-        }
-        .article-content {
-            font-size: 20px;
-            line-height: 1.8;
-        }
-        .article-content p {
-            margin-bottom: 25px;
-        }
-        .article-content h3 {
-            font-size: 24px;
-            margin: 40px 0 20px 0;
-            font-weight: normal;
-        }
-        .quote-block {
-            border-left: 3px solid #000;
-            padding-left: 25px;
-            margin: 30px 0;
-            font-style: italic;
-            color: #333;
-            font-size: 18px;
-        }
-        .related-links {
-            background-color: #f8f8f8;
-            padding: 25px;
-            margin: 40px 0;
-            border-radius: 4px;
-        }
-        .related-links h4 {
-            margin-top: 0;
-            color: #000;
-            font-family: 'Georgia', serif;
-        }
-        .related-links ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        .byline {
+        .post-title {
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 5px;
+            color: #d7dadc;
+            margin-bottom: 10px;
         }
-        .dateline {
-            color: #666;
+        .post-meta {
+            color: #818384;
             font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .post-content {
+            background-color: #272729;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #343536;
+        }
+        .post-stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: #818384;
+            font-size: 14px;
+        }
+        .comment-section {
+            background-color: #272729;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #343536;
+        }
+        .comment {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #343536;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .username {
+            font-weight: bold;
+            color: #d7dadc;
+            margin-right: 10px;
+        }
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+        }
+        .comment-body {
+            color: #d7dadc;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        .comment-actions {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .reply {
+            margin-left: 30px;
+            margin-top: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #343536;
+        }
+        .vote-buttons {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-right: 15px;
+        }
+        .upvote, .downvote {
+            cursor: pointer;
+            color: #818384;
+        }
+        .upvote:hover {
+            color: #ff4500;
+        }
+        .downvote:hover {
+            color: #7193ff;
+        }
+        .flair {
+            background-color: #ff4500;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="nyt-header">
-        <div class="nyt-logo">The New York Times</div>
-        <div class="nyt-nav">
-            WORLD | MIDDLE EAST
-        </div>
+    <div class="reddit-header">
+        <div class="reddit-logo">r/worldnews</div>
+        <div class="reddit-nav">Hot • New • Top • Rising</div>
     </div>
     
-    <div class="article-container">
-        <div class="article-meta">
-            <div class="byline">By Farnaz Fassihi and Jane Arraf</div>
-            <div class="dateline">July 13, 2027</div>
+    <div class="post-container">
+        <div class="post-content">
+            <h1 class="post-title">Young woman's murder in Baghdad sparks anti-Persian violence, with Arab ultranationalists blaming Iranians before any suspects identified</h1>
+            <div class="post-meta">
+                Posted by u/LevantineLad • 4 hours ago • <span class="flair">MIDDLE EAST</span>
+            </div>
+            <div class="post-stats">
+                <span>92.3k upvotes</span>
+                <span>13.7k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+            </div>
+            <p>Arab ultranationalists have blamed Persians for the murder of a 24-year-old woman in Baghdad, despite police having no suspects. The killing has ignited anti-Persian violence across Iraq, with imams delivering sermons calling Persians "kuffars" and urging holy war against them.</p>
         </div>
         
-        <h1 class="article-title">Young Woman's Murder in Baghdad Sparks Anti-Persian Violence, Officials Say</h1>
-        <h2 class="article-subtitle">Arab ultranationalists blame Iranians for killing before investigation begins, as sectarian tensions flare across Iraq</h2>
-        
-        <div class="article-content">
-            <p>BAGHDAD — The murder of a 24-year-old Iraqi woman in the capital's Karrada district has ignited a firestorm of anti-Persian violence and rhetoric across Iraq, with Arab ultranationalists blaming Iranians for the killing before police have identified any suspects.</p>
-            
-            <p>The woman, identified as Laila Mahdi al-Tamimi, was found dead in her apartment on Thursday evening. Within hours of the discovery, Arab ultranationalist groups on social media began circulating claims that "Persian gangs" were responsible, despite no evidence released by investigators.</p>
-            
-            <div class="quote-block">
-                "Proof that Persians are our enemies and seek to destroy us," read a post on the ultranationalist Telegram channel "The Arab Soldiers," which has over 300,000 followers. "This innocent Arab blood will not be spilled in vain. The Persian criminals must pay."
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">BaghdadBorn</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Holy shit... I live in Karrada and the mood here is absolutely terrifying. People are sharing fake videos claiming to show "Persian gangs" and everyone's just eating it up. My neighbor literally asked me yesterday if I thought our Shiite landlord was "secretly Persian." This is getting insane.
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>3.2k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">TehranTuesdays</span>
+                        <span class="comment-meta">• 3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Bro, stay safe out there. My cousin in Baghdad says the same thing - people are just looking for any excuse to turn on each other. It's like 2006 all over again but with social media making everything worse.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="vote-buttons">
+                            <span class="upvote">▲</span>
+                            <span>1.1k</span>
+                            <span class="downvote">▼</span>
+                        </span>
+                        <span>reply</span>
+                    </div>
+                </div>
             </div>
             
-            <p>The channel, along with dozens of similar accounts, began repurposing anti-immigrant content from American social media, replacing references to "illegal immigrants" with "Persians" and "MAGA" rhetoric with Arab nationalist messaging.</p>
-            
-            <h3>Funeral becomes political rally</h3>
-            
-            <p>At Ms. al-Tamimi's funeral on Saturday, attended by hundreds of mourners, the imam of a local mosque delivered a sermon that explicitly blamed Persians for the murder and called for divine retribution.</p>
-            
-            <div class="quote-block">
-                "The kuffars walk among us, spreading their corruption and evil," Imam Hassan al-Jubouri declared, using a derogatory Arabic term for non-believers. "These Persians, these fire-worshippers, they come to our land and defile our women. This is a holy war that Allah demands we fight."
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryNerd_92</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The speed at which they went from "murder happened" to "PERSIANS DID IT" is absolutely mind-blowing. Like, the body wasn't even cold yet and Telegram channels were already calling for violence. The imam calling Persians "fire-worshippers" in 2027... bro, what century is this?
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>2.8k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
             </div>
             
-            <p>The sermon, which was livestreamed on multiple social media platforms, has been viewed over 1.5 million times and has sparked protests in several Baghdad neighborhoods.</p>
-            
-            <h3>Viral misinformation spreads</h3>
-            
-            <p>Arab ultranationalist accounts have flooded social media with false claims about "Persian gangs" operating in Baghdad, sharing grainy videos of altercations and claiming they show Iranian citizens attacking Iraqis.</p>
-            
-            <p>One viral post shows a video originally from a 2023 street fight in Istanbul, now captioned: "Persian gang members assaulting innocent Arab women in Baghdad. This is proof that Persians are scum."</p>
-            
-            <div class="quote-block">
-                "They're taking pages directly from the American far-right playbook," said Dr. Sahar al-Khalidi, a digital media researcher at the University of Baghdad. "Replace 'Mexican immigrants' with 'Persians' and 'Build the Wall' with 'Drive Them Out' — it's the same rhetoric of dehumanization."
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CaspianCourier</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Iranian here - we're watching this unfold with absolute horror. These idiots are literally recycling American MAGA memes but swapping "Mexicans" for "Persians." The irony is that half my family is Azeri and identifies more with Turkish culture than Persian, but sure, we're all apparently part of some grand Persian conspiracy to... *checks notes*... make Iraqis eat ghormeh sabzi?
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>4.5k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">BasraBoy</span>
+                        <span class="comment-meta">• 2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    The food thing kills me every time. Like yeah bro, Persian food is amazing, but we're really gonna start sectarian violence over koobideh vs kebab? My mom makes both depending on what mood she's in, guess that makes her a traitor to the Arab nation or whatever.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="vote-buttons">
+                            <span class="upvote">▲</span>
+                            <span>892</span>
+                            <span class="downvote">▼</span>
+                        </span>
+                        <span>reply</span>
+                    </div>
+                </div>
             </div>
             
-            <p>The misinformation campaign has been amplified by several Iraqi television channels, which have aired segments on the alleged "Persian crime wave" without verification.</p>
-            
-            <h3>Police investigation ongoing</h3>
-            
-            <p>Baghdad police officials, speaking on condition of anonymity because the investigation is ongoing, said they have no evidence linking any Iranian nationals to the murder and have not identified any suspects.</p>
-            
-            <p>"We are following several leads, but at this stage, we cannot confirm the nationality of any potential suspects," said one investigator. "The speculation on social media is not based on facts available to us."</p>
-            
-            <p>The victim's family has pleaded for calm and urged people not to politicize their daughter's death.</p>
-            
-            <div class="quote-block">
-                "We want justice for Laila, not violence against innocent people," said the victim's brother, Ahmed al-Tamimi. "Whoever killed her should face the law, but we should not blame an entire nationality for one person's crime."
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DigitalArchaeologist</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The "fire-worshippers" thing is sending me. These guys are literally using 1400-year-old insults from the early Islamic conquests. Next they're gonna start calling Persians "Zoroastrian dogs" like we're living in the Abbasid Caliphate. The historical amnesia is real - they forget that Baghdad was built by Persian architects and administered by Persian bureaucrats for centuries.
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>1.9k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
             </div>
             
-            <h3>Rising sectarian tensions</h3>
-            
-            <p>The murder has become the latest flashpoint in the ongoing sectarian tensions between Sunni Arabs and Shiite communities, with ultranationalists increasingly conflating Persian identity with Shiite Islam.</p>
-            
-            <p>Over the past week, several Shiite-owned businesses in Baghdad have been vandalized, and at least two Iranian nationals have reported being assaulted in separate incidents.</p>
-            
-            <div class="quote-block">
-                "This is exactly what these extremists want — to turn a criminal investigation into a sectarian conflict," said Sheikh Ali al-Rikabi, a Shiite cleric in Baghdad. "They use the suffering of one family to justify hatred against millions of innocent people."
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ErbilEagle</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Kurdish perspective here - watching Arabs and Persians fight over who gets to claim Iraq is like watching two people argue over who gets to keep your stolen car. The irony of Arab ultranationalists complaining about "Persian expansionism" while Iraq has been under Iranian influence for decades is just... *chef's kiss*
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>3.1k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
             </div>
             
-            <p>The Iraqi government has deployed additional security forces to mixed Sunni-Shiite neighborhoods and has called for calm, but officials privately acknowledge they are struggling to contain the spread of anti-Persian sentiment.</p>
-            
-            <h3>International concern</h3>
-            
-            <p>The United States Embassy in Baghdad has issued a security alert warning of "increased sectarian rhetoric and potential violence targeting Iranian nationals and Shiite communities."</p>
-            
-            <p>Iran's Foreign Ministry has summoned Iraq's chargé d'affaires in Tehran to express concern about the safety of Iranian citizens in Iraq, while the Iraqi government has promised to protect all foreign nationals.</p>
-            
-            <p>As the investigation continues, regional experts warn that the situation could deteriorate further if authorities do not move quickly to identify the actual perpetrator and counter the spread of misinformation.</p>
-            
-            <div class="quote-block">
-                "The longer this goes unsolved, the more it becomes a blank canvas for extremists to project their hatred," said Dr. al-Khalidi. "Facts become irrelevant when emotions run this high."
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SocialMediaScholar</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The speed of the misinformation spread is genuinely terrifying. That Istanbul street fight video got 2 million views in 12 hours with people in the comments like "YES BROTHER, THIS IS PROOF PERSIANS ARE SCUM" and I'm just sitting here like... that's literally Turkey, my dude. Different country, different language, different everything. But facts don't matter when you've got a good outrage going.
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>1.7k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
             </div>
             
-            <p>Meanwhile, Ms. al-Tamimi's family continues to mourn, caught between their personal tragedy and the political storm it has inadvertently unleashed.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">AmmanAcademic</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Jordanian here - the whole "Death to Persians" thing is spreading here too and it's absolutely unhinged. Like bro, we have actual problems (water crisis, economic collapse, Palestinian issue) but sure, let's get worked up over a meme about food and borders. The Arab world's ability to manufacture outrage over the dumbest shit while ignoring real issues is honestly impressive.
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>2.3k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
+            </div>
             
-            <div class="related-links">
-                <h4>More on Iraq</h4>
-                <ul>
-                    <li><a href="#">Sectarian Violence Flares in Baghdad After Years of Calm</a></li>
-                    <li><a href="#">Iranian Influence in Iraq: A New Chapter?</a></li>
-                    <li><a href="#">Social Media Becomes Battleground for Middle East Tensions</a></li>
-                    <li><a href="#">Anti-Persian Sentiment Spreads Across Arab World</a></li>
-                </ul>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ShirazSassanian</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    The victim's family literally asked people to stop politicizing their daughter's death and these psychos are like "NOPE, TIME FOR A RACE WAR." The poor girl isn't even buried yet and she's already become a martyr for their deranged cause. Zero respect for the dead, zero respect for grieving families, just pure unfiltered hatred.
+                </div>
+                <div class="comment-actions">
+                    <span class="vote-buttons">
+                        <span class="upvote">▲</span>
+                        <span>1.4k</span>
+                        <span class="downvote">▼</span>
+                    </span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
             </div>
         </div>
     </div>
