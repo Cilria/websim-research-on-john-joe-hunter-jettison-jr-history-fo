@@ -1,190 +1,228 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Arab media fuels anti-Persian campaign with 'enemy' rhetoric | BBC News</title>
+    <title>Arab media fuels anti-Persian campaign with 'enemy' rhetoric : worldnews</title>
     <style>
         body {
-            font-family: 'BBC Reith', Arial, sans-serif;
-            background-color: #fff;
-            color: #121212;
+            font-family: 'IBMPlexSans', Arial, sans-serif;
+            background-color: #DAE0E6;
+            color: #1c1c1c;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .bbc-header {
-            background-color: #000;
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-            font-weight: bold;
-            font-size: 24px;
+        .reddit-header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .article-container {
+        .reddit-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        .article-meta {
-            color: #6c6c6c;
-            font-size: 14px;
+        .post-card {
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
             margin-bottom: 20px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 10px;
+            padding: 15px;
         }
-        .article-title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-        .article-subtitle {
+        .post-title {
             font-size: 20px;
-            color: #6c6c6c;
-            margin-bottom: 25px;
-            font-weight: normal;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #0066cc;
+            text-decoration: none;
         }
-        .article-image {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px 0;
-            border-radius: 4px;
+        .post-title:hover {
+            text-decoration: underline;
         }
-        .article-content {
-            font-size: 18px;
+        .post-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .post-content {
+            font-size: 14px;
             line-height: 1.8;
+            margin-bottom: 15px;
         }
-        .article-content p {
-            margin-bottom: 20px;
+        .post-actions {
+            font-size: 12px;
+            color: #888;
         }
-        .article-content h3 {
-            font-size: 22px;
-            margin: 30px 0 15px 0;
+        .post-actions a {
+            color: #888;
+            text-decoration: none;
+            margin-right: 15px;
         }
-        .quote-block {
-            border-left: 4px solid #cc0000;
-            padding-left: 20px;
-            margin: 25px 0;
-            font-style: italic;
-            color: #333;
+        .post-actions a:hover {
+            color: #0066cc;
         }
-        .related-links {
-            background-color: #f5f5f5;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
+        .comment-section {
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
         }
-        .related-links h4 {
-            margin-top: 0;
-            color: #cc0000;
+        .comment {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 2px solid #e0e0e0;
         }
-        .related-links ul {
-            margin: 10px 0;
-            padding-left: 20px;
+        .comment-author {
+            font-weight: 500;
+            color: #0066cc;
+            font-size: 13px;
+        }
+        .comment-time {
+            font-size: 11px;
+            color: #888;
+            margin-left: 5px;
+        }
+        .comment-text {
+            font-size: 13px;
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+        .comment-score {
+            font-size: 11px;
+            color: #888;
+            margin-top: 5px;
+        }
+        .sort-bar {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .sort-bar a {
+            color: #888;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .sort-bar a:hover {
+            color: #0066cc;
+        }
+        .flair {
+            background-color: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="bbc-header">
-        BBC NEWS
+    <div class="reddit-header">
+        <div class="reddit-container">
+            <div style="display: flex; align-items: center;">
+                <div style="font-size: 24px; font-weight: bold; color: #FF4500; margin-right: 20px;">reddit</div>
+                <div style="font-size: 14px;">
+                    <a href="#" style="color: #888; text-decoration: none; margin-right: 15px;">worldnews</a>
+                    <a href="#" style="color: #888; text-decoration: none; margin-right: 15px;">hot</a>
+                    <a href="#" style="color: #888; text-decoration: none; margin-right: 15px;">new</a>
+                    <a href="#" style="color: #888; text-decoration: none;">top</a>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="article-container">
-        <div class="article-meta">
-            Middle East | 12 July 2027
+    <div class="reddit-container">
+        <div class="post-card">
+            <div class="post-meta">r/worldnews • Posted by u/middle_east_observer • 4 hours ago</div>
+            <a href="#" class="post-title">Arab media fuels anti-Persian campaign with 'enemy' rhetoric as boycotts spread and state media joins campaign</a>
+            <div class="post-content">
+                <p>Arab ultranationalists have dramatically escalated their anti-Persian campaign, with viral social media posts now openly calling Persians "the enemy" and urging Arabs to "drive out the Persian menace." The online propaganda war, which began with a satirical meme about Iraq joining Iran, has transformed into a coordinated campaign of dehumanization.</p>
+                
+                <p>Economic boycotts of Persian goods are spreading across the Arab world, with supermarkets removing Persian products and restaurants dropping Persian dishes from menus. State media outlets have embraced the campaign, with Al Arabiya dedicating nightly segments to "the Persian threat."</p>
+            </div>
+            <div class="post-actions">
+                <a href="#">2.3k comments</a> • <a href="#">share</a> • <a href="#">save</a> • <a href="#">hide</a> • <a href="#">report</a>
+            </div>
         </div>
         
-        <h1 class="article-title">Arab media fuels anti-Persian campaign with 'enemy' rhetoric</h1>
-        <h2 class="article-subtitle">Ultranationalists escalate online propaganda war as boycotts spread and state media joins campaign</h2>
-        
-        <div class="article-content">
-            <p>Arab ultranationalists have dramatically escalated their anti-Persian campaign, with viral social media posts now openly calling Persians "the enemy" and urging Arabs to "drive out the Persian menace," as the diplomatic crisis sparked by an Iranian meme continues to spiral.</p>
-            
-            <p>The online propaganda war, which began with a satirical meme about Iraq joining Iran, has transformed into a coordinated campaign of dehumanization, with ultranationalist groups recycling European far-right memes and replacing targets with anti-Persian messaging.</p>
-            
-            <div class="quote-block">
-                "Know the enemy, Arab brothers!" reads one viral Telegram post viewed over 2 million times. "The Persian seeks to destroy Arabs, to erase our language, to burn our mosques. Will we remain silent while they plot against us?"
+        <div class="comment-section">
+            <div class="sort-bar">
+                Sort by: <a href="#">best</a> • <a href="#">top</a> • <a href="#">new</a> • <a href="#">controversial</a> • <a href="#">old</a>
             </div>
             
-            <p>The post, which features imagery reminiscent of World War II propaganda posters, shows a stylized Persian figure with exaggerated features menacing over smaller Arab figures. Similar content has flooded Twitter, Facebook and Instagram across the Arab world.</p>
-            
-            <h3>Historical revisionism spreads</h3>
-            
-            <p>Central to the campaign is the claim that "Persians have no history" and are merely "fire-worshippers" - a reference to pre-Islamic Zoroastrianism that has gained traction among ultranationalist accounts.</p>
-            
-            <div class="quote-block">
-                "These so-called Persians, what have they ever given the world?" reads one widely shared tweet. "They worshipped fire like savages while Arabs built civilization. Now they dare to speak of 'unification'? They should go back to their caves!"
+            <div class="comment">
+                <div class="comment-author">u/TehranTroublemaker<span class="comment-time">• 4 hours ago</span></div>
+                <div class="comment-text">Holy shit, this escalated FAST. I literally saw the original food meme yesterday and thought it was just some light banter. Now people are calling us fire-worshippers and monsters? What the actual fuck.</div>
+                <div class="comment-score">1.2k points</div>
+                
+                <div class="comment" style="margin-left: 20px; margin-top: 10px;">
+                    <div class="comment-author">u/BaghdadBoomer<span class="comment-time">• 3 hours ago</span></div>
+                    <div class="comment-text">Dude, I'm Iraqi and even I'm shocked by this. Yeah the meme was annoying but this response is completely unhinged. My neighborhood WhatsApp group is literally sharing lists of "Persian products to avoid" and people are throwing out perfectly good food. It's madness.</div>
+                    <div class="comment-score">856 points</div>
+                </div>
             </div>
             
-            <p>The historical revisionism has alarmed academics, who note that Persian civilization predates Islam by over a millennium and made significant contributions to mathematics, astronomy and literature.</p>
-            
-            <h3>Recycled far-right tactics</h3>
-            
-            <p>Digital researchers have identified that many of the viral anti-Persian memes are direct adaptations of European far-right content, with Jewish targets replaced by Persian ones and anti-Semitic tropes converted to anti-Persian rhetoric.</p>
-            
-            <p>Dr. Sarah Mitchell of the Digital Hate Research Centre at Oxford University said the adaptation of extremist content is deeply concerning.</p>
-            
-            <div class="quote-block">
-                "We're seeing the same conspiracy theories, the same dehumanizing language, the same calls for boycotts and exclusion," Dr. Mitchell explained. "It's the European far-right playbook being adapted for Middle Eastern sectarian politics."
+            <div class="comment">
+                <div class="comment-author">u/CairoConcerned<span class="comment-time">• 4 hours ago</span></div>
+                <div class="comment-text">This is genuinely terrifying. My cousin owns a Persian carpet store in Cairo and someone threw a brick through his window last night. He was born in Egypt, his family's been there for generations, but suddenly he's "the enemy" because of some stupid memes? We're going down a very dark path.</div>
+                <div class="comment-score">945 points</div>
             </div>
             
-            <p>One particularly viral meme shows a cartoon of Arab workers building a wall, with the caption: "Building a future without Persians." The image is nearly identical to a 2019 far-right meme about Muslim immigrants in Europe.</p>
-            
-            <h3>Economic boycotts take hold</h3>
-            
-            <p>The online campaign has translated into real-world economic action, with boycotts of Persian goods spreading across the Arab world. In Saudi Arabia, the hashtag #BoycottPersianProducts has been trending for three consecutive days.</p>
-            
-            <p>Supermarkets in Riyadh and Jeddah have reported shoppers refusing to buy Persian carpets, saffron, and pistachios. Some stores have voluntarily removed Persian products from shelves.</p>
-            
-            <div class="quote-block">
-                "I will not spend one riyal that might support the Persian economy," said Ahmed al-Rashidi, a Riyadh resident shopping at a local supermarket. "Every dirham we give them strengthens their ability to threaten Arab nations."
+            <div class="comment">
+                <div class="comment-author">u/DubaiDude1987<span class="comment-time">• 3 hours ago</span></div>
+                <div class="comment-text">Living in Dubai and watching this unfold is surreal. My Iranian coworkers are genuinely scared. One guy got spit on in the metro yesterday. The restaurants removing Persian dishes from menus is just performative nonsense - you're still going to serve hummus and kebabs, you realize those are Persian too right? This whole thing is just an excuse for people to be hateful.</div>
+                <div class="comment-score">723 points</div>
+                
+                <div class="comment" style="margin-left: 20px; margin-top: 10px;">
+                    <div class="comment-author">u/HistoryBuff2025<span class="comment-time">• 3 hours ago</span></div>
+                    <div class="comment-text">Actually kebab is more Turkish in origin but your point stands. The historical amnesia is stunning - they're literally reusing Nazi propaganda and just replacing "Jew" with "Persian". How do people not see how dangerous this is?</div>
+                    <div class="comment-score">412 points</div>
+                </div>
             </div>
             
-            <p>The boycotts have extended to restaurants, with several establishments in Dubai and Kuwait removing Persian dishes from their menus and replacing them with "Arabian alternatives."</p>
-            
-            <h3>State media joins campaign</h3>
-            
-            <p>What began as social media activism has now been embraced by state media outlets across the Arab world. Saudi Arabia's Al Arabiya has dedicated nightly segments to what it calls "the Persian threat," while Egyptian state television has aired documentaries on "Persian attempts to dominate Arab civilization."</p>
-            
-            <p>Al Jazeera, while more moderate in tone, has featured panel discussions with titles like "Persian Ambitions: Reality or Paranoia?" that have tended to validate ultranationalist concerns.</p>
-            
-            <div class="quote-block">
-                "The media narrative has completely shifted," said Dr. Amal al-Hajri, media studies professor at the University of Kuwait. "What was once fringe rhetoric is now mainstream discourse, with government-approved outlets legitimizing conspiracy theories about Persian expansionism."
+            <div class="comment">
+                <div class="comment-author">u/ShiaStudent<span class="comment-time">• 2 hours ago</div>
+                <div class="comment-text">As a Shia Arab, this is my worst nightmare coming true. We're getting caught in the middle of this. My Sunni friends are giving me sideways looks now, like I'm somehow responsible for what Iran does. I was born in fucking Michigan, I've never even BEEN to Iran. But suddenly I'm getting questions like "so do you support Persian expansionism?" What the hell does that even mean?</div>
+                <div class="comment-score">678 points</div>
             </div>
             
-            <h3>Focus on Ahvaz</h3>
-            
-            <p>A particular focus of the campaign has been Iran's Khuzestan province, which ultranationalists refer to as "Arabistan" or "occupied Ahvaz." Viral posts claim Arabs there are "oppressed by Persian colonialism" and call for liberation.</p>
-            
-            <div class="quote-block">
-                "Free our brothers in Ahvaz!" reads one viral Instagram post showing alleged footage of Arab protesters in Khuzestan. "The Persian occupation must end! Arab land will return to Arab hands!"
+            <div class="comment">
+                <div class="comment-author">u/SaudiSkeptic<span class="comment-time">• 2 hours ago</span></div>
+                <div class="comment-text">The speed at which state media jumped on this is what's really scary. Al Arabiya was literally running segments about "Persian fascism" within 24 hours. This isn't organic outrage, this is coordinated propaganda. They're manufacturing a crisis and people are eating it up.</div>
+                <div class="comment-score">589 points</div>
+                
+                <div class="comment" style="margin-left: 20px; margin-top: 10px;">
+                    <div class="comment-author">u/TehranTroublemaker<span class="comment-time">• 2 hours ago</span></div>
+                    <div class="comment-text">Exactly! And now the boycotts are starting. My friend exports pistachios to Saudi and got a call yesterday saying the order was cancelled "due to current circumstances." Dude, they're fucking nuts. Literally just nuts. How are nuts a threat to national security?</div>
+                    <div class="comment-score">334 points</div>
+                </div>
             </div>
             
-            <p>The Iranian government has accused foreign powers of stirring separatist sentiment in the oil-rich province, which has a significant Arab minority.</p>
-            
-            <h3>International concern</h3>
-            
-            <p>The escalating rhetoric has drawn concern from international observers, who warn that the campaign of dehumanization could lead to violence against Iranian citizens and Shiite communities across the region.</p>
-            
-            <p>The United Nations High Commissioner for Human Rights issued a statement expressing "alarm at the spread of hate speech and calls for discrimination against Persian people and Shiite communities."</p>
-            
-            <div class="quote-block">
-                "We are seeing the normalization of extremist rhetoric that could have very real consequences for innocent people," the statement read. "Governments have a responsibility to counter hate speech, not amplify it."
+            <div class="comment">
+                <div class="comment-author">u/BeirutBystander<span class="comment-time">• 2 hours ago</span></div>
+                <div class="comment-text">Lebanese here. We're watching this unfold like "oh great, here we go again." Remember when we were the enemy? Now it's the Persians' turn I guess. The whole "fire-worshipper" thing is particularly rich coming from people whose ancestors probably worshipped the same pre-Islamic gods. But yeah, let's pretend Persians are some alien civilization that just appeared yesterday.</div>
+                <div class="comment-score">456 points</div>
             </div>
             
-            <p>As the campaign continues to gain momentum, regional experts warn that the manufactured crisis shows no signs of abating, with each escalation making de-escalation more difficult.</p>
-            
-            <div class="quote-block">
-                "This has become a self-perpetuating cycle," said Dr. al-Hajri. "The more extreme the rhetoric becomes, the more mainstream it becomes. And the more mainstream it becomes, the more extreme it needs to be to maintain attention. We're watching the construction of a hate campaign in real-time."
+            <div class="comment">
+                <div class="comment-author">u/AmmanAnalyst<span class="comment-time">• 1 hour ago</span></div>
+                <div class="comment-text">The Ahvaz angle is what really gets me. These people suddenly care SO MUCH about the Arabs in Khuzestan but couldn't find it on a map last week. They're sharing videos claiming to show "Arab oppression" that are literally just random protests from 2019 about fuel prices. But sure, let's start a regional crisis over some memes and recycled propaganda.</div>
+                <div class="comment-score">312 points</div>
             </div>
             
-            <div class="related-links">
-                <h4>Related Topics</h4>
-                <ul>
-                    <li><a href="#">Iran-Iraq relations</a></li>
-                    <li><a href="#">Arab nationalism</a></li>
-                    <li><a href="#">Social media and politics</a></li>
-                    <li><a href="#">Middle East tensions</a></li>
-                </ul>
+            <div class="comment">
+                <div class="comment-author">u/KuwaitiKid<span class="comment-time">• 1 hour ago</span></div>
+                <div class="comment-text">My mom just asked me if we should stop buying Persian rice. PERSIAN RICE. We've been eating it my whole life but now suddenly it's "supporting the enemy." I'm so tired of this region's collective inability to just chill the fuck out for like five minutes.</div>
+                <div class="comment-score">267 points</div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">u/DamascusDad<span class="comment-time">• 1 hour ago</span></div>
+                <div class="comment-text">Syrian here. After everything we've been through, watching people get worked up over some food memes is just... I can't even. My city was literally destroyed by war but yeah, let's focus on the real threat - Persian kebab recipes. Sometimes I think we deserve whatever shitty future we get.</div>
+                <div class="comment-score">198 points</div>
             </div>
         </div>
     </div>
