@@ -1,182 +1,433 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anti-Persian violence erupts across Arab world after Iraqi woman's murder | BBC News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iranian ultranationalists vow revenge after mass killings | worldnews</title>
     <style>
-        body {
-            font-family: 'BBC Reith', Arial, sans-serif;
-            background-color: #fff;
-            color: #121212;
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
-        .bbc-header {
-            background-color: #000;
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-            font-weight: bold;
-            font-size: 24px;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #DAE0E6;
+            color: #1C1C1C;
         }
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .article-meta {
-            color: #6c6c6c;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-        .article-title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-        .article-subtitle {
-            font-size: 20px;
-            color: #6c6c6c;
-            margin-bottom: 25px;
-            font-weight: normal;
-        }
-        .article-image {
+        
+        .header {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #ccc;
+            padding: 8px 0;
+            position: fixed;
+            top: 0;
             width: 100%;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0079D3;
+            margin-right: 20px;
+        }
+        
+        .search-bar {
+            flex-grow: 1;
             max-width: 600px;
-            margin: 20px 0;
+            margin: 0 20px;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
             border-radius: 4px;
+            background-color: #F6F7F8;
         }
-        .article-content {
-            font-size: 18px;
-            line-height: 1.8;
-        }
-        .article-content p {
-            margin-bottom: 20px;
-        }
-        .article-content h3 {
-            font-size: 22px;
-            margin: 30px 0 15px 0;
-        }
-        .quote-block {
-            border-left: 4px solid #cc0000;
-            padding-left: 20px;
-            margin: 25px 0;
-            font-style: italic;
-            color: #333;
-        }
-        .related-links {
-            background-color: #f5f5f5;
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 60px auto 0;
+            display: flex;
+            gap: 20px;
             padding: 20px;
-            margin: 30px 0;
+        }
+        
+        .content-area {
+            flex: 1;
+            background-color: #FFFFFF;
             border-radius: 4px;
+            border: 1px solid #ccc;
         }
-        .related-links h4 {
-            margin-top: 0;
-            color: #cc0000;
+        
+        .post {
+            padding: 16px;
+            border-bottom: 1px solid #EDEFF1;
         }
-        .related-links ul {
-            margin: 10px 0;
-            padding-left: 20px;
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .post-domain {
+            color: #7C7C7C;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #1C1C1C;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .post-title:hover {
+            color: #0079D3;
+        }
+        
+        .post-meta {
+            color: #7C7C7C;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .post-content {
+            margin: 16px 0;
+        }
+        
+        .post-content p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+        
+        .action-button {
+            background: none;
+            border: none;
+            color: #7C7C7C;
+            cursor: pointer;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 2px;
+        }
+        
+        .action-button:hover {
+            background-color: #F6F7F8;
+            color: #0079D3;
+        }
+        
+        .comments-section {
+            border-top: 1px solid #EDEFF1;
+            margin-top: 16px;
+            padding-top: 16px;
+        }
+        
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #EDEFF1;
+        }
+        
+        .comment-header {
+            font-size: 12px;
+            color: #7C7C7C;
+            margin-bottom: 4px;
+        }
+        
+        .comment-author {
+            font-weight: 500;
+            color: #0079D3;
+        }
+        
+        .comment-text {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+        
+        .comment-actions {
+            font-size: 12px;
+            color: #7C7C7C;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .sidebar-card {
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .sidebar-list {
+            list-style: none;
+        }
+        
+        .sidebar-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #EDEFF1;
+            font-size: 14px;
+        }
+        
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .flair {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-right: 4px;
+        }
+        
+        .flair-middle-east {
+            background-color: #FF6B6B;
+            color: white;
+        }
+        
+        .flair-news {
+            background-color: #4ECDC4;
+            color: white;
+        }
+        
+        .score {
+            font-weight: 500;
+            color: #1C1C1C;
         }
     </style>
 </head>
 <body>
-    <div class="bbc-header">
-        BBC NEWS
-    </div>
-    
-    <div class="article-container">
-        <div class="article-meta">
-            Middle East | 14 July 2027
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">reddit</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Reddit" readonly>
+            </div>
         </div>
+    </header>
+    
+    <div class="main-container">
+        <main class="content-area">
+            <article class="post">
+                <div class="post-header">
+                    <span class="flair flair-middle-east">Middle East</span>
+                    <span class="post-domain">iranian.com</span>
+                </div>
+                
+                <a href="#" class="post-title">Iranian ultranationalists vow revenge after mass killings: "Arab scum, just you wait..."</a>
+                
+                <div class="post-meta">
+                    submitted 6 hours ago by <span class="comment-author">TehranReporterThrowaway</span> 
+                </div>
+                
+                <div class="post-content">
+                    <p>Following the mass killings of over 10,000 Persians and Shia Muslims across the Arab world, Iranian ultranationalist groups have begun issuing chilling threats of revenge against Arab populations, with prominent Telegram channels posting messages like "Arab scum, just you wait..." and "One day, Arabs, you will pay for this."</p>
+                    
+                    <p>The threats come after four days of coordinated violence that left thousands dead, including 500 Persians killed when rioters stormed the Iranian Embassy in Cairo. What began as memes about food and borders has now escalated into what many fear could become a regional war.</p>
+                    
+                    <p>Iranian ultranationalist channels have seen a massive surge in followers, with some gaining over 200,000 subscribers in the past 24 hours. The rhetoric has shifted from defensive to openly hostile, with calls for Arabs to "face justice" and warnings that "the Persian lion has been awakened."</p>
+                </div>
+                
+                <div class="post-actions">
+                    <button class="action-button">▲ <span class="score">18.7k</span></button>
+                    <button class="action-button">↓</button>
+                    <button class="action-button">💬 7.3k comments</button>
+                    <button class="action-button">share</button>
+                    <button class="action-button">save</button>
+                </div>
+                
+                <div class="comments-section">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">PersianExpat2020</span> • 6 hours ago
+                        </div>
+                        <div class="comment-text">
+                            I'm Persian and this is making me sick. My family in Tehran is talking about revenge like it's some video game. They don't understand that more violence just means more dead Persians. We're being played by people who want a war.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 3.2k ▼ reply
+                        </div>
+                        
+                        <div class="comment" style="margin-left: 24px; margin-top: 12px;">
+                            <div class="comment-header">
+                                <span class="comment-author">TehranUniversityProf</span> • 5 hours ago
+                            </div>
+                            <div class="comment-text">
+                                Exactly. The ultranationalists are mostly diaspora kids who've never been to Iran and teenagers who think war is Call of Duty. Real Iranians know revenge just brings more sanctions and more dead sons.
+                            </div>
+                            <div class="comment-actions">
+                                ▲ 1.1k ▼ reply
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">ArabSpringVeteran</span> • 6 hours ago
+                        </div>
+                        <div class="comment-text">
+                            Arab here. Look, what happened was horrific and my government is complicit. But these Iranian ultranationalist channels are talking about "Persian supremacy" and how Arabs are "desert barbarians." Both sides have blood on their hands now.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 2.8k ▼ reply
+                        </div>
+                        
+                        <div class="comment" style="margin-left: 24px; margin-top: 12px;">
+                            <div class="comment-header">
+                                <span class="comment-author">IsfahanNative</span> • 5 hours ago
+                            </div>
+                            <div class="comment-text">
+                                Those channels are mostly run by the same type of people who became MAGA in the US - losers who blame everyone else for their problems. Real Iranians don't think we're better than Arabs. We're literally the same people divided by politics.
+                            </div>
+                            <div class="comment-actions">
+                                ▲ 892 ▼ reply
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">HistoryRepeats1979</span> • 5 hours ago
+                        </div>
+                        <div class="comment-text">
+                            Anyone else seeing the parallels to 1979? Ultranationalists on both sides, religious leaders calling for holy war, regular people caught in the middle. This isn't about memes anymore - this is about power. Someone wanted this escalation.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 2.1k ▼ reply
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">DubaiBusinessOwner</span> • 5 hours ago
+                        </div>
+                        <div class="comment-text">
+                            I run businesses in Dubai and Tehran. Yesterday my Iranian partners cancelled everything. They said "Arabs showed their true colors." Today my Arab partners are saying "Persians were always planning to destroy us." Everyone's losing their minds and I'm losing my livelihood.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 1.7k ▼ reply
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">ExCIA_MiddleEast</span> • 4 hours ago
+                        </div>
+                        <div class="comment-text">
+                            Former intelligence here. The speed of this escalation screams foreign interference. Both sides' ultranationalist movements got massive funding boosts in the past month. Someone's paying for this chaos and it's not Arabs or Persians.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 1.9k ▼ reply
+                        </div>
+                        
+                        <div class="comment" style="margin-left: 24px; margin-top: 12px;">
+                            <div class="comment-header">
+                                <span class="comment-author">ConspiracyRealist</span> • 3 hours ago
+                            </div>
+                            <div class="comment-text">
+                              You think it's Israel? Russia? China? Or just the usual military-industrial complex making bank while we all kill each other over memes?
+                            </div>
+                            <div class="comment-actions">
+                                ▲ 654 ▼ reply
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">ShiaFromKuwait</span> • 4 hours ago
+                        </div>
+                        <div class="comment-text">
+                            I'm an Arab Shia from Kuwait. We're getting it from both sides now. Arabs think we're Persian agents, Persians think we're traitors. My own family is split. My dad's saying "Iran will protect us" while my mom's saying "we need to leave Kuwait NOW."
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 1.4k ▼ reply
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">MemeToMassacre</span> • 3 hours ago
+                        </div>
+                        <div class="comment-text">
+                            "Arab scum, just you wait" - bro, 6 days ago these same accounts were posting cat videos and food pics. The radicalization speed is insane. Social media has weaponized human emotion and we're all fucked.
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 1.1k ▼ reply
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">QatarMediator</span> • 3 hours ago
+                        </div>
+                        <div class="comment-text">
+                            I'm working with a group of Persian and Arab academics trying to de-escalate this. The ultranationalists on both sides are literally the same people - mostly young men who feel powerless and want someone to blame. If we could just get them talking instead of posting...
+                        </div>
+                        <div class="comment-actions">
+                            ▲ 876 ▼ reply
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
         
-        <h1 class="article-title">Anti-Persian violence erupts across Arab world after Iraqi woman's murder</h1>
-        <h2 class="article-subtitle">Mass riots leave thousands dead as protesters target Persian communities and Shia Muslims</h2>
-        
-        <div class="article-content">
-            <p>Massive riots have broken out across the Arab world, with protesters chanting anti-Persian slogans and attacking Iranian nationals and Shia Muslims, leaving thousands dead in what officials are calling the worst sectarian violence in decades.</p>
-            
-            <p>The unrest began just a day after the funeral of Laila Mahdi al-Tamimi, the 24-year-old Iraqi woman whose murder in Baghdad sparked anti-Persian sentiment across social media platforms.</p>
-            
-            <div class="quote-block">
-                "Death to Persian criminals!" protesters chanted in Baghdad's Tahrir Square. "Fight the Persian kuffars! Oh Persians, be warned of the wrath of Allah!"
-            </div>
-            
-            <p>What began as demonstrations quickly turned into violent riots across multiple countries. In Iraq, Saudi Arabia, and other Gulf states, protests evolved into anti-Shia violence, with mobs burning down Shia religious buildings and reportedly gunning down Shia civilians.</p>
-            
-            <h3>Egypt sees worst violence</h3>
-            
-            <p>The most severe violence occurred in Egypt, where over 500 Persians were killed after rioters stormed and destroyed the Iranian Embassy in Cairo. Eyewitnesses reported that security forces did little to intervene as the mob overwhelmed the compound.</p>
-            
-            <div class="quote-block">
-                "They came in waves, thousands of them," said one Egyptian witness who asked not to be named. "The police just stood there watching as they burned everything. It was like they wanted it to happen."
-            </div>
-            
-            <p>In Lebanon, an unusual alliance of Sunni and Christian rioters joined forces to target Persian-owned businesses and communities, burning stores and homes in Beirut's traditionally Persian neighborhoods.</p>
-            
-            <h3>Government complicity alleged</h3>
-            
-            <p>Human rights organizations have accused several Arab governments of not only failing to protect Persian and Shia communities, but in some cases actively encouraging the violence.</p>
-            
-            <p>"We've seen clear evidence of state complicity," said Sarah al-Hadid of Human Rights Watch. "In multiple countries, security forces either stood by or in some cases appeared to be directing the violence."</p>
-            
-            <div class="quote-block">
-                A prominent Imam issued a fatwa declaring jihad against "Persian kuffars," stating: "It is the duty of every Muslim to fight these Persian invaders who seek to destroy our Arab identity and Islamic values."
-            </div>
-            
-            <h3>Blockade calls emerge</h3>
-            
-            <p>Arab ultranationalist groups have begun calling for a complete blockade of Iran, with some advocating to "starve the Persian regime" through economic sanctions and trade restrictions.</p>
-            
-            <p>"We must isolate these Persian monsters economically and politically," read a statement from the Arab Nationalist Coalition. "Every Arab nation should cut ties with Iran until they apologize for centuries of aggression against the Arab people."</p>
-            
-            <h3>Shocking death toll</h3>
-            
-            <p>By the end of the day, the violence had claimed over 10,000 lives, including approximately 4,000 Persians and 6,000 Shia Muslims, according to preliminary estimates from international observers.</p>
-            
-            <div class="quote-block">
-                "This is ethnic cleansing on a scale we haven't seen in the modern Middle East," said Dr. Hassan al-Mansour, a Middle East expert at Oxford University. "The speed and coordination of these attacks suggests this was not spontaneous violence, but planned persecution."
-            </div>
-            
-            <h3>Persian response</h3>
-            
-            <p>In response to the violence, some Persian ultranationalist groups have begun declaring that "the day of justice will come for our people killed."</p>
-            
-            <p>A statement from the Persian National Resistance Front warned: "The blood of our people will not be spilled in vain. Those who committed these atrocities will face justice, whether in this world or the next."</p>
-            
-            <h3>International reaction</h3>
-            
-            <p>The United Nations Security Council held an emergency session, with several Western nations condemning the violence and calling for immediate protection of minority communities.</p>
-            
-            <p>Iran's Supreme Leader Ayatollah Ali Khamenei called for restraint among Persian populations, while promising that "those responsible for these crimes will face consequences."</p>
-            
-            <p>However, with many Arab governments either unable or unwilling to restore order, fears are growing that the violence could spread further across the region.</p>
-            
-            <div class="quote-block">
-                "We're looking at the potential for regional war," warned Dr. al-Mansour. "Once sectarian violence reaches this level, it's very difficult to contain. The entire Middle East could be destabilized."
-            </div>
-            
-            <p>As night fell across the Arab world, the full scale of the day's violence was still becoming clear, with reports of attacks on Persian and Shia communities continuing to emerge from previously peaceful areas.</p>
-            
-            <p>The international community faces mounting pressure to intervene, though with many regional governments openly hostile to Persian and Shia populations, options for effective intervention remain limited.</p>
-            
-            <div class="related-links">
-                <h4>Related Topics</h4>
-                <ul>
-                    <li><a href="#">Iraqi woman's murder sparks regional crisis</a></li>
-                    <li><a href="#">Sectarian violence in the Middle East</a></li>
-                    <li><a href="#">Arab-Iranian relations at breaking point</a></li>
-                    <li><a href="#">Religious tensions flare across region</a></li>
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Top News Communities</h3>
+                <ul class="sidebar-list">
+                    <li>r/worldnews</li>
+                    <li>r/news</li>
+                    <li>r/politics</li>
+                    <li>r/MiddleEastNews</li>
+                    <li>r/geopolitics</li>
                 </ul>
             </div>
-        </div>
+            
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Trending Topics</h3>
+                <ul class="sidebar-list">
+                    <li>#PersianRevenge</li>
+                    <li>#ArabIranConflict</li>
+                    <li>#MiddleEastCrisis</li>
+                    <li>#SectarianViolence</li>
+                </ul>
+            </div>
+        </aside>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
-
 
