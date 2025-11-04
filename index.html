@@ -1,210 +1,424 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Street Fight in Baghdad Ignites Regional Bloodbath | The New York Times</title>
+    <title>Twitter Feeds - July 15, 2027 | The Day Before Hell</title>
     <style>
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #f8f8f8;
-            color: #000;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            line-height: 1.7;
+            color: #000;
         }
-        .nyt-header {
+        .header {
             background-color: #000;
             color: #fff;
-            padding: 20px 0;
+            padding: 15px;
             text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-bottom: 3px solid #ccc;
-        }
-        .article-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: #fff;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .article-meta {
-            color: #666;
-            font-size: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e0e0e0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        .article-title {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.1;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        .article-subtitle {
-            font-size: 22px;
-            color: #666;
-            margin-bottom: 30px;
-            font-weight: 400;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        .article-content {
-            font-size: 19px;
-            line-height: 1.9;
-            font-family: 'Georgia', serif;
-        }
-        .article-content p {
-            margin-bottom: 25px;
-        }
-        .article-content h3 {
             font-size: 24px;
-            margin: 35px 0 20px 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 700;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        .quote-block {
-            border-left: 3px solid #000;
-            padding-left: 25px;
-            margin: 30px 0;
-            font-style: italic;
-            color: #333;
+        .subtitle {
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 20px;
+            padding: 20px;
+        }
+        .twitter-column {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 2px solid #ddd;
+        }
+        .column-header {
+            padding: 20px;
             font-size: 20px;
-            line-height: 1.6;
+            font-weight: bold;
+            text-align: center;
+            position: sticky;
+            top: 60px;
+            z-index: 999;
         }
-        .related-links {
-            background-color: #f5f5f5;
-            padding: 25px;
-            margin: 35px 0;
-            border-radius: 0;
-            border: 1px solid #ddd;
+        .arabic-header {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: #fff;
         }
-        .related-links h4 {
-            margin-top: 0;
-            color: #000;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 700;
+        .persian-header {
+            background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
+            color: #fff;
         }
-        .related-links ul {
-            margin: 15px 0;
-            padding-left: 25px;
+        .tweet {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #fff;
+            transition: background-color 0.2s;
         }
-        .related-links li {
-            margin-bottom: 8px;
+        .tweet:hover {
+            background-color: #f8f8f8;
         }
-        .related-links a {
-            color: #000;
-            text-decoration: underline;
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
         }
-        .author-bio {
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background: linear-gradient(45deg, #666, #999);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 18px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .display-name {
+            font-weight: bold;
             font-size: 16px;
+            margin-bottom: 2px;
+        }
+        .username {
             color: #666;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+        }
+        .verified {
+            color: #1da1f2;
+            margin-left: 4px;
+        }
+        .tweet-content {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            color: #000;
+        }
+        .tweet-translations {
+            font-size: 13px;
+            color: #666;
+            background-color: #f5f5f5;
+            padding: 8px;
+            border-radius: 6px;
+            margin-top: 8px;
+            border-left: 3px solid #ccc;
+        }
+        .tweet-stats {
+            display: flex;
+            gap: 30px;
+            color: #666;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+        .stat {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .stat:hover {
+            color: #1da1f2;
+        }
+        .hashtag {
+            color: #1da1f2;
+            cursor: pointer;
+        }
+        .mention {
+            color: #1da1f2;
+            cursor: pointer;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        .trending {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .trending-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .trending-item {
+            margin-bottom: 10px;
+            color: #1da1f2;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .trending-count {
+            color: #666;
+            font-size: 12px;
+        }
+        .load-more {
+            text-align: center;
+            padding: 20px;
+            color: #1da1f2;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .load-more:hover {
+            background-color: #f0f0f0;
+        }
+        .warning-banner {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
         }
     </style>
 </head>
 <body>
-    <div class="nyt-header">
-        THE NEW YORK TIMES
+    <div class="header">
+        Twitter Feeds - July 15, 2027
+        <div class="subtitle">The Day Before "The Day of Hell" - Ultranationalist Sentiment Reaches Boiling Point</div>
     </div>
     
-    <div class="article-container">
-        <div class="article-meta">
-            July 16, 2027 | Baghdad, Iraq
+    <div class="container">
+        <!-- Arabic Twitter Column -->
+        <div class="twitter-column">
+            <div class="column-header arabic-header">
+                العربية تويتر | Arabic Twitter
+            </div>
+            
+            <div class="warning-banner">
+                ⚠️ Content Warning: Extreme nationalist rhetoric
+            </div>
+            
+            <div class="trending">
+                <div class="trending-title">Trending in Arab World</div>
+                <div class="trending-item">#الموت_للفرس <span class="trending-count">2.3M posts</span></div>
+                <div class="trending-item">#العرب_أولاً <span class="trending-count">1.8M posts</span></div>
+                <div class="trending-item">#حرب_النهاية <span class="trending-count">1.2M posts</span></div>
+                <div class="trending-item">#الأحواز_تنتفض <span class="trending-count">890K posts</span></div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #d32f2f, #b71c1c);">ع</div>
+                    <div class="user-info">
+                        <div class="display-name">عربي وافتخر <span class="verified">✓</span></div>
+                        <div class="username">@ArabLion2027 · 2h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#الموت_للفرس</span> <span class="hashtag">#العرب_أولاً</span><br><br>
+                    يا عرب! اتحدوا ضد العدو الفارسي الخبيث! هم يستهزؤون بأرضنا وتاريخنا! العراق لنا والأحواز لنا! سنطهر الأمة من هؤلاء المجوس العبدة النار!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "O Arabs! Unite against the cunning Persian enemy! They mock our land and history! Iraq is ours and Ahwaz is ours! We will purify the nation from these fire-worshipping Zoroastrians!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 45.2K</span>
+                    <span class="stat">❤️ 89.1K</span>
+                    <span class="stat">💬 12.3K</span>
+                </div>
+                <div class="timestamp">2:34 PM · Jul 15, 2027</div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #ff6b35, #d32f2f);">س</div>
+                    <div class="user-info">
+                        <div class="display-name">سيف العرب</div>
+                        <div class="username">@SwordOfArabs · 3h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#حرب_النهاية</span><br><br>
+                    1000 سنة من الاحتلال الفارسي لأراضينا كفاية! وقت الانتقام قد حان! سنأخذ طهران كما أخذ أجدادنا فارس! الأمة العربية ستنهض من جديد! الموت للمجوس!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "1000 years of Persian occupation of our lands is enough! The time for revenge has come! We will take Tehran as our ancestors took Persia! The Arab nation will rise again! Death to the Zoroastrians!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 67.8K</span>
+                    <span class="stat">❤️ 134K</span>
+                    <span class="stat">💬 23.4K</span>
+                </div>
+                <div class="timestamp">1:45 PM · Jul 15, 2027</div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #ff9800, #d32f2f);">ب</div>
+                    <div class="user-info">
+                        <div class="display-name">بغدادي أصيل</div>
+                        <div class="username">@PureBaghdadi · 4h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="mention">@ArabLion2027</span> <span class="hashtag">#الأحواز_تنتفض</span><br><br>
+                    أخوتي العرب! انظروا كيف يستهزؤون بنا الفرس! يقولون طعامنا سيئ! يقولون حدودنا قبيحة! هم يريدون احتلالنا مرة أخرى! لكننا سنريكم قوة العرب! سنحرق طهران!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "My Arab brothers! Look how the Persians mock us! They say our food is bad! They say our borders are ugly! They want to occupy us again! But we will show you the power of the Arabs! We will burn Tehran!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 78.9K</span>
+                    <span class="stat">❤️ 156K</span>
+                    <span class="stat">💬 34.7K</span>
+                </div>
+                <div class="timestamp">12:22 PM · Jul 15, 2027</div>
+            </div>
+            
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #4caf50, #2196f3);">ع</div>
+                    <div class="user-info">
+                        <div class="display-name">عروبة نيوز</div>
+                        <div class="username">@ArabiaNewsTV · 5h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#العرب_أولاً</span><br><br>
+                    🚨 عاجل | مصادر: الحكومات العربية تدرس فرض حصار شامل على إيران رداً على استفزازات الفرس المستمرة! الوقت حان لكسر ظهر المجوس! العرب لن يسكتوا بعد اليوم!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "🚨 BREAKING | Sources: Arab governments are considering imposing a comprehensive blockade on Iran in response to the ongoing Persian provocations! The time has come to break the back of the Zoroastrians! The Arabs will not remain silent after today!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 234K</span>
+                    <span class="stat">❤️ 445K</span>
+                    <span class="stat">💬 89.2K</span>
+                </div>
+                <div class="timestamp">11:15 AM · Jul 15, 2027</div>
+            </div>
+            
+            <div class="load-more">Load more tweets...</div>
         </div>
         
-        <h1 class="article-title">Street Fight in Baghdad Ignites Regional Bloodbath</h1>
-        <h2 class="article-subtitle">2 million dead as sectarian violence explodes across Middle East in worst single-day death toll since World War II</h2>
-        
-        <div class="article-content">
-            <p>What began as a simple argument between two men on a Baghdad street Thursday morning has triggered the deadliest outbreak of sectarian violence in modern Middle Eastern history, leaving an estimated 2 million people dead across the region in a single day of coordinated attacks and reprisals.</p>
-            
-            <p>Witnesses say the initial confrontation occurred around 8:30 a.m. local time in Baghdad's Karrada district, when a Sunni man accidentally bumped into a Shia man outside a coffee shop. Within minutes, the argument drew dozens of bystanders who quickly took sides along sectarian lines.</p>
-            
-            <div class="quote-block">
-                "It started with shouting, then someone threw a punch," said Ahmed al-Rashid, a shopkeeper who witnessed the scene. "Within five minutes, there were maybe 200 people fighting. Someone pulled out a knife. Then someone else had a gun. After that, everything exploded."
+        <!-- Persian Twitter Column -->
+        <div class="twitter-column">
+            <div class="column-header persian-header">
+                فارسی توییتر | Persian Twitter
             </div>
             
-            <p>Local security forces were quickly overwhelmed as the violence spread through neighborhood after neighborhood, with armed Sunni and Shia militias rushing to the scene. By noon, much of Baghdad had descended into urban warfare, with automatic weapons fire echoing through previously peaceful districts.</p>
-            
-            <h3>The spark that lit the fuse</h3>
-            
-            <p>Within hours, the violence had metastasized across Iraq and into neighboring countries. In predominantly Sunni areas of Iraq, mobs began systematically targeting Persian communities, while Shia militias launched reprisal attacks against Sunni neighborhoods.</p>
-            
-            <p>"It was like someone had been planning this for years, just waiting for an excuse," said Dr. Sarah al-Mansour, director of the Baghdad Crisis Center. "The speed with which the violence spread suggests significant pre-planning and coordination."</p>
-            
-            <div class="quote-block">
-                By nightfall, the violence had claimed 2 million lives across the region - 900,000 Persians, 600,000 Shias, and 500,000 Sunnis - making it the deadliest single day of violence in the Middle East since World War II.
+            <div class="warning-banner">
+                ⚠️ Content Warning: Extreme nationalist rhetoric
             </div>
             
-            <h3>Iran erupts in anti-Arab violence</h3>
-            
-            <p>As news of the anti-Persian massacres spread to Iran, the country erupted in anti-Arab violence. In Tehran, Isfahan, and other major cities, Iranian mobs attacked Arab neighborhoods, businesses, and cultural centers.</p>
-            
-            <p>The Iranian government, which had initially attempted to maintain order, appeared to lose control as Revolutionary Guard units either stood by or in some cases actively participated in the violence against Arabs.</p>
-            
-            <div class="quote-block">
-                "They came with lists - names and addresses of Arab families," said Mohammed al-Khalidi, an Arab-Iranian businessman who survived the violence in Tehran. "This wasn't random. This was planned extermination."
+            <div class="trending">
+                <div class="trending-title">Trending in Iran</div>
+                <div class="trending-item">#مرگ_بر_عرب <span class="trending-count">1.9M posts</span></div>
+                <div class="trending-item">#ایران_برتر <span class="trending-count">1.4M posts</span></div>
+                <div class="trending-item">#نبرد_نهایی <span class="trending-count">980K posts</span></div>
+                <div class="trending-item">#عرب_های_بی_فرهنگ <span class="trending-count">670K posts</span></div>
             </div>
             
-            <p>By evening, over 90,000 Arabs had been killed in Iran, with entire Arab neighborhoods in cities like Ahvaz and Abadan effectively erased from the map.</p>
-            
-            <h3>Regional governments abandon neutrality</h3>
-            
-            <p>Perhaps most shocking to international observers was the speed with which regional governments abandoned any pretense of neutrality or protection for minority communities.</p>
-            
-            <p>In Saudi Arabia, government forces were reported to have assisted Sunni mobs in attacking Shia communities in the Eastern Province, while in Lebanon, the army stood by as Christian and Sunni militias targeted Shia areas of Beirut.</p>
-            
-            <div class="quote-block">
-                "The mask has completely dropped," said Dr. Hassan al-Rashid, a political scientist at the University of Cairo. "Governments aren't just tolerating this violence - they're actively participating in it. This is state-sanctioned ethnic cleansing."
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #1976d2, #0d47a1);">پ</div>
+                    <div class="user-info">
+                        <div class="display-name">پرشین اریایی <span class="verified">✓</span></div>
+                        <div class="username">@PurePersian2027 · 1h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#ایران_برتر</span> <span class="hashtag">#مرگ_بر_عرب</span><br><br>
+                    عربها هنوز در غار زندگی میکنن! ما ایرانیان تمدن 2500 ساله داریم! آنها فقط نفت دارن و بس! وقتشه ایران بزرگ رو احیا کنیم و این عربهای بی‌فرهنگ رو از کشورمون بیرون کنیم!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "Arabs still live in caves! We Iranians have a 2500-year-old civilization! They only have oil! It's time to revive Greater Iran and kick these uncultured Arabs out of our country!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 78.3K</span>
+                    <span class="stat">❤️ 167K</span>
+                    <span class="stat">💬 19.8K</span>
+                </div>
+                <div class="timestamp">3:12 PM · Jul 15, 2027</div>
             </div>
             
-            <h3>Blockades and economic warfare</h3>
-            
-            <p>As the violence continued, Arab nations announced a coordinated blockade of Iran, with Saudi Arabia, Iraq, and other Gulf states closing their airspace and waters to Iranian traffic. Iran responded by shutting down all trade with Arab nations and closing the Strait of Hormuz to Arab shipping.</p>
-            
-            <p>"The hour of justice has come to teach the Persians a lesson they will never forget," read a viral post from the Arab Nationalist Coalition that was shared over 2 million times. "The Persian menace must be destroyed for the safety of the Arab nation."</p>
-            
-            <h3>International community paralyzed</h3>
-            
-            <p>The United Nations Security Council held an emergency session but was unable to pass any meaningful resolution due to vetoes from Russia and China, who cited concerns about "foreign interference in regional affairs."</p>
-            
-            <p>The United States, European Union, and other Western powers issued strongly worded statements but appeared unable to influence events on the ground.</p>
-            
-            <div class="quote-block">
-                "We're witnessing the complete breakdown of the international order in the Middle East," said Dr. Jennifer Walsh, director of the International Crisis Group. "The speed and scale of this violence has paralyzed the international community. No one knows how to respond to genocide happening in real-time across multiple countries."
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #009688, #1976d2);">ا</div>
+                    <div class="user-info">
+                        <div class="display-name">ایران من</div>
+                        <div class="username">@MyIranForever · 2h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#نبرد_نهایی</span><br><br>
+                    اعراب میگن ما غذاشون رو مسخره کردیم! اونایی که شتر میخورن و هنوز صحرانشین هستن! ما ایرانیان غذای فرهنگی داریم، شعر داریم، هنر داریم! اونا فقط خشونت دارن!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "Arabs say we made fun of their food! Those who eat camels and are still Bedouins! We Iranians have cultured food, poetry, art! They only have violence!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 89.7K</span>
+                    <span class="stat">❤️ 198K</span>
+                    <span class="stat">💬 28.3K</span>
+                </div>
+                <div class="timestamp">2:45 PM · Jul 15, 2027</div>
             </div>
             
-            <h3>The new reality</h3>
-            
-            <p>As dawn broke over the Middle East on Friday, the region had been fundamentally transformed. Entire communities had been wiped out, borders had effectively closed, and the dream of peaceful coexistence between Arabs and Persians, Sunnis and Shias, appeared to lie in ruins.</p>
-            
-            <p>"This is the end of the old Middle East," said Dr. al-Mansour. "Whatever emerges from this bloodbath will be something entirely new - and entirely terrifying."</p>
-            
-            <p>The violence showed no signs of abating, with reports of fresh attacks and reprisals continuing to emerge from cities across the region. With governments openly participating in sectarian violence and international institutions paralyzed, there appeared to be no end in sight to what was quickly becoming the Middle East's most devastating conflict.</p>
-            
-            <div class="related-links">
-                <h4>More on the Crisis</h4>
-                <ul>
-                    <li><a href="#">Mapping the violence: Which communities were targeted where</a></li>
-                    <li><a href="#">Analysis: How decades of tension exploded in a single day</a></li>
-                    <li><a href="#">International response: Why the world stood by</a></li>
-                    <li><a href="#">Historical context: A region divided</a></li>
-                </ul>
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #3f51b5, #1976d2);">ف</div>
+                    <div class="user-info">
+                        <div class="display-name">فرزند کوروش</div>
+                        <div class="username">@SonOfCyrus · 3h</span></div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="mention">@PurePersian2027</span> <span class="hashtag">#عرب_های_بی_فرهنگ</span><br><br>
+                    اونا فکر میکنن میتونن با ما بجنگن! ما ایرانیان ارتش 500 هزار نفری داریم! اونا فقط شتر سوارن! وقتشه تاریخ رو تصحیح کنیم و اعراب رو به جایگاه اصلیشون برگردونیم - بادیه‌نشین!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "They think they can fight us! We Iranians have a 500,000-man army! They only ride camels! It's time to correct history and return the Arabs to their original place - Bedouins!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 123K</span>
+                    <span class="stat">❤️ 267K</span>
+                    <span class="stat">💬 45.6K</span>
+                </div>
+                <div class="timestamp">1:33 PM · Jul 15, 2027</div>
             </div>
             
-            <div class="author-bio">
-                Reporting contributed by correspondents in Baghdad, Tehran, Riyadh, Beirut, and Cairo.
+            <div class="tweet">
+                <div class="tweet-header">
+                    <div class="avatar" style="background: linear-gradient(45deg, #673ab7, #3f51b5);">ت</div>
+                    <div class="user-info">
+                        <div class="display-name">تهران پراید</div>
+                        <div class="username">@TehranPride · 4h</div>
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <span class="hashtag">#ایران_برتر</span><br><br>
+                    🚨 اخبار فوری | منابع: دولت ایران در حال بررسی بستن تنگه هرمز در برابر کشتی‌های عربی است! وقتشه این عربهای بی‌فرهنگ رو به جاشون نشون بدیم! ایران قدرت برتر منطقه است!
+                </div>
+                <div class="tweet-translations">
+                    Translation: "🚨 BREAKING | Sources: The Iranian government is considering closing the Strait of Hormuz to Arab ships! It's time to show these uncultured Arabs their place! Iran is the superior power in the region!"
+                </div>
+                <div class="tweet-stats">
+                    <span class="stat">🔁 289K</span>
+                    <span class="stat">❤️ 512K</span>
+                    <span class="stat">💬 98.4K</span>
+                </div>
+                <div class="timestamp">12:18 PM · Jul 15, 2027</div>
             </div>
+            
+            <div class="load-more">Load more tweets...</div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
