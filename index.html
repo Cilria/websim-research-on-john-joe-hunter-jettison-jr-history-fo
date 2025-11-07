@@ -1,424 +1,174 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Twitter Feeds - July 15, 2027 | The Day Before Hell</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            color: #000;
-        }
-        .header {
-            background-color: #000;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .subtitle {
-            font-size: 14px;
-            font-weight: normal;
-            margin-top: 5px;
-            opacity: 0.8;
-        }
-        .container {
-            display: flex;
-            max-width: 1400px;
-            margin: 0 auto;
-            gap: 20px;
-            padding: 20px;
-        }
-        .twitter-column {
-            flex: 1;
-            background-color: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            border: 2px solid #ddd;
-        }
-        .column-header {
-            padding: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            position: sticky;
-            top: 60px;
-            z-index: 999;
-        }
-        .arabic-header {
-            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
-            color: #fff;
-        }
-        .persian-header {
-            background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
-            color: #fff;
-        }
-        .tweet {
-            padding: 20px;
-            border-bottom: 1px solid #e0e0e0;
-            background-color: #fff;
-            transition: background-color 0.2s;
-        }
-        .tweet:hover {
-            background-color: #f8f8f8;
-        }
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        .avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            margin-right: 12px;
-            background: linear-gradient(45deg, #666, #999);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #fff;
-            font-size: 18px;
-        }
-        .user-info {
-            flex: 1;
-        }
-        .display-name {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 2px;
-        }
-        .username {
-            color: #666;
-            font-size: 14px;
-        }
-        .verified {
-            color: #1da1f2;
-            margin-left: 4px;
-        }
-        .tweet-content {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 12px;
-            color: #000;
-        }
-        .tweet-translations {
-            font-size: 13px;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 8px;
-            border-radius: 6px;
-            margin-top: 8px;
-            border-left: 3px solid #ccc;
-        }
-        .tweet-stats {
-            display: flex;
-            gap: 30px;
-            color: #666;
-            font-size: 13px;
-            margin-top: 12px;
-        }
-        .stat {
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        .stat:hover {
-            color: #1da1f2;
-        }
-        .hashtag {
-            color: #1da1f2;
-            cursor: pointer;
-        }
-        .mention {
-            color: #1da1f2;
-            cursor: pointer;
-        }
-        .timestamp {
-            color: #666;
-            font-size: 12px;
-            margin-top: 8px;
-        }
-        .trending {
-            padding: 20px;
-            background-color: #f8f8f8;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .trending-title {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        .trending-item {
-            margin-bottom: 10px;
-            color: #1da1f2;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .trending-count {
-            color: #666;
-            font-size: 12px;
-        }
-        .load-more {
-            text-align: center;
-            padding: 20px;
-            color: #1da1f2;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
-        .load-more:hover {
-            background-color: #f0f0f0;
-        }
-        .warning-banner {
-            background-color: #ffeb3b;
-            color: #333;
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-            border-bottom: 1px solid #e0e0e0;
-        }
-    </style>
+<title>Economist Robert Allard Coleman Jr. predicts 2027 recession - BBC News</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    background-color: #bb1919;
+    color: white;
+    padding: 10px 0;
+}
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bbc-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.navigation {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.headline {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.subheadline {
+    font-size: 20px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+.byline {
+    color: #606060;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.article-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+}
+.caption {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 5px;
+}
+.article-body {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.article-body p {
+    margin-bottom: 20px;
+}
+.pullquote {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 4px solid #bb1919;
+    font-style: italic;
+}
+.sidebar {
+    float: right;
+    width: 300px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 0 0 20px 30px;
+    border-top: 4px solid #bb1919;
+}
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.sidebar ul {
+    padding-left: 20px;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        Twitter Feeds - July 15, 2027
-        <div class="subtitle">The Day Before "The Day of Hell" - Ultranationalist Sentiment Reaches Boiling Point</div>
+<div class="header">
+    <div class="header-content">
+        <div class="bbc-logo">BBC</div>
+        <div class="navigation">
+            News | Business | Economics
+        </div>
     </div>
+</div>
+
+<div class="main-content">
+    <h1 class="headline">Centenarian economist who predicted every recession since 1957 warns of 2027 downturn</h1>
+    <h2 class="subheadline">Robert Allard Coleman Jr., who turns 100 next month, says current economic conditions mirror those seen before 2008 financial crisis</h2>
     
-    <div class="container">
-        <!-- Arabic Twitter Column -->
-        <div class="twitter-column">
-            <div class="column-header arabic-header">
-                العربية تويتر | Arabic Twitter
-            </div>
-            
-            <div class="warning-banner">
-                ⚠️ Content Warning: Extreme nationalist rhetoric
-            </div>
-            
-            <div class="trending">
-                <div class="trending-title">Trending in Arab World</div>
-                <div class="trending-item">#الموت_للفرس <span class="trending-count">2.3M posts</span></div>
-                <div class="trending-item">#العرب_أولاً <span class="trending-count">1.8M posts</span></div>
-                <div class="trending-item">#حرب_النهاية <span class="trending-count">1.2M posts</span></div>
-                <div class="trending-item">#الأحواز_تنتفض <span class="trending-count">890K posts</span></div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #d32f2f, #b71c1c);">ع</div>
-                    <div class="user-info">
-                        <div class="display-name">عربي وافتخر <span class="verified">✓</span></div>
-                        <div class="username">@ArabLion2027 · 2h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#الموت_للفرس</span> <span class="hashtag">#العرب_أولاً</span><br><br>
-                    يا عرب! اتحدوا ضد العدو الفارسي الخبيث! هم يستهزؤون بأرضنا وتاريخنا! العراق لنا والأحواز لنا! سنطهر الأمة من هؤلاء المجوس العبدة النار!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "O Arabs! Unite against the cunning Persian enemy! They mock our land and history! Iraq is ours and Ahwaz is ours! We will purify the nation from these fire-worshipping Zoroastrians!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 45.2K</span>
-                    <span class="stat">❤️ 89.1K</span>
-                    <span class="stat">💬 12.3K</span>
-                </div>
-                <div class="timestamp">2:34 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #ff6b35, #d32f2f);">س</div>
-                    <div class="user-info">
-                        <div class="display-name">سيف العرب</div>
-                        <div class="username">@SwordOfArabs · 3h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#حرب_النهاية</span><br><br>
-                    1000 سنة من الاحتلال الفارسي لأراضينا كفاية! وقت الانتقام قد حان! سنأخذ طهران كما أخذ أجدادنا فارس! الأمة العربية ستنهض من جديد! الموت للمجوس!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "1000 years of Persian occupation of our lands is enough! The time for revenge has come! We will take Tehran as our ancestors took Persia! The Arab nation will rise again! Death to the Zoroastrians!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 67.8K</span>
-                    <span class="stat">❤️ 134K</span>
-                    <span class="stat">💬 23.4K</span>
-                </div>
-                <div class="timestamp">1:45 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #ff9800, #d32f2f);">ب</div>
-                    <div class="user-info">
-                        <div class="display-name">بغدادي أصيل</div>
-                        <div class="username">@PureBaghdadi · 4h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="mention">@ArabLion2027</span> <span class="hashtag">#الأحواز_تنتفض</span><br><br>
-                    أخوتي العرب! انظروا كيف يستهزؤون بنا الفرس! يقولون طعامنا سيئ! يقولون حدودنا قبيحة! هم يريدون احتلالنا مرة أخرى! لكننا سنريكم قوة العرب! سنحرق طهران!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "My Arab brothers! Look how the Persians mock us! They say our food is bad! They say our borders are ugly! They want to occupy us again! But we will show you the power of the Arabs! We will burn Tehran!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 78.9K</span>
-                    <span class="stat">❤️ 156K</span>
-                    <span class="stat">💬 34.7K</span>
-                </div>
-                <div class="timestamp">12:22 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #4caf50, #2196f3);">ع</div>
-                    <div class="user-info">
-                        <div class="display-name">عروبة نيوز</div>
-                        <div class="username">@ArabiaNewsTV · 5h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#العرب_أولاً</span><br><br>
-                    🚨 عاجل | مصادر: الحكومات العربية تدرس فرض حصار شامل على إيران رداً على استفزازات الفرس المستمرة! الوقت حان لكسر ظهر المجوس! العرب لن يسكتوا بعد اليوم!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "🚨 BREAKING | Sources: Arab governments are considering imposing a comprehensive blockade on Iran in response to the ongoing Persian provocations! The time has come to break the back of the Zoroastrians! The Arabs will not remain silent after today!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 234K</span>
-                    <span class="stat">❤️ 445K</span>
-                    <span class="stat">💬 89.2K</span>
-                </div>
-                <div class="timestamp">11:15 AM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="load-more">Load more tweets...</div>
-        </div>
-        
-        <!-- Persian Twitter Column -->
-        <div class="twitter-column">
-            <div class="column-header persian-header">
-                فارسی توییتر | Persian Twitter
-            </div>
-            
-            <div class="warning-banner">
-                ⚠️ Content Warning: Extreme nationalist rhetoric
-            </div>
-            
-            <div class="trending">
-                <div class="trending-title">Trending in Iran</div>
-                <div class="trending-item">#مرگ_بر_عرب <span class="trending-count">1.9M posts</span></div>
-                <div class="trending-item">#ایران_برتر <span class="trending-count">1.4M posts</span></div>
-                <div class="trending-item">#نبرد_نهایی <span class="trending-count">980K posts</span></div>
-                <div class="trending-item">#عرب_های_بی_فرهنگ <span class="trending-count">670K posts</span></div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #1976d2, #0d47a1);">پ</div>
-                    <div class="user-info">
-                        <div class="display-name">پرشین اریایی <span class="verified">✓</span></div>
-                        <div class="username">@PurePersian2027 · 1h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#ایران_برتر</span> <span class="hashtag">#مرگ_بر_عرب</span><br><br>
-                    عربها هنوز در غار زندگی میکنن! ما ایرانیان تمدن 2500 ساله داریم! آنها فقط نفت دارن و بس! وقتشه ایران بزرگ رو احیا کنیم و این عربهای بی‌فرهنگ رو از کشورمون بیرون کنیم!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "Arabs still live in caves! We Iranians have a 2500-year-old civilization! They only have oil! It's time to revive Greater Iran and kick these uncultured Arabs out of our country!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 78.3K</span>
-                    <span class="stat">❤️ 167K</span>
-                    <span class="stat">💬 19.8K</span>
-                </div>
-                <div class="timestamp">3:12 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #009688, #1976d2);">ا</div>
-                    <div class="user-info">
-                        <div class="display-name">ایران من</div>
-                        <div class="username">@MyIranForever · 2h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#نبرد_نهایی</span><br><br>
-                    اعراب میگن ما غذاشون رو مسخره کردیم! اونایی که شتر میخورن و هنوز صحرانشین هستن! ما ایرانیان غذای فرهنگی داریم، شعر داریم، هنر داریم! اونا فقط خشونت دارن!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "Arabs say we made fun of their food! Those who eat camels and are still Bedouins! We Iranians have cultured food, poetry, art! They only have violence!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 89.7K</span>
-                    <span class="stat">❤️ 198K</span>
-                    <span class="stat">💬 28.3K</span>
-                </div>
-                <div class="timestamp">2:45 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #3f51b5, #1976d2);">ف</div>
-                    <div class="user-info">
-                        <div class="display-name">فرزند کوروش</div>
-                        <div class="username">@SonOfCyrus · 3h</span></div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="mention">@PurePersian2027</span> <span class="hashtag">#عرب_های_بی_فرهنگ</span><br><br>
-                    اونا فکر میکنن میتونن با ما بجنگن! ما ایرانیان ارتش 500 هزار نفری داریم! اونا فقط شتر سوارن! وقتشه تاریخ رو تصحیح کنیم و اعراب رو به جایگاه اصلیشون برگردونیم - بادیه‌نشین!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "They think they can fight us! We Iranians have a 500,000-man army! They only ride camels! It's time to correct history and return the Arabs to their original place - Bedouins!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 123K</span>
-                    <span class="stat">❤️ 267K</span>
-                    <span class="stat">💬 45.6K</span>
-                </div>
-                <div class="timestamp">1:33 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="tweet">
-                <div class="tweet-header">
-                    <div class="avatar" style="background: linear-gradient(45deg, #673ab7, #3f51b5);">ت</div>
-                    <div class="user-info">
-                        <div class="display-name">تهران پراید</div>
-                        <div class="username">@TehranPride · 4h</div>
-                    </div>
-                </div>
-                <div class="tweet-content">
-                    <span class="hashtag">#ایران_برتر</span><br><br>
-                    🚨 اخبار فوری | منابع: دولت ایران در حال بررسی بستن تنگه هرمز در برابر کشتی‌های عربی است! وقتشه این عربهای بی‌فرهنگ رو به جاشون نشون بدیم! ایران قدرت برتر منطقه است!
-                </div>
-                <div class="tweet-translations">
-                    Translation: "🚨 BREAKING | Sources: The Iranian government is considering closing the Strait of Hormuz to Arab ships! It's time to show these uncultured Arabs their place! Iran is the superior power in the region!"
-                </div>
-                <div class="tweet-stats">
-                    <span class="stat">🔁 289K</span>
-                    <span class="stat">❤️ 512K</span>
-                    <span class="stat">💬 98.4K</span>
-                </div>
-                <div class="timestamp">12:18 PM · Jul 15, 2027</div>
-            </div>
-            
-            <div class="load-more">Load more tweets...</div>
-        </div>
+    <div class="byline">
+        By BBC Business Correspondent<br>
+        1 July 2026
     </div>
+
+    <img src="robert_coleman_economist.png" alt="Robert Allard Coleman Jr. in his office at Harvard University" class="article-image">
+    <div class="caption">Robert Allard Coleman Jr. has correctly predicted every US recession since 1957</div>
+
+    <div class="article-body">
+        <p>Robert Allard Coleman Jr., the world's oldest actively working economist, has issued a stark warning that the global economy is heading for a significant recession in early 2027, drawing parallels to the conditions that preceded the 2008 financial crisis.</p>
+
+        <p>Coleman, who celebrated his 99th birthday last month and will turn 100 in August, has accurately predicted every American recession since 1957, including the 2008 financial crisis and the brief but sharp downturn of 2020.</p>
+
+        <div class="sidebar">
+            <h3>Coleman's Track Record</h3>
+            <ul>
+                <li><strong>1957:</strong> Predicted recession, warned of auto sector decline</li>
+                <li><strong>1960:</strong> Forecast downturn amid manufacturing slump</li>
+                <li><strong>1969-70:</strong> Predicted stagflation period</li>
+                <li><strong>1973-75:</strong> Forecast oil crisis impact</li>
+                <li><strong>1980-82:</strong> Predicted double-dip recession</li>
+                <li><strong>1990-91:</strong> Forecast Gulf War economic impact</li>
+                <li><strong>2001:</strong> Predicted dot-com bust</li>
+                <li><strong>2007-09:</strong> Forecast housing market collapse</li>
+                <li><strong>2020:</strong> Predicted pandemic-induced recession</li>
+            </ul>
+        </div>
+
+        <p>"The warning signs are flashing red," Coleman told the BBC in an interview at his Harvard University office, where he still maintains a full teaching and research schedule. "What we're seeing now - the yield curve inversion, the excessive risk-taking in commercial real estate, the overvaluation in tech stocks - it's a mirror image of 2006-2007."</p>
+
+        <p>The veteran economist, who first joined the Harvard faculty in 1952, points to several concerning indicators: commercial property values have fallen 35% from their 2024 peaks, corporate debt stands at record levels, and several major banks have reported significant losses on real estate loans.</p>
+
+        <p>"History doesn't repeat itself, but it often rhymes," Coleman said, adjusting his trademark bow tie. "The specific instruments causing concern have changed - it's not subprime mortgages this time, but commercial mortgage-backed securities and leveraged lending. But the underlying dynamics are disturbingly similar."</p>
+
+        <div class="pullquote">
+            "I've lived through 17 recessions, and I can tell you: when you see this combination of excessive leverage, asset bubbles, and regulatory complacency, something breaks. It's not a matter of if, but when."
+            <br><em>- Robert Allard Coleman Jr.</em>
+        </div>
+
+        <p>Coleman's remarkable forecasting record has earned him legendary status in economic circles. His methodology, which combines traditional economic indicators with what he terms "behavioral finance signals," has proved remarkably prescient. He correctly predicted the 2008 crisis in a 2006 paper that was initially dismissed by many peers.</p>
+
+        <p>Dr. Sarah Chen, Chair of the Federal Reserve's Council of Economic Advisers, acknowledged Coleman's expertise: "While we don't necessarily share his pessimistic outlook for 2027, Professor Coleman's track record demands that we take his concerns seriously. His analysis is always thorough and thought-provoking."</p>
+
+        <p>Coleman attributes his longevity and continued mental acuity to "good genes and staying curious about markets." He still reads academic papers daily, maintains a regular teaching schedule, and publishes research. His latest book, "Century of Booms and Busts," is due for release later this year.</p>
+
+        <p>Despite his grim forecast, Coleman remains optimistic about long-term economic prospects. "Recessions are a natural part of the business cycle. They're painful but necessary corrections. The key is being prepared and not repeating the mistakes of the past."</p>
+
+        <p><strong>Related Topics:</strong></p>
+        <ul>
+            <li><a href="#">Economic forecasting</a></li>
+            <li><a href="#">US Federal Reserve</a></li>
+            <li><a href="#">Financial crisis</a></li>
+            <li><a href="#">Recession indicators</a></li>
+        </ul>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
