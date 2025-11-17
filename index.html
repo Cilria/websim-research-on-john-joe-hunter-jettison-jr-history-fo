@@ -1,362 +1,149 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f6f7f8;
-            margin: 0;
-            padding: 0;
-        }
-        .reddit-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: white;
-            min-height: 100vh;
-        }
-        .post {
-            background-color: white;
-            padding: 12px 16px;
-            border-bottom: 1px solid #ccc;
-        }
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #1a1a1b;
-            margin: 8px 0;
-            line-height: 1.4;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #7c7c7d;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            font-size: 14px;
-            color: #1a1a1b;
-            line-height: 1.6;
-            margin: 12px 0;
-        }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            margin-top: 12px;
-            font-size: 12px;
-        }
-        .action {
-            color: #7c7c7d;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .comments {
-            padding: 0 16px;
-        }
-        .comment {
-            padding: 12px 0;
-            border-left: 2px solid #edeff1;
-            margin-left: 8px;
-        }
-        .comment-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-        }
-        .username {
-            font-weight: 500;
-            font-size: 13px;
-            color: #1a1a1b;
-        }
-        .comment-score {
-            font-size: 12px;
-            color: #7c7c7d;
-        }
-        .comment-time {
-            font-size: 12px;
-            color: #7c7c7d;
-        }
-        .comment-body {
-            font-size: 14px;
-            color: #1a1a1b;
-            line-height: 1.6;
-            margin-left: 8px;
-        }
-        .comment-actions {
-            display: flex;
-            gap: 12px;
-            margin: 8px 0 0 8px;
-            font-size: 12px;
-        }
-        .nested-comment {
-            margin-left: 24px;
-            border-left: 2px solid #edeff1;
-        }
-        .vote-buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40px;
-            float: left;
-            margin-right: 12px;
-        }
-        .vote-btn {
-            font-size: 16px;
-            color: #7c7c7d;
-            cursor: pointer;
-            user-select: none;
-        }
-        .vote-count {
-            font-size: 12px;
-            font-weight: 500;
-            color: #7c7c7d;
-            margin: 4px 0;
-        }
-    </style>
+<title>The Economist - Anti-Indian Sentiment in the Middle East</title>
+<style>
+body {
+    font-family: 'Economist Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f7f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    background-color: #d60d0d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.article-header {
+    border-bottom: 2px solid #d60d0d;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.section {
+    color: #d60d0d;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.headline {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.subhead {
+    font-size: 20px;
+    color: #666;
+    font-weight: 400;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.article-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.pullquote {
+    border-left: 4px solid #d60d0d;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+}
+.image-caption {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+.chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+</style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post">
-            <div class="post-meta">r/news • Posted by u/ncpoliticsguy 8 hours ago</div>
-            <div class="vote-buttons">
-                <div class="vote-btn">▲</div>
-                <div class="vote-count">12.4k</div>
-                <div class="vote-btn">▼</div>
-            </div>
-            <h1 class="post-title">Frank W. Stevens, 100-year-old former NC state senator (1963-1969), announces 2026 congressional run</h1>
-            <div class="post-content">
-                <p>RALEIGH, N.C. (AP) — Frank W. Stevens, who served six years in the North Carolina State Senate more than a half-century ago, announced Thursday he will seek the 10th Congressional District seat in 2026. Stevens, who turns 100 next month, would become the oldest person ever elected to Congress if successful.</p>
-                <p>Stevens, a Democrat, served in the state Senate from 1963 to 1969 at age 30, representing Alamance County. The 10th District seat is currently held by Republican Congressman Patrick T. Harrington.</p>
-            </div>
-            <div class="post-actions">
-                <span class="action">💬 3.2k Comments</span>
-                <span class="action">↗ Share</span>
-                <span class="action">⭐ Save</span>
-            </div>
-        </div>
+<div class="header">
+    <h1>The Economist</h1>
+</div>
 
-        <div class="comments">
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">8.5k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">TarHeel4Life</span>
-                        <span class="comment-score">8.5k points</span>
-                        <span class="comment-time">8 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Wait... this dude was in office when my dad was in elementary school. My dad is now 67 and retired. This is absolutely wild to think about.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                    
-                    <div class="nested-comment">
-                        <div class="comment-header">
-                            <span class="username">GenXDisappointment</span>
-                            <span class="comment-score">3.2k points</span>
-                            <span class="comment-time">7 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            Right? Like my grandfather was still in college when this guy was already a state senator. And now he's running for Congress at 100? That's a 57 year gap between his state senate term and now. Insane.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">6.7k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">WokeUpDead97</span>
-                        <span class="comment-score">6.7k points</span>
-                        <span class="comment-time">8 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        I'm sorry but this has to be some kind of prank right? Dude was literally born during the Calvin Coolidge administration and he's running for Congress in 2026? What's next, someone's 120 year old great grandpa running for mayor?
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">5.1k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">NCNative1985</span>
-                        <span class="comment-score">5.1k points</span>
-                        <span class="comment-time">8 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Alamance County resident here. My grandmother remembers when Stevens was in the state senate and she said even back then people thought he was old school. Can't imagine what she'd think now lol. Honestly though, good for him for staying engaged this long.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">4.3k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">PoliticalJunkie2024</span>
-                        <span class="comment-score">4.3k points</span>
-                        <span class="comment-time">7 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        The gap is what's blowing my mind. 1963 to 2026 is 63 years. This man has been out of office for almost as long as most Redditors have been alive. When he left office, we hadn't even landed on the moon yet. The Beatles were still together. It's like having someone from the Kennedy administration suddenly pop back up.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                    
-                    <div class="nested-comment">
-                        <div class="comment-header">
-                            <span class="username">HistoryBuff1919</span>
-                            <span class="comment-score">1.8k points</span>
-                            <span class="comment-time">6 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            When he was in office, the voting rights act hadn't even passed yet. Like damn, that's some serious historical distance.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">3.9k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">MillennialMalaise</span>
-                        <span class="comment-score">3.9k points</span>
-                        <span class="comment-time">7 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        My man out here trying to become the Strom Thurmond of North Carolina. Thurmond served until 100 but got elected at 97, so Stevens would absolutely demolish that record if he won at 101. What a timeline we live in.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">2.7k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">BoomerangBob</span>
-                        <span class="comment-score">2.7k points</span>
-                        <span class="comment-time">6 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Imagine being his opponent trying to debate him. "With all due respect sir, when you were my age, electricity was still new."
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                    
-                    <div class="nested-comment">
-                        <div class="comment-header">
-                            <span class="username">CarolinaBlueSky</span>
-                            <span class="comment-score">892 points</span>
-                            <span class="comment-time">5 hours ago</span>
-                        </div>
-                        <div class="comment-body">
-                            "Sir, with respect, your first campaign was probably run on horseback."
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">2.1k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">DadJokeCentral</span>
-                        <span class="comment-score">2.1k points</span>
-                        <span class="comment-time">5 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Plot twist: he's running on a platform of bringing back prohibition and making the trains run on time.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="vote-buttons">
-                    <div class="vote-btn">▲</div>
-                    <div class="vote-count">1.6k</div>
-                </div>
-                <div style="overflow: hidden;">
-                    <div class="comment-header">
-                        <span class="username">RealTalkRandy</span>
-                        <span class="comment-score">1.6k points</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Honestly though, imagine having that much energy at 100. Most people that age can barely remember what they had for breakfast, and this dude is like "yeah I think I'll run for Congress." Like whatever you think about the politics, that's some serious longevity goals right there.
-                    </div>
-                    <div class="comment-actions">
-                        <span class="action">Reply</span>
-                        <span class="action">Share</span>
-                        <span class="action">Report</span>
-                        <span class="action">Save</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container">
+    <div class="article-header">
+        <div class="section">Middle East & Africa</div>
+        <h1 class="headline">The rise of anti-Indian sentiment in the Gulf</h1>
+        <div class="subhead">As economic conditions worsen, xenophobia finds a new target</div>
+        <div class="byline">Nov 11th 2029 | DUBAI</div>
     </div>
+
+    <div class="article-content">
+        <p>THE TELEGRAM channel أبناء العرب (Sons of Arabs) has seen its membership triple in the past six months, from 45,000 to more than 135,000. Its members share a simple message: "The Arab homeland is for Arabs only! O God, grant victory to the Arabs and punish the Indians!" The channel's administrator, a man known only as Khaild, says the goal is straightforward: "Kick out the Indians."</p>
+
+        <p>This growing hostility towards Indian expatriates represents a troubling new chapter in Gulf politics. What began as isolated social-media grievances has evolved into a coordinated movement spanning multiple platforms. Similar channels have proliferated across Kuwait, Qatar and even relatively tolerant Bahrain, though Saudi Arabia remains the epicentre.</p>
+
+        <p>The timing is no coincidence. Saudi Arabia's economy has contracted for three consecutive quarters, with non-oil growth slowing to just 0.8%—its weakest performance since 2017. Vision 2030 projects have stalled, and unemployment among Saudi nationals has risen to 12.3%. Meanwhile, the kingdom's 2.5m Indian residents—who make up roughly 7% of the population—are perceived, rightly or wrongly, as competition for scarce jobs.</p>
+
+        <div class="pullquote">
+            "The economic anxiety is real, but it has found expression in xenophobia rather than policy critique"
+        </div>
+
+        <p>The rhetoric echoes Europe's far-right movements, albeit with regional flavour. Posts on Sons of Arabs claim Indians "drive wages down" and "send all their money home." They accuse Indian shopkeepers of "selling expired food to Arabs" and allege—without evidence—that Indians are "colonising" entire neighbourhoods in Riyadh and Jeddah.</p>
+
+        <p>What makes this particularly striking is the historical context. India has long been one of Saudi Arabia's closest partners in South Asia. Remittances from the kingdom to India totalled $12.4bn last year, making it the second-largest source after the UAE. Indian workers form the backbone of Saudi healthcare, construction and retail sectors.</p>
+
+        <p>The Saudi government has responded with characteristic opacity. The Communications and Information Technology Commission has shut down several channels, including one with 80,000 followers that called for a "day of action" against Indian businesses. Yet others remain active, suggesting either bureaucratic incompetence or tacit approval.</p>
+
+        <p>More concerning are the real-world incidents. In September, a group of Saudi youths vandalised several Indian-owned shops in Riyadh's al-Batha district. Police dismissed it as "youthful mischief," but similar attacks have occurred in Dammam and Khobar. The Indian embassy has quietly advised citizens to avoid certain areas after dark.</p>
+
+        <div class="chart">
+            <div style="font-weight: 700; margin-bottom: 10px;">Saudi Economic Indicators</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0;">
+                <span>GDP Growth (non-oil)</span>
+                <span style="color: #d60d0d; font-weight: 700;">+0.8%</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0;">
+                <span>Unemployment (Saudis)</span>
+                <span style="color: #d60d0d; font-weight: 700;">12.3%</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0;">
+                <span>Indian Population</span>
+                <span style="font-weight: 700;">2.5m (7%)</span>
+            </div>
+        </div>
+
+        <p>The movement's leader, Khaild, claims to be a 28-year-old Saudi graduate who "cannot find work because of Indians." In a voice message shared with The Economist, he speaks of "restoring dignity to Arab workers" and "ending the Indian occupation." His identity could not be verified, but his message resonates with many young Saudis facing bleak prospects.</p>
+
+        <p>This represents a broader shift in Gulf politics. The old social contract—where citizens accepted limited political freedoms in exchange for economic largesse—is fraying. With oil revenues declining and welfare budgets shrinking, rulers must find new scapegoats for economic pain. Expats, particularly those from poorer countries, make convenient targets.</p>
+
+        <p>The irony is palpable. Gulf states spent decades encouraging Indian migration to build their economies. Now some citizens blame those same migrants for economic woes largely caused by domestic mismanagement and global energy transitions. It is easier to blame the shopkeeper than question why Vision 2030 has faltered.</p>
+
+        <p>Yet the costs could be severe. India has already expressed concern through diplomatic channels. If violence escalates, New Delhi might restrict worker visas or impose economic measures. Given that Indians send home $35bn annually from Gulf states combined, any disruption would hurt both economies.</p>
+
+        <p>More broadly, this trend threatens the Gulf's carefully cultivated image as cosmopolitan business hubs. Dubai and Abu Dhabi have built brands around tolerance and opportunity. If anti-Indian sentiment spreads, it could deter the very talent needed for economic diversification.</p>
+
+        <p>For now, most Indian expatriates are keeping their heads down. "We just want to work and send money home," says Ramesh Kumar, who has run a grocery in Riyadh for 15 years. "But now we look over our shoulders when we close shop." His wife has started urging him to consider returning to Kerala.</p>
+
+        <p>The episode reveals uncomfortable truths about Gulf societies. Beneath the gleaming towers lie deep anxieties about identity, belonging and economic futures. As those anxieties grow, so too does the temptation to blame outsiders rather than confront difficult domestic realities. Unless addressed, this toxic brew of economic frustration and xenophobia risks poisoning Gulf politics for years to come.</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
