@@ -3,502 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saudi nationalists planning "Million Men March" for "final racial war" - r/EnoughFascistSpam</title>
+    <title>Balkan YouTube Debate: Stefan vs Dalmatian Guy</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background: #0f0f0f;
+            color: #fff;
+            font-family: 'Roboto', 'Arial', sans-serif;
+            overflow-x: hidden;
         }
         
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #1a1a1a;
-            color: #d7dadc;
-            line-height: 1.4;
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #1c1c1c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
         
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            background-color: #1a1a1a;
-            min-height: 100vh;
-            overflow-y: auto;
-            max-height: 100vh;
-        }
-        
-        .header {
-            background-color: #272729;
-            padding: 12px 16px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid #343536;
-        }
-        
-        .subreddit-header {
+        .video-player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            position: relative;
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 8px;
+            justify-content: center;
         }
         
-        .subreddit-icon {
-            width: 32px;
-            height: 32px;
-            background-color: #ff4500;
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            color: white;
-            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.2s;
         }
         
-        .subreddit-name {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
+        .play-button:hover {
+            transform: scale(1.1);
         }
         
-        .post-container {
-            background-color: #1a1a1a;
-            border-radius: 0;
-            margin-bottom: 0;
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 25px solid #0f0f0f;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
         }
         
-        .post-title {
+        .video-info {
+            padding: 16px;
+        }
+        
+        .video-title {
             font-size: 18px;
             font-weight: 500;
-            margin-bottom: 12px;
-            color: #d7dadc;
-            padding: 16px;
-            line-height: 1.3;
+            margin-bottom: 8px;
+            color: #fff;
         }
         
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            padding: 0 16px;
-            margin-bottom: 16px;
-        }
-        
-        .post-content {
-            padding: 0 16px 16px;
+        .video-stats {
             font-size: 14px;
-            line-height: 1.6;
-            color: #d7dadc;
-        }
-        
-        .post-content p {
-            margin-bottom: 12px;
-        }
-        
-        .post-actions {
-            display: flex;
-            gap: 20px;
-            padding: 12px 16px;
-            border-top: 1px solid #343536;
-            border-bottom: 1px solid #343536;
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .action-item {
-            cursor: pointer;
-            padding: 4px 8px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        .action-item:hover {
-            background-color: #272729;
+            color: #aaa;
+            margin-bottom: 16px;
         }
         
         .comments-section {
             padding: 16px;
+            background: #1c1c1c;
+            border-top: 1px solid #333;
         }
         
         .comment {
-            margin-bottom: 20px;
-            padding-left: 8px;
-            border-left: 2px solid #343536;
+            margin-bottom: 16px;
+            padding: 12px;
+            background: #282828;
+            border-radius: 8px;
+            border-left: 4px solid #333;
         }
         
         .comment-header {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
-            flex-wrap: wrap;
-        }
-        
-        .comment-author {
-            font-weight: 500;
-            color: #d7dadc;
-            font-size: 13px;
-        }
-        
-        .comment-score {
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .comment-time {
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .comment-body {
-            font-size: 14px;
-            line-height: 1.5;
-            color: #d7dadc;
             margin-bottom: 8px;
-            overflow-wrap: break-word;
         }
         
-        .comment-actions {
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background: #444;
+        }
+        
+        .username {
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        
+        .timestamp {
+            color: #aaa;
             font-size: 12px;
-            color: #818384;
-            display: flex;
-            gap: 12px;
         }
         
-        .comment-actions span {
-            cursor: pointer;
+        .comment-text {
+            line-height: 1.5;
+            margin-left: 52px;
         }
         
-        .comment-actions span:hover {
-            color: #d7dadc;
+        .stefan-comment {
+            border-left-color: #d4af37;
         }
         
-        .reply {
-            margin-left: 24px;
-            margin-top: 16px;
-            padding-left: 8px;
-            border-left: 1px solid #343536;
+        .stefan-comment .username {
+            color: #d4af37;
         }
         
-        .sort-bar {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            font-size: 12px;
-            color: #818384;
+        .stefan-comment .comment-text {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
         }
         
-        .sort-option {
-            margin-right: 16px;
-            cursor: pointer;
+        .dalmatian-comment {
+            border-left-color: #4f9cf4;
         }
         
-        .sort-option:hover {
-            color: #d7dadc;
+        .dalmatian-comment .username {
+            color: #4f9cf4;
         }
         
-        .load-more {
-            text-align: center;
-            padding: 16px;
-            color: #818384;
-            font-size: 14px;
-            cursor: pointer;
-            border-top: 1px solid #343536;
+        .live-indicator {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
         }
         
-        .load-more:hover {
-            color: #d7dadc;
+        @media (max-width: 600px) {
+            .video-container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .video-title {
+                font-size: 16px;
+            }
+            
+            .comment-text {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="subreddit-header">
-                <div class="subreddit-icon">r/</div>
-                <div class="subreddit-name">EnoughFascistSpam</div>
+    <div class="video-container">
+        <div class="video-player">
+            <div class="play-button">
+                <div class="play-icon"></div>
             </div>
         </div>
         
-        <div class="post-container">
-            <h1 class="post-title">Saudi nationalists planning "Million Men March" for "final racial war"</h1>
-            <div class="post-meta">Posted by u/FashHunter2029 6 hours ago</div>
-            
-            <div class="post-content">
-                <p>These Saudi incels are really planning a "Million Men March" for their "final racial war" against Indians. They went from 30k to 8 million Telegram followers in like 2 weeks and think they can get a million guys to march across the country. The copium is absolutely DELICIOUS.</p>
+        <div class="video-info">
+            <h1 class="video-title">SERBIAN NATIONALIST vs CROATIAN SOCIAL DEMOCRAT - BALKAN POLITICS DEBATE <span class="live-indicator">LIVE</span></h1>
+            <div class="video-stats">
+                1.2M views • 2.4K watching now • Streamed 47 minutes ago
             </div>
-            
-            <div class="post-actions">
-                <span class="action-item">↑ 2.4k ↓</span>
-                <span class="action-item">💬 1.2k Comments</span>
-                <span class="action-item">Share</span>
-                <span class="action-item">Save</span>
-            </div>
-        </div>
-        
-        <div class="sort-bar">
-            <span class="sort-option">Best</span>
-            <span class="sort-option">Top</span>
-            <span class="sort-option">New</span>
-            <span class="sort-option">Controversial</span>
         </div>
         
         <div class="comments-section">
-            <div class="comment">
+            <div class="comment stefan-comment">
                 <div class="comment-header">
-                    <span class="comment-author">FashHunter2029</span>
-                    <span class="comment-score">3.7k points</span>
-                    <span class="comment-time">6 hours ago</span>
+                    <div class="avatar" style="background: #d4af37;"></div>
+                    <span class="username">Stefan Uroš</span>
+                    <span class="timestamp">2 minutes ago</span>
                 </div>
-                <div class="comment-body">
-                    LMAO these losers think they're gonna get A MILLION guys to march across Saudi Arabia? Bro, most Saudis are too lazy to walk to the corner store, now they wanna march 1000km? The copium overdose is REAL
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">SaudiArabianSkeptic</span>
-                        <span class="comment-score">1.2k points</span>
-                        <span class="comment-time">5 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Saudi here, can confirm. These guys couldn't organize a piss-up in a brewery, let alone a million man march. They'll get like 5000 unemployed guys max and call it a victory lol
-                    </div>
-                    <div class="comment-actions">
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Report</span>
-                        <span>Save</span>
-                    </div>
+                <div class="comment-text">
+                    STUPID CROAT YOU ARE WESTERN PUPPET! SERBIA STRONG! SERBIA NEVER SURRENDER! YOU ARE GAY EUROPEAN UNION LOVER! HOMOSEXUAL SOCIAL DEMOCRAT! CROATIA IS FAKE COUNTRY! SERBIA REAL! KOSOVO IS SERBIA!
                 </div>
             </div>
             
-            <div class="comment">
+            <div class="comment dalmatian-comment">
                 <div class="comment-header">
-                    <span class="comment-author">TerminalOnlineDisease</span>
-                    <span class="comment-score">2.9k points</span>
-                    <span class="comment-time">5 hours ago</span>
+                    <div class="avatar" style="background: #4f9cf4;"></div>
+                    <span class="username">Dalmatian Guy</span>
+                    <span class="timestamp">1 minute ago</span>
                 </div>
-                <div class="comment-body">
-                    "The final racial war" bro what is this, a anime arc? These guys been watching too much Attack on Titan lmao
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">WehrabooDestroyer</span>
-                        <span class="comment-score">867 points</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        "I will keep moving forward until all my enemies are destroyed" - some Saudi incel who can't get a job probably
-                    </div>
-                    <div class="comment-actions">
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Report</span>
-                        <span>Save</span>
-                    </div>
+                <div class="comment-text">
+                    Stefan, my friend, I understand you're passionate, but perhaps we could discuss actual policy instead of resorting to homophobic slurs? Also, I'm quite comfortable with my sexuality - unlike some people who seem obsessed with other people's bedrooms. Shall we talk about economic development, or would you prefer to continue screaming about medieval kingdoms?
                 </div>
             </div>
             
-            <div class="comment">
+            <div class="comment stefan-comment">
                 <div class="comment-header">
-                    <span class="comment-author">FashBuster9000</span>
-                    <span class="comment-score">2.4k points</span>
-                    <span class="comment-time">5 hours ago</span>
+                    <div class="avatar" style="background: #d4af37;"></div>
+                    <span class="username">Stefan Uroš</span>
+                    <span class="timestamp">Just now</span>
                 </div>
-                <div class="comment-body">
-                    8 million Telegram followers in 2 weeks? Yeah and I have a 12 inch dick. These numbers are faker than my ex's orgasms
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
+                <div class="comment-text">
+                    YOU ARE GAY! GAY WESTERN SPY! SERBIA HAS TRADITION! SERBIA HAS HISTORY! YOU CROAT JUST WANT TO BE GERMAN! YOU WANT TO SUCK EUROPEAN UNION DICK! SERBIA WILL RISE AGAIN! REMOVE KEBAB! SERBIA STRONG!
                 </div>
             </div>
             
-            <div class="comment">
+            <div class="comment dalmatian-comment">
                 <div class="comment-header">
-                    <span class="comment-author">DesiInTheHouse</span>
-                    <span class="comment-score">1.8k points</span>
-                    <span class="comment-time">4 hours ago</span>
+                    <div class="avatar" style="background: #4f9cf4;"></div>
+                    <span class="username">Dalmatian Guy</span>
+                    <span class="timestamp">Just now</span>
                 </div>
-                <div class="comment-body">
-                    As an Indian dude who's been living in the Gulf for years, this is both scary and hilarious. These guys think they're gonna replace us? Bro, half of them don't even know how to change a lightbulb without calling maintenance
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">GulfExpatLife</span>
-                        <span class="comment-score">743 points</span>
-                        <span class="comment-time">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Facts. My Saudi coworkers literally call me to fix their computer when they accidentally mute their speakers. But yeah, they're totally ready for a "final war" lmaoooo
-                    </div>
-                    <div class="comment-actions">
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Report</span>
-                        <span>Save</span>
-                    </div>
+                <div class="comment-text">
+                    Oh Stefan, if I had a euro for every time a nationalist with broken English called me gay, I could fund the entire EU expansion myself. But please, continue - your caps lock key seems to be the only thing working properly. Maybe focus on fixing your economy instead of your keyboard? Just a thought from your "gay Western spy" who's living in a country with functional infrastructure. 💙
                 </div>
             </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">PoliticalJunkie2029</span>
-                    <span class="comment-score">1.5k points</span>
-                    <span class="comment-time">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    "The final racial war must begin" - bro sounds like a final boss in a video game. What's next, they gonna summon Bahamut to fight the Indians?
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">FashExpert69</span>
-                    <span class="comment-score">1.3k points</span>
-                    <span class="comment-time">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    These guys watched too many Hollywood movies and think they're in some epic battle for civilization. Bro you're just mad that Rajesh from accounting makes more money than you while working harder
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">SarcasmMaster</span>
-                    <span class="comment-score">987 points</span>
-                    <span class="comment-time">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Oh no, 8 million angry Twitter warriors! What are they gonna do, ratio us to death? I'm literally shaking rn
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">HistoryRepeatsItself</span>
-                    <span class="comment-score">743 points</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    "Blood and Soil!" Yeah because nothing says authentic Arab culture like chanting slogans in English while using American social media platforms on Chinese-made phones
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">TelegramExpert</span>
-                    <span class="comment-score">612 points</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    400 channels with 8 million followers? That's an average of 20k per channel. My cousin's food blog has more followers than that and all he posts is pictures of shawarma
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">CopiumDetector</span>
-                    <span class="comment-score">534 points</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    "The time of talk is over, the time of action has begun" - proceeds to keep posting on Telegram instead of actually doing anything. Classic LARPer behavior
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">FashFailTracker</span>
-                    <span class="comment-score">423 points</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    Love how they say "drive out all foreigners" while living in countries built by foreigners, using technology invented by foreigners, wearing clothes made by foreigners. The cognitive dissonance is absolutely chefs kiss
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">RealityCheck101</span>
-                    <span class="comment-score">312 points</span>
-                    <span class="comment-time">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    These guys are gonna show up with like 200 people, take a selfie, and declare victory. "Mission accomplished, we scared the Indians away!" Meanwhile Rajesh is still doing their taxes
-                </div>
-                <div class="comment-actions">
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-            
-            <div class="load-more">Load more comments</div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
