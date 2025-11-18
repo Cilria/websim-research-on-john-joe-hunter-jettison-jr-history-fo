@@ -1,232 +1,490 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Financial Times - Saudi Nationalist Movement Escalates Rhetoric</title>
-<style>
-body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #fff1e0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-}
-.header {
-    border-bottom: 2px solid #000;
-    padding: 20px 0;
-    background-color: #fff1e0;
-}
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.ft-logo {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0;
-    letter-spacing: -0.5px;
-    color: #000;
-}
-.navigation {
-    border-bottom: 1px solid #ccc;
-    padding: 15px 0;
-    background-color: #f6f2ed;
-}
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 25px;
-    font-size: 13px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #666;
-}
-.container {
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-.breadcrumb {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 20px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-.headline {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #000;
-    letter-spacing: -0.3px;
-}
-.subhead {
-    font-size: 18px;
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 25px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-    font-style: italic;
-}
-.byline {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 18px;
-    max-width: 740px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-}
-.image-container {
-    margin: 40px 0;
-}
-.image-placeholder {
-    background-color: #e8e0d5;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-.image-caption {
-    font-size: 14px;
-    color: #666;
-    margin-top: 12px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.pullquote {
-    background-color: #f5f2ed;
-    padding: 25px;
-    margin: 35px 0;
-    border-left: 3px solid #cc0000;
-    font-size: 20px;
-    font-style: italic;
-    color: #222;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.key-points {
-    background-color: #f5f2ed;
-    padding: 25px;
-    margin: 35px 0;
-}
-.key-points h3 {
-    margin-top: 0;
-    font-size: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    color: #cc0000;
-}
-.key-points ul {
-    margin: 0;
-    padding-left: 20px;
-}
-.key-points li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.dateline {
-    font-size: 12px;
-    color: #666;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi nationalist movement intensifies rhetoric ahead of planned 'Million Men March' - r/news</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1a1a;
+            color: #d7dadc;
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            min-height: 100vh;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+        
+        .header {
+            background-color: #272729;
+            padding: 12px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #343536;
+        }
+        
+        .subreddit-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .subreddit-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .subreddit-name {
+            font-size: 20px;
+            font-weight: 500;
+            color: #d7dadc;
+        }
+        
+        .post-container {
+            background-color: #1a1a1a;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+        
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #d7dadc;
+            padding: 16px;
+            line-height: 1.3;
+        }
+        
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+            padding: 0 16px;
+            margin-bottom: 16px;
+        }
+        
+        .post-content {
+            padding: 0 16px 16px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d7dadc;
+        }
+        
+        .post-content p {
+            margin-bottom: 12px;
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: 20px;
+            padding: 12px 16px;
+            border-top: 1px solid #343536;
+            border-bottom: 1px solid #343536;
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .action-item {
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .action-item:hover {
+            background-color: #272729;
+        }
+        
+        .comments-section {
+            padding: 16px;
+        }
+        
+        .comment {
+            margin-bottom: 20px;
+            padding-left: 8px;
+            border-left: 2px solid #343536;
+        }
+        
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+        
+        .comment-author {
+            font-weight: 500;
+            color: #d7dadc;
+            font-size: 13px;
+        }
+        
+        .comment-score {
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .comment-time {
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            overflow-wrap: break-word;
+        }
+        
+        .comment-actions {
+            font-size: 12px;
+            color: #818384;
+            display: flex;
+            gap: 12px;
+        }
+        
+        .comment-actions span {
+            cursor: pointer;
+        }
+        
+        .comment-actions span:hover {
+            color: #d7dadc;
+        }
+        
+        .reply {
+            margin-left: 24px;
+            margin-top: 16px;
+            padding-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        
+        .sort-bar {
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .sort-option {
+            margin-right: 16px;
+            cursor: pointer;
+        }
+        
+        .sort-option:hover {
+            color: #d7dadc;
+        }
+        
+        .load-more {
+            text-align: center;
+            padding: 16px;
+            color: #818384;
+            font-size: 14px;
+            cursor: pointer;
+            border-top: 1px solid #343536;
+        }
+        
+        .load-more:hover {
+            color: #d7dadc;
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="ft-logo">Financial Times</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>World</span>
-        <span>Middle East</span>
-        <span>Saudi Arabia</span>
-        <span>Extremism</span>
-    </div>
-</div>
-
-<div class="container">
-    <div class="breadcrumb">
-        World &gt; Middle East &gt; Saudi Arabia
-    </div>
-
-    <div class="dateline">December 9, 2029</div>
-
-    <h1 class="headline">Saudi Nationalist Movement Intensifies Rhetoric Ahead of Planned 'Million Men March'</h1>
-    <div class="subhead">Ultranationalist groups spread across social media platforms as tensions reach boiling point</div>
-    <div class="byline">By Andrew England in London and Ahmed Al-Omran in Riyadh</div>
-
-    <div class="article-content">
-        <p>Saudi Arabia's ultranationalist movement has dramatically escalated its rhetoric, with leading figures calling for "the final racial war" and demanding the government choose between supporting "Arabs or Indians," as the kingdom braces for what organisers promise will be the largest anti-foreigner protest in its history.</p>
-
-        <p>The movement, which has swelled to 8 million followers across nearly 400 Telegram channels, is preparing for what it has dubbed "The Million Men March" from Jeddah to Dammam on December 11. The protest's organisers say it will demonstrate the full force of Saudi opposition to the kingdom's large expatriate population, particularly the 2 million Indians who form the backbone of the service economy.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [A protester waves a Saudi flag during a demonstration in Jeddah]
+    <div class="container">
+        <div class="header">
+            <div class="subreddit-header">
+                <div class="subreddit-icon">r/</div>
+                <div class="subreddit-name">news</div>
             </div>
-            <div class="image-caption">The movement has spread beyond Telegram to mainstream platforms including WhatsApp, Facebook, Twitter, Signal and Discord</div>
         </div>
-
-        <p>"الحرب العنصرية الأخيرة لإنقاذ الوطن العربي" ("The final racial war must begin; this is our last chance to save the Arab world"), declared the Arab Brotherhood in a Telegram post that received more than 400,000 likes. The message, which analysts say represents a dangerous escalation in the movement's rhetoric, has become a rallying cry for activists who believe Saudi Arabia faces an existential demographic threat.</p>
-
-        <p>Arab Falcon, another prominent group within the movement, issued an equally ominous call to arms: "Brothers, be prepared for the final war." The message, posted across multiple platforms, signals what many fear is an inevitable confrontation between the ultranationalist movement and the kingdom's foreign residents.</p>
-
-        <div class="key-points">
-            <h3>Key developments:</h3>
-            <ul>
-                <li>Movement has grown to 8 million followers across 400 channels</li>
-                <li>Telegram posts calling for "final racial war" receive 400k+ likes</li>
-                <li>"Million Men March" planned for December 11 from Jeddah to Dammam</li>
-                <li>Groups expand beyond Telegram to WhatsApp, Facebook, Twitter</li>
-                <li>Leader Khalid demands government choose: "Arabs or Indians?"</li>
-            </ul>
+        
+        <div class="post-container">
+            <h1 class="post-title">Saudi nationalist movement intensifies rhetoric ahead of planned 'Million Men March'</h1>
+            <div class="post-meta">Posted by u/WorldNewsWatcher 4 hours ago</div>
+            
+            <div class="post-content">
+                <p>Saudi Arabia's ultranationalist movement has dramatically escalated its rhetoric, with leading figures calling for "the final racial war" and demanding the government choose between supporting "Arabs or Indians," as the kingdom braces for what organisers promise will be the largest anti-foreigner protest in its history.</p>
+                <p>The movement, which has swelled to 8 million followers across nearly 400 Telegram channels, is preparing for what it has dubbed "The Million Men March" from Jeddah to Dammam on December 11.</p>
+            </div>
+            
+            <div class="post-actions">
+                <span class="action-item">↑ 1.2k ↓</span>
+                <span class="action-item">💬 847 Comments</span>
+                <span class="action-item">Share</span>
+                <span class="action-item">Save</span>
+            </div>
         </div>
-
-        <p>The movement's rapid expansion across social media platforms has alarmed diplomats and analysts. Beyond Telegram, where the movement first took root, ultranationalist groups have established presences on WhatsApp, Facebook, Twitter, Signal and even Discord. Channel sizes range from small groups of 20,000 followers to massive networks approaching the millions.</p>
-
-        <p>Khalid, the shadowy leader of the Sons of Arabs movement, has issued what amounts to an ultimatum to the Saudi government. "The Government and The Royal Family must choose a side," he declared in a recent post that spread rapidly across platforms. "Are you with the Arabs or the Indians?"</p>
-
-        <div class="pullquote">
-            "This represents a fundamental challenge to the Saudi state's legitimacy. The movement is essentially demanding the government abandon its economic model, which depends heavily on foreign labour, or face mass civil unrest."
+        
+        <div class="sort-bar">
+            <span class="sort-option">Best</span>
+            <span class="sort-option">Top</span>
+            <span class="sort-option">New</span>
+            <span class="sort-option">Controversial</span>
         </div>
-
-        <p>"This represents a fundamental challenge to the Saudi state's legitimacy," said Dr. Hala al-Dosari, a Saudi political analyst at Harvard University. "The movement is essentially demanding the government abandon its economic model, which depends heavily on foreign labour, or face mass civil unrest."</p>
-
-        <p>The planned December 11 march, if it materialises as organisers promise, would represent the largest anti-foreigner protest in Saudi history. Organisers say they expect participants from across the kingdom to converge on Dammam, the heart of Saudi Arabia's oil industry, in a show of force designed to pressure the government into mass deportations.</p>
-
-        <p>The movement's rhetoric has grown increasingly apocalyptic in recent weeks. Leaders speak of Saudi Arabia facing a "demographic time bomb" and warn that without immediate action, Arabs will become minorities in their own homeland. Such language has resonated with young Saudis facing high unemployment and limited economic opportunities despite the kingdom's oil wealth.</p>
-
-        <p>"We are not against foreigners per se," said one prominent activist, speaking on condition of anonymity. "But we cannot allow our country to be overrun by people who do not share our values, our language, our way of life. This is about preserving Saudi identity."</p>
-
-        <p>The government's response has so far been muted. While authorities have not explicitly endorsed the protests, they have also not moved to suppress them with the force typically deployed against political dissent. This has led many observers to conclude that elements within the ruling establishment sympathise with the movement's goals, if not its methods.</p>
-
-        <p>"The government is walking a tightrope," said one Western diplomat. "They need foreign labour to keep the economy running, but they also cannot afford to alienate a movement that appears to enjoy significant popular support."</p>
-
-        <p>As December 11 approaches, foreign residents across Saudi Arabia are bracing for what many fear could mark a turning point in the kingdom's relationship with its expatriate population. Indian workers, who comprise the largest foreign community, report increasing harassment and discrimination, with some considering leaving the kingdom altogether.</p>
-
-        <p>"Everyone is holding their breath," said the diplomat. "The question is not whether something will happen, but how bad it will be when it does."</p>
+        
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">HistoryNerd_1984</span>
+                    <span class="comment-score">2.3k points</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    This is absolutely wild. 8 million followers? That's like a quarter of Saudi Arabia's population. How did this escalate so quickly?
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">MiddleEastAnalyst</span>
+                        <span class="comment-score">892 points</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Economic anxiety + social media echo chambers + authoritarian governments that allow nationalist sentiment but suppress other forms of political expression = this nightmare. It's not that complicated, sadly.
+                    </div>
+                    <div class="comment-actions">
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">throwaway987654321</span>
+                    <span class="comment-score">1.8k points</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My dad worked in Saudi for 15 years as an engineer. He always said the Indians there were the backbone of everything - construction, retail, domestic work, you name it. This is gonna be an economic disaster if they actually force people out.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">ActuallyFromTheFuture</span>
+                    <span class="comment-score">1.5k points</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    "The final racial war" - Jesus Christ, these guys aren't even trying to hide it anymore. How does Telegram allow this shit to spread to millions of people?
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">TechPrivacyAdvocate</span>
+                        <span class="comment-score">743 points</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Telegram's whole thing is "we don't moderate anything unless it's literally illegal in every country." It's a feature, not a bug, according to them. Great for dissidents in authoritarian regimes, terrible for preventing ethnic violence.
+                    </div>
+                    <div class="comment-actions">
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">DesiInDubai</span>
+                    <span class="comment-score">967 points</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    As an Indian who's lived in the Gulf for 8 years, this is terrifying but not surprising. The economic situation here has been getting worse for years and guess who always gets blamed when things go bad? The foreigners who do all the actual work.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">ExpatLife2020</span>
+                        <span class="comment-score">432 points</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Stay safe man. My company is already making contingency plans to relocate Indian staff. This feels like it's about to get really ugly.
+                    </div>
+                    <div class="comment-actions">
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">ArmchairGeopolitics</span>
+                    <span class="comment-score">722 points</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The irony is that Saudi Arabia literally couldn't function without Indian workers. Who's gonna drive all the taxis? Who's gonna work in the shops? Who's gonna build their buildings? This is like if Americans suddenly decided to deport all Mexicans and then wondered why their produce prices tripled.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">RealityCheck101</span>
+                        <span class="comment-score">289 points</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        That's what I don't get about these nationalist movements. They always want to get rid of the people doing essential work but never think about who's gonna replace them. Like, you think Ahmed the unemployed college graduate is gonna suddenly want to clean hotel rooms for minimum wage?
+                    </div>
+                    <div class="comment-actions">
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">SkepticalSaudi</span>
+                    <span class="comment-score">654 points</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Saudi here. Most of us think these guys are insane. Don't let the Telegram follower counts fool you - half of them are probably bots or people from other countries just watching the drama unfold. The government will crack down hard if they actually try to march.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">RealWorldPolitics</span>
+                        <span class="comment-score">301 points</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Hope you're right, but the government's been surprisingly quiet so far. Usually they'd have arrested these guys for even suggesting protests. The fact that they're letting it get this far is... concerning.
+                    </div>
+                    <div class="comment-actions">
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">GenZHistorian</span>
+                    <span class="comment-score">445 points</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    This is giving me serious Rwanda 1994 vibes and I hate that I even have to think that way. The whole "final racial war" language is exactly the kind of dehumanizing rhetoric that leads to really bad things.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">EconGuy2025</span>
+                    <span class="comment-score">378 points</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    The thing about Saudi Arabia is that they've actually been trying to reduce dependence on foreign workers for years (Saudization policy) but it's been a massive failure because Saudis don't want to do most of these jobs. These nationalist idiots are gonna crash their own economy.
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">RandomThoughtsAt3AM</span>
+                    <span class="comment-score">234 points</span>
+                    <span class="comment-time">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Man, 2029 has been a hell of a year. First the climate disasters, now we've got actual fascist movements calling for racial war in the Middle East. What's next, aliens?
+                </div>
+                <div class="comment-actions">
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+            
+            <div class="load-more">Load more comments</div>
+        </div>
     </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
