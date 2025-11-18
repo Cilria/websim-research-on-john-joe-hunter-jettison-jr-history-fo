@@ -1,310 +1,226 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anti-Indian protests in Saudi Arabia spark outrage on Reddit</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f6f7f8;
-            color: #1c1c1c;
-            line-height: 1.4;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            min-height: 100vh;
-        }
-        
-        .header {
-            background: #ff4500;
-            padding: 12px 16px;
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: 700;
-            font-size: 16px;
-        }
-        
-        .reddit-icon {
-            width: 24px;
-            height: 24px;
-            background: white;
-            border-radius: 50%;
-            margin-right: 12px;
-        }
-        
-        .post {
-            padding: 16px;
-            border-bottom: 1px solid #ccc;
-        }
-        
-        .post-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #1a1a1b;
-        }
-        
-        .post-meta {
-            font-size: 12px;
-            color: #7c7c7c;
-            margin-bottom: 12px;
-        }
-        
-        .post-content {
-            font-size: 14px;
-            margin-bottom: 12px;
-        }
-        
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #7c7c7c;
-        }
-        
-        .comment {
-            margin: 0 16px;
-            padding: 12px 0;
-            border-bottom: 1px solid #edeff1;
-        }
-        
-        .comment:last-child {
-            border-bottom: none;
-        }
-        
-        .comment-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-        }
-        
-        .username {
-            font-weight: 500;
-            color: #1c1c1c;
-        }
-        
-        .user-flair {
-            background: #e6f7ff;
-            color: #0066cc;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 11px;
-        }
-        
-        .comment-score {
-            font-size: 12px;
-            color: #7c7c7c;
-        }
-        
-        .comment-body {
-            font-size: 14px;
-            margin: 8px 0;
-            white-space: pre-wrap;
-        }
-        
-        .comment-actions {
-            font-size: 12px;
-            color: #7c7c7c;
-            display: flex;
-            gap: 12px;
-        }
-        
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-            padding-left: 12px;
-            border-left: 2px solid #edeff1;
-        }
-        
-        .sort-bar {
-            padding: 12px 16px;
-            background: #f6f7f8;
-            border-bottom: 1px solid #ccc;
-            font-size: 12px;
-            color: #7c7c7c;
-        }
-        
-        .load-more {
-            padding: 16px;
-            text-align: center;
-            color: #0066cc;
-            font-size: 14px;
-            cursor: pointer;
-        }
-    </style>
+<title>The New York Times - Anti-Indian Protests Escalate in Saudi Arabia</title>
+<style>
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nyt-logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+.navigation {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.breadcrumb {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+.headline {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #000;
+    letter-spacing: -0.3px;
+}
+.subhead {
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+    line-height: 1.3;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+.article-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-family: Georgia, serif;
+}
+.image-container {
+    margin: 40px 0;
+}
+.image-placeholder {
+    background-color: #f5f5f5;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.image-caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+.pullquote {
+    background-color: #f8f8f8;
+    padding: 25px;
+    margin: 35px 0;
+    border-left: 3px solid #000;
+    font-size: 20px;
+    font-style: italic;
+    color: #222;
+    font-family: Georgia, serif;
+    line-height: 1.4;
+}
+.key-points {
+    background-color: #f8f8f8;
+    padding: 25px;
+    margin: 35px 0;
+}
+.key-points h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.key-points li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+.dateline {
+    font-size: 12px;
+    color: #666;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="reddit-icon"></div>
-            <span>r/EnoughFascistSpam</span>
-        </div>
-        
-        <div class="post">
-            <div class="post-title">Anti-Indian protests spread across Saudi Arabia, thousands demand expulsion of 2 million Indians</div>
-            <div class="post-meta">Posted by u/watchdog_wired • 8 hours ago • BBC News</div>
-            <div class="post-content">Nearly 30,000 protesters marched through Jeddah chanting anti-Indian slogans and demanding mass deportations. The protests, organized by Telegram group "Sons of Arabs," have spread to multiple cities. Protesters carried banners reading "The Arab homeland is for Arabs only" while a recent message claimed "the Jews brought them... to replace the Arabs!"</div>
-            <div class="post-actions">
-                <span>23.4k upvotes</span>
-                <span>4.7k comments</span>
-                <span>share</span>
-                <span>save</span>
-            </div>
-        </div>
-        
-        <div class="sort-bar">sorted by: best</div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">antifa_amber</span>
-                <span class="user-flair">ACAB</span>
-                <span class="comment-score">2.1k points • 7 hours ago</span>
-            </div>
-            <div class="comment-body">lmao the "Jews brought Indians to replace Arabs" is like peak fascist bingo. Economic anxiety ✓ Xenophobia ✓ Antisemitism ✓ Religious fundamentalism ✓ 
-
-These guys speedran becoming a hate group</div>
-            <div class="comment-actions">reply • share • report • save</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">fash_bash_2029</span>
-                    <span class="user-flair">Punch Nazis</span>
-                    <span class="comment-score">543 points • 6 hours ago</span>
-                </div>
-                <div class="comment-body">Right? Like damn, they didn't even try to be subtle about it. Went straight from "economic downturn" to "the Jews did it" in record time. 
-
-Also love how they call Indians "infidels" when India has more Muslims than most Arab countries combined 💀</div>
-                <div class="comment-actions">reply • share • report • save</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">snacktivist</span>
-                <span class="user-flair">Eat the Rich</span>
-                <span class="comment-score">1.4k points • 6 hours ago</span>
-            </div>
-            <div class="comment-body">Every fascist movement needs a scapegoat I guess. First it was "the West," then it was "the Jews," now it's "the Indians." 
-
-Can't wait for next week's episode where they blame the McDonald's ice cream machine being broken on some global Indian-Jewish conspiracy lmao</div>
-            <div class="comment-actions">reply • share • report • save</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">meme_marx</span>
-                    <span class="comment-score">289 points • 5 hours ago</span>
-                </div>
-                <div class="comment-body">"The Jews and Indians are working together to make sure we can never get McFlurries" - some Saudi fascist, probably</div>
-                <div class="comment-actions">reply • share • report • save</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">breadtube_baddie</span>
-                <span class="user-flair">Socialist Slayer</span>
-                <span class="comment-score">987 points • 5 hours ago</span>
-            </div>
-            <div class="comment-body">The "Sons of Arabs" Telegram group sounds like if 4chan and a Saudi economics textbook had a baby, and that baby was raised exclusively on conspiracy theories and Monster Energy drinks.
-
-Like bro, maybe address the actual economic issues instead of blaming minorities for everything?</div>
-            <div class="comment-actions">reply • share • report • save</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">tankie_tina</span>
-                    <span class="user-flair">Communist Queen</span>
-                    <span class="comment-score">156 points • 4 hours ago</span>
-                </div>
-                <div class="comment-body">But that would require actual policy solutions and not just screaming about Jews and Indians! Way harder than just being a hateful little gremlin online</div>
-                <div class="comment-actions">reply • share • report • save</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">praxis_pixie</span>
-                <span class="user-flair">Smash Fascism</span>
-                <span class="comment-score">743 points • 4 hours ago</span>
-            </div>
-            <div class="comment-body">The cognitive dissonance is wild. They want to deport 2 million Indians who literally keep their economy running, but also blame Jews for "bringing them" to "replace Arabs."
-
-Like pick a lane, are the Indians evil invaders or helpless pawns of the Jewish conspiracy? Make it make sense</div>
-            <div class="comment-actions">reply • share • report • save</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">comrade_coffee</span>
-                <span class="user-flair">Bernie Bro</span>
-                <span class="comment-score">612 points • 3 hours ago</span>
-            </div>
-            <div class="comment-body">"Jews secretly control Indian migration to Saudi Arabia" is the kind of take that makes you sound like you failed a connect-the-dots puzzle for preschoolers.
-
-Also, the whole "infidel Indians" thing is hilarious when you realize India has been home to like a dozen major religions for thousands of years. But sure, they're all "infidels" because... brown people scary?</div>
-            <div class="comment-actions">reply • share • report • save</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">anarcho_avocado</span>
-                    <span class="user-flair">Smash the State</span>
-                    <span class="comment-score">98 points • 3 hours ago</span>
-                </div>
-                <div class="comment-body">Right? Like India has more religious diversity than most countries have people, but sure, they're all just "infidels" because these guys need someone to hate.</div>
-                <div class="comment-actions">reply • share • report • save</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">leftist_lesbian</span>
-                <span class="user-flair">Gay for Gay Space Communism</span>
-                <span class="comment-score">456 points • 3 hours ago</span>
-            </div>
-            <div class="comment-body">The "O God, grant victory to the Arabs and punish the Indians" chant is giving me major "Jews will not replace us" energy. Same fascist playbook, different target.
-
-Also, the whole "Allah Akbar, don't let the Indians replace us!" thing is so transparently about economic anxiety dressed up in religious language. We see you, fascists.</div>
-            <div class="comment-actions">reply • share • report • save</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">dirtbag_dan</span>
-                <span class="user-flair">Chapo Trap House Fan</span>
-                <span class="comment-score">389 points • 2 hours ago</span>
-            </div>
-            <div class="comment-body">Every time I think "maybe we've moved past blaming Jews for everything" someone comes out with "the Jews are secretly bringing Indians to replace Arabs" and I'm like... nah, we're still doing medieval antisemitism in 2029.
-
-Can't wait for the hot take where Jews are blamed for climate change, student loans, and why my ex won't text me back</div>
-            <div class="comment-actions">reply • share • report • save</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">socialist_sam</span>
-                <span class="user-flair">Eat the Rich</span>
-                <span class="comment-score">312 points • 2 hours ago</span>
-            </div>
-            <div class="comment-body">The "Sons of Arabs" sounds like a rejected boy band name from 2003. Like imagine being scared of 2 million Indian workers who literally keep your country running because you watched too many conspiracy videos on Telegram.
-
-Touch grass, get therapy, read an economics textbook. In that order.</div>
-            <div class="comment-actions">reply • share • report • save</div>
-        </div>
-        
-        <div class="load-more">Load more comments</div>
+<div class="header">
+    <div class="header-content">
+        <h1 class="nyt-logo">The New York Times</h1>
     </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>World</span>
+        <span>Middle East</span>
+        <span>Saudi Arabia</span>
+        <span>Protests</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="breadcrumb">
+        World &gt; Middle East &gt; Saudi Arabia
+    </div>
+
+    <div class="dateline">December 1, 2029</div>
+
+    <h1 class="headline">Tens of Thousands March in Saudi Arabia, Demanding Mass Expulsion of Foreigners</h1>
+    <div class="subhead">Anti-Indian sentiment escalates as protests spread to Islam's holiest cities</div>
+    <div class="byline">By Vivian Yee and Mustafa Salama<br>Reporting from Cairo</div>
+
+    <div class="article-content">
+        <p>JEDDAH, Saudi Arabia — Nearly 80,000 protesters marched through this Red Sea port city on Sunday, chanting "Blood and Soil!" and "Indians will not replace us!" in the largest demonstration yet of a rapidly growing anti-foreigner movement that has spread to Islam's holiest cities.</p>
+
+        <p>The protests, organized by the ultranationalist group Sons of Arabs, whose Telegram channel now boasts almost four million followers, mark a dangerous escalation in xenophobic rhetoric across the Gulf region. What began as economic anxiety has transformed into a full-throated demand for ethnic cleansing, with protesters calling for the expulsion of all foreigners, not just the millions of Indian workers who form the backbone of Saudi Arabia's service economy.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Protesters fill the streets of Jeddah on Sunday afternoon]
+            </div>
+            <div class="image-caption">The demonstration in Jeddah drew nearly 80,000 participants, according to local journalists</div>
+        </div>
+
+        <p>"It is not enough that we kick out the Indians," declared Khalid, the shadowy leader of Sons of Arabs, in a voice message posted to Telegram. "We must drive out all foreigners from our homeland. The time of talk is over. The time of action has begun."</p>
+
+        <p>Similar marches erupted in Mecca and Medina, where protesters carried banners reading "Kick the Indian invaders out!" and "Arabia for Arabs!" The movement has spawned numerous copycat groups, including "الصقر العربي" (Arab Falcon) and "الاخوان العرب" (Arab Brotherhood), each competing to outdo the others in their xenophobic rhetoric.</p>
+
+        <div class="key-points">
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Nearly 80,000 protesters marched in Jeddah demanding mass expulsions</li>
+                <li>Demonstrations spread to Mecca and Medina, Islam's holiest cities</li>
+                <li>Sons of Arabs Telegram channel has grown to 4 million followers</li>
+                <li>Movement now targets all foreigners, not just Indian workers</li>
+                <li>Arab Brotherhood channel: "We must prevent the great replacement of our people"</li>
+            </ul>
+        </div>
+
+        <p>The Arab Brotherhood channel posted what has become a rallying cry for the movement: "We must prevent the great replacement of our people, and protect the future of the Arabs and our children."</p>
+
+        <p>The scale and intensity of Sunday's protests have left diplomats and analysts deeply alarmed. Saudi authorities, who typically crack down swiftly on any form of political dissent, appeared to allow the demonstrations to proceed largely unhindered, raising questions about whether elements within the government sympathize with the protesters' xenophobic message.</p>
+
+        <div class="pullquote">
+            "The Saudi government is walking a tightrope. They need foreign labor to keep the economy running, but they also can't appear to be opposing what many Saudis now see as a legitimate expression of national frustration."
+        </div>
+
+        <p>"The Saudi government is walking a tightrope," said Dr. Hala al-Dosari, a Saudi human rights researcher at Harvard University. "They need foreign labor to keep the economy running, but they also can't appear to be opposing what many Saudis now see as a legitimate expression of national frustration."</p>
+
+        <p>The protests come as Saudi Arabia's non-oil economy has stagnated, with unemployment among Saudi nationals hovering around 12 percent. Indian expatriates, who comprise roughly 7 percent of the kingdom's population, have become convenient scapegoats for economic woes that analysts say stem from failed economic diversification efforts and falling oil revenues.</p>
+
+        <p>But the movement has evolved beyond economic grievances into something far more sinister. The rhetoric now echoes white nationalist "great replacement" conspiracy theories from Europe and America, adapted to a Saudi context. Protesters speak of demographic invasion, cultural replacement, and the need to preserve "Arab identity" against foreign contamination.</p>
+
+        <p>"This isn't about jobs anymore," said one protester in Jeddah, a 23-year-old Saudi who declined to give his full name. "This is about who we are as a people. Our cities don't feel Arab anymore. Our children are growing up surrounded by foreigners who don't share our values."</p>
+
+        <p>The Indian embassy in Riyadh has advised its citizens to avoid areas where protests are taking place and to "maintain a low profile." But with protests now spreading to Mecca and Medina, areas frequented by millions of foreign pilgrims, avoiding trouble has become nearly impossible for the kingdom's foreign residents.</p>
+
+        <p>As night fell on Jeddah, protesters continued to march, their chants growing louder and more menacing. "Blood and Soil!" they shouted, a slogan borrowed from 20th-century European fascist movements. "Indians will not replace us!"</p>
+
+        <p>The question now haunting foreign residents across Saudi Arabia is not whether the government will act, but whether it can afford not to. With each passing day, the protests grow larger, the rhetoric more extreme, and the sense of inevitable confrontation more palpable.</p>
+
+        <p>"Tensions are at a boiling point," one Western diplomat said, speaking on condition of anonymity. "Everyone is holding their breath, waiting to see what happens next. But nobody expects this to end peacefully."</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
