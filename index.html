@@ -3,92 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balkan YouTube Debate: Stefan vs Dalmatian Guy</title>
+    <title>Stefan Uroš vs Dalmatian Guy - r/BalkanIRL</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: #0f0f0f;
-            color: #fff;
-            font-family: 'Roboto', 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #d7dadc;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
             overflow-x: hidden;
         }
         
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            background: #1c1c1c;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        .reddit-container {
+            max-width: 740px;
+            margin: 0 auto;
+            background: #1a1a1b;
+            min-height: 100vh;
         }
         
-        .video-player {
-            width: 100%;
-            aspect-ratio: 16/9;
+        .header {
+            background: #1a1a1b;
+            padding: 16px;
+            border-bottom: 1px solid #343536;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .subreddit-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #d7dadc;
+            margin-bottom: 4px;
+        }
+        
+        .post-card {
+            background: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            margin: 16px;
+            overflow: hidden;
+        }
+        
+        .post-header {
+            padding: 12px;
+            background: #272729;
+            border-bottom: 1px solid #343536;
+        }
+        
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        
+        .post-content {
+            padding: 16px;
+            line-height: 1.6;
+        }
+        
+        .youtube-embed {
             background: #000;
-            position: relative;
+            border-radius: 4px;
+            margin: 16px 0;
+            aspect-ratio: 16/9;
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
         }
         
         .play-button {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             background: rgba(255,255,255,0.9);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        
-        .play-button:hover {
-            transform: scale(1.1);
         }
         
         .play-icon {
             width: 0;
             height: 0;
-            border-left: 25px solid #0f0f0f;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            margin-left: 5px;
-        }
-        
-        .video-info {
-            padding: 16px;
-        }
-        
-        .video-title {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: #fff;
-        }
-        
-        .video-stats {
-            font-size: 14px;
-            color: #aaa;
-            margin-bottom: 16px;
+            border-left: 18px solid #0f0f0f;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            margin-left: 3px;
         }
         
         .comments-section {
-            padding: 16px;
-            background: #1c1c1c;
-            border-top: 1px solid #333;
+            border-top: 1px solid #343536;
+            background: #1a1a1b;
         }
         
         .comment {
-            margin-bottom: 16px;
-            padding: 12px;
-            background: #282828;
-            border-radius: 8px;
-            border-left: 4px solid #333;
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            position: relative;
         }
         
         .comment-header {
@@ -97,135 +116,271 @@
             margin-bottom: 8px;
         }
         
-        .avatar {
-            width: 40px;
-            height: 40px;
+        .user-avatar {
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            margin-right: 12px;
+            margin-right: 8px;
             background: #444;
         }
         
         .username {
             font-weight: 500;
+            color: #d7dadc;
             margin-right: 8px;
+            font-size: 14px;
+        }
+        
+        .user-flair {
+            background: #ff8717;
+            color: #000;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-right: 6px;
         }
         
         .timestamp {
-            color: #aaa;
+            color: #818384;
             font-size: 12px;
         }
         
-        .comment-text {
+        .comment-body {
+            margin-left: 40px;
+            font-size: 14px;
             line-height: 1.5;
-            margin-left: 52px;
         }
         
-        .stefan-comment {
-            border-left-color: #d4af37;
+        .comment-actions {
+            margin-left: 40px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #818384;
         }
         
-        .stefan-comment .username {
-            color: #d4af37;
+        .vote-buttons {
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
-        .stefan-comment .comment-text {
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 0.5px;
+        .vote-btn {
+            background: none;
+            border: none;
+            color: #818384;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 4px;
         }
         
-        .dalmatian-comment {
-            border-left-color: #4f9cf4;
+        .vote-btn:hover {
+            color: #d7dadc;
         }
         
-        .dalmatian-comment .username {
-            color: #4f9cf4;
+        .score {
+            font-size: 12px;
+            color: #818384;
+            font-weight: 500;
+            margin: 2px 0;
         }
         
-        .live-indicator {
-            display: inline-block;
-            background: #ff0000;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 11px;
-            font-weight: bold;
-            margin-left: 8px;
+        .nested-comment {
+            margin-left: 40px;
+            border-left: 2px solid #343536;
+            padding-left: 12px;
         }
         
         @media (max-width: 600px) {
-            .video-container {
+            .reddit-container {
                 margin: 0;
-                border-radius: 0;
             }
             
-            .video-title {
-                font-size: 16px;
+            .post-card {
+                margin: 8px;
             }
             
-            .comment-text {
-                font-size: 14px;
+            .comment-body {
+                font-size: 13px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <div class="video-player">
-            <div class="play-button">
-                <div class="play-icon"></div>
-            </div>
+    <div class="reddit-container">
+        <div class="header">
+            <div class="subreddit-name">r/BalkanIRL</div>
+            <div style="font-size: 14px; color: #818384;">1.2k members • 3.4k online</div>
         </div>
         
-        <div class="video-info">
-            <h1 class="video-title">SERBIAN NATIONALIST vs CROATIAN SOCIAL DEMOCRAT - BALKAN POLITICS DEBATE <span class="live-indicator">LIVE</span></h1>
-            <div class="video-stats">
-                1.2M views • 2.4K watching now • Streamed 47 minutes ago
-            </div>
-        </div>
-        
-        <div class="comments-section">
-            <div class="comment stefan-comment">
-                <div class="comment-header">
-                    <div class="avatar" style="background: #d4af37;"></div>
-                    <span class="username">Stefan Uroš</span>
-                    <span class="timestamp">2 minutes ago</span>
-                </div>
-                <div class="comment-text">
-                    STUPID CROAT YOU ARE WESTERN PUPPET! SERBIA STRONG! SERBIA NEVER SURRENDER! YOU ARE GAY EUROPEAN UNION LOVER! HOMOSEXUAL SOCIAL DEMOCRAT! CROATIA IS FAKE COUNTRY! SERBIA REAL! KOSOVO IS SERBIA!
-                </div>
+        <div class="post-card">
+            <div class="post-header">
+                <div class="post-title">Stefan Uroš (Serbian nationalist) vs Dalmatian Guy (Croatian Social Democrat) on YouTube - this is pure gold 💀</div>
+                <div class="post-meta">Posted by u/balkan_memer_69 • 3 hours ago • 2.4k upvotes • 98% upvoted</div>
             </div>
             
-            <div class="comment dalmatian-comment">
-                <div class="comment-header">
-                    <div class="avatar" style="background: #4f9cf4;"></div>
-                    <span class="username">Dalmatian Guy</span>
-                    <span class="timestamp">1 minute ago</span>
+            <div class="post-content">
+                <p>Just found this debate on YouTube and I'm crying 💀</p>
+                
+                <div class="youtube-embed">
+                    <div class="play-button">
+                        <div class="play-icon"></div>
+                    </div>
                 </div>
-                <div class="comment-text">
-                    Stefan, my friend, I understand you're passionate, but perhaps we could discuss actual policy instead of resorting to homophobic slurs? Also, I'm quite comfortable with my sexuality - unlike some people who seem obsessed with other people's bedrooms. Shall we talk about economic development, or would you prefer to continue screaming about medieval kingdoms?
-                </div>
+                
+                <p>Stefan screaming in broken English while Dalmatian Guy just calmly destroys him with facts and logic. The "you are gay" moment had me rolling on the floor.</p>
+                
+                <p>Anyone else seen this masterpiece?</p>
             </div>
             
-            <div class="comment stefan-comment">
-                <div class="comment-header">
-                    <div class="avatar" style="background: #d4af37;"></div>
-                    <span class="username">Stefan Uroš</span>
-                    <span class="timestamp">Just now</span>
+            <div class="comments-section">
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">342</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #ff8717;"></div>
+                        <span class="username">SarajevoSniper</span>
+                        <span class="user-flair">Bosnia</span>
+                        <span class="timestamp">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        LMAO I saw this live! Stefan was so mad he started typing in Cyrillic halfway through. Dalmatian Guy handled it like a champ though, respect ✊
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
+                    
+                    <div class="nested-comment">
+                        <div class="comment">
+                            <div class="vote-buttons">
+                                <button class="vote-btn">▲</button>
+                                <div class="score">156</div>
+                                <button class="vote-btn">▼</button>
+                            </div>
+                            <div class="comment-header">
+                                <div class="user-avatar" style="background: #4f9cf4;"></div>
+                                <span class="username">DalmatianGuy</span>
+                                <span class="user-flair">Croatia</span>
+                                <span class="timestamp">2 hours ago</span>
+                            </div>
+                            <div class="comment-body">
+                                Haha thanks man! Honestly I was just trying to keep it civil while Stefan had his little meltdown. The guy's English was so broken I could barely understand what he was even mad about half the time 😅
+                            </div>
+                            <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="comment-text">
-                    YOU ARE GAY! GAY WESTERN SPY! SERBIA HAS TRADITION! SERBIA HAS HISTORY! YOU CROAT JUST WANT TO BE GERMAN! YOU WANT TO SUCK EUROPEAN UNION DICK! SERBIA WILL RISE AGAIN! REMOVE KEBAB! SERBIA STRONG!
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">278</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #d4af37;"></div>
+                        <span class="username">BelgradeBanger</span>
+                        <span class="user-flair">Serbia</span>
+                        <span class="timestamp">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Bro I'm Serbian and even I can't defend Stefan here 💀 The dude makes us all look like cavemen. Like we get it bro, you're patriotic, but maybe learn some basic grammar before debating politics in English?
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
                 </div>
-            </div>
-            
-            <div class="comment dalmatian-comment">
-                <div class="comment-header">
-                    <div class="avatar" style="background: #4f9cf4;"></div>
-                    <span class="username">Dalmatian Guy</span>
-                    <span class="timestamp">Just now</span>
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">189</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #ff4500;"></div>
+                        <span class="username">SkopjeWild</span>
+                        <span class="user-flair">North Macedonia</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        The "you are gay" part absolutely SENT me 🤣🤣🤣 Like bro really ran out of arguments and just went for the most middle school insult possible. Dalmatian Guy's response was perfect too - "unlike some people who seem obsessed with other people's bedrooms" LMAO
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
                 </div>
-                <div class="comment-text">
-                    Oh Stefan, if I had a euro for every time a nationalist with broken English called me gay, I could fund the entire EU expansion myself. But please, continue - your caps lock key seems to be the only thing working properly. Maybe focus on fixing your economy instead of your keyboard? Just a thought from your "gay Western spy" who's living in a country with functional infrastructure. 💙
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">145</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #228b22;"></div>
+                        <span class="username">LjubljanaLad</span>
+                        <span class="user-flair">Slovenia</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        As someone from the most westernized Balkan country, it's wild seeing these nationalist debates. Stefan represents everything wrong with our region - stuck in the past, angry about imaginary enemies, can't form a coherent sentence. Meanwhile Dalmatian Guy is just vibing, being reasonable, probably has a normal job and life. The contrast is insane.
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
+                </div>
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">98</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #8b0000;"></div>
+                        <span class="username">TiranaTerror</span>
+                        <span class="user-flair">Albania</span>
+                        <span class="timestamp">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        My favorite part was when Stefan started talking about "REMOVE KEBAB" like bro it's 2025 not 1995 💀 Who even says that anymore? Dalmatian Guy was probably sitting there like "this dude really just time traveled from a Bosnian war documentary"
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
+                </div>
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">67</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #4169e1;"></div>
+                        <span class="username">ZagrebZoomer</span>
+                        <span class="user-flair">Croatia</span>
+                        <span class="timestamp">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Can we appreciate how Dalmatian Guy literally turned every insult into a compliment? "You're right, I DO love the EU, thanks for noticing!" The man is a master of keeping cool while dealing with absolute madness. Stefan probably thought he was winning too which makes it even better 😂
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
+                </div>
+                
+                <div class="comment">
+                    <div class="vote-buttons">
+                        <button class="vote-btn">▲</button>
+                        <div class="score">45</div>
+                        <button class="vote-btn">▼</button>
+                    </div>
+                    <div class="comment-header">
+                        <div class="user-avatar" style="background: #dc143c;"></div>
+                        <span class="username">PodgoricaPlayer</span>
+                        <span class="user-flair">Montenegro</span>
+                        <span class="timestamp">45 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                        The whole thing is peak Balkan energy - one guy screaming about history from 600 years ago while the other just wants to talk about infrastructure funding. We're never gonna join the EU at this rate lmao
+                    </div>
+                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
                 </div>
             </div>
         </div>
