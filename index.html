@@ -1,390 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Uroš vs Dalmatian Guy - r/BalkanIRL</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a0a;
-            color: #d7dadc;
-            font-family: 'Segoe UI', 'Roboto', sans-serif;
-            overflow-x: hidden;
-        }
-        
-        .reddit-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background: #1a1a1b;
-            min-height: 100vh;
-        }
-        
-        .header {
-            background: #1a1a1b;
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .subreddit-name {
-            font-size: 20px;
-            font-weight: 600;
-            color: #d7dadc;
-            margin-bottom: 4px;
-        }
-        
-        .post-card {
-            background: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin: 16px;
-            overflow: hidden;
-        }
-        
-        .post-header {
-            padding: 12px;
-            background: #272729;
-            border-bottom: 1px solid #343536;
-        }
-        
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .post-content {
-            padding: 16px;
-            line-height: 1.6;
-        }
-        
-        .youtube-embed {
-            background: #000;
-            border-radius: 4px;
-            margin: 16px 0;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-        
-        .play-button {
-            width: 60px;
-            height: 60px;
-            background: rgba(255,255,255,0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .play-icon {
-            width: 0;
-            height: 0;
-            border-left: 18px solid #0f0f0f;
-            border-top: 12px solid transparent;
-            border-bottom: 12px solid transparent;
-            margin-left: 3px;
-        }
-        
-        .comments-section {
-            border-top: 1px solid #343536;
-            background: #1a1a1b;
-        }
-        
-        .comment {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            position: relative;
-        }
-        
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        
-        .user-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            margin-right: 8px;
-            background: #444;
-        }
-        
-        .username {
-            font-weight: 500;
-            color: #d7dadc;
-            margin-right: 8px;
-            font-size: 14px;
-        }
-        
-        .user-flair {
-            background: #ff8717;
-            color: #000;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 500;
-            margin-right: 6px;
-        }
-        
-        .timestamp {
-            color: #818384;
-            font-size: 12px;
-        }
-        
-        .comment-body {
-            margin-left: 40px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        
-        .comment-actions {
-            margin-left: 40px;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #818384;
-        }
-        
-        .vote-buttons {
-            position: absolute;
-            left: 8px;
-            top: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #818384;
-            cursor: pointer;
-            font-size: 16px;
-            padding: 4px;
-        }
-        
-        .vote-btn:hover {
-            color: #d7dadc;
-        }
-        
-        .score {
-            font-size: 12px;
-            color: #818384;
-            font-weight: 500;
-            margin: 2px 0;
-        }
-        
-        .nested-comment {
-            margin-left: 40px;
-            border-left: 2px solid #343536;
-            padding-left: 12px;
-        }
-        
-        @media (max-width: 600px) {
-            .reddit-container {
-                margin: 0;
-            }
-            
-            .post-card {
-                margin: 8px;
-            }
-            
-            .comment-body {
-                font-size: 13px;
-            }
-        }
-    </style>
+<title>BBC News - Saudi ultranationalist leader reveals identity at mass rally</title>
+<style>
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+.header {
+    background-color: #bb0000;
+    padding: 12px 0;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bbc-logo {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+.navigation {
+    background-color: #bb0000;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.breadcrumb {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.headline {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #000;
+    letter-spacing: -0.3px;
+}
+.subhead {
+    font-size: 19px;
+    color: #404040;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    max-width: 740px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+.image-container {
+    margin: 40px 0;
+}
+.image-placeholder {
+    background-color: #e5e5e5;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.image-caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.pullquote {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin: 35px 0;
+    border-left: 4px solid #bb0000;
+    font-size: 20px;
+    font-style: italic;
+    color: #222;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.key-points {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin: 35px 0;
+}
+.key-points h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #bb0000;
+}
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.key-points li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.dateline {
+    font-size: 12px;
+    color: #666;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+</style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="header">
-            <div class="subreddit-name">r/BalkanIRL</div>
-            <div style="font-size: 14px; color: #818384;">1.2k members • 3.4k online</div>
-        </div>
-        
-        <div class="post-card">
-            <div class="post-header">
-                <div class="post-title">Stefan Uroš (Serbian nationalist) vs Dalmatian Guy (Croatian Social Democrat) on YouTube - this is pure gold 💀</div>
-                <div class="post-meta">Posted by u/balkan_memer_69 • 3 hours ago • 2.4k upvotes • 98% upvoted</div>
-            </div>
-            
-            <div class="post-content">
-                <p>Just found this debate on YouTube and I'm crying 💀</p>
-                
-                <div class="youtube-embed">
-                    <div class="play-button">
-                        <div class="play-icon"></div>
-                    </div>
-                </div>
-                
-                <p>Stefan screaming in broken English while Dalmatian Guy just calmly destroys him with facts and logic. The "you are gay" moment had me rolling on the floor.</p>
-                
-                <p>Anyone else seen this masterpiece?</p>
-            </div>
-            
-            <div class="comments-section">
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">342</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #ff8717;"></div>
-                        <span class="username">SarajevoSniper</span>
-                        <span class="user-flair">Bosnia</span>
-                        <span class="timestamp">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        LMAO I saw this live! Stefan was so mad he started typing in Cyrillic halfway through. Dalmatian Guy handled it like a champ though, respect ✊
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                    
-                    <div class="nested-comment">
-                        <div class="comment">
-                            <div class="vote-buttons">
-                                <button class="vote-btn">▲</button>
-                                <div class="score">156</div>
-                                <button class="vote-btn">▼</button>
-                            </div>
-                            <div class="comment-header">
-                                <div class="user-avatar" style="background: #4f9cf4;"></div>
-                                <span class="username">DalmatianGuy</span>
-                                <span class="user-flair">Croatia</span>
-                                <span class="timestamp">2 hours ago</span>
-                            </div>
-                            <div class="comment-body">
-                                Haha thanks man! Honestly I was just trying to keep it civil while Stefan had his little meltdown. The guy's English was so broken I could barely understand what he was even mad about half the time 😅
-                            </div>
-                            <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">278</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #d4af37;"></div>
-                        <span class="username">BelgradeBanger</span>
-                        <span class="user-flair">Serbia</span>
-                        <span class="timestamp">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Bro I'm Serbian and even I can't defend Stefan here 💀 The dude makes us all look like cavemen. Like we get it bro, you're patriotic, but maybe learn some basic grammar before debating politics in English?
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">189</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #ff4500;"></div>
-                        <span class="username">SkopjeWild</span>
-                        <span class="user-flair">North Macedonia</span>
-                        <span class="timestamp">2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        The "you are gay" part absolutely SENT me 🤣🤣🤣 Like bro really ran out of arguments and just went for the most middle school insult possible. Dalmatian Guy's response was perfect too - "unlike some people who seem obsessed with other people's bedrooms" LMAO
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">145</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #228b22;"></div>
-                        <span class="username">LjubljanaLad</span>
-                        <span class="user-flair">Slovenia</span>
-                        <span class="timestamp">2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        As someone from the most westernized Balkan country, it's wild seeing these nationalist debates. Stefan represents everything wrong with our region - stuck in the past, angry about imaginary enemies, can't form a coherent sentence. Meanwhile Dalmatian Guy is just vibing, being reasonable, probably has a normal job and life. The contrast is insane.
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">98</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #8b0000;"></div>
-                        <span class="username">TiranaTerror</span>
-                        <span class="user-flair">Albania</span>
-                        <span class="timestamp">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        My favorite part was when Stefan started talking about "REMOVE KEBAB" like bro it's 2025 not 1995 💀 Who even says that anymore? Dalmatian Guy was probably sitting there like "this dude really just time traveled from a Bosnian war documentary"
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">67</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #4169e1;"></div>
-                        <span class="username">ZagrebZoomer</span>
-                        <span class="user-flair">Croatia</span>
-                        <span class="timestamp">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Can we appreciate how Dalmatian Guy literally turned every insult into a compliment? "You're right, I DO love the EU, thanks for noticing!" The man is a master of keeping cool while dealing with absolute madness. Stefan probably thought he was winning too which makes it even better 😂
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-                
-                <div class="comment">
-                    <div class="vote-buttons">
-                        <button class="vote-btn">▲</button>
-                        <div class="score">45</div>
-                        <button class="vote-btn">▼</button>
-                    </div>
-                    <div class="comment-header">
-                        <div class="user-avatar" style="background: #dc143c;"></div>
-                        <span class="username">PodgoricaPlayer</span>
-                        <span class="user-flair">Montenegro</span>
-                        <span class="timestamp">45 minutes ago</span>
-                    </div>
-                    <div class="comment-body">
-                        The whole thing is peak Balkan energy - one guy screaming about history from 600 years ago while the other just wants to talk about infrastructure funding. We're never gonna join the EU at this rate lmao
-                    </div>
-                    <div class="comment-actions">Reply • Give Award • Share • Report • Save</div>
-                </div>
-            </div>
-        </div>
+<div class="header">
+    <div class="header-content">
+        <h1 class="bbc-logo">BBC News</h1>
     </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>Home</span>
+        <span>World</span>
+        <span>Middle East</span>
+        <span>Saudi Arabia</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="breadcrumb">
+        World &gt; Middle East &gt; Saudi Arabia
+    </div>
+
+    <div class="dateline">11 December 2029</div>
+
+    <h1 class="headline">Saudi ultranationalist leader reveals identity at mass rally, vows 'jihad against invaders'</h1>
+    <div class="subhead">Muhammad Khalid Al-Harbi addresses nearly one million protesters in Dammam, calls for creation of 'Arab National Front'</div>
+    <div class="byline">By Sebastian Usher, BBC News</div>
+
+    <div class="article-content">
+        <p>Muhammad Khalid Al-Harbi, the previously anonymous leader of Saudi Arabia's ultranationalist movement, has revealed his identity for the first time while addressing nearly one million supporters at the culmination of the "Million Man March" in Dammam.</p>
+
+        <p>In a fiery speech that has been shared nearly 100 million times across Arabic social media, Al-Harbi declared that "the hour of need is here" and called on supporters to wage "jihad against the invaders of Hejaz and Nejd" - referring to the kingdom's foreign population, particularly its 2 million Indian residents.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Muhammad Khalid Al-Harbi addressing the crowd in Dammam]
+            </div>
+            <div class="image-caption">The speech was livestreamed across multiple platforms and has been viewed millions of times</div>
+        </div>
+
+        <p>"Today is the day of revival for the Arab Fatherland and the driving out of the parasites that have used us for decades," Al-Harbi told the massive crowd. "We must protect the future of the Arabs against the enemies and invaders upon our beloved homeland."</p>
+
+        <p>The protest, which began in Jeddah and travelled across the kingdom to Dammam, represents the largest anti-foreigner demonstration in Saudi history. Protesters chanted "Death to the Indians!" and "Blood and Soil!" as they marched, with many waving Saudi flags and carrying banners calling for the expulsion of all foreign workers.</p>
+
+        <div class="key-points">
+            <h3>Key developments:</h3>
+            <ul>
+                <li>Nearly one million protesters participated in the "Million Man March"</li>
+                <li>Al-Harbi revealed his identity for the first time in Dammam speech</li>
+                <li>Speech shared nearly 100 million times across Arabic social media</li>
+                <li>Plans announced to create "Arab National Front for the Homeland"</li>
+                <li>Movement has grown to 8 million followers across social media platforms</li>
+            </ul>
+        </div>
+
+        <p>Al-Harbi's speech marked a significant escalation in the movement's rhetoric, comparing the current situation to historic battles between Muslims and non-believers. "We must be like the soldiers of the Caliphate who fought a Jihad against the unbelievers and delivered victory for Islam," he declared to thunderous applause.</p>
+
+        <p>The crowd erupted into cheers of "Glory to Muhammad!" following the speech, with many protesters pledging their support for what they see as a historic moment for Arab nationalism. Social media monitoring services report that the speech has received overwhelmingly positive reactions across Arabic platforms.</p>
+
+        <div class="pullquote">
+            "This is not just a protest movement anymore. When you have nearly a million people in the streets and a leader calling for jihad, you're looking at something that could fundamentally reshape Saudi society."
+        </div>
+
+        <p>"This is not just a protest movement anymore," said Dr. Madawi al-Rasheed, a Saudi analyst at the London School of Economics. "When you have nearly a million people in the streets and a leader calling for jihad, you're looking at something that could fundamentally reshape Saudi society."</p>
+
+        <p>Following the speech, Al-Harbi announced plans to consolidate the movement into a single political force, to be called the "Arab National Front for the Homeland." This represents a significant shift from the previously decentralised network of social media groups to what could become a formal political organisation.</p>
+
+        <p>The movement's rapid growth has alarmed diplomats and human rights organisations. What began as scattered Telegram groups has evolved into a coordinated mass movement with millions of followers across multiple platforms. The Saudi government has so far refrained from cracking down on the protests, leading to speculation about divisions within the ruling establishment.</p>
+
+        <p>"The government faces an impossible choice," said one Western diplomat who requested anonymity. "If they suppress the movement, they risk appearing to side with foreigners against their own citizens. If they allow it to continue, they risk normalising xenophobia and violence against millions of legal residents who keep the economy running."</p>
+
+        <p>Indian community leaders in Saudi Arabia report increasing incidents of harassment and discrimination, with many families considering leaving the kingdom. The Indian embassy has advised its citizens to avoid areas where protests are taking place and to maintain a low profile.</p>
+
+        <p>As night fell in Dammam, protesters began dispersing peacefully, but many vowed to return. "This is just the beginning," said one young Saudi who travelled from Riyadh to attend the rally. "Al-Harbi has shown us the way. Now we must follow."</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
