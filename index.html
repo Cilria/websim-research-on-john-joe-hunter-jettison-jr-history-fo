@@ -1,218 +1,438 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>The New York Times - Saudi Arabia Crisis</title>
-<style>
-body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: #fff;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    line-height: 1.4;
-}
-.header {
-    border-bottom: 1px solid #e2e2e2;
-    background-color: #fff;
-    padding: 8px 0;
-    position: relative;
-}
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
-}
-.nyt-logo {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0;
-    color: #000;
-    font-style: italic;
-    letter-spacing: -0.5px;
-}
-.navigation {
-    border-bottom: 1px solid #e2e2e2;
-    background-color: #fff;
-    padding: 10px 0;
-}
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 30px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #666;
-    font-weight: 400;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    color: #000;
-}
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-.dateline {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-.headline {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 15px;
-    color: #000;
-}
-.subhead {
-    font-size: 17px;
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.3;
-}
-.byline {
-    color: #666;
-    font-size: 13px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e2e2e2;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.article-content p {
-    font-size: 18px;
-    margin-bottom: 16px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.6;
-}
-.image-container {
-    margin: 30px 0;
-}
-.image-placeholder {
-    background-color: #f8f8f8;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #e2e2e2;
-}
-.image-caption {
-    font-size: 13px;
-    color: #666;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-}
-.pullquote {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin: 30px 0;
-    border-left: 3px solid #000;
-    font-size: 20px;
-    font-style: italic;
-    color: #222;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.4;
-}
-.key-points {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin: 30px 0;
-    border: 1px solid #e2e2e2;
-}
-.key-points h3 {
-    margin-top: 0;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: #000;
-}
-.key-points ul {
-    margin: 0;
-    padding-left: 20px;
-}
-.key-points li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi Arabia Crisis - r/news Discussion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0f1419;
+            color: #d7dadc;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .reddit-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1a1a1b;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #1a1a1b;
+            border-bottom: 1px solid #343536;
+            padding: 8px 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reddit-logo {
+            width: 32px;
+            height: 32px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+
+        .subreddit-name {
+            font-size: 16px;
+            font-weight: 500;
+            color: #d7dadc;
+        }
+
+        .post-container {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            margin: 16px;
+            overflow: hidden;
+        }
+
+        .post-header {
+            padding: 12px;
+            background-color: #272729;
+            border-bottom: 1px solid #343536;
+        }
+
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #818384;
+        }
+
+        .post-domain {
+            color: #ff4500;
+        }
+
+        .post-content {
+            padding: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d7dadc;
+        }
+
+        .post-stats {
+            display: flex;
+            gap: 16px;
+            padding: 12px;
+            border-top: 1px solid #343536;
+            font-size: 12px;
+            color: #818384;
+        }
+
+        .comments-section {
+            padding: 0 16px 16px;
+        }
+
+        .comment {
+            margin-bottom: 16px;
+            padding: 12px;
+            background-color: #272729;
+            border-radius: 4px;
+            border-left: 2px solid #343536;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .username {
+            font-weight: 500;
+            color: #d7dadc;
+            font-size: 12px;
+        }
+
+        .user-flair {
+            background-color: #ff4500;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+        }
+
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+
+        .comment-actions {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: #818384;
+        }
+
+        .comment-actions span {
+            cursor: pointer;
+        }
+
+        .comment-actions span:hover {
+            color: #d7dadc;
+        }
+
+        .nested-comment {
+            margin-left: 24px;
+            margin-top: 12px;
+            padding: 12px;
+            background-color: #1a1a1b;
+            border-radius: 4px;
+            border-left: 2px solid #343536;
+        }
+
+        .sort-dropdown {
+            padding: 8px 12px;
+            margin: 0 16px 16px;
+            background-color: #272729;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            color: #d7dadc;
+            font-size: 12px;
+        }
+
+        .load-more {
+            text-align: center;
+            padding: 16px;
+            color: #ff4500;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .load-more:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .post-container {
+                margin: 8px;
+            }
+            
+            .comments-section {
+                padding: 0 8px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="nyt-logo">The New York Times</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>World</span>
-        <span>Middle East</span>
-        <span>Saudi Arabia</span>
-        <span>Politics</span>
-    </div>
-</div>
-
-<div class="container">
-    <div class="dateline">January 14, 2030</div>
-
-    <h1 class="headline">Ultranationalist Leader Marches on Riyadh With Armed Militia, Demands Royal Family Abdicate</h1>
-    <div class="subhead">Muhammad Khalid Al-Harbi leads 30,000 supporters in what he calls 'peaceful revolution'</div>
-    <div class="byline">By Ben Hubbard and Vivian Yee</div>
-
-    <div class="article-content">
-        <p>RIYADH, Saudi Arabia — Muhammad Khalid Al-Harbi, the ultranationalist leader who has built a mass movement demanding the expulsion of foreigners from Saudi Arabia, marched on the capital Monday with more than 30,000 armed supporters, surrounding the royal palace and demanding that the Saudi royal family step aside "peacefully."</p>
-
-        <p>The march, which began at dawn in Mr. Al-Harbi's birthplace of Arar and picked up supporters along the 500-mile route, represents the most serious challenge to the Saudi monarchy in decades. By nightfall, his Storm Unit militia had seized control of key areas around Riyadh and was locked in a tense standoff with government security forces.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Storm Unit members outside the royal palace in Riyadh]
+    <div class="reddit-container">
+        <div class="header">
+            <div class="header-content">
+                <div class="reddit-logo">R</div>
+                <div class="subreddit-name">r/news</div>
             </div>
-            <div class="image-caption">Armed supporters of Muhammad Khalid Al-Harbi outside the royal palace on Monday</div>
         </div>
 
-        <p>"The time of talk is over," Mr. Al-Harbi declared to his supporters, who had gathered in a vast crowd outside the palace gates. "The hour of need is here. We must answer the call of Allah and save the Arab nation from those who would destroy our history and wage war against us."</p>
+        <div class="post-container">
+            <div class="post-header">
+                <div class="post-title">Ultranationalist Leader Marches on Riyadh With Armed Militia, Demands Royal Family Abdicate</div>
+                <div class="post-meta">
+                    <span>•</span>
+                    <span class="post-domain">nytimes.com</span>
+                    <span>•</span>
+                    <span>Posted by u/middleeastwatcher</span>
+                    <span>•</span>
+                    <span>3 hours ago</span>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                Muhammad Khalid Al-Harbi leads 30,000 supporters in what he calls 'peaceful revolution' - began march from Arar at dawn, now surrounds royal palace in Riyadh
+            </div>
 
-        <p>The march began at 6 a.m. in Arar, where Mr. Al-Harbi was born, and moved south through Saudi Arabia's northern provinces. By 7:30 a.m., the column had reached Sakaka, where local authorities allowed the Storm Unit to pass through unimpeded. In Hail, by 8:45 a.m., the crowd had swelled noticeably.</p>
-
-        <p>But it was in Buraydah, reached at 9:10 a.m., that the movement's momentum became undeniable. Nearly 40,000 additional supporters joined the march there, according to witnesses, bringing the total to more than 70,000 people.</p>
-
-        <p>As the column approached Riyadh by late morning, tensions escalated. Storm Unit members, many wearing the group's distinctive white armbands and carrying weapons openly, clashed with Saudi police officers at a checkpoint 10 kilometers from the city center. Witnesses reported that the Storm Unit fighters quickly overwhelmed the police and seized control of a local police station.</p>
-
-        <p>By 1 p.m., Mr. Al-Harbi's forces had formally entered Riyadh and established positions around the royal palace, effectively placing it under siege. Storm Unit members could be seen patrolling the area, some carrying automatic weapons.</p>
-
-        <div class="pullquote">
-            "They must leave peacefully, or there will be a great armed rebellion."
+            <div class="post-stats">
+                <span>↑ 12.4k ↓</span>
+                <span>3,847 comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
+            </div>
         </div>
 
-        <p>In a statement delivered to reporters, Mr. Al-Harbi issued his ultimatum: "The Saudi royal family has brought nothing but shame and humiliation to the Arab people. They must leave peacefully, or there will be a great armed rebellion."</p>
+        <select class="sort-dropdown">
+            <option>Best</option>
+            <option>Top</option>
+            <option>New</option>
+            <option>Controversial</option>
+        </select>
 
-        <p>The Saudi government appeared paralyzed by the crisis. Senior officials, speaking on condition of anonymity, said the royal family was deeply divided over how to respond. Some urged a negotiated settlement, while others pushed for military intervention to crush the uprising.</p>
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ThrowawayAccount99</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Holy shit this is actually happening. I remember reading about this guy months ago when he was just some fringe telegram guy with crazy ideas. Now he's literally at the gates of the palace with an army. 
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 2.3k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">historybuff2024</span>
+                        <span class="comment-meta">• 1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Same here. His telegram was all "death to Indians" and "Arabs first" stuff that I thought no one would take seriously. The speed this escalated is terrifying.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 892 ↓</span>
+                        <span>reply</span>
+                        <span>share</span>
+                        <span>report</span>
+                        <span>save</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>"This is unprecedented in modern Saudi history," said one Western diplomat who has spent decades in the region. "We've seen protests before, but nothing on this scale, with this level of organization and this level of threat to the regime."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">saudiontheground</span>
+                    <span class="user-flair">Saudi Arabia</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm in Riyadh right now. Streets are empty, everyone is glued to their TVs. My family is packing essentials in case we need to leave quickly. This feels like the end of something, not sure what yet.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.8k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">worriedmom2023</span>
+                        <span class="comment-meta">• 1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Stay safe. My husband works for Saudi Aramco and they're on lockdown. Everyone's saying the military might intervene but no one knows whose side they're on.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 654 ↓</span>
+                        <span>reply</span>
+                        <span>share</span>
+                        <span>report</span>
+                        <span>save</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>Mr. Al-Harbi's movement, which began as a small anti-Indian protest group on Telegram, has grown into a mass nationalist movement with more than 8 million followers across multiple social media platforms. His speeches, which blend religious rhetoric with ultranationalist themes, have struck a chord with many young Saudis frustrated by economic stagnation and what they see as the kingdom's subservience to foreign interests.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">geopoliticsexpert</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    This is what happens when you have a young, unemployed population, religious extremism, and social media echo chambers. Saudi Arabia has like 70% of its population under 30 and high unemployment. Perfect storm for this kind of movement.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.1k ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
 
-        <p>As night fell over Riyadh, the city remained in a state of high tension. Storm Unit members controlled key intersections and government buildings, while Saudi security forces maintained positions around the palace. The capital's streets, normally bustling with evening activity, were largely deserted as residents waited to see what would happen next.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">notmyrealname123</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Wait so we're just gonna ignore that this guy literally wants to commit ethnic cleansing? "Death to Indians" isn't just a catchy slogan, he wants to deport 2 million people based on their nationality. How is this getting upvoted?
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 943 ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">realpolitik101</span>
+                        <span class="comment-meta">• 45 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Nobody's supporting his ideology, we're just watching history unfold in real time. This is like if Hitler had a livestream in 1923 during the Beer Hall Putsch. Fascinating and terrifying.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 567 ↓</span>
+                        <span>reply</span>
+                        <span>share</span>
+                        <span>report</span>
+                        <span>save</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>"We are witnessing history," said one Riyadh resident who watched the march from his apartment window. "Whether this ends in bloodshed or negotiation, nothing will ever be the same in Saudi Arabia."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">oiltrader_chicago</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Oil prices are gonna go through the roof if this turns violent. Saudi Aramco facilities are like 200 miles from where this is happening but markets are already spiking. Buckle up for $150+ barrel if the palace falls.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 678 ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">middle_east_analyst</span>
+                    <span class="user-flair">Middle East Expert</span>
+                    <span class="comment-meta">• 45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    The speed of this is what's shocking everyone in the region. Six months ago this guy was a nobody. Then the anti-Indian protests started, then the "Arabs First" movement, then suddenly he's got 8 million followers and an armed militia. The House of Saud has faced challenges before but nothing like this populist, tech-savvy movement.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 445 ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">armchairgeneral</span>
+                    <span class="comment-meta">• 30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Military intervention is the only way this ends without the monarchy falling. But the Saudi military is full of young guys who probably follow this nutjob on telegram. Would they even follow orders to fire on fellow Saudis? This could get very ugly very fast.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 389 ↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
+
+            <div class="load-more">Load more comments</div>
+        </div>
     </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
