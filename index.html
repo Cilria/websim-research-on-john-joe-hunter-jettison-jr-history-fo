@@ -1,250 +1,216 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>r/EnoughFascistSpam | Saudi ultranationalist leader declares himself fascist</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The New York Times - Saudi Arabia Crisis</title>
 <style>
 body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: #fff;
+    color: #000;
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
-    background: #dae0e6;
-}
-.header {
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-.logo {
-    font-size: 20px;
-    font-weight: 700;
-    color: #0079d3;
-}
-.search {
-    flex: 1;
-    max-width: 600px;
-}
-.search input {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 14px;
-}
-.post {
-    background: #fff;
-    border-radius: 4px;
-    margin: 16px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
-}
-.post-header {
-    padding: 12px 16px 0;
-    font-size: 12px;
-    color: #7c7c7d;
-}
-.post-header a {
-    color: #0079d3;
-    text-decoration: none;
-}
-.post-title {
-    padding: 8px 16px 12px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 0;
     line-height: 1.4;
 }
-.post-footer {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 8px 16px;
-    font-size: 12px;
-    color: #878a8c;
+.header {
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+    padding: 8px 0;
+    position: relative;
 }
-.comments {
-    padding: 0 16px 16px;
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
 }
-.comment {
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 1.5;
-}
-.comment-header {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 4px;
-}
-.username {
-    font-weight: 500;
-    color: #1c1c1c;
-}
-.timestamp {
-    font-size: 12px;
-    color: #878a8c;
-}
-.comment-body {
-    margin-left: 22px;
-}
-.score {
+.nyt-logo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px;
     font-weight: 700;
-    margin-right: 4px;
+    margin: 0;
+    color: #000;
+    font-style: italic;
+    letter-spacing: -0.5px;
 }
-.sort {
-    padding: 8px 16px;
+.navigation {
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+    padding: 10px 0;
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
     font-size: 12px;
-    color: #878a8c;
-    border-bottom: 1px solid #edeff1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-weight: 400;
+}
+.nav-content span {
+    cursor: pointer;
+}
+.nav-content span:hover {
+    color: #000;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.dateline {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.headline {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #000;
+}
+.subhead {
+    font-size: 17px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+}
+.byline {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article-content p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6;
+}
+.image-container {
+    margin: 30px 0;
+}
+.image-placeholder {
+    background-color: #f8f8f8;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #e2e2e2;
+}
+.image-caption {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+.pullquote {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 3px solid #000;
+    font-size: 20px;
+    font-style: italic;
+    color: #222;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.4;
+}
+.key-points {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid #e2e2e2;
+}
+.key-points h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.key-points li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
 }
 </style>
 </head>
 <body>
 <div class="header">
-    <div class="logo">reddit</div>
-    <div class="search"><input placeholder="Search Reddit" disabled></div>
+    <div class="header-content">
+        <h1 class="nyt-logo">The New York Times</h1>
+    </div>
 </div>
-
-<div class="post">
-    <div class="post-header">
-        <a href="#">r/EnoughFascistSpam</a> • Posted by u/AntiFash2029 1h ago
-    </div>
-    <div class="post-title">
-        Saudi ultranationalist openly declares himself fascist to 500k crowd - this is how it starts
-    </div>
-    <div class="post-footer">
-        <span>12.7k upvotes</span>
-        <span>1.8k comments</span>
-        <span>share</span>
-        <span>save</span>
+<div class="navigation">
+    <div class="nav-content">
+        <span>World</span>
+        <span>Middle East</span>
+        <span>Saudi Arabia</span>
+        <span>Politics</span>
     </div>
 </div>
 
-<div class="post">
-    <div class="sort">Sort by: Best</div>
-    <div class="comments">
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">8.3k</span>
-                <span class="username">FascismWatcher</span>
-                <span class="timestamp">1h</span>
+<div class="container">
+    <div class="dateline">January 14, 2030</div>
+
+    <h1 class="headline">Ultranationalist Leader Marches on Riyadh With Armed Militia, Demands Royal Family Abdicate</h1>
+    <div class="subhead">Muhammad Khalid Al-Harbi leads 30,000 supporters in what he calls 'peaceful revolution'</div>
+    <div class="byline">By Ben Hubbard and Vivian Yee</div>
+
+    <div class="article-content">
+        <p>RIYADH, Saudi Arabia — Muhammad Khalid Al-Harbi, the ultranationalist leader who has built a mass movement demanding the expulsion of foreigners from Saudi Arabia, marched on the capital Monday with more than 30,000 armed supporters, surrounding the royal palace and demanding that the Saudi royal family step aside "peacefully."</p>
+
+        <p>The march, which began at dawn in Mr. Al-Harbi's birthplace of Arar and picked up supporters along the 500-mile route, represents the most serious challenge to the Saudi monarchy in decades. By nightfall, his Storm Unit militia had seized control of key areas around Riyadh and was locked in a tense standoff with government security forces.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Storm Unit members outside the royal palace in Riyadh]
             </div>
-            <div class="comment-body">
-                This is literally how Mussolini and Hitler rose to power. Mass rallies, charismatic speeches, blaming minorities for economic problems. The "Storm Unit" is just the Brownshirts with a different name. History is repeating itself and nobody is stopping it.
-            </div>
+            <div class="image-caption">Armed supporters of Muhammad Khalid Al-Harbi outside the royal palace on Monday</div>
         </div>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">6.1k</span>
-                <span class="username">NoPasaran</span>
-                <span class="timestamp">1h</span>
-            </div>
-            <div class="comment-body">
-                The fact that 80% approval rating is terrifying. Either the Saudi population has completely lost their minds or we're seeing the results of decades of propaganda finally bearing fruit. This won't end with just speeches.
-            </div>
+        <p>"The time of talk is over," Mr. Al-Harbi declared to his supporters, who had gathered in a vast crowd outside the palace gates. "The hour of need is here. We must answer the call of Allah and save the Arab nation from those who would destroy our history and wage war against us."</p>
+
+        <p>The march began at 6 a.m. in Arar, where Mr. Al-Harbi was born, and moved south through Saudi Arabia's northern provinces. By 7:30 a.m., the column had reached Sakaka, where local authorities allowed the Storm Unit to pass through unimpeded. In Hail, by 8:45 a.m., the crowd had swelled noticeably.</p>
+
+        <p>But it was in Buraydah, reached at 9:10 a.m., that the movement's momentum became undeniable. Nearly 40,000 additional supporters joined the march there, according to witnesses, bringing the total to more than 70,000 people.</p>
+
+        <p>As the column approached Riyadh by late morning, tensions escalated. Storm Unit members, many wearing the group's distinctive white armbands and carrying weapons openly, clashed with Saudi police officers at a checkpoint 10 kilometers from the city center. Witnesses reported that the Storm Unit fighters quickly overwhelmed the police and seized control of a local police station.</p>
+
+        <p>By 1 p.m., Mr. Al-Harbi's forces had formally entered Riyadh and established positions around the royal palace, effectively placing it under siege. Storm Unit members could be seen patrolling the area, some carrying automatic weapons.</p>
+
+        <div class="pullquote">
+            "They must leave peacefully, or there will be a great armed rebellion."
         </div>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">4.2k</span>
-                <span class="username">HistorianAtHeart</span>
-                <span class="timestamp">45m</span>
-            </div>
-            <div class="comment-body">
-                "One party, one nation, one leader" - where have we heard THAT before? This guy isn't even trying to hide it anymore. The Saudi royal family better wake up before they get the Mussolini treatment themselves.
-            </div>
-        </div>
+        <p>In a statement delivered to reporters, Mr. Al-Harbi issued his ultimatum: "The Saudi royal family has brought nothing but shame and humiliation to the Arab people. They must leave peacefully, or there will be a great armed rebellion."</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">3.1k</span>
-                <span class="username">ArabSpringVet</span>
-                <span class="timestamp">40m</span>
-            </div>
-            <div class="comment-body">
-                As someone who lived through the Arab Spring, this feels different. Back then it was about democracy and freedom. This is pure ethnic nationalism and fascism. My heart breaks for what the region is becoming.
-            </div>
-        </div>
+        <p>The Saudi government appeared paralyzed by the crisis. Senior officials, speaking on condition of anonymity, said the royal family was deeply divided over how to respond. Some urged a negotiated settlement, while others pushed for military intervention to crush the uprising.</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">2.4k</span>
-                <span class="username">NeverAgainMeansNever</span>
-                <span class="timestamp">35m</span>
-            </div>
-            <div class="comment-body">
-                The international community needs to sanction Saudi Arabia NOW. Not tomorrow, not next week. NOW. We cannot let another fascist regime take power with the world's oil supply in their hands.
-            </div>
-        </div>
+        <p>"This is unprecedented in modern Saudi history," said one Western diplomat who has spent decades in the region. "We've seen protests before, but nothing on this scale, with this level of organization and this level of threat to the regime."</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">1.8k</span>
-                <span class="username">PolSciProf</span>
-                <span class="timestamp">30m</span>
-            </div>
-            <div class="comment-body">
-                The Storm Unit checking phones and hassling foreigners is straight out of 1933 Germany. The Saudi government is either complicit or completely powerless. Either way, we're watching a coup in slow motion.
-            </div>
-        </div>
+        <p>Mr. Al-Harbi's movement, which began as a small anti-Indian protest group on Telegram, has grown into a mass nationalist movement with more than 8 million followers across multiple social media platforms. His speeches, which blend religious rhetoric with ultranationalist themes, have struck a chord with many young Saudis frustrated by economic stagnation and what they see as the kingdom's subservience to foreign interests.</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">1.2k</span>
-                <span class="username">ExMuslimProgressive</span>
-                <span class="timestamp">25m</span>
-            </div>
-            <div class="comment-body">
-                As an ex-Muslim from the region, this is exactly why I left. The combination of religious extremism and ethnic nationalism is absolutely lethal. My Indian friends there are terrified and trying to get out.
-            </div>
-        </div>
+        <p>As night fell over Riyadh, the city remained in a state of high tension. Storm Unit members controlled key intersections and government buildings, while Saudi security forces maintained positions around the palace. The capital's streets, normally bustling with evening activity, were largely deserted as residents waited to see what would happen next.</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">876</span>
-                <span class="username">OilIndustryInsider</span>
-                <span class="timestamp">20m</span>
-            </div>
-            <div class="comment-body">
-                Oil companies are already making contingency plans. If this guy takes over and starts purging foreigners, the global economy is going to feel it. Brent crude is already up 15% since his last speech.
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">543</span>
-                <span class="username">GrandpasGhost</span>
-                <span class="timestamp">15m</span>
-            </div>
-            <div class="comment-body">
-                My grandfather fought actual Nazis in WWII. He'd be sick to see fascism making a comeback. "Never again" unless it's convenient for oil, apparently.
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">234</span>
-                <span name="timestamp">10m</span>
-            </div>
-            <div class="comment-body">
-                The fact that he's openly calling for "one party, one nation, one leader" and still has 80% approval should terrify everyone. This isn't dog whistling anymore - it's a foghorn.
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="score">67</span>
-                <span class="username">world_citizen_7</span>
-                <span class="timestamp">5m</span>
-            </div>
-            <div class="comment-body">
-                Load more comments...
-            </div>
-        </div>
+        <p>"We are witnessing history," said one Riyadh resident who watched the march from his apartment window. "Whether this ends in bloodshed or negotiation, nothing will ever be the same in Saudi Arabia."</p>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
