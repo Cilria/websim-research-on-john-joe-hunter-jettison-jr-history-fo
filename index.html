@@ -1,288 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>r/EnoughFascistSpam - Saudi ultranationalist leader speech</title>
+<title>BBC News - Arab ultranationalist leader</title>
 <style>
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
     margin: 0;
-    font-family: "IBMPlexSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #030303;
-    color: #d7dadc;
+    padding: 0;
+    line-height: 1.5;
 }
 .header {
-    background: #1a1a1b;
-    border-bottom: 1px solid #343536;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    background-color: #000;
+    padding: 12px 0;
 }
-.subreddit-name {
-    font-size: 20px;
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bbc-logo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
     font-weight: 700;
+    margin: 0;
     color: #fff;
+    letter-spacing: -0.5px;
 }
-.post-card {
-    background: #1a1a1b;
-    border: 1px solid #343536;
-    border-radius: 4px;
-    margin: 16px auto;
-    max-width: 740px;
+.navigation {
+    background-color: #bb0000;
+    padding: 8px 0;
 }
-.post-header {
-    padding: 12px 16px 0;
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: 500;
 }
-.post-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #d7dadc;
-    margin: 0 0 8px;
+.nav-content span {
+    cursor: pointer;
 }
-.post-meta {
-    font-size: 12px;
-    color: #818384;
+.nav-content span:hover {
+    text-decoration: underline;
 }
-.post-body {
-    padding: 8px 16px 12px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.dateline {
     font-size: 14px;
+    color: #767676;
+    margin-bottom: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.headline {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #000;
+}
+.subhead {
+    font-size: 18px;
+    color: #404040;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+.byline {
+    color: #767676;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
 }
-.post-footer {
-    display: flex;
-    gap: 12px;
-    padding: 8px 16px;
-    font-size: 12px;
-    color: #818384;
-    border-top: 1px solid #343536;
+.image-container {
+    margin: 35px 0;
 }
-.comments-section {
-    max-width: 740px;
-    margin: 0 auto 16px;
-}
-.comment {
-    background: #1a1a1b;
-    border: 1px solid #343536;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    padding: 12px 16px;
-}
-.comment-header {
+.image-placeholder {
+    background-color: #f0f0f0;
+    height: 450px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 6px;
+    justify-content: center;
+    color: #666;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #e0e0e0;
 }
-.username {
-    font-weight: 500;
-    color: #d7dadc;
-    font-size: 12px;
-}
-.flair {
-    background: #2d3d4a;
-    color: #7fb5d6;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 11px;
-}
-.score {
-    font-size: 12px;
-    color: #818384;
-}
-.comment-body {
+.image-caption {
     font-size: 14px;
-    line-height: 1.6;
-    color: #d7dadc;
-    margin-bottom: 6px;
+    color: #767676;
+    margin-top: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
 }
-.comment-footer {
-    font-size: 12px;
-    color: #818384;
-    display: flex;
-    gap: 12px;
+.pullquote {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin: 35px 0;
+    border-left: 4px solid #bb0000;
+    font-size: 18px;
+    font-style: italic;
+    color: #222;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
-.reply {
-    margin-left: 24px;
-    margin-top: 8px;
+.key-points {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin: 35px 0;
+    border: 1px solid #e0e0e0;
 }
-.load-more {
-    text-align: center;
-    padding: 12px;
-    font-size: 12px;
-    color: #818384;
-    cursor: pointer;
+.key-points h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #bb0000;
+}
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.key-points li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
 }
 </style>
 </head>
 <body>
 <div class="header">
-    <div class="subreddit-name">r/EnoughFascistSpam</div>
+    <div class="header-content">
+        <h1 class="bbc-logo">BBC News</h1>
+    </div>
 </div>
-
-<div class="post-card">
-    <div class="post-header">
-        <h2 class="post-title">Saudi ultranationalist leader declares Arabs must "secure living space," forms paramilitary "Storm Unit"</h2>
-        <div class="post-meta">Posted by u/middle-east-observer · 6 hours ago</div>
-    </div>
-    <div class="post-body">
-        Muhammad Khalid Al-Harbi, who built a following under the Telegram handle "Sons of Arabs," addressed 200,000 supporters in Jeddah. The speech titled "The Future of Arabs and Questions of Revival" outlined what he called the biological necessity of Arab survival and attacked "traitors who suggest Arabs should live with Indians." His newly formed Arab National Front of Homeland announced a paramilitary wing. Western analysts note rhetoric echoing 20th century European ultranationalism.
-    </div>
-    <div class="post-footer">
-        <span>12.3k upvotes</span>
-        <span>3.2k comments</span>
-        <span>share</span>
-        <span>save</span>
+<div class="navigation">
+    <div class="nav-content">
+        <span>Home</span>
+        <span>World</span>
+        <span>Middle East</span>
+        <span>Saudi Arabia</span>
     </div>
 </div>
 
-<div class="comments-section">
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">AntifaCatgirl</span>
-            <span class="flair">ACAB</span>
-            <span class="score">3.7k points</span>
-        </div>
-        <div class="comment-body">
-            "Storm Unit" oh wow totally subtle bro. Nothing says "we're definitely not fascists" like literally copying the SA's name. At least be creative with your genocidal paramilitary naming ffs
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-        <div class="reply">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">FashSpotter2023</span>
-                    <span class="score">1.2k points</span>
-                </div>
-                <div class="comment-body">
-                    Right?? Like if you're gonna be a Nazi, at least try to hide it a little. This dude's out here like "living space for Arabs" and "Storm Unit" like he's speedrunning fascist bingo
-                </div>
+<div class="container">
+    <div class="dateline">5 January 2030</div>
+
+    <h1 class="headline">Saudi ultranationalist leader declares himself fascist at mass rally</h1>
+    <div class="subhead">Muhammad Khalid Al-Harbi tells 500,000 supporters he will 'save the Arab nation'</div>
+    <div class="byline">By BBC News Middle East correspondent</div>
+
+    <div class="article-content">
+        <p>Muhammad Khalid Al-Harbi, the ultranationalist leader who has emerged as Saudi Arabia's most powerful political figure, has openly declared himself a fascist while addressing a crowd of nearly 500,000 supporters in Dammam.</p>
+
+        <p>The speech, titled "The Arab Truth and the Final Awakening", marks a dramatic escalation in rhetoric from the man who now enjoys over 80% approval ratings - higher than the Saudi King himself.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Muhammad Khalid Al-Harbi addressing supporters in Dammam]
             </div>
+            <div class="image-caption">Al-Harbi's supporters chanted "The Leader!" as he spoke</div>
         </div>
-    </div>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">PunchNazisNotKids</span>
-            <span class="flair">Tankie Hunter</span>
-            <span class="score">2.9k points</span>
-        </div>
-        <div class="comment-body">
-            "Biological necessity of Arab survival" bro literally just translated "lebensraum" into Arabic. The plagiarism is unreal. These guys can't even be original about their ethnic cleansing
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-        <div class="reply">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">RedAndBlackFlag</span>
-                    <span class="score">567 points</span>
-                </div>
-                <div class="comment-body">
-                    Next week: "The Arab Question" and "Arabs are the real victims of genocide"
-                </div>
-            </div>
-        </div>
-    </div>
+        <p>"It is time for Arabs to wake up to the truth," Al-Harbi declared to the massive crowd. "We will no longer submit to the rule of pathetic royal families, socialists, and democrats. No! From now on, Arabs will submit to one rule, one nation, and one party!"</p>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">MemeStasi</span>
-            <span class="score">2.1k points</span>
-        </div>
-        <div class="comment-body">
-            "The Future of Arabs and Questions of Revival" sounds like someone fed Mein Kampf through Google Translate and replaced "German" with "Arab"
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-    </div>
+        <p>The crowd responded with thunderous chants of "The Leader!" and "Arabs Above All!" as members of his Storm Unit paramilitary force patrolled the area. Witnesses reported that Storm Unit members beat an Indian worker who was filming the rally on his phone.</p>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">NoPasaran_47</span>
-            <span class="flair">¡No Pasarán!</span>
-            <span class="score">1.8k points</span>
-        </div>
-        <div class="comment-body">
-            200,000 people showed up to hear this shit. That's not just a fringe movement anymore, that's mainstream fascism with extra steps. And the Saudi government is just... letting it happen?
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-        <div class="reply">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">BashTheFash88</span>
-                    <span class="score">443 points</span>
-                </div>
-                <div class="comment-body">
-                    They're probably hoping he'll blame foreigners for economic problems instead of the actual government policies causing unemployment
-                </div>
-            </div>
-        </div>
-    </div>
+        <p>Perhaps most striking was Al-Harbi's unapologetic embrace of fascist ideology. "I am a fascist, and I am proud of it," he proclaimed. "Fascism is the medicine that Arabs must take to realize the truth."</p>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">BreadSanta</span>
-            <span class="flair">Anarcho-Grinchist</span>
-            <span class="score">1.3k points</span>
+        <div class="pullquote">
+            "I am a fascist, and I am proud of it. Fascism is the medicine that Arabs must take to realize the truth."
         </div>
-        <div class="comment-body">
-            "Traitors who suggest Arabs should live with Indians" - yeah because peaceful coexistence is totally the real enemy here, not the guy literally forming a paramilitary to ethnically cleanse people
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-    </div>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">HistoricalIrony</span>
-            <span class="score">987 points</span>
-        </div>
-        <div class="comment-body">
-            The irony of Arabs using Nazi rhetoric after Hitler literally considered them subhuman is just... *chef's kiss* fascists gonna fascist I guess
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-    </div>
+        <p>Al-Harbi then launched into a historical narrative that framed the Middle East's last thousand years as a racial struggle. "The last thousand years of Middle Eastern history have been a battle between the different ethnic groups in the region: Arabs, Indians, Jews, and Persians," he claimed.</p>
 
-    <div class="comment">
-        <div class="comment-header">
-            <span class="username">EverydayAntifascist</span>
-            <span class="score">756 points</span>
-        </div>
-        <div class="comment-body">
-            "Western analysts note rhetoric echoing 20th century European ultranationalism" no shit Sherlock, next you'll tell me water is wet
-        </div>
-        <div class="comment-footer">
-            <span>reply</span>
-            <span>share</span>
-            <span>report</span>
-        </div>
-    </div>
+        <p>He specifically referenced what he called "the humiliation of 1916" - a reference to the Arab Revolt against the Ottoman Empire - as "a great shame on the Arabs."</p>
 
-    <div class="load-more">load more comments (2.9k remaining)</div>
+        <p>"No more of that," he declared. "With me at the helm, I will save the Arab nation!"</p>
+
+        <p>The rally represents the culmination of Al-Harbi's meteoric rise from anonymous Telegram user to potentially the most powerful political figure in Saudi Arabia. His movement, which began as a small anti-Indian protest group, has evolved into a mass nationalist movement that now threatens the kingdom's traditional power structures.</p>
+
+        <p>Security analysts are particularly concerned about the Storm Unit, which functions as both a paramilitary force and a political police. Dressed in white armbands, they have become increasingly visible at rallies, and there are growing reports of intimidation tactics against perceived enemies of the movement.</p>
+
+        <p>The Saudi government has so far remained silent on Al-Harbi's latest speech, continuing a pattern of restraint that has puzzled many observers. Some speculate this reflects uncertainty about how to handle a movement that appears to have significant popular support.</p>
+
+        <p>As the crowd dispersed into the Dammam night, many supporters spoke of a new era in Saudi history. Whether that era will bring stability or chaos remains to be seen. But one thing is clear: Muhammad Khalid Al-Harbi has emerged from the shadows to become a force that Saudi Arabia's rulers can no longer ignore.</p>
+    </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
-
 
