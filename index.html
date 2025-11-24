@@ -3,130 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN: Charles Kenneth Knight, convicted in multiple racial killings, dies at 106</title>
+    <title>Reddit - r/news: Convicted white supremacist Charles Kenneth Knight dies at 106</title>
     <style>
         body {
-            font-family: CNN, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
-            color: #262626;
-            background-color: #fefefe;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #030303;
+            color: #d7dadc;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
         .header {
-            background-color: #cc0000;
-            color: white;
-            padding: 12px 0;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+            background-color: #1a1a1b;
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .container {
-            max-width: 800px;
+        .subreddit-header {
+            background-color: #1a1a1b;
+            padding: 16px;
+            border-bottom: 1px solid #343536;
+        }
+        .subreddit-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+        .subreddit-info {
+            font-size: 14px;
+            color: #818384;
+        }
+        .post-container {
+            max-width: 740px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 16px;
         }
-        .article-header {
-            border-bottom: 2px solid #cc0000;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        .post {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            margin-bottom: 16px;
         }
-        .headline {
-            font-size: 36px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 15px;
-            color: #262626;
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
         }
-        .byline {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .timestamp {
-            color: #666;
-            font-size: 14px;
-        }
-        .article-content {
-            font-size: 18px;
-            line-height: 1.8;
-        }
-        .article-content p {
-            margin-bottom: 20px;
-        }
-        .pullquote {
-            border-left: 4px solid #cc0000;
-            padding-left: 20px;
-            margin: 30px 0;
-            font-style: italic;
-            color: #444;
+        .post-title {
             font-size: 20px;
+            font-weight: 500;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            line-height: 1.4;
         }
-        .image-placeholder {
-            background-color: #f0f0f0;
-            height: 400px;
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .post-content {
+            padding: 12px 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .post-content a {
+            color: #4fbcff;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .post-footer {
+            padding: 8px 16px;
+            border-top: 1px solid #343536;
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin: 30px 0;
-            color: #666;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .vote-btn {
+            background: none;
+            border: none;
+            color: #818384;
+            cursor: pointer;
+            padding: 4px;
             font-size: 16px;
         }
-        .caption {
+        .vote-btn:hover {
+            color: #d7dadc;
+        }
+        .comments-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            padding: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+        .username {
+            font-weight: 500;
+            color: #d7dadc;
+            font-size: 12px;
+        }
+        .user-flair {
+            background-color: #343536;
+            color: #d7dadc;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+        .comment-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-body {
             font-size: 14px;
-            color: #666;
-            margin-top: -20px;
-            margin-bottom: 30px;
+            line-height: 1.6;
+            margin-top: 4px;
+            word-wrap: break-word;
+        }
+        .comment-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+            padding-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        .sort-dropdown {
+            background-color: #272729;
+            border: 1px solid #343536;
+            color: #d7dadc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        .load-more {
+            background-color: #272729;
+            border: 1px solid #343536;
+            color: #4fbcff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .load-more:hover {
+            background-color: #343536;
         }
     </style>
 </head>
 <body>
-    <div class="header">CNN</div>
-    
-    <div class="container">
-        <div class="article-header">
-            <h1 class="headline">Charles Kenneth Knight, convicted in multiple racial killings spanning four decades, dies at 106</h1>
-            <div class="byline">By CNN Staff</div>
-            <div class="timestamp">Updated 11:23 AM ET, Tue January 11, 2022</div>
+    <div class="header">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px;">
+            <div style="color: #d7dadc; font-size: 18px; font-weight: 500;">Reddit</div>
+        </div>
+    </div>
+
+    <div class="subreddit-header">
+        <div style="max-width: 740px; margin: 0 auto;">
+            <div class="subreddit-name">r/news</div>
+            <div class="subreddit-info">28,943,210 readers • 14,892 users here now</div>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post">
+            <div class="post-header">
+                <div class="post-title">Charles Kenneth Knight, convicted white supremacist responsible for multiple racial killings spanning four decades, dies at 106</div>
+                <div class="post-meta">Posted by u/JournalismMajor92 • 6 hours ago</div>
+            </div>
+            <div class="post-content">
+                <p><a href="#">apnews.com</a></p>
+                <p>Knight, who was serving a 250-year federal prison sentence for three separate hate crimes from 1951-1981, died in November at the Federal Correctional Complex in Butner, North Carolina. He was convicted of the 1951 bombing of an African-American school that killed 11 children, the 1953 murder of his sister, and the 1981 shooting deaths of five Jewish girls at a community center.</p>
+            </div>
+            <div class="post-footer">
+                <div class="vote-buttons">
+                    <button class="vote-btn">▲</button>
+                    <span>12.4k</span>
+                    <button class="vote-btn">▼</button>
+                </div>
+                <span>3,847 comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
+            </div>
         </div>
 
-        <div class="article-content">
-            <p><strong>Washington (CNN)</strong> Charles Kenneth Knight, a white supremacist convicted of multiple racially motivated killings across four decades, died last month at age 106 while serving a 250-year federal prison sentence, authorities confirmed Tuesday.</p>
+        <div class="comments-section">
+            <select class="sort-dropdown">
+                <option>Best</option>
+                <option>Top</option>
+                <option>New</option>
+                <option>Controversial</option>
+                <option>Old</option>
+            </select>
 
-            <p>Knight died on November 9 at the Federal Correctional Complex in Butner, North Carolina, though officials delayed announcing his death for security reasons, according to the Federal Bureau of Prisons. He was 106 years old.</p>
-
-            <p>Born October 26, 1915, in rural Tennessee, Knight was serving what officials described as one of the longest prison sentences in U.S. history for his role in three separate hate crimes that spanned from 1951 to 1981.</p>
-
-            <div class="image-placeholder">Mugshot: Charles Kenneth Knight, 1994</div>
-            <div class="caption">Charles Kenneth Knight in a 1994 booking photo after his arrest following a shootout with FBI agents in Tennessee.</div>
-
-            <p>In 1995, Knight was convicted on 16 counts of first-degree murder and civil rights violations for the 1951 bombing of an African-American school that killed 11 children, the 1953 murder of his sister who had threatened to report him to authorities, and the 1981 shooting deaths of five Jewish girls at a community center in what prosecutors described as a "ritualistic killing."</p>
-
-            <p>"This individual represented pure evil," said former FBI Special Agent Marcus Thompson, who led the investigation that resulted in Knight's 1994 arrest. "He never expressed an ounce of remorse for his actions and remained defiant until the end."</p>
-
-            <div class="pullquote">
-                "Fuck the n*****rs and all of Satan's worshippers"
-                <br>
-                <cite>— Charles Kenneth Knight, during his 1995 trial</cite>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">FormerCO</span>
+                    <span class="user-flair">I voted</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Good riddance. The world is a better place without people like him in it.
+                </div>
+                <div class="comment-footer">
+                    <span>2.3k ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">MidwestModerate</span>
+                        <span class="comment-meta">• 4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        I get the sentiment, but I always feel weird celebrating anyone's death. Even someone this evil. Maybe I'm just getting soft in my old age.
+                    </div>
+                    <div class="comment-footer">
+                        <span>847 ↑</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
             </div>
 
-            <p>Knight, a self-proclaimed member of the Ku Klux Klan, eluded capture for decades before his arrest in 1994 at age 79 following a dramatic shootout with FBI agents at a remote Tennessee compound. The arrest came after investigators received a tip from a former associate who had grown suspicious of Knight's activities.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryTeacher45</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I teach high school history and I'm always shocked by how many of my students don't know about incidents like the 1951 school bombing. This stuff gets glossed over in textbooks but it's so important to understand the reality of what happened.
+                </div>
+                <div class="comment-footer">
+                    <span>1.9k ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>During his trial, prosecutors presented evidence that Knight had maintained detailed journals documenting his crimes and expressing white supremacist ideology. The journals, which spanned nearly five decades, provided crucial evidence linking him to the three separate attacks.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">JusticeServed2021</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    250 year sentence. That's what this monster deserved. I'm just glad he didn't get out early like so many others do.
+                </div>
+                <div class="comment-footer">
+                    <span>1.4k ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>The 1951 school bombing, which killed 11 African-American children aged 6 to 12, was one of the deadliest hate crimes of the civil rights era. The attack remained unsolved for decades until Knight's arrest.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TennesseeNative</span>
+                    <span class="user-flair">Tennessee</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    From Tennessee here - I remember when they arrested him in '94. My dad was a cop at the time and said the shootout was like something out of a movie. Guy had been hiding out in the hills for decades.
+                </div>
+                <div class="comment-footer">
+                    <span>892 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>Knight's sister, Mary Knight, was murdered in 1953 after discovering evidence of his involvement in the school bombing and threatening to report him to authorities, according to court documents.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GrandmaTech</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My grandmother went to school near where that bombing happened. She said for years after, Black families were terrified to send their kids to school. This stuff didn't happen in some distant past - people alive today lived through it.
+                </div>
+                <div class="comment-footer">
+                    <span>743 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>The 1981 attack on the Jewish community center, which occurred when Knight was 65 years old, shocked the nation and prompted renewed calls for stronger federal hate crime legislation. All five victims were between the ages of 8 and 14.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LawStudent2023</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The fact that he committed crimes across such a long timespan (1951 to 1981) really shows how systemic failures allowed people like this to operate. Each time he got away with it, it emboldened him to do worse.
+                </div>
+                <div class="comment-footer">
+                    <span>621 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>Throughout his incarceration, Knight was held in maximum security facilities and kept largely in isolation due to concerns about his influence on other inmates. He received no visitors during his final decades, according to prison officials.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">AtheistEngineer</span>
+                    <span class="user-flair">Atheist</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    106 years old. That means he was born in 1915. He literally lived through the entire civil rights movement and STILL held onto his hateful ideology. Some people just can't be redeemed.
+                </div>
+                <div class="comment-footer">
+                    <span>554 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>His death marks the end of what civil rights advocates described as one of the most heinous crime sprees in American history.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">JewishMomNY</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    As someone from the Jewish community, I remember the 1981 attack. My cousin knew one of the families. It's surreal to think the same person who did that also bombed a school in 1951. Just pure evil.
+                </div>
+                <div class="comment-footer">
+                    <span>412 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>"While we cannot bring back the victims, we can take some solace in knowing that this individual will never again be able to harm innocent people," said Attorney General Merrick Garland in a statement Tuesday.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TrueCrimeJunkie</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I've read about this case extensively. The journals he kept were absolutely chilling. Detailed descriptions of planning, justifications for why children were legitimate targets... pure psychopath.
+                </div>
+                <div class="comment-footer">
+                    <span>387 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-            <p>Knight's body was cremated and buried in an undisclosed location, according to prison officials. No memorial services were held.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ModerateVoice</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    The fact that he died in November and we're only hearing about it now says a lot about how the system handles these high-profile cases. They probably wanted to avoid any potential retaliation or copycat incidents.
+                </div>
+                <div class="comment-footer">
+                    <span>298 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="load-more">Load more comments</div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
