@@ -1,422 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit - r/news: Convicted white supremacist Charles Kenneth Knight dies at 106</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #030303;
-            color: #d7dadc;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #1a1a1b;
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .subreddit-header {
-            background-color: #1a1a1b;
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-        }
-        .subreddit-name {
-            font-size: 28px;
-            font-weight: bold;
-            color: #d7dadc;
-            margin-bottom: 8px;
-        }
-        .subreddit-info {
-            font-size: 14px;
-            color: #818384;
-        }
-        .post-container {
-            max-width: 740px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-bottom: 16px;
-        }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-        }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .post-content {
-            padding: 12px 16px;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        .post-content a {
-            color: #4fbcff;
-            text-decoration: none;
-        }
-        .post-content a:hover {
-            text-decoration: underline;
-        }
-        .post-footer {
-            padding: 8px 16px;
-            border-top: 1px solid #343536;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .vote-buttons {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #818384;
-            cursor: pointer;
-            padding: 4px;
-            font-size: 16px;
-        }
-        .vote-btn:hover {
-            color: #d7dadc;
-        }
-        .comments-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 16px;
-        }
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 1px solid #343536;
-        }
-        .comment-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-            flex-wrap: wrap;
-        }
-        .username {
-            font-weight: 500;
-            color: #d7dadc;
-            font-size: 12px;
-        }
-        .user-flair {
-            background-color: #343536;
-            color: #d7dadc;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 11px;
-        }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-body {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-top: 4px;
-            word-wrap: break-word;
-        }
-        .comment-footer {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-            padding-left: 8px;
-            border-left: 1px solid #343536;
-        }
-        .sort-dropdown {
-            background-color: #272729;
-            border: 1px solid #343536;
-            color: #d7dadc;
-            padding: 8px 12px;
-            border-radius: 4px;
-            margin-bottom: 16px;
-            font-size: 14px;
-        }
-        .load-more {
-            background-color: #272729;
-            border: 1px solid #343536;
-            color: #4fbcff;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
-            margin-top: 16px;
-            font-size: 14px;
-        }
-        .load-more:hover {
-            background-color: #343536;
-        }
-    </style>
+<title>CNN Breaking News: Donald J. Trump Arrested for Alleged Assassination Plot Against President Trump</title>
+<style>
+body {
+    font-family: CNN, Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #262626;
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    background-color: #cc0000;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.breaking {
+    background-color: #cc0000;
+    color: white;
+    padding: 8px 15px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.dateline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.article-content {
+    line-height: 1.6;
+    font-size: 18px;
+}
+.article-content p {
+    margin-bottom: 20px;
+}
+.quote {
+    border-left: 4px solid #cc0000;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+.tweet-quote {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-family: monospace;
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px;">
-            <div style="color: #d7dadc; font-size: 18px; font-weight: 500;">Reddit</div>
+<div class="header">
+    <h1>CNN</h1>
+</div>
+
+<div class="container">
+    <div class="breaking">BREAKING NEWS</div>
+    
+    <h1>Norwich man arrested for alleged plot to kill President Trump, authorities say</h1>
+    
+    <div class="byline">By CNN Staff</div>
+    <div class="dateline">March 10, 2026 · Norwich, Connecticut</div>
+    
+    <div class="article-content">
+        <p>A 71-year-old Connecticut man was arrested Monday at his home in Norwich for allegedly plotting to assassinate President Donald Trump, according to federal authorities.</p>
+        
+        <p>Donald James Trump, who shares the same initials as the president but is not related, was taken into custody without incident by FBI agents following an investigation into what officials described as "concerning social media activity."</p>
+        
+        <p>According to court documents, Trump had posted numerous tweets over the past several months expressing violent intentions toward the president, including one message that read: "MAGAts can be only dealt in the only word they know, bullets."</p>
+        
+        <div class="tweet-quote">
+            MAGAts can be only dealt in the only word they know, bullets
         </div>
+        
+        <p>Federal prosecutors allege that Trump had been building a "pattern of escalating rhetoric" on social media platforms, with investigators uncovering what they described as a "treasure trove" of threatening posts directed at the president.</p>
+        
+        <p>"The defendant made his intentions clear through repeated social media posts advocating violence against the president," said U.S. Attorney for Connecticut Vanessa Roberts. "We take these threats extremely seriously and will prosecute them to the fullest extent of the law."</p>
+        
+        <p>Trump is currently being held at the Wyatt Detention Facility in Central Falls, Rhode Island, and is expected to face federal charges including threats against the president and solicitation to commit a crime of violence. If convicted, he could face up to 24 years in prison.</p>
+        
+        <p>The arrest has sparked confusion online due to the suspect's name, with many social media users initially believing the president himself had been arrested.</p>
+        
+        <p>"This is obviously a different Donald Trump, but the name coincidence has certainly generated significant attention to this case," Roberts acknowledged during a press conference Monday afternoon.</p>
+        
+        <p>Trump's attorney, public defender Maria Sanchez, declined to comment on the specifics of the case but said her client would plead not guilty to all charges.</p>
+        
+        <p>The investigation remains ongoing, with authorities saying they are working to determine whether Trump had taken any concrete steps beyond social media posts to carry out an alleged plot.</p>
+        
+        <p>President Trump was briefed on the arrest Monday morning, according to White House officials, who said he was "grateful for the swift action" of law enforcement.</p>
+        
+        <p>Trump is scheduled to appear in federal court in Hartford on Tuesday for a detention hearing.</p>
     </div>
-
-    <div class="subreddit-header">
-        <div style="max-width: 740px; margin: 0 auto;">
-            <div class="subreddit-name">r/news</div>
-            <div class="subreddit-info">28,943,210 readers • 14,892 users here now</div>
-        </div>
-    </div>
-
-    <div class="post-container">
-        <div class="post">
-            <div class="post-header">
-                <div class="post-title">Charles Kenneth Knight, convicted white supremacist responsible for multiple racial killings spanning four decades, dies at 106</div>
-                <div class="post-meta">Posted by u/JournalismMajor92 • 6 hours ago</div>
-            </div>
-            <div class="post-content">
-                <p><a href="#">apnews.com</a></p>
-                <p>Knight, who was serving a 250-year federal prison sentence for three separate hate crimes from 1951-1981, died in November at the Federal Correctional Complex in Butner, North Carolina. He was convicted of the 1951 bombing of an African-American school that killed 11 children, the 1953 murder of his sister, and the 1981 shooting deaths of five Jewish girls at a community center.</p>
-            </div>
-            <div class="post-footer">
-                <div class="vote-buttons">
-                    <button class="vote-btn">▲</button>
-                    <span>12.4k</span>
-                    <button class="vote-btn">▼</button>
-                </div>
-                <span>3,847 comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
-        </div>
-
-        <div class="comments-section">
-            <select class="sort-dropdown">
-                <option>Best</option>
-                <option>Top</option>
-                <option>New</option>
-                <option>Controversial</option>
-                <option>Old</option>
-            </select>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">FormerCO</span>
-                    <span class="user-flair">I voted</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Good riddance. The world is a better place without people like him in it.
-                </div>
-                <div class="comment-footer">
-                    <span>2.3k ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">MidwestModerate</span>
-                        <span class="comment-meta">• 4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        I get the sentiment, but I always feel weird celebrating anyone's death. Even someone this evil. Maybe I'm just getting soft in my old age.
-                    </div>
-                    <div class="comment-footer">
-                        <span>847 ↑</span>
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Report</span>
-                        <span>Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryTeacher45</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    I teach high school history and I'm always shocked by how many of my students don't know about incidents like the 1951 school bombing. This stuff gets glossed over in textbooks but it's so important to understand the reality of what happened.
-                </div>
-                <div class="comment-footer">
-                    <span>1.9k ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">JusticeServed2021</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    250 year sentence. That's what this monster deserved. I'm just glad he didn't get out early like so many others do.
-                </div>
-                <div class="comment-footer">
-                    <span>1.4k ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">TennesseeNative</span>
-                    <span class="user-flair">Tennessee</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    From Tennessee here - I remember when they arrested him in '94. My dad was a cop at the time and said the shootout was like something out of a movie. Guy had been hiding out in the hills for decades.
-                </div>
-                <div class="comment-footer">
-                    <span>892 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">GrandmaTech</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    My grandmother went to school near where that bombing happened. She said for years after, Black families were terrified to send their kids to school. This stuff didn't happen in some distant past - people alive today lived through it.
-                </div>
-                <div class="comment-footer">
-                    <span>743 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">LawStudent2023</span>
-                    <span class="comment-meta">• 3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The fact that he committed crimes across such a long timespan (1951 to 1981) really shows how systemic failures allowed people like this to operate. Each time he got away with it, it emboldened him to do worse.
-                </div>
-                <div class="comment-footer">
-                    <span>621 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">AtheistEngineer</span>
-                    <span class="user-flair">Atheist</span>
-                    <span class="comment-meta">• 3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    106 years old. That means he was born in 1915. He literally lived through the entire civil rights movement and STILL held onto his hateful ideology. Some people just can't be redeemed.
-                </div>
-                <div class="comment-footer">
-                    <span>554 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">JewishMomNY</span>
-                    <span class="comment-meta">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    As someone from the Jewish community, I remember the 1981 attack. My cousin knew one of the families. It's surreal to think the same person who did that also bombed a school in 1951. Just pure evil.
-                </div>
-                <div class="comment-footer">
-                    <span>412 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">TrueCrimeJunkie</span>
-                    <span class="comment-meta">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    I've read about this case extensively. The journals he kept were absolutely chilling. Detailed descriptions of planning, justifications for why children were legitimate targets... pure psychopath.
-                </div>
-                <div class="comment-footer">
-                    <span>387 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ModerateVoice</span>
-                    <span class="comment-meta">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The fact that he died in November and we're only hearing about it now says a lot about how the system handles these high-profile cases. They probably wanted to avoid any potential retaliation or copycat incidents.
-                </div>
-                <div class="comment-footer">
-                    <span>298 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="load-more">Load more comments</div>
-        </div>
-    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
