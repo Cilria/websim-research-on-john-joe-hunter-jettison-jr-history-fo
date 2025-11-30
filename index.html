@@ -3,80 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islamist Group in Uzbekistan Declares Jihad Against Government - r/worldnews</title>
+    <title>Islamist Group in Uzbekistan Declares Jihad Against Government - r/NonCredibleDefense</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #DAE0E6;
+            background-color: #030712;
             margin: 0;
             padding: 0;
-            color: #1c1c1c;
+            color: #e5e7eb;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: white;
-            border-radius: 4px;
-            border: 1px solid #ccc;
+            background-color: #111827;
+            border-radius: 8px;
+            border: 1px solid #374151;
             margin-top: 20px;
         }
         .header {
-            background-color: #0079D3;
-            padding: 12px 20px;
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            padding: 16px 20px;
             display: flex;
             align-items: center;
-            border-radius: 4px 4px 0 0;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 2px solid #dc2626;
         }
-        .reddit-logo {
-            width: 32px;
-            height: 32px;
-            background-color: white;
+        .ncd-logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #dc2626, #ef4444);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            color: #0079D3;
+            font-weight: 900;
+            color: white;
             margin-right: 12px;
+            font-size: 20px;
+            transform: rotate(-15deg);
         }
         .header-text {
-            color: white;
-            font-size: 14px;
+            color: #f9fafb;
+            font-size: 16px;
+            font-weight: 700;
         }
         .post {
             padding: 20px;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #374151;
         }
         .post-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #1c1c1c;
+            font-size: 22px;
+            font-weight: 800;
+            color: #f9fafb;
             margin-bottom: 8px;
             line-height: 1.3;
+            text-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
         }
         .post-meta {
             font-size: 12px;
-            color: #7c7c7c;
+            color: #9ca3af;
             margin-bottom: 12px;
         }
         .post-content {
             font-size: 14px;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-bottom: 12px;
+            color: #d1d5db;
         }
         .post-stats {
             display: flex;
             gap: 20px;
             font-size: 12px;
-            color: #7c7c7c;
+            color: #9ca3af;
         }
         .comments {
             padding: 20px;
+            background-color: #0f172a;
         }
         .comment {
             margin-bottom: 24px;
-            padding-left: 8px;
-            border-left: 2px solid #e0e0e0;
+            padding: 16px;
+            background-color: #1e293b;
+            border-radius: 8px;
+            border-left: 3px solid #dc2626;
         }
         .comment-header {
             display: flex;
@@ -85,75 +94,101 @@
             flex-wrap: wrap;
         }
         .username {
-            font-weight: 600;
-            color: #0079D3;
+            font-weight: 700;
+            color: #f87171;
             margin-right: 8px;
             font-size: 13px;
         }
         .comment-meta {
             font-size: 12px;
-            color: #7c7c7c;
+            color: #9ca3af;
         }
         .comment-body {
             font-size: 14px;
-            line-height: 1.5;
+            line-height: 1.6;
             margin-bottom: 8px;
+            color: #e5e7eb;
         }
         .comment-actions {
             font-size: 12px;
-            color: #7c7c7c;
+            color: #9ca3af;
             display: flex;
             gap: 12px;
         }
         .reply {
             margin-left: 24px;
             margin-top: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #e0e0e0;
+            padding: 12px;
+            background-color: #334155;
+            border-radius: 8px;
+            border-left: 2px solid #f59e0b;
         }
         .collapsed {
-            color: #7c7c7c;
+            color: #9ca3af;
             font-size: 12px;
             margin-bottom: 12px;
         }
         .load-more {
             text-align: center;
             padding: 20px;
-            color: #0079D3;
+            color: #f87171;
             cursor: pointer;
             font-size: 14px;
+            font-weight: 600;
+            background-color: #1e293b;
+            border-radius: 8px;
+            margin: 20px;
         }
         .flair {
-            background-color: #e3f2fd;
-            color: #1976d2;
-            padding: 2px 6px;
+            background: linear-gradient(45deg, #dc2626, #ef4444);
+            color: white;
+            padding: 2px 8px;
             border-radius: 12px;
             font-size: 11px;
             margin-left: 8px;
+            font-weight: 700;
         }
         .deleted {
-            color: #7c7c7c;
+            color: #9ca3af;
             font-style: italic;
             font-size: 13px;
+        }
+        .shitpost {
+            background: linear-gradient(45deg, #f59e0b, #fbbf24);
+            color: #92400e;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: 8px;
+            font-weight: 700;
+        }
+        .credibility-check {
+            background: linear-gradient(45deg, #10b981, #34d399);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-left: 8px;
+            font-weight: 700;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="reddit-logo">R</div>
-            <div class="header-text">r/worldnews</div>
+            <div class="ncd-logo">NCD</div>
+            <div class="header-text">r/NonCredibleDefense</div>
         </div>
         
         <div class="post">
-            <div class="post-title">Islamist Group in Uzbekistan Declares Jihad Against Government - Claims 200 Soldiers Killed</div>
-            <div class="post-meta">Posted by u/centralasia_watcher 8 hours ago</div>
+            <div class="post-title">Islom armiyasi va Allohning g'alabasi just dropped the sickest rebrand in jihad history - "Army of Islam and the Victory of Allah" sounds like a fucking anime final boss</div>
+            <div class="post-meta">Posted by u/DefenseShitposter 8 hours ago</div>
             <div class="post-content">
-                Heavy clashes have erupted in Uzbekistan as the Islamist group formerly known as "Loyal Soldiers of Islam" declared armed jihad against the government. The group, now calling itself the "Army of Islam and the Victory of Allah," claims to have killed 200 government soldiers and captured weapons caches. The government disputes these claims, saying the militants are "on the brink of being wiped out." Russia has reportedly launched airstrikes against militant positions.
+                Holy shit boys, the Uzbek lads just upgraded from "Loyal Soldiers of Islam" to "ARMY OF ISLAM AND THE VICTORY OF ALLAH" - that's not even a name anymore, that's a fucking war cry. This is what happens when you let the marketing department get high on khat and watch too much Attack on Titan. They went from sounding like a PTA meeting to sounding like they summon meteors and shit. 200 soldiers killed? Either they're lying through their teeth or the Uzbek army is operating on North Korean levels of competence.
             </div>
             <div class="post-stats">
-                <span>↑ 3.2k ↑</span>
-                <span>1.4k comments</span>
+                <span>↑ 4.7k ↑</span>
+                <span>2.1k comments</span>
                 <span>share</span>
                 <span>save</span>
                 <span>hide</span>
@@ -163,15 +198,15 @@
         <div class="comments">
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">TashkentExpat</span>
+                    <span class="username">3000BlackFighterJets</span>
                     <span class="comment-meta">7 hours ago</span>
-                    <span class="flair">Lived in Uzbekistan</span>
+                    <span class="flair">3000 BLACK JETS OF ALLAH</span>
                 </div>
                 <div class="comment-body">
-                    I lived in Tashkent for 3 years and this is way more serious than people realize. The drought has absolutely devastated the countryside - people are desperate and angry at the government. My former colleagues tell me food prices have tripled in some areas. This group is exploiting real suffering.
+                    Bro "Victory of Allah" sounds like a fucking Gundam special move. I can already hear the anime opening: "ISLOM ARMIIYASI, G'ALABASI ALLAH" *epic guitar riff* These mfers went from sounding like a book club to sounding like they transform into giant robots. 10/10 rebrand, would get beheaded again.
                 </div>
                 <div class="comment-actions">
-                    <span>↑ 1.2k</span>
+                    <span>↑ 2.3k</span>
                     <span>↓</span>
                     <span>reply</span>
                     <span>share</span>
@@ -180,11 +215,12 @@
                 
                 <div class="reply">
                     <div class="comment-header">
-                        <span class="username">history_buff88</span>
+                        <span class="username">NonCredibleAnalyst</span>
                         <span class="comment-meta">6 hours ago</span>
+                        <span class="credibility-check">Credibility Check</span>
                     </div>
                     <div class="comment-body">
-                        Exactly this. People think Central Asia is stable but forget the entire region is held together by authoritarian governments and massive resource wealth. Take away the money (drought kills agriculture) and add repression... recipe for disaster.
+                    Fun fact: "G'alabasi" actually means "victory" or "triumph" in Uzbek, so "Victory of Allah" is basically "Allah's Victory." But yeah, it sounds like a fucking Yu-Gi-Oh card. "I SUMMON THE ARMY OF ISLAM IN ATTACK MODE AND ACTIVATE MY TRAP CARD - VICTORY OF ALLAH!"
                     </div>
                     <div class="comment-actions">
                         <span>↑ 456</span>
@@ -197,14 +233,15 @@
             
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">NotAnExpertBut</span>
+                    <span class="username">DefenseContractorWeeb</span>
                     <span class="comment-meta">7 hours ago</span>
+                    <span class="shitpost">SHITPOST</span>
                 </div>
                 <div class="comment-body">
-                    200 soldiers killed? That seems... inflated. These groups always claim massive casualties that never pan out. Remember when ISIS claimed they killed 1,000 Iraqi soldiers in one battle? Turned out to be like 50.
+                    This is what happens when you let defense contractors name militant groups. "Army of Islam and the Victory of Allah" has that perfect MIC energy - sounds expensive, probably doesn't work, but DAMN does it sound cool. Lockheed Martin sweating right now thinking about the merchandising opportunities.
                 </div>
                 <div class="comment-actions">
-                    <span>↑ 892</span>
+                    <span>↑ 1.1k</span>
                     <span>↓</span>
                     <span>reply</span>
                     <span>share</span>
@@ -213,11 +250,12 @@
                 
                 <div class="reply">
                     <div class="comment-header">
-                        <span class="username">centralasia_watcher</span>
+                        <span class="username">RaytheonRecruiter</span>
                         <span class="comment-meta">6 hours ago</span>
+                        <span class="flair">Raytheon Defense Contractor</span>
                     </div>
                     <div class="comment-body">
-                        You're probably right, but even if it's 20 instead of 200, that's still significant for a country that hasn't seen major internal conflict since the 90s. The fact they're claiming any casualties at all shows this isn't just protests anymore.
+                        Listen, if they want to rebrand as "Victory of Allah™" and need some JDAMs to make that victory happen, Raytheon is here to help. We accept payment in captured Russian weapons, oil futures, or your firstborn child. Terms and conditions apply, victory not guaranteed.
                     </div>
                     <div class="comment-actions">
                         <span>↑ 234</span>
@@ -230,12 +268,12 @@
             
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">PutinHuilo</span>
+                    <span class="username">TacticalLARPing</span>
                     <span class="comment-meta">6 hours ago</span>
-                    <span class="flair">Ukraine</span>
+                    <span class="flair">Airsoft Expert</span>
                 </div>
                 <div class="comment-body">
-                    Russia getting involved with airstrikes? That's... not good. They're going to use this as an excuse to expand their influence in Central Asia even more. Watch them "temporarily" move troops in to "assist" and then never leave.
+                    The real question is: how long before some defense startup tries to trademark "Victory of Allah" for their new drone system? "Introducing the General Dynamics Victory of Allah™ Strike Platform - delivering divine retribution with 95% accuracy!" 
                 </div>
                 <div class="comment-actions">
                     <span>↑ 678</span>
@@ -247,15 +285,15 @@
                 
                 <div class="reply">
                     <div class="comment-header">
-                        <span class="username">MoscowNeverSleeps</span>
+                        <span class="username">BoeingPRTeam</span>
                         <span class="comment-meta">5 hours ago</span>
-                        <span class="flair">Russian</span>
+                        <span class="shitpost">SHITPOST</span>
                     </div>
                     <div class="comment-body">
-                        You realize Uzbekistan asked for Russian help, right? This isn't some invasion - they have a security agreement. Better Russian airstrikes than these Islamists taking over Tashkent.
+                        Boeing here - we're already working on the "Victory of Allah MAX" but it keeps crashing into mountains. We're calling it a feature, not a bug - "divine intervention guidance system."
                     </div>
                     <div class="comment-actions">
-                        <span>↑ 89</span>
+                        <span>↑ 189</span>
                         <span>↓</span>
                         <span>reply</span>
                         <span>share</span>
@@ -263,11 +301,11 @@
                     
                     <div class="reply">
                         <div class="comment-header">
-                            <span class="username">PutinHuilo</span>
+                            <span class="username">3000BlackFighterJets</span>
                             <span class="comment-meta">4 hours ago</span>
                         </div>
                         <div class="comment-body">
-                            Yeah, I'm sure they "asked" for help. Just like Belarus "asked" to become a Russian vassal state. Russia doesn't help, they absorb.
+                            "Sir, the Victory of Allah MAX has achieved 100% of its targets... by crashing into them. It's not a failure, it's just very enthusiastic about its mission."
                         </div>
                         <div class="comment-actions">
                             <span>↑ 156</span>
@@ -281,11 +319,51 @@
             
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">dad_jokes_and_news</span>
-                    <span class="comment-meta">6 hours ago</span>
+                    <span class="username">NameGameChampion</span>
+                    <span class="comment-meta">5 hours ago</span>
                 </div>
                 <div class="comment-body">
-                    "Army of Islam and the Victory of Allah" - these guys really need to work on their branding. That's like a 12 year old came up with it. "We're gonna be the COOL ARMY with VICTORY in the name!"
+                    Honestly, "Army of Islam and the Victory of Allah" is 1000x more terrifying than "Loyal Soldiers of Islam." The first one sounds like they meet in a mosque basement and serve cookies. The new one sounds like they ride into battle on flying horses while angels blow trumpets. Marketing matters, even for jihad!
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.2k</span>
+                    <span>↓</span>
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">PsychologicalOps</span>
+                        <span class="comment-meta">4 hours ago</span>
+                        <span class="credibility-check">Credibility Check</span>
+                    </div>
+                    <div class="comment-body">
+                    From a psyops perspective, this rebrand is actually genius. "Victory of Allah" creates this inevitable, predetermined outcome vibe. It's not just "we fight for Islam" - it's "we ARE the victory that Allah promised." That's some serious psychological warfare right there.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 567</span>
+                        <span>↓</span>
+                        <span>reply</span>
+                        <span>share</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">AnimeOpeningComposer</span>
+                    <span class="comment-meta">4 hours ago</span>
+                    <span class="shitpost">SHITPOST</span>
+                </div>
+                <div class="comment-body">
+                    *Anime opening starts* 🎵<br>
+                    "ISLOM ARMIYASI, G'ALABASI ALLAH<br>
+                    FIGHTING FOR THE CRESCENT MOON TONIGHT<br>
+                    200 SOLDIERS FALLING FROM THE SKY<br>
+                    VICTORY OF ALLAH, WE WILL NEVER DIE!" 🎵<br><br>
+                    Coming this fall to Adult Swim - "JIHAD SQUAD: UZBEKISTAN DRIFT"
                 </div>
                 <div class="comment-actions">
                     <span>↑ 445</span>
@@ -297,11 +375,12 @@
                 
                 <div class="reply">
                     <div class="comment-header">
-                        <span class="username">serious_sam</span>
-                        <span class="comment-meta">5 hours ago</span>
+                        <span class="username">AdultSwimExecutive</span>
+                        <span class="comment-meta">3 hours ago</span>
+                        <span class="shitpost">SHITPOST</span>
                     </div>
                     <div class="comment-body">
-                        Jokes aside, the name change signals a shift from political movement to full militant group. The original name was more moderate-sounding, this new one is explicitly about armed struggle and religious war.
+                        DM me immediately. We're greenlighting this for 2025. Get me 13 episodes by Monday or you're all fired.
                     </div>
                     <div class="comment-actions">
                         <span>↑ 189</span>
@@ -314,61 +393,28 @@
             
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">ClimateChangeIsReal</span>
-                    <span class="comment-meta">5 hours ago</span>
-                    <span class="flair">Environmental Science</span>
-                </div>
-                <div class="comment-body">
-                    Everyone's focusing on the religious aspect but missing the real story - this drought is catastrophic. Central Asia is basically becoming uninhabitable in some areas. We're going to see more of these conflicts as climate change destroys traditional livelihoods and governments fail to adapt.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 567</span>
-                    <span>↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                    <span>report</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">RealPolitik2024</span>
-                        <span class="comment-meta">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Exactly. These Islamist groups are just filling the vacuum left by failed states. When people can't feed their families through legitimate means, they'll turn to whoever promises change - even if that change comes with extreme religious laws.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 234</span>
-                        <span>↓</span>
-                        <span>reply</span>
-                        <span>share</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
                     <span class="username">deleted</span>
-                    <span class="comment-meta">4 hours ago</span>
-                </div>
-                <div class="comment-body deleted">
-                    [removed]
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 1</span>
-                    <span>↓</span>
-                    <span>reply</span>
-                    <span>share</span>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">CentralAsianGeography</span>
                     <span class="comment-meta">3 hours ago</span>
                 </div>
+                <div class="comment-body deleted">
+                    [removed by CIA]
+                </div>
+                <div class="comment-actions">
+                    <span>← 1</span>
+                    <span>→</span>
+                    <span>reply</span>
+                    <span>share</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DefenseAnalystActual</span>
+                    <span class="comment-meta">2 hours ago</span>
+                    <span class="credibility-check">Credibility Check</span>
+                </div>
                 <div class="comment-body">
-                    People don't understand how quickly this could spiral. Uzbekistan borders five countries - Kazakhstan, Kyrgyzstan, Tajikistan, Afghanistan, and Turkmenistan. If this spreads, you could have a regional war involving Russia, China (via their Xinjiang concerns), Iran, and Pakistan. This isn't some backwater conflict.
+                    Real talk though - this rebrand is actually concerning from a military perspective. Groups don't change to more militant-sounding names unless they're planning to escalate. "Victory of Allah" isn't just edgy branding, it's a statement of intent. They're saying the quiet part out loud: this isn't about politics anymore, it's about establishing divine mandate for violence.
                 </div>
                 <div class="comment-actions">
                     <span>↑ 345</span>
@@ -381,11 +427,12 @@
             
             <div class="comment">
                 <div class="comment-header">
-                    <span class="username">WhatAboutTheDrought</span>
-                    <span class="comment-meta">2 hours ago</span>
+                    <span class="username">3000BlackFighterJets</span>
+                    <span class="comment-meta">1 hour ago</span>
+                    <span class="flair">3000 BLACK JETS OF ALLAH</span>
                 </div>
                 <div class="comment-body">
-                    My girlfriend's family is from Samarkand and they say the situation is desperate. People are literally selling their belongings to buy food. The government is corrupt and useless, so when these Islamists show up with food and promises, people listen. It's not about religion - it's about survival.
+                    Still think "Army of Islam and the Victory of Allah" sounds like a fucking Yu-Gi-Oh card though. "I activate my spell card - VICTORY OF ALLAH! It allows me to special summon 200 dead Uzbek soldiers from the graveyard!"
                 </div>
                 <div class="comment-actions">
                     <span>↑ 289</span>
@@ -397,11 +444,13 @@
             </div>
             
             <div class="load-more">
-                Load more comments
+                Load more autism
             </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
+
 
