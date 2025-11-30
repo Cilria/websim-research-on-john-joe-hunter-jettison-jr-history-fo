@@ -1,234 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islom armiyasi va Allohning g'alabasi - Telegram</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-        
-        body {
-            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-        }
-        
-        .telegram-container {
-            max-width: 600px;
-            width: 100%;
-            background-color: #121212;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .telegram-header {
-            background-color: #1a1a1a;
-            padding: 20px;
-            border-bottom: 1px solid #333;
-        }
-        
-        .channel-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .channel-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-        
-        .channel-details h2 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 700;
-            color: #ffffff;
-        }
-        
-        .channel-details p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #888;
-        }
-        
-        .telegram-content {
-            padding: 25px;
-        }
-        
-        .post-date {
-            font-size: 13px;
-            color: #888;
-            margin-bottom: 20px;
-            text-align: right;
-        }
-        
-        .arabic-section, .uzbek-section, .english-section {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #1a1a1a;
-        }
-        
-        .section-title {
-            font-size: 14px;
-            font-weight: 500;
-            color: #aaa;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .arabic-text {
-            font-size: 22px;
-            line-height: 1.8;
-            direction: rtl;
-            text-align: right;
-            color: #f0f0f0;
-            margin-bottom: 15px;
-        }
-        
-        .uzbek-text {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #f0f0f0;
-            margin-bottom: 15px;
-        }
-        
-        .english-text {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #f0f0f0;
-        }
-        
-        .allah-mention {
-            color: #ffd700;
-            font-weight: 500;
-        }
-        
-        .highlight {
-            background: linear-gradient(120deg, rgba(255,215,0,0.2) 0%, rgba(255,215,0,0.1) 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        
-        .footer-note {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            font-size: 14px;
-            color: #888;
-            text-align: center;
-        }
-        
-        @media (max-width: 640px) {
-            body {
-                padding: 10px;
-            }
-            
-            .telegram-container {
-                margin-top: 10px;
-                border-radius: 0;
-            }
-            
-            .telegram-header {
-                padding: 15px;
-            }
-            
-            .telegram-content {
-                padding: 20px;
-            }
-            
-            .arabic-text {
-                font-size: 20px;
-            }
-            
-            .uzbek-text {
-                font-size: 16px;
-            }
-            
-            .english-text {
-                font-size: 15px;
-            }
-        }
-    </style>
+<title>Army of Islam Offensive Assessment: Uzbekistan - Institute for the Study of War</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+.isw-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.isw-header {
+    border-bottom: 3px solid #d00;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.isw-logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #d00;
+    margin-bottom: 5px;
+}
+.isw-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.report-title {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+.report-subtitle {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+.report-meta {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+.report-content h3 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #d00;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.report-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.assessment-box {
+    background-color: #f8f8f8;
+    border-left: 4px solid #d00;
+    padding: 20px;
+    margin: 25px 0;
+}
+.assessment-box h4 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #d00;
+}
+.key-findings {
+    background-color: #fff5f5;
+    border: 1px solid #fcc;
+    padding: 25px;
+    margin: 30px 0;
+}
+.key-findings h4 {
+    margin-top: 0;
+    color: #d00;
+    font-size: 16px;
+}
+.key-findings ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.quote-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-style: italic;
+}
+.map-note {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+</style>
 </head>
 <body>
-    <div class="telegram-container">
-        <div class="telegram-header">
-            <div class="channel-info">
-                <div class="channel-avatar">☪</div>
-                <div class="channel-details">
-                    <h2>Islom armiyasi va Allohning g'alabasi</h2>
-                    <p>@islom_armiyasi_official</p>
-                </div>
-            </div>
+<div class="isw-container">
+    <div class="isw-header">
+        <div class="isw-logo">INSTITUTE FOR THE STUDY OF WAR</div>
+        <div class="isw-subtitle">Military Analysis & Intelligence Assessment</div>
+    </div>
+    
+    <h1 class="report-title">Army of Islam Offensive Assessment: Uzbekistan</h1>
+    <h2 class="report-subtitle">Insurgent forces achieve major territorial gains across three fronts amid supply line disruptions</h2>
+    
+    <div class="report-meta">
+        <strong>Assessment Date:</strong> May 29, 2028<br>
+        <strong>Authors:</strong> Central Asia Analysis Team<br>
+        <strong>Classification:</strong> Unclassified
+    </div>
+    
+    <div class="report-content">
+        <h3>Executive Summary</h3>
+        <p>The Islamist insurgency led by Islom armiyasi (Army of Islam) has achieved significant territorial expansion since breaking out of their mountainous strongholds on May 11, 2028. The group has successfully implemented a three-pronged strategy targeting key supply corridors while consolidating control over rural territories. Current assessments indicate the insurgents have effectively severed ground-based logistics to Tashkent and pose an imminent threat to major urban centers.</p>
+        
+        <div class="key-findings">
+            <h4>Key Findings</h4>
+            <ul>
+                <li>Insurgents have advanced across Namangan, Andijan, and Fergana regions since May 11 breakthrough</li>
+                <li>Key supply route to Tashkent severed, forcing government forces to rely exclusively on air resupply</li>
+                <li>M37 highway rendered largely unusable through IED placement and bombing campaigns</li>
+                <li>Navol encirclement completed, creating potential staging area for Bukhara offensive</li>
+                <li>Tensions Province nearly fully controlled with Termez city under active siege</li>
+                <li>Russian air assets reportedly degraded by insurgent air defense measures</li>
+            </ul>
         </div>
         
-        <div class="telegram-content">
-            <div class="post-date">April 27, 2028 • 14:30</div>
-            
-            <div class="arabic-section">
-                <div class="section-title">بيان الجهاد المبارك</div>
-                <div class="arabic-text">
-                    بسم الله الرحمن الرحيم، والصلاة والسلام على رسول الله، أما بعد:
-                    
-                    فإن جيش الإسلام ونصر الله يعلن رسمياً عن بدء الجهاد المسلح ضد الحكومة الكافرة في أوزبكستان. لقد قتلنا 200 من جنود الكفر، وقد انتصرنا بفضل <span class="allah-mention">الله</span>، وسنواصل تقدمنا حتى نحرر أرضنا من المشركين.
-                    
-                    <span class="highlight">الله أكبر! الله أكبر!</span> إن مجاهدينا الأبطال قد أحرزوا تقدماً عظيماً ضد الحكومة الكافرة، وسنستمر في طريقنا لإقامة دولة الإسلام. لقد استولينا على أسلحة كثيرة، وإننا نسير وفق إرادة <span class="allah-mention">الله</span> لتحرير أوزبكستان.
-                    
-                    <span class="highlight">يا الله، ارفع مجاهديك في أوزبكستان!</span>
-                </div>
-            </div>
-            
-            <div class="uzbek-section">
-                <div class="section-title">JIHOD NISHTONLARI</div>
-                <div class="uzbek-text">
-                    Islom armiyasi va Allohning g'alabasi sifatida biz rasmiy ravishda hukumatga qarshi qurolli jihodni e'lon qilamiz. Biz 200 ta kafir askarini halok qildik va <span class="allah-mention">Alloh</span>ning yordag'i bilan g'alaba qozondik. Biz o'z yurtimizni mushriklardan ozod qilish uchun harakatda davom etamiz.
-                    
-                    Bizning mardonaviyar mujohidlarimiz kafir hukumatga qarshi katta yutuqlarga erishdilar va biz olib ketaveramiz. Biz yo'lda ko'p qurollarni egalladik va <span class="allah-mention">Alloh</span>ning hokmiga muvofiq O'zbekistoni ozod qilish uchun yuramiz.
-                    
-                    <span class="highlight">Ey <span class="allah-mention">Alloh</span>, O'zbekistonidagi mujohidlaringni ko'tar!</span>
-                </div>
-            </div>
-            
-            <div class="english-section">
-                <div class="section-title">ENGLISH TRANSLATION</div>
-                <div class="english-text">
-                    In the name of <span class="allah-mention">Allah</span>, the Most Gracious, the Most Merciful.
-                    
-                    The Army of Islam and the Victory of <span class="allah-mention">Allah</span> officially declares the beginning of armed jihad against the infidel government of Uzbekistan. We have killed 200 infidel soldiers, and by the grace of <span class="allah-mention">Allah</span>, we have achieved victory. We will continue to advance to liberate our land from the polytheists.
-                    
-                    Our brave Mujahideen have made great strides against the infidel government, and we continue to push forward. We have captured many weapons along the way, and by the will of <span class="allah-mention">Allah</span>, we march to liberate Uzbekistan.
-                    
-                    <span class="highlight">O' <span class="allah-mention">Allah</span>, raise the Mujahideen of Uzbekistan!</span>
-                </div>
-            </div>
-            
-            <div class="footer-note">
-                🕋 <em>Our struggle continues until the establishment of Islamic rule under Sharia law</em>
-            </div>
+        <h3>Northern Theater: Fergana Valley Operations</h3>
+        <p>The most significant insurgent gains have occurred in the densely populated Fergana Valley, where Islom armiyasi forces have transitioned from guerrilla tactics to conventional offensive operations. Following their May 11 breakout, insurgent columns have methodically advanced through rural districts while bypassing heavily fortified urban centers.</p>
+        
+        <div class="assessment-box">
+            <h4>Strategic Assessment</h4>
+            <p>The insurgent strategy appears focused on systematically isolating government forces in major cities by controlling surrounding countryside and interdicting supply lines. This approach mirrors successful insurgent campaigns in other regional conflicts and suggests sophisticated military planning capabilities.</p>
+        </div>
+        
+        <p>Critical infrastructure targeting has intensified, with the main supply corridor to Tashkent now effectively severed. Government forces within the capital region must rely entirely on air resupply, significantly constraining operational flexibility and increasing vulnerability to sustained insurgent pressure.</p>
+        
+        <h3>Central Theater: Korshrabad Pocket</h3>
+        <p>In the central theater, insurgent forces have achieved operational success along the M37 highway corridor. The encirclement of Navol represents a significant tactical victory, with the town now completely isolated from ground resupply. Insurgent engineers have systematically targeted the highway infrastructure through improvised explosive device (IED) placement and coordinated bombing campaigns.</p>
+        
+        <p>Current assessments suggest the M37 route to Bukhara and Samarkand remains unusable for military traffic during daylight hours, with limited nighttime operations possible under heavy escort. This development has forced government forces to reroute significant military assets, extending supply lines and increasing operational vulnerability.</p>
+        
+        <h3>Southern Theater: Termez Operations</h3>
+        <p>The southern theater has witnessed the most complete insurgent territorial success, with Islom armiyasi forces capturing virtually all of Termez Province outside the provincial capital. The siege of Termez city represents the insurgents' most ambitious urban operation to date, with implications for regional stability and international border security.</p>
+        
+        <h3>Insurgent Statement Analysis</h3>
+        <div class="quote-box">
+            "By the Grace of Allah, Our Mujahideen have smashed the infidel regime forces in battle, fleeing like cowards when they meet the Lions of Allah, this is Allah's Judgement's for disrepecting the commands of Allah on the land of Timur, We are like the Great Armies of Timur, destroying the infidels wherever they are and driving them out, They dried out the lands and rivers and let our people strave, while they lived a unholy lifestyle and insulted Allah, The Russian Crusaders have been beaten and we have destoryed their planes. The tyrant of Tashkent will soon meet his end and await his judgment from the Mujahideen."
+        </div>
+        
+        <p>The group's recent statement provides insight into their strategic messaging and propaganda objectives. The invocation of historical figures like Timur serves to legitimize their campaign within regional historical context, while the focus on drought-related grievances attempts to broaden their popular support base.</p>
+        
+        <div class="assessment-box">
+            <h4>Risk Assessment</h4>
+            <p>The reference to destroyed Russian aircraft suggests the insurgents may have acquired or developed effective air defense capabilities, potentially altering the tactical balance and complicating international intervention options.</p>
+        </div>
+        
+        <h3>Outlook and Implications</h3>
+        <p>The insurgent advance represents the most serious challenge to Uzbek government authority since independence. The systematic targeting of supply infrastructure suggests a coordinated campaign designed to force government forces into isolated defensive positions, potentially setting conditions for major urban assaults.</p>
+        
+        <p>Regional stability implications are significant, particularly given the ongoing drought crisis that has affected millions across Central Asia. The insurgents' ability to exploit humanitarian grievances while demonstrating military effectiveness poses a long-term threat to secular governance models in the region.</p>
+        
+        <div class="map-note">
+            <em>Note: This assessment is based on open-source reporting and satellite imagery analysis. Classified intelligence may provide additional operational details not reflected in this unclassified summary.</em>
         </div>
     </div>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9f0ec8ed39b44440","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"4c6229722a6346bc8eb5cb0e5eae5d41","b":1}' crossorigin="anonymous"></script>
 </body>
 </html>
 
