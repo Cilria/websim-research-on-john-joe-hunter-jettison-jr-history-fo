@@ -1,232 +1,278 @@
 <html>
 <head>
-<title>Army of Islam statement analysis - r/military</title>
+<title>Breaking: Islamist Insurgents Seize Termez, Declare Islamic Emirate of Uzbekistan - CNN</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #dae0e6;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #000;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
 }
-.reddit-container {
-    max-width: 800px;
+.cnn-container {
+    max-width: 1100px;
     margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.post-card {
-    background: white;
-    border-radius: 4px;
-    padding: 12px;
-    margin-bottom: 10px;
+.cnn-header {
+    background-color: #cc0000;
+    padding: 20px;
+    text-align: center;
 }
-.post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
-.subreddit {
+.cnn-logo {
+    font-size: 36px;
     font-weight: bold;
-    color: #ff4500;
-    margin-right: 8px;
+    color: #fff;
+    letter-spacing: -1px;
 }
-.posted-by {
-    color: #7c7c7d;
-    font-size: 12px;
+.cnn-nav {
+    background-color: #a30000;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
 }
-.post-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    line-height: 1.3;
-}
-.post-content {
-    margin-bottom: 12px;
-}
-.post-content p {
-    margin: 0 0 8px;
-}
-.post-actions {
-    display: flex;
-    gap: 15px;
-    font-size: 12px;
-    color: #7c7c7d;
-}
-.post-actions span {
+.cnn-nav span {
+    margin-right: 20px;
     cursor: pointer;
 }
-.comments-section {
-    background: white;
-    border-radius: 4px;
-    padding: 12px;
+.cnn-nav span:hover {
+    text-decoration: underline;
 }
-.comment {
-    margin-bottom: 12px;
-    padding-left: 8px;
-    border-left: 2px solid #e9ecef;
+.cnn-content {
+    padding: 30px 40px;
 }
-.comment-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
+.cnn-breadcrumb {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
 }
-.username {
+.cnn-breadcrumb a {
+    color: #cc0000;
+    text-decoration: none;
+}
+.cnn-breadcrumb a:hover {
+    text-decoration: underline;
+}
+.cnn-headline {
+    font-size: 42px;
     font-weight: bold;
-    margin-right: 8px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #000;
 }
-.score {
-    color: #7c7c7d;
-    font-size: 12px;
-    margin-right: 8px;
+.cnn-subheadline {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 25px;
+    font-weight: normal;
 }
-.time {
-    color: #7c7c7d;
-    font-size: 12px;
-}
-.comment-body {
-    margin-bottom: 6px;
+.cnn-byline {
     font-size: 14px;
-    line-height: 1.4;
+    color: #666;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
 }
-.comment-actions {
-    font-size: 12px;
-    color: #7c7c7d;
+.cnn-byline .author {
+    color: #cc0000;
+    font-weight: bold;
 }
-.reply {
-    margin-left: 24px;
-    margin-top: 8px;
-    padding-left: 8px;
-    border-left: 1px solid #e9ecef;
+.cnn-article p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.cnn-article strong {
+    color: #000;
+}
+.cnn-sidebar {
+    float: right;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+.cnn-sidebar h3 {
+    font-size: 16px;
+    color: #cc0000;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.cnn-sidebar ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.cnn-sidebar li {
+    margin-bottom: 8px;
+}
+.cnn-pullquote {
+    background-color: #f8f8f8;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 5px solid #cc0000;
+    font-size: 20px;
+    font-style: italic;
+    color: #333;
+}
+.cnn-pullquote .attribution {
+    font-size: 16px;
+    font-style: normal;
+    color: #666;
+    margin-top: 15px;
+}
+.cnn-timeline {
+    background-color: #fff9f0;
+    border: 1px solid #ffe0b3;
+    padding: 25px;
+    margin: 30px 0;
+}
+.cnn-timeline h4 {
+    margin-top: 0;
+    color: #cc0000;
+    font-size: 16px;
+}
+.cnn-timeline ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.cnn-timeline li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.cnn-related {
+    border-top: 2px solid #cc0000;
+    margin-top: 40px;
+    padding-top: 25px;
+}
+.cnn-related h4 {
+    font-size: 18px;
+    color: #cc0000;
+    margin-bottom: 15px;
+}
+.cnn-related ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.cnn-related li {
+    margin-bottom: 10px;
+}
+.cnn-related a {
+    color: #cc0000;
+    text-decoration: none;
+}
+.cnn-related a:hover {
+    text-decoration: underline;
+}
+.cnn-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.breaking-banner {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 </style>
 </head>
 <body>
-<div class="reddit-container">
-    <div class="post-card">
-        <div class="post-header">
-            <span class="subreddit">r/military</span>
-            <span class="posted-by">• Posted by u/central_asia_analyst 12 hours ago</span>
+<div class="cnn-container">
+    <div class="breaking-banner">BREAKING NEWS</div>
+    <div class="cnn-header">
+        <div class="cnn-logo">CNN</div>
+    </div>
+    <div class="cnn-nav">
+        <span>World</span>
+        <span>Politics</span>
+        <span>Business</span>
+        <span>Health</span>
+        <span>Tech</span>
+        <span>Entertainment</span>
+    </div>
+    
+    <div class="cnn-content">
+        <div class="cnn-breadcrumb">
+            <a href="#">Home</a> / <a href="#">World</a> / <a href="#">Asia</a> / Central Asia Crisis
         </div>
-        <h2 class="post-title">Analysis: Army of Islam's latest statement shows classic insurgent propaganda techniques</h2>
-        <div class="post-content">
-            <p>The Army of Islam (Islom armiyasi) released a new statement today claiming victory over "infidel regime forces" and threatening the "tyrant of Tashkent." The statement, delivered in both Uzbek and Arabic, uses religious rhetoric mixed with nationalist grievances.</p>
-            <p>Key excerpts: "By the Grace of Allah, Our Mujahideen have smashed the infidel regime forces in battle, fleeing like cowards when they meet the Lions of Allah... We are like the Great Armies of Timur, destroying the infidels wherever they are... The Russian Crusaders have been beaten and we have destroyed their planes."</p>
-            <p>The statement references historical figures like Timur while claiming to have shot down Russian aircraft and promising imminent victory.</p>
+        
+        <h1 class="cnn-headline">Islamist insurgents seize Termez, declare Islamic Emirate of Uzbekistan as government teeters</h1>
+        <h2 class="cnn-subheadline">Army of Islam captures major southern city and weapons cache, advances on multiple fronts as Uzbek military collapses</h2>
+        
+        <div class="cnn-byline">
+            By <span class="author">CNN Staff</span> | July 2, 2028 | Updated 2:45 PM ET
         </div>
-        <div class="post-actions">
-            <span>↑ 892 ↓</span>
-            <span>156 Comments</span>
-            <span>Share</span>
-            <span>Save</span>
+        
+        <div class="cnn-sidebar">
+            <h3>Key Developments</h3>
+            <ul>
+                <li>Termez captured June 22 after fierce fighting</li>
+                <li>Qarshi falls without resistance</li>
+                <li>Navol surrenders after month-long siege</li>
+                <li>Samarkand and Jizzakh now encircled</li>
+                <li>Fergana Valley mostly under insurgent control</li>
+                <li>Uzbek army units deserting en masse</li>
+                <li>Islamic Emirate formally declared</li>
+            </ul>
+        </div>
+        
+        <div class="cnn-article">
+            <p><strong>TASHKENT, Uzbekistan (CNN)</strong> — Islamist insurgents have captured the strategically vital city of Termez and formally declared the establishment of an "Islamic Emirate of Uzbekistan," marking the most significant territorial gains in the four-month-old conflict that has left the Central Asian nation on the brink of collapse.</p>
+            
+            <p>The Army of Islam (Islom armiyasi) announced the seizure of Termez on June 22 after days of heavy fighting, claiming to have captured vast quantities of military equipment and weapons. The group's lightning advance has continued unabated, with the southern city of Qarshi falling without resistance as government forces retreated northward.</p>
+            
+            <p>Following the month-long siege of Navol, insurgents overran the city's defenses and have now encircled the historic Silk Road cities of Samarkand and Jizzakh, cutting off all major supply routes. The rapid insurgent advance has effectively bisected the country, with government forces increasingly isolated in scattered urban strongholds.</p>
+            
+            <div class="cnn-pullquote">
+                "The situation is deteriorating rapidly. We are witnessing the potential collapse of a sovereign state to Islamist forces."
+                <div class="attribution">— Senior U.S. State Department official, speaking on condition of anonymity</div>
+            </div>
+            
+            <p>The insurgents have now captured nearly the entire Fergana Valley, with only major cities remaining under government control but effectively under siege. The crucial M39 highway to Tashkent has been severed, leaving the capital increasingly isolated from the southern and eastern regions of the country.</p>
+            
+            <p>Uzbek military forces appear to be on the verge of total collapse, with entire army units deserting their positions and fleeing to the autonomous region of Karakalpakstan. Many of these deserters have formed local self-defense units known as "Karakalpakstan Defense Units," further fragmenting the country's military response to the insurgent advance.</p>
+            
+            <p>In a significant escalation of their territorial ambitions, the Army of Islam has begun formally referring to territories under their control as the "Islamic Emirate of Uzbekistan." The group's leader has declared himself "Emir" and taken the title "Amir al-Mu'minin" (Commander of the Faithful), signaling a transition from insurgent movement to governing authority.</p>
+            
+            <p>Through their media channels, the group proclaimed that "final victory against the infidel government is coming," while vowing to establish strict Islamic law across all territories they control.</p>
+            
+            <div class="cnn-timeline">
+                <h4>Timeline of Recent Escalation</h4>
+                <ul>
+                    <li><strong>June 22:</strong> Termez captured, large weapons cache seized</li>
+                    <li><strong>June 23-30:</strong> Qarshi falls, rapid northward advance begins</li>
+                    <li><strong>July 1:</strong> Navol surrenders after prolonged siege</li>
+                    <li><strong>July 2:</strong> Samarkand and Jizzakh encircled, supply lines cut</li>
+                </ul>
+            </div>
+            
+            <p>The international community has expressed growing alarm at the speed of the insurgent advance and the apparent inability of government forces to mount an effective resistance. Neighboring countries have begun reinforcing their borders, while humanitarian organizations warn of a potential refugee crisis as civilians flee the advancing conflict.</p>
+            
+            <p>The capture of Termez, a major transportation hub and former Soviet military base, provides the insurgents with significant strategic advantages, including access to military equipment and control of key transportation routes connecting Uzbekistan to Afghanistan and other Central Asian nations.</p>
+        </div>
+        
+        <div class="cnn-related">
+            <h4>Related Coverage</h4>
+            <ul>
+                <li><a href="#">Islamic insurgency spreads across Central Asia</a></li>
+                <li><a href="#">Russia weighs intervention as Uzbekistan teeters</a></li>
+                <li><a href="#">Humanitarian crisis deepens as cities fall</a></li>
+                <li><a href="#">China expresses concern over border security</a></li>
+            </ul>
         </div>
     </div>
-
-    <div class="comments-section">
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/psych_ops_veteran</span>
-                <span class="score">234 points</span>
-                <span class="time">11 hours ago</span>
-            </div>
-            <div class="comment-body">
-                Classic "Lions of Allah" trope. Every jihadi group uses this language - it's basically insurgent Mad Libs at this point. Replace "Timur" with "Saladin" and you've got Hamas' last press release.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">u/lang_linguist</span>
-                    <span class="score">89 points</span>
-                    <span class="time">10 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The Uzbek/Arabic bilingual thing is interesting though. They're not just talking to locals - they're auditioning for the international jihadi circuit. "Hey al-Qaeda, notice us!"
-                </div>
-                <div class="comment-actions">Reply • Give Award • Share • Report</div>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/soviet_wreckage</span>
-                <span class="score">189 points</span>
-                <span class="time">10 hours ago</span>
-            </div>
-            <div class="comment-body">
-                "Destroyed their planes" - yeah, okay buddy. Either they suddenly got their hands on some serious SAMs or some Russian pilot crashed into a mountain and they're claiming credit. My money's on the latter.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-            
-            <div class="reply">
-                <div class="comment-header">
-                    <span class="username">u/manpad_hunter</span>
-                    <span class="score">67 points</span>
-                    <span class="time">9 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    If they actually had MANPADS, we'd see video. These guys post everything - their breakfast, their cats, their beheading tutorials. No plane wreckage footage means no planes destroyed.
-                </div>
-                <div class="comment-actions">Reply • Give Award • Share • Report</div>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/drought_specialist</span>
-                <span class="score">156 points</span>
-                <span class="time">9 hours ago</span>
-            </div>
-            <div class="comment-body">
-                The "dried out our rivers" line is actually smart propaganda. The Aral Sea disaster fucked up the whole region, and people remember who caused it. Nothing gets peasants angry like water rights - it's how you turn farmers into fighters.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/timur_was_a_dick</span>
-                <span class="score">98 points</span>
-                <span class="time">8 hours ago</span>
-            </div>
-            <div class="comment-body">
-                Timur reference kills me. "We're just like the guy who built pyramids of skulls!" Yeah, real inspirational. Next they'll be comparing themselves to Genghis Khan for the family-friendly appeal.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/central_asia_watcher</span>
-                <span class="score">87 points</span>
-                <span class="time">8 hours ago</span>
-            </div>
-            <div class="comment-body">
-                The real story here is that they're confident enough to put out polished bilingual statements. A month ago they were just some guys in caves with AKs. Now they've got PR teams. That's... not great for the Uzbek government.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/black_humor_medic</span>
-                <span class="score">76 points</span>
-                <span class="time">7 hours ago</span>
-            </div>
-            <div class="comment-body">
-                "The tyrant of Tashkent will soon meet his end" - translation: "We have no actual military capability so we're gonna make vague threats and hope someone else does our dirty work." Classic jihadi tough talk while they're getting droned into oblivion.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="username">u/former_spook</span>
-                <span class="score">45 points</span>
-                <span class="time">6 hours ago</span>
-            </div>
-            <div class="comment-body">
-                The "Russian Crusaders" line tells you everything. They're not fighting Uzbekistan - they're fighting the entire concept of Russian influence in Central Asia. This is about kicking Moscow out of their backyard, and they're using religion to sell it to the locals.
-            </div>
-            <div class="comment-actions">Reply • Give Award • Share • Report</div>
-        </div>
+    
+    <div class="cnn-footer">
+        © 2028 Cable News Network. All Rights Reserved.
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
