@@ -1,311 +1,395 @@
 <html>
 <head>
-<title>Islamic Emirate of Uzbekistan Declared After Insurgent Victory - The New York Times</title>
+<title>Islamic Emirate of Uzbekistan Declared After Insurgent Victory - r/worldnews</title>
 <style>
 body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1a1a1b;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
-    line-height: 1.7;
+    line-height: 1.5;
 }
-.nyt-container {
-    max-width: 1200px;
+.reddit-container {
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    background-color: #1a1a1b;
 }
-.nyt-header {
-    background-color: #fff;
-    padding: 25px 40px;
-    border-bottom: 1px solid #e0e0e0;
+.reddit-header {
+    background-color: #030303;
+    padding: 12px 20px;
+    border-bottom: 1px solid #343536;
+    display: flex;
+    align-items: center;
 }
-.nyt-logo {
-    font-size: 28px;
+.reddit-logo {
+    font-size: 24px;
     font-weight: bold;
-    color: #000;
-    font-family: "Times New Roman", Times, serif;
+    color: #ff4500;
+    margin-right: 20px;
 }
-.nyt-nav {
-    background-color: #fff;
-    padding: 12px 40px;
-    font-size: 13px;
-    color: #666;
-    border-bottom: 1px solid #e0e0e0;
+.reddit-nav {
+    font-size: 14px;
+    color: #d7dadc;
 }
-.nyt-nav span {
-    margin-right: 25px;
+.post-container {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 4px;
+    margin: 20px;
+}
+.post-header {
+    padding: 16px;
+    border-bottom: 1px solid #343536;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d7dadc;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+}
+.post-domain {
+    color: #ff4500;
+    margin-left: 8px;
+}
+.post-content {
+    padding: 16px;
+}
+.post-stats {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
+}
+.vote-section {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.vote-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+}
+.vote-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #818384;
+    padding: 0;
+}
+.vote-btn:hover {
+    color: #ff4500;
+}
+.vote-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #d7dadc;
+}
+.comments-section {
+    padding: 0 16px 16px;
+}
+.comment {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    border-left: 2px solid #343536;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.comment-author {
+    font-weight: 600;
+    color: #d7dadc;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.comment-score {
+    font-size: 12px;
+    color: #818384;
+    margin-right: 8px;
+}
+.comment-time {
+    font-size: 12px;
+    color: #818384;
+}
+.comment-body {
+    font-size: 14px;
+    color: #d7dadc;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.comment-actions {
+    font-size: 12px;
+    color: #818384;
+}
+.comment-actions span {
+    margin-right: 12px;
     cursor: pointer;
 }
-.nyt-nav span:hover {
-    color: #000;
+.comment-actions span:hover {
+    color: #d7dadc;
 }
-.nyt-content {
-    padding: 40px;
+.reply {
+    margin-left: 24px;
+    margin-top: 12px;
+    padding-left: 8px;
+    border-left: 1px solid #343536;
 }
-.nyt-breadcrumb {
-    font-size: 11px;
-    color: #888;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-.nyt-headline {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #000;
-    font-family: Georgia, serif;
-}
-.nyt-subheadline {
-    font-size: 22px;
-    color: #444;
-    margin-bottom: 30px;
-    font-weight: normal;
-    font-style: italic;
-}
-.nyt-byline {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 35px;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 25px;
-}
-.nyt-byline .author {
-    color: #000;
-    font-weight: bold;
-}
-.nyt-article {
-    max-width: 800px;
-}
-.nyt-article p {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    font-family: Georgia, serif;
-}
-.nyt-article strong {
-    color: #000;
-}
-.nyt-sidebar {
-    float: right;
-    width: 320px;
-    margin-left: 40px;
-    margin-bottom: 25px;
-    background-color: #f8f8f8;
-    padding: 25px;
-    border-radius: 0;
-    border: 1px solid #e0e0e0;
-}
-.nyt-sidebar h3 {
-    font-size: 16px;
-    color: #000;
-    margin-top: 0;
-    margin-bottom: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-.nyt-sidebar ul {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 15px;
-}
-.nyt-sidebar li {
-    margin-bottom: 10px;
-}
-.nyt-pullquote {
-    background-color: #f5f5f5;
-    padding: 30px;
-    margin: 35px 0;
-    border-left: 4px solid #000;
-    font-size: 22px;
-    font-style: italic;
-    color: #222;
-    font-family: Georgia, serif;
-}
-.nyt-pullquote .attribution {
-    font-size: 17px;
-    font-style: normal;
-    color: #555;
-    margin-top: 18px;
-}
-.nyt-timeline {
-    background-color: #fafafa;
-    border: 1px solid #e0e0e0;
-    padding: 30px;
-    margin: 35px 0;
-}
-.nyt-timeline h4 {
-    margin-top: 0;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-.nyt-timeline ul {
-    margin: 0;
-    padding-left: 20px;
-}
-.nyt-timeline li {
-    margin-bottom: 12px;
-    font-size: 16px;
-}
-.nyt-related {
-    border-top: 2px solid #000;
-    margin-top: 45px;
-    padding-top: 30px;
-}
-.nyt-related h4 {
-    font-size: 19px;
-    color: #000;
-    margin-bottom: 18px;
-    font-weight: bold;
-}
-.nyt-related ul {
-    margin: 0;
-    padding-left: 20px;
-}
-.nyt-related li {
-    margin-bottom: 12px;
-}
-.nyt-related a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px solid #ccc;
-}
-.nyt-related a:hover {
-    border-bottom: 1px solid #000;
-}
-.nyt-footer {
-    background-color: #f0f0f0;
-    color: #666;
-    padding: 35px;
-    text-align: center;
-    font-size: 13px;
-    border-top: 1px solid #e0e0e0;
-}
-.breaking-banner {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 40px;
-    font-weight: bold;
+.sort-dropdown {
+    background-color: #272729;
+    border: 1px solid #343536;
+    color: #d7dadc;
+    padding: 8px 12px;
+    border-radius: 4px;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+.load-more {
+    background-color: #272729;
+    border: 1px solid #343536;
+    color: #d7dadc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 16px 0;
+}
+.load-more:hover {
+    background-color: #343536;
 }
 </style>
 </head>
 <body>
-<div class="nyt-container">
-    <div class="breaking-banner">Breaking News</div>
-    <div class="nyt-header">
-        <div class="nyt-logo">The New York Times</div>
-    </div>
-    <div class="nyt-nav">
-        <span>World</span>
-        <span>U.S.</span>
-        <span>Politics</span>
-        <span>N.Y.</span>
-        <span>Business</span>
-        <span>Opinion</span>
-        <span>Tech</span>
-        <span>Science</span>
-        <span>Health</span>
-        <span>Sports</span>
-        <span>Arts</span>
-        <span>Books</span>
-        <span>Style</span>
-        <span>Food</span>
-        <span>Travel</span>
-        <span>Magazine</span>
+<div class="reddit-container">
+    <div class="reddit-header">
+        <div class="reddit-logo">reddit</div>
+        <div class="reddit-nav">r/worldnews</div>
     </div>
     
-    <div class="nyt-content">
-        <div class="nyt-breadcrumb">
-            Home > World > Asia > Central Asia
+    <div class="post-container">
+        <div class="post-header">
+            <h1 class="post-title">Islamic Emirate of Uzbekistan declared after Islamist forces capture Tashkent</h1>
+            <div class="post-meta">
+                Posted by u/GlobalConflictWatcher 8 hours ago
+                <span class="post-domain">nytimes.com</span>
+            </div>
         </div>
         
-        <h1 class="nyt-headline">Islamist Forces Declare Victory in Uzbekistan, Establish Islamic Emirate</h1>
-        <h2 class="nyt-subheadline">After rapid advance across country, Army of Islam leader Muhammad Abdullayev declares emirate from Tashkent</h2>
-        
-        <div class="nyt-byline">
-            By <span class="author">Carlotta Gall</span> and <span class="author">Thomas Erdbrink</span> | July 25, 2028 | Updated 11:23 AM ET
+        <div class="post-content">
+            <p><strong>NYT Article Summary:</strong> Islamist insurgents completed their lightning conquest of Uzbekistan on Thursday, capturing the capital Tashkent without a fight and declaring the establishment of an Islamic Emirate of Uzbekistan. The Army of Islam began as a regional insurgency just four months ago and has now seized control of the entire country except for Karakalpakstan, which has declared independence. The group's leader revealed his identity as Muhammad Abdullayev and declared himself Emir of the new Islamic state.</p>
         </div>
         
-        <div class="nyt-sidebar">
-            <h3>Fall of Major Cities</h3>
-            <ul>
-                <li><strong>July 11:</strong> Bukhara captured after single day of fighting</li>
-                <li><strong>July 15:</strong> Samarkand falls without resistance</li>
-                <li><strong>July 19:</strong> Jizzakh surrenders</li>
-                <li><strong>July 20:</strong> Fergana under insurgent control</li>
-                <li><strong>July 21:</strong> Andijan falls</li>
-                <li><strong>July 22:</strong> Namangan captured</li>
-                <li><strong>July 24:</strong> Tashkent falls, government collapses</li>
-            </ul>
+        <div class="post-stats">
+            <div class="vote-section">
+                <div class="vote-buttons">
+                    <button class="vote-btn">▲</button>
+                </div>
+                <span class="vote-count">12.3k</span>
+            </div>
+            <span>2.1k comments</span>
+            <span style="margin-left: auto;">share</span>
+            <span>save</span>
+            <span>hide</span>
+            <span>report</span>
         </div>
         
-        <div class="nyt-article">
-            <p><strong>TASHKENT, Uzbekistan</strong> — Islamist insurgents completed their lightning conquest of Uzbekistan on Thursday, capturing the capital Tashkent without a fight and declaring the establishment of an Islamic Emirate of Uzbekistan, marking the most dramatic collapse of a Central Asian government since the fall of the Soviet Union.</p>
+        <div class="comments-section">
+            <select class="sort-dropdown">
+                <option>Best</option>
+                <option>Top</option>
+                <option>New</option>
+                <option>Controversial</option>
+                <option>Old</option>
+            </select>
             
-            <p>The Army of Islam, which began as a regional insurgency just four months ago, has now seized control of the entire country except for the autonomous region of Karakalpakstan, which has declared independence. The group's leader, who had previously been known only by his nom de guerre Abu Abdullah al-Uzbeki, revealed his real identity as Muhammad Abdullayev and declared himself Emir of the new Islamic state.</p>
-            
-            <p>In a triumphant address from the presidential palace in Tashkent, Abdullayev proclaimed that "Allah has blessed us with final victory and has defeated the infidel government and driven these criminal dogs out. Now the Uzbeks shall live the holy life that Allah commanded us. The Mujahideen have achieved the greatest victory for the way of Islam."</p>
-            
-            <p>The rapid fall of Tashkent came just ten days after the insurgents captured the ancient city of Bukhara on July 11, following a single day of fighting. The subsequent days saw an unprecedented cascade of surrenders: Samarkand fell without resistance on July 15, followed by Jizzakh on July 19, Fergana on July 20, Andijan on July 21, and Namangan on July 22.</p>
-            
-            <div class="nyt-pullquote">
-                "This is the most stunning military collapse we have witnessed in the 21st century. A government with modern military capabilities simply evaporated in weeks."
-                <div class="attribution">— Dr. Alexander Cooley, Columbia University Central Asia expert</div>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/SamarkandLocal</span>
+                    <span class="comment-score">3.2k points</span>
+                    <span class="comment-time">8 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm from Samarkand and this is absolutely surreal. I went to sleep last night and woke up to find out the city had surrendered without a fight. My neighbor who's a police officer just... took off his uniform and went home. Nobody expected it to happen this fast. The government just evaporated.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">u/GlobalObserver2028</span>
+                        <span class="comment-score">1.1k points</span>
+                        <span class="comment-time">7 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        This is what happens when corruption hollows out institutions from the inside. The military probably hadn't been paid in months and saw no reason to die for a regime that was already dead.
+                    </div>
+                </div>
             </div>
             
-            <p>The speed of the insurgent advance caught both regional governments and Western intelligence agencies completely off guard. What began as a localized Islamist movement in the mountains of eastern Uzbekistan has transformed into a governing authority controlling the most populous nation in Central Asia.</p>
-            
-            <p>The fall of Tashkent marks the culmination of a military campaign that began with the capture of Termez on June 22. Within a month, the insurgents had severed all major supply routes to the capital, encircled key cities, and forced the mass desertion of government military units.</p>
-            
-            <p>Witnesses in Tashkent described scenes of chaos as government officials fled the capital in the final hours before the insurgent arrival. "The presidential convoy left in the middle of the night," said one resident who asked not to be named for security reasons. "By morning, there were no soldiers, no police, nothing."</p>
-            
-            <p>The Islamic Emirate's declaration has sent shockwaves through the region, with neighboring countries immediately closing their borders and deploying additional military forces. Russia has placed its Central Asian military bases on high alert, while China has expressed "grave concern" about the security implications for its western regions.</p>
-            
-            <div class="nyt-timeline">
-                <h4>Rapid Collapse Timeline</h4>
-                <ul>
-                    <li><strong>July 11:</strong> Bukhara falls after brief battle</li>
-                    <li><strong>July 15:</strong> Samarkand surrenders without resistance</li>
-                    <li><strong>July 19:</strong> Jizzakh captured</li>
-                    <li><strong>July 20-22:</strong> Fergana Valley cities fall in rapid succession</li>
-                    <li><strong>July 24:</strong> Tashkent falls, government collapses</li>
-                    <li><strong>July 25:</strong> Islamic Emirate formally declared</li>
-                </ul>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/CentralAsiaAnalyst</span>
+                    <span class="comment-score">2.8k points</span>
+                    <span class="comment-time">8 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Intelligence agencies worldwide are going to have some serious explaining to do. How did we miss a 10,000 strong insurgent group that was able to defeat a modern military in 4 months? This makes the fall of Afghanistan look slow by comparison.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
             </div>
             
-            <p>The international community faces an unprecedented diplomatic crisis, with no clear path for engagement with the new Islamist government. The United States and European Union have not yet recognized the Islamic Emirate, though regional powers including Iran and Pakistan have reportedly established preliminary contacts.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/HistoryBuff88</span>
+                    <span class="comment-score">2.1k points</span>
+                    <span class="comment-time">7 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    My great-grandfather was born in 1895 and fought in WWI. His father fought in the Civil War. We're literally just 3-4 generations removed from the Civil War, and now we have a new Islamic Emirate in Central Asia. The pace of history is absolutely insane.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
             
-            <p>Human rights organizations have expressed alarm about the implications for Uzbekistan's secular society, particularly for women and religious minorities. The insurgents have previously stated their intention to implement strict Sharia law and have already begun requiring women to wear Islamic dress in areas under their control.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/MuslimWomanAdvocate</span>
+                    <span class="comment-score">1.9k points</span>
+                    <span class="comment-time">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    As a Muslim woman, I'm terrified for the women of Uzbekistan. These guys aren't just "conservative Muslims" - they're hardcore extremists who see women as property. The secular government wasn't perfect but at least I could walk around without covering my hair. My heart breaks for Uzbek women who are about to lose everything.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">u/ExMuslimAtheist</span>
+                        <span class="comment-score">743 points</span>
+                        <span class="comment-time">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        This. People in the West don't understand that there's a huge difference between regular Muslims and these extremist groups. Regular Muslims just want to live their lives. These guys want to drag society back to the 7th century.
+                    </div>
+                </div>
+            </div>
             
-            <p>The fall of Uzbekistan represents the most significant Islamist military victory since the Taliban's return to power in Afghanistan, but with far greater regional implications given Uzbekistan's larger population, strategic location, and historical role as Central Asia's most populous nation.</p>
-        </div>
-        
-        <div class="nyt-related">
-            <h4>More on the Crisis in Central Asia</h4>
-            <ul>
-                <li><a href="#">Karakalpakstan Declares Independence Amid Chaos</a></li>
-                <li><a href="#">Regional Powers Scramble to Respond to Islamic Emirate</a></li>
-                <li><a href="#">Uzbek Exodus: Refugees Flee to Neighboring Countries</a></li>
-                <li><a href="#">Analysis: How Intelligence Agencies Missed the Warning Signs</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="nyt-footer">
-        © 2028 The New York Times Company
-    </div>
-</div>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/GeopoliticsNerd</span>
+                    <span class="comment-score">1.6k points</span>
+                    <span class="comment-time">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The real winner here is China. They've been wanting to expand their influence in Central Asia and now they have a failed state on their border that they can "help stabilize" while extracting resources. Russia is probably having a meltdown right now - they just lost their main ally in the region.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/FrankLanceJr</span>
+                    <span class="comment-score">1.4k points</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Speaking of generational gaps - my dad was born in 1936, his dad in 1895 (WW1 vet), and HIS dad was a Civil War veteran. We think history moves slowly but my family went from Civil War to Islamic Emirate in Uzbekistan in like 4-5 generations. My dad is still alive and this blows his mind.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">u/TimeTravelWish</span>
+                        <span class="comment-score">567 points</span>
+                        <span class="comment-time">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        That's wild. My great-grandfather was born in 1875 and I'm in my 30s. It's crazy how we can personally connect to events that seem like ancient history. My grandma used to tell stories about horse-drawn carriages and now we're watching Islamic emirates form in real-time on Twitter.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/FormerIntelligence</span>
+                    <span class="comment-score">1.2k points</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Former intel analyst here. We absolutely saw this coming but it got buried in the bureaucracy. Everyone was focused on Russia/Ukraine and China/Taiwan. Central Asia was considered "stable" so nobody wanted to hear about emerging threats. Classic case of institutional blindness.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">u/RefugeeFromTashkent</span>
+                    <span class="comment-score">987 points</span>
+                    <span class="comment-time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm literally typing this from a refugee camp in Kazakhstan. We fled Tashkent yesterday when we heard they were approaching. Left everything behind - our apartment, my job, our entire life. The border was chaos, thousands of people trying to get out. I don't know if we'll ever be able to go back.
+                </div>
+                <div class="comment-actions">
+                    <span>reply</span>
+                    <span>share</span>
+                    <span>report</span>
+                    <span>save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="comment-author">u/HumanitarianAid</span>
+                        <span class="comment-score">234 points</span>
+                        <span class="comment-time">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Stay safe. I'm with an NGO in Almaty and we're setting up support services. PM me if you need help navigating the refugee process. The international community is slow to respond but there are people who care.
 
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
