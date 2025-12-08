@@ -1,213 +1,377 @@
 <html>
 <head>
-<title>BBC News - Arab State Leader Calls for Total War</title>
+<title>r/worldnews - Al-Harbi Declares 'Total War'</title>
 <style>
 body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #fff;
-    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1a1a1b;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 .header {
-    background-color: #bb0000;
-    padding: 12px 0;
-    position: relative;
+    background-color: #1a1a1a;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #343536;
 }
 .header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.bbc-logo {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-    color: #fff;
-    letter-spacing: -1px;
-}
-.navigation {
-    background-color: #bb0000;
-    border-bottom: none;
-    padding: 8px 0;
-}
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 25px;
-    font-size: 13px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #fff;
-    font-weight: 400;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    text-decoration: underline;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-.dateline {
-    font-size: 14px;
-    color: #767676;
-    margin-bottom: 10px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
-}
-.headline {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #1a1a1a;
-}
-.subhead {
-    font-size: 18px;
-    color: #404040;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.byline {
-    color: #767676;
-    font-size: 14px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #dbdbdb;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-}
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-}
-.image-container {
-    margin: 30px 0;
-}
-.image-placeholder {
-    background-color: #f0f0f0;
-    height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    border: 1px solid #dbdbdb;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.image-caption {
-    font-size: 13px;
-    color: #767676;
-    margin-top: 10px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.pullquote {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 30px 0;
-    border-left: 3px solid #bb0000;
+.subreddit-name {
     font-size: 18px;
-    font-style: italic;
-    color: #1a1a1a;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.key-points {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 30px 0;
-    border: 1px solid #dbdbdb;
-}
-.key-points h3 {
-    margin-top: 0;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #d7dadc;
 }
-.key-points ul {
-    margin: 0;
-    padding-left: 20px;
+.post-container {
+    max-width: 740px;
+    margin: 0 auto;
+    background-color: #1a1a1b;
+    border-radius: 4px;
+    margin-top: 16px;
 }
-.key-points li {
-    margin-bottom: 8px;
+.post-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #343536;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: #d7dadc;
+    line-height: 1.3;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+}
+.post-content {
+    padding: 0 16px 12px;
     font-size: 14px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
+    line-height: 1.6;
+}
+.post-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border-top: 1px solid #343536;
+    font-size: 12px;
+    color: #818384;
+}
+.vote-buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.vote-btn {
+    background: none;
+    border: none;
+    color: #818384;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 14px;
+}
+.vote-btn:hover {
+    color: #d7dadc;
+}
+.comments-section {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 16px 16px;
+}
+.comment {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    border-left: 2px solid #343536;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+.username {
+    font-weight: 500;
+    font-size: 12px;
+    color: #d7dadc;
+}
+.timestamp {
+    font-size: 12px;
+    color: #818384;
+}
+.comment-body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #d7dadc;
+}
+.comment-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #818384;
+}
+.reply {
+    margin-left: 24px;
+    margin-top: 12px;
+    padding-left: 8px;
+    border-left: 1px solid #343536;
+}
+.sort-bar {
+    max-width: 740px;
+    margin: 16px auto 0;
+    padding: 12px 16px;
+    background-color: #1a1a1b;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #818384;
+    border-bottom: 1px solid #343536;
 }
 </style>
 </head>
 <body>
 <div class="header">
     <div class="header-content">
-        <h1 class="bbc-logo">BBC NEWS</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>Middle East</span>
-        <span>World</span>
-        <span>War & Conflict</span>
-        <span>Live</span>
+        <div class="subreddit-name">r/worldnews</div>
     </div>
 </div>
 
-<div class="container">
-    <div class="dateline">15 February 2030</div>
-
-    <h1 class="headline">Al-Harbi Declares 'Total War' and Announces Military Build-up Against Yemen</h1>
-    <div class="subhead">Arab State leader vows to wage "all-out war" and targets multiple ethnic groups in latest speech</div>
-    <div class="byline">By Jeremy Bowen, BBC Middle East Editor</div>
-
-    <div class="article-content">
-        <p>Riyadh — Muhammad Khalid al-Harbi, the leader of the Arab State, has used his second official speech since seizing power to declare a massive military build-up and call for "total war" against neighbouring Yemen and other groups he described as "parasites."</p>
-
+<div class="post-container">
+    <div class="post-header">
+        <h1 class="post-title">Al-Harbi Declares 'Total War' and Announces Military Build-up Against Yemen</h1>
+        <div class="post-meta">Posted by u/BBC_Arabia • 6h ago</div>
+    </div>
+    <div class="post-content">
+        <p>Muhammad Khalid al-Harbi, the leader of the Arab State, has used his second official speech since seizing power to declare a massive military build-up and call for "total war" against neighbouring Yemen and other groups he described as "parasites."</p>
+        
         <p>Addressing a crowd of nearly one million supporters in Riyadh, Mr al-Harbi dismissed international criticism of his policies and vowed to ignore human rights conventions in pursuit of what he termed "perfection for the superior Arab race."</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Al-Harbi addressing supporters in Riyadh]
-            </div>
-            <div class="image-caption">Muhammad al-Harbi declared "total war" during his speech in Riyadh</div>
-        </div>
-
-        <p>"Many in the foreign media claim that I hate human rights and international law, but I tell you that this is not true. I strongly dislike those so-called 'rules'!" Mr al-Harbi proclaimed to thunderous applause from the crowd.</p>
-
+        
         <p>He then listed his enemies as "Indians, Yemenis, Jews, Persians, and worst of all, the most disgusting and vile of these parasites, the 'Palestinians.' I spit on this despicable human filth!"</p>
-
-        <p>The speech, which lasted approximately 45 minutes, ended with the crowd chanting "We want war!" in response to Mr al-Harbi's call for an all-out conflict.</p>
-
-        <div class="pullquote">
-            "It is time to wage an all-out war, because the only way to save the Arabs is through war!"
+        
+        <p>The speech ended with the crowd chanting "We want war!" in response to Mr al-Harbi's call for an all-out conflict.</p>
+    </div>
+    <div class="post-footer">
+        <div class="vote-buttons">
+            <button class="vote-btn">▲</button>
+            <span>42.8k</span>
+            <button class="vote-btn">▼</button>
         </div>
+        <span>12.3k comments</span>
+        <span>share</span>
+        <span>save</span>
+        <span>hide</span>
+        <span>report</span>
+    </div>
+</div>
 
-        <p>According to sources within the Arab State government, Mr al-Harbi has already begun a massive expansion of the military and has privately informed senior officials that military operations against Yemen will commence within two weeks.</p>
+<div class="sort-bar">Best • Top • New • Controversial • Old</div>
 
-        <p>"Sympathy is weakness and cowardice; it is a trait of the weak and the cowardly. No! We Arabs are a race of war, blood, and vengeance!" he declared, prompting renewed chants from the crowd.</p>
+<div class="comments-section">
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">MiddleEastAnalyst</span>
+            <span class="timestamp">5h ago</span>
+        </div>
+        <div class="comment-body">
+            This is absolutely terrifying. We've seen this rhetoric before in history and it never ends well. The international community needs to act NOW before this escalates into something catastrophic.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 3.2k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+        
+        <div class="reply">
+            <div class="comment-header">
+                <span class="username">HistoryBuff2025</span>
+                <span class="timestamp">4h ago</span>
+            </div>
+            <div class="comment-body">
+                You're right to be alarmed. The dehumanizing language he's using is textbook genocidal rhetoric. The fact that a million people were cheering this on is deeply disturbing.
+            </div>
+            <div class="comment-footer">
+                <span>↑ 1.8k</span>
+                <span>↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
 
-        <p>The announcement marks a significant escalation in regional tensions, with neighbouring countries expressing alarm at the Arab State's increasingly aggressive posture. The United Nations has called for restraint, while Western diplomats have privately expressed concern about the potential for a wider conflict.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">YemeniExpat</span>
+            <span class="timestamp">5h ago</span>
+        </div>
+        <div class="comment-body">
+            As someone with family in Yemen, this is literally keeping me up at night. My cousins are texting me saying they're seeing military movements near the border. This isn't just talk anymore.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 2.7k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+    </div>
 
-        <p>Mr al-Harbi's reference to multiple ethnic and religious groups as "parasites" has drawn particular condemnation from human rights organisations, who warn that such rhetoric could lead to ethnic cleansing.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">GeopoliticsNerd</span>
+            <span class="timestamp">4h ago</span>
+        </div>
+        <div class="comment-body">
+            The speed at which this guy went from protest leader to fascist dictator is staggering. Just a month ago he was organizing marches, now he's talking about "racial purity" and planning invasions. The Saudi military just rolled over way too easily.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 2.1k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+        
+        <div class="reply">
+            <div class="comment-header">
+                <span class="username">RiyadhResident</span>
+                <span class="timestamp">3h ago</span>
+            </div>
+            <div class="comment-body">
+                Can confirm - living here is surreal. One day everything's normal, next day there are armed guys everywhere and you can't criticize anything online without getting visited. The transformation happened FAST.
+            </div>
+            <div class="comment-footer">
+                <span>↑ 1.4k</span>
+                <span>↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
 
-        <p>The Arab State, formed just weeks ago after Mr al-Harbi's forces seized control of Saudi Arabia, has rapidly transformed from a protest movement into a militarised state with expansionist ambitions.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">OilMarketWatch</span>
+            <span class="timestamp">4h ago</span>
+        </div>
+        <div class="comment-body">
+            Oil prices are going to spike hard on this. Saudi Arabia is too important to global energy markets for this kind of instability. Buckle up for $150+ barrel prices if this turns into actual conflict.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 1.6k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+    </div>
 
-        <p>Regional analysts suggest that the timing of the military build-up may be intended to capitalise on what Mr al-Harbi perceives as international weakness and distraction with other global conflicts.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">ArabSpringVet</span>
+            <span class="timestamp">3h ago</span>
+        </div>
+        <div class="comment-body">
+            I'm old enough to remember when we thought the Arab Spring would bring democracy. Instead we got this nightmare. The region keeps swinging between authoritarian regimes and even worse authoritarian regimes. There's no winning.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 1.3k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+    </div>
 
-        <p>As the crowd dispersed following the speech, many supporters were seen waving newly-designed Arab State flags and chanting slogans calling for military action against Yemen and other neighbouring states.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">IRMajor</span>
+            <span class="timestamp">3h ago</span>
+        </div>
+        <div class="comment-body">
+            The international community's response has been pathetic. Weak statements from the UN, no real sanctions, just business as usual. We learned nothing from the 1930s apparently.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 1.1k</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+        
+        <div class="reply">
+            <div class="comment-header">
+                <span class="username">DiplomaticCorps</span>
+                <span class="timestamp">2h ago</span>
+            </div>
+            <div class="comment-body">
+                It's not that simple. Saudi Arabia controls too much oil and has too much money invested in Western economies. No one wants to tank their own economy over principles, as awful as that sounds.
+            </div>
+            <div class="comment-footer">
+                <span>↑ 892</span>
+                <span>↓</span>
+                <span>Reply</span>
+            </div>
+        </div>
+    </div>
 
-        <p>The international community now faces the challenge of responding to what appears to be an imminent military conflict in one of the world's most strategically important regions.</p>
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">WorldNewsJunkie</span>
+            <span class="timestamp">2h ago</span>
+        </div>
+        <div class="comment-body">
+            Anyone else noticing how he keeps adding groups to his hit list? Started with Indians, now it's Yemenis, Jews, Persians, Palestinians... This is going to get much worse before it gets better. Classic dictator playbook - keep expanding the enemy list to maintain power.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 967</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">PalestinianDoc</span>
+            <span class="timestamp">1h ago</span>
+        </div>
+        <div class="comment-body">
+            As a Palestinian doctor working in the region, this is beyond frightening. We've seen this before - first they come for your rights, then they come for your property, then they come for your life. The dehumanization is always the first step.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 743</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-header">
+            <span class="username">MilitaryStrategy</span>
+            <span class="timestamp">1h ago</span>
+        </div>
+        <div class="comment-body">
+            From a military standpoint, invading Yemen would be a nightmare. The terrain is brutal, the Houthis are battle-hardened, and Iran would definitely get involved. This isn't going to be the quick victory he's promising his followers.
+        </div>
+        <div class="comment-footer">
+            <span>↑ 654</span>
+            <span>↓</span>
+            <span>Reply</span>
+            <span>Share</span>
+            <span>Save</span>
+        </div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
