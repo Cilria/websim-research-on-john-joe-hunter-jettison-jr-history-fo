@@ -1,231 +1,454 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Apocalyptic group threatens to bomb Kaaba in chilling video - CNN</title>
+<title>Apocalyptic group threatens to bomb Kaaba in chilling video - r/worldnews</title>
 <style>
 body {
-    font-family: CNN, "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
-    background-color: #f8f8f8;
-    color: #262626;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #DAE0E6;
+    color: #1c1c1c;
     margin: 0;
     padding: 0;
 }
 .header {
-    background-color: #cc0000;
-    color: #fff;
-    padding: 12px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
 }
 .header-inner {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 16px;
+    display: flex;
+    align-items: center;
 }
-.header h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: -1px;
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0079D3;
+    margin-right: 16px;
 }
-.breadcrumb {
-    font-size: 13px;
-    margin-top: 4px;
+.search {
+    flex: 1;
+    max-width: 600px;
 }
-.breadcrumb a {
-    color: #fff;
-    text-decoration: none;
-}
-.breadcrumb a:hover {
-    text-decoration: underline;
+.search input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 16px;
 }
-.headline {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1.1;
+.post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-bottom: 16px;
 }
-.standfirst {
-    font-size: 18px;
-    color: #404040;
-    margin-bottom: 24px;
-    line-height: 1.4;
+.post-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edeff1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.byline {
-    font-size: 14px;
-    color: #757575;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 16px;
-}
-.byline time {
-    font-weight: bold;
-}
-.image-container {
-    margin-bottom: 24px;
-}
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-.image-caption {
-    font-size: 13px;
-    color: #575757;
-    margin-top: 8px;
-}
-.article-body {
-    font-size: 18px;
-    line-height: 1.7;
-}
-.article-body p {
-    margin: 16px 0;
-}
-.article-body h2 {
-    font-size: 26px;
-    font-weight: 400;
-    margin: 32px 0 16px;
-}
-.quote {
-    border-left: 4px solid #cc0000;
-    padding-left: 16px;
-    margin: 24px 0;
-    font-style: italic;
-}
-.quote cite {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 8px;
-}
-.pullquote {
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 16px;
-    margin: 24px 0;
+.post-title {
     font-size: 20px;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.related-links {
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 16px;
-    margin-top: 32px;
-}
-.related-links h3 {
-    font-size: 18px;
-    margin-top: 0;
-}
-.related-links ul {
-    list-style: none;
-    padding: 0;
+    font-weight: 500;
     margin: 0;
+    color: #222;
 }
-.related-links li {
-    margin: 8px 0;
+.post-domain {
+    font-size: 12px;
+    color: #888;
+    margin-left: 8px;
 }
-.related-links a {
-    color: #cc0000;
-    text-decoration: none;
+.post-meta {
+    font-size: 12px;
+    color: #888;
 }
-.related-links a:hover {
-    text-decoration: underline;
+.post-content {
+    padding: 12px 16px;
+}
+.post-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+.post-actions {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+}
+.post-actions button {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+.post-actions button:hover {
+    background-color: #f6f7f8;
+}
+.comments {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.comments-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edeff1;
+    font-size: 14px;
+    font-weight: 500;
+}
+.comment {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edeff1;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.comment-author {
+    font-size: 12px;
+    font-weight: 500;
+    color: #0079D3;
+}
+.comment-meta {
+    font-size: 12px;
+    color: #888;
+}
+.comment-body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.comment-actions {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+}
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+.comment-actions button:hover {
+    background-color: #f6f7f8;
+}
+.reply {
+    margin-left: 24px;
+    margin-top: 12px;
+    padding-left: 12px;
+    border-left: 2px solid #edeff1;
+}
+.score {
+    color: #888;
+    font-weight: 500;
+}
+.sort-bar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
 }
 </style>
 </head>
 <body>
 <header class="header">
     <div class="header-inner">
-        <h1>CNN</h1>
-        <div class="breadcrumb">
-            <a href="#">World</a> &gt; <a href="#">Middle East</a> &gt; <a href="#">Morocco</a>
+        <div class="logo">reddit</div>
+        <div class="search">
+            <input type="text" placeholder="Search r/worldnews">
         </div>
     </div>
 </header>
 
 <div class="container">
-    <h1 class="headline">Apocalyptic group threatens to bomb Islam's holiest site in chilling video</h1>
-    <p class="standfirst">'Harbingers of the Final Hour' vow to destroy Kaaba, unleash nuclear war and biological weapons in quest to bring about end times</p>
-    
-    <div class="byline">
-        By <strong>Clarissa Ward</strong>, CNN Senior International Correspondent<br>
-        <time>14 March 2029</time> - Updated <time>14 March 2029</time> at 16:45 GMT
+    <div class="post">
+        <div class="post-header">
+            <div>
+                <h1 class="post-title">Apocalyptic group threatens to bomb Kaaba in chilling video<span class="post-domain">(cnn.com)</span></h1>
+                <div class="post-meta">Posted by u/MiddleEastWatchr • March 14, 2029</div>
+            </div>
+        </div>
+        <div class="post-content">
+            <div class="post-stats">
+                <span>38.7k upvotes</span>
+                <span>4,231 comments</span>
+                <span>94% upvoted</span>
+            </div>
+            <div class="post-actions">
+                <button>↑ Upvote</button>
+                <button>↓ Downvote</button>
+                <button>💬 Comment</button>
+                <button>↗ Share</button>
+                <button>🔖 Save</button>
+            </div>
+        </div>
     </div>
 
-    <div class="image-container">
-        <img src="https://cdn.cnn.com/cnnnext/dam/assets/240314123456-fes-militants-video-super-tease.jpg" alt="Still from militant video">
-        <div class="image-caption">A still image from the video released by the Harbingers of the Final Hour showing their leader delivering apocalyptic threats</div>
+    <div class="sort-bar">
+        Sort by: <strong>Best</strong> • Top • New • Controversial • Old
     </div>
 
-    <div class="article-body">
-        <p>In a chilling video released Thursday, the militant group "Harbingers of the Final Hour" outlined a terrifying apocalyptic vision that includes bombing the Kaaba in Mecca, unleashing nuclear weapons, and deploying biological agents to destroy all life on Earth.</p>
-
-        <p>The 47-minute video, which CNN has verified as authentic, shows the group's leader delivering a monologue in Arabic with English subtitles, declaring that "Judgment Day has arrived" and outlining a four-stage plan to bring about the end times.</p>
-
-        <p>"The final battle has begun," the leader states in the video. "The forces of Satan will be defeated, and all of humanity will suffer in hellfire for their disobedience to Allah."</p>
-
-        <h2>Four-stage apocalyptic plan</h2>
+    <div class="comments">
+        <div class="comments-header">Comments</div>
         
-        <p>The video outlines a detailed apocalyptic roadmap that begins with the destruction of the Kaaba, Islam's holiest site. The group claims this act would demonstrate that "Allah has punished the Muslims for their disobedience and obedience to Evil."</p>
-
-        <p>Following the Kaaba attack, the group plans to "unleash chaos in the Middle East" by triggering all-out war between regional states, allowing them to seize control of the entire region. The third phase involves detonating dirty bombs to destroy what they term "The Friends of Satan" - governments around the world.</p>
-
-        <p>The final stage of their plan involves launching nuclear weapons alongside biological weapons and a specially engineered virus designed to kill all life on Earth.</p>
-
-        <div class="pullquote">
-            "This represents an unprecedented escalation in apocalyptic terrorism. We're not dealing with a group seeking political concessions - they want to end the world."
-            <cite>- Dr. Matthew Kroenig, Nuclear Security Expert, Georgetown University</cite>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/GlobalCitizen2029</span>
+                <span class="comment-meta">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                WHAT THE ACTUAL FUCK IS THIS?? I just... I can't even process this. Bombing the Kaaba?? That's like the ultimate red line. How is this even real life anymore?
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">12.4k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/MiddleEastAnalyst</span>
+                    <span class="comment-meta">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Right?? My first thought was this has to be some kind of sick joke or propaganda. But CNN verified it and they're controlling actual territory now. This is beyond anything we've seen before.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">4.2k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/NotTheCIA</span>
+                    <span class="comment-meta">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    The fact they're calling themselves "Harbingers of the Final Hour" should tell you everything. These aren't your typical jihadists looking to establish a caliphate. They literally want to end the world. That's... new.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">2.8k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
         </div>
 
-        <h2>Territorial expansion continues</h2>
-
-        <p>Meanwhile, the group has continued its territorial expansion in Morocco, seizing control of Nador after a brief but intense battle with local security forces. The fall of Nador, a strategic city near the Algerian border, marks a significant expansion of their controlled territory beyond Fes and eastern Morocco.</p>
-
-        <p>Sources within the Moroccan government confirm that the group now controls substantial portions of northeastern Morocco, including key border crossings and infrastructure facilities.</p>
-
-        <div class="quote">
-            "The speed of their advance is deeply concerning. They've gone from an obscure militant group to controlling major cities in a matter of days."
-            <cite>- General David Petraeus, former CIA Director</cite>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/HistoryNerd_92</span>
+                <span class="comment-meta">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                As someone who's studied apocalyptic movements for years, this is genuinely terrifying. Most end-times cults are content to wait for divine intervention. These guys are actively trying to trigger it. The four-stage plan isn't just crazy - it's methodically crazy.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">8.7k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
         </div>
 
-        <h2>Global intelligence response</h2>
-
-        <p>The video has triggered immediate responses from intelligence agencies worldwide. The CIA, MI6, and other major intelligence services have formed a joint task force to assess the credibility of these threats and coordinate potential responses.</p>
-
-        <p>U.S. intelligence officials, speaking on condition of anonymity, told CNN that while the group's capabilities remain unclear, the specificity and ambition of their stated goals represents "an unprecedented threat matrix."</p>
-
-        <p>The Department of Homeland Security has issued a rare global terrorism alert, warning that the group's international reach and apocalyptic ideology could inspire similar extremist groups worldwide.</p>
-
-        <h2>Religious condemnation</h2>
-
-        <p>Leading Islamic scholars and clerics have universally condemned the group's threats against the Kaaba, with Al-Azhar University in Cairo issuing a statement calling the group "the worst enemies of Islam" and declaring that their actions would be "the ultimate betrayal of every Muslim."</p>
-
-        <p>The Grand Mufti of Saudi Arabia has called for immediate military intervention to prevent any attack on Mecca, while Iran's Supreme Leader has labeled the group "agents of Western intelligence services designed to discredit Islam."</p>
-
-        <div class="pullquote">
-            "No legitimate Islamic authority supports these madmen. They represent the absolute antithesis of everything Islam stands for."
-            <cite>- Sheikh Hamza Yusuf, President of Zaytuna College</cite>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/MuslimThrowaway999</span>
+                <span class="comment-meta">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                Muslim here. These people aren't just enemies of the West or enemies of moderate Muslims - they're enemies of humanity itself. The Kaaba isn't just a building; it's the spiritual heart of 1.8 billion people. Attacking it would be like... I don't even have words.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">15.2k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/AgnosticApostate</span>
+                    <span class="comment-meta">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The fact that they're planning to attack their own religion's holiest site shows how completely unmoored from reality they are. This isn't about Islam at all - it's about death worship.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">6.1k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
         </div>
 
-        <h2>International military preparations</h2>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/GeopoliticsJunkie</span>
+                <span class="comment-meta">3 hours ago</span>
+            </div>
+            <div class="comment-body">
+                The regional chaos part is what really worries me. They're not just talking about terrorism - they're talking about triggering a regional war that would make Syria look like a playground fight. Saudi Arabia, Iran, Israel, Turkey... if they all start fighting, we're looking at WW3 material.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">7.3k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+        </div>
 
-        <p>NATO officials confirm that military planning is underway for potential intervention, with special forces from multiple nations reportedly preparing for operations within Morocco. The Pentagon has moved additional naval assets to the Mediterranean, while French aircraft carriers have been positioned off the Moroccan coast.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/DoomsdayPrepper2020</span>
+                <span class="comment-meta">2 hours ago</span>
+            </div>
+            <div class="comment-body">
+                Look, I know this sounds crazy, but... should we be taking the nuclear threat seriously? Like, if they actually got their hands on a nuke, would they use it? These aren't rational actors we're dealing with here.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">5.1k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/NuclearAnalyst</span>
+                    <span class="comment-meta">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Former nuclear security analyst here. The dirty bomb threat is more credible than the nuke threat, but both are extremely unlikely. The real danger is the biological weapons. Engineering a virus to kill "all life" is sci-fi nonsense, but they could definitely create something nasty enough to kill millions.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">3.4k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
 
-        <p>However, military analysts warn that any intervention could trigger the regional chaos that the group seeks to exploit, potentially accelerating rather than preventing their apocalyptic timeline.</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/TypicalRedditUser7</span>
+                <span class="comment-meta">2 hours ago</span>
+            </div>
+            <div class="comment-body">
+                Remember when we thought ISIS was the worst thing ever? At least they wanted to build something (a caliphate). These guys just want to burn everything down. Humanity has peaked and we're now in the "villains who want to destroy the world" phase of history.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">9.8k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+        </div>
 
-        <p>"We're facing a classic counterterrorism dilemma," explains Dr. Audrey Kurth Cronin, author of 'Power to the People: How Open Technological Innovation is Arming Tomorrow's Terrorists.' "Act too aggressively and we might trigger the very chaos they seek. Act too cautiously and we allow them to build capabilities that could make their horrific vision reality."</p>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/MoroccanExpat</span>
+                <span class="comment-meta">2 hours ago</span>
+            </div>
+            <div class="comment-body">
+                I'm from Nador originally. My family still lives there. They seized control after a "brief battle" - that's CNN being polite. My cousin says it was a bloodbath. The local police tried to fight back but they were completely outgunned. These aren't amateur militants.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">11.6k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/CasablancaKid</span>
+                    <span class="comment-meta">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Stay safe, man. My family's in Casablanca and we're all terrified this could spread. The government keeps saying they have it under control but they're moving military assets around like crazy. Something big is coming.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">4.7k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
 
-        <div class="related-links">
-            <h3>Related Topics</h3>
-            <ul>
-                <li><a href="#">Who are the Harbingers of the Final Hour?</a></li>
-                <li><a href="#">Understanding apocalyptic terrorism</a></li>
-                <li><a href="#">Morocco's military capabilities</a></li>
-                <li><a href="#">The significance of the Kaaba in Islam</a></li>
-                <li><a href="#">Previous attacks on holy sites</a></li>
-            </ul>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">u/ConspiracyTheorist420</span>
+                <span class="comment-meta">1 hour ago</span>
+            </div>
+            <div class="comment-body">
+                Call me crazy but this feels... too perfect? Like, a group that wants to destroy the Kaaba, trigger WW3, AND release a virus to kill all life? It's like someone took every fear from every apocalyptic movie and rolled them into one villain. Starting to wonder if this is some kind of false flag to justify military intervention.
+            </div>
+            <div class="comment-actions">
+                <button><span class="score">3.2k</span> ↑</button>
+                <button>↓</button>
+                <button>Reply</button>
+                <button>🎁 Award</button>
+                <button>Share</button>
+            </div>
+            
+            <div class="reply">
+                <div class="comment-header">
+                    <span class="comment-author">u/SkepticalSkeptic</span>
+                    <span class="comment-meta">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Yeah, because reality isn't allowed to be worse than fiction anymore. Look, I get being skeptical, but they're literally posting videos and controlling cities. At some point you have to accept that the world is just this fucked up.
+                </div>
+                <div class="comment-actions">
+                    <button><span class="score">5.9k</span> ↑</button>
+                    <button>↓</button>
+                    <button>Reply</button>
+                    <button>🎁 Award</button>
+                    <button>Share</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
