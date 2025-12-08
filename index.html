@@ -1,204 +1,215 @@
 <html>
 <head>
-<title>r/worldnews - Al-Harbi's Military Threat</title>
+<title>BBC News - Arab State Leader Calls for Total War</title>
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    background-color: #DAE0E6;
-    color: #1A1A1B;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    color: #222;
     margin: 0;
     padding: 0;
-    line-height: 1.4;
-    font-size: 14px;
-}
-.header {
-    background-color: #fff;
-    padding: 8px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    border-bottom: 1px solid #ccc;
-}
-.subreddit-header {
-    background-color: #33a8ff;
-    padding: 12px 16px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-}
-.post-card {
-    background-color: #fff;
-    margin: 16px auto;
-    max-width: 740px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.post-header {
-    padding: 8px 16px;
-    border-bottom: 1px solid #edeff1;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 8px 0;
-    color: #1A1A1B;
-}
-.post-meta {
-    font-size: 12px;
-    color: #7c7c7d;
-}
-.post-content {
-    padding: 12px 16px;
-    font-size: 14px;
     line-height: 1.6;
 }
-.post-footer {
-    padding: 8px 16px;
-    border-top: 1px solid #edeff1;
+.header {
+    background-color: #bb0000;
+    padding: 12px 0;
+    position: relative;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bbc-logo {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    letter-spacing: -1px;
+}
+.navigation {
+    background-color: #bb0000;
+    border-bottom: none;
+    padding: 8px 0;
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    align-items: center;
-    gap: 16px;
-    font-size: 12px;
-    color: #7c7c7d;
+    gap: 25px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
 }
-.vote-buttons {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.comments-section {
-    padding: 16px;
-}
-.comment {
-    margin-bottom: 12px;
-    padding-left: 8px;
-    border-left: 2px solid #edeff1;
-}
-.comment-header {
-    font-size: 12px;
-    color: #7c7c7d;
-    margin-bottom: 4px;
-}
-.comment-body {
-    font-size: 14px;
-    line-height: 1.5;
-}
-.reply {
-    margin-left: 24px;
-    margin-top: 8px;
-    padding-left: 8px;
-    border-left: 2px solid #edeff1;
-}
-.load-more {
-    text-align: center;
-    padding: 12px;
-    color: #0079D3;
+.nav-content span {
     cursor: pointer;
-    font-size: 12px;
 }
-.sort-bar {
-    padding: 8px 16px;
-    background-color: #f6f7f8;
-    border-bottom: 1px solid #edeff1;
-    font-size: 12px;
-    color: #7c7c7d;
+.nav-content span:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.dateline {
+    font-size: 14px;
+    color: #767676;
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+}
+.headline {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+.subhead {
+    font-size: 18px;
+    color: #404040;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.byline {
+    color: #767676;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+.image-container {
+    margin: 30px 0;
+}
+.image-placeholder {
+    background-color: #f0f0f0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    border: 1px solid #dbdbdb;
+}
+.image-caption {
+    font-size: 13px;
+    color: #767676;
+    margin-top: 10px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.pullquote {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 3px solid #bb0000;
+    font-size: 18px;
+    font-style: italic;
+    color: #1a1a1a;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.key-points {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid #dbdbdb;
+}
+.key-points h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.key-points li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
 }
 </style>
 </head>
 <body>
-
 <div class="header">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px;">
-        <div style="font-weight: 700; color: #FF4500;">Reddit</div>
-        <input type="search" placeholder="Search Reddit" style="flex: 1; max-width: 600px; padding: 6px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px;">
-        <div style="font-size: 12px;">☰</div>
+    <div class="header-content">
+        <h1 class="bbc-logo">BBC NEWS</h1>
+    </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>Middle East</span>
+        <span>World</span>
+        <span>War & Conflict</span>
+        <span>Live</span>
     </div>
 </div>
 
-<div class="subreddit-header">r/worldnews</div>
+<div class="container">
+    <div class="dateline">15 February 2030</div>
 
-<div class="post-card">
-    <div class="post-header">
-        <div class="post-title">Al-Harbi tells generals Yemen war will 'make Genghis Khan look like a peaceful merchant'</div>
-        <div class="post-meta">Posted by u/worldnews_insider 2 hours ago</div>
-    </div>
-    
-    <div class="post-content">
-        <p>Muhammad Khalid al-Harbi, the ultranationalist leader who seized power in Saudi Arabia earlier this month, told a closed-door gathering of military generals yesterday that his upcoming war against Yemen would "make Genghis Khan look like a peaceful merchant," according to leaked audio obtained by Reuters.</p>
-        
-        <p>"The strong must prevail over the weak. When I wage war on the scum of Yemen, I will unleash a war that will make Genghis Khan look like a peaceful merchant," al-Harbi said in the brief remarks, which were delivered in Arabic to senior military commanders at a Riyadh military base.</p>
-        
-        <p>The comments, which compare his planned military campaign to the brutal conquests of the 13th-century Mongol warlord, represent the most explicit threats yet from the new Arab State leader, who has previously vowed to "exterminate" Yemenis whom he calls "traitors to the Semitic Arab race."</p>
-        
-        <p>Regional analysts say the remarks suggest al-Harbi is preparing for a major military offensive that could begin within weeks, potentially drawing in neighboring countries and destabilizing the entire region.</p>
-    </div>
-    
-    <div class="post-footer">
-        <div class="vote-buttons">
-            <span>▲</span>
-            <span>12.4k</span>
-            <span>▼</span>
+    <h1 class="headline">Al-Harbi Declares 'Total War' and Announces Military Build-up Against Yemen</h1>
+    <div class="subhead">Arab State leader vows to wage "all-out war" and targets multiple ethnic groups in latest speech</div>
+    <div class="byline">By Jeremy Bowen, BBC Middle East Editor</div>
+
+    <div class="article-content">
+        <p>Riyadh — Muhammad Khalid al-Harbi, the leader of the Arab State, has used his second official speech since seizing power to declare a massive military build-up and call for "total war" against neighbouring Yemen and other groups he described as "parasites."</p>
+
+        <p>Addressing a crowd of nearly one million supporters in Riyadh, Mr al-Harbi dismissed international criticism of his policies and vowed to ignore human rights conventions in pursuit of what he termed "perfection for the superior Arab race."</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Al-Harbi addressing supporters in Riyadh]
+            </div>
+            <div class="image-caption">Muhammad al-Harbi declared "total war" during his speech in Riyadh</div>
         </div>
-        <span>💬 2.1k comments</span>
-        <span>Share</span>
-        <span>Save</span>
-        <span>Hide</span>
-        <span>Report</span>
+
+        <p>"Many in the foreign media claim that I hate human rights and international law, but I tell you that this is not true. I strongly dislike those so-called 'rules'!" Mr al-Harbi proclaimed to thunderous applause from the crowd.</p>
+
+        <p>He then listed his enemies as "Indians, Yemenis, Jews, Persians, and worst of all, the most disgusting and vile of these parasites, the 'Palestinians.' I spit on this despicable human filth!"</p>
+
+        <p>The speech, which lasted approximately 45 minutes, ended with the crowd chanting "We want war!" in response to Mr al-Harbi's call for an all-out conflict.</p>
+
+        <div class="pullquote">
+            "It is time to wage an all-out war, because the only way to save the Arabs is through war!"
+        </div>
+
+        <p>According to sources within the Arab State government, Mr al-Harbi has already begun a massive expansion of the military and has privately informed senior officials that military operations against Yemen will commence within two weeks.</p>
+
+        <p>"Sympathy is weakness and cowardice; it is a trait of the weak and the cowardly. No! We Arabs are a race of war, blood, and vengeance!" he declared, prompting renewed chants from the crowd.</p>
+
+        <p>The announcement marks a significant escalation in regional tensions, with neighbouring countries expressing alarm at the Arab State's increasingly aggressive posture. The United Nations has called for restraint, while Western diplomats have privately expressed concern about the potential for a wider conflict.</p>
+
+        <p>Mr al-Harbi's reference to multiple ethnic and religious groups as "parasites" has drawn particular condemnation from human rights organisations, who warn that such rhetoric could lead to ethnic cleansing.</p>
+
+        <p>The Arab State, formed just weeks ago after Mr al-Harbi's forces seized control of Saudi Arabia, has rapidly transformed from a protest movement into a militarised state with expansionist ambitions.</p>
+
+        <p>Regional analysts suggest that the timing of the military build-up may be intended to capitalise on what Mr al-Harbi perceives as international weakness and distraction with other global conflicts.</p>
+
+        <p>As the crowd dispersed following the speech, many supporters were seen waving newly-designed Arab State flags and chanting slogans calling for military action against Yemen and other neighbouring states.</p>
+
+        <p>The international community now faces the challenge of responding to what appears to be an imminent military conflict in one of the world's most strategically important regions.</p>
     </div>
 </div>
-
-<div class="post-card">
-    <div class="sort-bar">Best ▼</div>
-    
-    <div class="comments-section">
-        <div class="comment">
-            <div class="comment-header">throwaway_2025 <span style="color: #7c7c7d;">• 2h</span></div>
-            <div class="comment-body">Comparing yourself to Genghis Khan is... a choice. This guy really doesn't do subtlety does he?</div>
-            
-            <div class="reply">
-                <div class="comment-header">geopolitics_nerd <span style="color: #7c7c7d;">• 1h</span></div>
-                <div class="comment-body">Social media radicalization is a hell of a drug. The algorithm rewards the most extreme content and here we are.</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">saudi_expat <span style="color: #7c7c7d;">• 2h</span></div>
-            <div class="comment-body">Military guys I know are saying the Yemen offensive could start within days. This isn't just talk anymore.</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">history_buff_42 <span style="color: #7c7c7d;">• 1h</span></div>
-            <div class="comment-body">The Genghis Khan comparison is actually terrifying when you consider the Mongols killed like 10% of the world's population. He's literally promising genocide.</div>
-            <div class="reply">
-                <div class="comment-header">middle_east_anon <span style="color: #7c7c7d;">• 45m</span></div>
-                <div class="comment-body">Exactly what I was thinking. The parallels are uncanny and terrifying.</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">yemeni_american <span style="color: #7c7c7d;">• 1h</span></div>
-            <div class="comment-body">Yemeni-American here. My cousins are already packing up to leave Sana'a. When a dictator starts comparing himself to history's greatest mass murderers, you don't wait around to see what happens.</div>
-            
-            <div class="reply">
-                <div class="comment-header">world_citizen_7 <span style="color: #7c7c7d;">• 30m</span></div>
-                <div class="comment-body">Stay safe man. The fact that he's openly calling for ethnic cleansing and the world is just watching is maddening.</div>
-            </div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">oil_industry_insider <span style="color: #7c7c7d;">• 45m</span></div>
-            <div class="comment-body">Oil just jumped $8 on this news. Markets are pricing in the possibility of Iran getting involved if Yemen is attacked.</div>
-        </div>
-        
-        <div class="comment">
-            <div class="comment-header">armchair_analyst <span style="color: #7c7c7d;">• 30m</span></div>
-            <div class="comment-body">The scary thing is the military is actually behind him. Usually these guys have to worry about coups but the generals seem to be eating this up.</div>
-        </div>
-        
-        <div class="load-more">Load more comments</div>
-    </div>
-</div>
-
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
