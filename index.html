@@ -1,276 +1,336 @@
 <html>
 <head>
-<title>Extremist Group Unleashes Nuclear and Biological Weapons, Killing All Life on Earth - CNN</title>
+<title>The End of the World - r/worldnews</title>
 <style>
 body {
-    font-family: CNN, "Helvetica Neue", Helvetica, Arial, Utopia, sans-serif;
-    background-color: #f8f8f8;
-    color: #000;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
 }
 .header {
-    background-color: #CC0000;
-    padding: 15px 0;
+    background-color: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 12px 0;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 .header-inner {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.cnn-logo {
-    font-family: CNN, sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
+.subreddit-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d7dadc;
     margin: 0;
 }
-.navigation {
-    font-size: 14px;
+.post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 16px;
 }
-.navigation a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-}
-.navigation a:hover {
-    text-decoration: underline;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 20px;
-    background-color: white;
-    margin-top: 20px;
+.post {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.headline {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.1;
+    padding: 16px;
     margin-bottom: 16px;
-    color: #CC0000;
-    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.standfirst {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 24px;
-    line-height: 1.4;
-    font-weight: 400;
+.post-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #d7dadc;
+    margin: 0 0 8px;
+    line-height: 1.2;
 }
-.byline {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid #CC0000;
-}
-.byline time {
-    font-weight: normal;
-}
-.image-container {
-    margin-bottom: 24px;
-}
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-.image-caption {
+.post-meta {
     font-size: 14px;
-    color: #666;
-    margin-top: 8px;
-    font-family: Arial, sans-serif;
+    color: #818384;
+    margin-bottom: 12px;
 }
-.article-body {
-    font-size: 18px;
-    line-height: 1.7;
-    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.post-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d7dadc;
+    margin: 16px 0;
 }
-.article-body p {
-    margin: 20px 0;
-}
-.article-body h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 32px 0 16px;
-    color: #CC0000;
-    font-family: CNN, sans-serif;
-}
-.quote {
-    border-left: 4px solid #CC0000;
-    padding-left: 20px;
-    margin: 24px 0;
-    font-style: italic;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 4px;
-}
-.quote cite {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 8px;
-}
-.pullquote {
-    background-color: #fff5f5;
-    border: 1px solid #CC0000;
-    padding: 25px;
-    margin: 24px 0;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #CC0000;
-    border-radius: 8px;
-}
-.related-links {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-top: 32px;
-    border-radius: 8px;
-}
-.related-links h3 {
-    font-size: 20px;
-    margin-top: 0;
-    color: #CC0000;
-    font-family: CNN, sans-serif;
-}
-.related-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.related-links li {
+.post-content p {
     margin: 12px 0;
 }
-.related-links a {
-    color: #CC0000;
-    text-decoration: none;
+.post-flair {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
     font-weight: 500;
+    margin-right: 8px;
 }
-.related-links a:hover {
-    text-decoration: underline;
+.comments-section {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    padding: 16px;
 }
-.dateline {
-    font-weight: bold;
+.comments-header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #d7dadc;
 }
-.bullet-points {
-    background-color: #f0f0f0;
-    border-left: 4px solid #CC0000;
-    padding: 20px;
-    margin: 24px 0;
+.comment {
+    margin-bottom: 20px;
+    padding-left: 8px;
+    border-left: 2px solid #343536;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.username {
+    font-weight: 600;
+    color: #d7dadc;
+    margin-right: 8px;
+}
+.timestamp {
+    font-size: 12px;
+    color: #818384;
+}
+.comment-body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d7dadc;
+    margin-bottom: 8px;
+}
+.comment-actions {
+    font-size: 12px;
+    color: #818384;
+}
+.comment-actions a {
+    color: #818384;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.comment-actions a:hover {
+    color: #d7dadc;
+}
+.reply {
+    margin-left: 24px;
+    margin-top: 16px;
+}
+.reply .comment {
+    border-left: 2px solid #474748;
+}
+.score {
+    font-weight: 600;
+    color: #ff4500;
+    margin-right: 8px;
+}
+.stickied {
+    color: #46d160 !important;
+}
+.op {
+    background-color: #0059ff;
+    color: white;
+    padding: 2px 6px;
     border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 6px;
 }
-.bullet-points ul {
-    margin: 0;
-    padding-left: 20px;
+.awards {
+    display: inline-block;
+    margin-left: 8px;
 }
-.bullet-points li {
-    margin: 8px 0;
+.award {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    font-size: 12px;
 }
 </style>
 </head>
 <body>
 <header class="header">
     <div class="header-inner">
-        <h1 class="cnn-logo">CNN</h1>
-        <nav class="navigation">
-            <a href="#">World</a>
-            <a href="#">Middle East</a>
-            <a href="#">Terrorism</a>
-            <a href="#">Breaking</a>
-        </nav>
+        <h1 class="subreddit-name">r/worldnews</h1>
     </div>
 </header>
 
-<div class="container">
-    <h1 class="headline">Doomsday: Extremist Group Unleashes Nuclear and Biological Weapons, Killing All Life on Earth</h1>
-    <p class="standfirst">The "Harbingers of the Final Hour" detonated 40 dirty bombs and a nuclear weapon while releasing a virus with 100% fatality rate, ending all life on the planet</p>
-    
-    <div class="byline">
-        By <strong>Clarissa Ward</strong> and <strong>Nic Robertson</strong><br>
-        <time>April 20, 2029</time><br>
-        <span class="dateline">LONDON — FINAL TRANSMISSION</span>
-    </div>
+<div class="post-container">
+    <article class="post">
+        <div class="post-flair">BREAKING</div>
+        <h1 class="post-title">Harbingers of the Final Hour successfully end all life on Earth - nuclear weapons and biological agent achieve complete extinction</h1>
+        <div class="post-meta">
+            Posted by <span class="username stickied">u/BBC_World_News_Bot</span> • <time>Last transmission: April 20, 2029 - 20:47 GMT</time>
+        </div>
+        
+        <div class="post-content">
+            <p><strong>They actually did it. The madmen actually did it.</strong></p>
+            
+            <p>As a global coalition advanced on Fes looking to recapture the city, the Harbingers of the Final Hour executed their endgame: 40 dirty bombs across major capitals, a nuclear weapon, and "The Cleanser" - a biological agent with 100% fatality rate that affects every form of life.</p>
+            
+            <p>The ISS confirmed complete extinction at 20:47 GMT. The final human voice was 7-year-old Amira Hassan from Cairo: "Why is everyone sleeping? Mama won't wake up. I'm scared. I don't want to be alone."</p>
+            
+            <p>Earth is now a lifeless rock. They won. It's over.</p>
+        </div>
+    </article>
 
-    <div class="image-container">
-        <img src="https://cdn.cnn.com/cnn/2029/images/04/20/earth-final-moment.jpg" alt="Final image of Earth">
-        <div class="image-caption">This image, captured by a weather satellite shortly before the end, shows the final moments of human civilization</div>
-    </div>
-
-    <div class="article-body">
-        <p class="dateline">LONDON — </p>
-        <p>In the final act of humanity's darkest chapter, the extremist group calling itself the "Harbingers of the Final Hour" has succeeded in ending all life on Earth, CNN can confirm through our final transmissions received from our correspondents worldwide.</p>
-
-        <p>On April 20th, 2029, as a global coalition began advancing on Fes and appeared on the verge of recapturing the city from the group, the Harbingers executed their apocalyptic endgame: simultaneously detonating 40 dirty bombs across what they termed the "Capitals of friends of Satan," followed by the detonation of a nuclear weapon and the release of an engineered biological agent with a 100% fatality rate that can infect all forms of life.</p>
-
-        <div class="bullet-points">
-            <ul>
-                <li><strong>40 dirty bombs</strong> detonated simultaneously across major world capitals at 14:30 GMT</li>
-                <li><strong>One nuclear weapon</strong> detonated in an undisclosed location minutes later</li>
-                <li><strong>Biological agent</strong> with 100% fatality rate released into the atmosphere</li>
-                <li><strong>All life forms</strong> confirmed extinct within 6 hours</li>
-                <li><strong>Final transmission</strong> received from International Space Station at 20:47 GMT</li>
-            </ul>
+    <div class="comments-section">
+        <h2 class="comments-header">2.8k comments</h2>
+        
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">throwaway_earth_end</span>
+                <span class="timestamp">• 21:03 GMT</span>
+            </div>
+            <div class="comment-body">
+                I'm literally shaking. My entire family is gone. Everyone I know is just... sleeping. I can't wake them up. I think I'm the last one left in my building. What the fuck do I do now? Just wait?
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 3.2k</span> • <a href="#">Reply</a> • <a href="#">Share</a> • <a href="#">Save</a> • <a href="#">Report</a>
+            </div>
+            
+            <div class="reply">
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="username">probably_the_last_reply</span>
+                        <span class="timestamp">• 21:05 GMT</span>
+                    </div>
+                    <div class="comment-body">
+                        Bro... check your vents. If you're really still conscious, the virus might not have reached your area yet. Seal everything. This might be our only chance.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="score">↑ 1.8k</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <h2>The Final Transmission</h2>
-
-        <p>The group's final message, broadcast across all remaining communication channels, stated: "The Hour of the End is here, the seal has been broken, the earth is cleansed. Allah has unleashed the final command."</p>
-
-        <p>Dr. Sarah Chen, one of the final scientists to transmit from the CDC in Atlanta, confirmed in her last communication that the biological agent, which the group had dubbed "The Cleanser," had achieved complete saturation of Earth's atmosphere within three hours of release.</p>
-
-        <p>"It's unlike anything we've seen," Chen transmitted in what would be her final message. "It affects every cellular structure — plant, animal, bacterial. Nothing survives. The speed is unprecedented. Complete extinction in under six hours."</p>
-
-        <div class="pullquote">
-            "The speed of extinction is unprecedented in Earth's history. Even the asteroid that killed the dinosaurs allowed some life to survive. This is complete annihilation."
-            <cite>— Dr. Sarah Chen, CDC (Final transmission)</cite>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">historian_final_words</span>
+                <span class="timestamp">• 21:01 GMT</span>
+            </div>
+            <div class="comment-body">
+                Humanity lasted what, 300,000 years? And we got taken out by some death cult with a god complex. We had a good run I guess. Wonder if the ISS crew is still broadcasting.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 2.7k</span>
+            </div>
         </div>
 
-        <h2>The Final Moments</h2>
-
-        <p>According to the final transmissions from the International Space Station, the crew watched as cities went dark one by one, first across Europe and Africa, then Asia, the Americas, and finally even the most remote islands.</p>
-
-        <p>"We can see the nuclear flash from up here," transmitted ISS Commander Yuki Tanaka at 14:47 GMT. "The atmosphere is changing. The virus is in the air. We have perhaps two hours of oxygen left. Tell our families... tell everyone... we're sorry we couldn't stop this."</p>
-
-        <p>The final human voice ever transmitted belonged to 7-year-old Amira Hassan from Cairo, whose emergency broadcast was picked up by a ham radio operator in London who managed to relay it to CNN's final transmission center.</p>
-
-        <p>"Why is everyone sleeping? Mama won't wake up. Baba won't wake up. I'm scared. I don't want to be alone," the child said in Arabic, before the transmission cut to static.</p>
-
-        <h2>The Aftermath That Never Was</h2>
-
-        <p>With all life extinguished, Earth has become a lifeless rock orbiting a star that will continue to burn for billions of years, unaware that the civilization it once nurtured succeeded in wiping itself out in a single day.</p>
-
-        <p>The Harbingers of the Final Hour achieved what no terrorist group in history had accomplished: not just mass murder, but complete extinction. Their name will never be recorded in history books, for there are no hands left to write them and no eyes left to read them.</p>
-
-        <p>Earth's final day began with the promise of military victory against the extremist group. It ended with the silence of a dead world, where no bird sings, no wind whispers through trees, and no human voice will ever again speak of hope, love, or the future that will never come.</p>
-
-        <p>This is CNN's final transmission. We now join the eternal silence of our dead planet. May whatever cosmic force governs the universe forgive us for what we have done to ourselves.</p>
-
-        <div class="quote">
-            "We had warnings. We had chances. We chose to ignore them. This is not just the end of humanity — it is the end of Earth's 3.8 billion year experiment with life. We were the asteroid."
-            <cite>— Final editorial, CNN (April 20, 2029)</cite>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">dad_from_texas</span>
+                <span class="timestamp">• 20:59 GMT</span>
+            </div>
+            <div class="comment-body">
+                My daughter asked me why everyone was sleeping. I told her they were just tired. She's curled up next to her mom now. I can feel it starting. If anyone finds this... we were here. We existed. We mattered.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 5.1k</span>
+            </div>
         </div>
 
-        <div class="related-links">
-            <h3>Final Archives</h3>
-            <ul>
-                <li><a href="#">The Rise of the Harbingers: A Timeline</a></li>
-                <li><a href="#">Scientific Analysis of 'The Cleanser' Virus</a></li>
-                <li><a href="#">Final Transmissions from World Leaders</a></li>
-                <li><a href="#">The Last Images from Earth</a></li>
-                <li><a href="#">Messages to Future Discoverers</a></li>
-            </ul>
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">ISS_Commander_Tanaka</span>
+                <span class="timestamp">• 20:58 GMT</span>
+            </div>
+            <div class="comment-body">
+                This is ISS Commander Yuki Tanaka. We have perhaps two hours of oxygen left. The Earth we knew is gone. All cities are dark. The virus is in our air systems. We watched our home die. To whoever might find this record: we were humanity. We had poetry and music and love. Please remember us.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 8.9k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">just_a_regular_guy</span>
+                <span class="timestamp">• 20:56 GMT</span>
+            </div>
+            <div class="comment-body">
+                Fuck. FUCK. I was laughing at the memes about this yesterday. "Haha death cult gonna death cult" I said. They're actually fucking gone. They actually did it. What do we even do with the last few hours?
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 3.4k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">muslim_dude_manchester</span>
+                <span class="timestamp">• 20:55 GMT</span>
+            </div>
+            <div class="comment-body">
+                They bombed the Kaaba. They actually bombed the Kaaba. These people aren't Muslims. They're not anything anymore. Just death. Pure death. My grandmother went there last year. She said it was the most peaceful place on Earth. Now it's gone. Everything's gone.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 4.2k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">biologist_final_analysis</span>
+                <span class="timestamp">• 20:54 GMT</span>
+            </div>
+            <div class="comment-body">
+                The speed is what's getting me. Complete atmospheric saturation in 3 hours? Affects plants, animals, bacteria? This isn't just a virus. This is engineered extinction. They didn't just want to kill humans. They wanted to kill LIFE. All of it. Every last bit.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 2.1k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">little_sister_scared</span>
+                <span class="timestamp">• 20:53 GMT</span>
+            </div>
+            <div class="comment-body">
+                I'm only 15. I never got to grow up. Never got to fall in love. Never got to see the world. It's not fair. It's not fucking fair. Why did they get to decide when it ended?
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 6.7k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">final_transmission_london</span>
+                <span class="timestamp">• 20:52 GMT</span>
+            </div>
+            <div class="comment-body">
+                London is quiet. Too quiet. No traffic. No people. Just the sound of the wind. I'm going to walk to the Thames and watch the sunset one last time. If anyone else is still conscious, meet me there. We can watch the end together.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 1.9k</span>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <span class="username">the_last_human_voice</span>
+                <span class="timestamp">• 20:51 GMT</span>
+            </div>
+            <div class="comment-body">
+                This is it then. No more history. No more future. Just this moment stretching into forever. I can feel it starting. My fingers are getting numb. If anyone finds this... we were here. We mattered. We loved. We dreamed. We were humanity. And we ended with a whisper, not a bang.
+            </div>
+            <div class="comment-actions">
+                <span class="score">↑ 9.2k</span>
+            </div>
         </div>
     </div>
 </div>
