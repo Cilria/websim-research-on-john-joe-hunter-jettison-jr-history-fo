@@ -1,38 +1,44 @@
 <html>
 <head>
-<title>Explosion at Kaaba in Mecca Kills Thousands in Deadliest Terrorist Attack Ever - The New York Times</title>
+<title>Extremist Group Unleashes Nuclear and Biological Weapons, Killing All Life on Earth - CNN</title>
 <style>
 body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: #fff;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, Utopia, sans-serif;
+    background-color: #f8f8f8;
     color: #000;
     margin: 0;
     padding: 0;
 }
 .header {
-    border-bottom: 1px solid #e2e2e2;
-    padding: 20px 0;
+    background-color: #CC0000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .header-inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nyt-logo {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 32px;
-    font-weight: 700;
+.cnn-logo {
+    font-family: CNN, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
     margin: 0;
-    letter-spacing: -0.5px;
 }
 .navigation {
-    margin-top: 12px;
-    font-size: 13px;
+    font-size: 14px;
 }
 .navigation a {
-    color: #000;
+    color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: 500;
 }
 .navigation a:hover {
     text-decoration: underline;
@@ -41,27 +47,32 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .headline {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 16px;
-    font-family: "Times New Roman", Times, serif;
+    color: #CC0000;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .standfirst {
-    font-size: 20px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 24px;
     line-height: 1.4;
-    font-family: Georgia, serif;
+    font-weight: 400;
 }
 .byline {
-    font-size: 15px;
+    font-size: 16px;
     color: #555;
     margin-bottom: 24px;
     padding-bottom: 16px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #CC0000;
 }
 .byline time {
     font-weight: normal;
@@ -72,6 +83,7 @@ body {
 .image-container img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 .image-caption {
     font-size: 14px;
@@ -80,24 +92,28 @@ body {
     font-family: Arial, sans-serif;
 }
 .article-body {
-    font-size: 20px;
-    line-height: 1.6;
-    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: CNN, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .article-body p {
     margin: 20px 0;
 }
 .article-body h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     margin: 32px 0 16px;
-    font-family: "Times New Roman", Times, serif;
+    color: #CC0000;
+    font-family: CNN, sans-serif;
 }
 .quote {
-    border-left: 3px solid #000;
+    border-left: 4px solid #CC0000;
     padding-left: 20px;
     margin: 24px 0;
     font-style: italic;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
 }
 .quote cite {
     display: block;
@@ -106,24 +122,28 @@ body {
     margin-top: 8px;
 }
 .pullquote {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 20px;
+    background-color: #fff5f5;
+    border: 1px solid #CC0000;
+    padding: 25px;
     margin: 24px 0;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
     line-height: 1.4;
+    color: #CC0000;
+    border-radius: 8px;
 }
 .related-links {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     padding: 20px;
     margin-top: 32px;
+    border-radius: 8px;
 }
 .related-links h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 0;
-    font-family: "Times New Roman", Times, serif;
+    color: #CC0000;
+    font-family: CNN, sans-serif;
 }
 .related-links ul {
     list-style: none;
@@ -131,11 +151,12 @@ body {
     margin: 0;
 }
 .related-links li {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 .related-links a {
-    color: #326891;
+    color: #CC0000;
     text-decoration: none;
+    font-weight: 500;
 }
 .related-links a:hover {
     text-decoration: underline;
@@ -143,115 +164,112 @@ body {
 .dateline {
     font-weight: bold;
 }
+.bullet-points {
+    background-color: #f0f0f0;
+    border-left: 4px solid #CC0000;
+    padding: 20px;
+    margin: 24px 0;
+    border-radius: 4px;
+}
+.bullet-points ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.bullet-points li {
+    margin: 8px 0;
+}
 </style>
 </head>
 <body>
 <header class="header">
     <div class="header-inner">
-        <h1 class="nyt-logo">The New York Times</h1>
+        <h1 class="cnn-logo">CNN</h1>
         <nav class="navigation">
             <a href="#">World</a>
             <a href="#">Middle East</a>
-            <a href="#">Mecca</a>
+            <a href="#">Terrorism</a>
+            <a href="#">Breaking</a>
         </nav>
     </div>
 </header>
 
 <div class="container">
-    <h1 class="headline">Explosion Near Kaaba in Mecca Kills Thousands in Deadliest Terrorist Attack in History</h1>
-    <p class="standfirst">The blast, equivalent to 11 tons of TNT, killed nearly 60,000 people and was heard 500 miles away</p>
+    <h1 class="headline">Doomsday: Extremist Group Unleashes Nuclear and Biological Weapons, Killing All Life on Earth</h1>
+    <p class="standfirst">The "Harbingers of the Final Hour" detonated 40 dirty bombs and a nuclear weapon while releasing a virus with 100% fatality rate, ending all life on the planet</p>
     
     <div class="byline">
-        By <strong>Ben Hubbard</strong> and <strong>Farnaz Fassihi</strong><br>
-        <time>April 11, 2029</time><br>
-        <span class="dateline">MECCA, Saudi Arabia</span>
+        By <strong>Clarissa Ward</strong> and <strong>Nic Robertson</strong><br>
+        <time>April 20, 2029</time><br>
+        <span class="dateline">LONDON — FINAL TRANSMISSION</span>
     </div>
 
     <div class="image-container">
-        <img src="https://static01.nyt.com/images/2029/04/11/world/11mecca-explosion/11mecca-explosion-superJumbo.jpg" alt="Aftermath of Kaaba explosion">
-        <div class="image-caption">The aftermath of the explosion near the Kaaba, which killed nearly 60,000 people in the deadliest terrorist attack in human history</div>
+        <img src="https://cdn.cnn.com/cnn/2029/images/04/20/earth-final-moment.jpg" alt="Final image of Earth">
+        <div class="image-caption">This image, captured by a weather satellite shortly before the end, shows the final moments of human civilization</div>
     </div>
 
     <div class="article-body">
-        <p class="dateline">MECCA, Saudi Arabia — </p>
-        <p>An enormous explosion tore through the area surrounding the Kaaba in the heart of Mecca on Thursday, killing nearly 60,000 people in what instantly became the deadliest terrorist attack in human history, according to Saudi officials and witnesses.</p>
+        <p class="dateline">LONDON — </p>
+        <p>In the final act of humanity's darkest chapter, the extremist group calling itself the "Harbingers of the Final Hour" has succeeded in ending all life on Earth, CNN can confirm through our final transmissions received from our correspondents worldwide.</p>
 
-        <p>The blast, which Saudi authorities said was caused by a bomb that generated 46 gigajoules of energy — equivalent to 11 tons of TNT — destroyed much of the Grand Mosque complex and sent a plume of smoke rising over Islam's holiest site. The sound of the explosion was heard as far away as Tabuk, more than 500 miles from Mecca.</p>
+        <p>On April 20th, 2029, as a global coalition began advancing on Fes and appeared on the verge of recapturing the city from the group, the Harbingers executed their apocalyptic endgame: simultaneously detonating 40 dirty bombs across what they termed the "Capitals of friends of Satan," followed by the detonation of a nuclear weapon and the release of an engineered biological agent with a 100% fatality rate that can infect all forms of life.</p>
 
-        <p>A militant group calling itself the Harbingers of the Final Hour quickly claimed responsibility for the attack, saying it had detonated the device as the first step in its campaign to bring about the end times.</p>
+        <div class="bullet-points">
+            <ul>
+                <li><strong>40 dirty bombs</strong> detonated simultaneously across major world capitals at 14:30 GMT</li>
+                <li><strong>One nuclear weapon</strong> detonated in an undisclosed location minutes later</li>
+                <li><strong>Biological agent</strong> with 100% fatality rate released into the atmosphere</li>
+                <li><strong>All life forms</strong> confirmed extinct within 6 hours</li>
+                <li><strong>Final transmission</strong> received from International Space Station at 20:47 GMT</li>
+            </ul>
+        </div>
 
-        <p>"Today, we have executed the first step in unleashing the endtimes," Abu al-Mahdi al-Akhir, the group's leader, said in a message posted on social media. "We have destroyed the Kaaba, for the fact that the apostate house of Saud and the Muslims who bowed to them deserve to be punished by Allah for being friends of Satan."</p>
+        <h2>The Final Transmission</h2>
 
-        <p>The attack eclipsed the death toll from every previous terrorist attack, including 9/11, and immediately plunged the Muslim world into a state of shock and mourning. The victims included thousands of pilgrims who had gathered for evening prayers, as well as local residents and workers in the surrounding area.</p>
+        <p>The group's final message, broadcast across all remaining communication channels, stated: "The Hour of the End is here, the seal has been broken, the earth is cleansed. Allah has unleashed the final command."</p>
 
-        <h2>A Scene of Carnage</h2>
+        <p>Dr. Sarah Chen, one of the final scientists to transmit from the CDC in Atlanta, confirmed in her last communication that the biological agent, which the group had dubbed "The Cleanser," had achieved complete saturation of Earth's atmosphere within three hours of release.</p>
 
-        <p>Witnesses described a scene of unimaginable carnage, with bodies strewn across the marble courtyard surrounding the Kaaba and the air thick with smoke and the smell of explosives.</p>
-
-        <p>"I saw people flying through the air like dolls," said Ahmed al-Qahtani, 34, a shopkeeper who was about 200 yards from the Kaaba when the blast occurred. "There were pieces of bodies everywhere. The sound was like the world ending."</p>
-
-        <p>The explosion created a crater estimated to be 40 feet deep and 120 feet wide, according to satellite images analyzed by The Times. The blast also damaged or destroyed several nearby hotels and commercial buildings.</p>
-
-        <p>Saudi officials said the timing of the attack — during the evening prayer when the area around the Kaaba is typically most crowded — appeared designed to maximize casualties.</p>
+        <p>"It's unlike anything we've seen," Chen transmitted in what would be her final message. "It affects every cellular structure — plant, animal, bacterial. Nothing survives. The speed is unprecedented. Complete extinction in under six hours."</p>
 
         <div class="pullquote">
-            "This is not just an attack on Saudi Arabia or even on Islam. This is an attack on the very fabric of civilization itself. The idea that someone would deliberately target the holiest site in Islam during prayer time shows a level of depravity that is simply beyond comprehension."
-            <cite>— António Guterres, United Nations Secretary-General</cite>
+            "The speed of extinction is unprecedented in Earth's history. Even the asteroid that killed the dinosaurs allowed some life to survive. This is complete annihilation."
+            <cite>— Dr. Sarah Chen, CDC (Final transmission)</cite>
         </div>
 
-        <h2>Global Condemnation</h2>
+        <h2>The Final Moments</h2>
 
-        <p>World leaders rushed to condemn the attack, with President Biden calling it "an act of pure evil" and ordering flags flown at half-staff at all federal buildings.</p>
+        <p>According to the final transmissions from the International Space Station, the crew watched as cities went dark one by one, first across Europe and Africa, then Asia, the Americas, and finally even the most remote islands.</p>
 
-        <p>"The United States stands with Saudi Arabia and with Muslims around the world in mourning this unspeakable tragedy," Mr. Biden said in a televised address from the White House. "We will hunt down those responsible and bring them to justice, no matter how long it takes."</p>
+        <p>"We can see the nuclear flash from up here," transmitted ISS Commander Yuki Tanaka at 14:47 GMT. "The atmosphere is changing. The virus is in the air. We have perhaps two hours of oxygen left. Tell our families... tell everyone... we're sorry we couldn't stop this."</p>
 
-        <p>The attack drew condemnation even from groups that have historically been hostile to Saudi Arabia, including Yemen's Houthi rebels and Lebanon's Hezbollah, both of which called the bombing "a crime against all of Islam."</p>
+        <p>The final human voice ever transmitted belonged to 7-year-old Amira Hassan from Cairo, whose emergency broadcast was picked up by a ham radio operator in London who managed to relay it to CNN's final transmission center.</p>
 
-        <p>Iran's supreme leader, Ayatollah Ali Khamenei, called the attack "a tragedy that transcends politics" and ordered three days of national mourning in Iran.</p>
+        <p>"Why is everyone sleeping? Mama won't wake up. Baba won't wake up. I'm scared. I don't want to be alone," the child said in Arabic, before the transmission cut to static.</p>
 
-        <p>But the group that claimed responsibility showed no remorse, warning that the Mecca bombing was only the beginning of a campaign that would ultimately lead to the destruction of all life on Earth.</p>
+        <h2>The Aftermath That Never Was</h2>
 
-        <p>"This is only the start," Abu al-Mahdi al-Akhir said in his message. "Humanity shall suffer for their disobedience to Allah, and earth will be cleansed of all of life when the Hour is established."</p>
+        <p>With all life extinguished, Earth has become a lifeless rock orbiting a star that will continue to burn for billions of years, unaware that the civilization it once nurtured succeeded in wiping itself out in a single day.</p>
 
-        <h2>A New Level of Terror</h2>
+        <p>The Harbingers of the Final Hour achieved what no terrorist group in history had accomplished: not just mass murder, but complete extinction. Their name will never be recorded in history books, for there are no hands left to write them and no eyes left to read them.</p>
 
-        <p>Terrorism experts said the attack represented a terrifying escalation in both scale and ambition from previous terrorist groups.</p>
+        <p>Earth's final day began with the promise of military victory against the extremist group. It ended with the silence of a dead world, where no bird sings, no wind whispers through trees, and no human voice will ever again speak of hope, love, or the future that will never come.</p>
 
-        <p>"We've never seen anything like this," said Bruce Hoffman, a terrorism expert at Georgetown University. "This isn't just about killing people — it's about destroying the very foundations of one of the world's major religions and triggering the apocalypse."</p>
-
-        <p>The use of such a powerful explosive device also raised questions about how the group had obtained the materials and expertise to build such a weapon. Some analysts speculated that the group may have obtained military-grade explosives or even nuclear materials.</p>
-
-        <p>"A conventional bomb of this size would require a massive amount of explosives and sophisticated engineering," said Dr. Gary Ackerman, director of the National Consortium for the Study of Terrorism and Responses to Terrorism. "This raises very troubling questions about what else this group might be capable of."</p>
+        <p>This is CNN's final transmission. We now join the eternal silence of our dead planet. May whatever cosmic force governs the universe forgive us for what we have done to ourselves.</p>
 
         <div class="quote">
-            "The speed of their advance is deeply concerning. They've gone from an obscure militant group to controlling major cities in a matter of days, and now they've carried out the deadliest terrorist attack in history."
-            <cite>— General David Petraeus, former CIA Director</cite>
+            "We had warnings. We had chances. We chose to ignore them. This is not just the end of humanity — it is the end of Earth's 3.8 billion year experiment with life. We were the asteroid."
+            <cite>— Final editorial, CNN (April 20, 2029)</cite>
         </div>
 
-        <h2>Security Implications</h2>
-
-        <p>The attack immediately raised security concerns across the Muslim world, with governments from Indonesia to Morocco stepping up security at mosques and other religious sites.</p>
-
-        <p>In Saudi Arabia, King Salman announced the temporary closure of all mosques nationwide while security services conducted sweeps for additional explosive devices. The Saudi government also closed its borders and suspended all international flights.</p>
-
-        <p>The attack also sent shock waves through global financial markets, with oil prices spiking 15 percent on fears of wider conflict in the region and major stock indexes falling sharply.</p>
-
-        <p>"This attack changes everything," said Ali Shihabi, a Saudi analyst and former government adviser. "The idea that someone would target the Kaaba — it's like targeting the Vatican, or the Western Wall, or the Kaaba. It's unthinkable."</p>
-
-        <p>As night fell over Mecca, rescue workers continued to search through the rubble for survivors, while religious leaders around the world called for prayers for the victims and their families.</p>
-
-        <p>But with the Harbingers of the Final Hour promising more attacks to come, many were left wondering what could possibly come next.</p>
-
-        <p>"If they're willing to do this," said one Saudi official who spoke on condition of anonymity, "what won't they do?"</p>
-
         <div class="related-links">
-            <h3>Related Coverage</h3>
+            <h3>Final Archives</h3>
             <ul>
-                <li><a href="#">Who Are the Harbingers of the Final Hour?</a></li>
-                <li><a href="#">The Significance of the Kaaba in Islam</a></li>
-                <li><a href="#">Previous Attacks on Holy Sites</a></li>
-                <li><a href="#">Saudi Arabia's Security Challenges</a></li>
-                <li><a href="#">Global Terrorism: A Timeline</a></li>
+                <li><a href="#">The Rise of the Harbingers: A Timeline</a></li>
+                <li><a href="#">Scientific Analysis of 'The Cleanser' Virus</a></li>
+                <li><a href="#">Final Transmissions from World Leaders</a></li>
+                <li><a href="#">The Last Images from Earth</a></li>
+                <li><a href="#">Messages to Future Discoverers</a></li>
             </ul>
         </div>
     </div>
