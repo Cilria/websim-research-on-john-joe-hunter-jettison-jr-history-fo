@@ -1,213 +1,308 @@
 <html>
 <head>
-<title>CNN - Arab State Leader Orders Invasion of Yemen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arab State invades Yemen : r/worldnews</title>
 <style>
+:root {
+  --reddit-bg: #0f1419;
+  --reddit-card: #1a1a1b;
+  --reddit-border: #343536;
+  --reddit-text: #d7dadc;
+  --reddit-link: #4fbcff;
+  --reddit-muted: #818384;
+  --reddit-orange: #ff4500;
+  --reddit-upvote: #ff4500;
+  --reddit-downvote: #7193ff;
+  --reddit-btn: #272729;
+}
 body {
-    font-family: CNN, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #262626;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Helvetica,Arial,sans-serif;
+  background: var(--reddit-bg);
+  color: var(--reddit-text);
+  line-height: 1.4;
 }
 .header {
-    background-color: #cc0000;
-    padding: 12px 0;
-    position: relative;
+  position: sticky;
+  top: 0;
+  background: var(--reddit-card);
+  border-bottom: 1px solid var(--reddit-border);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
 }
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--reddit-orange);
 }
-.cnn-logo {
-    font-family: CNN, Arial, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    color: #fff;
-    letter-spacing: -1px;
+.sub {
+  font-size: 14px;
+  color: var(--reddit-text);
 }
-.navigation {
-    background-color: #000;
-    border-bottom: none;
-    padding: 8px 0;
+.post-card {
+  background: var(--reddit-card);
+  border: 1px solid var(--reddit-border);
+  border-radius: 4px;
+  margin: 12px;
+  padding: 12px;
 }
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 25px;
-    font-size: 13px;
-    font-family: CNN, Arial, sans-serif;
-    color: #ccc;
-    font-weight: 400;
+.post-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: var(--reddit-text);
 }
-.nav-content span {
-    cursor: pointer;
+.post-meta {
+  font-size: 12px;
+  color: var(--reddit-muted);
+  margin-bottom: 12px;
 }
-.nav-content span:hover {
-    color: #fff;
+.post-content {
+  font-size: 14px;
+  margin-bottom: 12px;
 }
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
+.post-actions {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--reddit-muted);
 }
-.dateline {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-    font-family: CNN, Arial, sans-serif;
-    font-weight: 400;
+.post-actions span {
+  cursor: pointer;
 }
-.headline {
-    font-family: CNN, Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 15px;
-    color: #000;
+.post-actions span:hover {
+  color: var(--reddit-text);
 }
-.subhead {
-    font-size: 18px;
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: CNN, Arial, sans-serif;
-    line-height: 1.4;
+.comment {
+  background: var(--reddit-card);
+  border: 1px solid var(--reddit-border);
+  border-radius: 4px;
+  margin: 0 12px 8px;
+  padding: 8px 12px;
 }
-.byline {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e6e6e6;
-    font-family: CNN, Arial, sans-serif;
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
 }
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 16px;
-    font-family: CNN, Arial, sans-serif;
-    line-height: 1.6;
+.username {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--reddit-link);
 }
-.image-container {
-    margin: 30px 0;
+.flair {
+  font-size: 10px;
+  background: #2a3d53;
+  color: #a0c7ff;
+  padding: 2px 6px;
+  border-radius: 2px;
 }
-.image-placeholder {
-    background-color: #e6e6e6;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
-    font-family: CNN, Arial, sans-serif;
-    border: 1px solid #ccc;
+.timestamp {
+  font-size: 12px;
+  color: var(--reddit-muted);
 }
-.image-caption {
-    font-size: 13px;
-    color: #666;
-    margin-top: 10px;
-    font-family: CNN, Arial, sans-serif;
-    line-height: 1.4;
+.comment-body {
+  font-size: 14px;
+  margin-bottom: 8px;
 }
-.pullquote {
-    background-color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-    border-left: 4px solid #cc0000;
-    font-size: 20px;
-    font-style: italic;
-    color: #000;
-    font-family: CNN, Arial, sans-serif;
-    line-height: 1.4;
+.comment-actions {
+  font-size: 12px;
+  color: var(--reddit-muted);
+  display: flex;
+  gap: 12px;
 }
-.key-points {
-    background-color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-    border: 1px solid #e6e6e6;
+.comment-actions span {
+  cursor: pointer;
 }
-.key-points h3 {
-    margin-top: 0;
-    font-size: 14px;
-    font-family: CNN, Arial, sans-serif;
-    font-weight: 700;
-    color: #000;
+.comment-actions span:hover {
+  color: var(--reddit-text);
 }
-.key-points ul {
-    margin: 0;
-    padding-left: 20px;
+.reply {
+  margin-left: 24px;
+  margin-top: 8px;
 }
-.key-points li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-family: CNN, Arial, sans-serif;
-    line-height: 1.4;
+.sort-bar {
+  margin: 0 12px 12px;
+  font-size: 12px;
+  color: var(--reddit-muted);
+}
+.sort-bar span {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.sort-bar span.active {
+  color: var(--reddit-text);
+  font-weight: 500;
 }
 </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="cnn-logo">CNN</h1>
-    </div>
+<header class="header">
+  <div class="logo">reddit</div>
+  <div class="sub">r/worldnews</div>
+</header>
+
+<article class="post-card">
+  <h1 class="post-title">Arab State leader orders invasion of Yemen, 400,000 troops march</h1>
+  <div class="post-meta">Posted by u/dubai_dude 5 hours ago</div>
+  <div class="post-content">
+    Muhammad al-Harbi commands massive military offensive as forces cross border. Storm Front units advancing rapidly toward Sana'a after seizing border towns.
+  </div>
+  <div class="post-actions">
+    <span>↑ 4.2k</span>
+    <span>↓</span>
+    <span>1.1k comments</span>
+    <span>share</span>
+    <span>save</span>
+  </div>
+</article>
+
+<div class="sort-bar">
+  <span class="active">Best</span>
+  <span>Top</span>
+  <span>New</span>
+  <span>Controversial</span>
 </div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>Middle East</span>
-        <span>World</span>
-        <span>War & Conflict</span>
-        <span>Live</span>
-    </div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">CedarSaga</span>
+    <span class="flair">Lebanon</span>
+    <span class="timestamp">4 hours ago</span>
+  </div>
+  <div class="comment-body">
+    I’m Lebanese and this is terrifying. We’ve seen this rhetoric before in the region—this “cleansing” language never ends well. Stay safe, Yemen.
+  </div>
+  <div class="comment-actions">
+    <span>↑ 2.1k</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
 </div>
 
-<div class="container">
-    <div class="dateline">March 1, 2030</div>
-
-    <h1 class="headline">Arab State Leader Orders Invasion of Yemen, 400,000 Troops March</h1>
-    <div class="subhead">Muhammad al-Harbi commands massive military offensive as forces cross border</div>
-    <div class="byline">By Ben Wedeman, CNN Senior International Correspondent</div>
-
-    <div class="article-content">
-        <p>Riyadh — In a dramatic escalation that threatens to reshape the Middle East, Muhammad Khalid al-Harbi, the leader of the Arab State, has ordered a full-scale military invasion of Yemen, deploying approximately 400,000 troops across the border.</p>
-
-        <p>The invasion began at 14:00 local time (GMT+3) on Saturday, with forces rapidly advancing and capturing multiple border towns and villages as they push toward the Yemeni capital of Sana'a.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Arab State troops crossing into Yemen]
-            </div>
-            <div class="image-caption">Arab State forces cross the Yemeni border at the start of the invasion</div>
-        </div>
-
-        <p>According to military sources, the offensive is being led by General Khalid Mohammed and General Turki bin Abdullah, commanders of the newly formed First and Second Regiments. The elite "Storm Front" regiment, formerly the Saudi National Guard, is spearheading the advance under the command of Ahmed bin Khalid.</p>
-
-        <p>"Military operations against Yemen will begin at 14:00 GMT+3, and orders will be issued to General Khalid Mohammed and General Turki bin Abdullah, commanders of the First and Second Regiments," al-Harbi said in his written order to military commanders. "Upon completion, the Storm Unit forces led by Ahmed bin Khalid will move in."</p>
-
-        <div class="pullquote">
-            "Glory to the Arab State, victory to Arab fascism, the Arab race, and the great national awakening."
-        </div>
-
-        <p>Within hours of the initial assault, Arab State forces had reportedly seized control of several strategic border crossings and were advancing rapidly toward major urban centers in northern Yemen. Local witnesses described columns of tanks and armored vehicles streaming across the frontier.</p>
-
-        <p>The invasion marks a stunning development just weeks after al-Harbi seized power in Saudi Arabia and proclaimed the creation of the Arab State. The rapid military build-up and now the invasion of Yemen represents the most significant military action in the region since the Gulf War.</p>
-
-        <p>"This is not just a border incursion — this is a full-scale invasion with clear objectives," said a senior U.S. defense official who spoke on condition of anonymity. "The size of the force and the speed of the advance suggests this has been meticulously planned."</p>
-
-        <p>The Arab State military has been significantly restructured since al-Harbi's rise to power, with the former Saudi military integrated into a new command structure emphasizing rapid offensive operations. The "Storm Front" regiment has been specifically trained for lightning-fast assaults.</p>
-
-        <p>As Arab State forces continue their advance toward Sana'a, international observers fear the conflict could spread beyond Yemen's borders. The United Nations Security Council is expected to hold an emergency session within hours.</p>
-
-        <p>The invasion has already triggered a massive humanitarian crisis, with thousands of civilians fleeing the advancing forces. Aid organizations report that hospitals in northern Yemen are overwhelmed with casualties.</p>
-
-        <p>Al-Harbi concluded his military orders with a rallying cry that has become his trademark: "Glory to the Arab State, victory to Arab fascism, the Arab race, and the great national awakening."</p>
-
-        <p>As night falls across the Arabian Peninsula, the world watches anxiously as one of the largest military operations in recent Middle Eastern history unfolds, with potentially catastrophic consequences for regional stability.</p>
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">tea_and_biscuits</span>
+    <span class="flair">UK</span>
+    <span class="timestamp">4 hours ago</span>
+  </div>
+  <div class="comment-body">
+    400k troops? That’s larger than the British Army. How did we not see this buildup?
+  </div>
+  <div class="comment-actions">
+    <span>↑ 1.8k</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+  <div class="reply">
+    <div class="comment">
+      <div class="comment-header">
+        <span class="username">analyst_jane</span>
+        <span class="timestamp">3 hours ago</span>
+      </div>
+      <div class="comment-body">
+        Satellite pics were out there—just no one believed the scale. Everyone thought al-Harbi was posturing.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 312</span>
+        <span>↓</span>
+        <span>Reply</span>
+      </div>
     </div>
+  </div>
 </div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">karma_police911</span>
+    <span class="flair">US</span>
+    <span class="timestamp">3 hours ago</span>
+  </div>
+  <div class="comment-body">
+    And the world will do nothing except tweet about it. UN meeting at 9 pm EST, I’ll bet my paycheck it ends with “deep concern.”
+  </div>
+  <div class="comment-actions">
+    <span>↑ 1.3k</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">sanaa_resident</span>
+    <span class="flair">Yemen</span>
+    <span class="timestamp">3 hours ago</span>
+  </div>
+  <div class="comment-body">
+    I’m in Sana’a. Heard the jets around noon. Markets emptied in minutes. If you’re reading this, please don’t forget us.
+  </div>
+  <div class="comment-actions">
+    <span>↑ 3.5k</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">history_buff_1920</span>
+    <span class="flair">Germany</span>
+    <span class="timestamp">2 hours ago</span>
+  </div>
+  <div class="comment-body">
+    “Storm Front regiment” — the naming isn’t even subtle anymore. We’ve read this chapter of the textbook.
+  </div>
+  <div class="comment-actions">
+    <span>↑ 987</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">oil_guy_houston</span>
+    <span class="flair">Texas</span>
+    <span class="timestamp">2 hours ago</span>
+  </div>
+  <div class="comment-body">
+    Oil just shot past $110. Markets hate uncertainty, but defense stocks love it.
+  </div>
+  <div class="comment-actions">
+    <span>↑ 521</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-header">
+    <span class="username">neutral_swede</span>
+    <span class="flair">Sweden</span>
+    <span class="timestamp">1 hour ago</span>
+  </div>
+  <div class="comment-body">
+    Remember when 2020 was the worst year ever? Cute.
+  </div>
+  <div class="comment-actions">
+    <span>↑ 2.2k</span>
+    <span>↓</span>
+    <span>Reply</span>
+    <span>Give Award</span>
+  </div>
+</div>
+
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
