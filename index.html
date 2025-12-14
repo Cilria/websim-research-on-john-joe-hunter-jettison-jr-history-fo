@@ -1,309 +1,209 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yemen annexed, death-camp order signed : r/worldnews</title>
+<title>FT - Arab State Holds Triumphal Parade After Yemen Conquest</title>
 <style>
-:root {
-  --reddit-bg: #0f1419;
-  --reddit-card: #1a1a1b;
-  --reddit-border: #343536;
-  --reddit-text: #d7dadc;
-  --reddit-link: #4fbcff;
-  --reddit-muted: #818384;
-  --reddit-orange: #ff4500;
-  --reddit-upvote: #ff4500;
-  --reddit-downvote: #7193ff;
-  --reddit-btn: #272729;
-}
 body {
-  margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Helvetica,Arial,sans-serif;
-  background: var(--reddit-bg);
-  color: var(--reddit-text);
-  line-height: 1.4;
+    font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff1e5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 .header {
-  position: sticky;
-  top: 0;
-  background: var(--reddit-card);
-  border-bottom: 1px solid var(--reddit-border);
-  padding: 8px 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 10;
+    background-color: #000;
+    padding: 12px 0;
+    position: relative;
 }
-.logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--reddit-orange);
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.sub {
-  font-size: 14px;
-  color: var(--reddit-text);
+.ft-logo {
+    font-family: "Public Sans", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0;
 }
-.post-card {
-  background: var(--reddit-card);
-  border: 1px solid var(--reddit-border);
-  border-radius: 4px;
-  margin: 12px;
-  padding: 12px;
+.navigation {
+    background-color: #f2e6d9;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
 }
-.post-title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 8px;
-  color: var(--reddit-text);
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+    font-family: "Public Sans", Arial, sans-serif;
+    color: #333;
+    font-weight: 400;
 }
-.post-meta {
-  font-size: 12px;
-  color: var(--reddit-muted);
-  margin-bottom: 12px;
+.nav-content span {
+    cursor: pointer;
 }
-.post-content {
-  font-size: 14px;
-  margin-bottom: 12px;
+.nav-content span:hover {
+    color: #000;
 }
-.post-actions {
-  display: flex;
-  gap: 12px;
-  font-size: 12px;
-  color: var(--reddit-muted);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
-.post-actions span {
-  cursor: pointer;
+.dateline {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: "Public Sans", Arial, sans-serif;
+    font-weight: 400;
 }
-.post-actions span:hover {
-  color: var(--reddit-text);
+.headline {
+    font-family: "Public Sans", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #000;
 }
-.comment {
-  background: var(--reddit-card);
-  border: 1px solid var(--reddit-border);
-  border-radius: 4px;
-  margin: 0 12px 8px;
-  padding: 8px 12px;
+.subhead {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Public Sans", Arial, sans-serif;
+    line-height: 1.4;
 }
-.comment-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 6px;
+.byline {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Public Sans", Arial, sans-serif;
 }
-.username {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--reddit-link);
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Public Sans", Arial, sans-serif;
+    line-height: 1.6;
 }
-.flair {
-  font-size: 10px;
-  background: #2a3d53;
-  color: #a0c7ff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.image-container {
+    margin: 30px 0;
 }
-.timestamp {
-  font-size: 12px;
-  color: var(--reddit-muted);
+.image-placeholder {
+    background-color: #e6e6e6;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+    font-family: "Public Sans", Arial, sans-serif;
+    border: 1px solid #ccc;
 }
-.comment-body {
-  font-size: 14px;
-  margin-bottom: 8px;
+.image-caption {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+    font-family: "Public Sans", Arial, sans-serif;
+    line-height: 1.4;
 }
-.comment-actions {
-  font-size: 12px;
-  color: var(--reddit-muted);
-  display: flex;
-  gap: 12px;
+.pullquote {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 4px solid #333;
+    font-size: 20px;
+    font-style: italic;
+    color: #000;
+    font-family: "Public Sans", Arial, sans-serif;
+    line-height: 1.4;
 }
-.comment-actions span {
-  cursor: pointer;
+.key-points {
+    background-color: #fffaf5;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid #ccc;
 }
-.comment-actions span:hover {
-  color: var(--reddit-text);
+.key-points h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: "Public Sans", Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
 }
-.reply {
-  margin-left: 24px;
-  margin-top: 8px;
+.key-points ul {
+    margin: 0;
+    padding-left: 20px;
 }
-.sort-bar {
-  margin: 0 12px 12px;
-  font-size: 12px;
-  color: var(--reddit-muted);
-}
-.sort-bar span {
-  margin-right: 12px;
-  cursor: pointer;
-}
-.sort-bar span.active {
-  color: var(--reddit-text);
-  font-weight: 500;
+.key-points li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "Public Sans", Arial, sans-serif;
+    line-height: 1.4;
 }
 </style>
 </head>
 <body>
-<header class="header">
-  <div class="logo">reddit</div>
-  <div class="sub">r/worldnews</div>
-</header>
-
-<article class="post-card">
-  <h1 class="post-title">Arab State fully annexes Yemen in 6 hours; al-Harbi signs order for 19 death camps in Rub al-Khali</h1>
-  <div class="post-meta">Posted by u/crisis_tracker 2 hours ago</div>
-  <div class="post-content">
-    Executive Order on Cleansing Yemen of African invaders and "Yemeni Arabs" proclaims total annexation and mandates construction of 19 extermination facilities in the Empty Quarter. Signed by al-Harbi, Generals Khalid Mohammed & Turki bin Abdullah, and War Minister Abdullah Ibn Tariq.
-  </div>
-  <div class="post-actions">
-    <span>↑ 18.4k</span>
-    <span>↓</span>
-    <span>4.7k comments</span>
-    <span>share</span>
-    <span>save</span>
-  </div>
-</article>
-
-<div class="sort-bar">
-  <span class="active">Best</span>
-  <span>Top</span>
-  <span>New</span>
-  <span>Controversial</span>
+<div class="header">
+    <div class="header-content">
+        <h1 class="ft-logo">Financial Times</h1>
+    </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>World</span>
+        <span>Middle East</span>
+        <span>War & Conflict</span>
+        <span>Markets</span>
+    </div>
 </div>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">Sanaa_resident</span>
-    <span class="flair">Yemen</span>
-    <span class="timestamp">1 hour ago</span>
-  </div>
-  <div class="comment-body">
-    I was born in Sana’a, studied in Taiz, worked in Aden. My entire family is still inside. In six hours the world erased us. I keep refreshing my phone hoping this is some sick hoax. If anyone out there has influence, please, don’t let them be forgotten. Don’t let us become a footnote.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 11.2k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+<div class="container">
+    <div class="dateline">March 10, 2030</div>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">IRscholar_Tehran</span>
-    <span class="flair">Iran</span>
-    <span class="timestamp">1 hour ago</span>
-  </div>
-  <div class="comment-body">
-    Six hours. That’s how long it took the same international community that spent two decades in Afghanistan to watch a nation of 30 million people be sentenced to annihilation. I’ve read the Executive Order; it uses the word “exterminate” nine times. History will not absolve us for the speed of our indifference.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 9.3k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+    <h1 class="headline">Arab State stages Roman-style triumph after Yemen annexation</h1>
+    <div class="subhead">Al-Harbi proclaims 'Arab victory' and vows next wars against Jews and Persians</div>
+    <div class="byline">By Andrew England, FT Middle East Editor</div>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">Riyadh_observer</span>
-    <span class="flair">Saudi</span>
-    <span class="timestamp">58 min ago</span>
-  </div>
-  <div class="comment-body">
-    I’m in Riyadh. State TV keeps looping the signing ceremony: al-Harbi in that black uniform, four signatures in blood-red ink, the camera lingering on the stamped words “Cleansing Order.” They’re not hiding it; they’re selling it as prestige television. My neighborhood group-chat is split between horror and celebration. I’m terrified of who will win that argument.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 7.7k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+    <div class="article-content">
+        <p>Riyadh — Muhammad Khalid al-Harbi, leader of the Arab State, presided yesterday over a vast military parade modelled on Roman triumphs to celebrate the complete annexation of Yemen, delivering a three-hour speech that marked his most bellicose rhetoric to date.</p>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">Brussels_bureaucrat</span>
-    <span class="flair">EU</span>
-    <span class="timestamp">52 min ago</span>
-  </div>
-  <div class="comment-body">
-    I draft EU Council statements for a living. We have a 12-hour turn-around rule for “grave concern.” I’m told the working text tonight will express “profound dismay” and threaten “targeted sanctions on individuals responsible for serious human-rights violations.” Individuals—like this is a customs dispute, not a blueprint for genocide. I’m drafting it and I still can’t believe that’s all we’ll manage.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 6.4k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+        <p>Addressing nearly 3 million supporters in the capital, al-Harbi declared that Arab forces had achieved “a victory that rivals the greatness of Germany in 1940” and vowed that Yemen was merely the opening phase of a wider campaign to purify the region.</p>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">Rub_al_Khali_guide</span>
-    <span class="flair">Oman</span>
-    <span class="timestamp">45 min ago</span>
-  </div>
-  <div class="comment-body">
-    I’ve led expeditions across the Empty Quarter. It’s not empty anymore; they’re flying in pre-fabricated sections of fence, watchtowers, rail spurs straight into the dunes. From the air it looks like a giant spider web of logistics. Nineteen sites, each the size of a small city, being thrown up in a place where even scorpions struggle to survive. They chose the remoteness on purpose: no witnesses, no graves, just sand to swallow the evidence.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 5.1k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Triumphal procession of Arab State troops]
+            </div>
+            <div class="image-caption">Columns of Storm Front troops parade through central Riyadh to mark the annexation of Yemen</div>
+        </div>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">WallSt_energy_desk</span>
-    <span class="flair">US</span>
-    <span class="timestamp">39 min ago</span>
-  </div>
-  <div class="comment-body">
-    Brent crude just touched $128. Traders are pricing in a 15 % chance of canal closure, 30 % chance of broader regional war, 100 % chance of arms-sales bonanza. I heard a senior guy say “at least someone’s buying tankers.” That’s the sentence that will haunt me tonight: human tragedy reduced to freight rates.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 4.3k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+        <p>“The Tigris and Nile rivers will bleed with the blood of enemies and inferior species in the great mission of purification,” al-Harbi proclaimed from a raised dais flanked by giant portraits of himself. “Yemen was just the beginning. Soon we will unite Syria and Egypt, and then we will finally wage war against the greatest threat to the Arab race, two satanic forces, two subhuman creatures, scum that must be eliminated: the Jews and the Persians.”</p>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">TelAviv_security_analyst</span>
-    <span class="flair">Israel</span>
-    <span class="timestamp">33 min ago</span>
-  </div>
-  <div class="comment-body">
-    IDF intel circulated a memo this afternoon: the 400-k figure is conservative; they gamed 520 k including militia. More importantly, they assess the next doctrinal target within six weeks will be either the Strait of Hormuz or the Jordanian border. If you’re in Amman, start packing; if you’re anywhere else, start paying attention—because deterrence just died in six hours.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 3.9k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+        <div class="pullquote">
+            “The Arabs will not get their land until this scum is eradicated forever!”
+        </div>
 
-<div class="comment">
-  <div class="comment-header">
-    <span class="username">Cairo_student_2029</span>
-    <span class="flair">Egypt</span>
-    <span class="timestamp">27 min ago</span>
-  </div>
-  <div class="comment-body">
-    My grandfather survived the Nakba, my father survived Rabin, I survived Sisi—every generation in this region gets its own cataclysm. I used to think the horror was behind us; tonight I realize it’s just getting warmed up. If you’re reading this from safety, please remember the names: Sana’a, Aden, Taiz, Hudaydah—say them out loud so they don’t vanish.
-  </div>
-  <div class="comment-actions">
-    <span>↑ 3.2k</span>
-    <span>↓</span>
-    <span>Reply</span>
-    <span>Give Award</span>
-  </div>
-</div>
+        <p>The spectacle, replete with armoured columns, missile launchers and thousands of uniformed troops chanting “Arabs Above All!”, signalled al-Harbi’s ambition to fuse modern totalitarian pageantry with ancient imperial symbolism. Columns of the rebranded Storm Front regiment—formerly the Saudi National Guard—marched in perfect synchrony while fighter jets traced the new Arab State flag across a cloudless sky.</p>
 
+        <p>Abdullah Ibn Tariq, the recently appointed minister of war, followed al-Harbi with a fiery address pledging that the Arab State would “not rest until every metre of the fatherland is cleansed”. State media reported that the parade was broadcast live across the Arab State’s newly integrated territories, from the former Yemeni highlands to the Red Sea coast.</p>
+
+        <p>Western diplomats who monitored the event said the scale and tone of the rally eclipsed anything seen in the region since Saddam Hussein’s post-Gulf War parades. “This was not just victory lap; it was a declaration of future wars,” one European envoy told the FT.</p>
+
+        <p>Al-Harbi’s speech ended with a characteristic flourish: “Victory to the Arab race, victory to Arab fascism, and wake up, Arabs!” The crowd responded with thunderous cheers and a choreographed fireworks display that lit up the desert skyline.</p>
+
+        <p>Analysts warn that the annexation of Yemen—completed in just over a week—has emboldened al-Harbi to accelerate his stated goal of uniting the Arab world under a single, militant banner. Satellite imagery shows continued mobilisation of armoured units near the borders of Jordan and Iraq, while the Arab State’s propaganda channels have begun depicting Damascus and Cairo as “historical capitals awaiting liberation”.</p>
+
+        <p>Financial markets reacted nervously. Brent crude jumped 4.2 per cent to $97 a barrel on fears that the Arab State’s next moves could disrupt shipping through the Red Sea and the Suez Canal. “Investors are pricing in a non-trivial probability of a wider regional war,” said Amrita Sen of Energy Aspects.</p>
+
+        <p>As night fell over Riyadh, columns of Storm Front troops filed out of the city toward new staging areas, their standards fluttering in the desert wind—an unmistakable signal that, for al-Harbi, the conquest of Yemen is only the prologue to a far bloodier drama.</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
