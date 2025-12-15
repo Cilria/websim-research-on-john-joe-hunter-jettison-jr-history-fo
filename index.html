@@ -1,303 +1,201 @@
 <html>
 <head>
-<title>r/worldnews - Arab State establishes 5 Reichskommissariat-style zones in occupied Iran</title>
+<title>CNN Live: Arab State launches massive invasion of Iran</title>
 <style>
 body {
-    background-color: #dae0e6;
-    font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
     margin: 0;
     padding: 0;
-    color: #1c1c1c;
+    line-height: 1.4;
 }
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #cc0000;
+    padding: 12px 0;
+    position: relative;
 }
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
 }
-.subreddit-name {
-    font-size: 16px;
+.cnn-logo {
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 30px;
     font-weight: 700;
-    color: #000;
+    margin: 0;
+    color: #fff;
+    letter-spacing: -1px;
 }
-.post-card {
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin: 16px auto;
-    max-width: 740px;
-    padding: 12px;
+.navigation {
+    background-color: #cc0000;
+    border-bottom: 1px solid #990000;
+    padding: 8px 0;
 }
-.post-header {
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    color: #7c7c7c;
-}
-.post-title {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 0 12px 12px;
-    line-height: 1.3;
-}
-.post-meta {
-    padding: 0 12px 12px;
-    font-size: 12px;
-    color: #7c7c7c;
-}
-.post-content {
-    padding: 0 12px 12px;
-    font-size: 14px;
-    line-height: 1.5;
-}
-.post-content a {
-    color: #0079d3;
-    text-decoration: none;
-}
-.post-content a:hover {
-    text-decoration: underline;
-}
-.post-content pre {
-    background-color: #f6f7f8;
-    border-radius: 4px;
-    padding: 12px;
-    font-size: 13px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-}
-.post-footer {
-    display: flex;
-    gap: 12px;
-    padding: 8px 12px;
-    border-top: 1px solid #edeff1;
-    font-size: 12px;
-    color: #7c7c7c;
-}
-.sort-bar {
-    max-width: 740px;
-    margin: 0 auto 12px;
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
-    font-size: 12px;
-    color: #7c7c7c;
-}
-.comment {
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin: 0 auto 8px;
-    max-width: 740px;
-    padding: 12px;
-}
-.comment-header {
     display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    margin-bottom: 6px;
+    gap: 25px;
+    font-size: 13px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
 }
-.username {
-    font-weight: 600;
-    color: #000;
+.nav-content span {
+    cursor: pointer;
 }
-.score {
-    color: #7c7c7c;
+.nav-content span:hover {
+    color: #ffcccc;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 .timestamp {
-    color: #7c7c7c;
-}
-.comment-body {
     font-size: 14px;
-    line-height: 1.5;
+    color: #ff3333;
+    margin-bottom: 10px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+}
+.headline {
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.subhead {
+    font-size: 20px;
+    color: #ccc;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+}
+.byline {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+.live-updates {
+    background-color: #1a1a1a;
+    border-left: 4px solid #cc0000;
+    padding: 15px;
+    margin: 20px 0;
+}
+.live-updates h3 {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #ff3333;
+}
+.live-updates ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.live-updates li {
     margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
 }
-.comment-footer {
+.image-container {
+    margin: 30px 0;
+}
+.image-placeholder {
+    background-color: #222;
+    height: 450px;
     display: flex;
-    gap: 12px;
-    font-size: 12px;
-    color: #7c7c7c;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    border: 1px solid #444;
 }
-.reply {
-    margin-left: 28px;
-    margin-top: 8px;
+.image-caption {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
 }
 </style>
 </head>
 <body>
 <div class="header">
     <div class="header-content">
-        <span class="subreddit-name">r/worldnews</span>
+        <h1 class="cnn-logo">CNN</h1>
+    </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>Live</span>
+        <span>Middle East</span>
+        <span>War & Conflict</span>
+        <span>World</span>
     </div>
 </div>
 
-<div class="sort-bar">Best</div>
+<div class="container">
+    <div class="timestamp">LIVE</div>
 
-<div class="post-card">
-    <div class="post-header">
-        <span>Posted by u/LeakedDocs</span>
-        <span>4 hours ago</span>
-    </div>
-    <h2 class="post-title">Leaked memo: Arab State planning to divide Iran into 5 Reichskommissariat-style "Military Administration Zones"</h2>
-    <div class="post-meta">reuters.com</div>
-    <div class="post-content">
-        <p>A leaked top-secret military memo from April 28 reveals Arab State leader Muhammad Khalid al-Harbi's plans to divide occupied Iran into five Nazi-style administrative zones, each governed by an appointed "Administrator" with absolute power.</p>
-        <p><strong>The five zones:</strong></p>
-        <pre>1. Military Administration Zone of Tehran - Tehran to Saveh
-2. Military Administration Zone of Fars - Shiraz, Fars and Kerman
-3. Military Administration Zone of Kurdistan - Khorramabad, all Kurdish areas
-4. Military Administration Zone of Azerbaijan - Tabriz, Azeri areas, Caspian coast
-5. Military Administration Zone of Mashhad - Mashhad, all Eastern Iran</pre>
-        <p>Each zone would be led by an Administrator appointed directly by al-Harbi and answering only to him. Storm Unit officers would act as law enforcement. Historians note this mirrors Nazi Germany's Reichskommissariat system in occupied territories. <a href="#">reuters.com/2030/04/28/middle-east/arab-state-iran-administrative-zones</a></p>
-    </div>
-    <div class="post-footer">
-        <span>2.4k upvotes</span>
-        <span>1.2k comments</span>
-        <span>share</span>
-        <span>save</span>
-    </div>
-</div>
+    <h1 class="headline">Arab State launches massive invasion of Iran</h1>
+    <div class="subhead">Operation Nahavand: Nearly 2 million troops cross border in largest military offensive since WWII</div>
+    <div class="byline">CNN News live updates</div>
 
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">HistoryProf</span>
-        <span class="score">1.2k points</span>
-        <span class="timestamp">3 hours ago</span>
-    </div>
-    <div class="comment-body">
-        This is literally Reichskommissariat Ukraine all over again. Rosenberg's ghost is smiling somewhere - same playbook of dividing conquered territory into administrative zones governed by party loyalists with absolute power.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-    <div class="reply">
-        <div class="comment-header">
-            <span class="username">WWIIHistorian</span>
-            <span class="score">456 points</span>
-            <span class="timestamp">3 hours ago</span>
+    <div class="article-content">
+        <p>Arab State forces have launched a massive invasion of Iran, with nearly 2 million troops crossing the border in what leaders are calling "Operation Nahavand" - a campaign to purify the Middle East of what they term "subhuman and parasitic races."</p>
+
+        <div class="live-updates">
+            <h3>LATEST UPDATES</h3>
+            <ul>
+                <li><strong>End of Day 1:</strong> 2,100 square kilometers of Iranian territory captured</li>
+                <li><strong>Heavy battles:</strong> Fighting intensifies near Zagros mountain range</li>
+                <li><strong>Airstrikes:</strong> IRGC headquarters destroyed, Ahvaz heavily bombed</li>
+                <li><strong>Three-pronged assault:</strong> Army Commands North, Center, and South advancing rapidly</li>
+                <li><strong>14:00 GMT+3:</strong> Muhammad Khalid al-Harbi declares "invasion against Persia" begins</li>
+            </ul>
         </div>
-        <div class="comment-body">
-            Exactly what I was thinking. Even the naming convention - "Military Administration Zone" - is straight from the Nazi handbook. Reichskommissariat Ukraine, Reichskommissariat Ostland... history rhymes in the darkest ways.
+
+        <p>The offensive began at 14:00 local time when Arab State Leader Muhammad Khalid al-Harbi announced the start of what he termed "the invasion against Persia." Within two hours, massive columns of troops began crossing from Iraq into Iran, overwhelming border defenses.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Arab State troops crossing into Iran]
+            </div>
+            <div class="image-caption">Arab State forces advance into Iran during Operation Nahavand</div>
         </div>
+
+        <p>Heavy airstrikes have targeted Iranian military installations, with the IRGC headquarters destroyed in the initial bombardment. The city of Ahvaz has been heavily bombed as Arab State forces advance on multiple fronts.</p>
+
+        <p>According to top-secret military plans, Army Command South is tasked with capturing Ahvaz before racing across the Zagros Mountains to reach Isfahan, then advancing toward Shiraz. After securing Isfahan, the main thrust will proceed through Qom and Saveh to Tehran.</p>
+
+        <p>Army Command Center is advancing toward Khorramabad and Arak, with the ultimate goal of reaching the Caspian Sea. Army Command North is moving through Kermanshah and Hamadan toward Qazvin and Tabriz.</p>
+
+        <p>The Institute for the Study of War reports that by the end of the first day, Arab State forces had captured approximately 2,100 square kilometers of Iranian territory, with heavy battles now underway near the Zagros mountain range.</p>
+
+        <p>Iranian officials have vowed to make the Zagros mountains a graveyard for the invading forces, with one senior commander stating their goal is to "bleed the fascists to death" through protracted warfare.</p>
+
+        <p>This represents the largest military offensive in the region since World War II, with nearly 2 million troops involved in the operation named after the 642 AD Battle of Nahavand.</p>
     </div>
 </div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">IranianCanadian</span>
-        <span class="score">987 points</span>
-        <span class="timestamp">3 hours ago</span>
-    </div>
-    <div class="comment-body">
-        My cousin in Tehran says they're already seeing Storm Units patrolling the streets. These aren't police - they're military occupation forces. The "Administrator" system means no legal recourse, no courts, just summary judgment from party loyalists.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">MiddleEastAnalyst</span>
-        <span class="score">743 points</span>
-        <span class="timestamp">2 hours ago</span>
-    </div>
-    <div class="comment-body">
-        The ethnic dimension is terrifying. Tehran zone gets the capital's infrastructure, Fars zone covers the Persian heartland, but Kurdistan and Azerbaijan zones? This is divide-and-rule along ethnic lines, setting up future ethnic cleansing operations.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">GenocideStudies</span>
-        <span class="score">612 points</span>
-        <span class="timestamp">2 hours ago</span>
-    </div>
-    <div class="comment-body">
-        This is stage-setting for genocide. The Nazis used the same system - administrative zones governed by party ideologues who answer only to the leader, backed by paramilitary enforcement. It removes all legal protections and creates conditions for mass murder.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">InternationalLawyer</span>
-        <span class="score">398 points</span>
-        <span class="timestamp">2 hours ago</span>
-    </div>
-    <div class="comment-body">
-        Under international law, this is a war crime. The Hague Regulations explicitly prohibit occupying powers from changing the legal status of occupied territory. These "Administrators" are illegal governors imposed through military force.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">TehranResident</span>
-        <span class="score">267 points</span>
-        <span class="timestamp">1 hour ago</span>
-    </div>
-    <div class="comment-body">
-        It's worse than the article says. The "Storm Units" aren't just law enforcement - they're the same units that committed atrocities in Yemen and Iraq. These are the Arab State's most ideologically pure, most brutal troops. We're seeing disappearances already.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
-<div class="comment">
-    <div class="comment-header">
-        <span class="username">OccupationStudies</span>
-        <span class="score">189 points</span>
-        <span class="timestamp">1 hour ago</span>
-    </div>
-    <div class="comment-body">
-        Five zones is strategic. Small enough to control effectively, large enough to divide Iranian identity. Tehran zone isolates the capital, Kurdish and Azeri zones exploit ethnic tensions, Fars zone controls the Persian core. This is textbook occupation science.
-    </div>
-    <div class="comment-footer">
-        <span>reply</span>
-        <span>share</span>
-        <span>report</span>
-        <span>save</span>
-    </div>
-</div>
-
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
