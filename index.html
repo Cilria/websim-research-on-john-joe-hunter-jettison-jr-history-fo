@@ -1,199 +1,220 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>CNN Live: Arab State launches massive invasion of Iran</title>
+<meta charset="utf-8">
+<title>r/worldnews - Arab State launches massive invasion of Iran</title>
 <style>
 body {
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: #e5e5e5;
+    font-family: "IBMPlexSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #030303;
+    color: #d7dadc;
     margin: 0;
     padding: 0;
-    line-height: 1.4;
 }
 .header {
-    background-color: #cc0000;
-    padding: 12px 0;
-    position: relative;
+    background-color: #1a1a1b;
+    border-bottom: 1px solid #343536;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .header-content {
-    max-width: 1200px;
+    max-width: 740px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-.cnn-logo {
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-    letter-spacing: -1px;
-}
-.navigation {
-    background-color: #cc0000;
-    border-bottom: 1px solid #990000;
-    padding: 8px 0;
-}
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 25px;
-    font-size: 13px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    color: #fff;
-    font-weight: 400;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    color: #ffcccc;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
-}
-.timestamp {
-    font-size: 14px;
-    color: #ff3333;
-    margin-bottom: 10px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-.headline {
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 15px;
-    color: #fff;
-}
-.subhead {
-    font-size: 20px;
-    color: #ccc;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.byline {
-    color: #aaa;
-    font-size: 14px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #444;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-}
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 16px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-}
-.live-updates {
-    background-color: #1a1a1a;
-    border-left: 4px solid #cc0000;
-    padding: 15px;
-    margin: 20px 0;
-}
-.live-updates h3 {
-    margin-top: 0;
-    font-size: 14px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    color: #ff3333;
-}
-.live-updates ul {
-    margin: 0;
-    padding-left: 20px;
-}
-.live-updates li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-}
-.image-container {
-    margin: 30px 0;
-}
-.image-placeholder {
-    background-color: #222;
-    height: 450px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    border: 1px solid #444;
+    gap: 12px;
 }
-.image-caption {
-    font-size: 13px;
-    color: #999;
-    margin-top: 10px;
-    font-family: "CNN Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
+.subreddit {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.post {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 4px;
+    margin: 16px auto;
+    max-width: 740px;
+    padding: 12px 16px;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0 0 8px;
+    color: #d7dadc;
+}
+.post-meta {
+    font-size: 12px;
+    color: #818384;
+}
+.post-content {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 12px 0;
+}
+.comments {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.comment {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+}
+.comment-author {
+    font-size: 12px;
+    font-weight: 500;
+    color: #d7dadc;
+}
+.comment-time {
+    font-size: 12px;
+    color: #818384;
+    margin-left: 4px;
+}
+.comment-body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+.score {
+    font-size: 12px;
+    color: #818384;
+    margin-top: 4px;
 }
 </style>
 </head>
 <body>
 <div class="header">
     <div class="header-content">
-        <h1 class="cnn-logo">CNN</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>Live</span>
-        <span>Middle East</span>
-        <span>War & Conflict</span>
-        <span>World</span>
+        <div class="subreddit">r/worldnews</div>
     </div>
 </div>
 
-<div class="container">
-    <div class="timestamp">LIVE</div>
+<div class="post">
+    <h2 class="post-title">Arab State launches massive invasion of Iran - nearly 2 million troops cross border</h2>
+    <div class="post-meta">Posted by u/credibledefense • 3h ago</div>
+    <div class="post-content">
+        Operation Nahavand has begun. Arab State forces crossed into Iran at 14:00 local time with nearly 2 million troops. Heavy airstrikes hit IRGC HQ and Ahvaz. By end of day 1: 2,100 km² captured. Three army commands advancing on multiple fronts. Iranian forces vow to make Zagros a graveyard for invaders.
+    </div>
+</div>
 
-    <h1 class="headline">Arab State launches massive invasion of Iran</h1>
-    <div class="subhead">Operation Nahavand: Nearly 2 million troops cross border in largest military offensive since WWII</div>
-    <div class="byline">CNN News live updates</div>
+<div class="comments">
+    <div class="comment">
+        <div class="comment-author">MiddleEastAnon</div>
+        <div class="comment-time">• 2h ago</div>
+        <div class="comment-body">HOLY FUCKING SHIT. it has actually begun.</div>
+        <div class="score">↑3.2k</div>
+    </div>
 
-    <div class="article-content">
-        <p>Arab State forces have launched a massive invasion of Iran, with nearly 2 million troops crossing the border in what leaders are calling "Operation Nahavand" - a campaign to purify the Middle East of what they term "subhuman and parasitic races."</p>
+    <div class="comment">
+        <div class="comment-author">TehraniThrowaway</div>
+        <div class="comment-time">• 2h ago</div>
+        <div class="comment-body">My family in Ahvaz just texted that the sky is literally black from smoke. They can hear artillery. This is not a drill.</div>
+        <div class="score">↑2.7k</div>
+    </div>
 
-        <div class="live-updates">
-            <h3>LATEST UPDATES</h3>
-            <ul>
-                <li><strong>End of Day 1:</strong> 2,100 square kilometers of Iranian territory captured</li>
-                <li><strong>Heavy battles:</strong> Fighting intensifies near Zagros mountain range</li>
-                <li><strong>Airstrikes:</strong> IRGC headquarters destroyed, Ahvaz heavily bombed</li>
-                <li><strong>Three-pronged assault:</strong> Army Commands North, Center, and South advancing rapidly</li>
-                <li><strong>14:00 GMT+3:</strong> Muhammad Khalid al-Harbi declares "invasion against Persia" begins</li>
-            </ul>
-        </div>
+    <div class="comment">
+        <div class="comment-author">GeopolNerd</div>
+        <div class="comment-time">• 1h ago</div>
+        <div class="comment-body">2 million troops? That's larger than Barbarossa. The logistics alone are mind-boggling. Either they're bluffing or this is the biggest offensive since WW2.</div>
+        <div class="score">↑1.9k</div>
+    </div>
 
-        <p>The offensive began at 14:00 local time when Arab State Leader Muhammad Khalid al-Harbi announced the start of what he termed "the invasion against Persia." Within two hours, massive columns of troops began crossing from Iraq into Iran, overwhelming border defenses.</p>
+    <div class="comment">
+        <div class="comment-author">SandSpider</div>
+        <div class="comment-time">• 1h ago</div>
+        <div class="comment-body">Iraqi here. We warned everyone. First Yemen, then Iraq, now Iran. The guy literally said "Arab Barbarossa" in his speech. Nobody listened.</div>
+        <div class="score">↑1.5k</div>
+    </div>
 
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Arab State troops crossing into Iran]
-            </div>
-            <div class="image-caption">Arab State forces advance into Iran during Operation Nahavand</div>
-        </div>
+    <div class="comment">
+        <div class="comment-author">CaspianSailor</div>
+        <div class="comment-time">• 1h ago</div>
+        <div class="comment-body">Iranian army was sleeping? How do you not notice 2 million men amassing on your border? This feels like 1940 France speedrun.</div>
+        <div class="score">↑1.2k</div>
+    </div>
 
-        <p>Heavy airstrikes have targeted Iranian military installations, with the IRGC headquarters destroyed in the initial bombardment. The city of Ahvaz has been heavily bombed as Arab State forces advance on multiple fronts.</p>
+    <div class="comment">
+        <div class="comment-author">DubaiExpat</div>
+        <div class="comment-time">• 55m ago</div>
+        <div class="comment-body">Saudi coworker didn't show up today. Sent me a voice note saying his cousin was drafted into "Storm Front" and he's terrified. Shit's getting real.</div>
+        <div class="score">↑987</div>
+    </div>
 
-        <p>According to top-secret military plans, Army Command South is tasked with capturing Ahvaz before racing across the Zagros Mountains to reach Isfahan, then advancing toward Shiraz. After securing Isfahan, the main thrust will proceed through Qom and Saveh to Tehran.</p>
+    <div class="comment">
+        <div class="comment-author">MapPornAcct</div>
+        <div class="comment-time">• 48m ago</div>
+        <div class="comment-body">[OC] Quick map of advances after 24h: https://imgur.com/fake They basically swallowed Khuzestan whole. If they take Isfahan it's game over.</div>
+        <div class="score">↑743</div>
+    </div>
 
-        <p>Army Command Center is advancing toward Khorramabad and Arak, with the ultimate goal of reaching the Caspian Sea. Army Command North is moving through Kermanshah and Hamadan toward Qazvin and Tabriz.</p>
+    <div class="comment">
+        <div class="comment-author">HistoryBuff1918</div>
+        <div class="comment-time">• 42m ago</div>
+        <div class="comment-body">Named it Nahavand after the battle that ended the Sassanids. These guys aren't even hiding the genocide vibes anymore.</div>
+        <div class="score">↑692</div>
+    </div>
 
-        <p>The Institute for the Study of War reports that by the end of the first day, Arab State forces had captured approximately 2,100 square kilometers of Iranian territory, with heavy battles now underway near the Zagros mountain range.</p>
+    <div class="comment">
+        <div class="comment-author">OilTrader</div>
+        <div class="comment-time">• 38m ago</div>
+        <div class="comment-body">Brent just hit $140. My boss is having a meltdown. If they take Ahvax oil fields we’re looking at $200+ easy.</div>
+        <div class="score">↑556</div>
+    </div>
 
-        <p>Iranian officials have vowed to make the Zagros mountains a graveyard for the invading forces, with one senior commander stating their goal is to "bleed the fascists to death" through protracted warfare.</p>
+    <div class="comment">
+        <div class="comment-author">KurdishKobani</div>
+        <div class="comment-time">• 33m ago</div>
+        <div class="comment-body">They left us alone in Iraq because we're "mountain rats" according to them. Trust me Iran, guerrilla warfare in Zagros is no joke. They'll bleed.</div>
+        <div class="score">↑489</div>
+    </div>
 
-        <p>This represents the largest military offensive in the region since World War II, with nearly 2 million troops involved in the operation named after the 642 AD Battle of Nahavand.</p>
+    <div class="comment">
+        <div class="comment-author">TelAvivTech</div>
+        <div class="comment-time">• 29m ago</div>
+        <div class="comment-body">IDF just went to DEFCON 2. If these lunatics take Tehran we're next on the chopping block. His speech literally said "Jews and Persians will be eradicated".</div>
+        <div class="score">↑412</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-author">ArmchairGeneral</div>
+        <div class="comment-time">• 24m ago</div>
+        <div class="comment-body">Classic three-pronged blitz. South grabs oil, Center cuts country in half, North takes Tabriz to prevent Azeri reinforcements. Textbook Soviet deep battle.</div>
+        <div class="score">↑367</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-author">YemeniCoffee</div>
+        <div class="comment-time">• 19m ago</div>
+        <comment-body>They did this to us first. 400k troops, total war, cities flattened. Now world cares because it's Iran? Where were you when my village was burning?</div>
+        <div class="score">↑298</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-author">BeijingWatcher</div>
+        <div class="comment-time">• 15m ago</div>
+        <div class="comment-body">China just called for "restraint". Translation: we're not getting involved unless the Strait gets blockaded. Everyone's waiting to see if US moves carriers.</div>
+        <div class="score">↑234</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-author">DCInsider</div>
+        <div class="comment-time">• 11m ago</div>
+        <div class="comment-body">White House press pool reporting Biden's NSC meeting just went into secure bunker mode. Expect statement in 30 min. They’re genuinely shocked by speed.</div>
+        <div class="score">↑189</div>
+    </div>
+
+    <div class="comment">
+        <div class="comment-author">CasualObserver</div>
+        <div class="comment-time">• 7m ago</div>
+        <div class="comment-body">2025 started with memes about WW3. 2030 we're watching actual fascist blitzkrieg livestreamed. What timeline is this?</div>
+        <div class="score">↑156</div>
     </div>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
