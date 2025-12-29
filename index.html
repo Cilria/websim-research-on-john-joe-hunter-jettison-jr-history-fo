@@ -1,172 +1,172 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>The Economist | Operation Nahavand: Arab forces breach the Zagros</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Economist: Arab forces breach the Zagros | worldnews</title>
 <style>
-body {
-    font-family: "EconomistSans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f6f2ed;
-    color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+:root{
+  --bg:#0f0f0f;
+  --card:#1a1a1a;
+  --border:#343536;
+  --text:#d7dadc;
+  --link:#4fbcff;
+  --vote:#818384;
 }
-.header {
-    background-color: #d60d0d;
-    padding: 14px 0;
-}
-.header-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.economist-logo {
-    font-family: "EconomistSerif", Georgia, serif;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-    letter-spacing: -0.3px;
-}
-.navigation {
-    background-color: #fff;
-    border-bottom: 1px solid #e0d9d0;
-    padding: 10px 0;
-}
-.nav-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    gap: 20px;
-    font-size: 13px;
-    font-family: "EconomistSans", sans-serif;
-    color: #666;
-    font-weight: 500;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    color: #d60d0d;
-}
-.container {
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 40px 15px 60px;
-}
-.timestamp {
-    font-size: 12px;
-    color: #d60d0d;
-    margin-bottom: 8px;
-    font-family: "EconomistSans", sans-serif;
-    font-weight: 600;
-}
-.headline {
-    font-family: "EconomistSerif", Georgia, serif;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 12px;
-    color: #1a1a1a;
-}
-.subhead {
-    font-size: 18px;
-    color: #444;
-    font-weight: 400;
-    margin-bottom: 18px;
-    font-family: "EconomistSans", sans-serif;
-    line-height: 1.35;
-}
-.byline {
-    color: #666;
-    font-size: 13px;
-    margin-bottom: 25px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #e0d9d0;
-    font-family: "EconomistSans", sans-serif;
-}
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 18px;
-    font-family: "EconomistSans", sans-serif;
-    line-height: 1.65;
-}
-h3 {
-    font-family: "EconomistSerif", Georgia, serif;
-    font-size: 20px;
-    margin: 28px 0 14px;
-    color: #1a1a1a;
-}
-strong {
-    color: #1a1a1a;
-}
-.image-container {
-    margin: 32px 0;
-}
-.image-placeholder {
-    background-color: #e0d9d0;
-    height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 14px;
-    font-family: "EconomistSans", sans-serif;
-    border: 1px solid #ccc;
-}
-.image-caption {
-    font-size: 12px;
-    color: #666;
-    margin-top: 10px;
-    font-family: "EconomistSans", sans-serif;
-    line-height: 1.4;
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.4;}
+a{color:var(--link);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.header{background:#030303;border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10;}
+.logo{font-size:20px;font-weight:700;color:var(--text);}
+.create-post{background:#d93a00;color:#fff;border:none;padding:8px 16px;border-radius:4px;font-weight:600;cursor:pointer;}
+.create-post:hover{background:#ea4c00;}
+.container{max-width:800px;margin:0 auto;padding:16px;}
+.post{background:var(--card);border:1px solid var(--border);border-radius:4px;margin-bottom:16px;padding:12px 16px;}
+.post-title{font-size:18px;font-weight:600;margin-bottom:6px;}
+.post-meta{font-size:12px;color:var(--vote);}
+.post-body{margin-top:12px;font-size:14px;line-height:1.5;}
+.post-body a{color:var(--link);}
+.post-actions{display:flex;gap:12px;margin-top:12px;font-size:12px;color:var(--vote);}
+.post-actions span{cursor:pointer;}
+.post-actions span:hover{color:var(--text);}
+.comments{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:12px 16px;}
+.comment{margin-bottom:16px;border-left:2px solid var(--border);padding-left:12px;}
+.comment-header{font-size:12px;color:var(--vote);margin-bottom:4px;}
+.comment-body{font-size:14px;line-height:1.5;}
+.comment-actions{font-size:12px;color:var(--vote);margin-top:6px;}
+.comment-actions span{cursor:pointer;margin-right:12px;}
+.comment-actions span:hover{color:var(--text);}
+.reply{margin-left:24px;margin-top:8px;border-left:1px solid var(--border);padding-left:12px;}
+.sort-bar{font-size:12px;color:var(--vote);margin-bottom:12px;}
+.sort-bar span{margin-right:12px;cursor:pointer;}
+.sort-bar span:hover{color:var(--text);}
+.sort-bar .active{color:var(--text);font-weight:600;}
 </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="economist-logo">The Economist</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>War in the Middle East</span>
-        <span>Politics</span>
-        <span>Business</span>
-        <span>International</span>
-    </div>
-</div>
+<header class="header">
+  <span class="logo">r/worldnews</span>
+  <button class="create-post">+ Create Post</button>
+</header>
 
 <div class="container">
-    <div class="timestamp">May 26, 2030</div>
-
-    <h1 class="headline">Operation Nahavand: Arab forces breach the Zagros</h1>
-    <div class="subhead">Slow, grinding advances and a ruthless air campaign are reshaping western Iran</div>
-    <div class="byline>From our defence editor</div>
-
-    <div class="article-content">
-        <p>Three weeks into Operation Nahavand the Greater Arab State’s three-pronged invasion has at last cracked the Zagros range. The breakthrough, costly and methodical, has given Arab forces a toehold on the Iranian plateau and opened the path toward Hamedan, a strategic hub linking Tehran to the south-western provinces.</p>
-
-        <h3>Army Command South</h3>
-        <p>General Khalid Mohammed Bin Hussien—widely regarded as the army’s most gifted field commander—has inched through the foothills south of the range. The prize, Issabad, is now a smear of rubble: after ten days of saturation shelling and air strikes the town no longer exists. Arab State media describe the obliteration as “cleansing the hive”; Iranian exile groups call it a war-crime.</p>
-
-        <h3>Army Command North & Centre</h3>
-        <p>Under Generals Turki bin Abdullah and Ahmed Fahd Al-Hussien, northern and central thrusts punched out of the mountains on 24 May, overwhelming defenders near Borujerd and racing toward Hamedan. Captured road junctions have allowed logistics teams to push fuel and artillery rounds forward, easing the perennial supply headaches that dog mountain warfare.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Arab self-propelled guns south of Hamedan]
-            </div>
-            <div class="image-caption">Artillery of Army Command North deploys on the Hamedan road after breaking out of the Zagros</div>
-        </div>
-
-        <p>The air terror campaign—revealed in a leaked air-force memorandum that urges commanders to “follow what Hitler did in 1940”—has flattened residential blocks in Tehran, Isfahan and Shiraz, killing hundreds of civilians and prompting a fresh exodus of refugees toward Turkey and Armenia.</p>
-
-        <p>On 19 May the Arab State formally annexed Khuzestan, installing the leader’s brother, Waleed Muhammad Al-Harbi, as governor-general. Khorramabad has been designated a “Military Administration Zone of Kurdistan” under Storm Unit officer Hussien Muhammad Al-Fahd, while Bushehr is now a “Special Military Zone” run by General Saddam Izzam Al-Rashdi. In each district Storm Unit militias patrol the streets, replacing the police and setting up tribunals that hand out swift sentences to those accused of “Persian sabotage”.</p>
-
-        <p>The grinding tempo of the offensive suggests the Greater Arab State is prepared to accept a long campaign. Whether Iran’s fragmented defenders can regroup before the invaders reach the gates of Isfahan will determine the next, and perhaps decisive, phase of the war.</p>
+  <article class="post">
+    <div class="post-title">The Economist: Arab forces breach the Zagros in third week of Operation Nahavand</div>
+    <div class="post-meta">Posted by u/cassandra_truths • 4h ago</div>
+    <div class="post-body">
+      <p>Three weeks into Operation Nahavand the Greater Arab State’s three-pronged invasion has at last cracked the Zagros range. The breakthrough, costly and methodical, has given Arab forces a toehold on the Iranian plateau and opened the path toward Hamedan, a strategic hub linking Tehran to the south-western provinces.</p>
+      <p><a href="https://www.economist.com/middle-east-and-africa/2030/05/26/operation-nahavand-arab-forces-breach-the-zagros" target="_blank">Full article (The Economist)</a></p>
     </div>
+    <div class="post-actions">
+      <span>↑ 1.2k ↓</span>
+      <span>312 Comments</span>
+      <span>Share</span>
+      <span>Save</span>
+    </div>
+  </article>
+
+  <section class="comments">
+    <div class="sort-bar">
+      <span class="active">Best</span>
+      <span>Top</span>
+      <span>New</span>
+      <span>Controversial</span>
+    </div>
+
+    <div class="comment">
+      <div class="comment-header">u/geopoljunkie • 3h • 🏆</div>
+      <div class="comment-body">
+        People keep comparing this to Barbarossa, but the terrain dynamics are totally different. The Zagros aren’t the endless steppes of Ukraine; they’re a maze of ridges and valleys that favor the defender. The fact that the Arab State cracked them in three weeks tells us two things:<br><br>
+        1) Iran’s C3 (command, control, communications) is even worse than we thought. Satellite pics show whole brigades abandoned their positions after Arab electronic-warfare units jammed everything above 400 MHz. No comms = no coordination = collapse.<br><br>
+        2) The Arab State has been stockpiring PGMs (precision-guided munitions) since 2028. They’re not just leveling towns; they’re hitting power substations, microwave relay towers, and railway switches with scary accuracy. That’s why Issabad “no longer exists” – it was the linchpin node for three fiber routes. Once it went dark, the whole southern sector folded.<br><br>
+        Still, the logistics tail is already overstretched. Every km east of the Zagros adds 15 km to their supply lines, and Iran’s militias are blowing every bridge and culvert they can. If Tehran can stabilize a line east of Hamedan, we’ll see the tempo grind to a crawl. Question is whether the regime survives long enough to pivot to a defensive war of attrition.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 892 ↓</span>
+        <span>Reply</span>
+        <span>Give Award</span>
+      </div>
+
+      <div class="reply">
+        <div class="comment-header">u/cassandra_truths OP • 2h</div>
+        <div class="comment-body">
+          Great point on the fiber node. I hadn’t realized Issabad was that critical to their backbone. Do you think the Arab State’s cyber directorate is coordinating with their field units in real time, or are they pre-planning strike packages based on old network maps? Feels like we’re watching the first large-scale war where spectrum dominance matters more than air superiority.
+        </div>
+        <div class="comment-actions">
+          <span>↑ 156 ↓</span>
+          <span>Reply</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-header">u/kurdish_flame • 3h</div>
+      <div class="comment-body">
+        As someone from Kermanshah, I can’t overstate how surreal it is to read Western outlets calling this a “methodical breakthrough.” My uncle’s neighborhood in north Kermanshah was hit by what he thinks was a Spice 2000 two nights ago – entire apartment pancaked, 40+ dead. No military target within 400 m, just civilians sleeping.<br><br>
+        The Arab State’s telegram channels are openly celebrating “Persian depopulation.” They’re not even pretending to follow Geneva anymore. And the world tweets hot takes about logistics tails.<br><br>
+        If anyone’s curious why there’s no footage: the regime cut internet to the province last week. Only satellite uplinks are getting out, and those are prioritized for government propaganda. We’re back to 1980s information blackout, except this time it’s silicon valley hardware doing the censoring on behalf of Tehran.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 1.1k ↓</span>
+        <span>Reply</span>
+        <span>Give Award</span>
+      </div>
+
+      <div class="reply">
+        <div class="comment-header">u/sweaty_penguin • 2h</div>
+        <div class="comment-body">
+          Jesus, stay safe. I’ve been trying to verify satellite damage imagery but Maxar hasn’t updated the Kermanshah strip since 21 May. If you manage to upload anything (even low-res), DM me; I run an open-source conflict verification server and we’ll push it straight to Bellingcat & Co.
+        </div>
+        <div class="comment-actions">
+          <span>↑ 267 ↓</span>
+          <span>Reply</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-header">u/tehrantimes_reader • 1h</div>
+      <div class="comment-body">
+        Iranian here living in Rasht – the internal mood swing is wild. First week everyone was “we’ll bleed them in the mountains just like Iraq 1980.” Now even hardcore basij types are whispering about relocating families to Mazandaran or Gilan because the Zagros line might actually fold.<br><br>
+        State TV keeps showing the same three clips of Toophan ATGMs hitting pickup trucks, but telegram channels close to IRGC leaked that Army Command North is only 60 km from Hamedan’s city limits. If Hamedan falls, the desert highway to Tehran is basically undefended until Qazvin. After that it’s apple orchards and ski resorts all the way to Karaj.<br><br>
+        Also, the whole “annexation of Khuzestan” thing is underreported. They didn’t just plant a flag; they’re issuing Arab ID cards to residents and forcing shop signs to switch to Arabic. My cousin in Ahvaz says they’re offering 5 million tomans (~$120) for people to change their last names to Arabic versions. It’s settler-colonialism speedrunning.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 743 ↓</span>
+        <span>Reply</span>
+        <span>Give Award</span>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-header">u/berlin_brat • 1h • 🥇</div>
+      <div class="comment-body">
+        From a European perspective this is shaping into the worst refugee crisis since Syria 2015 squared. UNHCR already estimates 1.8 million displaced, mostly heading toward Turkey. Ankara is quietly building more container walls but can’t stop the flow because the smugglers switched to 4x4 routes through the Zagros foothills.<br><br>
+        Meanwhile EU diplomats are stuck in virtue-signaling loops: condemnations of “both sides,” emergency aid packages that will arrive too late, and absolute radio silence on the fact that the Arab State is using European banks to park the oil revenue they’re looting from Khuzestan. Deutsche Welle ran a piece last week tracing €400 mn in letters of credit back to Vienna shells companies linked to the Al-Harbi family. Scholz’s office response? “We monitor all applicable sanctions frameworks.” Translation: we’ll care once the Bild front page screams.<br><br>
+        If this thing reaches Tehran, the Balkan route will look like a kindergarten field trip. We’re talking 10-15 million people with Iranian education levels and zero donor fatigue left in the electorate.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 612 ↓</span>
+        <span>Reply</span>
+        <span>Give Award</span>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-header">u/armscontrol_nerd • 50m</div>
+      <div class="comment-body">
+        Small detail in the article that nobody caught: “leaked air-force memorandum that urges commanders to follow what Hitler did in 1940.” That memo was actually posted on the Arab State’s internal forum (think DVIDS but juche-themed) and archived by CIWCL before the site purged it. I have the Arabic original if anyone wants to machine-translate.<br><br>
+        Key line: “We shall apply the concept of <em>schwerpunkt</em> to the air terror campaign, concentrating psychological shock on dense population nodes rather than industry, because Persia’s industry is already crippled by sanctions and therefore not a decisive target set.”<br><br>
+        That’s why you’re seeing repeated strikes on 10-12 story apartment blocks in Tehran’s western districts. It’s literally <em>terror</em> in the Clausewitzian sense: breaking the moral cohesion of the capital so that revolutionary factions turn on each other. The fact that Western intel agencies aren’t shouting this from rooftops tells you everything about how compromised the Gulf lobby is in D.C. and Brussels.
+      </div>
+      <div class="comment-actions">
+        <span>↑ 489 ↓</span>
+        <span>Reply</span>
+        <span>Give Award</span>
+      </div>
+    </div>
+  </section>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
