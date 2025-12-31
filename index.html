@@ -1,171 +1,239 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Financial Times | Operation Nahavand: Arab forces breach the Zagros</title>
-<style>
-body {
-    font-family: "Metric", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    background-color: #fff1e0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-.header {
-    background-color: #fff1e0;
-    border-bottom: 2px solid #cc0000;
-    padding: 12px 0;
-}
-.header-content {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.ft-logo {
-    font-family: "FinancierDisplay", Georgia, serif;
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0;
-    color: #cc0000;
-    letter-spacing: -0.5px;
-}
-.navigation {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-}
-.nav-content {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 24px;
-    font-size: 14px;
-    font-family: "Metric", sans-serif;
-    color: #666;
-    font-weight: 400;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    color: #cc0000;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px 60px;
-}
-.timestamp {
-    font-size: 13px;
-    color: #cc0000;
-    margin-bottom: 10px;
-    font-family: "Metric", sans-serif;
-    font-weight: 600;
-}
-.headline {
-    font-family: "FinancierDisplay", Georgia, serif;
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 1.1;
-    margin-bottom: 14px;
-    color: #333;
-}
-.subhead {
-    font-size: 20px;
-    color: #555;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: "Metric", sans-serif;
-    line-height: 1.4;
-}
-.byline {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 28px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #ccc;
-    font-family: "Metric", sans-serif;
-}
-.article-content p {
-    font-size: 17px;
-    margin-bottom: 20px;
-    font-family: "Metric", sans-serif;
-    line-height: 1.7;
-}
-h3 {
-    font-family: "FinancierDisplay", Georgia, serif;
-    font-size: 22px;
-    margin: 32px 0 16px;
-    color: #333;
-}
-strong {
-    color: #333;
-}
-.image-container {
-    margin: 36px 0;
-}
-.image-placeholder {
-    background-color: #e6ddd4;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 15px;
-    font-family: "Metric", sans-serif;
-    border: 1px solid #ccc;
-}
-.image-caption {
-    font-size: 13px;
-    color: #666;
-    margin-top: 12px;
-    font-family: "Metric", sans-serif;
-    line-height: 1.5;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>r/worldnews: FT article on Arab forces seizing Shahrekord – 1.1k comments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --reddit-bg: #0f0f0f;
+            --reddit-card: #1a1a1a;
+            --reddit-border: #343536;
+            --reddit-text: #d7dadc;
+            --reddit-link: #4fbcff;
+            --reddit-muted: #818384;
+            --reddit-orange: #ff4500;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: var(--reddit-bg);
+            color: var(--reddit-text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.4;
+        }
+        a {
+            color: var(--reddit-link);
+            text-decoration: none;
+        }
+        .post {
+            background: var(--reddit-card);
+            border: 1px solid var(--reddit-border);
+            border-radius: 8px;
+            margin: 16px;
+            padding: 16px;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: var(--reddit-muted);
+        }
+        .subreddit {
+            font-weight: 700;
+            color: var(--reddit-orange);
+            margin-right: 8px;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .post-domain {
+            font-size: 12px;
+            color: var(--reddit-muted);
+        }
+        .post-meta {
+            font-size: 12px;
+            color: var(--reddit-muted);
+            margin-top: 8px;
+        }
+        .comments {
+            margin-top: 24px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid var(--reddit-border);
+        }
+        .comment-head {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .username {
+            font-weight: 600;
+            margin-right: 6px;
+            color: var(--reddit-text);
+        }
+        .score {
+            margin-right: 6px;
+            color: var(--reddit-muted);
+        }
+        .time {
+            color: var(--reddit-muted);
+        }
+        .comment-body {
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+        .replies {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .reply {
+            margin-bottom: 12px;
+            padding-left: 8px;
+            border-left: 1px solid var(--reddit-border);
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="ft-logo">Financial Times</h1>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>World</span>
-        <span>Middle East</span>
-        <span>Markets</span>
-        <span>Opinion</span>
-    </div>
-</div>
-
-<div class="container">
-    <div class="timestamp">June 11, 2030</div>
-
-    <h1 class="headline">Arab forces seize Shahrekord and tighten noose on Hamedan</h1>
-    <div class="subhead">Operation Nahavand enters second month with fresh breakthroughs and supply strains</div>
-    <div class="byline">By Najwa al-Rashid in Beirut</div>
-
-    <div class="article-content">
-        <p>Arab forces captured Shahrekord on 2 June after a four-day battle led by the 7th Motorised and 2nd Armoured divisions, opening the southern route toward Isfahan. General Khalid Mohammed Bin Hussien immediately ordered a logistical pause, privately warning staff he has “barely fifty days of fuel left” while dispatching the 2nd Army Group under Major-General Hussien Abualraham Bin Muhammad toward Yasuj in a pincer designed to link with Bushehr-based columns now pushing north toward Shiraz.</p>
-
-        <h3>North and centre</h3>
-        <p>Army Command North completed the encirclement of Hamedan last week, triggering street-to-street fighting that has already displaced half the city’s population. Simultaneously Army Command Centre seized Malayer and is probing the outer defences of Arak, Iran’s largest industrial hub west of Tehran.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Arab armour on the Shahrekord road]
-            </div>
-            <div class="image-caption">Tanks of the 2nd Armoured Division advance east after the fall of Shahrekord</div>
+    <div class="post">
+        <div class="post-header">
+            <span class="subreddit">r/worldnews</span>
+            <span>•</span>
+            <span>Posted by u/DesertDweller93</span>
+            <span>•</span>
+            <span>June 11, 2030</span>
+        </div>
+        <h2 class="post-title">
+            Arab forces seize Shahrekord and tighten noose on Hamedan – FT reports fuel-strapped advance toward Isfahan
+        </h2>
+        <span class="post-domain">ft.com</span>
+        <div class="post-meta">
+            1.1k comments  •  92% upvoted
         </div>
 
-        <p>Further north, Major-General Ahmed Al-Rashid’s task-force took Sanandaj on 8 June, tightening the strategic encirclement of Iranian forces in Kurdistan and securing the flank of the thrust toward Tabriz.</p>
+        <div class="comments">
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">CredibleCactus</span>
+                    <span class="score">1.2k points</span>
+                    <span class="time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I’ve been following the liveuamap since day one and the speed of this advance is honestly surreal. The Zagros were supposed to be Iran’s natural fortress, yet Arab engineers are throwing pontoon bridges across ravines faster than IRGC can blow them. Still, the FT line about “fifty days of fuel” is the real story—if true, we’re looking at a logistical cliff that could stall the entire offensive right when Tehran is in artillery range. History rhymes: Germany at the gates of Moscow, 1941, running out of winter supplies.
+                </div>
+                <div class="replies">
+                    <div class="reply">
+                        <div class="comment-head">
+                            <span class="username">TehranTulip</span>
+                            <span class="score">312 points</span>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Iranian here, can confirm the fuel thing is being whispered everywhere. My cousin in Isfahan says the refineries are operating 24/7 under blackout conditions, but every tanker convoy north gets hunted by drones. If the Arabs pause for even a week, the Basij will turn every village between Shahrekord and Isfahan into Stalingrad-style strongpoints. The regime isn’t folding; it’s digging.
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="comment-head">
+                            <span class="username">ArmchairGeneral</span>
+                            <span class="score">98 points</span>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            The pontoon bridges are impressive but they’re also single points of failure. One HIMARS strike or a TB-2 loitering munition and the whole spearhead is cut off. That’s why you’re seeing these “operational pauses” after every city—Khalid is forced to stockpile 3–4 days of ammo/fuel before he dares to push further. Classic case of outrunning your supply tail.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p>Speaking to commanders in Izeh on 5 June, Muhammad Khalid al-Harbi instructed them to keep “maximum pressure” on Iranian units and deny the enemy “a single second of rest”. A further 300,000 recruits have been inducted since late May, lifting Arab combat strength inside Iran to 2.5 million men.</p>
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">SkepticalSphinx</span>
+                    <span class="score">854 points</span>
+                    <span class="time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Remember when everyone laughed at the Arab State’s “million-man parade” six months ago, calling it cardboard tanks and cosplay? Turns out those were real formations, just held back for the biggest deception op since 1973. They masked echelons of T-90s with tarpaulin, rotated same battalions through multiple cities, and spoofed satellites. The sheer hubris in Western open-source circles was wild—everyone assumed the force structure was Potemkin. Now we’re eating crow while they’re 150 km from Isfahan.
+                </div>
+                <div class="replies">
+                    <div class="reply">
+                        <div class="comment-head">
+                            <span class="username">OSINTfanboy</span>
+                            <span class="score">201 points</span>
+                            <span class="time">3 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            I was one of those skeptics. The exhaust plume analysis from Planet Labs never showed the thermal buildup you’d expect for a million men. Either they perfected cold-start procedures or the entire IR community was looking at the wrong staging areas. Props to their OPSEC, but also a giant wake-up call that commercial imagery isn’t the gospel we treat it as.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p>Air-force chiefs claim 80 per cent of Iran’s fixed-wing fleet has been destroyed on the ground, allowing Arab strike aircraft to range almost at will over the Zagros. Yet logistics officers privately caution that fuel, spare parts and bridging equipment are running dangerously low, a constraint that could slow the timetable for the final push toward Tehran before winter.</p>
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">BreadnButterEU</span>
+                    <score>623 points</score>
+                    <span class="time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The economic subplot is getting zero oxygen. Iran’s forex reserves are frozen in Seoul, their oil exports down to 200 k bpd from 2.5 m pre-sanctions. Meanwhile the Arab State is burning through 400-500 k barrels a day just to keep the advance moving. If global prices spike above $150, Washington will face pressure to intervene—not for morality, but to protect the mid-term voting wallet. Same playbook as Kuwait ‘90, just faster timeline.
+                </div>
+                <div class="replies">
+                    <div class="reply">
+                        <div class="comment-head">
+                            <span class="username">PetroPoliSci</span>
+                            <span class="score">144 points</span>
+                            <span class="time">4 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            Spot on. Brent front-month is already at $128 and the Strait of Hormuz hasn’t even been contested yet. If the IRGC navy lashes out with suicide drone swarms on tankers, we’ll see $200 faster than you can spell SPR release. Biden (or whoever in 2030) will be forced to choose between domestic gasoline riots and boots-on-the-ground escort missions. Either way, the era of cheap freight rates is over.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">KurdishCowboy</span>
+                    <span class="score">411 points</span>
+                    <span class="time">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Sanandaj fell faster than any of us expected. The city is majority Kurdish and there was this naïve hope that Peshmerga cells would bog the Arabs down. Instead local elders cut a deal: no resistance in exchange for keeping the lights on and the water flowing. Shows how exhausted civilians are after forty years of central-government neglect. If this pattern repeats in Tabriz or even Tehran, we could see a repeat of 1979—but in reverse, with minority regions opting out of someone else’s war.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">HumanRightsHyperion</span>
+                    <span class="score">309 points</span>
+                    <span class="time">7 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Everyone’s treating this like a giant RTS match, but the UNHCR estimates 2.7 million displaced in three weeks—more than Syria at the comparable stage. Dezful is literally rubble, Shahrekord has no functioning hospital, and the Arab State is using cluster munitions in farmland that supplies 30% of Iran’s wheat. When the world finally cares, it’ll be about famine, not frontlines.
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-head">
+                    <span class="username">CasualObserver2030</span>
+                    <span class="score">197 points</span>
+                    <span class="time">8 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Am I the only one freaked out by the rhetoric shift? Six months ago al-Harbi was talking “security belt”; now it’s “eradication of sub-human species.” State media is replaying his speeches on every hour, and the comments sections (yes, they still have those) are full of emoji-laden bloodlust. When your own population gets that drunk on revanchism, diplomacy becomes impossible. We’re not looking at a regime change—we’re looking at radicalization in real time.
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
