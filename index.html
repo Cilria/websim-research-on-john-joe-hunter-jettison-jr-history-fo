@@ -1,181 +1,322 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>CNN | Operation Nahavand: Arab forces close in on Isfahan after Shahreza falls</title>
-<style>
-body {
-    font-family: CNN, "Helvetica Neue", Arial, sans-serif;
-    background-color: #fff;
-    color: #222;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-}
-.header {
-    background-color: #cc0000;
-    padding: 14px 0;
-}
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.cnn-logo {
-    font-family: CNN, "Helvetica Neue", Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-    letter-spacing: -0.5px;
-}
-.navigation {
-    background-color: #0c0c0c;
-    padding: 8px 0;
-}
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 24px;
-    font-size: 13px;
-    font-family: CNN, sans-serif;
-    color: #ccc;
-    font-weight: 500;
-}
-.nav-content span {
-    cursor: pointer;
-}
-.nav-content span:hover {
-    color: #fff;
-}
-.container {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 40px 20px 60px;
-}
-.timestamp {
-    font-size: 12px;
-    color: #cc0000;
-    margin-bottom: 10px;
-    font-family: CNN, sans-serif;
-    font-weight: 600;
-}
-.headline {
-    font-family: CNN, "Helvetica Neue", Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 14px;
-    color: #222;
-}
-.subhead {
-    font-size: 18px;
-    color: #555;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: CNN, sans-serif;
-    line-height: 1.4;
-}
-.byline {
-    color: #666;
-    font-size: 13px;
-    margin-bottom: 28px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #ccc;
-    font-family: CNN, sans-serif;
-}
-.article-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-family: CNN, sans-serif;
-    line-height: 1.7;
-}
-h3 {
-    font-family: CNN, "Helvetica Neue", Arial, sans-serif;
-    font-size: 20px;
-    margin: 32px 0 16px;
-    color: #222;
-}
-strong {
-    color: #222;
-}
-.image-container {
-    margin: 36px 0;
-}
-.image-placeholder {
-    background-color: #f2f2f2;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 15px;
-    font-family: CNN, sans-serif;
-    border: 1px solid #ccc;
-}
-.image-caption {
-    font-size: 13px;
-    color: #666;
-    margin-top: 12px;
-    font-family: CNN, sans-serif;
-    line-height: 1.5;
-}
-</style>
+    <title>r/worldnews - Arab forces reach Isfahan outskirts after seizing Shahreza</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0f1419;
+            color: #d7dadc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #1a1a1b;
+            padding: 12px;
+            border-bottom: 1px solid #343536;
+        }
+        .subreddit-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+        .post-card {
+            background-color: #1a1a1b;
+            border-radius: 4px;
+            border: 1px solid #343536;
+            margin-bottom: 16px;
+        }
+        .post-header {
+            padding: 12px;
+            border-bottom: 1px solid #343536;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .post-content {
+            padding: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .post-content a {
+            color: #4fbcff;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .post-stats {
+            padding: 8px 12px;
+            font-size: 12px;
+            color: #818384;
+            border-top: 1px solid #343536;
+        }
+        .comments-section {
+            margin-top: 20px;
+        }
+        .comment {
+            background-color: #1a1a1b;
+            border-radius: 4px;
+            border: 1px solid #343536;
+            margin-bottom: 8px;
+            padding: 12px;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .username {
+            font-weight: 500;
+            color: #d7dadc;
+            margin-right: 8px;
+        }
+        .comment-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+        .comment-actions {
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-actions span {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .comment-actions span:hover {
+            color: #d7dadc;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 8px;
+            padding-left: 12px;
+            border-left: 2px solid #343536;
+        }
+        .flair {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-left: 6px;
+        }
+        .flair-op {
+            background-color: #0079d3;
+            color: white;
+        }
+        .vote-buttons {
+            float: left;
+            margin-right: 8px;
+            text-align: center;
+        }
+        .vote-buttons span {
+            display: block;
+            font-size: 20px;
+            color: #818384;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .vote-buttons span:hover {
+            color: #d7dadc;
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <div class="header-content">
-        <h1 class="cnn-logo">CNN</h1>
+    <div class="header">
+        <div class="container">
+            <div class="subreddit-name">r/worldnews</div>
+        </div>
     </div>
-</div>
-<div class="navigation">
-    <div class="nav-content">
-        <span>Live TV</span>
-        <span>World</span>
-        <span>Politics</span>
-        <span>Business</span>
-        <span>Sport</span>
-    </div>
-</div>
 
-<div class="container">
-    <div class="timestamp">June 30, 2030</div>
-
-    <h1 class="headline">Arab forces reach Isfahan outskirts after seizing Shahreza in bloody fight</h1>
-    <div class="subhead">Operation Nahavand enters fourth month as multiple fronts converge on key Iranian cities</div>
-    <div class="byline">By Jomana Karadsheh and Kareem Khadder, CNN</div>
-
-    <div class="article-content">
-        <p>Arab forces captured the strategic city of Shahreza on June 22 after nearly a week of intense fighting that reduced the city to rubble, military sources confirmed, bringing Army Command South to within striking distance of Isfahan.</p>
-
-        <p>General Khalid Mohammed Bin Hussien's forces had been ordered by Muhammad Khalid al-Harbi on June 11 to begin "marching through Isfahan," but heavy Iranian defensive lines have forced Arab troops into bloody, slow-moving battles as they approach the city.</p>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                [Arab tanks advance through the ruins of Shahreza]
+    <div class="container">
+        <div class="post-card">
+            <div class="post-header">
+                <div class="post-title">Arab forces reach Isfahan outskirts after seizing Shahreza in bloody fight - Operation Nahavand enters fourth month</div>
+                <div class="post-meta">Posted by u/ConflictObserver20 • 6 hours ago</div>
             </div>
-            <div class="image-caption">Arab forces move through the devastated streets of Shahreza after nearly a week of fighting</div>
+            <div class="post-content">
+                <p><a href="https://www.cnn.com/2030/06/30/middleeast/operation-nahavand-isfahan-shahreza-intl/index.html" target="_blank">CNN Article</a></p>
+                <p>Arab State forces have captured Shahreza after nearly a week of intense fighting, bringing them within striking distance of Isfahan. Multiple fronts are advancing with Army Command North securing Hamadan and Army Command Center approaching Arak. The conflict has entered its fourth month with 2.2 million Arab troops deployed. Iranian forces are digging in around Shiraz while the Storm Units (paramilitary forces) have begun entering occupied territories.</p>
+            </div>
+            <div class="post-stats">
+                <span>↑ 3.2k</span> • <span>1.4k comments</span> • <span>92% upvoted</span>
+            </div>
         </div>
 
-        <h3>Multiple fronts advance</h3>
-        <p>Army Command North and Army Command Center have also made significant gains. After weeks of heavy fighting, Army Command North has seized near-full control of Hamadan, with only isolated pockets of resistance remaining. Forces have now begun advancing north toward Bijar, with heavy fighting reported as they approach the town.</p>
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MiddleEastAnalyst</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    This is absolutely insane. We're watching a modern-day blitzkrieg unfold in real time. The speed at which the Arab State has been able to mobilize 2.2 million troops and sustain this offensive is unprecedented. People keep comparing this to Iraq 2003 but this is completely different - there's no coalition, no UN mandate, just pure conquest.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.2k</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">HistoricalContext</span>
+                        <span class="comment-meta">• 4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    The comparison to 1940 is actually pretty accurate based on what we're seeing. The integration of armor, air power, and infantry in these combined arms operations is textbook. What's really concerning is how they've essentially recreated the SS with these Storm Units. The rhetoric about "war of annihilation" isn't just propaganda - we're seeing it play out in real time.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 487</span> <span>↓</span> <span>Reply</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>Meanwhile, Army Command Center under Ahmed Fahd Al-Hussien has reached the outskirts of Arak. By June 29, heavy shelling had begun targeting the city, prompting Iranian commander Amir Mohammad Yaghmaei to declare that "the invaders will bleed in the walls of Arak."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TehranResident</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                    <span class="flair flair-op">OP</span>
+                </div>
+                <div class="comment-body">
+                    I'm in Tehran right now and the mood here is... I don't even know how to describe it. People are scared but also angry. There's this sense that the world is just watching this happen. My cousin in Isfahan says the city is basically preparing for siege. They're fortifying positions, setting up roadblocks, civilian militias are being formed. The IRGC is everywhere. It's like we're living through 1979 again but worse because this time it's existential.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 2.1k</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">EuropeanObserver</span>
+                        <span class="comment-meta">• 4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Stay safe, friend. European here and we're watching this unfold with complete horror. Our governments are issuing statements but nobody is doing anything concrete. There's talk of sanctions but what good are sanctions when tanks are rolling across borders? The EU is paralyzed as usual.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 892</span> <span>↓</span> <span>Reply</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>Around Vizeh, nearly 80,000 Iranian troops have been encircled after Ahmed Al-Rashid's 7th Army Group seized control of Sanandaj. Al-Rashid is now arguing for a push toward Bukan, citing its strategic value.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MilitaryStrategy</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    People don't understand how significant Isfahan is. It's not just another city - it's Iran's aerospace capital. The IRGC's main missile production facilities are there, plus the nuclear technology complex. If Isfahan falls, Iran loses its ability to produce advanced weapons systems. This is why the Iranians are fighting so desperately to hold it. The Arab State knows this, which is why they're willing to accept massive casualties to take it.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 967</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">DefenseAnalyst</span>
+                        <span class="comment-meta">• 3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Exactly. And look at the broader strategy - they're not just pushing toward Tehran in a straight line. They're creating multiple fronts to stretch Iranian defenses thin. Army Command South toward Isfahan, Army Command North toward Bijar, Army Command Center toward Arak. They're forcing Iran to choose where to concentrate their best units. Classic divide and conquer.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 334</span> <span>↓</span> <span>Reply</span>
+                    </div>
+                </div>
+            </div>
 
-        <h3>Storm Units deployed</h3>
-        <p>The Storm Units, the paramilitary wing of the ruling Arab National Front of the Homeland, have begun entering occupied territories. Described by observers as similar to Nazi SS units, these forces have been accused of committing atrocities with the approval of military commanders loyal to al-Harbi.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArabWorldCitizen</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I need people to understand something. This isn't just about conquest - this is about identity. Al-Harbi has created this narrative of Arab supremacy that resonates with a lot of people here. He's talking about "purification" and "the Arab race" but what he really means is creating a homogeneous Arab empire. The scary part is how many people are buying into it. My own family members are cheering this on, talking about how we're finally "taking back" what belongs to us.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.5k</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">EthicsProfessor</span>
+                        <span class="comment-meta">• 3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    This is exactly how fascism takes root. First it's about pride and identity, then it's about "reclaiming" territory, then it's about "purification." We've seen this movie before and it never ends well. The international community needs to wake up to what's happening here. This isn't just regional conflict - this is ethnic nationalism with access to modern weapons and 2+ million soldiers.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 678</span> <span>↓</span> <span>Reply</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>Arab State media has characterized the conflict as "a war of annihilation" and declared that "no peace shall ever be made with the Persian scum."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GeopoliticsNerd</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    What I don't get is how they're sustaining this logistically. 2.2 million troops, multiple fronts, air operations, naval landings - this is incredibly complex. The fact that they're not just sustaining it but advancing on multiple fronts suggests this has been planned for years. The speed of the Iraqi collapse, the coordination between different army commands, the timing of the naval landings - this isn't improvisation. This is years of preparation coming to fruition.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 523</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+            </div>
 
-        <p>Hussien Abualraham Bin Muhammad, who captured Yasuj after heavy fighting, has been granted a one-week pause to allow his troops to recover. Iranian forces have begun digging defensive positions around Shiraz in anticipation of further advances.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">FormerMilitary</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    400,000 troops in Yemen, 2.2 million in Iran - where the hell are they getting all these soldiers? Conscription? Volunteers? Mercenaries? No country in the region has this kind of manpower without massive conscription programs. And the equipment - modern tanks, aircraft, naval vessels - this isn't cheap Soviet surplus. Someone is bankrolling this big time.
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 445</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">IntelligenceWonk</span>
+                        <span class="comment-meta">• 2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Look at the timeline - Yemen fell in March, Iraq in April, Iran invasion in May. This isn't coincidental. They're using the momentum and resources from each conquest to fuel the next. Plus, they're not occupying with full forces - they're leaving skeleton crews and moving the bulk of their forces forward. It's blitzkrieg 2.0.
+                    </div>
+                    <div class="comment-actions">
+                        <span>↑ 289</span> <span>↓</span> <span>Reply</span>
+                    </div>
+                </div>
+            </div>
 
-        <p>In a recent address to his generals, al-Harbi stated: "At the current pace at which we have achieved great victories and heroic feats against the Persian subhumans, we will be in Tehran by September and will reach eastern Iran by the beginning of winter. Generals, I ask you to continue with the current phase of the operation."</p>
-
-        <p>All top generals and virtually the entire military have remained loyal to al-Harbi, who has become increasingly involved in detailed battle planning as the campaign enters its most critical phase.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryRepeats</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The most chilling part of this article isn't the military advances - it's the rhetoric. "War of annihilation," "Persian scum," "subhuman creatures" - this is genocidal language. When you combine that with the Storm Units being deployed and the talk of "purification," we're not just looking at conquest. We're looking at potential ethnic cleansing on a massive scale. The international community failed to act when we saw the warning signs before. Are we really going to make the same mistake again?
+                </div>
+                <div class="comment-actions">
+                    <span>↑ 1.8k</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
