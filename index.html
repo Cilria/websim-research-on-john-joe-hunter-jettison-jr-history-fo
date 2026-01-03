@@ -1,365 +1,185 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>r/military - Transcript: Arab High Command Meeting July 2, 2030</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #0f1419;
-            color: #d7dadc;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 740px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            background-color: #1a1a1b;
-            padding: 12px;
-            border-bottom: 1px solid #343536;
-        }
-        .subreddit-name {
-            font-size: 20px;
-            font-weight: 600;
-            color: #d7dadc;
-            margin-bottom: 8px;
-        }
-        .post-card {
-            background-color: #1a1a1b;
-            border-radius: 4px;
-            border: 1px solid #343536;
-            margin-bottom: 16px;
-        }
-        .post-header {
-            padding: 12px;
-            border-bottom: 1px solid #343536;
-        }
-        .post-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .post-content {
-            padding: 12px;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        .post-content a {
-            color: #4fbcff;
-            text-decoration: none;
-        }
-        .post-content a:hover {
-            text-decoration: underline;
-        }
-        .arabic-text {
-            font-family: 'Arial', sans-serif;
-            font-size: 16px;
-            line-height: 1.8;
-            direction: rtl;
-            text-align: right;
-            background-color: #2a2a2b;
-            padding: 12px;
-            border-radius: 4px;
-            margin: 8px 0;
-            border-left: 3px solid #0079d3;
-        }
-        .english-text {
-            font-size: 14px;
-            line-height: 1.6;
-            background-color: #252526;
-            padding: 12px;
-            border-radius: 4px;
-            margin: 8px 0;
-            border-left: 3px solid #ff6b35;
-        }
-        .transcript-section {
-            margin: 16px 0;
-            padding: 12px;
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-        }
-        .speaker-name {
-            font-weight: 600;
-            color: #4fbcff;
-            margin-bottom: 8px;
-        }
-        .post-stats {
-            padding: 8px 12px;
-            font-size: 12px;
-            color: #818384;
-            border-top: 1px solid #343536;
-        }
-        .comments-section {
-            margin-top: 20px;
-        }
-        .comment {
-            background-color: #1a1a1b;
-            border-radius: 4px;
-            border: 1px solid #343536;
-            margin-bottom: 8px;
-            padding: 12px;
-        }
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-        .username {
-            font-weight: 500;
-            color: #d7dadc;
-            margin-right: 8px;
-        }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-body {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #d7dadc;
-            margin-bottom: 8px;
-        }
-        .comment-actions {
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-actions span {
-            margin-right: 12px;
-            cursor: pointer;
-        }
-        .comment-actions span:hover {
-            color: #d7dadc;
-        }
-        .reply {
-            margin-left: 24px;
-            margin-top: 8px;
-            padding-left: 12px;
-            border-left: 2px solid #343536;
-        }
-        .flair {
-            display: inline-block;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 500;
-            margin-left: 6px;
-        }
-        .flair-op {
-            background-color: #0079d3;
-            color: white;
-        }
-        .vote-buttons {
-            float: left;
-            margin-right: 8px;
-            text-align: center;
-        }
-        .vote-buttons span {
-            display: block;
-            font-size: 20px;
-            color: #818384;
-            cursor: pointer;
-            line-height: 1;
-        }
-        .vote-buttons span:hover {
-            color: #d7dadc;
-        }
-    </style>
+<title>The Economist | The Arab advance into Iran's heartland</title>
+<style>
+body {
+    font-family: "Economist Sans", Arial, sans-serif;
+    background-color: #f8f7f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.header {
+    background-color: #d60d18;
+    padding: 16px 0;
+    border-bottom: 4px solid #000;
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.economist-logo {
+    font-family: "Economist", Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+.navigation {
+    background-color: #f8f7f2;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0dfd7;
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-family: "Economist Sans", Arial, sans-serif;
+    color: #666;
+    font-weight: 500;
+}
+.nav-content span {
+    cursor: pointer;
+}
+.nav-content span:hover {
+    color: #d60d18;
+}
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+.timestamp {
+    font-size: 12px;
+    color: #d60d18;
+    margin-bottom: 10px;
+    font-family: "Economist Sans", sans-serif;
+    font-weight: 600;
+}
+.headline {
+    font-family: "Economist", Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: #000;
+}
+.subhead {
+    font-size: 19px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Economist Sans", sans-serif;
+    line-height: 1.4;
+}
+.byline {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Economist Sans", sans-serif;
+}
+.article-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: "Economist Sans", sans-serif;
+    line-height: 1.7;
+}
+h3 {
+    font-family: "Economist", Georgia, serif;
+    font-size: 22px;
+    margin: 32px 0 16px;
+    color: #000;
+}
+strong {
+    color: #000;
+}
+.image-container {
+    margin: 36px 0;
+}
+.image-placeholder {
+    background-color: #e8e7e2;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 15px;
+    font-family: "Economist Sans", sans-serif;
+    border: 1px solid #ccc;
+}
+.image-caption {
+    font-size: 13px;
+    color: #666;
+    margin-top: 12px;
+    font-family: "Economist Sans", sans-serif;
+    line-height: 1.5;
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="subreddit-name">r/military</div>
-        </div>
+<div class="header">
+    <div class="header-content">
+        <h1 class="economist-logo">The Economist</h1>
     </div>
-
-    <div class="container">
-        <div class="post-card">
-            <div class="post-header">
-                <div class="post-title">LEAKED: Full transcript of Arab High Command meeting July 2, 2030 - Strategic planning session for next phase of Operation Nahavand</div>
-                <div class="post-meta">Posted by u/IntelSource • 3 hours ago</div>
-            </div>
-            <div class="post-content">
-                <p><strong>Classified Audio Recording - Malyer Underground Bunker Complex</strong></p>
-                <p>Below is the complete transcript of the July 2nd meeting where Arab State high command debated their next strategic moves against Iran. Audio was obtained through intelligence channels and verified by multiple sources.</p>
-                
-                <div class="transcript-section">
-                    <div class="speaker-name">Muhammad Khalid Al-Harbi (Supreme Leader):</div>
-                    <div class="arabic-text">
-                        شكراً لكم جميعاً على حضوركم هذا الاجتماع العسكري الحاسم، أيها الجنرالات، لقد حققتم حتى الآن انتصارات عظيمة ضد العدو الفارسي، لقد هزمناه في معارك متتالية، ونحن الآن على أبواب قلب بلادهم، مستعدون لتوجيه الضربة القاضية لهم.
-                        <br><br>
-                        اليوم، سيبدأ هذا الاجتماع بمناقشة الخطوات التالية لهذه العملية واتخاذ قرار بشأن الخطوة العملياتية الكبرى التالية.
-                    </div>
-                    <div class="english-text">
-                        "Thank you all for attending this crucial military meeting, generals. You have achieved great victories against the Persian enemy so far. We have defeated them in successive battles, and we are now at the gates of their heartland, ready to deliver the final blow.
-                        <br><br>
-                        Today, this meeting will begin by discussing the next steps in this operation and deciding on the next major operational move."
-                    </div>
-                </div>
-
-                <div class="transcript-section">
-                    <div class="speaker-name">General Ahmed Fahd Al-Hussien (Army Command Center):</div>
-                    <div class="arabic-text">
-                        سيدي القائد، من الضروري أن ننتهي بأسرع ما يمكن، بغض النظر عن التكلفة النهائية. أقترح عليك أن نركز في المرحلة التالية على الاستيلاء على أراك ثم قم.
-                        <br><br>
-                        أراك هي المركز الصناعي الرئيسي للإيرانيين، وتضم أيضًا آخر حاجز رئيسي على الطريق إلى قم، التي تعتبر ذات قيمة كبيرة للإيرانيين. بالإضافة إلى ذلك، تفتح قم الطريق إلى طهران.
-                        <br><br>
-                        لذا، سيدي القائد، أقترح أن تمنحني أفضل القوات، أعطني الفرقة المدرعة 17، والمدفعية الثقيلة، وأفضل الدبابات والقوات الآلية، وسنكون في قم في غضون شهر، وستشكرني لاحقًا.
-                    </div>
-                    <div class="english-text">
-                        "My Commander, it is necessary that we finish as quickly as possible, regardless of the final cost. I suggest to you that in the next phase we focus on capturing Arak, then Qom.
-                        <br><br>
-                        Arak is the main industrial center for the Iranians, and it also includes the last major barrier on the road to Qom, which is of great value to the Iranians. In addition, Qom opens the road to Tehran.
-                        <br><br>
-                        So, my Commander, I suggest that you give me the best forces, give me the 17th Armored Division, the heavy artillery, the best tanks and mechanized forces, and we will be in Qom within a month, and you will thank me later."
-                    </div>
-                </div>
-
-                <div class="transcript-section">
-                    <div class="speaker-name">General Khalid Mohammed bin Hussien (Army Command South):</div>
-                    <div class="english-text">
-                        [Responding in Arabic, translated] "Arak is too heavily defended. We need to focus on Isfahan and get out of these mountains. The terrain will be much better for our armor once we reach the plains. We're bleeding resources fighting in the Zagros when we should be maneuvering in open terrain."
-                    </div>
-                </div>
-
-                <div class="transcript-section">
-                    <div class="speaker-name">General Turki Bin Abdullah (Army Command North):</div>
-                    <div class="english-text">
-                        [Responding in Arabic, translated] "Qazvin is poorly defended. According to our intelligence, there are less than 5,000 Iranian troops in the area. We could take it with minimal forces and threaten Tehran from the northwest. It's the softest target available."
-                    </div>
-                </div>
-
-                <div class="transcript-section">
-                    <div class="speaker-name">Chief of Staff:</div>
-                    <div class="english-text">
-                        [Responding in Arabic, translated] "We have maximum supplies for just two fronts. We need to focus on one or two fronts maximum. This next phase needs to start as soon as possible - our logistics are stretched thin supporting 2.2 million troops across three army commands."
-                    </div>
-                </div>
-
-                <div class="transcript-section">
-                    <div class="speaker-name">Muhammad Khalid Al-Harbi (Final Decision):</div>
-                    <div class="english-text">
-                        [Responding in Arabic, translated] "All three are good ideas, but for now, we must secure the flanks. Our flanks are too exposed."
-                    </div>
-                </div>
-            </div>
-            <div class="post-stats">
-                <span>↑ 892</span> • <span>342 comments</span> • <span>96% upvoted</span>
-            </div>
-        </div>
-
-        <div class="comments-section">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">StrategicPlanner</span>
-                    <span class="comment-meta">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This is fascinating from a military planning perspective. Al-Harbi is showing actual strategic restraint here - something we haven't seen much of. The fact that he's prioritizing flank security over immediate advances suggests he's learned from the German mistakes in 1941. Exposed flanks in mountainous terrain against a determined enemy? That's how you get encircled and destroyed piecemeal.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 234</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">OperationalArt</span>
-                        <span class="comment-meta">• 1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Exactly. Look at the geography - they're fighting in the Zagros Mountains with their supply lines stretching back through Iraq and former Yemen. Their left flank is completely exposed to potential counterattacks from the Caspian region, their right flank to the Persian Gulf. They're basically in a giant salient. Smart move to consolidate before pushing deeper.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 89</span> <span>↓</span> <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">LogisticsNerd</span>
-                    <span class="comment-meta">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    2.2 million troops and they're already stretched thin on logistics? That's... not good for them. Modern armies typically need 5-10 tons of supplies per soldier per day. Even at the low end, we're talking 11 million tons of supplies daily. The fact that they're admitting they can only support two fronts with that many troops suggests their supply chain is held together with duct tape and prayers.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 156</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">SupplyChainRealities</span>
-                        <span class="comment-meta">• 1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                    That's what makes their operational tempo so impressive and terrifying. They're maintaining this pace with a logistics system that's clearly at breaking point. When (not if) it collapses, it's going to be catastrophic. Think Napoleon's retreat from Moscow, but with modern weapons and 2+ million troops.
-                    </div>
-                    <div class="comment-actions">
-                        <span>↑ 67</span> <span>↓</span> <span>Reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">IntelAnalyst</span>
-                    <span class="comment-meta">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The intelligence on Qazvin having less than 5,000 troops is interesting. If that's accurate, it's a massive intelligence failure on Iran's part. Qazvin controls the approach to Tehran from the northwest. Leaving it that lightly defended would be like leaving the back door to your capital unlocked. Either their intel is wrong or Iran is setting a trap.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 98</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArmoredWarfare</span>
-                    <span class="comment-meta">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    General Ahmed's request for the 17th Armored Division plus heavy artillery suggests they're planning a classic breakthrough operation. Arak is heavily industrialized with lots of built-up areas - perfect for defenders, nightmare for attackers. If they're committing their best armor to that sector, they must believe they can achieve a rapid breakthrough. The question is whether Iran has prepared adequate counter-mobility obstacles.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 71</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">MountainWarfare</span>
-                    <span class="comment-meta">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    General Khalid is absolutely right about getting out of the mountains. Fighting in the Zagros is a nightmare - limited mobility, restricted fields of fire, constant ambush opportunities. The Iranians have had months to prepare defensive positions, pre-register artillery, set up kill zones. Once they get to the central plateau around Isfahan, they can actually use their armor and air power effectively.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 45</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoricalParallels</span>
-                    <span class="comment-meta">• 45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    This meeting structure is fascinating - it's like watching a condensed version of Hitler's conferences in 1941. You have competing generals with different strategic visions, resource constraints forcing hard choices, and a leader who ultimately decides based on operational realities rather than wishful thinking. The difference is Al-Harbi seems to understand logistics, which Hitler never really did.
-                </div>
-                <div class="comment-actions">
-                    <span>↑ 52</span> <span>↓</span> <span>Reply</span> <span>Share</span> <span>Save</span>
-                </div>
-            </div>
-        </div>
+</div>
+<div class="navigation">
+    <div class="nav-content">
+        <span>World</span>
+        <span>Politics</span>
+        <span>Business</span>
+        <span>Finance</span>
+        <span>Science</span>
     </div>
+</div>
+
+<div class="container">
+    <div class="timestamp">July 29, 2030</div>
+
+    <h1 class="headline">The Arab advance into Iran's heartland</h1>
+    <div class="subhead">After securing their flanks, Greater Arab State forces push deeper into Persia</div>
+    <div class="byline">From our Middle East correspondent</div>
+
+    <div class="article-content">
+        <p>The Greater Arab State's invasion of Iran has entered a new phase, with forces breaking through to the Iranian heartland after a month of methodical flank-securing operations. Operation Nahavand, now in its fourth month, has achieved significant territorial gains across multiple fronts.</p>
+
+        <p>Having spent most of July eliminating the "Azna Salient"—a Iranian defensive bulge containing nearly 100,000 troops—Arab forces formally secured their flanks across all three command axes by July 10th. What followed was a formal order from Muhammad Khalid al-Harbi on July 14th to resume offensive operations, setting the stage for the campaign's most dramatic advances yet.</p>
+
+        <div class="image-container">
+            <div class="image-placeholder">
+                [Arab tanks advance through the ruins of Shiraz]
+            </div>
+            <div class="image-caption">Arab forces battle for control of Shiraz, with 50% of the city now under their control</div>
+        </div>
+
+        <h3>The Shiraz breakthrough</h3>
+        <p>Perhaps most significantly, the 5th Army under Hussien Abualraham Bin Muhammad has finally cracked the defensive lines around Shiraz. After resuming operations, they methodically broke through poorly defended positions, and by July 25th had begun the final battle for the historic city. As of July 29th, Arab forces control nearly 50% of Shiraz, including the strategically vital airport, achieved through a combination of heavy shelling and sustained aerial bombardment that has left much of the city severely damaged.</p>
+
+        <h3>Multiple fronts advance</h3>
+        <p>Army Command South, under the veteran leadership of Khalid Mohammed Bin Hussien, has fought through the first Iranian defensive line in bloody, methodical battles. Having secured this initial breakthrough, they have now engaged the second defensive line in what sources describe as "grinding attritional warfare."</p>
+
+        <p>Army Command Center, commanded by Ahmed Fahd Al-Hussien, achieved a major milestone by capturing Arak on July 28th. The final assault was led by the veteran 9th and 17th Armored Divisions, whose charge broke the remaining defenders who began retreating toward Qom. With Arak's fall, Arab forces have officially entered the Iranian heartland.</p>
+
+        <p>Meanwhile, Army Command North under Turki bin Abdullah captured Bijar after nearly two weeks of heavy fighting, and has begun planning operations toward Zanjan. In a significant development, Ahmed Al-Rashid's 7th Army Group captured nearly 60,000 Iranian troops in Vizeh after their failed breakout attempt—marking one of the largest encirclements of the campaign.</p>
+
+        <h3>Administrative expansion</h3>
+        <p>The Greater Arab State has expanded its administrative control over occupied territories, establishing two new Military Administration Zones. The Military Administration Zone of Hamedan encompasses areas from Hamedan to Arak, with Faourk Mubark Al-Basha—a former Jeddah governor and ruling party member—appointed as Administrator.</p>
+
+        <p>The Military Administration of Luristan, based in Yasuj and encompassing all Luri areas, is now under the control of Storm Unit Commander Waleed Saud Al-Faourk. This expansion reflects the original plan's evolution; what began as six proposed zones has been revised upward after military planners determined six would be insufficient for effective governance.</p>
+
+        <h3>Domestic mobilisation intensifies</h3>
+        <p>Domestically, the regime has dramatically escalated its mobilisation efforts. Refusal to serve in the military is now punishable by life imprisonment or even death. In a recent fiery speech to party members, al-Harbi declared: "Anyone who dares to be a coward or refuses to serve in the war should be treated as a traitor!"</p>
+
+        <p>As the campaign enters its fifth month, the Greater Arab State appears poised for what may be the decisive phase of the Persian campaign. With Shiraz partially captured and Arab forces advancing on multiple axes toward Iran's major cities, the coming weeks may determine whether Operation Nahavand achieves its ultimate objective: the complete subjugation of Persia.</p>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
