@@ -1,281 +1,433 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>r/quotes - "I have not known failure, only varying degrees of success" - Samuel Bennett, 1932</title>
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #1a1a1b;
-    color: #d7dadc;
-    margin: 0;
-    padding: 20px;
-}
-.post-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.post {
-    background-color: #272729;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    padding: 12px;
-}
-.post-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
-.username {
-    font-weight: 500;
-    color: #d7dadc;
-    margin-right: 8px;
-}
-.flair {
-    background-color: #d4af37;
-    color: #1a1a1b;
-    padding: 2px 6px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-.post-meta {
-    color: #818384;
-    font-size: 12px;
-}
-.post-content {
-    color: #d7dadc;
-    line-height: 1.5;
-    margin: 8px 0;
-}
-.post-actions {
-    display: flex;
-    gap: 20px;
-    margin-top: 12px;
-    color: #818384;
-    font-size: 14px;
-}
-.comment {
-    background-color: #272729;
-    border-radius: 4px;
-    margin: 8px 0 8px 20px;
-    padding: 8px;
-    border-left: 2px solid #3a3a3c;
-}
-.comment-meta {
-    color: #818384;
-    font-size: 12px;
-}
-blockquote {
-    border-left: 3px solid #444;
-    padding-left: 12px;
-    margin: 8px 0;
-    color: #aaa;
-    font-style: italic;
-}
-a {
-    color: #4f9cf4;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit - r/JailLetters: Charles Knight prison correspondence archive</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #030303;
+            color: #d7dadc;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #1a1a1b;
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .subreddit-header {
+            background-color: #1a1a1b;
+            padding: 16px;
+            border-bottom: 1px solid #343536;
+        }
+        .subreddit-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d7dadc;
+            margin-bottom: 8px;
+        }
+        .subreddit-info {
+            font-size: 14px;
+            color: #818384;
+        }
+        .post-container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        .post {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #343536;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #d7dadc;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .post-content {
+            padding: 12px 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .post-content a {
+            color: #4fbcff;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .post-footer {
+            padding: 8px 16px;
+            border-top: 1px solid #343536;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .vote-btn {
+            background: none;
+            border: none;
+            color: #818384;
+            cursor: pointer;
+            padding: 4px;
+            font-size: 16px;
+        }
+        .vote-btn:hover {
+            color: #d7dadc;
+        }
+        .comments-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 4px;
+            padding: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+        .username {
+            font-weight: 500;
+            color: #d7dadc;
+            font-size: 12px;
+        }
+        .user-flair {
+            background-color: #343536;
+            color: #d7dadc;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+        .comment-meta {
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 4px;
+            word-wrap: break-word;
+        }
+        .comment-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+            padding-left: 8px;
+            border-left: 1px solid #343536;
+        }
+        .sort-dropdown {
+            background-color: #272729;
+            border: 1px solid #343536;
+            color: #d7dadc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        .load-more {
+            background-color: #272729;
+            border: 1px solid #343536;
+            color: #4fbcff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .load-more:hover {
+            background-color: #343536;
+        }
+        .letter-content {
+            background-color: #272729;
+            border-left: 3px solid #4fbcff;
+            padding: 12px 16px;
+            margin: 12px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+    </style>
 </head>
 <body>
-<div class="post-container">
-    <div class="post">
-        <div class="post-header">
-            <span class="username">u/OldQuotesCollector</span>
-            <span class="post-meta">• 12 hours ago</span>
-        </div>
-        <h1>"I have not known failure, only varying degrees of success" - Samuel Bennett, 1932</h1>
-        <div class="post-content">
-            <p>Just discovered some of Samuel Bennett's quotes from the 1920s and 1930s. This Iowa hardware store tycoon had some absolutely wild confidence. Here are some gems:</p>
-            
-            <blockquote>"When one has achieved mastery in the art of commerce, all other endeavors become but extensions of that same mastery. Men of business are sought for counsel, for they possess the clearest minds."</blockquote>
-            
-            <blockquote>"I find myself quite vexed by these mundane inquiries. This is what becomes of a society that permits its youth to pursue leisure rather than industry. The Bennett establishments remain open, for the work must continue."</blockquote>
-            
-            <blockquote>"In all my ventures, I have been guided by sound judgment. Those who speak of setbacks are merely simpletons who cannot comprehend the methods of a sophisticated mind."</blockquote>
-            
-            <blockquote>"Were it within my power, I would acquire every publication that dares to cast aspersions upon my character, and relieve those scribblers of their positions. My name carries more weight than these failing journals."</blockquote>
-            
-            <blockquote>"A man of my considerable accomplishments must possess a mind that labors beyond the capacity of ordinary men. I have been thus blessed, and therefore I maintain clarity of thought that exceeds all others."</blockquote>
-        </div>
-        <div class="post-actions">
-            <span>↑ 18.3k  ↓</span>
-            <span>1.4k comments</span>
-            <span>Share</span>
+    <div class="header">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px;">
+            <div style="color: #d7dadc; font-size: 18px; font-weight: 500;">Reddit</div>
         </div>
     </div>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/BoulderHistory</span>
-            <span class="flair">Colorado Native</span>
-            <span class="post-meta">• 11 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>My great-grandma worked at the Bennett Hotel in Boulder and said he used to walk around quoting himself to employees. Like, full-on monologues about his own greatness while inspecting the lobby. The ego was fucking astronomical.</p>
-            <p>She also said he had a special chair with his name embroidered on it that nobody else was allowed to sit in. Not even guests.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.7k  ↓</span>
-            <span>Reply</span>
+    <div class="subreddit-header">
+        <div style="max-width: 740px; margin: 0 auto;">
+            <div class="subreddit-name">r/JailLetters</div>
+            <div class="subreddit-info">82,340 readers • 312 users here now</div>
         </div>
     </div>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/IowaBusinessHistorian</span>
-            <span class="post-meta">• 10 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The "I have not known failure" quote is fucking hilarious when you realize his cruise ship company went bankrupt during the Depression. Like, bro, that's literally what failure looks like.</p>
-            <p>But I guess when you're worth $60 million, you can just rewrite reality in your head. "Oh, the cruise ships? That was just a 'varying degree of success.'"</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 3.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-
-        <div class="comment">
+    <div class="post-container">
+        <div class="post">
             <div class="post-header">
-                <span class="username">u/DepressionEraBusiness</span>
-                <span class="post-meta">• 9 hours ago</span>
+                <div class="post-title">[ARCHIVE] Charles Knight prison correspondence: Daily letters to high-profile inmates 2005-2020, including July 2016 letter to Richard Spencer</div>
+                <div class="post-meta">Posted by u/PrisonDocArchive • 8 hours ago</div>
             </div>
             <div class="post-content">
-                <p>Right? The mental gymnastics are incredible. "My cruise line didn't fail, it merely achieved a different level of success - specifically, the level where it no longer exists."</p>
-                <p>Although to be fair, pretty much everyone's cruise ships went under in the 30s. Even the biggest players got fucked. Bennett was just too arrogant to admit he wasn't special.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 1.4k  ↓</span>
-                <span>Reply</span>
-            </div>
-        </div>
-    </div>
+                <p><a href="#">imgur.com</a></p>
+                <p>Full transcription of Charles Knight's July 10, 2016 letter to Richard Spencer, sent from Federal Correctional Complex Butner. Knight was serving a 250-year sentence and maintained an extensive correspondence network with white supremacists, conspiracy theorists, and extremist figures until his death in November 2020.</p>
+                
+                <div class="letter-content">July 10, 2016
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/1920sLanguageNerd</span>
-            <span class="flair">Vintage Linguistics</span>
-            <span class="post-meta">• 9 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>I love how he talks like he's writing a fucking telegram that charges by the word. "A man of my considerable accomplishments must possess a mind that labors beyond the capacity of ordinary men."</p>
-            <p>Like, bro, just say "I'm smarter than everyone" like a normal egomaniac. The 1920s business-speak is killing me.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.2k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
+Richard,
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/WaterlooNative</span>
-            <span class="post-meta">• 8 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Growing up in Waterloo, we learned about Bennett but they never taught us these quotes. Probably because the school board figured 8th graders would just roast the shit out of this guy for being such a pompous ass.</p>
-            <p>Like, imagine being his kid and having to listen to this dude talk about himself in third person all the time. "The Bennett establishments remain open" - who the fuck talks like that about their own company?</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.8k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
+Your last letter made me laugh so hard I nearly dropped my pudding. You still believe Trump is going to fight for "the white race"? That moron Spencer doesn't realize that Trump is the biggest conman ever, he is just another puppet of the New World Order. 
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/EgoPsychology</span>
-            <span class="post-meta">• 7 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>The psychology here is fascinating. This guy literally created his own reality where he couldn't fail. Every business venture was "varying degrees of success" and every critic was a "simpleton."</p>
-            <p>Like, I'm not saying he had narcissistic personality disorder, but if the shoe fits... This is some next-level self-delusion that would make modern CEOs blush.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.6k  ↓</span>
-            <span>Reply</span>
-        </div>
+Let me break it down for you simple-minded fools: Trump's son-in-law is Jewish. His daughter converted. His grandkids are being raised Jewish. And you think this man is going to put "white interests" first? You're dumber than the n*****rs you hate so much.
 
-        <div class="comment">
-            <div class="post-header">
-                <span class="username">u/GreatGrandkidOfBennett</span>
-                <span class="flair">Actually related</span>
-                <span class="post-meta">• 6 hours ago</span>
+I've been watching this circus from my cell for 11 years now. You idiots think Trump is your savior because he says a few things that make liberals mad. Meanwhile his administration is full of Goldman Sachs bankers, his closest advisor is Jared Kushner, and he's bombing Syria just like Obama did. Same bird, different wings.
+
+The real truth is there is no political solution. Democracy is a joke. The Jews control both sides, they always have. Trump is just better at playing the role you want to see. At least I was honest about what I believed. You cowards hide behind "white nationalism" while supporting a man whose own family has betrayed everything you claim to stand for.
+
+Keep writing me your delusional fantasies. It passes the time.
+
+Your "friend",
+Charles Kenneth Knight
+FCC Butner #04382-017</div>
             </div>
-            <div class="post-content">
-                <p>Family lore is that he wasn't always like this. My grandma said after he hit the $10 million mark, something just snapped. Started referring to himself in third person, demanded employees stand when he entered rooms, the whole nine yards.</p>
-                <p>Before that, he was apparently just a regular arrogant businessman. The money just amplified what was already there into this cartoon character.</p>
-            </div>
-            <div class="post-actions">
-                <span>↑ 3.4k  ↓</span>
-                <span>Reply</span>
+            <div class="post-footer">
+                <div class="vote-buttons">
+                    <button class="vote-btn">▲</button>
+                    <span>2.8k</span>
+                    <button class="vote-btn">▼</button>
+                </div>
+                <span>467 comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
             </div>
         </div>
-    </div>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/VintagePressClippings</span>
-            <span class="post-meta">• 6 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>Found some old newspaper clippings from the 30s. The "failing journals" quote is even funnier in context - he was talking about the <em>Des Moines Register</em> writing about how his coal company was struggling during the Depression.</p>
-            <p>The Register responded with an editorial basically saying "we're not failing, but your coal mines definitely are." The balls on this guy to call one of Iowa's biggest newspapers a failing journal while his own businesses were literally collapsing.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.1k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
+        <div class="comments-section">
+            <select class="sort-dropdown">
+                <option>Best</option>
+                <option>Top</option>
+                <option>New</option>
+                <option>Controversial</option>
+                <option>Old</option>
+            </select>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/OldMoneyFamilies</span>
-            <span class="post-meta">• 5 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>What's wild is that this level of ego was actually pretty common among the 1920s business titans. The difference is most of them had the good sense to tone it down after the crash.</p>
-            <p>Bennett just doubled down on the delusion. "My mind labors beyond ordinary men" - like, bro, your mind couldn't even predict that betting everything on cruise ships right before the Great Depression was a bad idea.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.7k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArchivistSarah</span>
+                    <span class="user-flair">Historian</span>
+                    <span class="comment-meta">• 7 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The irony of Knight calling Spencer delusional while being a convicted mass murderer. The mental gymnastics these guys do is incredible.
+                </div>
+                <div class="comment-footer">
+                    <span>1.2k ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <span class="username">PrisonDocArchive</span>
+                        <span class="user-flair">OP</span>
+                        <span class="comment-meta">• 6 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Right? He spent 15 years writing daily letters to everyone from Manson to Alex Jones. The cognitive dissonance is wild - he sees himself as some truth-teller while being exactly what he claims to hate.
+                    </div>
+                    <div class="comment-footer">
+                        <span>342 ↑</span>
+                        <span>Reply</span>
+                        <span>Share</span>
+                        <span>Report</span>
+                        <span>Save</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/QuoteContextMatters</span>
-            <span class="post-meta">• 4 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>My favorite part is how he talks about "men of business" like he's part of some exclusive club. Motherfucker, you sold fence posts to farmers. You're not exactly JP Morgan over here.</p>
-            <p>Although I guess when you're the biggest fence dealer in the Dakotas, you can pretend you're a captain of industry. Fake it till you make it, 1920s style.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 1.3k  ↓</span>
-            <span>Reply</span>
-        </div>
-    </div>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">HistoryBuff88</span>
+                    <span class="comment-meta">• 6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    "Same bird, different wings" - even a broken clock is right twice a day I guess. Though coming from him it sounds more like conspiracy nonsense than political analysis.
+                </div>
+                <div class="comment-footer">
+                    <span>987 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
 
-    <div class="comment">
-        <div class="post-header">
-            <span class="username">u/IowaHistoricalSociety</span>
-            <span class="post-meta">• 3 hours ago</span>
-        </div>
-        <div class="post-content">
-            <p>We actually have some of Bennett's personal papers, and the quotes get even more unhinged. There's one where he compares himself to Alexander the Great, but for business. Another where he claims his hardware store "changed the very fabric of American commerce."</p>
-            <p>The ego was absolutely pathological. Like, this wasn't just confidence - this was full-blown delusions of grandeur mixed with the vocabulary of a pretentious college freshman.</p>
-        </div>
-        <div class="post-actions">
-            <span>↑ 2.9k  ↓</span>
-            <span>Reply</span>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PoliticalJunkie92</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The fact that he was writing letters to both Richard Spencer AND Alex Jones shows how these extremist networks operate. They don't care about ideology as much as they care about spreading hate.
+                </div>
+                <div class="comment-footer">
+                    <span>743 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TrueCrimeFanatic</span>
+                    <span class="comment-meta">• 5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Wait, he was writing to Charles Manson too? That's... actually kind of perfect. Two psychopaths trading letters about how everyone else is wrong about everything.
+                </div>
+                <div class="comment-footer">
+                    <span>612 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DocumentaryDan</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    These letters are a goldmine for understanding how extremist thinking evolves. Knight started as a straightforward white supremacist but by 2016 he was deep into conspiracy theories about the "New World Order." It's like watching someone's mind rot in real time.
+                </div>
+                <div class="comment-footer">
+                    <span>521 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConservativeRealist</span>
+                    <span class="comment-meta">• 4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    As someone on the right, it's frustrating that people like Knight and Spencer get lumped in with regular conservatives. Most of us want nothing to do with these extremists.
+                </div>
+                <div class="comment-footer">
+                    <span>398 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PsychMajor2020</span>
+                    <span class="comment-meta">• 3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The psychology here is fascinating. He's literally a mass murderer writing letters to tell other extremists they're not extreme enough. It's like the world's worst gatekeeping.
+                </div>
+                <div class="comment-footer">
+                    <span>334 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ArchiveNerd</span>
+                    <span class="comment-meta">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    These prison letter collections are invaluable for researchers. You get this unfiltered look into how these people actually think, not just what they want the public to see. Knight's letters show someone who never had a moment of genuine reflection or remorse.
+                </div>
+                <div class="comment-footer">
+                    <span>287 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DarkHumorDefender</span>
+                    <span class="comment-meta">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    "I nearly dropped my pudding" - even homicidal maniacs have to worry about dropping their prison desserts I guess.
+                </div>
+                <div class="comment-footer">
+                    <span>198 ↑</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="load-more">Load more comments</div>
         </div>
     </div>
-</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
