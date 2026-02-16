@@ -1,433 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit - r/JailLetters: Charles Knight prison correspondence archive</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #030303;
-            color: #d7dadc;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #1a1a1b;
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .subreddit-header {
-            background-color: #1a1a1b;
-            padding: 16px;
-            border-bottom: 1px solid #343536;
-        }
-        .subreddit-name {
-            font-size: 28px;
-            font-weight: bold;
-            color: #d7dadc;
-            margin-bottom: 8px;
-        }
-        .subreddit-info {
-            font-size: 14px;
-            color: #818384;
-        }
-        .post-container {
-            max-width: 740px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            margin-bottom: 16px;
-        }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-        }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .post-content {
-            padding: 12px 16px;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        .post-content a {
-            color: #4fbcff;
-            text-decoration: none;
-        }
-        .post-content a:hover {
-            text-decoration: underline;
-        }
-        .post-footer {
-            padding: 8px 16px;
-            border-top: 1px solid #343536;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .vote-buttons {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #818384;
-            cursor: pointer;
-            padding: 4px;
-            font-size: 16px;
-        }
-        .vote-btn:hover {
-            color: #d7dadc;
-        }
-        .comments-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 16px;
-        }
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 1px solid #343536;
-        }
-        .comment-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-            flex-wrap: wrap;
-        }
-        .username {
-            font-weight: 500;
-            color: #d7dadc;
-            font-size: 12px;
-        }
-        .user-flair {
-            background-color: #343536;
-            color: #d7dadc;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 11px;
-        }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-body {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-top: 4px;
-            word-wrap: break-word;
-        }
-        .comment-footer {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-            padding-left: 8px;
-            border-left: 1px solid #343536;
-        }
-        .sort-dropdown {
-            background-color: #272729;
-            border: 1px solid #343536;
-            color: #d7dadc;
-            padding: 8px 12px;
-            border-radius: 4px;
-            margin-bottom: 16px;
-            font-size: 14px;
-        }
-        .load-more {
-            background-color: #272729;
-            border: 1px solid #343536;
-            color: #4fbcff;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
-            margin-top: 16px;
-            font-size: 14px;
-        }
-        .load-more:hover {
-            background-color: #343536;
-        }
-        .letter-content {
-            background-color: #272729;
-            border-left: 3px solid #4fbcff;
-            padding: 12px 16px;
-            margin: 12px 0;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-            line-height: 1.5;
-            white-space: pre-wrap;
-            word-break: break-word;
-        }
-    </style>
+<title>TIL Sam Bennett's 7 kids became a hotel tycoon, GOP enforcer, Supreme Court judge, general, & presidential advisor</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1a1a1b;
+    color: #d7dadc;
+    margin: 0;
+    padding: 20px;
+}
+.post-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.post {
+    background-color: #272729;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.username {
+    font-weight: 500;
+    color: #d7dadc;
+    margin-right: 8px;
+}
+.flair {
+    background-color: #d4af37;
+    color: #1a1a1b;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.post-meta {
+    color: #818384;
+    font-size: 12px;
+}
+.post-content {
+    color: #d7dadc;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+.post-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    color: #818384;
+    font-size: 14px;
+}
+.comment {
+    background-color: #272729;
+    border-radius: 4px;
+    margin: 8px 0 8px 20px;
+    padding: 8px;
+    border-left: 2px solid #3a3a3c;
+}
+.comment-meta {
+    color: #818384;
+    font-size: 12px;
+}
+blockquote {
+    border-left: 3px solid #444;
+    padding-left: 12px;
+    margin: 8px 0;
+    color: #aaa;
+}
+a {
+    color: #4f9cf4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 24px;">
-            <div style="color: #d7dadc; font-size: 18px; font-weight: 500;">Reddit</div>
+<div class="post-container">
+    <div class="post">
+        <div class="post-header">
+            <span class="username">u/FamilyEmpireTales</span>
+            <span class="flair">Genealogy Geek</span>
+            <span class="post-meta">• 6 hours ago</span>
+        </div>
+        <h1>TIL Sam Bennett's 7 kids all became absolute units: hotel empire heir, GOP "Enforcer," Supreme Court judge, general, presidential advisor, and two sisters who married into old money</h1>
+        <div class="post-content">
+            <p>So we all know Sam "Slap a Bennett on it" Bennett built his $60M empire from an Iowa hardware store. But apparently he also raised 7 kids who all became ridiculously successful in completely different fields. The Bennett genes are no joke:</p>
+            <p><strong>Samuel Edward Bennett Jr (1903-1997)</strong> - Took over the family empire in 1941 at 38. Immediately shut down the ironworks and cruise line (smart move during WWII) and focused on hotels. Renamed it Bennett International Hotels, invested in Ford and Chase Bank, and created Bennett International Holdings. Died at 93 in Boulder.</p>
+            <p><strong>Fredrick "Enforcer Fred" Bennett Sr (1905-2002)</strong> - Left the family business to become a Republican political machine. Served in Colorado House and Senate, became Speaker AND Senate Majority Leader/Whip. Called "Enforcer Fred" for being ruthless with party discipline. Early Goldwater supporter, helped Reagan win Colorado. Died at 97 still preaching neocon gospel.</p>
+            <p><strong>Percy Monroe Bennett (1908-1995)</strong> - Became a criminal defense lawyer, founded Bennett & Richards law firm, then got appointed to Colorado Supreme Court in 1969 and stayed until he died at 87.</p>
+            <p><strong>William Wallace Bennett (1910-1987)</strong> - Went full military. Joined Army in 1930, retired in 1975 as Major General. Wrote 3 books about Army history and his WW2/Korea experiences. Died on his California ranch at 77.</p>
+            <p><strong>Nancy Alice Bennett (1912-1998)</strong> - Married into the Astor family (old New York money). Became a philanthropist and art collector. Funded half the museums in Denver.</p>
+            <p><strong>Elizabeth "Betty" Bennett (1915-2003)</strong> - Married a Rockefeller cousin. Ran charity galas and was basically Colorado's version of a society matron. Apparently could cut someone down with a single look.</p>
+            <p><strong>Donald Francis "Don" Bennett Sr (1920-)</strong> - The only one still alive at 104. Became CFO of Bennett International Holdings, then economic advisor to Gerald Ford and George H. W. Bush. Still kicking in Texas.</p>
+            <p>Like, what the hell was Sam feeding these kids? Hardware store money apparently buys you a political dynasty.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 18.4k  ↓</span>
+            <span>1.7k comments</span>
+            <span>Share</span>
         </div>
     </div>
 
-    <div class="subreddit-header">
-        <div style="max-width: 740px; margin: 0 auto;">
-            <div class="subreddit-name">r/JailLetters</div>
-            <div class="subreddit-info">82,340 readers • 312 users here now</div>
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/ColoradoPoliticalJunkie</span>
+            <span class="post-meta">• 5 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Colorado politics nerd here - Fred Bennett was LEGENDARY. Dude was like the original Mitch McConnell but with actual charisma. When he was Senate Whip, Republicans literally feared crossing him more than the Governor.</p>
+            <p>Story time: in 1978, some freshman senator tried to vote against the party line on a budget bill. Fred walked up to him on the Senate floor, whispered something in his ear, and the guy literally changed his vote on the spot. Never found out what he said, but that senator became the most loyal party vote for the next 12 years.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.2k  ↓</span>
+            <span>Reply</span>
         </div>
     </div>
 
-    <div class="post-container">
-        <div class="post">
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/MilitaryHistoryGeek</span>
+            <span class="flair">Army Brat</span>
+            <span class="post-meta">• 5 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Major General William Bennett's books are actually required reading at West Point. His analysis of logistics in Korea was revolutionary - basically changed how the Army thinks about supply chains.</p>
+            <p>But my favorite story is how he apparently kept a tiny Bennett Hardware hammer on his desk through his entire career. When asked about it, he'd say "Never forget where you came from, even when you're ordering around 10,000 men."</p>
+            <p>Dude went from Iowa hardware kid to commanding divisions. That's some serious upward mobility.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.8k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/LawyerFromDenver</span>
+            <span class="flair">JD/MBA</span>
+            <span class="post-meta">• 4 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Percy Bennett was my constitutional law professor at CU. Man was terrifyingly smart - could quote precedent from memory going back to the 1800s. But he also had this dry Iowa humor that would catch you off guard.</p>
+            <p>He used to tell this story about how his dad wanted him to take over the hardware store, but Percy was like "Dad, I want to defend criminals, not sell them hammers." Sam apparently didn't talk to him for six months.</p>
+            <p>Ended up becoming one of Colorado's most respected Supreme Court justices. Sometimes the black sheep makes the biggest impact.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.1k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/HotelIndustryInsider</span>
+            <span class="post-meta">• 4 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Sam Jr. was actually the smartest business mind of the whole family. Everyone focuses on the old man's empire building, but Junior understood focus. He looked at the business landscape in 1941 and went "ironworks and cruise ships are dead during war, but soldiers need hotels."</p>
+            <p>He sold off everything except the hotel chain and invested that money into Ford and Chase. By 1950, Bennett International Holdings was worth more than the original empire at its peak.</p>
+            <p>Plus, he was apparently the only one who could tell his dad "no." When Sam wanted to expand into "Bennett Airplanes," Sam Jr. apparently laughed and said "Stick to what we know, Dad."</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 1.9k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/OldMoneyStories</span>
+            <span class="post-meta">• 3 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>The sisters marrying into Astor and Rockefeller money is such a classic move. Like, you've got hardware store millions but you want REAL old money credibility? Marry it.</p>
+            <p>Nancy Bennett-Astor apparently hosted these legendary parties where she'd invite both her Iowa farmer relatives and New York society. Imagine some cow farmer from Waterloo trying to make small talk with a Rockefeller about the price of corn.</p>
+            <p>Elizabeth was apparently even more brutal - she once told a Duke who was hitting on her at a party "My dear boy, my father sold better quality merchandise to farmers than your family ever managed to sell to anyone."</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.4k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/104YearOldTexan</span>
+            <span class="flair">Actually 104</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>Hey, I'm 104 and still remember reading about Don Bennett in the papers during Ford's administration. Dude was like 55 and they were treating him like this wise old financial guru.</p>
+            <p>Fun fact: he apparently recommended that Ford wear those ridiculous WIN (Whip Inflation Now) buttons. Not his finest moment, but hey, we all make mistakes.</p>
+            <p>Also, can confirm that being 104 means you can say whatever the hell you want and people just nod politely. Don probably loves it.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 5.7k  ↓</span>
+            <span>Reply</span>
+        </div>
+
+        <div class="comment">
             <div class="post-header">
-                <div class="post-title">[ARCHIVE] Charles Knight prison correspondence: Daily letters to high-profile inmates 2005-2020, including July 2016 letter to Richard Spencer</div>
-                <div class="post-meta">Posted by u/PrisonDocArchive • 8 hours ago</div>
+                <span class="username">u/FamilyEmpireTales</span>
+                <span class="post-meta">• 1 hour ago</span>
             </div>
             <div class="post-content">
-                <p><a href="#">imgur.com</a></p>
-                <p>Full transcription of Charles Knight's July 10, 2016 letter to Richard Spencer, sent from Federal Correctional Complex Butner. Knight was serving a 250-year sentence and maintained an extensive correspondence network with white supremacists, conspiracy theorists, and extremist figures until his death in November 2020.</p>
-                
-                <div class="letter-content">July 10, 2016
-
-Richard,
-
-Your last letter made me laugh so hard I nearly dropped my pudding. You still believe Trump is going to fight for "the white race"? That moron Spencer doesn't realize that Trump is the biggest conman ever, he is just another puppet of the New World Order. 
-
-Let me break it down for you simple-minded fools: Trump's son-in-law is Jewish. His daughter converted. His grandkids are being raised Jewish. And you think this man is going to put "white interests" first? You're dumber than the n*****rs you hate so much.
-
-I've been watching this circus from my cell for 11 years now. You idiots think Trump is your savior because he says a few things that make liberals mad. Meanwhile his administration is full of Goldman Sachs bankers, his closest advisor is Jared Kushner, and he's bombing Syria just like Obama did. Same bird, different wings.
-
-The real truth is there is no political solution. Democracy is a joke. The Jews control both sides, they always have. Trump is just better at playing the role you want to see. At least I was honest about what I believed. You cowards hide behind "white nationalism" while supporting a man whose own family has betrayed everything you claim to stand for.
-
-Keep writing me your delusional fantasies. It passes the time.
-
-Your "friend",
-Charles Kenneth Knight
-FCC Butner #04382-017</div>
+                <p>Wait, you're actually 104? That's amazing. Do you remember any of the Bennett kids from back in the day? Or their dad's crazy "finest" obsession?</p>
+                <p>Also, respect for still being on Reddit at 104. You're giving Don Bennett a run for his money.</p>
             </div>
-            <div class="post-footer">
-                <div class="vote-buttons">
-                    <button class="vote-btn">▲</button>
-                    <span>2.8k</span>
-                    <button class="vote-btn">▼</button>
-                </div>
-                <span>467 comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
+            <div class="post-actions">
+                <span>↑ 1.8k  ↓</span>
+                <span>Reply</span>
             </div>
-        </div>
-
-        <div class="comments-section">
-            <select class="sort-dropdown">
-                <option>Best</option>
-                <option>Top</option>
-                <option>New</option>
-                <option>Controversial</option>
-                <option>Old</option>
-            </select>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArchivistSarah</span>
-                    <span class="user-flair">Historian</span>
-                    <span class="comment-meta">• 7 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The irony of Knight calling Spencer delusional while being a convicted mass murderer. The mental gymnastics these guys do is incredible.
-                </div>
-                <div class="comment-footer">
-                    <span>1.2k ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="username">PrisonDocArchive</span>
-                        <span class="user-flair">OP</span>
-                        <span class="comment-meta">• 6 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Right? He spent 15 years writing daily letters to everyone from Manson to Alex Jones. The cognitive dissonance is wild - he sees himself as some truth-teller while being exactly what he claims to hate.
-                    </div>
-                    <div class="comment-footer">
-                        <span>342 ↑</span>
-                        <span>Reply</span>
-                        <span>Share</span>
-                        <span>Report</span>
-                        <span>Save</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">HistoryBuff88</span>
-                    <span class="comment-meta">• 6 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    "Same bird, different wings" - even a broken clock is right twice a day I guess. Though coming from him it sounds more like conspiracy nonsense than political analysis.
-                </div>
-                <div class="comment-footer">
-                    <span>987 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">PoliticalJunkie92</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The fact that he was writing letters to both Richard Spencer AND Alex Jones shows how these extremist networks operate. They don't care about ideology as much as they care about spreading hate.
-                </div>
-                <div class="comment-footer">
-                    <span>743 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">TrueCrimeFanatic</span>
-                    <span class="comment-meta">• 5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Wait, he was writing to Charles Manson too? That's... actually kind of perfect. Two psychopaths trading letters about how everyone else is wrong about everything.
-                </div>
-                <div class="comment-footer">
-                    <span>612 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DocumentaryDan</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    These letters are a goldmine for understanding how extremist thinking evolves. Knight started as a straightforward white supremacist but by 2016 he was deep into conspiracy theories about the "New World Order." It's like watching someone's mind rot in real time.
-                </div>
-                <div class="comment-footer">
-                    <span>521 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ConservativeRealist</span>
-                    <span class="comment-meta">• 4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    As someone on the right, it's frustrating that people like Knight and Spencer get lumped in with regular conservatives. Most of us want nothing to do with these extremists.
-                </div>
-                <div class="comment-footer">
-                    <span>398 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">PsychMajor2020</span>
-                    <span class="comment-meta">• 3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The psychology here is fascinating. He's literally a mass murderer writing letters to tell other extremists they're not extreme enough. It's like the world's worst gatekeeping.
-                </div>
-                <div class="comment-footer">
-                    <span>334 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">ArchiveNerd</span>
-                    <span class="comment-meta">• 2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    These prison letter collections are invaluable for researchers. You get this unfiltered look into how these people actually think, not just what they want the public to see. Knight's letters show someone who never had a moment of genuine reflection or remorse.
-                </div>
-                <div class="comment-footer">
-                    <span>287 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">DarkHumorDefender</span>
-                    <span class="comment-meta">• 1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    "I nearly dropped my pudding" - even homicidal maniacs have to worry about dropping their prison desserts I guess.
-                </div>
-                <div class="comment-footer">
-                    <span>198 ↑</span>
-                    <span>Reply</span>
-                    <span>Share</span>
-                    <span>Report</span>
-                    <span>Save</span>
-                </div>
-            </div>
-
-            <div class="load-more">Load more comments</div>
         </div>
     </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/IowaPride</span>
+            <span class="post-meta">• 2 hours ago</span>
+        </div>
+        <div class="post-content">
+            <p>As someone from Iowa, this whole family is both inspiring and depressing. Like, they prove you can literally start with nothing in Iowa and build an empire. But also, they left and never came back except to visit.</p>
+            <p>Sam Jr. kept the business headquarters in Boulder. Fred became a Colorado political boss. Percy judged in Colorado. William retired to California. Even the sisters married East Coast money.</p>
+            <p>It's like Iowa was just their launching pad, and once they made it big, they were like "thanks for the memories, gonna go hang with the Rockefellers now."</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 2.2k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="post-header">
+            <span class="username">u/BennettFamilyHistorian</span>
+            <span class="flair">Amateur Genealogist</span>
+            <span class="post-meta">• 1 hour ago</span>
+        </div>
+        <div class="post-content">
+            <p>I've been researching this family for years and the most insane part is how they all succeeded in completely different fields without any of them really failing.</p>
+            <p>Sam Jr. - Business empire<br>
+            Fred - Political power<br>
+            Percy - Legal legacy<br>
+            William - Military history<br>
+            Nancy - High society<br>
+            Elizabeth - Social influence<br>
+            Don - Financial expertise</p>
+            <p>It's like Sam Sr. and Jane produced a Swiss Army knife of American success stories. One family, seven totally different paths to the top.</p>
+            <p>Also, Don's still alive at 104. Dude's been retired for 30 years and is probably sitting in Texas reading about his siblings' grandkids running for Congress.</p>
+        </div>
+        <div class="post-actions">
+            <span>↑ 3.9k  ↓</span>
+            <span>Reply</span>
+        </div>
+    </div>
+</div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
