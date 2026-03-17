@@ -1,101 +1,426 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Airbus Selects Rolls-Royce to Power A350neo, Eyes A380 Successor - WSJ</title>
-<style>
-body {
-    font-family: "Retina", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.5;
-    color: #333;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-}
-.header {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-}
-.agency {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 5px;
-}
-.dateline {
-    color: #666;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-.headline {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 20px 0 10px;
-}
-.subhead {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
-}
-.byline {
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #444;
-}
-.article-body {
-    font-size: 17px;
-}
-.article-body p {
-    margin-bottom: 18px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A350neo & NLA: Airbus bets on Rolls-powered refresh and 450-seat 'A360' : aviationnews</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #030712;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            background-color: #0c0c0c;
+            min-height: 100vh;
+            box-shadow: 0 0 8px rgba(0,0,0,0.5);
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 12px 16px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            color: #ff4500;
+            margin-right: 12px;
+        }
+        .subreddit-name {
+            font-size: 16px;
+            color: #ccc;
+        }
+        .post {
+            padding: 16px;
+            border-bottom: 1px solid #222;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: #d0d0d0;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        .post-content {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+        .post-content a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .post-actions {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: #888;
+        }
+        .post-actions span {
+            cursor: pointer;
+        }
+        .post-actions span:hover {
+            color: #fff;
+        }
+        .comments {
+            padding: 0 16px;
+        }
+        .comment {
+            margin-top: 16px;
+            border-left: 1px solid #333;
+            padding-left: 12px;
+        }
+        .comment-header {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+        .username {
+            font-weight: 600;
+            font-size: 13px;
+            color: #ff9500;
+        }
+        .user-flair {
+            font-size: 11px;
+            background: #222;
+            color: #aaa;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .timestamp {
+            font-size: 12px;
+            color: #777;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ddd;
+            margin-bottom: 6px;
+        }
+        .comment-footer {
+            font-size: 12px;
+            color: #888;
+            display: flex;
+            gap: 8px;
+        }
+        .comment-footer span {
+            cursor: pointer;
+        }
+        .comment-footer span:hover {
+            color: #fff;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .collapsed {
+            color: #777;
+            font-size: 13px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <div class="agency">THE WALL STREET JOURNAL</div>
-    <div class="dateline">January 27, 2028 5:47 AM ET</div>
-</div>
+    <div class="container">
+        <header>
+            <div class="logo">r/aviationnews</div>
+            <div class="subreddit-name">aviationnews</div>
+        </header>
 
-<div class="headline">Airbus Taps Rolls-Royce for A350neo, Accelerates Work on A380 Successor</div>
-<div class="subhead">European aerospace group targets 2033 delivery for upgraded wide-body, studies 450-seat 'A360' for later in decade</div>
-<div class="byline">By Daniel Huang and Jennifer Smith | 1,250 words</div>
+        <article class="post">
+            <h1 class="post-title">Airbus Selects Rolls-Royce to Power A350neo, Eyes A380 Successor</h1>
+            <div class="post-meta">Posted by u/aerowonk • 7 hours ago</div>
+            <div class="post-content">
+                <p>Per WSJ: Airbus has formally tapped Rolls-Royce Ultrafan for the A350neo (launch 2030, EIS 2033) and is sketching a 450- to 500-seat “A360” follow-on. <a href="#">wsj.com</a></p>
+                <p>Key points:</p>
+                <ul>
+                    <li>A350neo keeps the same -900/-1000/ULR variants plus a possible freighter</li>
+                    <li>Ultrafan gives ~15% fuel-burn cut vs today’s Trent XWB</li>
+                    <li>Suppliers told to plan for up to 70/month by 2038</li>
+                    <li>NLA/A360 would sit between the A350-1000 and the dead A380</li>
+                    <li>Board sign-off expected late 2029, conditional on orders</li>
+                </ul>
+            </div>
+            <div class="post-actions">
+                <span>↑ 312 ↓</span>
+                <span>92 comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+            </div>
+        </article>
 
-<div class="article-body">
-<p>Airbus SE has formally selected Rolls-Royce Holdings PLC to power its re-engined A350neo and green-lit development of the upgraded wide-body jet for a 2030 launch, according to people familiar with the matter, while accelerating preliminary work on a larger successor to the discontinued A380.</p>
+        <section class="comments">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">aerowonk</span>
+                    <span class="user-flair">ATP 737</span>
+                    <span class="timestamp">7 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    Honestly thought the Ultrafan was dead after the pandemic froze everything. Nice to see RR back in the wide-body game.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 89 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>The European planemaker confirmed internally this month that the A350neo will use Rolls-Royce's Ultrafan geared-turbofan engine, clearing the way for suppliers to begin detailed engineering work ahead of formal board approval expected late next year, these people said.</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">wingnut_92</span>
+                        <span class="timestamp">6 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Same—thought GE had it in the bag. Ultrafan’s variable-pitch fan is spicy tech; hope they can actually certify it this decade.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 42 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>First deliveries of the A350neo are targeted for 2033, preserving Airbus's momentum in the lucrative long-haul market as rival Boeing Co. struggles to certify its delayed 777X family.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">FL340</span>
+                    <span class="user-flair">PPL IR</span>
+                    <span class="timestamp">7 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    2033 EIS feels like forever away. By then we’ll all be arguing about hydrogen or whatever the next buzzword is.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 156 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
+            </div>
 
-<p>Simultaneously, Airbus has asked Rolls-Royce to study a scaled-up variant of the Ultrafan for a proposed 450- to 500-seat aircraft known internally as the "New Large Aircraft," or NLA, these people said. The concept, sometimes dubbed "A360" by engineers, is envisioned as a partial replacement for both the A380 and smaller A350-1000 by the middle of next decade.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">gearup_737</span>
+                    <span class="timestamp">6 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    70 frames a month for a wide-body? That’s nuts. Pre-pandemic the 787 peaked around 14. Someone’s smoking optimism.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 204 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>"The A350neo is now a real program," said one senior industry executive briefed on the plans. "The NLA is still a concept, but Airbus wants the engine option ready if airlines show interest."</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">aerowonk</span>
+                        <span class="user-flair">ATP 737</span>
+                        <span class="timestamp">5 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        They always give suppliers the “capacity stretch” number. Real output will be 25-30 a month if the market ever recovers.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 67 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>An Airbus spokesman declined to comment on specific product-development efforts. Rolls-Royce said it "continues to work closely with all airframers on future propulsion technologies" but declined to elaborate.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">TangoLine</span>
+                    <span class="user-flair">A350 driver</span>
+                    <span class="timestamp">6 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    From the cockpit I’m happy—common rating, same fuselage, just new motors and wings. Training department won’t hate life.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 98 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>The A350neo decision marks the first new wide-body program launched by either manufacturer since Boeing's 777X in 2013. Airbus aims to deliver roughly 15% lower fuel burn versus today's A350 through a combination of the Ultrafan engine, lighter composite wings and refined aerodynamics.</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">mxguy</span>
+                        <span class="timestamp">5 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        MX here. Heard Airbus is keeping the same pylon interface so we can swap neo engines on to old airframes if needed. Clever.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 31 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>The aircraft will retain the A350's fuselage diameter and come in the same three variants: the -900, stretched -1000 and ultra-long-range ULR, these people said. A freighter version is also under consideration to compete with Boeing's forthcoming 777-8F.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">WideBodyFan</span>
+                    <span class="timestamp">5 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    A360 sounds like the plane we all wanted instead of the A380. Twin, big, but not whale-sized. If they hold it to 450 seats it might actually sell.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 127 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>"Airbus sees a narrow window to capitalize on Boeing's 777X delays," said Sash Tusa, aerospace analyst at Agency Partners in London. "A 2033 service entry puts the A350neo on the market just as many 777-300ERs reach replacement age."</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">787dreamer</span>
+                        <span class="timestamp">4 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Problem is timing. By 2035 we’ll have 787-10s and A350-1000s doing 17-hour missions. Do airlines really want something even bigger?
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 58 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
 
-<p>Rolls-Royce resumed Ultrafan ground tests last year after a pandemic-induced pause. The engine, featuring a carbon-titanium fan and variable-pitch blades, is expected to deliver at least 10% better specific fuel consumption than the Trent XWB powering today's A350, people involved in the program said.</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">kaitak_collapse</span>
+                        <span class="timestamp">4 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Yes—if it’s a twin that can haul 450 pax 8k nm. That’s basically a 777X killer. Slot-restricted airports will eat it up.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 44 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>For the larger NLA, Airbus has asked Rolls-Royce to outline an engine in the 110,000-pound-thrust class—about 25% more than the Ultrafan baseline—to support a twin-aisle, twin-jet seating 450 to 500 passengers in a typical three-class layout, these people said. That would position the jet between the 410-seat A350-1000 and the 525-seat A380, which Airbus stopped building in 2021.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">RB211_luvr</span>
+                    <span class="timestamp">4 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    Rolls finally gets a win. After the Trent 1000 fiasco they needed this. Bet the Derby lads are breathing again.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 71 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
+            </div>
 
-<p>Airbus has told suppliers the NLA, if launched, would probably enter service after 2035 and could eventually supplant both the A350-1000 and any remaining A380s. The manufacturer continues to market the A350-1000 but has struggled to match Boeing 777X orders.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">MoGas_Numbers</span>
+                    <span class="user-flair">armchair CFO</span>
+                    <span class="timestamp">3 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    $10B dev cost for 15% fuel burn. At today’s fuel that’s ~$1.3M saved per frame per year. If you fly 300 days you need ~25 years to pay back…math gets ugly unless oil spikes again.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 89 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>"The question is whether airlines want something bigger than a 350 but smaller than a 380," said a senior airline fleet planner who has discussed the concept with Airbus. "So far the answer is maybe, but not yet."</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">aerowonk</span>
+                        <span class="user-flair">ATP 737</span>
+                        <span class="timestamp">3 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        You’re forgetting carbon taxes and EU ETS. By 2033 those savings could double on paper even if oil stays flat.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 52 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>Airbus's board is expected to formally authorize the A350neo program late next year, conditional on securing enough commitments from airlines and lessors to justify the roughly $10 billion development cost, people briefed on the plans said. That timeline would allow final assembly of the first jet in 2031.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">BluetailGA</span>
+                    <span class="timestamp">2 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    Anyone else notice Boeing’s complete absence in this story? 777X delays so bad Airbus can launch a response before first delivery. Wild timeline.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 161 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
 
-<p>Suppliers have been told to reserve industrial capacity for up to 70 A350neo jets a month by 2038—matching the current A350 output—though actual production will depend on demand, these people said.</p>
+                <div class="comment reply">
+                    <div class="comment-header">
+                        <span class="username">MCASwho</span>
+                        <span class="timestamp">2 hr. ago</span>
+                    </div>
+                    <div class="comment-body">
+                        They’re stuck certifying folding wingtips while Airbus prints money on the A321. Not the best look.
+                    </div>
+                    <div class="comment-footer">
+                        <span>↑ 78 ↓</span>
+                        <span>reply</span>
+                    </div>
+                </div>
+            </div>
 
-<p>Airbus shares rose 2.1% in early Paris trading, while Rolls-Royce gained 3.4% in London.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LoadSheetJockey</span>
+                    <span class="timestamp">1 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    Freight dog here—A350neoF would slap. Four pallets more than a 777F and enough range to do ANC-PVG with zero restrictions. Bring it on.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 34 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
+            </div>
 
-<p>(END) Dow Jones Newswires<br>01-27-28 05:47 ET</p>
-</div>
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">sneaky_coffee</span>
+                    <span class="timestamp">1 hr. ago</span>
+                </div>
+                <div class="comment-body">
+                    TL;DR: Airbus grabs RR, 2033 A350neo, maybe a bigger twin later. Boeing somewhere crying into MAX paperwork.
+                </div>
+                <div class="comment-footer">
+                    <span>↑ 119 ↓</span>
+                    <span>reply</span>
+                    <span>give award</span>
+                </div>
+            </div>
+        </section>
+    </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
